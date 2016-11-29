@@ -3,16 +3,16 @@
 Our server uses the authentication system Oauth2: to perform your requests, you will need to send a token.In order to do that, use the following instructions to get a token.
 First, you need to ask a code:
 ```sh
-curl -X POST -d "client_id=CLIENT_ID" -d "email=EMAIL" -d "password=PASSWORD" http://k.daskeyboard.com/oauth/code
+curl -X POST -d "client_id=CLIENT_ID" -d "email=EMAIL" -d "password=PASSWORD" http://q.daskeyboard.com/oauth/code
 ```
 You should receive a JSON object with a code (if not, an error should be received). You can then ask an access token:
 ```sh
-curl -X POST -d "client_id=CLIENT_ID" -d "client_secret=CLIENT_SECRET" -d "grant_type=access_token" -d "code=CODE" http://k.daskeyboard.com/oauth/token
+curl -X POST -d "client_id=CLIENT_ID" -d "client_secret=CLIENT_SECRET" -d "grant_type=access_token" -d "code=CODE" http://q.daskeyboard.com/oauth/token
 ```
 You should receive a JSON object containing your access_token, your refresh_token and your user_id (if not, an error should be received).
 To get a new access_token, the following instruction can be used:
 ```sh
-curl -X POST -d "client_id=CLIENT_ID" -d "client_secret=CLIENT_SECRET" -d "grant_type=refresh_token" -d "refresh_token=REFRESH_TOKEN" -i http://k.daskeyboard.com/oauth/refresh_token
+curl -X POST -d "client_id=CLIENT_ID" -d "client_secret=CLIENT_SECRET" -d "grant_type=refresh_token" -d "refresh_token=REFRESH_TOKEN" -i http://q.daskeyboard.com/oauth/refresh_token
 ```
 
 # Constants
@@ -20,7 +20,7 @@ The following GET requests should return an JSON array containing the desired ob
 
 ### Products
 ```sh
-curl -H "Authorization: Bearer ACCESS_TOKEN" -X GET http://k.daskeyboard.com/api/1.0/products
+curl -H "Authorization: Bearer ACCESS_TOKEN" -X GET http://q.daskeyboard.com/api/1.0/products
 ```
 Each object will have the structure:
 ```json
@@ -32,7 +32,7 @@ Each object will have the structure:
 
 ### Colors
 ```sh
-curl -H "Authorization: Bearer ACCESS_TOKEN" -X GET http://k.daskeyboard.com/api/1.0/colors
+curl -H "Authorization: Bearer ACCESS_TOKEN" -X GET http://q.daskeyboard.com/api/1.0/colors
 ```
 Each object will have the structure:
 ```json
@@ -44,7 +44,7 @@ Each object will have the structure:
 
 ### Zones
 ```sh
-curl -H "Authorization: Bearer ACCESS_TOKEN" -X GET http://k.daskeyboard.com/api/1.0/PID/zones
+curl -H "Authorization: Bearer ACCESS_TOKEN" -X GET http://q.daskeyboard.com/api/1.0/PID/zones
 ```
 The GET parameter **PID** must correspond to an existing device's pid.
 Each object will have the structure:
@@ -57,7 +57,7 @@ Each object will have the structure:
 
 ### Effects
 ```sh
-curl -H "Authorization: Bearer ACCESS_TOKEN" -X GET http://k.daskeyboard.com/api/1.0/PID/effects
+curl -H "Authorization: Bearer ACCESS_TOKEN" -X GET http://q.daskeyboard.com/api/1.0/PID/effects
 ```
 The GET parameter **PID** must correspond to an existing device's pid.
 Each object will have the structure:
@@ -71,16 +71,16 @@ Each object will have the structure:
 # Signals
 ### List
 ```sh
-curl -H "Authorization: Bearer ACCESS_TOKEN" -X GET http://k.daskeyboard.com/api/1.0/signals
+curl -H "Authorization: Bearer ACCESS_TOKEN" -X GET http://q.daskeyboard.com/api/1.0/signals
 ```
 In order to obtain only the Signals after a certain time:
 ```sh
-curl -H "Authorization: Bearer ACCESS_TOKEN" -X GET http://k.daskeyboard.com/api/1.0/signals/after/EPOCH_TIME
+curl -H "Authorization: Bearer ACCESS_TOKEN" -X GET http://q.daskeyboard.com/api/1.0/signals/after/EPOCH_TIME
 ```
 GET parameters can also be added:
 
 ```sh
-curl -H "Authorization: Bearer ACCESS_TOKEN" -X GET http://k.daskeyboard.com/api/1.0/signals?pid=DK5QPID&page=0&size=4&sort=createdAt,DESC
+curl -H "Authorization: Bearer ACCESS_TOKEN" -X GET http://q.daskeyboard.com/api/1.0/signals?pid=DK5QPID&page=0&size=4&sort=createdAt,DESC
 ```
 You should receive a JSON object as following:
 ```json
@@ -118,7 +118,7 @@ Each Signal is a JSON object with the following format:
 ### Creation
 
 ```sh
-curl -H "Content-Type: application/json" -H "Authorization: Bearer ACCESS_TOKEN" -X POST http://k.daskeyboard.com/api/1.0/signal/CLIENT_ID -d "{'name': 'My first Signal', 'message': 'It worked!', 'pid': 'DK5QPID', 'zone_id': 'KEY_S', 'effect': 'BLINK', 'notify': true, 'color': '#F0F'}"
+curl -H "Content-Type: application/json" -H "Authorization: Bearer ACCESS_TOKEN" -X POST http://q.daskeyboard.com/api/1.0/signal/CLIENT_ID -d "{'name': 'My first Signal', 'message': 'It worked!', 'pid': 'DK5QPID', 'zone_id': 'KEY_S', 'effect': 'BLINK', 'notify': true, 'color': '#F0F'}"
 ```
 Every field is needed.
 The fields **name** and **message** must contain a string.
@@ -132,13 +132,13 @@ You should receive a JSON object containing the id of the signal created (if not
 ### Update
 Only the fields **isMuted**, **isRead** and **isArchived** can be updated.
 ```sh
-curl -H "Content-Type: application/json" -H "Authorization: Bearer ACCESS_TOKEN" -X PATCH http://k.daskeyboard.com/api/1.0/signals/ID/status -d '{"isRead": true, ""isArchived": false}'
+curl -H "Content-Type: application/json" -H "Authorization: Bearer ACCESS_TOKEN" -X PATCH http://q.daskeyboard.com/api/1.0/signals/ID/status -d '{"isRead": true, ""isArchived": false}'
 ```
 The GET parameter **ID** must correspond to an existing Signal's id.
 
 ### Deletion
 
 ```sh
-curl -H "Authorization: Bearer ACCESS_TOKEN" -X DELETE http://k.daskeyboard.com/api/1.0/signals/ID
+curl -H "Authorization: Bearer ACCESS_TOKEN" -X DELETE http://q.daskeyboard.com/api/1.0/signals/ID
 ```
 The GET parameter **ID** must correspond to an existing Signal's id.
