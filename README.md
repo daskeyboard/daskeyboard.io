@@ -1,40 +1,75 @@
-# Oauth2
+Here is a short documentation of the Q-API.
+
+# Authentication: Oauth2
 
 Our server uses the authentication system Oauth2: to perform your requests, you will need to send a token.In order to do that, use the following instructions to get a token.
 First, you need to ask a code:
 ```sh
 curl -X POST -d "client_id=CLIENT_ID" -d "email=EMAIL" -d "password=PASSWORD" http://q.daskeyboard.com/oauth/code
 ```
+Parameters required: CLIENT_ID, EMAIL and PASSWORD.
 You should receive a JSON object with a code (if not, an error should be received). You can then ask an access token:
 ```sh
 curl -X POST -d "client_id=CLIENT_ID" -d "client_secret=CLIENT_SECRET" -d "grant_type=access_token" -d "code=CODE" http://q.daskeyboard.com/oauth/token
 ```
+Parameters required: CLIENT_ID, CLIENT_SECRET and CODE.
 You should receive a JSON object containing your access_token, your refresh_token and your user_id (if not, an error should be received).
 To get a new access_token, the following instruction can be used:
 ```sh
 curl -X POST -d "client_id=CLIENT_ID" -d "client_secret=CLIENT_SECRET" -d "grant_type=refresh_token" -d "refresh_token=REFRESH_TOKEN" -i http://q.daskeyboard.com/oauth/refresh_token
 ```
+Parameters required: CLIENT_ID, CLIENT_SECRET and REFRESH_TOKEN.
 
 # Constants
-The following GET requests should return an JSON array containing the desired objects.
+For the following requests, you will need to replace ACCESS_TOKEN by your own token, obtained with the above instructions.
 
-### Products
+### Devices Definitions
+Returns the list of available devices (JSON Array).
 ```sh
-curl -H "Authorization: Bearer ACCESS_TOKEN" -X GET http://q.daskeyboard.com/api/1.0/products
+curl -H "Authorization: Bearer ACCESS_TOKEN" -X GET http://q.daskeyboard.com/api/1.0/device_definitions
 ```
-Each object will have the structure:
+Each JSON object will have the structure:
 ```json
 {
+    "latestFirmwareVersion": "latest version of the firmware (string)",
     "name": "name of the product (string)",
-    "pid": "pid of the product (string)"
+    "vid": "vid of the product (string)",
+    "pid": "pid of the product (string)",
+    "modelNumber": "number of the model (string)",
+    "description": "description (string)",
+    "zones": [
+      {
+        "id": "id (string)",
+        "description": "description (string)"
+      },
+      {
+        "id": "id (string)",
+        "description": "description (string)"
+      },
+      ...
+    ],
+    "vidPid": {
+      "pid": "pid of the product (string)",
+      "vid": "vid of the product (string)"
+    }
 }
 ```
 
+### Devices
+Returns the list of devices linked to your account (JSON Array).
+```sh
+curl -H "Authorization: Bearer ACCESS_TOKEN" -X GET http://q.daskeyboard.com/api/1.0/devices
+```
+Each JSON object will have the structure:
+# TODO
+
+
 ### Colors
+Returns a list of predefined colors (JSON Array).
 ```sh
 curl -H "Authorization: Bearer ACCESS_TOKEN" -X GET http://q.daskeyboard.com/api/1.0/colors
 ```
-Each object will have the structure:
+Each JSON object will have the structure:
 ```json
 {
     "code": "hexadecimal code of the color (string beginning by the character '#' and followed by 3 hexadecimal digits)",
@@ -43,11 +78,12 @@ Each object will have the structure:
 ```
 
 ### Zones
+Returns the list of a device's zones (JSON Array).
 ```sh
 curl -H "Authorization: Bearer ACCESS_TOKEN" -X GET http://q.daskeyboard.com/api/1.0/PID/zones
 ```
 The GET parameter **PID** must correspond to an existing device's pid.
-Each object will have the structure:
+Each JSON object will have the structure:
 ```json
 {
     "id": "id of the zone (string beginning by 'KEY_')",
@@ -56,11 +92,12 @@ Each object will have the structure:
 ```
 
 ### Effects
+Returns the list of a available effects for a device (JSON Array).
 ```sh
 curl -H "Authorization: Bearer ACCESS_TOKEN" -X GET http://q.daskeyboard.com/api/1.0/PID/effects
 ```
 The GET parameter **PID** must correspond to an existing device's pid.
-Each object will have the structure:
+Each JSON object will have the structure:
 ```json
 {
     "code": "code of the effect (string)",
@@ -69,6 +106,37 @@ Each object will have the structure:
 ```
 
 # Signals
+
+### Creation
+
+Creates a Signal with the given attributes.
+Example of simple Signal:
+```sh
+curl -H "Content-Type: application/json" -H "Authorization: Bearer ACCESS_TOKEN" -X POST http://q.daskeyboard.com/api/1.0/signal/CLIENT_ID -d "{'name': 'My first Signal', 'pid': 'DK5QPID', 'zoneId': 'KEY_S'}"
+```
+
+Example of more detailed Signal:
+```sh
+curl -H "Content-Type: application/json" -H "Authorization: Bearer ACCESS_TOKEN" -X POST http://q.daskeyboard.com/api/1.0/signal/CLIENT_ID -d "{'name': 'My first Signal', 'pid': 'DK5QPID', 'zoneId': 'KEY_S', 'message': 'It worked', 'effect': 'BLINK', 'color': '#02C', 'notify': true, 'isRead': true, 'isArchived': true, 'isMuted': true}"
+```
+
+Required fields:
+The field **name** must contain a string.
+The field **pid** must contain a string corresponding to the PID of an existing device.
+The field **zoneId** must contain a string corresponding to a zone belonging to the device chosen.
+
+Optional fields:
+The field **message** must contain a string (default: empty string "").
+The field **effect** must contain a string corresponding to an existing effect (default: "SET_COLOR").
+The field **color** must contain a string corresponding to a color. It has to begin by the character '#' and be followed by 3 or 6 hexadecimal digits (default: "#FF0").
+The field **notify** must contain a boolean (default: false).
+The field **isRead** must contain a boolean (default: false).
+The field **isArchived** must contain a boolean (default: false).
+The field **isMuted** must contain a boolean (default: false).
+
+You should receive a JSON object containing the id of the signal created (if not, an error should be received).
+
+
 ### List
 ```sh
 curl -H "Authorization: Bearer ACCESS_TOKEN" -X GET http://q.daskeyboard.com/api/1.0/signals
@@ -114,20 +182,6 @@ Each Signal is a JSON object with the following format:
     "updatedAt": "time at which the Signal has been updated (long: epoch time)"
 }
 ```
-
-### Creation
-
-```sh
-curl -H "Content-Type: application/json" -H "Authorization: Bearer ACCESS_TOKEN" -X POST http://q.daskeyboard.com/api/1.0/signal/CLIENT_ID -d "{'name': 'My first Signal', 'message': 'It worked!', 'pid': 'DK5QPID', 'zone_id': 'KEY_S', 'effect': 'BLINK', 'notify': true, 'color': '#F0F'}"
-```
-Every field is needed.
-The fields **name** and **message** must contain a string.
-The field **pid** must contain a string corresponding to the PID of an existing device.
-The field **zone_id** must contain a string corresponding to a zone belonging to the device chosen.
-The field **effect** must contain a string corresponding to an existing effect.
-The field **notify** must contain a boolean.
-The field **color** must contain a string corresponding to a color. It has to begin by the character '#' and be followed by 3 or 6 hexadecimal digits.
-You should receive a JSON object containing the id of the signal created (if not, an error should be received).
 
 ### Update
 Only the fields **isMuted**, **isRead** and **isArchived** can be updated.
