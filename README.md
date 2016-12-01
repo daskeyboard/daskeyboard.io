@@ -137,7 +137,7 @@ curl -H "Content-Type: application/json" -H "Authorization: Bearer ACCESS_TOKEN"
 
 Example of more detailed Signal:
 ```sh
-curl -H "Content-Type: application/json" -H "Authorization: Bearer ACCESS_TOKEN" -X POST http://q.daskeyboard.com/api/1.0/signal/CLIENT_ID -d "{'name': 'My first Signal', 'pid': 'DK5QPID', 'zoneId': 'KEY_S', 'message': 'It worked', 'effect': 'BLINK', 'color': '#02C', 'notify': true, 'isRead': true, 'isArchived': true, 'isMuted': true}"
+curl -H "Content-Type: application/json" -H "Authorization: Bearer ACCESS_TOKEN" -X POST http://q.daskeyboard.com/api/1.0/signal/CLIENT_ID -d "{'name': 'My first Signal', 'pid': 'DK5QPID', 'zoneId': 'KEY_S', 'message': 'It worked', 'effect': 'BLINK', 'color': '#02C', 'shouldNotify': true, 'isRead': true, 'isArchived': true, 'isMuted': true}"
 ```
 
 Required fields:
@@ -149,7 +149,7 @@ Optional fields:
 The field **message** must contain a string (default: empty string "").
 The field **effect** must contain a string corresponding to an existing effect (default: "SET_COLOR").
 The field **color** must contain a string corresponding to a color. It has to begin by the character '#' and be followed by 3 or 6 hexadecimal digits (default: "#FF0").
-The field **notify** must contain a boolean (default: false).
+The field **shouldNotify** must contain a boolean (default: false).
 The field **isRead** must contain a boolean (default: false).
 The field **isArchived** must contain a boolean (default: false).
 The field **isMuted** must contain a boolean (default: false).
