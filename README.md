@@ -61,7 +61,27 @@ Returns the list of devices linked to your account (JSON Array).
 curl -H "Authorization: Bearer ACCESS_TOKEN" -X GET http://q.daskeyboard.com/api/1.0/devices
 ```
 Each JSON object will have the structure:
-# TODO
+```json
+{
+    "id": "id of the device (int)", 
+    "userId": "id of the user (int)", 
+    "pid": "pid of the product (string)",
+    "firmwareVersion": "version of the firmware (string)",
+    "vid": "vid of the product (string)",
+    "description": "description (string)",
+    "zones": [
+      {
+        "id": "id (string)",
+        "description": "description (string)"
+      },
+      {
+        "id": "id (string)",
+        "description": "description (string)"
+      },
+      ...
+    ]
+}
+```
 
 
 ### Colors
