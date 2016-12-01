@@ -2,7 +2,19 @@ Here is a short documentation of the Q-API.
 
 # Authentication: Oauth2
 
-Our server uses the authentication system Oauth2: to perform your requests, you will need to send a token.In order to do that, use the following instructions to get a token.
+Our server uses the authentication system Oauth2: to perform your requests, you will need to send a token. But first, you will need to use your client credentials. 
+
+### Own client credentials
+
+When you signed up, client credentials have been generated for you. To get them, you can use the following command:
+```sh
+curl -X GET -d "{email: 'EMAIL', password: 'PASSWORD'}" http://q.daskeyboard.com/oauth/credentials
+```
+Parameters required: EMAIL and PASSWORD.
+
+### Token 
+
+Use the following instructions to obtain an access token.
 First, you need to ask a code:
 ```sh
 curl -X POST -d "client_id=CLIENT_ID" -d "email=EMAIL" -d "password=PASSWORD" http://q.daskeyboard.com/oauth/code
@@ -19,6 +31,28 @@ To get a new access_token, the following instruction can be used:
 curl -X POST -d "client_id=CLIENT_ID" -d "client_secret=CLIENT_SECRET" -d "grant_type=refresh_token" -d "refresh_token=REFRESH_TOKEN" -i http://q.daskeyboard.com/oauth/refresh_token
 ```
 Parameters required: CLIENT_ID, CLIENT_SECRET and REFRESH_TOKEN.
+
+### Authorized clients
+
+You can obtain the list of the clients which you have linked your account with (like Zapier or IFTTT):
+```sh
+curl -X GET -H "Authorization: Bearer ACCESS_TOKEN" http://q.daskeyboard.com/api/1.0/users/authorized_clients
+```
+Parameters required: ACCESS_TOKEN.
+You should receive a JSON Array, with each JSON object having the structure:
+```json
+{
+    "name": "Name of the client"
+}
+```
+
+### Revoke a client
+
+If you want to revoke a client (which will remove your tokens for this one), you only need to know its name:
+```sh
+curl -X POST -H "Authorization: Bearer ACCESS_TOKEN" -H "Content-Type: application/json" -d "{name: CLIENT_NAME}" http://q.daskeyboard.com/api/1.0/users/revoke_client
+```
+Parameters required: ACCESS_TOKEN, CLIENT_NAME. If the operation succeeds, you should receive a 200 response.
 
 # Constants
 For the following requests, you will need to replace ACCESS_TOKEN by your own token, obtained with the above instructions.
