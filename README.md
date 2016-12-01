@@ -8,7 +8,7 @@ Our server uses the authentication system Oauth2: to perform your requests, you 
 
 When you signed up, client credentials have been generated for you. To get them, you can use the following command:
 ```sh
-curl -X GET -d "{email: 'EMAIL', password: 'PASSWORD'}" http://q.daskeyboard.com/oauth/credentials
+curl -X POST -H "Content-Type: application/json" -d "{email: 'EMAIL', password: 'PASSWORD'}" http://q.daskeyboard.com/oauth/credentials
 ```
 Parameters required: EMAIL and PASSWORD.
 
