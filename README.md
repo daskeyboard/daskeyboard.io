@@ -216,3 +216,16 @@ The GET parameter **ID** must correspond to an existing Signal's id.
 curl -H "Authorization: Bearer ACCESS_TOKEN" -X DELETE http://q.daskeyboard.com/api/1.0/signals/ID
 ```
 The GET parameter **ID** must correspond to an existing Signal's id.
+
+
+# WebSockets
+
+Our desktop and Android applications are connected to our server via WebSockets: you can do the same!
+
+### Signals
+
+The WebSockets endpoint for Signals is the following: ws://q.daskeyboard.com/myHandlerSignal
+In order to be authenticated, you need to send your client id ("clientId: XXX") and your token ("accessToken: XXX").
+
+### Profiles
+# TODO
