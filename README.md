@@ -183,7 +183,7 @@ Optional fields:
 The field **message** must contain a string (default: empty string "").
 The field **effect** must contain a string corresponding to an existing effect (default: "SET_COLOR").
 The field **color** must contain a string corresponding to a color. It has to begin by the character '#' and be followed by 3 or 6 hexadecimal digits (default: "#FF0").
-The field **shouldNotify** must contain a boolean (default: false).
+The field **shouldNotify** must contain a boolean (default: false). If the Signal is read or archived, no notification will be displayed.
 The field **isRead** must contain a boolean (default: false).
 The field **isArchived** must contain a boolean (default: false).
 The field **isMuted** must contain a boolean (default: false).
