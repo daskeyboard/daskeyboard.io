@@ -2,11 +2,12 @@ Here is a short documentation of the Q-API.
 
 # Authentication: Oauth2
 
-Our server uses the authentication system Oauth2: to perform your requests, you will need to send a token. But first, you will need to use your client credentials. 
+The Das Keyboard Q server uses Oauth2 authentication, so in order to perform a requests, you will need to send a token. But first, you will need to use your client credentials. 
 
 ### Own client credentials
 
-When you signed up, client credentials have been generated for you. To get them, you can use the following command:
+When you signed up on http://q.daskeyboard.com/, client credentials have been generated for you. To get them, you can use the following command:
+
 ```sh
 curl -X POST -H "Content-Type: application/json" -d "{email: 'EMAIL', password: 'PASSWORD'}" http://q.daskeyboard.com/oauth/credentials
 ```
@@ -14,7 +15,7 @@ Parameters required: EMAIL and PASSWORD.
 
 ### Token 
 
-Use the following instructions to obtain an access token.
+Use the following command to obtain an access token.
 First, you need to ask a code:
 ```sh
 curl -X POST -d "client_id=CLIENT_ID" -d "email=EMAIL" -d "password=PASSWORD" http://q.daskeyboard.com/oauth/code
@@ -25,8 +26,9 @@ You should receive a JSON object with a code (if not, an error should be receive
 curl -X POST -d "client_id=CLIENT_ID" -d "client_secret=CLIENT_SECRET" -d "grant_type=access_token" -d "code=CODE" http://q.daskeyboard.com/oauth/token
 ```
 Parameters required: CLIENT_ID, CLIENT_SECRET and CODE.
-You should receive a JSON object containing your access_token, your refresh_token and your user_id (if not, an error should be received).
-To get a new access_token, the following instruction can be used:
+The response contains a JSON object with your access_token, refresh_token and your user_id.
+
+To get a new access_token, the following command can be used:
 ```sh
 curl -X POST -d "client_id=CLIENT_ID" -d "client_secret=CLIENT_SECRET" -d "grant_type=refresh_token" -d "refresh_token=REFRESH_TOKEN" -i http://q.daskeyboard.com/oauth/refresh_token
 ```
@@ -34,7 +36,7 @@ Parameters required: CLIENT_ID, CLIENT_SECRET and REFRESH_TOKEN.
 
 ### Authorized clients
 
-You can obtain the list of the clients which you have linked your account with (like Zapier or IFTTT):
+You can obtain the list of the clients which you have linked your account to (e.g. Zapier or IFTTT):
 ```sh
 curl -X GET -H "Authorization: Bearer ACCESS_TOKEN" http://q.daskeyboard.com/api/1.0/users/authorized_clients
 ```
@@ -188,14 +190,13 @@ The field **isRead** must contain a boolean (default: false).
 The field **isArchived** must contain a boolean (default: false).
 The field **isMuted** must contain a boolean (default: false).
 
-You should receive a JSON object containing the id of the signal created (if not, an error should be received).
-
+The response is a JSON object containing the id of the signal created.
 
 ### List
 ```sh
 curl -H "Authorization: Bearer ACCESS_TOKEN" -X GET http://q.daskeyboard.com/api/1.0/signals
 ```
-In order to obtain only the Signals after a certain time:
+In order to obtain a list of Signals created after a certain time:
 ```sh
 curl -H "Authorization: Bearer ACCESS_TOKEN" -X GET http://q.daskeyboard.com/api/1.0/signals/after/EPOCH_TIME
 ```
