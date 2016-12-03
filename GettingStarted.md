@@ -17,4 +17,7 @@ Even without your 5Q, you can play with Signals by creating, updating and deleti
 
 # Known issues
 
-### TODO
+- We have speed issues concerning the server, but we're working on it!
+- HTTPS is not implemented for the moment, but it will be very soon.
+- Some breaking changes will certainly be made on the Signals API, so if something does not work, make sure you are using the last version of the API (please refer to this link: https://github.com/DasKeyboard/q/blob/master/README.md).
+
