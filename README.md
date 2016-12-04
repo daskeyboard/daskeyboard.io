@@ -1,5 +1,7 @@
 Here is a short documentation of the Q-API.
 
+
+
 # Authentication: Oauth2
 
 The Das Keyboard Q server uses Oauth2 authentication, so in order to perform a requests, you will need to send a token. But first, you will need to use your client credentials. 
