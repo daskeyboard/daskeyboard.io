@@ -1,6 +1,7 @@
 # Das Keyboard Q: REST API Documentation
 
-This document explains how to use the Q API. Both the Cloud and the desktop software use the same routes; this documentation uses the Q Cloud URI, but to make the requests on the desktop software the `q.daskeyboard.com` has to be replaced by `localhost:PORT`, where `PORT` can be obtained in the file `~/.quio/q-api-port.txt`.
+This document explains how to use the Q API. To create, update and delete Signals, two options are offered: sending the request to the Server or sending it directly to the desktop application.  
+Both the Cloud and the desktop software use the same routes; this documentation uses the Q Cloud URI, but to make the requests on the desktop software the `q.daskeyboard.com` has to be replaced by `localhost:PORT`, where `PORT` can be obtained in the file `~/.quio/q-api-port.txt`.
 
 In a terminal, the port can be obtained with the following:
 ```sh
