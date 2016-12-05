@@ -38,7 +38,7 @@ There are several possibilities to send signals to the 5Q keyboard:
   emails, Facebook events, even new Youtube videos and much more.
  
  - TODO local API: see documentation at https://github.com/DasKeyboard/q/blob/master/README.md.
- - TODO Q cloud API: see documentation at https://github.com/DasKeyboard/q/blob/master/README.md.
+ - TODO Q cloud API: see documentation at https://github.com/DasKeyboard/q/blob/master/q-api-doc.md.
 
 
 ## Contributing
