@@ -12,7 +12,7 @@ Q clients can be downloaded from the Q website:
   http://q.daskeyboard.com/
 
 Q clients are available for the following platforms:
- - Q Desktop: Windows, Linux, Mac coming soon.
+ - Q Desktop: Linux, Windows and mac.
  - Q Mobile: Android
  
 ### Create a Das Keyboard Q account
@@ -49,7 +49,6 @@ At this point of the development, we would like to ask the community for input o
 
 ## Roadmap 
 This is what is on the radar. Please note that we do not provide release dates, so no need to ask.
- - Mac desktop app
  - Multi-key signals 
  - More lighting effects
  - SDK to create apps that talks to the 5Q
