@@ -25,16 +25,16 @@ curl -X POST -d "client_id=CLIENT_ID" -d "email=EMAIL" -d "password=PASSWORD" ht
 Parameters required: CLIENT_ID, EMAIL and PASSWORD.
 You should receive a JSON object with a code (if not, an error should be received). You can then ask an access token:
 ```sh
-curl -X POST -d "client_id=CLIENT_ID" -d "client_secret=CLIENT_SECRET" -d "grant_type=access_token" -d "code=CODE" http://q.daskeyboard.com/oauth/token
+curl -X POST -d "client_id=CLIENT_ID" -d "grant_type=access_token" -d "code=CODE" http://q.daskeyboard.com/oauth/token
 ```
-Parameters required: CLIENT_ID, CLIENT_SECRET and CODE.
+Parameters required: CLIENT_ID and CODE.
 The response contains a JSON object with your access_token, refresh_token and your user_id.
 
 To get a new access_token, the following command can be used:
 ```sh
-curl -X POST -d "client_id=CLIENT_ID" -d "client_secret=CLIENT_SECRET" -d "grant_type=refresh_token" -d "refresh_token=REFRESH_TOKEN" -i http://q.daskeyboard.com/oauth/refresh_token
+curl -X POST -d "client_id=CLIENT_ID" -d "grant_type=refresh_token" -d "refresh_token=REFRESH_TOKEN" -i http://q.daskeyboard.com/oauth/refresh_token
 ```
-Parameters required: CLIENT_ID, CLIENT_SECRET and REFRESH_TOKEN.
+Parameters required: CLIENT_ID and REFRESH_TOKEN.
 
 ### Authorized clients
 
