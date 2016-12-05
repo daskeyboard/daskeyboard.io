@@ -1,12 +1,10 @@
-Here is a short documentation of the Q-API.
+# Das Keyboard Q: REST API Documentation
 
-
-
-# Authentication: Oauth2
+## Authentication: Oauth2
 
 The Das Keyboard Q server uses Oauth2 authentication, so in order to perform a requests, you will need to send a token. But first, you will need to use your client credentials. 
 
-### Own client credentials
+### Getting your Oauth credentials
 
 When you signed up on http://q.daskeyboard.com/, client credentials have been generated for you. To get them, you can use the following command:
 
@@ -15,7 +13,7 @@ curl -X POST -H "Content-Type: application/json" -d "{email: 'EMAIL', password: 
 ```
 Parameters required: EMAIL and PASSWORD.
 
-### Token 
+### Getting your Oauth Token 
 
 Use the following command to obtain an access token.
 First, you need to ask a code:
@@ -30,15 +28,18 @@ curl -X POST -d "client_id=CLIENT_ID" -d "grant_type=access_token" -d "code=CODE
 Parameters required: CLIENT_ID and CODE.
 The response contains a JSON object with your access_token, refresh_token and your user_id.
 
-To get a new access_token, the following command can be used:
+### Refreshing your Oauth Token 
+
+An access token expiring after a certain time, you will probably need to get a new one.
 ```sh
 curl -X POST -d "client_id=CLIENT_ID" -d "grant_type=refresh_token" -d "refresh_token=REFRESH_TOKEN" -i http://q.daskeyboard.com/oauth/refresh_token
 ```
 Parameters required: CLIENT_ID and REFRESH_TOKEN.
 
-### Authorized clients
+### Getting the list of authorized Clients
 
-You can obtain the list of the clients which you have linked your account to (e.g. Zapier or IFTTT):
+In order for 3rd parties, called Clients (e.g. Twitter, Zappier), to send Signals to your Q CLoud account, you need to authorize them.
+The following command gives the list of authorized Clients.
 ```sh
 curl -X GET -H "Authorization: Bearer ACCESS_TOKEN" http://q.daskeyboard.com/api/1.0/users/authorized_clients
 ```
@@ -46,19 +47,19 @@ Parameters required: ACCESS_TOKEN.
 You should receive a JSON Array, with each JSON object having the structure:
 ```json
 {
-    "name": "Name of the client"
+    "name": "CLIENT_NAME"
 }
 ```
 
-### Revoke a client
+### Revoking a client
 
-If you want to revoke a client (which will remove your tokens for this one), you only need to know its name:
+To revoke a client, only its name is needed:
 ```sh
 curl -X POST -H "Authorization: Bearer ACCESS_TOKEN" -H "Content-Type: application/json" -d "{name: CLIENT_NAME}" http://q.daskeyboard.com/api/1.0/users/revoke_client
 ```
 Parameters required: ACCESS_TOKEN, CLIENT_NAME. If the operation succeeds, you should receive a 200 response.
 
-# Constants
+## Endpoints
 For the following requests, you will need to replace ACCESS_TOKEN by your own token, obtained with the above instructions.
 
 ### Devices Definitions
@@ -163,38 +164,41 @@ Each JSON object will have the structure:
 }
 ```
 
-# Signals
+## Signals
 
-### Creation
+### Creating a Signal
+
+The DasKeyboard 5Q RG keys can be controlled via Signals. An example of Signal would be: 
+Apple Stock > $500 => set A key to green.
 
 Creates a Signal with the given attributes.
 Example of simple Signal:
 ```sh
-curl -H "Content-Type: application/json" -H "Authorization: Bearer ACCESS_TOKEN" -X POST http://q.daskeyboard.com/api/1.0/signal/CLIENT_ID -d "{'name': 'My first Signal', 'pid': 'DK5QPID', 'zoneId': 'KEY_S'}"
+curl -H "Content-Type: application/json" -H "Authorization: Bearer ACCESS_TOKEN" -X POST http://q.daskeyboard.com/api/1.0/signal/CLIENT_ID -d "{'name': 'Apple Stock increase', 'pid': 'DK5QPID', 'zoneId': 'KEY_A'}"
 ```
 
 Example of more detailed Signal:
 ```sh
-curl -H "Content-Type: application/json" -H "Authorization: Bearer ACCESS_TOKEN" -X POST http://q.daskeyboard.com/api/1.0/signal/CLIENT_ID -d "{'name': 'My first Signal', 'pid': 'DK5QPID', 'zoneId': 'KEY_S', 'message': 'It worked', 'effect': 'BLINK', 'color': '#02C', 'shouldNotify': true, 'isRead': true, 'isArchived': true, 'isMuted': true}"
+curl -H "Content-Type: application/json" -H "Authorization: Bearer ACCESS_TOKEN" -X POST http://q.daskeyboard.com/api/1.0/signal/CLIENT_ID -d "{'name': 'Apple Stock increase', 'pid': 'DK5QPID', 'zoneId': 'KEY_A', 'message': 'It worked', 'effect': 'BLINK', 'color': '#008000', 'shouldNotify': true, 'isRead': true, 'isArchived': true, 'isMuted': true}"
 ```
 
 Required fields:
-The field **name** must contain a string.
-The field **pid** must contain a string corresponding to the PID of an existing device.
-The field **zoneId** must contain a string corresponding to a zone belonging to the device chosen.
+**name**: string - name of Signal, e.g. "Apple Stock increase".
+**pid** string - pid of the device, e.g. "DK5QPID".
+**zoneId** string - id of the zone, e.g. "KEY_A".
 
 Optional fields:
-The field **message** must contain a string (default: empty string "").
-The field **effect** must contain a string corresponding to an existing effect (default: "SET_COLOR").
-The field **color** must contain a string corresponding to a color. It has to begin by the character '#' and be followed by 3 or 6 hexadecimal digits (default: "#FF0").
-The field **shouldNotify** must contain a boolean (default: false). If the Signal is read or archived, no notification will be displayed.
-The field **isRead** must contain a boolean (default: false).
-The field **isArchived** must contain a boolean (default: false).
-The field **isMuted** must contain a boolean (default: false).
+**message** string - message of Signal (default: empty string ""), e.g. "Lucky you! Apple stock is greater than $500".
+**effect** string - effect of the Signal (default: "SET_COLOR"), e.g. "BLINK".
+**color** string which has to begin by the character '#' and be followed by 3 or 6 hexadecimal digits - color of the Signal (default: "#FF0"), e.g. "#008000".
+**shouldNotify** boolean - indicates if the applications should create a notification when the Signal is received, only if it has not been read or archived (default: false), e.g. true.
+**isRead** boolean - indicates if the Signal has been read (default: false), e.g. true.
+**isArchived** boolean - indicates if the Signal has been archived (default: false), e.g. true.
+**isMuted** boolean - indicates if the Signal has been muted (default: false), e.g. true.
 
 The response is a JSON object containing the id of the signal created.
 
-### List
+### Getting the Signals
 ```sh
 curl -H "Authorization: Bearer ACCESS_TOKEN" -X GET http://q.daskeyboard.com/api/1.0/signals
 ```
@@ -240,29 +244,16 @@ Each Signal is a JSON object with the following format:
 }
 ```
 
-### Update
+### Updating a Signal
 Only the fields **isMuted**, **isRead** and **isArchived** can be updated.
 ```sh
 curl -H "Content-Type: application/json" -H "Authorization: Bearer ACCESS_TOKEN" -X PATCH http://q.daskeyboard.com/api/1.0/signals/ID/status -d '{"isRead": true, ""isArchived": false}'
 ```
 The GET parameter **ID** must correspond to an existing Signal's id.
 
-### Deletion
+### Deleting a Signal
 
 ```sh
 curl -H "Authorization: Bearer ACCESS_TOKEN" -X DELETE http://q.daskeyboard.com/api/1.0/signals/ID
 ```
 The GET parameter **ID** must correspond to an existing Signal's id.
-
-
-# WebSockets
-
-Our desktop and Android applications are connected to our server via WebSockets: you can do the same!
-
-### Signals
-
-The WebSockets endpoint for Signals is the following: ws://q.daskeyboard.com/ws/signal.
-In order to be authenticated, you need to send your client id ("clientId: XXX") and your token ("accessToken: XXX").
-
-### Profiles
-# TODO
