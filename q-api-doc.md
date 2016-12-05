@@ -1,8 +1,15 @@
 # Das Keyboard Q: REST API Documentation
 
+This document explains how to use the Q API. Both the Cloud and the desktop software use the same routes; this documentation uses the Q Cloud URI, but to make the requests on the desktop software the "q.daskeyboard.com" has to be replaced by "localhost:PORT", where PORT can be obtained in the file "~/.quio/q-api-port.txt".
+
+In a terminal, the port can be obtained with the following:
+```sh
+PORT=$(cat ~/.quio/q-api-port.txt)
+```
+
 ## Authentication: Oauth2
 
-The Das Keyboard Q server uses Oauth2 authentication, so in order to perform a requests, you will need to send a token. But first, you will need to use your client credentials. 
+The Das Keyboard Q server uses Oauth2 authentication (https://oauth.net/2/), so in order to perform a requests, you will need to send a token. But first, you will need to use your client credentials. 
 
 ### Getting your Oauth credentials
 
