@@ -2,16 +2,16 @@
 
 =================== TODO read TODOs in this doc...==========================
 
-*Warning:* the Q software is in very early stage. It's buggy, incomplete, poorly document
-and below all expectations, that means it is a start and it's improving fast. Only use it if you are 
+*Warning:* the Q software is in very early stage. It's buggy, incomplete, and poorly documented.
+That means it is a start. However it is improving fast. Only use it if you are 
 conformtable being a beta tester and contributing useful feedback.
 
 ## Installation
-### Download and install Q clients
+### Download and install Q clients software
 Q clients can be downloaded from the Q website:
   http://q.daskeyboard.com/
 
-Q clients are available for different platform:
+Q clients are available for the following platforms:
  - Q Desktop: Windows, Linux, Mac coming soon.
  - Q Mobile: Android
  
@@ -24,11 +24,12 @@ In order to use the Q clients, you'll need to create an account at
 
 ## Sending Signals to your 5Q keyboard
 A bit of lingo first: a *signal* is a message that contains color information (and more) to be
-displayed on a 5Q keyboard. All 3rd party platforms communicate to the 5Q clients by sending 
- signals very much like your friends send you text messages on your phone. 
+displayed on a 5Q keyboard. All 3rd party platforms communicate with the 5Q clients by sending 
+ signals very much like your friends send text messages to your phone and instead of text message, a 
+ signal contains color and text information.
 
-Even without a real 5Q keyboard, you can play with Signals by creating, updating and deleting them. 
-Signals will be display on the Q desktop "dashboard mode" and the Q Android app.
+Even without a real 5Q keyboard, you can play with Signals. 
+Signals will be display on the Q desktop "dashboard mode" and the Q Android app. 
 
 There are several possibilities to send signals to the 5Q keyboard:
  
@@ -45,8 +46,8 @@ At this point of the development, we would like to ask the community for input o
  Please use the forum to do this: http://qforum.daskeyboard.com.
  
 
-## Roadmap
-### Comming soon
+## Roadmap 
+Please note that we do not provide release dates, so no need to ask.
  - Mac desktop app
  - Multi-key signals 
  - More lighting effects
