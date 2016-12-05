@@ -261,7 +261,7 @@ Our desktop and Android applications are connected to our server via WebSockets:
 
 ### Signals
 
-The WebSockets endpoint for Signals is the following: ws://q.daskeyboard.com/myHandlerSignal
+The WebSockets endpoint for Signals is the following: ws://q.daskeyboard.com/ws/signal.
 In order to be authenticated, you need to send your client id ("clientId: XXX") and your token ("accessToken: XXX").
 
 ### Profiles
