@@ -34,9 +34,8 @@ Signals will be display on the Q desktop "dashboard mode" and the Q Android app.
 There are several possibilities to send signals to the 5Q keyboard:
  
  - Zapier (https://zapier.com): use Zapier clould platform to create zaps (like IFTTT recipes). 
- Select the Action called "Q-App". Zapier will create signals based on triggers such as
-  emails, Facebook events, even new Youtube videos and much more.
- 
+ Select the Action called "Das Keyboard Q". Zapier will create signals based on triggers such as
+  emails, Facebook events, even new Youtube videos and much more. The app is currently working with invitations only, here is the link to access it: https://zapier.com/developer/invite/52117/405de8fe06af52ed61e988767cb33467/. 
  - TODO local API: see documentation at https://github.com/DasKeyboard/q/blob/master/README.md.
  - TODO Q cloud API: see documentation at https://github.com/DasKeyboard/q/blob/master/q-api-doc.md.
 
