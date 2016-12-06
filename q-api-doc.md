@@ -10,7 +10,8 @@ PORT=$(cat ~/.quio/q-api-port.txt)
 
 ## Authentication: Oauth2
 
-The Das Keyboard Q server uses Oauth2 authentication (https://oauth.net/2/), so in order to perform a requests, you will need to send a token. But first, you will need to use your client credentials. 
+The Das Keyboard Q Cloud service uses Oauth2 authentication (https://oauth.net/2/), so in order to perform a request, you will need to send a token, which will require the use of your client credentials. Indeed, once a user account is created on the Q Cloud service, a client is automatically generated with the name "User_X" where X is a unique id associated to the user.
+For example, if Bob signs up to the Q Cloud and has the id 87, a client will be generated for him with the name "User_87".
 
 ### Getting your Oauth credentials
 
