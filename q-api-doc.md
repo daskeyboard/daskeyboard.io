@@ -245,7 +245,7 @@ Each Signal is a JSON object with the following format:
     "isMuted": "indicates if the Signal has been muted (boolean)",
     "isArchived": "indicates if the Signal has been archived (boolean)",
     "shouldNotify": "indicates if the Signal should notify the user when received (boolean)",
-    "origin": "origin of the Signal (string)",
+    "clientName": "name of the Client who created the Signal (string)",
     "message": "message of the Signal (string)",
     "readAt": "time at which the Signal has been read (long: epoch time, can be null)",
     "createdAt": "time at which the Signal has been created (long: epoch time)",
