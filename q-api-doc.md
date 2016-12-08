@@ -195,7 +195,7 @@ Required fields:
 **name**: string - name of Signal, e.g. "Apple Stock increase".
 **pid** string - pid of the device, e.g. "DK5QPID".
 **zoneId** string - id of the zone, e.g. "KEY_A".
-**color** string which has to begin by the character '#' and be followed by 3 or 6 hexadecimal digits - color of the Signal (default: "#FF0"), e.g. "#008000".
+**color** string which has to begin by the character '#' and be followed by 3 or 6 hexadecimal digits - color of the Signal, e.g. "#008000".
 
 Optional fields:
 **message** string - message of Signal (default: empty string ""), e.g. "Lucky you! Apple stock is greater than $500".
