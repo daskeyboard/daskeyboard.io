@@ -33,7 +33,7 @@ There are several possibilities to send signals to the 5Q keyboard:
  
  - Zapier (https://zapier.com): use Zapier clould platform to create zaps (like IFTTT recipes). 
  Select the Action called "Das Keyboard Q". Zapier will create signals based on triggers such as
-  emails, Facebook events, even new Youtube videos and much more. The app is currently working with invitations only, here is the link to access it: https://zapier.com/developer/invite/52424/e327f79c4c49dcec203949baaaa59c61/. 
+  emails, Facebook events, even new Youtube videos and much more. The app is currently working with invitations only, here is the link to access it: https://zapier.com/developer/invite/52426/27c31e8313e9725b1ce208245014c1f8/. 
  - API: see documentation at https://github.com/DasKeyboard/q/blob/master/q-api-doc.md.
 
 
