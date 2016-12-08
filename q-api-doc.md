@@ -183,7 +183,7 @@ Apple Stock > $500 => set A key to green.
 Creates a Signal with the given attributes.
 Example of simple Signal:
 ```sh
-curl -H 'Content-Type: application/json' -H 'Authorization: Bearer ACCESS_TOKEN' -X POST http://q.daskeyboard.com/api/1.0/signal/CLIENT_ID -d '{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "KEY_A"}'
+curl -H 'Content-Type: application/json' -H 'Authorization: Bearer ACCESS_TOKEN' -X POST http://q.daskeyboard.com/api/1.0/signal/CLIENT_ID -d '{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "KEY_A", "color": "#008000"}'
 ```
 
 Example of more detailed Signal:
@@ -195,11 +195,11 @@ Required fields:
 **name**: string - name of Signal, e.g. "Apple Stock increase".
 **pid** string - pid of the device, e.g. "DK5QPID".
 **zoneId** string - id of the zone, e.g. "KEY_A".
+**color** string which has to begin by the character '#' and be followed by 3 or 6 hexadecimal digits - color of the Signal (default: "#FF0"), e.g. "#008000".
 
 Optional fields:
 **message** string - message of Signal (default: empty string ""), e.g. "Lucky you! Apple stock is greater than $500".
 **effect** string - effect of the Signal (default: "SET_COLOR"), e.g. "BLINK".
-**color** string which has to begin by the character '#' and be followed by 3 or 6 hexadecimal digits - color of the Signal (default: "#FF0"), e.g. "#008000".
 **shouldNotify** boolean - indicates if the applications should create a notification when the Signal is received, only if it has not been read or archived (default: false), e.g. true.
 **isRead** boolean - indicates if the Signal has been read (default: false), e.g. true.
 **isArchived** boolean - indicates if the Signal has been archived (default: false), e.g. true.
