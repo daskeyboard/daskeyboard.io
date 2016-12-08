@@ -183,12 +183,12 @@ Apple Stock > $500 => set A key to green.
 Creates a Signal with the given attributes.
 Example of simple Signal:
 ```sh
-curl -H 'Content-Type: application/json' -H 'Authorization: Bearer ACCESS_TOKEN' -X POST http://q.daskeyboard.com/api/1.0/signal/CLIENT_ID -d '{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "KEY_A", "color": "#008000"}'
+curl -H 'Content-Type: application/json' -H 'Authorization: Bearer ACCESS_TOKEN' -X POST http://q.daskeyboard.com/api/1.0/signal -d '{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "KEY_A", "color": "#008000"}'
 ```
 
 Example of more detailed Signal:
 ```sh
-curl -H 'Content-Type: application/json' -H 'Authorization: Bearer ACCESS_TOKEN' -X POST http://q.daskeyboard.com/api/1.0/signal/CLIENT_ID -d '{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "KEY_A", "message": "It worked", "effect": "BLINK", "color": "#008000", "shouldNotify": true, "isRead": true, "isArchived": true, "isMuted": true}'
+curl -H 'Content-Type: application/json' -H 'Authorization: Bearer ACCESS_TOKEN' -X POST http://q.daskeyboard.com/api/1.0/signal -d '{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "KEY_A", "message": "It worked", "effect": "BLINK", "color": "#008000", "shouldNotify": true, "isRead": true, "isArchived": true, "isMuted": true}'
 ```
 
 Required fields:
