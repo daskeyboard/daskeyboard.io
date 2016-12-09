@@ -1,14 +1,13 @@
 # Das Keyboard Q: REST API Documentation
 
 This document explains how to use the Q API. To create, update and delete Signals, two options are offered: sending the request to the Server or sending it directly to the desktop application.  
-Both the Cloud and the desktop software use the same routes; this documentation uses the Q Cloud URI, but to make the requests on the desktop software the `q.daskeyboard.com` has to be replaced by `localhost:$PORT`, where `$PORT` can be obtained in the file `~/.quio/q-api-port.txt`.
-
+The Cloud and the desktop software use similar routes, but you won't need to send authentication parameters locally. What's more, the desktop software is run on a random port, which can be retrieved in the file `~/.quio/q-api-port.txt`.
 In a terminal, the port can be obtained with the following:
 ```sh
 PORT=$(cat ~/.quio/q-api-port.txt)
 ```
 
-## Authentication: Oauth2
+## Authentication: Oauth2 (Cloud only)
 
 The Das Keyboard Q Cloud service uses Oauth2 authentication (https://oauth.net/2/), so in order to perform a request, you will need to send a token, which will require the use of your client credentials. Indeed, once a user account is created on the Q Cloud service, a client is automatically generated with the name "User_X" where X is a unique id associated to the user.
 For example, if Bob signs up to the Q Cloud and has the id 87, a client will be generated for him with the name "User_87".
@@ -68,7 +67,7 @@ curl -X POST -H 'Authorization: Bearer ACCESS_TOKEN' -H 'Content-Type: applicati
 ```
 Parameters required: ACCESS_TOKEN, CLIENT_NAME. If the operation succeeds, you should receive a 200 response.
 
-## Endpoints
+## Endpoints  (Cloud only)
 For the following requests, you will need to replace ACCESS_TOKEN by your own token, obtained with the above instructions.
 
 ### Devices Definitions
@@ -173,7 +172,7 @@ Each JSON object will have the structure:
 }
 ```
 
-## Signals
+## Signals  (Cloud and local)
 
 ### Creating a Signal
 
@@ -181,14 +180,22 @@ The DasKeyboard 5Q RG keys can be controlled via Signals. An example of Signal w
 Apple Stock > $500 => set A key to green.
 
 Creates a Signal with the given attributes.
-Example of simple Signal:
+Example of simple Signal (Cloud):
 ```sh
 curl -H 'Content-Type: application/json' -H 'Authorization: Bearer ACCESS_TOKEN' -X POST http://q.daskeyboard.com/api/1.0/signal -d '{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "KEY_A", "color": "#008000"}'
 ```
+Example of simple Signal (local):
+```sh
+curl -H 'Content-Type: application/json' -X POST http://localhost:$PORT/api/1.0/signal -d '{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "KEY_A", "color": "#008000"}'
+```
 
-Example of more detailed Signal:
+Example of more detailed Signal (Cloud):
 ```sh
 curl -H 'Content-Type: application/json' -H 'Authorization: Bearer ACCESS_TOKEN' -X POST http://q.daskeyboard.com/api/1.0/signal -d '{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "KEY_A", "message": "It worked", "effect": "BLINK", "color": "#008000", "shouldNotify": true, "isRead": true, "isArchived": true, "isMuted": true}'
+```
+Example of more detailed Signal (local):
+```sh
+curl -H 'Content-Type: application/json' -X POST http://localhost:$PORT/api/1.0/signal -d '{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "KEY_A", "message": "It worked", "effect": "BLINK", "color": "#008000", "shouldNotify": true, "isRead": true, "isArchived": true, "isMuted": true}'
 ```
 
 Required fields:
