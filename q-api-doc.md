@@ -23,17 +23,17 @@ Parameters required: EMAIL and PASSWORD.
 
 ### Getting your Oauth Token 
 
-Use the following command to obtain an access token.
+Use the following command to obtain an access token.  
 First, you need to ask a code:
 ```sh
 curl -X POST -d 'client_id=CLIENT_ID' -d 'email=EMAIL' -d 'password=PASSWORD' http://q.daskeyboard.com/oauth/code
 ```
-Parameters required: CLIENT_ID, EMAIL and PASSWORD.
+Parameters required: CLIENT_ID, EMAIL and PASSWORD.  
 You should receive a JSON object with a code (if not, an error should be received). You can then ask an access token:
 ```sh
 curl -X POST -d 'client_id=CLIENT_ID' -d 'grant_type=access_token' -d 'code=CODE' http://q.daskeyboard.com/oauth/token
 ```
-Parameters required: CLIENT_ID and CODE.
+Parameters required: CLIENT_ID and CODE.  
 The response contains a JSON object with your access_token, refresh_token and your user_id.
 
 ### Refreshing your Oauth Token 
@@ -46,12 +46,12 @@ Parameters required: CLIENT_ID and REFRESH_TOKEN.
 
 ### Getting the list of authorized Clients
 
-In order for 3rd parties, called Clients (e.g. Twitter, Zappier), to send Signals to your Q CLoud account, you need to authorize them.
+In order for 3rd parties, called Clients (e.g. Twitter, Zappier), to send Signals to your Q CLoud account, you need to authorize them.  
 The following command gives the list of authorized Clients.
 ```sh
 curl -X GET -H 'Authorization: Bearer ACCESS_TOKEN' http://q.daskeyboard.com/api/1.0/users/authorized_clients
 ```
-Parameters required: ACCESS_TOKEN.
+Parameters required: ACCESS_TOKEN.  
 You should receive a JSON Array, with each JSON object having the structure:
 ```json
 {
@@ -149,7 +149,7 @@ Returns the list of a device's zones (JSON Array).
 ```sh
 curl -H 'Authorization: Bearer ACCESS_TOKEN' -X GET http://q.daskeyboard.com/api/1.0/PID/zones
 ```
-The GET parameter **PID** must correspond to an existing device's pid.
+The GET parameter **PID** must correspond to an existing device's pid.  
 Each JSON object will have the structure:
 ```json
 {
@@ -163,7 +163,7 @@ Returns the list of a available effects for a device (JSON Array).
 ```sh
 curl -H 'Authorization: Bearer ACCESS_TOKEN' -X GET http://q.daskeyboard.com/api/1.0/PID/effects
 ```
-The GET parameter **PID** must correspond to an existing device's pid.
+The GET parameter **PID** must correspond to an existing device's pid.  
 Each JSON object will have the structure:
 ```json
 {
@@ -176,10 +176,10 @@ Each JSON object will have the structure:
 
 ### Creating a Signal
 
-The DasKeyboard 5Q RG keys can be controlled via Signals. An example of Signal would be: 
+The DasKeyboard 5Q RG keys can be controlled via Signals. An example of Signal would be:  
 Apple Stock > $500 => set A key to green.
 
-Creates a Signal with the given attributes.
+Creates a Signal with the given attributes.  
 Example of simple Signal (Cloud):
 ```sh
 curl -H 'Content-Type: application/json' -H 'Authorization: Bearer ACCESS_TOKEN' -X POST http://q.daskeyboard.com/api/1.0/signals -d '{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "KEY_A", "color": "#008000"}'
@@ -198,20 +198,20 @@ Example of more detailed Signal (local):
 curl -H 'Content-Type: application/json' -X POST http://localhost:$PORT/api/1.0/signals -d '{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "KEY_A", "message": "It worked", "effect": "BLINK", "color": "#008000", "shouldNotify": true, "isRead": true, "isArchived": true, "isMuted": true}'
 ```
 
-Required fields:
-**name**: string - name of Signal, e.g. "Apple Stock increase".
-**pid** string - pid of the device, e.g. "DK5QPID".
-**zoneId** string - id of the zone, e.g. "KEY_A".
-**color** string which has to begin by the character '#' and be followed by 3 or 6 hexadecimal digits - color of the Signal, e.g. "#008000".
-
-Optional fields:
-**message** string - message of Signal (default: empty string ""), e.g. "Lucky you! Apple stock is greater than $500".
-**effect** string - effect of the Signal (default: "SET_COLOR"), e.g. "BLINK".
-**shouldNotify** boolean - indicates if the applications should create a notification when the Signal is received, only if it has not been read or archived (default: false), e.g. true.
-**isRead** boolean - indicates if the Signal has been read (default: false), e.g. true.
-**isArchived** boolean - indicates if the Signal has been archived (default: false), e.g. true.
-**isMuted** boolean - indicates if the Signal has been muted (default: false), e.g. true.
-
+Required fields:  
+**name**: string - name of Signal, e.g. "Apple Stock increase".  
+**pid** string - pid of the device, e.g. "DK5QPID".  
+**zoneId** string - id of the zone, e.g. "KEY_A".  
+**color** string which has to begin by the character '#' and be followed by 3 or 6 hexadecimal digits - color of the Signal, e.g. "#008000".  
+  
+Optional fields:  
+**message** string - message of Signal (default: empty string ""), e.g. "Lucky you! Apple stock is greater than $500".  
+**effect** string - effect of the Signal (default: "SET_COLOR"), e.g. "BLINK".  
+**shouldNotify** boolean - indicates if the applications should create a notification when the Signal is received, only if it has not been read or archived (default: false), e.g. true.  
+**isRead** boolean - indicates if the Signal has been read (default: false), e.g. true.  
+**isArchived** boolean - indicates if the Signal has been archived (default: false), e.g. true.  
+**isMuted** boolean - indicates if the Signal has been muted (default: false), e.g. true.  
+  
 The response is a JSON object containing the id of the signal created.
 
 ### Getting the Signals
