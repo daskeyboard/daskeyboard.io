@@ -8,11 +8,11 @@ password="YOUR_PASSWORD"
 
 Get your Oauth client id:
 ```sh
-clientId=$(curl -X POST -H 'Content-Type: application/json' -d '{"email": "$email", "password": "$password"}' http://q.daskeyboard.com/oauth/credentials | sed -rn 's/^\{"clientId":"([0-9a-zA-Z]+)",".*/\1/p')
+clientId=$(curl -X POST -H 'Content-Type: application/json' -d '{"email": '$email', "password": '$password'}' http://q.daskeyboard.com/oauth/credentials | sed -rn 's/^\{"clientId":"([0-9a-zA-Z]+)",".*/\1/p')
 ```
 Get the Oauth code:
 ```sh
-code=$(curl -X POST -d "client_id=$clientId" -d "email=$email" -d "password=$password" http://k.daskeyboard.com/oauth/code | sed -rn 's/\^{"code":([0-9]*)\}/\1/p')
+code=$(curl -X POST -d "client_id=$clientId" -d "email=$email" -d "password=$password" http://k.daskeyboard.com/oauth/code | sed -rn 's/^\{"code":([0-9]*)\}/\1/p')
 ```
 Get the Oauth access_token:
 ```sh
