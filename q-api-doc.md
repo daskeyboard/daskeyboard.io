@@ -35,6 +35,7 @@ In a terminal, the port can be obtained with the following:
 ```sh
 PORT=$(cat ~/.quio/q-api-port.txt)
 ```
+For now, you need to be logged in to make local requests.
 
 ## Authentication: Oauth2 (Cloud only)
 
