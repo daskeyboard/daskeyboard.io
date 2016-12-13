@@ -1,12 +1,22 @@
 # Quick Start: Das Keyboard Q REST API Documentation
 
+Save your account credentials:
+```sh
+email="YOUR_EMAIL"
+password="YOUR_PASSWORD"
+```
+
+Get your Oauth client id:
+```sh
+clientId=$(curl -X POST -H 'Content-Type: application/json' -d '{"email": "$email", "password": "$password"}' http://q.daskeyboard.com/oauth/credentials | sed -rn 's/^\{"clientId":"([0-9a-zA-Z]+)",".*/\1/p')
+```
 Get the Oauth code:
 ```sh
-code=$(curl -X POST -d "client_id=YOUR_CLIENT_ID" -d "email=YOUR_EMAIL" -d "password=YOUR_PASSWORD" http://k.daskeyboard.com/oauth/code | sed -rn 's/\^{"code":([0-9]*)\}/\1/p')
+code=$(curl -X POST -d "client_id=$clientId" -d "email=$email" -d "password=$password" http://k.daskeyboard.com/oauth/code | sed -rn 's/\^{"code":([0-9]*)\}/\1/p')
 ```
 Get the Oauth access_token:
 ```sh
-token=$(curl -X POST -d "client_id=YOUR_CLIENT_ID" -d "grant_type=access_token" -d "code=$code" http://k.daskeyboard.com/oauth/token | sed -rn 's/^\{"access_token":"([0-9a-zA-Z]+)",".*/\1/p')
+token=$(curl -X POST -d "client_id=$clientId" -d "grant_type=access_token" -d "code=$code" http://k.daskeyboard.com/oauth/token | sed -rn 's/^\{"access_token":"([0-9a-zA-Z]+)",".*/\1/p')
 ```
 Create your Signal:
 ```sh
