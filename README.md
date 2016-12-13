@@ -10,7 +10,8 @@ Q clients can be downloaded from the Q website:
   http://q.daskeyboard.com/
 
 Q clients are available for the following platforms:
- - Q Desktop: Linux, Windows (Mac coming soon).
+ - Q Desktop: Linux, Windows
+ - Mac
  - Q Mobile: Android
  
 ### Create a Das Keyboard Q account (invitation only)
