@@ -202,9 +202,9 @@ Each JSON object will have the structure:
 }
 ```
 
-## Signals  (Cloud and local)
+## Signals 
 
-### Creating a Signal
+### Creating a Signal (Cloud and local)
 
 The DasKeyboard 5Q RG keys can be controlled via Signals. An example of Signal would be:  
 Apple Stock > $500 => set A key to green.
@@ -244,7 +244,7 @@ Optional fields:
   
 The response is a JSON object containing the id of the signal created.
 
-### Getting the Signals
+### Getting the Signals (Cloud only)
 ```sh
 curl -H 'Authorization: Bearer ACCESS_TOKEN' -X GET http://q.daskeyboard.com/api/1.0/signals
 ```
@@ -290,14 +290,14 @@ Each Signal is a JSON object with the following format:
 }
 ```
 
-### Updating a Signal
+### Updating a Signal (Cloud only)
 Only the fields **isMuted**, **isRead** and **isArchived** can be updated.
 ```sh
 curl -H 'Content-Type: application/json' -H 'Authorization: Bearer ACCESS_TOKEN' -X PATCH http://q.daskeyboard.com/api/1.0/signals/ID/status -d '{"isRead": true, "isArchived": false}'
 ```
 The GET parameter **ID** must correspond to an existing Signal's id.
 
-### Deleting a Signal
+### Deleting a Signal (Cloud only)
 
 ```sh
 curl -H 'Authorization: Bearer ACCESS_TOKEN' -X DELETE http://q.daskeyboard.com/api/1.0/signals/ID
