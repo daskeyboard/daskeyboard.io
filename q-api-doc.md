@@ -1,24 +1,28 @@
 # Quick Start: Das Keyboard Q REST API Documentation
 
-Save your account credentials:
+The two steps of the quick start are:  
+- Get authentication info  (from your signup at http://q.daskeyboard.com)
+- Send a Signal to your Das Keyboard 5Q  
+
+Setup of account credentials:
 ```sh
 email="YOUR_EMAIL"
 password="YOUR_PASSWORD"
 ```
 
-Get your Oauth client id:
+Getting Oauth client id:
 ```sh
 clientId=$(curl -X POST -H 'Content-Type: application/json' -d '{"email": '$email', "password": '$password'}' http://q.daskeyboard.com/oauth/credentials | sed -rn 's/^\{"clientId":"([0-9a-zA-Z]+)",".*/\1/p')
 ```
-Get the Oauth code:
+Getting Oauth code:
 ```sh
 code=$(curl -X POST -d "client_id=$clientId" -d "email=$email" -d "password=$password" http://k.daskeyboard.com/oauth/code | sed -rn 's/^\{"code":([0-9]*)\}/\1/p')
 ```
-Get the Oauth access_token:
+Getting Oauth access_token:
 ```sh
 token=$(curl -X POST -d "client_id=$clientId" -d "grant_type=access_token" -d "code=$code" http://k.daskeyboard.com/oauth/token | sed -rn 's/^\{"access_token":"([0-9a-zA-Z]+)",".*/\1/p')
 ```
-Create your Signal:
+Sending of a first Signal:
 ```sh
 curl -H "Content-Type: application/json" -H "Authorization: Bearer $token" -X POST http://q.daskeyboard.com/api/1.0/signals -d '{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "KEY_A", "color": "#008000"}'
 ```
