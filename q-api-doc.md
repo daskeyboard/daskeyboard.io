@@ -1,4 +1,19 @@
-# Das Keyboard Q: REST API Documentation
+# Das Keyboard Q: REST API Documentation (Quick Start)
+
+Get the Oauth code:
+```sh
+code=$(curl -X POST -d "client_id=YOUR_CLIENT_ID" -d "email=YOUR_EMAIL" -d "password=YOUR_PASSWORD" http://k.daskeyboard.com/oauth/code | sed -rn 's/\^{"code":([0-9]*)\}/\1/p')
+```
+Get the Oauth access_token:
+```sh
+token=$(curl -X POST -d "client_id=YOUR_CLIENT_ID" -d "grant_type=access_token" -d "code=$code" http://k.daskeyboard.com/oauth/token | sed -rn 's/^\{"access_token":"([0-9a-zA-Z]+)",".*/\1/p')
+```
+Create your Signal:
+```sh
+curl -H "Content-Type: application/json" -H "Authorization: Bearer $token" -X POST http://q.daskeyboard.com/api/1.0/signals -d '{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "KEY_A", "color": "#008000"}'
+```
+
+# Das Keyboard Q: REST API Documentation (Complete)
 
 This document explains how to use the Q API. To create, update and delete Signals, two options are offered: sending the request to the Server or sending it directly to the desktop application.  
 The Cloud and the desktop software use similar routes, but you won't need to send authentication parameters locally. What's more, the desktop software is run on a random port, which can be retrieved in the file `~/.quio/q-api-port.txt`.
