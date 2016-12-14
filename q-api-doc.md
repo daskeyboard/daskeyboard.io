@@ -9,11 +9,27 @@ Setup of account credentials (client credentials can be found here, once logged 
 clientId="YOUR_CLIENT_ID"
 clientSecret="YOUR_CLIENT_SECRET"
 ```
+
+## Getting a token
+To get token, you have multiple options.
+
+### Grant Type: client_credentials
+
 Getting Oauth access_token:
 ```sh
 token=$(curl -X POST -d "client_id=$clientId" -d "client_secret=$clientSecret" -d "grant_type=client_credentials" http://q.daskeyboard.com/oauth/1.2/token | sed -rn 's/^\{"access_token":"([0-9a-zA-Z]+)",".*/\1/p')
 ```
-Sending of a first Signal:
+
+### Grant Type: authorization_code
+
+To authenticate a user to your application, you need to make a GET request at the following address: http://q.daskeyboard.com/oauth/auth?client_id=XXX&redirect_uri=XXX. Two GET parameters are required:
+- "client_id": your client id, obtained at http://q.daskeyboard.com/account
+- "redirect_uri": the URI on which the browser will be redirected. To this address will be added a code (as GET parameter "code").
+
+Then you can make a POST request to http://q.daskeyboard.com/oauth/1.2/token?grant_type=authorization_code&client_id=XXX&code=XXX to get your access_token and your refresh_token.
+
+
+## Sending of a first Signal:
 ```sh
 curl -H "Content-Type: application/json" -H "Authorization: Bearer $token" -X POST http://q.daskeyboard.com/api/1.0/signals -d '{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "KEY_A", "color": "#008000"}'
 ```
