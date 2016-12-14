@@ -20,6 +20,15 @@ Getting Oauth access_token:
 token=$(curl -X POST -d "client_id=$clientId" -d "client_secret=$clientSecret" -d "grant_type=client_credentials" http://q.daskeyboard.com/oauth/1.2/token | sed -rn 's/^\{"access_token":"([0-9a-zA-Z]+)",".*/\1/p')
 ```
 
+### Grant Type: password
+
+Getting Oauth access_token:
+```sh
+password="YOUR_PASSWORD"
+email="YOUR_EMAIL"
+token=$(curl -X POST -d "email=$email" -d "password=$password" -d "grant_type=password" http://localhost:8094/oauth/1.2/token | sed -rn 's/^\{"access_token":"([0-9a-zA-Z]+)",".*/\1/p')
+```
+
 ### Grant Type: authorization_code
 
 To authenticate a user to your application, you need to make a GET request at the following address: http://q.daskeyboard.com/oauth/auth?client_id=XXX&redirect_uri=XXX. Two GET parameters are required:
