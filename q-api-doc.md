@@ -26,7 +26,7 @@ Getting Oauth access_token:
 ```sh
 password="YOUR_PASSWORD"
 email="YOUR_EMAIL"
-token=$(curl -X POST -d "email=$email" -d "password=$password" -d "grant_type=password" http://localhost:8094/oauth/1.2/token | sed -rn 's/^\{"access_token":"([0-9a-zA-Z]+)",".*/\1/p')
+token=$(curl -X POST -d "email=$email" -d "password=$password" -d "grant_type=password" http://q.daskeyboard.com/oauth/1.2/token | sed -rn 's/^\{"access_token":"([0-9a-zA-Z]+)",".*/\1/p')
 ```
 
 ### Grant Type: authorization_code
