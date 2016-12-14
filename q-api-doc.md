@@ -4,16 +4,14 @@ The two steps of the quick start are:
 - Get authentication info  (from your signup at http://q.daskeyboard.com)
 - Send a Signal to your Das Keyboard 5Q  
 
-Setup of account credentials:
+Setup of account credentials (client credentials can be found here, once logged id: http://q.daskeyboard.com/account)
 ```sh
 email="YOUR_EMAIL"
 password="YOUR_PASSWORD"
+clientId="YOUR_CLIENT_ID"
+clientSecret="YOUR_CLIENT_SECRET"
 ```
 
-Getting Oauth client id:
-```sh
-clientId=$(curl -X POST -H 'Content-Type: application/json' -d '{"email": '$email', "password": '$password'}' http://q.daskeyboard.com/oauth/credentials | sed -rn 's/^\{"clientId":"([0-9a-zA-Z]+)",".*/\1/p')
-```
 Getting Oauth code:
 ```sh
 code=$(curl -X POST -d "client_id=$clientId" -d "email=$email" -d "password=$password" http://k.daskeyboard.com/oauth/code | sed -rn 's/^\{"code":([0-9]*)\}/\1/p')
