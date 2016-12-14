@@ -14,11 +14,11 @@ clientSecret="YOUR_CLIENT_SECRET"
 
 Getting Oauth code:
 ```sh
-code=$(curl -X POST -d "client_id=$clientId" -d "email=$email" -d "password=$password" http://k.daskeyboard.com/oauth/code | sed -rn 's/^\{"code":([0-9]*)\}/\1/p')
+code=$(curl -X POST -d "client_id=$clientId" -d "email=$email" -d "password=$password" http://q.daskeyboard.com/oauth/code | sed -rn 's/^\{"code":([0-9]*)\}/\1/p')
 ```
 Getting Oauth access_token:
 ```sh
-token=$(curl -X POST -d "client_id=$clientId" -d "grant_type=access_token" -d "code=$code" http://k.daskeyboard.com/oauth/token | sed -rn 's/^\{"access_token":"([0-9a-zA-Z]+)",".*/\1/p')
+token=$(curl -X POST -d "client_id=$clientId" -d "grant_type=access_token" -d "code=$code" http://q.daskeyboard.com/oauth/token | sed -rn 's/^\{"access_token":"([0-9a-zA-Z]+)",".*/\1/p')
 ```
 Sending of a first Signal:
 ```sh
