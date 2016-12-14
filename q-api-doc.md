@@ -6,15 +6,13 @@ The two steps of the quick start are:
 
 Setup of account credentials (client credentials can be found here, once logged id: http://q.daskeyboard.com/account)
 ```sh
-email="YOUR_EMAIL"
-password="YOUR_PASSWORD"
 clientId="YOUR_CLIENT_ID"
 clientSecret="YOUR_CLIENT_SECRET"
 ```
 
 Getting Oauth code:
 ```sh
-code=$(curl -X POST -d "client_id=$clientId" -d "email=$email" -d "password=$password" http://q.daskeyboard.com/oauth/code | sed -rn 's/^\{"code":([0-9]*)\}/\1/p')
+code=$(curl -X POST -d "client_id=$clientId" -d "client_secret=$clientSecret" http://q.daskeyboard.com/oauth/1.1/code | sed -rn 's/^\{"code":([0-9]*)\}/\1/p')
 ```
 Getting Oauth access_token:
 ```sh
@@ -42,24 +40,19 @@ For example, if Bob signs up to the Q Cloud and has the id 87, a client will be 
 
 ### Getting your Oauth credentials
 
-When you signed up on http://q.daskeyboard.com/, client credentials have been generated for you. To get them, you can use the following command:
-
-```sh
-curl -X POST -H 'Content-Type: application/json' -d '{"email": "EMAIL", "password": "PASSWORD"}' http://q.daskeyboard.com/oauth/credentials
-```
-Parameters required: EMAIL and PASSWORD.
+When you signed up on http://q.daskeyboard.com/, client credentials have been generated for you. To get them, have a look at this page: http://q.daskeyboard.com/account.
 
 ### Getting your Oauth Token 
 
 Use the following command to obtain an access token.  
 First, you need to ask a code:
 ```sh
-curl -X POST -d 'client_id=CLIENT_ID' -d 'email=EMAIL' -d 'password=PASSWORD' http://q.daskeyboard.com/oauth/code
+curl -X POST -d 'client_id=CLIENT_ID' -d 'client_secret=CLIENT_SECRET' http://q.daskeyboard.com/oauth/1.1/code
 ```
-Parameters required: CLIENT_ID, EMAIL and PASSWORD.  
+Parameters required: CLIENT_ID and CLIENT_SECRET.  
 You should receive a JSON object with a code (if not, an error should be received). You can then ask an access token:
 ```sh
-curl -X POST -d 'client_id=CLIENT_ID' -d 'grant_type=access_token' -d 'code=CODE' http://q.daskeyboard.com/oauth/token
+curl -X POST -d 'client_id=CLIENT_ID' -d 'grant_type=access_token' -d 'code=CODE' http://q.daskeyboard.com/oauth/1.1/token
 ```
 Parameters required: CLIENT_ID and CODE.  
 The response contains a JSON object with your access_token, refresh_token and your user_id.
@@ -68,7 +61,7 @@ The response contains a JSON object with your access_token, refresh_token and yo
 
 An access token expirex after a certain time, so you will probably need to get a new one.
 ```sh
-curl -X POST -d 'client_id=CLIENT_ID' -d 'grant_type=refresh_token' -d 'refresh_token=REFRESH_TOKEN' http://q.daskeyboard.com/oauth/refresh_token
+curl -X POST -d 'client_id=CLIENT_ID' -d 'grant_type=refresh_token' -d 'refresh_token=REFRESH_TOKEN' http://q.daskeyboard.com/oauth/1.1/refresh_token
 ```
 Parameters required: CLIENT_ID and REFRESH_TOKEN.
 
