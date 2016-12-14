@@ -27,6 +27,9 @@ To authenticate a user to your application, you need to make a GET request at th
 - "redirect_uri": the URI on which the browser will be redirected. To this address will be added a code (as GET parameter "code").
 
 Then you can make a POST request to http://q.daskeyboard.com/oauth/1.2/token?grant_type=authorization_code&client_id=XXX&code=XXX to get your access_token and your refresh_token.
+```sh
+token=$(curl -X POST -d "client_id=$clientId" -d "code=YOUR_CODE" -d "grant_type=authorization_code" http://q.daskeyboard.com/oauth/1.2/token | sed -rn 's/^\{"access_token":"([0-9a-zA-Z]+)",".*/\1/p')
+```
 
 
 ## Sending of a first Signal:
