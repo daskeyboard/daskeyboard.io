@@ -2,7 +2,7 @@
 
 *Warning:* the Q software is in very early stage. It's buggy, incomplete, and poorly documented.
 That means it is a start. However it is improving fast. Only use it if you are 
-conformtable being a beta tester and contributing useful feedback.
+comfortable being a beta tester and contributing useful feedback.
 
 ## Installation
 ### Download and install Q clients software
