@@ -65,13 +65,34 @@ For example, if Bob signs up to the Q Cloud and has the id 87, a client will be 
 
 When you signed up on http://q.daskeyboard.com/, client credentials have been generated for you. To get them, have a look at this page: http://q.daskeyboard.com/account.
 
-### Getting your Oauth Token 
+#### Grant Type: client_credentials
 
-Use the following command to obtain an access token.
+Getting Oauth access_token:
 ```sh
-curl -X POST -d "client_id=$clientId" -d "client_secret=$clientSecret" -d "grant_type=client_credentials" http://q.daskeyboard.com/oauth/1.2/token
+curl -X POST -H "Content-Type: application/json" -d '{"clientId": "'$clientId'", "clientSecret": "'$clientSecret'", "grantType": "client_credentials"}' http://q.daskeyboard.com/oauth/1.3/token
 ```
-Parameters required: CLIENT_ID and CLIENT_SECRET.  
+
+#### Grant Type: password
+
+Getting Oauth access_token:
+```sh
+password="YOUR_PASSWORD"
+email="YOUR_EMAIL"
+curl -X POST -H "Content-Type: application/json" -d '{"email": "'$email'", "password": "'$password'", "grantType": "password"}' http://q.daskeyboard.com/oauth/1.3/token 
+```
+
+#### Grant Type: authorization_code
+
+To authenticate a user to your application, you need to make a GET request at the following address: http://q.daskeyboard.com/oauth/auth?client_id=XXX&redirect_uri=XXX. Two GET parameters are required:
+- "client_id": your client id, obtained at http://q.daskeyboard.com/account
+- "redirect_uri": the URI on which the browser will be redirected. To this address will be added a code (as GET parameter "code").
+
+Then you can make a POST request to http://q.daskeyboard.com/oauth/1.2/token?grant_type=authorization_code&client_id=XXX&code=XXX to get your access_token and your refresh_token.
+```sh
+tcurl -X POST -H "Content-Type: application/json" -d '{"clientId": "'$clientId'", "code": "YOUR_CODE", "grantType": "authorization_code"}' http://q.daskeyboard.com/oauth/1.3/token
+```
+
+
 The response contains a JSON object with your access_token, refresh_token and your user_id.
 
 ### Refreshing your Oauth Token 
