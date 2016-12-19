@@ -19,6 +19,10 @@ Getting Oauth access_token:
 ```sh
 token=$(curl -X POST -H "Content-Type: application/json" -d '{"clientId": "'$clientId'", "clientSecret": "'$clientSecret'", "grantType": "client_credentials"}' http://q.daskeyboard.com/oauth/1.3/token | sed -rn 's/^\{"access_token":"([0-9a-zA-Z]+)",".*/\1/p')
 ```
+Getting Oauth refresh_token:
+```sh
+refresh_token=$(curl -X POST -H "Content-Type: application/json" -d '{"clientId": "'$clientId'", "clientSecret": "'$clientSecret'", "grantType": "client_credentials"}' http://q.daskeyboard.com/oauth/1.3/token | sed -rn 's/.*,"refresh_token":"([0-9a-zA-Z]+)",".*/\1/p')
+```
 
 ### Grant Type: password
 
@@ -28,7 +32,10 @@ password="YOUR_PASSWORD"
 email="YOUR_EMAIL"
 token=$(curl -X POST -H "Content-Type: application/json" -d '{"email": "'$email'", "password": "'$password'", "grantType": "password"}' http://q.daskeyboard.com/oauth/1.3/token | sed -rn 's/^\{"access_token":"([0-9a-zA-Z]+)",".*/\1/p')
 ```
-
+Getting Oauth refresh_token:
+```sh
+refresh_token=$(curl -X POST -H "Content-Type: application/json" -d '{"email": "'$email'", "password": "'$password'", "grantType": "password"}' http://q.daskeyboard.com/oauth/1.3/token | sed -rn 's/.*,"refresh_token":"([0-9a-zA-Z]+)",".*/\1/p')
+```
 ### Grant Type: authorization_code
 
 To authenticate a user to your application, you need to make a GET request at the following address: http://q.daskeyboard.com/oauth/auth?client_id=XXX&redirect_uri=XXX. Two GET parameters are required:
@@ -39,7 +46,10 @@ Then you can make a POST request to http://q.daskeyboard.com/oauth/1.2/token?gra
 ```sh
 token=$(curl -X POST -H "Content-Type: application/json" -d '{"clientId": "'$clientId'", "code": "YOUR_CODE", "grantType": "authorization_code"}' http://q.daskeyboard.com/oauth/1.3/token | sed -rn 's/^\{"access_token":"([0-9a-zA-Z]+)",".*/\1/p')
 ```
-
+Getting Oauth refresh_token:
+```sh
+refresh_token=$(curl -X POST -H "Content-Type: application/json" -d '{"clientId": "'$clientId'", "code": "YOUR_CODE", "grantType": "authorization_code"}' http://q.daskeyboard.com/oauth/1.3/token | sed -rn 's/.*,"refresh_token":"([0-9a-zA-Z]+)",".*/\1/p')
+```
 
 ## Sending of a first Signal:
 ```sh
