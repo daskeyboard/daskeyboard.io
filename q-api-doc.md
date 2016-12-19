@@ -23,31 +23,6 @@ Getting Oauth refresh_token:
 ```sh
 refresh_token=$(curl -X POST -H "Content-Type: application/json" -d '{"clientId": "'$clientId'", "clientSecret": "'$clientSecret'", "grantType": "client_credentials"}' http://q.daskeyboard.com/oauth/1.3/token | sed -rn 's/.*,"refresh_token":"([0-9a-zA-Z]+)",".*/\1/p')
 ```
-# Quick Start: Das Keyboard Q REST API Documentation
-
-The two steps of the quick start are:  
-- Get authentication info  (from your signup at http://q.daskeyboard.com)
-- Send a Signal to your Das Keyboard 5Q  
-
-Setup of account credentials (client credentials can be found here, once logged id: http://q.daskeyboard.com/account)
-```sh
-clientId="YOUR_CLIENT_ID"
-clientSecret="YOUR_CLIENT_SECRET"
-```
-
-## Getting a token
-To get token, you have multiple options.
-
-### Grant Type: client_credentials
-
-Getting Oauth access_token:
-```sh
-token=$(curl -X POST -H "Content-Type: application/json" -d '{"clientId": "'$clientId'", "clientSecret": "'$clientSecret'", "grantType": "client_credentials"}' http://q.daskeyboard.com/oauth/1.3/token | sed -rn 's/^\{"access_token":"([0-9a-zA-Z]+)",".*/\1/p')
-```
-Getting Oauth refresh_token:
-```sh
-refresh_token=$(curl -X POST -H "Content-Type: application/json" -d '{"clientId": "'$clientId'", "clientSecret": "'$clientSecret'", "grantType": "client_credentials"}' http://q.daskeyboard.com/oauth/1.3/token | sed -rn 's/.*,"refresh_token":"([0-9a-zA-Z]+)",".*/\1/p')
-```
 
 ### Grant Type: password
 
