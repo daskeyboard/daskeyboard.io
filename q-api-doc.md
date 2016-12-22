@@ -17,11 +17,11 @@ To get token, you have multiple options.
 
 Getting Oauth access_token:
 ```sh
-token=$(curl -X POST -H "Content-Type: application/json" -d '{"clientId": "'$clientId'", "clientSecret": "'$clientSecret'", "grantType": "client_credentials"}' http://q.daskeyboard.com/oauth/1.3/token | sed -rn 's/^\{"access_token":"([0-9a-zA-Z]+)",".*/\1/p')
+token=$(curl -X POST -H "Content-Type: application/json" -d '{"clientId": "'$clientId'", "clientSecret": "'$clientSecret'", "grantType": "client_credentials"}' http://q.daskeyboard.com/oauth/1.4/token | sed -rn 's/^\{"access_token":"([0-9a-zA-Z]+)",".*/\1/p')
 ```
 Getting Oauth refresh_token:
 ```sh
-refresh_token=$(curl -X POST -H "Content-Type: application/json" -d '{"clientId": "'$clientId'", "clientSecret": "'$clientSecret'", "grantType": "client_credentials"}' http://q.daskeyboard.com/oauth/1.3/token | sed -rn 's/.*,"refresh_token":"([0-9a-zA-Z]+)",".*/\1/p')
+refresh_token=$(curl -X POST -H "Content-Type: application/json" -d '{"clientId": "'$clientId'", "clientSecret": "'$clientSecret'", "grantType": "client_credentials"}' http://q.daskeyboard.com/oauth/1.4/token | sed -rn 's/.*,"refresh_token":"([0-9a-zA-Z]+)",".*/\1/p')
 ```
 
 ### Grant Type: password
@@ -30,11 +30,11 @@ Getting Oauth access_token:
 ```sh
 password="YOUR_PASSWORD"
 email="YOUR_EMAIL"
-token=$(curl -X POST -H "Content-Type: application/json" -d '{"email": "'$email'", "password": "'$password'", "grantType": "password"}' http://q.daskeyboard.com/oauth/1.3/token | sed -rn 's/^\{"access_token":"([0-9a-zA-Z]+)",".*/\1/p')
+token=$(curl -X POST -H "Content-Type: application/json" -d '{"email": "'$email'", "password": "'$password'", "grantType": "password"}' http://q.daskeyboard.com/oauth/1.4/token | sed -rn 's/^\{"access_token":"([0-9a-zA-Z]+)",".*/\1/p')
 ```
 Getting Oauth refresh_token:
 ```sh
-refresh_token=$(curl -X POST -H "Content-Type: application/json" -d '{"email": "'$email'", "password": "'$password'", "grantType": "password"}' http://q.daskeyboard.com/oauth/1.3/token | sed -rn 's/.*,"refresh_token":"([0-9a-zA-Z]+)",".*/\1/p')
+refresh_token=$(curl -X POST -H "Content-Type: application/json" -d '{"email": "'$email'", "password": "'$password'", "grantType": "password"}' http://q.daskeyboard.com/oauth/1.4/token | sed -rn 's/.*,"refresh_token":"([0-9a-zA-Z]+)",".*/\1/p')
 ```
 ### Grant Type: authorization_code
 
@@ -44,11 +44,11 @@ To authenticate a user to your application, you need to make a GET request at th
 
 Then you can make a POST request to http://q.daskeyboard.com/oauth/1.2/token?grant_type=authorization_code&client_id=XXX&code=XXX to get your access_token and your refresh_token.
 ```sh
-token=$(curl -X POST -H "Content-Type: application/json" -d '{"clientId": "'$clientId'", "code": "YOUR_CODE", "grantType": "authorization_code"}' http://q.daskeyboard.com/oauth/1.3/token | sed -rn 's/^\{"access_token":"([0-9a-zA-Z]+)",".*/\1/p')
+token=$(curl -X POST -H "Content-Type: application/json" -d '{"clientId": "'$clientId'", "code": "YOUR_CODE", "grantType": "authorization_code"}' http://q.daskeyboard.com/oauth/1.4/token | sed -rn 's/^\{"access_token":"([0-9a-zA-Z]+)",".*/\1/p')
 ```
 Getting Oauth refresh_token:
 ```sh
-refresh_token=$(curl -X POST -H "Content-Type: application/json" -d '{"clientId": "'$clientId'", "code": "YOUR_CODE", "grantType": "authorization_code"}' http://q.daskeyboard.com/oauth/1.3/token | sed -rn 's/.*,"refresh_token":"([0-9a-zA-Z]+)",".*/\1/p')
+refresh_token=$(curl -X POST -H "Content-Type: application/json" -d '{"clientId": "'$clientId'", "code": "YOUR_CODE", "grantType": "authorization_code"}' http://q.daskeyboard.com/oauth/1.4/token | sed -rn 's/.*,"refresh_token":"([0-9a-zA-Z]+)",".*/\1/p')
 ```
 
 ## Sending of a first Signal:
@@ -71,6 +71,15 @@ For now, you need to be logged in to make local requests.
 The Das Keyboard Q Cloud service uses Oauth2 authentication (https://oauth.net/2/), so in order to perform a request, you will need to send a token, which will require the use of your client credentials. Indeed, once a user account is created on the Q Cloud service, a client is automatically generated with the name "User_X" where X is a unique id associated to the user.
 For example, if Bob signs up to the Q Cloud and has the id 87, a client will be generated for him with the name "User_87".
 
+### Short note about data format
+All the responses sent by the server are in JSON format. However, we accept both "application/json" and "application/x-www-form-urlencoded". The following curl requests will be sent with JSON data, but the two following command are equivalent:
+```sh
+curl -X POST -H "Content-Type: application/json" -d '{"PARAM": "VALUE"}' http://q.daskeyboard.com/oauth/1.4/ENDPOINT
+```
+```sh
+curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -d "PARAM=VALUE" http://q.daskeyboard.com/oauth/1.4/ENDPOINT
+```
+
 ### Getting your Oauth credentials
 
 When you signed up on http://q.daskeyboard.com/, client credentials have been generated for you. To get them, have a look at this page: http://q.daskeyboard.com/account.
@@ -83,7 +92,7 @@ clientSecret="YOUR_CLIENT_SECRET"
 
 Getting Oauth access_token and refresh_token:
 ```sh
-curl -X POST -H "Content-Type: application/json" -d '{"clientId": "'$clientId'", "clientSecret": "'$clientSecret'", "grantType": "client_credentials"}' http://q.daskeyboard.com/oauth/1.3/token
+curl -X POST -H "Content-Type: application/json" -d '{"clientId": "'$clientId'", "clientSecret": "'$clientSecret'", "grantType": "client_credentials"}' http://q.daskeyboard.com/oauth/1.4/token
 ```
 
 #### Grant Type: password
@@ -92,7 +101,7 @@ Getting Oauth access_token and refresh_token:
 ```sh
 password="YOUR_PASSWORD"
 email="YOUR_EMAIL"
-curl -X POST -H "Content-Type: application/json" -d '{"email": "'$email'", "password": "'$password'", "grantType": "password"}' http://q.daskeyboard.com/oauth/1.3/token 
+curl -X POST -H "Content-Type: application/json" -d '{"email": "'$email'", "password": "'$password'", "grantType": "password"}' http://q.daskeyboard.com/oauth/1.4/token 
 ```
 
 #### Grant Type: authorization_code
@@ -103,7 +112,7 @@ To authenticate a user to your application, you need to make a GET request at th
 
 Then you can make a POST request to http://q.daskeyboard.com/oauth/1.2/token?grant_type=authorization_code&client_id=XXX&code=XXX to get your access_token and your refresh_token.
 ```sh
-tcurl -X POST -H "Content-Type: application/json" -d '{"clientId": "'$clientId'", "code": "YOUR_CODE", "grantType": "authorization_code"}' http://q.daskeyboard.com/oauth/1.3/token
+tcurl -X POST -H "Content-Type: application/json" -d '{"clientId": "'$clientId'", "code": "YOUR_CODE", "grantType": "authorization_code"}' http://q.daskeyboard.com/oauth/1.4/token
 ```
 
 
@@ -113,7 +122,7 @@ The response contains a JSON object with your access_token, refresh_token and yo
 
 An access token expirex after a certain time, so you will probably need to get a new one.
 ```sh
-curl -X POST -H "Content-Type: application/json" -d '{"clientId": "CLIENT_ID", "grantType": "refresh_token", "refreshToken": "REFRESH_TOKEN"}' http://q.daskeyboard.com/oauth/1.3/refresh_token
+curl -X POST -H "Content-Type: application/json" -d '{"clientId": "CLIENT_ID", "grantType": "refresh_token", "refreshToken": "REFRESH_TOKEN"}' http://q.daskeyboard.com/oauth/1.4/refresh_token
 ```
 Parameters required: CLIENT_ID and REFRESH_TOKEN.
 
@@ -346,35 +355,3 @@ The GET parameter **ID** must correspond to an existing Signal's id.
 curl -H 'Authorization: Bearer ACCESS_TOKEN' -X DELETE http://q.daskeyboard.com/api/1.0/signals/ID
 ```
 The GET parameter **ID** must correspond to an existing Signal's id.
-
-### Grant Type: password
-
-Getting Oauth access_token:
-```sh
-password="YOUR_PASSWORD"
-email="YOUR_EMAIL"
-token=$(curl -X POST -H "Content-Type: application/json" -d '{"email": "'$email'", "password": "'$password'", "grantType": "password"}' http://q.daskeyboard.com/oauth/1.3/token | sed -rn 's/^\{"access_token":"([0-9a-zA-Z]+)",".*/\1/p')
-```
-Getting Oauth refresh_token:
-```sh
-refresh_token=$(curl -X POST -H "Content-Type: application/json" -d '{"email": "'$email'", "password": "'$password'", "grantType": "password"}' http://q.daskeyboard.com/oauth/1.3/token | sed -rn 's/.*,"refresh_token":"([0-9a-zA-Z]+)",".*/\1/p')
-```
-### Grant Type: authorization_code
-
-To authenticate a user to your application, you need to make a GET request at the following address: http://q.daskeyboard.com/oauth/auth?client_id=XXX&redirect_uri=XXX. Two GET parameters are required:
-- "client_id": your client id, obtained at http://q.daskeyboard.com/account
-- "redirect_uri": the URI on which the browser will be redirected. To this address will be added a code (as GET parameter "code").
-
-Then you can make a POST request to http://q.daskeyboard.com/oauth/1.2/token?grant_type=authorization_code&client_id=XXX&code=XXX to get your access_token and your refresh_token.
-```sh
-token=$(curl -X POST -H "Content-Type: application/json" -d '{"clientId": "'$clientId'", "code": "YOUR_CODE", "grantType": "authorization_code"}' http://q.daskeyboard.com/oauth/1.3/token | sed -rn 's/^\{"access_token":"([0-9a-zA-Z]+)",".*/\1/p')
-```
-Getting Oauth refresh_token:
-```sh
-refresh_token=$(curl -X POST -H "Content-Type: application/json" -d '{"clientId": "'$clientId'", "code": "YOUR_CODE", "grantType": "authorization_code"}' http://q.daskeyboard.com/oauth/1.3/token | sed -rn 's/.*,"refresh_token":"([0-9a-zA-Z]+)",".*/\1/p')
-```
-
-## Sending of a first Signal:
-```sh
-curl -H "Content-Type: application/json" -H "Authorization: Bearer $token" -X POST http://q.daskeyboard.com/api/1.0/signals -d '{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "KEY_A", "color": "#008000"}'
-```
