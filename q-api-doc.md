@@ -44,7 +44,7 @@ To authenticate a user to your application, you need to make a GET request at th
 
 Then you can make a POST request to http://q.daskeyboard.com/oauth/1.2/token?grant_type=authorization_code&client_id=XXX&code=XXX to get your access_token and your refresh_token.
 ```sh
-token=$(curl -X POST -H "Content-Type: application/json" -d '{"clientId": "'$clientId'", "code": "YOUR_CODE", "grantType": "authorization_code"}' http://q.daskeyboard.com/oauth/1.4/token | sed -rn 's/^\{"access_token":"([0-9a-zA-Z]+)",".*/\1/p')
+token=$(curl -X POST -H "Content-Type: application/json" -d '{"client_id": "'$clientId'", "code": "YOUR_CODE", "grant_type": "authorization_code"}' http://q.daskeyboard.com/oauth/1.4/token | sed -rn 's/^\{"access_token":"([0-9a-zA-Z]+)",".*/\1/p')
 ```
 Getting Oauth refresh_token:
 ```sh
