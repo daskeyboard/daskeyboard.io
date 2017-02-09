@@ -273,7 +273,7 @@ curl -H 'Content-Type: application/json' -X POST https://localhost:$PORT/api/1.0
 
 Example of more detailed Signal (Cloud):
 ```sh
-curl -H 'Content-Type: application/json' -H 'Authorization: Bearer ACCESS_TOKEN' -X POST https://q.daskeyboard.com/api/1.0/signals -d '{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "KEY_A", "message": "It worked", "effect": "BLINK", "color": "#008000", "shouldNotify": true, "isRead": true, "isArchived": true, "isMuted": true}'
+curl -H 'Content-Type: application/json' -H 'Authorization: Bearer ACCESS_TOKEN' -X POST https://q.daskeyboard.com/api/1.0/signals -d '{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "KEY_A", "message": "It worked", "effect": "BLINK", "color": "#008000", "action": "open:chrome", "shouldNotify": true, "isRead": true, "isArchived": true, "isMuted": true}'
 ```
 Example of more detailed Signal (local):
 ```sh
@@ -289,6 +289,7 @@ Required fields:
 Optional fields:  
 **message** string - message of Signal (default: empty string ""), e.g. "Lucky you! Apple stock is greater than $500".  
 **effect** string - effect of the Signal (default: "SET_COLOR"), e.g. "BLINK".  
+**action** string which is formatted "actionType:value" - action that can be triggered once the Signal has been received (the actionType is either "ur" or "open")
 **shouldNotify** boolean - indicates if the applications should create a notification when the Signal is received, only if it has not been read or archived (default: false), e.g. true.  
 **isRead** boolean - indicates if the Signal has been read (default: false), e.g. true.  
 **isArchived** boolean - indicates if the Signal has been archived (default: false), e.g. true.  
@@ -330,6 +331,7 @@ Each Signal is a JSON object with the following format:
     "name": "name of the Signal (string)",
     "color": "color of the Signal (string beginning by the character '#' and followed by 3 hexadecimal digits)",
     "effect": "effect of the Signal (string)",
+    "action": "action linked to the Signal (string)",
     "isRead": "indicates if the Signal has been read (boolean)",
     "isMuted": "indicates if the Signal has been muted (boolean)",
     "isArchived": "indicates if the Signal has been archived (boolean)",
