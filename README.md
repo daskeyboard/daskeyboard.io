@@ -1,4 +1,4 @@
-# INVITATION ONLY: Getting Started With Das Keyboard Q Software - beta
+# Getting Started With Das Keyboard Q Software - beta
 
 *Warning:* the Q software is in very early stage. It's buggy, incomplete, and poorly documented.
 That means it is a start. However it is improving fast. Only use it if you are 
@@ -14,11 +14,11 @@ Q clients are available for the following platforms:
  - Mac
  - Q Mobile: Android
  
-### Create a Das Keyboard Q account (invitation only)
+### Create a Das Keyboard Q account
 In order to use the Q clients, you'll need to create an account at
  http://q.daskeyboard.com/ 
 
-### Signup for the Q forum (invitation only)
+### Signup for the Q forum
  This is where we interact with each other: http://qforum.daskeyboard.com 
 
 ## Sending Signals to your 5Q keyboard
@@ -44,11 +44,4 @@ At this point of the development, we would like to ask the community for input o
  Please use the forum to do this: http://qforum.daskeyboard.com.
  
 
-## Roadmap 
-This is what is on the radar. Please note that we do not provide release dates, so no need to ask.
- - More lighting effects
- - SDK to create apps that talks to the 5Q
- - RGB profile sharing marketplace (open source and free)
- - Q apps sharing marketplace (open source and free)
- - Mac software (delivered)
 
