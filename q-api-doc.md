@@ -122,7 +122,7 @@ The response contains a JSON object with your access_token, refresh_token and yo
 
 An access token expirex after a certain time, so you will probably need to get a new one.
 ```sh
-curl -X POST -H "Content-Type: application/json" -d '{"client_id": "CLIENT_ID", "grant_type": "refresh_token", "refreshToken": "REFRESH_TOKEN"}' https://q.daskeyboard.com/oauth/1.4/refresh_token
+curl -X POST -H "Content-Type: application/json" -d '{"client_id": "CLIENT_ID", "grant_type": "refresh_token", "refreshToken": "REFRESH_TOKEN"}' https://q.daskeyboard.com/oauth/1.4/token
 ```
 Parameters required: CLIENT_ID and REFRESH_TOKEN.
 
