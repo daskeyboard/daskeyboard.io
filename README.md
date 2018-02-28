@@ -1,10 +1,10 @@
-# Getting Started With Das Keyboard Q Software - beta
+# Getting Started With Das Keyboard Q Desktop Software - beta
 
 *Warning:* the Q software is in very early stage. It's buggy, incomplete, and poorly documented.
 That means it is a start. However it is improving fast. Only use it if you are 
 comfortable being a beta tester and contributing useful feedback.
 
-## Installation
+## Q Desktop Software Installation
 
 ### Download and install Q clients software
 
@@ -23,12 +23,11 @@ The Q forum is an online discussion for technical discussion: https://qforum.das
 ## Sending Signals to your 5Q keyboard + developer API
 
 A bit of lingo first: a *signal* is a message that contains color information (and more) to be
-displayed on a 5Q keyboard. All 3rd party platforms communicate with the 5Q clients by sending 
+displayed on a 5Q keyboard. All 3rd party platforms communicate with the Q clients by sending 
  signals very much like your friends send text messages to your phone. Instead of being a text message, a 
  signal contains also key color information.
 
-Even without a real 5Q keyboard, you can play with Signals. 
-Signals will be display on the Q desktop "dashboard mode" and the Q Android app. 
+Even without a real Q device, you can play with Signals. Signals will be displayed on the Q desktop "dashboard mode" and the Q Android app. 
 
 There are several possibilities to send signals to the 5Q keyboard:
  
