@@ -59,12 +59,7 @@ curl -H "Content-Type: application/json" -H "Authorization: Bearer $token" -X PO
 # Step by step: Das Keyboard Q: REST API Documentation
 
 This document explains how to use the Q API. To create, update and delete Signals, two options are offered: sending the request to the Server or sending it directly to the desktop application.  
-The Cloud and the desktop software use similar routes, but you won't need to send authentication parameters locally. What's more, the desktop software is run on a random port, which can be retrieved in the file `~/.quio/q-api-port.txt`.
-In a terminal, the port can be obtained with the following:
-```sh
-PORT=$(cat ~/.quio/q-api-port.txt)
-```
-For now, you need to be logged in to make local requests.
+The Cloud and the desktop software use similar routes, however the HTTP port # of the Q desktop HTTP server is `27301`.
 
 ## Authentication: Oauth2 (Cloud only)
 
@@ -73,6 +68,7 @@ For example, if Bob signs up to the Q Cloud and has the id 87, a client will be 
 
 ### Short note about data format
 All the responses sent by the server are in JSON format. However, we accept both "application/json" and "application/x-www-form-urlencoded". The following curl requests will be sent with JSON data, but the two following command are equivalent:
+
 ```sh
 curl -X POST -H "Content-Type: application/json" -d '{"PARAM": "VALUE"}' https://q.daskeyboard.com/oauth/1.4/ENDPOINT
 ```
@@ -83,6 +79,7 @@ curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -d "PARAM=VALU
 ### Getting your Oauth credentials
 
 When you signed up on https://q.daskeyboard.com/, client credentials have been generated for you. To get them, have a look at this page: https://q.daskeyboard.com/account.
+
 ```sh
 clientId="YOUR_CLIENT_ID"
 clientSecret="YOUR_CLIENT_SECRET"
@@ -118,7 +115,7 @@ tcurl -X POST -H "Content-Type: application/json" -d '{"client_id": "'$clientId'
 
 The response contains a JSON object with your access_token, refresh_token and your user_id.
 
-### Refreshing your Oauth Token 
+### Refreshing the Oauth Token 
 
 An access token expirex after a certain time, so you will probably need to get a new one.
 ```sh
@@ -126,7 +123,7 @@ curl -X POST -H "Content-Type: application/json" -d '{"client_id": "CLIENT_ID", 
 ```
 Parameters required: CLIENT_ID and REFRESH_TOKEN.
 
-### Getting the list of authorized Clients
+### Getting the list of authorized clients
 
 In order for 3rd parties, called Clients (e.g. Twitter, Zappier), to send Signals to your Q CLoud account, you need to authorize them.  
 The following command gives the list of authorized Clients.
@@ -156,6 +153,7 @@ For the following requests, you will need to replace ACCESS_TOKEN by your own to
 Returns the list of available devices (JSON Array).
 ```sh
 curl -H 'Authorization: Bearer ACCESS_TOKEN' -X GET https://q.daskeyboard.com/api/1.0/device_definitions
+
 ```
 Each JSON object will have the structure:
 ```json
@@ -214,6 +212,7 @@ Each JSON object will have the structure:
 
 
 ### Colors
+
 Returns a list of predefined colors (JSON Array).
 ```sh
 curl -H 'Authorization: Bearer ACCESS_TOKEN' -X GET https://q.daskeyboard.com/api/1.0/colors
@@ -227,6 +226,7 @@ Each JSON object will have the structure:
 ```
 
 ### Zones
+
 Returns the list of a device's zones (JSON Array).
 ```sh
 curl -H 'Authorization: Bearer ACCESS_TOKEN' -X GET https://q.daskeyboard.com/api/1.0/PID/zones
@@ -241,6 +241,7 @@ Each JSON object will have the structure:
 ```
 
 ### Effects
+
 Returns the list of a available effects for a device (JSON Array).
 ```sh
 curl -H 'Authorization: Bearer ACCESS_TOKEN' -X GET https://q.daskeyboard.com/api/1.0/PID/effects
