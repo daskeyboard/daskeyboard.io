@@ -269,7 +269,7 @@ curl -H 'Content-Type: application/json' -H 'Authorization: Bearer ACCESS_TOKEN'
 ```
 Example of simple Signal (local):
 ```sh
-curl -H 'Content-Type: application/json' -X POST https://localhost:$PORT/api/1.0/signals -d '{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "KEY_A", "color": "#008000"}'
+curl -H 'Content-Type: application/json' -X POST http://localhost:$PORT/api/1.0/signals -d '{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "KEY_A", "color": "#008000"}'
 ```
 
 Example of more detailed Signal (Cloud):
@@ -278,7 +278,7 @@ curl -H 'Content-Type: application/json' -H 'Authorization: Bearer ACCESS_TOKEN'
 ```
 Example of more detailed Signal (local):
 ```sh
-curl -H 'Content-Type: application/json' -X POST https://localhost:$PORT/api/1.0/signals -d '{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "KEY_A", "message": "It worked", "effect": "BLINK", "color": "#008000", "shouldNotify": true, "isRead": true, "isArchived": true, "isMuted": true}'
+curl -H 'Content-Type: application/json' -X POST http://localhost:$PORT/api/1.0/signals -d '{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "KEY_A", "message": "It worked", "effect": "BLINK", "color": "#008000", "shouldNotify": true, "isRead": true, "isArchived": true, "isMuted": true}'
 ```
 
 Required fields:  
