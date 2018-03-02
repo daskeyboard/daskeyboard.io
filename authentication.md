@@ -19,7 +19,11 @@ i.e. replaced by a new one. To get a new `access token`, one needs to supply a
 `refresh token` to Q cloud service. The following sections explain how to get
 these different tokens using different methods called `grants`.
 
-## Grant Type: password
+## Getting an tokens
+
+To get access and refresh tokens, a user can choose one of the grant below. 
+
+### Grant Type: password
 
 The password grant is a method that allows a user to get an `access token` and a `refresh token` using his/her Q cloud email and password. 
 
@@ -39,7 +43,7 @@ Response:
 ```
 
 
-## Grant Type: client_credentials
+### Grant Type: client_credentials
 
 Using Oauth client credentials is a great way to get an access token without
 storing your password in a text file or sharing it... You will need a
@@ -60,7 +64,7 @@ Response:
 ```
 
 
-## Grant Type: authorization_code
+### Grant Type: authorization_code
 
 To authenticate a user to your application, you need to make a GET request at
 the following address:
