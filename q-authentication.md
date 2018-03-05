@@ -1,4 +1,6 @@
-## Authentication: Getting an OAuth token
+# Das Keyboard Q OAuth authentication API
+
+Q service Oauth2 uses tokens (`access token` and `refresh token`) to secure resources.
 
 Since Q cloud service needs authenticated JSON requests, an Oauth token is need
 for each with each request.
@@ -7,8 +9,8 @@ To authenticate against Q cloud service, you need to first to signup for Q cloud
 service: https://q.daskeyboard.com/
 
 NOTE: If you are wanting to send a JSON signal ONLY from your computer to your
-keyboard (i.e. not via Q cloud) you don't need authentication at all and can ignore this chapter.
-
+keyboard (i.e. not via Q cloud) you don't need authentication at all and can
+skip this chapter.
 
 ## Key Oauth concept
 
@@ -19,7 +21,6 @@ i.e. replaced by a new one. To get a new `access token`, one needs to supply a
 `refresh token` to Q cloud service. The following sections explain how to get
 these different tokens using different methods called `grants`.
 
-
 ### Grant Type: client_credentials
 
 Using Oauth client credentials is a great way to get an access token without
@@ -27,8 +28,7 @@ storing your password in a text file or sharing it... It uses a `client_id`, and
 `client_secret`, which is available in your Q cloud account page at
 https://q.daskeyboard.com/account
 
-To get a the tokens, 
-Query:
+To get a the tokens, run the following command:
 
 ```sh
 curl -X POST -H "Content-Type: application/json" -d '{"client_id": "'$clientId'", "client_secret": "'$clientSecret'", "grant_type": "client_credentials"}' https://q.daskeyboard.com/oauth/1.4/token
@@ -36,16 +36,15 @@ curl -X POST -H "Content-Type: application/json" -d '{"client_id": "'$clientId'"
 
 Response:
 
-```
+```sh
 {"access_token":"0e155790a123543467860509b7e5","refresh_token":"5f1b05834235bc020ba33aa8","user_id":7654,"expires_in":86400}
 ```
 
-
 ### Grant Type: password
 
-The password grant is a method that allows a user to get an `access token` and a `refresh token` using his/her Q cloud email and password. Using this grant is not recommended.
+The password grant is a method that allows a user to get an `access token` and a `refresh token` using his/her Q cloud email and password. Using this grant is not recommended since it shares user's password.
 
-Query: 
+Query:
 
 ```sh
 password="YOUR_PASSWORD" # Q cloud password
@@ -56,7 +55,7 @@ curl -X POST -H "Content-Type: application/json" -d '{"email": "'$email'", "pass
 
 Response:
 
-```
+```sh
 {"access_token":"0e155790a123543467860509b7e5","refresh_token":"5f1b05834235bc020ba33aa8","user_id":7654,"expires_in":86400}
 ```
 
@@ -64,13 +63,13 @@ Response:
 
 To authenticate an app to your  Q account (e.g. Zapier, Twitter), you need to make a GET request at
 the following address:
-https://q.daskeyboard.com/oauth/auth?client_id=XXX&redirect_uri=XXX. Two GET
-parameters are required:
+https://q.daskeyboard.com/oauth/auth?client_id=XXX&redirect_uri=XXX. Two parameters are required:
+
 - `client_id`: your client id, obtained at https://q.daskeyboard.com/account
 - `redirect_uri`: the URI on which the browser will be redirected. A `code value`
   will be added to the redirect URL (as GET parameter `code`).
 
-Then you can make a POST request to
+Then make a POST request to
 https://q.daskeyboard.com/oauth/1.4/token?grant_type=authorization_code&client_id=XXX&code=YYY
 to get an `access token` and `refresh token`.
 
@@ -82,7 +81,22 @@ curl -X POST -H "Content-Type: application/json" -d '{"client_id": "'$clientId'"
 
 Response:
 
-```
+```sh
 {"access_token":"0e155790a123543467860509b7e5","refresh_token":"5f1b05834235bc020ba33aa8","user_id":7654,"expires_in":86400}
 ```
 
+### Refreshing the Oauth token
+
+An access token expires after a certain time indicated by the field `expires_in`. 
+Once expired, a call to the following endpoint with `grant type` `refresh_token` will
+provide a new `access token`:
+
+```sh
+curl -X POST -H "Content-Type: application/json" -d '{"client_id": "CLIENT_ID", "grant_type": "refresh_token", "refreshToken": "REFRESH_TOKEN"}' https://q.daskeyboard.com/oauth/1.4/token
+```
+
+Response:
+
+```sh
+{"access_token":"0e155790a123543467860509b7e5","refresh_token":"5f1b05834235bc020ba33aa8","user_id":7654,"expires_in":86400}
+```
