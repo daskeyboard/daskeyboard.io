@@ -1,8 +1,8 @@
 # Getting Started With Das Keyboard Q Desktop Software - beta
 
 *Warning:* the Q software is in very early stage. It's buggy, incomplete, and poorly documented.
-That means it is a start. However it is improving fast. Only use it if you are 
-comfortable being a beta tester and contributing useful feedback.
+However it is improving quickly. Only use it if you are 
+comfortable being a beta software and contributing useful feedback.
 
 ## Q Desktop Software Installation
 
@@ -41,10 +41,12 @@ There are several possibilities to send signals to the 5Q keyboard:
 
 The developer Q API is an easy way to use a JSON REST API to send signals to the Q device. 
 
-Read documentation at https://github.com/DasKeyboard/q/blob/master/q-api-doc.md.
+Quick start: https://github.com/DasKeyboard/q/blob/master/q-api-quick-start.md.
+Full documentation at https://github.com/DasKeyboard/q/blob/master/q-api-doc.md.
 
 
 ## Contributing
+
 At this point of the development, we would like to ask the community for input on all aspects
  of the project: features, API, ideas, etc... 
  Please use the forum to do this: https://qforum.daskeyboard.com.
