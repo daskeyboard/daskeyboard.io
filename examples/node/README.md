@@ -1,12 +1,12 @@
-# Sending signals with node script
+# Sending signals with node scripts
 
-This is a little demo on how to send signal to the public api or to the cloud with a not script
+This is a little demo on how to send signal to the public api or to the cloud with a node script.
 
 ## Prerequisistes
 
-You need to have [node js](https://nodejs.org/en/download/) installed
+You need to have [Node.js](https://nodejs.org/en/download/) installed.
 
-run this command
+run this command:
 
 ```shell
     npm install readline-sync
@@ -33,7 +33,10 @@ run this command to run the second script
 ### create-one-signal.js
 
 The only difficulty here is to send the signal using the function requests.post(), very basic node script
+// what is this line trying to say? 
 
 ### create-one-signal-to-cloud.js
 
-Since node doesn't like synchronous request, the key is to imbricate callbacks (callback hell). First we get the Oauth access key, once we receive it, we send the signal.
+Since Node.js an implementation of JavaScript (ECMAScript), it utilizes asynchronous execution patterns; thus, when writing Node.JS, it is important to use promises or implement 'callback' functions.
+
+First we get the OAuth access key, once we receive it, we send the signal.
