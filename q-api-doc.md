@@ -150,11 +150,13 @@ Each JSON object will have the structure:
 Returns the list of a device's zones (JSON Array).
 
 ```sh
-curl -H 'Authorization: Bearer ACCESS_TOKEN' -X GET https://q.daskeyboard.com/api/1.0/PID/zones
+curl -H 'Authorization: Bearer ACCESS_TOKEN' -X GET https://q.daskeyboard.com/api/1.0/5QPID/zones
 ```
 
-The GET parameter **PID** must correspond to an existing device's pid.  
+The GET parameter **5QPID** must correspond to an existing device's pid.  
 Each JSON object will have the structure:
+
+FIXME
 
 ```json
 {
@@ -167,9 +169,9 @@ Each JSON object will have the structure:
 
 Returns the list of a available effects for a device (JSON Array).
 ```sh
-curl -H 'Authorization: Bearer ACCESS_TOKEN' -X GET https://q.daskeyboard.com/api/1.0/PID/effects
+curl -H 'Authorization: Bearer ACCESS_TOKEN' -X GET https://q.daskeyboard.com/api/1.0/5QPID/effects
 ```
-The GET parameter **PID** must correspond to an existing device's pid.  
+The GET parameter **5QPID** must correspond to an existing device's pid.  
 Each JSON object will have the structure:
 ```json
 {
