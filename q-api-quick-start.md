@@ -81,7 +81,7 @@ the Q button on your Q keyboard, you'll see the message "Apple stock increase".
 ## Next steps
 
 As seen in this simple example, once authenticated, it is very easy to send a
-signal to a Q device. The Q device receives it almost instantaniously. Keep
-going and head over to the full API documentation to setup your Q device into a
-useful notification dashboard.
+signal to a Q device. Ready to program your dashboard keyboard?
+Head over to the full API documentation:  https://github.com/DasKeyboard/q/blob/master/q-api-doc.md
+
 
