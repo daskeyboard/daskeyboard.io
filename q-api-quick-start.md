@@ -3,7 +3,7 @@
 Das Keyboard 5Q RGB mechanical keyboard LEDs can be controlled over
 the Internet or over a local area network.
 
-## Quick start overview
+This quick start document covers the following:
 
 1. How it works
 1. Getting authentication tokens
