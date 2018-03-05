@@ -1,0 +1,225 @@
+    25: KEY_ESCAPE, 'escape', 'ESC',
+
+    27: KEY_F1, 'f1', 'F1',
+
+    28: KEY_F2, 'f2', 'F2',
+
+    29: KEY_F3, 'f3', 'F3',
+
+    30: KEY_F4, 'f4', 'F4',
+
+    32: KEY_F5, 'f5', 'F5',
+
+    33: KEY_F6, 'f6', 'F6',
+
+    34: KEY_F7, 'f7', 'F7',
+
+    35: KEY_F8, 'f8', 'F8',
+
+    36: KEY_F9, 'f9', 'F9',
+
+    37: KEY_F10, 'f10', 'F10',
+
+    38: KEY_F11, 'f11', 'F11',
+
+    39: KEY_F12, 'f12', 'F12',
+
+    40: KEY_PRINT_SCREEN, 'printScreen', 'PRT-SC',
+
+    41: KEY_SCROLL_LOCK, 'screenLock', 'SRC-LK',
+
+    42: KEY_PAUSE_BREAK, 'pausa', 'PAUSA',
+
+    43, 18: KEY_MACRO_1, 'Macro1', 'M1',
+
+    44, 19: KEY_MACRO_2, 'Macro2', 'M2',
+
+    45, 20: KEY_MACRO_3, 'Macro3', 'M3',
+
+    21, 46, 47, 22: KEY_VOLUME_Q_BUTTON,
+        'Volume / Q Knob', 'Q-BUT',
+
+    49: KEY_BACKSLASH, 'barra retroversa', '\\',
+
+    50: KEY_1, '1', '1',
+
+    51: KEY_2, '2', '2',
+
+    52: KEY_3, '3', '3',
+
+    53: KEY_4, '4', '4',
+
+    54: KEY_5, '5', '5',
+
+    55: KEY_6, '6', '6',
+
+    56: KEY_7, '7', '7',
+
+    57: KEY_8, '8', '8',
+
+    58: KEY_9, '9', '9',
+
+    59: KEY_0, '0', '0',
+
+    60: KEY_QUOTE, '\'', '\'',
+
+    61: KEY_ROOFTOP, '^', '^',
+
+    63: KEY_BACKSPACE, 'backspace', '&#8678;',
+
+    64: KEY_INSERT,  'insert', 'INS',
+
+    65: KEY_HOME, 'home', '&nwarr;',
+
+    66: KEY_PAGE_UP, 'pageUp', 'PAG &uarr;',
+
+    67: KEY_NUMLOCK, 'BLOC NUM', 'BLOC-NUM',
+
+    68: KEY_NUMPAD_DIVIDE, 'divide', 'N-/',
+
+    69: KEY_NUMPAD_MULTIPLY, 'multiply', 'N-*',
+
+    70: KEY_NUMPAD_SUBTRACT, 'substract', 'N--',
+
+    73: KEY_TAB, 'tab', '&rarrb;',
+
+    74: KEY_Q, 'q', 'Q',
+
+    75: KEY_W, 'w', 'W',
+
+    76: KEY_E, 'e', 'E',
+
+    77: KEY_R, 'r', 'R',
+
+    78: KEY_T, 't', 'T',
+
+    79: KEY_Y, 'y', 'Y',
+
+    80: KEY_U, 'u', 'U',
+
+    81: KEY_I, 'i', 'I',
+
+    82: KEY_O, 'o', 'O',
+
+    83: KEY_P, 'p', 'P',
+
+    84: KEY_OPEN_SQUARE_BRACKET, '[', ' [',
+
+    85: KEY_CLOSE_SQUARE_BRACKET, '', '',
+
+    88: KEY_DELETE, 'canc', 'canc',
+
+    89: KEY_END, 'fine', 'FINE',
+
+    90: KEY_PAGE_DOWN, 'pageDown', 'PAG &darr;',
+
+    91: KEY_NUMPAD_7, 'vernum7', 'N-7',
+
+    92: KEY_NUMPAD_8, 'vernum8', 'N-8',
+
+    93: KEY_NUMPAD_9, 'vernum9', 'N-9',
+
+    94: KEY_NUMPAD_ADD, 'add', '+',
+
+    97: KEY_CAPS_LOCK, 'capsLock', '&#8681;',
+
+    99: KEY_A, 'a', 'A',
+
+    100: KEY_S, 's', 'S',
+
+    101: KEY_D, 'd', 'D',
+
+    102: KEY_F, 'f', 'F',
+
+    103: KEY_G, 'g', 'G',
+
+    104: KEY_H, 'h', 'H',
+
+    105: KEY_J, 'j', 'J',
+
+    106: KEY_K, 'k', 'K',
+
+    107: KEY_L, 'l', 'L',
+
+    108: KEY_CEDILLA, 'Ç', 'Ç',
+
+    109: KEY_HASH, '#', '#',
+
+    111: KEY_DOLLAR_SIGN, '$', '$',
+
+    87: KEY_ENTER, 'entrer', '&crarr;',
+
+    115: KEY_NUMPAD_4, 'vernum4', 'N-4',
+
+    116: KEY_NUMPAD_5, 'vernum5', 'N-5',
+
+    117: KEY_NUMPAD_6, 'vernum6', 'N-6',
+
+    121: KEY_SHIFT_LEFT, 'shift-left', '&#8679;-L',
+
+    122: KEY_LESS_THAN, 'lessThan', '<',
+
+    123: KEY_Z, 'z', 'Z',
+
+    124: KEY_X, 'x', 'X',
+
+    125: KEY_C, 'c', 'C',
+
+    126: KEY_V, 'v', 'V',
+
+    127: KEY_B, 'b', 'B',
+
+    128: KEY_N, 'n', 'N',
+
+    129: KEY_M, 'm', 'M',
+
+    130: KEY_COMMA, 'comma', ',',
+
+    131: KEY_DOT, 'period', '.',
+
+    132: KEY_SUBTRACT, '-', '-',
+
+    135: KEY_SHIFT_RIGHT, 'shift-right', '&#8679;-R',
+
+    137: KEY_ARROW_UP, 'upArrow', '&uarr;',
+
+    139: KEY_NUMPAD_1, 'vernum1', 'N-1',
+
+    140: KEY_NUMPAD_2, 'vernum2', 'N-2',
+
+    141: KEY_NUMPAD_3, 'vernum3', 'N-3',
+
+    166: KEY_NUMPAD_ENTER, 'Num_ENTREE', '&ldsh;',
+
+    145: KEY_CONTROL_LEFT, 'ctrLeft', 'CTR-L',
+
+    146: KEY_META_LEFT, 'leftWindowKey', 'WIN-L',
+
+    147: KEY_ALT_LEFT, 'altLeft', 'ALT-L',
+
+    151: KEY_SPACE, 'space', 'SPACE',
+
+    155: KEY_ALT_RIGHT, 'altRight', 'ALT-R',
+
+    156: KEY_FN_KEY, 'select', 'FN',
+
+    157: KEY_META_RIGHT, 'rightWindowKey', 'WIN-R',
+
+    159: KEY_CONTROL_RIGHT, 'ctrRight', 'CTR-R',
+
+    160: KEY_ARROW_LEFT, 'flecheGauche', '&larr;',
+
+    161: KEY_ARROW_DOWN, 'flecheBas', '&darr;',
+
+    162: KEY_ARROW_RIGHT, 'flecheDroite', '&rarr;',
+
+    164: KEY_NUMPAD_0, 'vernum0', 'N-0',
+
+    165: KEY_NUMPAD_DECIMAL, 'verNum_Decimal', 'N-.',
+
+    0, 24, 48, 72, 96, 120, 144, 168, 192,
+        ZoneCode[ZoneCode.KEY_LIGHT_PIPE_LEFT, 'Left Pipe', '|-L',
+
+    71, 95, 119, 143, 167, 191, 215,
+        ZoneCode[ZoneCode.KEY_LIGHT_PIPE_RIGHT, 'Right Pipe', '|-R',
+
