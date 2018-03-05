@@ -1,4 +1,4 @@
-# Sending signals with node script
+# Sending signals with php scripts
 
 This is a little demo on how to send signal to the public api or to the cloud with a php script
 
