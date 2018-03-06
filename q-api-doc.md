@@ -283,9 +283,19 @@ Each Signal is a JSON object with the following format:
 }
 ```
 
-### Updating a Signal (Cloud only)
+### Updating a Signal status (Cloud only)
 
-Only the fields **isMuted**, **isRead** and **isArchived** can be updated.
+Q signal statuses work very much like an email from Gmail. It can be read or
+unread, archived and muted. One cannot change the content of an email. A signal
+behave, on some level, very much like an email message. Only the signal fields
+`isMuted`, `isRead` and `isArchived` can be updated.
+
+- `isRead`: a user has read the signal
+- `isArchived`: archived signals are not visible but still present in the list
+  of all signals
+- `isMuted`: unused
+
+Example: Updating a signal to 'isRead' = true status
 
 ```sh
 curl -H 'Content-Type: application/json' -H 'Authorization: Bearer ACCESS_TOKEN' -X PATCH https://q.daskeyboard.com/api/1.0/signals/ID/status -d '{"isRead": true, "isArchived": false}'
@@ -300,3 +310,52 @@ curl -H 'Authorization: Bearer ACCESS_TOKEN' -X DELETE https://q.daskeyboard.com
 ```
 
 The GET parameter **ID** must correspond to an existing Signal's id.
+
+### Getting color of zone id
+
+When a signal is displayed on a zone id (i.e. one or more LEDs), the following
+end point will return its color:
+
+Endpoint: GET https://q.daskeyboard.com/api/1.0/signals/{pid}/{zoneId}
+
+Example: get color of zone id 83 for device 5Q keyboard:
+
+```sh
+curl -H 'Authorization: Bearer ACCESS_TOKEN' https://q.daskeyboard.com/api/1.0/signals/DK5QPID/83
+```
+
+response:
+
+    {"color": "#F00"}
+
+
+### Getting device shadow
+
+A device shadow is the set of signals that are currently displayed on a Q
+device. It is a subset of all signals which are not archived.
+
+Example: get shadow for DK5QPID
+
+```sh
+curl -H 'Authorization: Bearer ACCESS_TOKEN' https://q.daskeyboard.com/api/1.0/signals/DK5QPID/shadow
+```
+
+Response: a page of visible signals 
+
+```json
+{"content": [ 
+     {
+     "id":524561,"zoneId":"78","pid":"DK5QPID","userId":6,"name":"signal name","message":"messagebody",
+     "effect":"BLINK","color":"#00aced","isRead":false,"isMuted":false,"isArchived":false,"shouldNotify":true,"clientName":"IFTTT","readAt":null,"action":null,"createdAt":1520349790354,"updatedAt":1520349790356
+     },
+     ...
+  ],
+  "size":7,
+  "sort":"",
+  "hasNextPage":false,
+  "page":0,
+  "totalElements":7,
+  "totalPages":1
+}
+
+```
