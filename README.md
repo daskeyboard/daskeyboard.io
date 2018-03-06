@@ -43,7 +43,7 @@ The developer Q API is an easy way to use a JSON REST API to send signals to the
 
 - Quick start: https://github.com/DasKeyboard/q/blob/master/q-api-quick-start.md.
 - Full documentation at https://github.com/DasKeyboard/q/blob/master/q-api-doc.md.
-- Communicty contributions: https://github.com/DasKeyboard/q/blob/master/contributed-links.md
+- Community contributions: https://github.com/DasKeyboard/q/blob/master/contributed-links.md
 - API examples: https://github.com/DasKeyboard/q/tree/master/examples
 - Developer forum: https://qforum.daskeyboard.com
 
