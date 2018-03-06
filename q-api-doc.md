@@ -150,11 +150,13 @@ Each JSON object will have the structure:
 Returns the list of a device's zones (JSON Array).
 
 ```sh
-curl -H 'Authorization: Bearer ACCESS_TOKEN' -X GET https://q.daskeyboard.com/api/1.0/PID/zones
+curl -H 'Authorization: Bearer ACCESS_TOKEN' -X GET https://q.daskeyboard.com/api/1.0/DK5QPID/zones
 ```
 
-The GET parameter **PID** must correspond to an existing device's pid.  
+The GET parameter **DK5QPID** must correspond to an existing device's pid.  
 Each JSON object will have the structure:
+
+FIXME
 
 ```json
 {
@@ -167,9 +169,9 @@ Each JSON object will have the structure:
 
 Returns the list of a available effects for a device (JSON Array).
 ```sh
-curl -H 'Authorization: Bearer ACCESS_TOKEN' -X GET https://q.daskeyboard.com/api/1.0/PID/effects
+curl -H 'Authorization: Bearer ACCESS_TOKEN' -X GET https://q.daskeyboard.com/api/1.0/DK5QPID/effects
 ```
-The GET parameter **PID** must correspond to an existing device's pid.  
+The GET parameter **DK5QPID** must correspond to an existing device's pid.  
 Each JSON object will have the structure:
 ```json
 {
@@ -182,18 +184,17 @@ Each JSON object will have the structure:
 
 ### Creating a Signal (Cloud and local)
 
-The DasKeyboard 5Q RG keys can be controlled via Signals. An example of Signal would be:  
-Apple Stock > $500 => set A key to green.
+The Das Keyboard Q device RGB keys can be controlled via Signals. An example of Signal would be:  
 
-Creates a Signal with the given attributes. 
+    if Apple Stock ticker value is > $500 => set A key to green.
 
-Example of simple Signal (Cloud):
+Example of simple Signal (Cloud) for the above example:
 
 ```sh
 curl -H 'Content-Type: application/json' -H 'Authorization: Bearer ACCESS_TOKEN' -X POST https://q.daskeyboard.com/api/1.0/signals -d '{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "KEY_A", "color": "#008000"}'
 ```
 
-Example of simple Signal (local):
+Same example with local API:
 
 ```sh
 curl -H 'Content-Type: application/json' -X POST http://localhost:$PORT/api/1.0/signals -d '{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "KEY_A", "color": "#008000"}'
@@ -246,7 +247,7 @@ GET parameters can also be added:
 curl -H 'Authorization: Bearer ACCESS_TOKEN' -X GET https://q.daskeyboard.com/api/1.0/signals?pid=DK5QPID&page=0&size=4&sort=createdAt,DESC
 ```
 
-You should receive a JSON object as following:
+Response:
 
 ```json
 {
