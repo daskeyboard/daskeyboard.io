@@ -39,7 +39,7 @@ There are several possibilities to send signals to the 5Q keyboard:
  
 ## Q Developer API
 
-The developer Q API is an easy way to use a JSON REST API to send signals to the Q device.
+The developer Q API is an easy to use JSON REST API to send signals to the Q device.
 
 - Quick start: https://github.com/DasKeyboard/q/blob/master/q-api-quick-start.md.
 - Full documentation at https://github.com/DasKeyboard/q/blob/master/q-api-doc.md.
