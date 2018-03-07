@@ -28,9 +28,14 @@ storing your password in a text file or sharing it... It uses a `client_id`, and
 `client_secret`, which is available in your Q cloud account page at
 https://q.daskeyboard.com/account
 
-To get a the tokens, run the following command:
+To get tokens, run the following command:
+
 
 ```sh
+clientId="YOUR_CLIENT_SECRET" 
+clientSecret="YOUR_CLIENT_SECRET"     
+
+
 curl -X POST -H "Content-Type: application/json" -d '{"client_id": "'$clientId'", "client_secret": "'$clientSecret'", "grant_type": "client_credentials"}' https://q.daskeyboard.com/oauth/1.4/token
 ```
 
