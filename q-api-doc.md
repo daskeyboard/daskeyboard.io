@@ -4,8 +4,14 @@ This document explains how to use the Q API. To create, update and delete Signal
 
 The Q cloud service and the desktop software use similar routes, however the HTTP port # of the Q desktop HTTP server is `27301`.
 
-Too much info? Read the quick-start guide: 
-https://github.com/DasKeyboard/q/blob/master/q-api-quick-start.md
+## Too much info? Read the quick-start guide: 
+The developer Q API is an easy to use JSON REST API to send signals to the Q device.
+
+- Quick start: https://github.com/DasKeyboard/q/blob/master/q-api-quick-start.md.
+- Community contributions: https://github.com/DasKeyboard/q/blob/master/contributed-links.md
+- API examples: https://github.com/DasKeyboard/q/tree/master/examples
+- Developer forum: https://qforum.daskeyboard.com
+
 
 ## Authentication: Oauth2 (Cloud only)
 
