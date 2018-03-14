@@ -15,6 +15,7 @@ which dart
 echo "Using Dart version:"
 dart --version
 
+echo "packages get of flutter"
 ../flutter/bin/flutter packages get
 
 # Analyze the stand-alone sample code files
@@ -92,6 +93,7 @@ fi
 
 
 if [ "$ENABLE_PR_BOT" = "true" ]; then
+
     if [ "$BRANCH" != "master" ]; then
         echo "deploying to stage environment"
         echo $FIREBASE_FILE >> ./service_account.json
