@@ -1,0 +1,14 @@
+# Site settings
+title: Das Keyboard
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://daskeyboard.github.io/q-website/"
+github_username: DasKeyboard
+
+# Build settings
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+exclude: [example, packages, tool]
