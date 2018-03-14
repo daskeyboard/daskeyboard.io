@@ -2,7 +2,7 @@
 <html lang="en">
   {% include head.html %}
 
-  <body class="{% if page.url == '/' %}homepage{% endif %}">
+  <body class="{% if page.url == '{{site.baseurl}}' %}homepage{% endif %}">
 
     <div id="overlay-under-drawer"><!-- for the drawer on narrow screens --></div>
 
