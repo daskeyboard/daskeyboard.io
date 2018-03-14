@@ -15,8 +15,8 @@ which dart
 echo "Using Dart version:"
 dart --version
 
-echo "packages get of flutter"
-../flutter/bin/flutter packages get
+# echo "packages get of flutter"
+# ../flutter/bin/flutter packages
 
 # Analyze the stand-alone sample code files
 
