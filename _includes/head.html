@@ -3,13 +3,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{page.title}} {% if page.homepage != true %} - {{ site.title }} {% endif %}</title>
-  <link rel="shortcut icon" href="{{ "/images/favicon.png" | prepend: site.baseurl  }}">
+  <link rel="shortcut icon" href="{{ "{{ site.baseurl }}images/favicon.png" | prepend: site.baseurl  }}">
 
   <meta name="description" content="{% if page.summary %}{{ page.summary | strip_html | strip_newlines | truncate: 160 }}{% endif %}">
   <meta name="keywords" content="{{page.tags}}{% if page.tags %}, {% endif %} {{page.keywords}}">
   
-  <link rel="stylesheet" href="{{ "/css/lavish-bootstrap.css" | prepend: site.baseurl }}">
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}"> 
+  <link rel="stylesheet" href="{{ "{{ site.baseurl }}css/lavish-bootstrap.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "{{ site.baseurl }}css/main.css" | prepend: site.baseurl }}"> 
   
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Extended" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro%7CRoboto:500,400italic,300,400" rel="stylesheet">
