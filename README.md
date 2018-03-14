@@ -2,7 +2,7 @@
 
 The website for [Das Keyboard](https://daskeyboard.github.io/q-website/).
 
-[![Build Status](https://travis-ci.org/DasKeyboard/q-website)](https://travis-ci.org/DasKeyboard/q-website)
+[![Build Status](https://travis-ci.org/DasKeyboard/q-website.svg?branch=master)](https://travis-ci.org/DasKeyboard/q-website)
 
 ## Issues, bugs, and requests
 
