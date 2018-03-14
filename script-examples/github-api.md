@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Colorize all LEDs of the Q keyboard"
+title: "Send a signal when we receive a notifications from Github"
 permalink: /script-examples/github-api/
 ---
 
