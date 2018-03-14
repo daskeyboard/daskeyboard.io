@@ -7,7 +7,7 @@ export BRANCH=$(if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then echo $TRAVIS_BRAN
 
 # Use the version of Dart SDK from the Flutter repository instead of whatever
 # version is in the PATH.
-export PATH="../flutter/bin/cache/dart-sdk/bin:$PATH"
+export PATH="~/workspace/flutter-app/flutter/bin/cache/dart-sdk/bin:$PATH"
 
 echo "Path to dart is:"
 which dart
@@ -97,8 +97,8 @@ if [ "$ENABLE_PR_BOT" = "true" ]; then
         echo $FIREBASE_FILE >> ./service_account.json
         export FIREBASE_AUTH=`oauth2l fetch --json ./service_account.json firebase.database userinfo.email 2>&1`
         cd tool/
-        ../../flutter/bin/cache/dart-sdk/bin/pub get
-        export PROJECT_NAME=`../../flutter/bin/cache/dart-sdk/bin/dart prdeployer.dart $BRANCH $FIREBASE_AUTH 2>&1`
+        ~/workspace/flutter-app/flutter/bin/cache/dart-sdk/bin/pub get
+        export PROJECT_NAME=`~/workspace/flutter-app/flutter/bin/cache/dart-sdk/bin/dart prdeployer.dart $BRANCH $FIREBASE_AUTH 2>&1`
         cd ../
         echo "Deploying to $PROJECT_NAME"
         npm install --global firebase-tools@3.16.0

@@ -1,5 +1,7 @@
 # Site settings
 title: Das Keyboard
+email: camille@metadot.com
+email_name: camille@
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://daskeyboard.github.io/q-website/"
 github_username: DasKeyboard
