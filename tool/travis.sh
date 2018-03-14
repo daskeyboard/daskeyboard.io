@@ -7,7 +7,7 @@ export BRANCH=$(if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then echo $TRAVIS_BRAN
 
 # Use the version of Dart SDK from the Flutter repository instead of whatever
 # version is in the PATH.
-export PATH="/flutter/bin/cache/dart-sdk/bin:$PATH"
+export PATH="https://github.com/flutter/flutter/bin/cache/dart-sdk/bin:$PATH"
 
 echo "Path to dart is:"
 which dart
@@ -15,7 +15,7 @@ which dart
 echo "Using Dart version:"
 dart --version
 
-/flutter/bin/flutter packages get
+https://github.com/flutter/flutter/bin/flutter packages get
 
 # Analyze the stand-alone sample code files
 
@@ -29,10 +29,10 @@ for D in _includes/code/*/*; do
 
   if [ -d "${D}" ]; then
     echo "Run flutter packages get on ${D}"
-    /flutter/bin/flutter packages get ${D}
+    https://github.com/flutter/flutter/bin/flutter packages get ${D}
 
     echo "Run flutter analyze on ${D}"
-    /flutter/bin/flutter analyze ${D}/*.dart
+    https://github.com/flutter/flutter/bin/flutter analyze ${D}/*.dart
   fi
 done
 
@@ -41,7 +41,7 @@ dart tool/extract.dart
 
 echo "Analyzing the extracted Dart libraries."
 
-/flutter/bin/flutter analyze example/*.dart
+https://github.com/flutter/flutter/bin/flutter analyze example/*.dart
 
 echo "Check formatting of the extracted Dart libraries."
 
@@ -97,8 +97,8 @@ if [ "$ENABLE_PR_BOT" = "true" ]; then
         echo $FIREBASE_FILE >> ./service_account.json
         export FIREBASE_AUTH=`oauth2l fetch --json ./service_account.json firebase.database userinfo.email 2>&1`
         cd tool/
-        /flutter/bin/cache/dart-sdk/bin/pub get
-        export PROJECT_NAME=`/flutter/bin/cache/dart-sdk/bin/dart prdeployer.dart $BRANCH $FIREBASE_AUTH 2>&1`
+        https://github.com/flutter/flutter/bin/cache/dart-sdk/bin/pub get
+        export PROJECT_NAME=`https://github.com/flutter/flutter/bin/cache/dart-sdk/bin/dart prdeployer.dart $BRANCH $FIREBASE_AUTH 2>&1`
         cd ../
         echo "Deploying to $PROJECT_NAME"
         npm install --global firebase-tools@3.16.0
