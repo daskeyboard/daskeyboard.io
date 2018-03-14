@@ -2,7 +2,7 @@
 <html lang="en">
   {% include head.html %}
 
-  <body class="{% if page.url == site.url %}homepage{% endif %}">
+  <body class="{% if page.url == {{site.url}} %}homepage{% endif %}">
 
     <div id="overlay-under-drawer"><!-- for the drawer on narrow screens --></div>
 
@@ -18,7 +18,7 @@
           {% include sidebar.html %}
         </div>
 
-        {% if page.url == site.url %}
+        {% if page.url == {{site.url}} %}
         {% comment %} Homepage {% endcomment %}
 
         <!-- Homepage Content Column -->
