@@ -29,5 +29,6 @@ echo "Copy staging into docs to deploy the website"
 cp -r ./staging/* ./docs/
 git add .
 git commit -m 'Deploy the website'
+git remote rm origin
 git remote add origin https://github.com/DasKeyboard/q-website.git
 git push origin master
