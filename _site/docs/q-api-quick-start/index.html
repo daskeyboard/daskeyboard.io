@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Das Keyboard Q Desktop Software </title>
+  <title>Quick Start: Das Keyboard Q REST API  - Das Keyboard </title>
   <link rel="shortcut icon" href="/images/favicon.png">
 
   <meta name="description" content="">
@@ -16,7 +16,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Extended" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro%7CRoboto:500,400italic,300,400" rel="stylesheet">
   
-  <link rel="canonical" href="http://localhost:4000/">
+  <link rel="canonical" href="http://localhost:4000/q-api-quick-start/">
   <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
   <script>
     // Initialize Firebase
@@ -128,105 +128,119 @@
             <article class="post-content">
   
   
+  <header class="post-header">
+      <div class="btn-group contribute" role="group">
+         <a href="https://github.com/DasKeyboard/q-website/master/q-api-quick-start.md" class="btn btn-sm">
+            <i class="fa fa-pencil"></i> Edit Source
+         </a>
+         <a href="https://github.com/DasKeyboard/q-website/issues/new?title=Issue from website page Quick Start: Das Keyboard Q REST API&body=From URL: http://localhost:4000/q-api-quick-start.md&labels=dev: docs - website" class="btn btn-sm">
+            <i class="fa fa-github"></i> File Issue
+        </a>
+     </div>
+   <div>
+    <h1 class="post-title">Quick Start: Das Keyboard Q REST API </h1>
+   </div>
 
-  <div class="homepage__illustration">
-    <h1 class="homepage__illustration--text">
-        <span>Das Keyboard is now in Beta!</span>
-        &nbsp;
-    </h1>
-    <div class="hot-reload-gif-container">
-        <img src="images/5q-animation-whitebg.gif" class="homepage__illustration--image" alt="Illustration with a mobile phone, a pencil, and an abstract drawing of widgets." />
-    </div>
+  </header>
+  
+
+  <p>Das Keyboard 5Q RGB mechanical keyboard LEDs can be controlled over
+the Internet or over a local area network.</p>
+
+<p>This quick start document covers the following:</p>
+
+<ol>
+  <li>How it works</li>
+  <li>Getting authentication tokens</li>
+  <li>Sending a signal to a Q device</li>
+</ol>
+
+<p>NOTE: this example uses Linux <code class="highlighter-rouge">shell</code> command line.</p>
+
+<ul>
+  <li>
+    <p><code class="highlighter-rouge">shell</code> command line is available on Windows when using Windows Subsystem for Linux on Windows 10: <a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">https://docs.microsoft.com/en-us/windows/wsl/install-win10</a>.</p>
+  </li>
+  <li>
+    <p>use <code class="highlighter-rouge">git bash</code> which is available here: <a href="https://gitforwindows.org/">https://gitforwindows.org/</a>.</p>
+  </li>
+</ul>
+
+<h2 id="how-it-works">How it works</h2>
+
+<p>In order to control the RGB LEDs of a Q device, a user must send authenticated
+HTTP JSON requests to a Q REST API.</p>
+
+<p>Q cloud services <a href="https://q.daskeyboard.com/">https://q.daskeyboard.com/</a> provides a REST API that talks to
+Q devices. Alternatively, one can also write a script that directly interacts
+with a Q device via your workstation (i.e.: http://localhost:/#port…).</p>
+
+<p>Therefore there are two ways to send a signal to a Q device:</p>
+
+<ul>
+  <li>From the Q cloud:</li>
+</ul>
+
+<pre><code class="language-txt">Your script on your computer --&gt; Q clould service --&gt; Q desktop app on your computer --&gt; Q enabled device
+</code></pre>
+
+<ul>
+  <li>Directly from your machine:</li>
+</ul>
+
+<pre><code class="language-txt">Your script on your computer --&gt; Q desktop app on your computer --&gt; Q enabled device
+</code></pre>
+
+<p>The example in this document uses the Q cloud service.</p>
+
+<h2 id="getting-authentication-tokens">Getting authentication tokens</h2>
+
+<p>Since Q cloud service requires authenticated requests, you need to get an OAuth
+<code class="highlighter-rouge">access token</code> and <code class="highlighter-rouge">refresh token</code>.</p>
+
+<p>To get them, first signup for an account at <a href="https://q.daskeyboard.com">https://q.daskeyboard.com</a> then find
+your <code class="highlighter-rouge">client id</code> and <code class="highlighter-rouge">secret</code> here: <a href="https://q.daskeyboard.com/account">https://q.daskeyboard.com/account</a></p>
+
+<p>For convenience, store <code class="highlighter-rouge">client id</code> and <code class="highlighter-rouge">secret</code> in <code class="highlighter-rouge">shell</code> variables:</p>
+
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="nv">clientId</span><span class="o">=</span><span class="s2">"YOUR_CLIENT_ID"</span>
+<span class="nv">clientSecret</span><span class="o">=</span><span class="s2">"YOUR_CLIENT_SECRET"</span>
+</code></pre>
 </div>
 
-<section class="homepage__key_points card">
-    <h1 class="homepage__title">
-        Control Das&nbsp;Keyboard RGB devices
-    </h1>
+<p>Then run this command to get your tokens:</p>
 
-    <div class="homepage__tagline">
-    The Das Keyboard 5Q is a cloud connected keyboard allowing users to display color notifications on each key. 
-    Notifications can come from applications such as Twitter, Gmail, eBay, Facebook and many others. 
-    Hundreds of applications can be configured via IFTTT and Zapier, transforming the 5Q keyboard into a RGB dashboard. 
-    An open REST API is also available for programmers.
-    </div>
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code>curl -X POST -H <span class="s2">"Content-Type: application/json"</span> -d <span class="s1">'{"client_id": "'</span><span class="nv">$clientId</span><span class="s1">'", "client_secret": "'</span><span class="nv">$clientSecret</span><span class="s1">'", "grant_type": "client_credentials"}'</span> https://q.daskeyboard.com/oauth/1.4/token
+</code></pre>
+</div>
 
-    <div class="homepage__button_row">
-    <a href="/get-started/download/" class="get-started-button">Get Started</a>
-    </div>
+<p>Response:</p>
 
-    <div class="key-points">
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="o">{</span><span class="s2">"access_token"</span>:<span class="s2">"0e155790a123543467860509b7e5"</span>,<span class="s2">"refresh_token"</span>:<span class="s2">"5f1b05834235bc020ba33aa8"</span>,<span class="s2">"user_id"</span>:7654,<span class="s2">"expires_in"</span>:86400<span class="o">}</span>
+</code></pre>
+</div>
 
-        <div class="homepage__key_point">
-            <div class="homepage__key_point_title">Illumination</div>
+<h2 id="sending-a-signal-to-a-q-device">Sending a signal to a Q device</h2>
 
-            <p>
-            With the Dashboard View, you can quickly visualize the state of your keyboard.
-            Mouseover each individual key to see which notifications are streaming through.
-            </p>
-        </div>
+<p>Now that you got your <code class="highlighter-rouge">access token</code> from the previous command, replace the
+<code class="highlighter-rouge">XXXX</code> below with the <code class="highlighter-rouge">access_token</code> value. Then, when you run the command, the A key
+should light up green.</p>
 
-        <div class="homepage__key_point">
-            <div class="homepage__key_point_title">Q signal center</div>
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code>curl -H <span class="s2">"Content-Type: application/json"</span> -H <span class="s2">"Authorization: Bearer XXXX"</span> -X POST https://q.daskeyboard.com/api/1.0/signals -d <span class="s1">'{"name": "Apple stock increase", "pid": "DK5QPID", "zoneId": "KEY_A", "color": "#0F0"}'</span>
+</code></pre>
+</div>
 
-            <p>
-            Press the Q button to access notifications.
-            </p>
-        </div>
+<p>It takes only few milliseconds for Q cloud service to send a signal to a Q
+device, so don’t blink.</p>
 
-        <div class="homepage__key_point">
-            <div class="homepage__key_point_title">Cloud connection</div>
+<p>At this point you should see your Q device A-key colored in green. If you push
+the Q button on your Q keyboard, you’ll see the message “Apple stock increase”.</p>
 
-            <p>
-            Receive IFTTT and Zapier notifications directly on the 5Q.
-            </p>
-        </div>
+<h2 id="next-steps">Next steps</h2>
 
-    </div>
-</section>
-
-<section class="homepage__hot_reload card">
-    <h1>Illumination</h1>
-
-    <p>
-        With the Dashboard View, you can quickly visualize the state of your keyboard.
-        Mouseover each individual key to see which notifications are streaming through.
-    </p>
-
-    <img src="/images/homepage/capture-illumination.png" width="1671" height="912" alt="Make a change in your code, and your app is changed instantly." />
-</section>
-
-<section class="homepage__beautiful_uis card ">
-    <h1>Q signal center</h1>
-
-    <p>
-    Press the Q button to access notifications.
-    </p>
-
-    <img src="/images/homepage/signal-center.png" width="1004" height="662" alt="Brand-first shopping design" />
-
-</section>
-
-<section class="homepage__reactive_framework card">
-    <h1>Cloud connection</h1>
-
-    <p>
-        Receive IFTTT and Zapier notifications directly on the 5Q.
-    </p>
-
-    <img src="/images/homepage/q-desktop-advanced-software.gif" width="680" height="414" alt="Brand-first shopping design" />
-
-</section>
-
-<section class="homepage__try_flutter card">
-
-    <div class="homepage__try_today">Try Das Keyboard today. Getting started is easy.</div>
-
-    <div class="homepage__button_row">
-    <a href="/get-started/download/" class="get-started-button">Get Started</a>
-    </div>
-
-</section>
+<p>As seen in this simple example, once authenticated, it is very easy to send a
+signal to a Q device. Ready to program your dashboard keyboard?
+Head over to the full API documentation: <a href="/q-api-doc/">Q cloud documentation</a></p>
 
 </article>
 
