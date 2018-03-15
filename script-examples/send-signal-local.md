@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "Send one signal to the local API"
-permalink: /script-examples/send-signal-local/
 ---
 
 <ul class="tabs__top-bar">

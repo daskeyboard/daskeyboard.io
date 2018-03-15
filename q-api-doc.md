@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Das Keyboard Q REST API Documentation
-permalink: /q-api-doc/
 ---
 This document explains how to use the Q API. To create, update and delete signals, two options are available: sending the request to the Q cloud service <https://q.daskeyboard.com/> or directly to the desktop application http://localhost:#port/...
 
@@ -11,9 +10,9 @@ The Q cloud service and the desktop software use similar routes, however the HTT
 
 The developer Q API is an easy to use JSON REST API to send signals to the Q device.
 
-- [Quick start](/q-api-quick-start/)
-- [Community contributions](/contributed-links/)
-- [API examples](/script-examples/)
+- [Quick start]({{site.baseurl}}/q-api-quick-start/)
+- [Community contributions]({{site.baseurl}}/contributed-links/)
+- [API examples]({{site.baseurl}}/script-examples/)
 - [Developer forum](https://qforum.daskeyboard.com)
 
 ## Authentication: Oauth2 (Cloud only)
@@ -21,7 +20,7 @@ The developer Q API is an easy to use JSON REST API to send signals to the Q dev
 The Das Keyboard Q Cloud service uses [Oauth2 authentication](https://oauth.net/2/), so in order to perform a request, you will need to send a token, which will require the use of your client credentials. Indeed, once a user account is created on the Q Cloud service, a client is automatically generated with the name "User_X" where X is a unique id associated to the user.
 For example, if Bob signs up to the Q Cloud and has the id 87, a client will be generated for him with the name "User_87".
 
-To get OAuth tokens, please read the [Q Authentication documentation](/q-authentication/).
+To get OAuth tokens, please read the [Q Authentication documentation]({{site.baseurl}}/q-authentication/).
 
 ### Short note about data format
 

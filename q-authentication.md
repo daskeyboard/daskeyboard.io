@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Das Keyboard Q OAuth authentication API
-permalink: /q-authentication/
 ---
 
 Q service Oauth2 uses tokens `access token` and `refresh token` to secure resources.

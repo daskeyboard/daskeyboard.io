@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "Get Started: Zapier tutorial"
-permalink: /get-started/zapier-tutorial/
 ---
 
 ## To connect your 5Q keyboard to the Internet
@@ -10,4 +9,4 @@ permalink: /get-started/zapier-tutorial/
 
 ## Next step
 
-[Next step: Read the Q Developer API to create your own signal](/q-api-doc/)
+[Next step: Read the Q Developer API to create your own signal]({{site.baseurl}}/q-api-doc/)

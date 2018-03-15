@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "Colorize all LEDs of the Q keyboard"
-permalink: /script-examples/colorize-keyboard/
 ---
 
 <ul class="tabs__top-bar">

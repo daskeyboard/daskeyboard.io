@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "Get Started: IFTTT tutorial"
-permalink: /get-started/ifttt-tutorial/
 ---
 
 ## To connect your 5Q keyboard to the Internet
@@ -10,4 +9,4 @@ permalink: /get-started/ifttt-tutorial/
 
 ## Next step
 
-[Next step: Watch the Zapier tutorial](/get-started/zapier-tutorial/)
+[Next step: Watch the Zapier tutorial]({{site.baseurl}}/get-started/zapier-tutorial/)

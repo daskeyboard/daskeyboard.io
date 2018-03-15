@@ -1,8 +1,11 @@
 # Site settings
+source:          .
+destination:     ./docs
+
 title: Das Keyboard
 email: camille@metadot.com
 email_name: camille@
-baseurl: "/q-website/" # the subpath of your site, e.g. /blog/
+baseurl: "/q-website" # the subpath of your site, e.g. /blog/
 url: "https://daskeyboard.github.io/q-website/"
 github_username: DasKeyboard
 

@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "Quick Start: Das Keyboard Q REST API"
-permalink: /q-api-quick-start/
 ---
 Das Keyboard 5Q RGB mechanical keyboard LEDs can be controlled over
 the Internet or over a local area network.
@@ -90,4 +89,4 @@ the Q button on your Q keyboard, you'll see the message "Apple stock increase".
 
 As seen in this simple example, once authenticated, it is very easy to send a
 signal to a Q device. Ready to program your dashboard keyboard?
-Head over to the full API documentation: [Q cloud documentation](/q-api-doc/)
+Head over to the full API documentation: [Q cloud documentation]({{site.baseurl}}/q-api-doc/)

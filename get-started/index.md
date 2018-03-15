@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "Get Started: Overview"
-permalink: /get-started/
 ---
 
 Welcome to the Das Keyboard Get Started Experience. We will help you:
@@ -12,4 +11,4 @@ Welcome to the Das Keyboard Get Started Experience. We will help you:
 
 ## Next step
 
-[Next step: Download Q firmware and Q software](/get-started/download/)
+[Next step: Download Q firmware and Q software]({{site.baseurl}}/get-started/download/)
