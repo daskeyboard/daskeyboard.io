@@ -24,7 +24,7 @@ task :checklinks do
       'https://github.com/DasKeyboard/' => 'https://github.com/DasKeyboard/q-website/'
     }
   }
-  HTMLProofer.check_directory("./docs", options).run
+  HTMLProofer.check_directory("./staging", options).run
 end
 
 
