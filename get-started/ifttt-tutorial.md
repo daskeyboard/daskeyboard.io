@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Get Started: IFTTT tutorial"
+permalink: /get-started/ifttt-tutorial/
 ---
 
 ## To connect your 5Q keyboard to the Internet

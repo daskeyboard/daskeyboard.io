@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Get Started: Overview"
+permalink: /get-started/
 ---
 
 Welcome to the Das Keyboard Get Started Experience. We will help you:

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Display the CPU percentage"
+permalink: /script-examples/cpu-percentage/
 ---
 
 <ul class="tabs__top-bar">

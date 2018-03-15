@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Get Started: Download"
+permalink: /get-started/download/
 ---
 
 ## Control Das Keyboard RGB devices with Q software

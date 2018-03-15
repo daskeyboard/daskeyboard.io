@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Get Started: Zapier tutorial"
+permalink: /get-started/zapier-tutorial/
 ---
 
 ## To connect your 5Q keyboard to the Internet

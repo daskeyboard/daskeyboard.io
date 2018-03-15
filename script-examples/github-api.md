@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Send a signal when we receive a notifications from Github"
+permalink: /script-examples/github-api/
 ---
 
 <ul class="tabs__top-bar">

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Update 1.0.0 Beta.29  - Das Keyboard </title>
+  <title>Update 1.0.0 Beta.28  - Das Keyboard </title>
   <link rel="shortcut icon" href="/q-website/images/favicon.png">
 
   <meta name="description" content="">
@@ -16,7 +16,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Extended" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro%7CRoboto:500,400italic,300,400" rel="stylesheet">
   
-  <link rel="canonical" href="http://localhost:4000/q-website/updates/1.0.0-beta.29.html">
+  <link rel="canonical" href="http://localhost:4000/q-website/updates/1.0.0-beta.28/">
   <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
   <script>
     // Initialize Firebase
@@ -132,15 +132,15 @@
   
   <header class="post-header">
       <div class="btn-group contribute" role="group">
-         <a href="https://github.com/DasKeyboard/q-website/tree/master/updates/1.0.0-beta.29.md" class="btn btn-sm">
+         <a href="https://github.com/DasKeyboard/q-website/tree/master/updates/1.0.0-beta.28.md" class="btn btn-sm">
             <i class="fa fa-pencil"></i> Edit Source
          </a>
-         <a href="https://github.com/DasKeyboard/q-website/issues/new?title=Issue from website page Update 1.0.0 Beta.29&body=From URL: http://localhost:4000/updates/1.0.0-beta.29.md&labels=dev: docs - website" class="btn btn-sm">
+         <a href="https://github.com/DasKeyboard/q-website/issues/new?title=Issue from website page Update 1.0.0 Beta.28&body=From URL: http://localhost:4000/updates/1.0.0-beta.28.md&labels=dev: docs - website" class="btn btn-sm">
             <i class="fa fa-github"></i> File Issue
         </a>
      </div>
    <div>
-    <h1 class="post-title">Update 1.0.0 Beta.29 </h1>
+    <h1 class="post-title">Update 1.0.0 Beta.28 </h1>
    </div>
 
   </header>
@@ -148,22 +148,34 @@
 
   <ul>
   <li>
-    <p>Macro recorder has be redone to use directly the keydown/up events as they are fired from the browser (electron). That way we do not require the presence of 5Q/X50 to do macro recording.</p>
+    <p>Replaced the default browser tooltips, with bootstrap tooltips.</p>
   </li>
   <li>
-    <p>Optimized the keydown/up listeners, which were causing the text inputs to be extremely slow.</p>
+    <p>Removed ‘home’ button as obsolete.</p>
   </li>
   <li>
-    <p>Now pipe zones borders are hidden when the mouse pointer is not over the keyboard area.</p>
+    <p>Use the secured ‘wss’ instead of ‘ws’ protocol for the web sockets for profiles and signals.</p>
   </li>
   <li>
-    <p>Updated the logic behind ‘connected’ and ‘not connected’ - now when a device is not connected, it is shown  instead in ‘simulation’. Device cannot be forgotten when it is connected, but only when is in ‘simulation’.</p>
+    <p>Made the bouncing light with shorter size.</p>
   </li>
   <li>
-    <p>Moved the hamburger icon (for opening/closing of profile menu) next to the Das Keyboard logo, and added animation when using it.</p>
+    <p>Not forcing https when the backend URL is set to ‘localhost’.</p>
   </li>
   <li>
-    <p>Various other bug fixes and tweaks.</p>
+    <p>Removed the shadow around the hi-brightness option for X50.</p>
+  </li>
+  <li>
+    <p>Updated the french and MAC layouts images.</p>
+  </li>
+  <li>
+    <p>Fixed the issue with not centered bottom UI elements (the effects area).</p>
+  </li>
+  <li>
+    <p>Save the json data formatted (instead on a single line).</p>
+  </li>
+  <li>
+    <p>Fixed the issue with the macro allowing to be saved without a name.</p>
   </li>
 </ul>
 

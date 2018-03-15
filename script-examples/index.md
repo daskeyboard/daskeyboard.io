@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Script examples"
+permalink: /script-examples/
 ---
 
 Below are some script examples to demonstrate how to use the Q developer API with different languages:

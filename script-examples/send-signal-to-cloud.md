@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Send one signal to the Cloud"
+permalink: /script-examples/send-signal-to-cloud/
 ---
 
 <ul class="tabs__top-bar">
