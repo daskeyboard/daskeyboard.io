@@ -16,8 +16,6 @@ rake checklinks
 echo "Validating Read Me."
 rake proof_readme
 
-echo "Validating URL."
-rake check_URL
 # if [ "$TRAVIS_EVENT_TYPE" = "push" ] && [ "$TRAVIS_BRANCH" = "master" ]; then
 #   # Deploy pushes to master to Firebase hosting.
 #   echo "Deploying to Firebase."
