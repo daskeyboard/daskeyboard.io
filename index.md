@@ -13,7 +13,7 @@ hide_title: true
     <div class="hot-reload-gif-container">
         <img src="{{ "images/5q-animation-whitebg.gif"  | relative_url }}"
             class="homepage__illustration--image"
-            alt="Illustration with a mobile phone, a pencil, and an abstract drawing of widgets.">
+            alt="Animation of the 5Q keyboard receiving signals">
     </div>
 </div>
 
@@ -71,7 +71,7 @@ hide_title: true
         Mouseover each individual key to see which notifications are streaming through.
     </p>
 
-    <img src="{{ "images/homepage/capture-illumination.png"  | relative_url }}" width="1671" height="912" alt="Make a change in your code, and your app is changed instantly.">
+    <img src="{{ "images/homepage/capture-illumination.png"  | relative_url }}" width="1671" height="912" alt="Q software application in the Illumination mode.">
 </section>
 
 <section class="homepage__beautiful_uis card ">
@@ -81,7 +81,7 @@ hide_title: true
     Press the Q button to access notifications.
     </p>
 
-    <img src="{{ "images/homepage/signal-center.png"  | relative_url }}" width="1004" height="662" alt="Brand-first shopping design">
+    <img src="{{ "images/homepage/signal-center.png"  | relative_url }}" width="1004" height="662" alt="Q signal center of the Q software application.">
 
 </section>
 
@@ -92,7 +92,7 @@ hide_title: true
         Receive IFTTT and Zapier notifications directly on the 5Q.
     </p>
 
-    <img src="{{ "images/homepage/q-desktop-advanced-software.gif" | relative_url }}" width="680" height="414" alt="Brand-first shopping design">
+    <img src="{{ "images/homepage/q-desktop-advanced-software.gif" | relative_url }}" width="680" height="414" alt="Animation of the cloud connection between the keyboard, the Q software and Zapier/IFTTT/Q cloud.">
 
 </section>
 

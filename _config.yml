@@ -6,7 +6,7 @@ title: Das Keyboard
 email: camille@metadot.com
 email_name: camille@
 baseurl: "/q-website" # the subpath of your site, e.g. /blog/
-url: "https://daskeyboard.github.io/q-website/"
+url: "https://daskeyboard.github.io"
 github_username: DasKeyboard
 
 # Build settings

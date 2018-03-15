@@ -13,6 +13,8 @@ bundle exec jekyll build
 echo "Validating all links."
 rake checklinks
 
+# echo "Validating Read Me."
+# rake proof_readme
 
 # if [ "$TRAVIS_EVENT_TYPE" = "push" ] && [ "$TRAVIS_BRANCH" = "master" ]; then
 #   # Deploy pushes to master to Firebase hosting.

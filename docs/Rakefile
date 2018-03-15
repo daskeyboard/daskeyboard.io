@@ -1,4 +1,6 @@
 require 'html-proofer'
+require 'redcarpet'
+require "net/http"
 
 task :checklinks do
   sh "bundle exec jekyll build"
@@ -17,9 +19,22 @@ task :checklinks do
     # Replace canonical link with local links.
     # Details: http://tongueroo.com/articles/getting-html-proofer-to-work-with-canonical-url-for-google-seo/
     :url_swap => {
-      'https://daskeyboard.github.io/q-website/' => ''
+      'https://daskeyboard.github.io/q-website' => '',
+      '/q-website' => '',
+      'https://github.com/DasKeyboard/tree/master/' => ''
     }
   }
-  HTMLProofer.check_directory("./_site", options).run
+  HTMLProofer.check_directory("./docs", options).run
 end
 
+# task :proof_readme do
+#   renderer = Redcarpet::Render::HTML.new \
+#     with_toc_data: true
+#   redcarpet = Redcarpet::Markdown.new(renderer)
+#   html = redcarpet.render File.read('README.md')
+
+#   File.write('docs/README.html', html)
+
+#   opts = { url_ignore: [/badge.fury.io/] }
+#   HTMLProofer.check_directory('./docs', opts).run
+# end
