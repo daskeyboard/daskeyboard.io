@@ -21,7 +21,7 @@ task :checklinks do
     :url_swap => {
       'https://daskeyboard.github.io/q-website' => '',
       '/q-website' => '',
-      'https://github.com/DasKeyboard/tree/master/' => ''
+      'https://github.com/DasKeyboard/' => 'https://github.com/DasKeyboard/q-website/'
     }
   }
   HTMLProofer.check_directory("./docs", options).run
