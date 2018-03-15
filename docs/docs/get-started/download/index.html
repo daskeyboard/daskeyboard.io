@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Das Keyboard Q software documentation  - Das Keyboard </title>
+  <title>Get Started: Download  - Das Keyboard </title>
   <link rel="shortcut icon" href="/images/favicon.png">
 
   <meta name="description" content="">
@@ -16,7 +16,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Extended" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro%7CRoboto:500,400italic,300,400" rel="stylesheet">
   
-  <link rel="canonical" href="http://localhost:4000/docs/">
+  <link rel="canonical" href="http://localhost:4000/get-started/download/">
   <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
   <script>
     // Initialize Firebase
@@ -130,101 +130,42 @@
   
   <header class="post-header">
       <div class="btn-group contribute" role="group">
-         <a href="https://github.com/DasKeyboard/q-website/master/docs.md" class="btn btn-sm">
+         <a href="https://github.com/DasKeyboard/q-website/master/get-started/download.md" class="btn btn-sm">
             <i class="fa fa-pencil"></i> Edit Source
          </a>
-         <a href="https://github.com/DasKeyboard/q-website/issues/new?title=Issue from website page Das Keyboard Q software documentation&body=From URL: http://localhost:4000/docs.md&labels=dev: docs - website" class="btn btn-sm">
+         <a href="https://github.com/DasKeyboard/q-website/issues/new?title=Issue from website page Get Started: Download&body=From URL: http://localhost:4000/get-started/download.md&labels=dev: docs - website" class="btn btn-sm">
             <i class="fa fa-github"></i> File Issue
         </a>
      </div>
    <div>
-    <h1 class="post-title">Das Keyboard Q software documentation </h1>
+    <h1 class="post-title">Get Started: Download </h1>
    </div>
 
   </header>
   
 
-  <ul class="cards">
+  <h2 id="control-das-keyboard-rgb-devices-with-q-software">Control Das Keyboard RGB devices with Q software</h2>
 
-	<li class="cards__item">
-	    <div class="card">
-		    <h3 class="catalog-category-title"><a class="action-link" href="/get-started/download/">Get Started as a user</a></h3>
-		    <p>Set up your environment and start using the Q Desktop application.</p>
-		    <div class="card-action">
-		        <a class="action-link" href="/get-started/download/">VISIT</a>
-		    </div>
-		</div>
-	</li>
+<div class="homepage__button_row">
+  <a href="https://s3-us-west-2.amazonaws.com/q-software-releases/5Q-Flash-Upgrade.7.3.247.exe" class="get-started-button">Download firmware</a>
+  <a href="https://s3-us-west-2.amazonaws.com/q-software-releases/Das-Keyboard-Q-Setup-1.0.0-beta.43.exe" class="get-started-button">Download Q desktop</a>
+</div>
 
-	<li class="cards__item">
-	    <div class="card">
-		    <h3 class="catalog-category-title"><a class="action-link" href="/q-api-doc/">Get Started as a developer</a></h3>
-		    <p>Read the Q developer API and start sending your own signals to your Q keyboard.</p>
-		    <div class="card-action">
-		        <a class="action-link" href="/q-api-doc/">VISIT</a>
-		    </div>
-		</div>
-	</li>
+<div class="card" style="margin-left:0; margin-right:0; width:auto; margin-bottom: 1.5em;">
+  <div class="card-body">
+    <h5 class="card-title">Important, before upgrading firmware</h5>
+    <small><ol class="card-text text-left">
+            <li>Download the firmware file. If the 5Q firmware is up to date, the installer will not perform the upgrade. The current 5Q firmware version is displayed on the home page of the Q Desktop software. It is also displayed when running the firmware upgrade application.</li>
+            <li>IMPORTANT: Quit the Q Desktop App. Do not just click on the upper right "X" but find quit in the menu located in the upper right corner of the Q Desktop App. The flash update will not proceed and your keyboard will blink unless the Q App is terminated.</li>
+            <li>Double click the firmware file to “Run” it. Windows 10 Defender may display a message regarding an “unrecognized app” that has been prevented from starting. You will need to run it in order to upgrade the firmware on the 5Q. To enable the firmware upgrade to proceed, please click on <code>More Info</code> and follow the prompts to run the upgrader and update the firmware.</li>
+    </ol></small>
+    <small><div class="alert alert-danger mt-3" role="alert">Please DO NOT unplug or use the keyboard during the upgrade process or you will brick your device.</div></small>
+  </div>
+</div>
 
-</ul>
+<h2 id="next-step">Next step</h2>
 
-<p> </p>
-
-<p><em>Warning:</em> the Q software is in very early stage. It’s buggy, incomplete, and poorly documented.
-However it is improving quickly. Only use it if you are 
-comfortable being a beta software and contributing useful feedback.</p>
-
-<h2 id="q-desktop-software-installation">Q Desktop Software Installation</h2>
-
-<h3 id="download-and-install-q-clients-software">Download and install Q clients software</h3>
-
-<p>Q clients can be downloaded from the Q website: <a href="https://www.daskeyboard.com/technology/q-software/">https://www.daskeyboard.com/technology/q-software/</a></p>
-
-<h3 id="create-a-das-keyboard-q-account">Create a Das Keyboard Q account</h3>
-
-<p>In order to use the Q client, you’ll need to create an account at <a href="https://q.daskeyboard.com/">https://q.daskeyboard.com/</a></p>
-
-<h3 id="signup-for-the-q-forum">Signup for the Q forum</h3>
-
-<p>The Q forum is an online discussion for technical discussion: <a href="https://qforum.daskeyboard.com">https://qforum.daskeyboard.com</a></p>
-
-<h2 id="sending-signals-to-your-5q-keyboard--developer-api">Sending Signals to your 5Q keyboard + developer API</h2>
-
-<p>A bit of lingo first: a <em>signal</em> is a message that contains color information (and more) to be
-displayed on a 5Q keyboard. All 3rd party platforms communicate with the Q clients by sending 
- signals very much like your friends send text messages to your phone. Instead of being a text message, a 
- signal contains also key color information.</p>
-
-<p>Even without a real Q device, you can play with Signals. Signals will be displayed on the Q desktop “dashboard mode” and the Q Android app.</p>
-
-<p>There are several possibilities to send signals to the 5Q keyboard:</p>
-
-<ul>
-  <li><a href="https://zapier.com">Zapier</a>: use Zapier clould platform to create zaps (like IFTTT recipes).
- Select the Action called “Das Keyboard Q”. Zapier will create signals based on triggers such as
-emails, Facebook events, even new Youtube videos and much more. The app is currently working with invitations only, here is the link to access it: <a href="https://zapier.com/developer/invite/52454/1adf69b9a21dcfa16a1953d99baf253e/">https://zapier.com/developer/invite/52454/1adf69b9a21dcfa16a1953d99baf253e/</a>.</li>
-  <li><a href="https://ifttt.com">IFTTT</a></li>
-  <li>You can also create your own script with the <a href="/q-api-quick-start/">Q API</a>.</li>
-</ul>
-
-<h2 id="q-developer-api">Q Developer API</h2>
-
-<p>The developer Q API is an easy to use JSON REST API to send signals to the Q device.</p>
-
-<ul>
-  <li><a href="https://github.com/DasKeyboard/q/blob/master/q-api-quick-start.md">Quick start</a>.</li>
-  <li><a href="https://github.com/DasKeyboard/q/blob/master/q-api-doc.md">Full documentation</a>.</li>
-  <li><a href="https://github.com/DasKeyboard/q/blob/master/contributed-links.md">Community contributions</a></li>
-  <li><a href="https://github.com/DasKeyboard/q/tree/master/examples">API examples</a></li>
-  <li><a href="https://qforum.daskeyboard.com">Developer forum</a></li>
-</ul>
-
-<h2 id="contributing">Contributing</h2>
-
-<p>At this point of the development, we would like to ask the community for input on all aspects
-of the project: features, API, ideas, etc…</p>
-
-<p>Please use the <a href="https://qforum.daskeyboard.com">Q forum</a> to interact.</p>
+<p><a href="/get-started/welcome-video/">Next step: Watch the welcome video</a></p>
 
 </article>
 
