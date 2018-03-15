@@ -4,3 +4,4 @@ gem 'therubyracer'
 gem 'html-proofer'
 gem 'redcarpet'
 gem "github-pages", group: :jekyll_plugins
+gem 'bundler'

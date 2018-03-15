@@ -27,14 +27,21 @@ task :checklinks do
   HTMLProofer.check_directory("./docs", options).run
 end
 
-# task :proof_readme do
-#   renderer = Redcarpet::Render::HTML.new \
-#     with_toc_data: true
-#   redcarpet = Redcarpet::Markdown.new(renderer)
-#   html = redcarpet.render File.read('README.md')
 
-#   File.write('docs/README.html', html)
+task default: %i(spec proof_readme)
 
-#   opts = { url_ignore: [/badge.fury.io/] }
-#   HTMLProofer.check_directory('./docs', opts).run
-# end
+task :proof_readme do
+  require 'html-proofer'
+  require 'redcarpet'
+
+  renderer = Redcarpet::Render::HTML.new \
+    with_toc_data: true
+  redcarpet = Redcarpet::Markdown.new(renderer)
+  html = redcarpet.render File.read('README.md')
+
+  mkdir_p 'out'
+  File.write('out/README.html', html)
+
+  opts = { url_ignore: [/badge.fury.io/] }
+  HTMLProofer.check_directory('./out', opts).run
+end

@@ -218,6 +218,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bundler
   github-pages
   html-proofer
   jekyll (= 3.3.1)
