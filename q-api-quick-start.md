@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Quick Start: Das Keyboard Q REST API"
+permalink: /q-api-quick-start/
 ---
 Das Keyboard 5Q RGB mechanical keyboard LEDs can be controlled over
 the Internet or over a local area network.

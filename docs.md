@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Das Keyboard Q software documentation
+permalink: /docs/
 ---
 
 <ul class="cards">

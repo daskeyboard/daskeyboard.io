@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Das Keyboard Q API Contributed Links
+permalink: /contributed-links/
 ---
 
 Code contributed by the community. Have something to share? Create a pull request.

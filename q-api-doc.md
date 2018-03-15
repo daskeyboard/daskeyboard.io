@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Das Keyboard Q REST API Documentation
+permalink: /q-api-doc/
 ---
 This document explains how to use the Q API. To create, update and delete signals, two options are available: sending the request to the Q cloud service <https://q.daskeyboard.com/> or directly to the desktop application http://localhost:#port/...
 
