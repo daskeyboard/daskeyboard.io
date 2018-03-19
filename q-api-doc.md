@@ -40,7 +40,7 @@ curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -d "PARAM=VALU
 To send signals to your Q Cloud account, you need to authorize clients (e.g. Twitter, Zappier).
 The following command gives the list of authorized clients.
 
-Parameters required: ACCESS_TOKEN.
+Parameters required: ACCESS TOKEN.
 
 ```sh
 curl -X GET -H 'Authorization: Bearer ACCESS_TOKEN' https://q.daskeyboard.com/api/1.0/users/authorized_clients
@@ -69,7 +69,7 @@ Result format:
 
 To revoke a client, only its name is needed:
 
-Parameters required: ACCESS_TOKEN, CLIENT_NAME.
+Parameters required: ACCESS TOKEN, CLIENT_NAME.
 
 ```sh
 curl -X POST -H 'Authorization: Bearer ACCESS_TOKEN' -H 'Content-Type: application/json' -d '{"name": "CLIENT_NAME"}' https://q.daskeyboard.com/api/1.0/users/revoke_client
@@ -79,7 +79,7 @@ If the operation succeeds, you should receive a 200 response.
 
 ## Endpoints  (Cloud only)
 
-Parameter required: ACCESS_TOKEN.
+Parameter required: ACCESS TOKEN.
 
 ### Devices Definitions
 
@@ -366,14 +366,14 @@ The response is a JSON object containing the id of the signal created.
 
 ### Getting the signals (Cloud only)
 
-Parameter required: ACCESS_TOKEN.
+Parameter required: ACCESS TOKEN.
 
 ```sh
 curl -H 'Authorization: Bearer ACCESS_TOKEN' -X GET https://q.daskeyboard.com/api/1.0/signals
 ```
 
 In order to obtain a list of Signals created after a certain time:
-Parameter required: ACCESS_TOKEN, EPOCH_TIME.
+Parameter required: ACCESS TOKEN, EPOCH_TIME.
 
 ```sh
 curl -H 'Authorization: Bearer ACCESS_TOKEN' -X GET https://q.daskeyboard.com/api/1.0/signals/after/EPOCH_TIME

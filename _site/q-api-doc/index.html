@@ -67,12 +67,7 @@
             <a class="page-link" href="/q-website/docs/">Docs</a>
             <a class="page-link" href="https://github.com/DasKeyboard/q-website">GitHub</a>
             <a class="page-link" href="https://daskeyboard.mojohelpdesk.com/">Support</a>
-            <form action="/search/" class="nav-searchbox" id="cse-search-box" style="display: inline">
-              <input type="hidden" name="cx" value="001344149833008068451:qbwkqh1petc">
-              <input type="hidden" name="ie" value="UTF-8">
-              <input type="hidden" name="hl" value="en">
-              <input type="search" name="q" id="q" autocomplete="off" placeholder="Search">
-            </form>
+            <a class="page-link" id="login-link" href="https://q.daskeyboard.com/signin">Login</a>
           </div>
         </nav>
       </div>
@@ -185,7 +180,7 @@ For example, if Bob signs up to the Q Cloud and has the id 87, a client will be 
 <p>To send signals to your Q Cloud account, you need to authorize clients (e.g. Twitter, Zappier).
 The following command gives the list of authorized clients.</p>
 
-<p>Parameters required: ACCESS_TOKEN.</p>
+<p>Parameters required: ACCESS TOKEN.</p>
 
 <div class="language-sh highlighter-rouge"><pre class="highlight"><code>curl -X GET -H <span class="s1">'Authorization: Bearer ACCESS_TOKEN'</span> https://q.daskeyboard.com/api/1.0/users/authorized_clients
 </code></pre>
@@ -214,7 +209,7 @@ The following command gives the list of authorized clients.</p>
 
 <p>To revoke a client, only its name is needed:</p>
 
-<p>Parameters required: ACCESS_TOKEN, CLIENT_NAME.</p>
+<p>Parameters required: ACCESS TOKEN, CLIENT_NAME.</p>
 
 <div class="language-sh highlighter-rouge"><pre class="highlight"><code>curl -X POST -H <span class="s1">'Authorization: Bearer ACCESS_TOKEN'</span> -H <span class="s1">'Content-Type: application/json'</span> -d <span class="s1">'{"name": "CLIENT_NAME"}'</span> https://q.daskeyboard.com/api/1.0/users/revoke_client
 </code></pre>
@@ -224,7 +219,7 @@ The following command gives the list of authorized clients.</p>
 
 <h2 id="endpoints--cloud-only">Endpoints  (Cloud only)</h2>
 
-<p>Parameter required: ACCESS_TOKEN.</p>
+<p>Parameter required: ACCESS TOKEN.</p>
 
 <h3 id="devices-definitions">Devices Definitions</h3>
 
@@ -521,14 +516,14 @@ Each JSON object will have the structure:</p>
 
 <h3 id="getting-the-signals-cloud-only">Getting the signals (Cloud only)</h3>
 
-<p>Parameter required: ACCESS_TOKEN.</p>
+<p>Parameter required: ACCESS TOKEN.</p>
 
 <div class="language-sh highlighter-rouge"><pre class="highlight"><code>curl -H <span class="s1">'Authorization: Bearer ACCESS_TOKEN'</span> -X GET https://q.daskeyboard.com/api/1.0/signals
 </code></pre>
 </div>
 
 <p>In order to obtain a list of Signals created after a certain time:
-Parameter required: ACCESS_TOKEN, EPOCH_TIME.</p>
+Parameter required: ACCESS TOKEN, EPOCH_TIME.</p>
 
 <div class="language-sh highlighter-rouge"><pre class="highlight"><code>curl -H <span class="s1">'Authorization: Bearer ACCESS_TOKEN'</span> -X GET https://q.daskeyboard.com/api/1.0/signals/after/EPOCH_TIME
 </code></pre>
@@ -760,10 +755,12 @@ device. It is a subset of all signals which are not archived.</p>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="/q-website/js/sidebar_toggle.js"></script>
     <script src="/q-website/js/prism.js"></script>
     <script src="/q-website/js/tabs.js"></script>
+    <script src="/q-website/js/credentials.js"></script>
+    
     
     <script async="" defer="" src="//survey.g.doubleclick.net/async_survey?site=at3ul57xpub2vk3oxt2ytw365i"></script>
   </body>

@@ -35,21 +35,17 @@ storing your password in a text file or sharing it... It uses a `client_id`, and
 To get tokens, store your `client_id`, and
 `client_secret`:
 
-```sh
-clientId="YOUR_CLIENT_SECRET"
-clientSecret="YOUR_CLIENT_SECRET"
-```
 
 Then run the following command:
 
 ```sh
-curl -X POST -H "Content-Type: application/json" -d '{"client_id": "'$clientId'", "client_secret": "'$clientSecret'", "grant_type": "client_credentials"}' https://q.daskeyboard.com/oauth/1.4/token
+curl -X POST -H "Content-Type: application/json" -d '{"client_id": "CLIENT_ID", "client_secret": "CLIENT_SECRET", "grant_type": "client_credentials"}' https://q.daskeyboard.com/oauth/1.4/token
 ```
 
 Result format:
 
 ```sh
-{"access_token":"0e155790a123543467860509b7e5","refresh_token":"5f1b05834235bc020ba33aa8","user_id":7654,"expires_in":86400}
+{"access_token":"ACCESS_TOKEN","refresh_token":"REFRESH_TOKEN","user_id":7654,"expires_in":86400}
 ```
 
 ### Grant Type: password (NOT recommended)
@@ -68,7 +64,7 @@ curl -X POST -H "Content-Type: application/json" -d '{"email": "'$email'", "pass
 Result format:
 
 ```sh
-{"access_token":"0e155790a123543467860509b7e5","refresh_token":"5f1b05834235bc020ba33aa8","user_id":7654,"expires_in":86400}
+{"access_token":"ACCESS_TOKEN","refresh_token":"REFRESH_TOKEN","user_id":7654,"expires_in":86400}
 ```
 
 ### Grant Type: authorization_code
@@ -77,7 +73,7 @@ To authenticate an app to your Q account (e.g. Zapier, Twitter), you need to mak
 the following address:
 
 ```txt
-https://q.daskeyboard.com/oauth/auth?client_id=XXX&redirect_uri=XXX
+https://q.daskeyboard.com/oauth/auth?client_id=CLIENT_ID&redirect_uri=XXX
 ```
 
 Two parameters are required:
@@ -89,7 +85,7 @@ Two parameters are required:
 Then make a POST request to
 
 ```txt
-https://q.daskeyboard.com/oauth/1.4/token?grant_type=authorization_code&client_id=XXX&code=YYY
+https://q.daskeyboard.com/oauth/1.4/token?grant_type=authorization_code&client_id=CLIENT_ID&code=YYY
 ```
 
 to get an `access token` and `refresh token`.
@@ -97,13 +93,13 @@ to get an `access token` and `refresh token`.
 Query:
 
 ```sh
-curl -X POST -H "Content-Type: application/json" -d '{"client_id": "'$clientId'", "code": "YOUR_CODE", "grant_type": "authorization_code"}' https://q.daskeyboard.com/oauth/1.4/token
+curl -X POST -H "Content-Type: application/json" -d '{"client_id": "CLIENT_ID", "code": "YOUR_CODE", "grant_type": "authorization_code"}' https://q.daskeyboard.com/oauth/1.4/token
 ```
 
 Result format:
 
 ```sh
-{"access_token":"0e155790a123543467860509b7e5","refresh_token":"5f1b05834235bc020ba33aa8","user_id":7654,"expires_in":86400}
+{"access_token":"ACCESS_TOKEN","refresh_token":"REFRESH_TOKEN","user_id":7654,"expires_in":86400}
 ```
 
 ### Refreshing the Oauth token
@@ -119,5 +115,5 @@ curl -X POST -H "Content-Type: application/json" -d '{"client_id": "CLIENT_ID", 
 Result format:
 
 ```sh
-{"access_token":"0e155790a123543467860509b7e5","refresh_token":"5f1b05834235bc020ba33aa8","user_id":7654,"expires_in":86400}
+{"access_token":"ACCESS_TOKEN","refresh_token":"REFRESH_TOKEN","user_id":CLIENT_ID,"expires_in":86400}
 ```

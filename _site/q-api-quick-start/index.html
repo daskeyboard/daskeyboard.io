@@ -67,12 +67,7 @@
             <a class="page-link" href="/q-website/docs/">Docs</a>
             <a class="page-link" href="https://github.com/DasKeyboard/q-website">GitHub</a>
             <a class="page-link" href="https://daskeyboard.mojohelpdesk.com/">Support</a>
-            <form action="/search/" class="nav-searchbox" id="cse-search-box" style="display: inline">
-              <input type="hidden" name="cx" value="001344149833008068451:qbwkqh1petc">
-              <input type="hidden" name="ie" value="UTF-8">
-              <input type="hidden" name="hl" value="en">
-              <input type="search" name="q" id="q" autocomplete="off" placeholder="Search">
-            </form>
+            <a class="page-link" id="login-link" href="https://q.daskeyboard.com/signin">Login</a>
           </div>
         </nav>
       </div>
@@ -203,32 +198,25 @@ with a Q device via your workstation (i.e.: http://localhost:/#port…).</p>
 <p>To get them, first signup for an account at <a href="https://q.daskeyboard.com">https://q.daskeyboard.com</a> then find
 your <code class="highlighter-rouge">client id</code> and <code class="highlighter-rouge">secret</code> here: <a href="https://q.daskeyboard.com/account">https://q.daskeyboard.com/account</a></p>
 
-<p>For convenience, store <code class="highlighter-rouge">client id</code> and <code class="highlighter-rouge">secret</code> in <code class="highlighter-rouge">shell</code> variables:</p>
+<p>Run this command to get your tokens:</p>
 
-<div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="nv">clientId</span><span class="o">=</span><span class="s2">"YOUR_CLIENT_ID"</span>
-<span class="nv">clientSecret</span><span class="o">=</span><span class="s2">"YOUR_CLIENT_SECRET"</span>
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code>curl -X POST -H <span class="s2">"Content-Type: application/json"</span> -d <span class="s1">'{"client_id": "CLIENT_ID", "client_secret": "CLIENT_SECRET", "grant_type": "client_credentials"}'</span> https://q.daskeyboard.com/oauth/1.4/token
 </code></pre>
 </div>
 
-<p>Then run this command to get your tokens:</p>
+<p>Result format:</p>
 
-<div class="language-sh highlighter-rouge"><pre class="highlight"><code>curl -X POST -H <span class="s2">"Content-Type: application/json"</span> -d <span class="s1">'{"client_id": "'</span><span class="nv">$clientId</span><span class="s1">'", "client_secret": "'</span><span class="nv">$clientSecret</span><span class="s1">'", "grant_type": "client_credentials"}'</span> https://q.daskeyboard.com/oauth/1.4/token
-</code></pre>
-</div>
-
-<p>Response:</p>
-
-<div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="o">{</span><span class="s2">"access_token"</span>:<span class="s2">"0e155790a123543467860509b7e5"</span>,<span class="s2">"refresh_token"</span>:<span class="s2">"5f1b05834235bc020ba33aa8"</span>,<span class="s2">"user_id"</span>:7654,<span class="s2">"expires_in"</span>:86400<span class="o">}</span>
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="o">{</span><span class="s2">"access_token"</span>:<span class="s2">"ACCESS_TOKEN"</span>,<span class="s2">"refresh_token"</span>:<span class="s2">"REFRESH_TOKEN"</span>,<span class="s2">"user_id"</span>:CLIENT_ID,<span class="s2">"expires_in"</span>:86400<span class="o">}</span>
 </code></pre>
 </div>
 
 <h2 id="sending-a-signal-to-a-q-device">Sending a signal to a Q device</h2>
 
 <p>Now that you got your <code class="highlighter-rouge">access token</code> from the previous command, replace the
-<code class="highlighter-rouge">XXXX</code> below with the <code class="highlighter-rouge">access_token</code> value. Then, when you run the command, the A key
+ACCESS TOKEN below with the <code class="highlighter-rouge">access_token</code> value. Then, when you run the command, the A key
 should light up green.</p>
 
-<div class="language-sh highlighter-rouge"><pre class="highlight"><code>curl -H <span class="s2">"Content-Type: application/json"</span> -H <span class="s2">"Authorization: Bearer XXXX"</span> -X POST https://q.daskeyboard.com/api/1.0/signals -d <span class="s1">'{"name": "Apple stock increase", "pid": "DK5QPID", "zoneId": "KEY_A", "color": "#0F0"}'</span>
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code>curl -H <span class="s2">"Content-Type: application/json"</span> -H <span class="s2">"Authorization: Bearer ACCESS_TOKEN"</span> -X POST https://q.abc.com/api/1.0/signals -d <span class="s1">'{"name": "Apple stock increase", "pid": "DK5QPID", "zoneId": "KEY_A", "color": "#0F0"}'</span>
 </code></pre>
 </div>
 
@@ -285,10 +273,12 @@ Head over to the full API documentation: <a href="/q-website/q-api-doc/">Q cloud
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="/q-website/js/sidebar_toggle.js"></script>
     <script src="/q-website/js/prism.js"></script>
     <script src="/q-website/js/tabs.js"></script>
+    <script src="/q-website/js/credentials.js"></script>
+    
     
     <script async="" defer="" src="//survey.g.doubleclick.net/async_survey?site=at3ul57xpub2vk3oxt2ytw365i"></script>
   </body>
