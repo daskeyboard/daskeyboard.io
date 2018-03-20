@@ -60,6 +60,12 @@
     .page-link {
         color: #424242;
         line-height: $base-line-height;
+        position: relative;
+        display: inline;
+        padding: 0;
+        margin-left: -1px;
+        background-color: #fff;
+        border: none;    
 
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
@@ -69,6 +75,10 @@
         @include media-query($on-palm) {
             color: $brand-color;
         }
+    }
+
+    .page-link:hover {
+        text-decoration: underline;
     }
 
     @include media-query($on-palm) {
@@ -218,3 +228,19 @@
     display: block;
     height: 112px;
 }
+
+
+
+// Base class
+.tooltip {
+    z-index: 999!important;
+    overflow: hidden;
+    position: absolute;
+}
+  
+  
+  // Wrapper for the tooltip content
+  .tooltip-inner {
+    z-index: 999!important;
+  }
+  

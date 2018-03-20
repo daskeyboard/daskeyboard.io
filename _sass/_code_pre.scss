@@ -8,15 +8,23 @@ pre[class*="language-"] {
     white-space: pre-wrap;
     word-break: break-all;
     word-wrap: break-word;
+    position: relative;
+    overflow: visible;
 }
 
 pre {
-    overflow-x: auto;
     padding: 8px 12px;
-
     > code {
         border: 0;
         padding-right: 0;
-        padding-left: 0;
+        padding-left: 0;  
     }
+}
+
+pre > code .span-code{
+    background-color: #f8f9fa;
+}
+
+pre > code .span-code tooltip{
+    display: block;
 }
