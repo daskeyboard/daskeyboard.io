@@ -81,6 +81,7 @@ $homepage-illustration-text-break-size: 720px;
     font-size: 24px;
     font-weight: 300;
     margin: 0;
+    text-align: right;
 
     @include media-query($homepage-illustration-text-break-size) {
         font-size: 16px;
@@ -137,34 +138,48 @@ $homepage-illustration-text-break-size: 720px;
     }
 }
 
+.navbar-homepage .btn{
+    margin-right: 1rem;
+}
+
+@media (max-width: 575.98px){
+    .navbar-homepage .btn {
+        margin-top: 1rem;
+    }
+}
+
 .homepage {
     background-color: #e4e8ea;
     background-image: url("/q-website/images/homepage/green-triangle.png");
     background-repeat: no-repeat;
-    background-position: 0 0;
+    background-position: 900px 50px;
+
+    @include media-query(1750px) {
+        background-position: 750px 50px;
+    }
 
     @include media-query(1500px) {
-        background-position: -50px -50px;
+        background-position: 475px 50px;
     }
 
     @include media-query(1300px) {
-        background-position: -100px -100px;
+        background-position: 325px 50px;
     }
 
     @include media-query(1050px) {
-        background-position: -150px -150px;
+        background-position: 275px 50px;
     }
 
     @include media-query(850px) {
-        background-position: -180px -180px;
+        background-position: 225px 50px;
     }
 
     @include media-query($homepage-illustration-text-break-size) {
-        background-position: -200px -200px;
+        background-position: 200px 50px;
     }
 
     @include media-query(620px) {
-        background-position: -230px -230px;
+        background-position: 150px 50px;
     }
 
     #side-nav-container {
@@ -197,9 +212,9 @@ $homepage-illustration-text-break-size: 720px;
 
         h1 {
             color: #5cb85c;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
+            // display: flex;
+            // flex-direction: row;
+            // align-items: center;
 
             font-size: 36px;
             font-weight: 300;
@@ -328,5 +343,9 @@ $homepage-illustration-text-break-size: 720px;
                 margin-bottom: 0;
             }
         }
+    }
+
+    .row{
+        display: block;
     }
 }

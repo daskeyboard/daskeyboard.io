@@ -504,11 +504,6 @@ div#toc ul li ul li {
     margin: 5px 0px 0px 0px;
 }
 
-.alert {
-    border: 0;
-    border-radius: 0;
-}
-
 .alert-info {
     background-color: rgba( 41, 182, 246, 0.2 );
     color: #01579b;
@@ -730,6 +725,8 @@ span.soft {
 
 code .btn{
     padding: 0px;
+    margin-bottom: 0.4em;
+    font-size: inherit;
 }
 
 .btn-default {
@@ -737,24 +734,12 @@ code .btn{
     background-color: #eceff1;
     border-color: transparent;
 }
-
 .tooltip-inner {
     max-width: 250px;
     padding: 3px 8px;
-    color: #333;
-    text-align: center;
-    text-decoration: none;
-    background-color: #eceff1;
-    border-radius: 4px;
-    border: 1px solid #cccccc;
+    
 }
-.tooltip.top .tooltip-arrow {
-    bottom: 0;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px 5px 0;
-    border-top-color: #cccccc;
-}
+
 
 
 /* algolia search */
@@ -853,3 +838,19 @@ table th code {
     line-height: 29px;
     margin-bottom: 15px;
 }
+
+.tooltip-inner {
+    max-width: 200px;
+    padding: 0.25rem 0.5rem;
+    color: #111;
+    text-align: center;
+    background-color: #e2dedb;
+    border: 1px solid #888;
+    border-radius: 0.25rem;
+}
+
+.bs-tooltip-top .arrow::before, .bs-tooltip-auto[x-placement^="top"] .arrow::before {
+    top: 0;
+    border-width: 0.4rem 0.4rem 0;
+    border-top-color: #888;
+  }

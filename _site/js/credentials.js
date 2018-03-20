@@ -60,15 +60,15 @@ accessToken3 = readCookie("cookie3");
 
 if (accessToken1==undefined && accessToken2==undefined && accessToken3==undefined) {
     $("body").children().each(function () {
-        $(this).html( $(this).html().replace(/CLIENT_ID/g, "<button type='button' class='btn btn-default' data-toggle='tooltip' data-placement='top' title='Login to automatically see your own credential.'>CLIENT_ID</button>") );
+        $(this).html( $(this).html().replace(/CLIENT_ID/g, "<span class='span-code' data-toggle='tooltip' data-placement='top' title='Login to automatically see your own credential.'>CLIENT_ID</span>") );
         console.log('The client_id is undefined');
     });
     $("body").children().each(function () {
-        $(this).html( $(this).html().replace(/CLIENT_SECRET/g, "<button type='button' class='btn btn-default' data-toggle='tooltip' data-placement='top' title='Login to automatically see your own credential.'>CLIENT_SECRET</button>") );
+        $(this).html( $(this).html().replace(/CLIENT_SECRET/g, "<span class='span-code' data-toggle='tooltip' data-placement='top' title='Login to automatically see your own credential.'>CLIENT_SECRET</span>") );
         console.log('The client_secret is undefined');
     });
     $("body").children().each(function () {
-        $(this).html( $(this).html().replace(/ACCESS_TOKEN/g, "<button type='button' class='btn btn-default' data-toggle='tooltip' data-placement='top' title='Login to automatically see your own credential.'>ACCESS_TOKEN</button>") );
+        $(this).html( $(this).html().replace(/ACCESS_TOKEN/g, "<span class='span-code' data-toggle='tooltip' data-placement='top' title='Login to automatically see your own credential.'>ACCESS_TOKEN</span>") );
         console.log('The access_token is undefined');
     });
     document.getElementById("login-link").innerHTML = "<a class='page-link' id='login-link' href='https://q.daskeyboard.com/signin'>Login</a>";
@@ -76,11 +76,11 @@ if (accessToken1==undefined && accessToken2==undefined && accessToken3==undefine
     
 else if(accessToken1==undefined && accessToken2==undefined){    
     $("body").children().each(function () {
-        $(this).html( $(this).html().replace(/CLIENT_ID/g, "<button type='button' class='btn btn-default' data-toggle='tooltip' data-placement='top' title='Login to automatically see your own credential.'>CLIENT_ID</button>") );
+        $(this).html( $(this).html().replace(/CLIENT_ID/g, "<span class='span-code' data-toggle='tooltip' data-placement='top' title='Login to automatically see your own credential.'>CLIENT_ID</span>") );
         console.log('The client_id is undefined');
     });
     $("body").children().each(function () {
-        $(this).html( $(this).html().replace(/CLIENT_SECRET/g, "<button type='button' class='btn btn-default' data-toggle='tooltip' data-placement='top' title='Login to automatically see your own credential.'>CLIENT_SECRET</button>") );
+        $(this).html( $(this).html().replace(/CLIENT_SECRET/g, "<span class='span-code' data-toggle='tooltip' data-placement='top' title='Login to automatically see your own credential.'>CLIENT_SECRET</span>") );
         console.log('The client_secret is undefined');
     });
     $("body").children().each(function () {
@@ -92,14 +92,14 @@ else if(accessToken1==undefined && accessToken2==undefined){
     
 else if(accessToken1==undefined && accessToken3==undefined){    
     $("body").children().each(function () {
-        $(this).html( $(this).html().replace(/CLIENT_ID/g, "<button type='button' class='btn btn-default' data-toggle='tooltip' data-placement='top' title='Login to automatically see your own credential.'>CLIENT_ID</button>") );
+        $(this).html( $(this).html().replace(/CLIENT_ID/g, "<span class='span-code' data-toggle='tooltip' data-placement='top' title='Login to automatically see your own credential.'>CLIENT_ID</span>") );
         console.log('The client_id is undefined');
     });
     $("body").children().each(function () {
         $(this).html( $(this).html().replace(/CLIENT_SECRET/g, accessToken2) );
     });
     $("body").children().each(function () {
-        $(this).html( $(this).html().replace(/ACCESS_TOKEN/g, "<button type='button' class='btn btn-default' data-toggle='tooltip' data-placement='top' title='Login to automatically see your own credential.'>ACCESS_TOKEN</button>") );
+        $(this).html( $(this).html().replace(/ACCESS_TOKEN/g, "<span class='span-code' data-toggle='tooltip' data-placement='top' title='Login to automatically see your own credential.'>ACCESS_TOKEN</span>") );
         console.log('The access_token is undefined');
     });
     document.getElementById("login-link").innerHTML = "<a class='page-link' id='login-link' onclick='logout()'>Logout</a>";
@@ -111,11 +111,11 @@ else if(accessToken2==undefined && accessToken3==undefined){
         $(this).html( $(this).html().replace(/CLIENT_ID/g, accessToken1) );
     });
     $("body").children().each(function () {
-        $(this).html( $(this).html().replace(/CLIENT_SECRET/g, "<button type='button' class='btn btn-default' data-toggle='tooltip' data-placement='top' title='Login to automatically see your own credential.'>CLIENT_SECRET</button>") );
+        $(this).html( $(this).html().replace(/CLIENT_SECRET/g, "<span class='span-code' data-toggle='tooltip' data-placement='top' title='Login to automatically see your own credential.'>CLIENT_SECRET</span>") );
         console.log('The client_secret is undefined');
     });
     $("body").children().each(function () {
-        $(this).html( $(this).html().replace(/ACCESS_TOKEN/g, "<button type='button' class='btn btn-default' data-toggle='tooltip' data-placement='top' title='Login to automatically see your own credential.'>ACCESS_TOKEN</button>") );
+        $(this).html( $(this).html().replace(/ACCESS_TOKEN/g, "<span class='span-code' data-toggle='tooltip' data-placement='top' title='Login to automatically see your own credential.'>ACCESS_TOKEN</span>") );
         console.log('The access_token is undefined');
     });
     document.getElementById("login-link").innerHTML = "<a class='page-link' id='login-link' onclick='logout()'>Logout</a>";
@@ -124,7 +124,7 @@ else if(accessToken2==undefined && accessToken3==undefined){
 
 else if(accessToken1 ==undefined) {
     $("body").children().each(function () {
-        $(this).html( $(this).html().replace(/CLIENT_ID/g, "<button type='button' class='btn btn-default' data-toggle='tooltip' data-placement='top' title='Login to automatically see your own credential.'>CLIENT_ID</button>") );
+        $(this).html( $(this).html().replace(/CLIENT_ID/g, "<span class='span-code' data-toggle='tooltip' data-placement='top' title='Login to automatically see your own credential.'>CLIENT_ID</span>") );
         console.log('The client_id is undefined');
     });
     $("body").children().each(function () {
@@ -142,7 +142,7 @@ else if(accessToken2 ==undefined) {
         $(this).html( $(this).html().replace(/CLIENT_ID/g, accessToken1) );
     });
     $("body").children().each(function () {
-        $(this).html( $(this).html().replace(/CLIENT_SECRET/g, "<button type='button' class='btn btn-default' data-toggle='tooltip' data-placement='top' title='Login to automatically see your own credential.'>CLIENT_SECRET</button>") );
+        $(this).html( $(this).html().replace(/CLIENT_SECRET/g, "<span class='span-code' data-toggle='tooltip' data-placement='top' title='Login to automatically see your own credential.'>CLIENT_SECRET</span>") );
         console.log('The client_secret is undefined');
     });
     $("body").children().each(function () {
@@ -160,7 +160,7 @@ else if(accessToken3==undefined){
         $(this).html( $(this).html().replace(/CLIENT_SECRET/g, accessToken2) );
     });
     $("body").children().each(function () {
-        $(this).html( $(this).html().replace(/ACCESS_TOKEN/g, "<button type='button' class='btn btn-default' data-toggle='tooltip' data-placement='top' title='Login to automatically see your own credential.'>ACCESS_TOKEN</button>") );
+        $(this).html( $(this).html().replace(/ACCESS_TOKEN/g, "<span class='span-code' data-toggle='tooltip' data-placement='top' title='Login to automatically see your own credential.'>ACCESS_TOKEN</span>") );
         console.log('The access_token is undefined');
     });
     document.getElementById("login-link").innerHTML = "<a class='page-link' id='login-link' onclick='logout()'>Logout</a>";
@@ -186,6 +186,7 @@ function logout(){
     eraseCookie("cookie2");
     eraseCookie("cookie3");
 }
+
 
 $(function () {
     $('[data-toggle="tooltip"]').tooltip()

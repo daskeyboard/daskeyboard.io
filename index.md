@@ -17,7 +17,7 @@ hide_title: true
     </div>
 </div>
 
-<section class="homepage__key_points card">
+<section class="homepage__key_points card" style="margin-bottom:0px;">
     <h1 class="homepage__title">
         Control Das&nbsp;Keyboard RGB devices
     </h1>
@@ -62,6 +62,28 @@ hide_title: true
 
     </div>
 </section>
+
+<nav class="navbar navbar-expand-sm navbar-dark navbar-homepage bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+                <a class="btn btn-outline-primary" href="https://github.com/DasKeyboard/q">Develop</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-outline-success" href="http://qforum.daskeyboard.com">Discuss</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-outline-warning" href="https://daskeyboard.github.io/getting-started">Getting Started</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-outline-danger" href="https://daskeyboard.github.io/downloads/">Download</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
 <section class="homepage__hot_reload card">
     <h1>Illumination</h1>

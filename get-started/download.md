@@ -11,6 +11,10 @@ permalink: /get-started/download/
   <a href="https://s3-us-west-2.amazonaws.com/q-software-releases/Das-Keyboard-Q-Setup-1.0.0-beta.43.exe" class="get-started-button">Download Q desktop</a>
 </div>
 
+<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
+  Tooltip with HTML
+</button>
+
 <div class="card" style="margin-left:0; margin-right:0; width:auto; margin-bottom: 1.5em;">
   <div class="card-body">
     <h5 class="card-title">Important, before upgrading firmware</h5>
