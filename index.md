@@ -76,10 +76,10 @@ hide_title: true
                 <a class="btn btn-outline-success" href="http://qforum.daskeyboard.com">Discuss</a>
             </li>
             <li class="nav-item">
-                <a class="btn btn-outline-warning" href="https://daskeyboard.github.io/getting-started">Getting Started</a>
+                <a class="btn btn-outline-warning" href="{{ "get-started/"  | relative_url }}">Getting Started</a>
             </li>
             <li class="nav-item">
-                <a class="btn btn-outline-danger" href="https://daskeyboard.github.io/downloads/">Download</a>
+                <a class="btn btn-outline-danger" href="{{ "get-started/download/"  | relative_url }}">Download</a>
             </li>
         </ul>
     </div>
