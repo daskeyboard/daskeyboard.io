@@ -23,8 +23,7 @@ pre {
 
 pre > code .span-code{
     background-color: #f8f9fa;
-}
-
-pre > code .span-code tooltip{
-    display: block;
+    border: 1px solid #888;
+    border-radius: 4px;
+    padding: 2px;
 }
