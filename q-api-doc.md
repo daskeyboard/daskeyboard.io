@@ -515,16 +515,14 @@ Result format:
 
 ### Getting device shadow
 
-A device shadow is the set of signals that are currently displayed on a Q
-device. It is a subset of all signals which are not archived.
+A device shadow is a set of most recent signals per zone, i.e. what is currently displayed on the device.
 
 Example:
 
-Get shadow for DK5QPID.
+Get the shadow of DK5QPID.
 
 ```sh
-curl -H 'Authorization: Bearer ACCESS_TOKEN' https://q.daskeyboard.com/api/1.0/signals/DK5QPID/shadow
-```
+curl -H 'Authorization: Bearer ACCESS_TOKEN' https://q.daskeyboard.com/api/1.0/signals/shadows/DK5QPID```
 
 Result format:
 
