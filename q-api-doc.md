@@ -3,13 +3,13 @@ layout: page
 title: Das Keyboard Q REST API Documentation
 permalink: /q-api-doc/
 ---
-This document explains how to use the Q API. To create, update and delete signals, two options are available: sending the request to the Q cloud service <https://q.daskeyboard.com/> or directly to the desktop application http://localhost:#port/...
+The developer Q API is a JSON REST API that allows control of the RGB settings of Q devices.
 
-The Q cloud service and the desktop software use similar routes, however the HTTP port # of the Q desktop HTTP server is `27301`.
+This document explains how to use the Q API. Two options are available: sending requests to the Q cloud service <https://q.daskeyboard.com/> or directly to the desktop application http://localhost:#port/... on the developer's machine.
 
-## Too much info?
+The Q cloud service and the desktop software use similar endpoints. Note that the Q desktop HTTP server port number is `27301`.
 
-The developer Q API is an easy to use JSON REST API to send signals to the Q device.
+Here are some useful links to get started smoothly:
 
 - [Quick start]({{site.baseurl}}/q-api-quick-start/)
 - [Community contributions]({{site.baseurl}}/contributed-links/)
@@ -19,13 +19,14 @@ The developer Q API is an easy to use JSON REST API to send signals to the Q dev
 ## Authentication: Oauth2 (Cloud only)
 
 The Das Keyboard Q Cloud service uses [Oauth2 authentication](https://oauth.net/2/), so in order to perform a request, you will need to send a token, which will require the use of your client credentials. Indeed, once a user account is created on the Q Cloud service, a client is automatically generated with the name "User_X" where X is a unique id associated to the user.
+
 For example, if Bob signs up to the Q Cloud and has the id 87, a client will be generated for him with the name "User_87".
 
 To get OAuth tokens, please read the [Q Authentication documentation]({{site.baseurl}}/q-authentication/).
 
-### Short note about data format
+### Note about data format
 
-All the responses sent by the server are in JSON format. However, we accept both "application/json" and "application/x-www-form-urlencoded":
+Responses sent by the server are in JSON format. However, the Q cloud service accepts both "application/json" and "application/x-www-form-urlencoded":
 
 ```sh
 curl -X POST -H "Content-Type: application/json" -d '{"PARAM": "VALUE"}' https://q.daskeyboard.com/oauth/1.4/ENDPOINT
