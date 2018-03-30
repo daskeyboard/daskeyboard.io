@@ -30,7 +30,7 @@ hide_title: true
     </div>
 
     <div class="homepage__button_row">
-    <a href="{{ "get-started/download/"  | relative_url }}" class="get-started-button">Get Started</a>
+    <a href="{{ "get-started/"  | relative_url }}" class="get-started-button">Get Started</a>
     </div>
 
     <div class="key-points">
@@ -123,7 +123,7 @@ hide_title: true
     <div class="homepage__try_today">Try Das Keyboard today. Getting started is easy.</div>
 
     <div class="homepage__button_row">
-    <a href="{{ "get-started/download/"  | relative_url }}" class="get-started-button">Get Started</a>
+    <a href="{{ "get-started/"  | relative_url }}" class="get-started-button">Get Started</a>
     </div>
 
 </section>
