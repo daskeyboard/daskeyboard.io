@@ -8,7 +8,7 @@ The website for [Das Keyboard](https://metadot.github.io/q-website/).
 
 We welcome contributions and feedback on our website!
 Please file a request in our
-[issue tracker](https://github.com/DasKeyboard/q-website/issues/new)
+[issue tracker](https://github.com/metadot/q-website/issues/new)
 and we'll take a look.
 
 ## Developing

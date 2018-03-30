@@ -1,14 +1,14 @@
-# [Das Keyboard](https://daskeyboard.github.io/q-website/)'s website
+# [Das Keyboard](https://metadot.github.io/q-website/)'s website
 
-The website for [Das Keyboard](https://daskeyboard.github.io/q-website/).
+The website for [Das Keyboard](https://metadot.github.io/q-website/).
 
-[![Build Status](https://travis-ci.org/DasKeyboard/q-website.svg?branch=master)](https://travis-ci.org/DasKeyboard/q-website)
+[![Build Status](https://travis-ci.org/metadot/q-website.svg?branch=master)](https://travis-ci.org/metadot/q-website)
 
 ## Issues, bugs, and requests
 
 We welcome contributions and feedback on our website!
 Please file a request in our
-[issue tracker](https://github.com/DasKeyboard/q-website/issues/new)
+[issue tracker](https://github.com/metadot/q-website/issues/new)
 and we'll take a look.
 
 ## Developing
@@ -69,7 +69,7 @@ last page.
 
 ## Syntax highlighting
 
-The https://daskeyboard.github.io/q-website/ website uses [prism.js](http://prismjs.com/) for syntax
+The https://metadot.github.io/q-website/ website uses [prism.js](http://prismjs.com/) for syntax
 highlighting. This section covers how to use syntax highlighting, and
 how to update our syntax highlighter for new languages.
 
@@ -111,7 +111,7 @@ following the first triple backticks.
 
 ### Adding more languages for syntax highlighting
 
-The https://daskeyboard.github.io/q-website/ website uses a custom build of prism, which
+The https://metadot.github.io/q-website/ website uses a custom build of prism, which
 includes only the languages the website requires. To improve
 load times and user experience, we do not support every
 language that prism supports.

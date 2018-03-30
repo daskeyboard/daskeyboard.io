@@ -6,7 +6,7 @@ title: Das Keyboard
 email: camille@metadot.com
 email_name: camille@
 baseurl: "/q-website" # the subpath of your site, e.g. /blog/
-url: "https://metadot.github.io/"
+url: "https://metadot.github.io"
 github_username: DasKeyboard
 
 # Build settings
@@ -16,6 +16,6 @@ kramdown:
   input: GFM
   hard_wrap: false
 
-exclude: [example, packages, tool]
+exclude: [packages, tool]
 
 

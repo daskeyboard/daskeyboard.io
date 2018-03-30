@@ -17,7 +17,7 @@ task :checklinks do
     # Replace canonical link with local links.
     # Details: http://tongueroo.com/articles/getting-html-proofer-to-work-with-canonical-url-for-google-seo/
     :url_swap => {
-      'https://metadot.github.io/q-website/' => '',
+      'https://metadot.github.io/q-website/' => '/q-website/',
       '/q-website' => '',
       'https://github.com/metadot' => 'https://github.com/metadot/q-website/'
     }
