@@ -4,12 +4,12 @@ The website for [Das Keyboard](https://metadot.github.io/q-website/).
 
 [![Build Status](https://travis-ci.com/metadot/q-website.svg?token=sBrjsq524qva4V6vzxWH&branch=master)](https://travis-ci.org/metadot/q-website)
 
-<!-- ## Issues, bugs, and requests
+## Issues, bugs, and requests
 
 We welcome contributions and feedback on our website!
 Please file a request in our
-[issue tracker](https://github.com/metadot/q-website/issues/new)
-and we'll take a look. -->
+[issue tracker](https://github.com/DasKeyboard/q/issues/new)
+and we'll take a look.
 
 ## Developing
 
