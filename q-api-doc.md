@@ -343,7 +343,7 @@ Required fields:
 
 **pid**: string - pid of the device, e.g. "DK5QPID".
 
-**zoneId**: string - id of the zone, e.g. "KEY_A".
+**zoneId**: string - id of the zone, e.g. "KEY_A", "2,3", "99".
 
 **color**: string which has to begin by the character '#' and be followed by 3 or 6 hexadecimal digits - color of the Signal, e.g. "#008000".
 
