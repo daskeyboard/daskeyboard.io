@@ -125,44 +125,6 @@ Follow these steps to generate a new copy of `prism.js`:
 * Download the generated JavaScript, and use it to replace `js/prism.js`
 * Download the generated CSS, and use it to replace `_sass/_prism.scss`
 
-## Advanced stylization of code blocks
-
-Do you want to highlight (make the background yellow)
-code inside a code block? Do you want to strike-through
-code inside a code block? We got that!
-
-For syntax highlighting, plus yellow highlighting
-and strike-through formatting, use the `prettify` tag
-with additional custom inline markup.
-
-If you want to highlight a specific bit of code, use the
-`[[highlight]]highlight this text[[/highlight]]` syntax
-with the `prettify` tag.
-
-For example:
-
-<!-- skip -->
-{% prettify dart %}
-void main() {
-  print([[highlight]]'Hello World'[[/highlight]]);
-}
-{% endprettify %}
-
-If you want to strike-through a specific bit of code, use the
-`[[strike]]highlight this text[[/strike]]` syntax
-with the `prettify` tag.
-
-For example:
-
-<!-- skip -->
-{% prettify dart %}
-void main() {
-  print([[strike]]'Hello World'[[/strike]]);
-}
-{% endprettify %}
-
-The `prettify` plugin will also unindent your code.
-
 ## Including a region of a file
 
 You can include a specific range of lines from a file:
