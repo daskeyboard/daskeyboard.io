@@ -1,6 +1,6 @@
-# [Das Keyboard]()'s website
+# Das Keyboard's website
 
-The website for [Das Keyboard]().
+The website for Das Keyboard.
 
 [![Build Status](https://travis-ci.com/metadot/q-website.svg?token=sBrjsq524qva4V6vzxWH&branch=master)](https://travis-ci.org/metadot/q-website)
 
