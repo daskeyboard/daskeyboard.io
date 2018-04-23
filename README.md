@@ -14,7 +14,7 @@ and we'll take a look.
 ## Developing
 
 Install Jekyll and related tools by following the
-[instructions](https://help.github.com/articles/using-jekyll-with-pages/)
+<!-- [instructions](https://help.github.com/articles/using-jekyll-with-pages/) -->
 provided by GitHub.
 
 A tldr version follows:
