@@ -1,6 +1,6 @@
-# [Das Keyboard](https://metadot.github.io/q-website/)'s website
+# Das Keyboard's website
 
-The website for [Das Keyboard](https://metadot.github.io/q-website/).
+The website for Das Keyboard.
 
 [![Build Status](https://travis-ci.com/metadot/q-website.svg?token=sBrjsq524qva4V6vzxWH&branch=master)](https://travis-ci.org/metadot/q-website)
 
@@ -12,10 +12,6 @@ Please file a request in our
 and we'll take a look.
 
 ## Developing
-
-Install Jekyll and related tools by following the
-[instructions](https://help.github.com/articles/using-jekyll-with-pages/)
-provided by GitHub.
 
 A tldr version follows:
 
@@ -69,7 +65,7 @@ last page.
 
 ## Syntax highlighting
 
-The https://metadot.github.io/q-website/ website uses [prism.js](http://prismjs.com/) for syntax
+The website uses [prism.js](http://prismjs.com/) for syntax
 highlighting. This section covers how to use syntax highlighting, and
 how to update our syntax highlighter for new languages.
 
@@ -111,7 +107,7 @@ following the first triple backticks.
 
 ### Adding more languages for syntax highlighting
 
-The https://metadot.github.io/q-website/ website uses a custom build of prism, which
+The  website uses a custom build of prism, which
 includes only the languages the website requires. To improve
 load times and user experience, we do not support every
 language that prism supports.
