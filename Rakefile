@@ -29,8 +29,6 @@ end
 task default: %i(spec proof_readme)
 
 task :proof_readme do
-  require 'html-proofer'
-  require 'redcarpet'
 
   renderer = Redcarpet::Render::HTML.new \
     with_toc_data: true
