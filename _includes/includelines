@@ -19,9 +19,3 @@ Example:
 {% endcapture %}
 
 {% assign lines = filecontent | newline_to_br | split: '<br />' %}
-
-{% prettify dart %}
-
-{% for line in lines offset:{{include.start}} limit:{{include.count}} %}{{ line }}{% endfor %}
-
-{% endprettify %}
