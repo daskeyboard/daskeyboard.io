@@ -130,7 +130,7 @@
          <a href="https://github.com/metadot/q-website/blob/master/q-api-doc.md" class="btn btn-sm">
             <i class="fa fa-pencil"></i> Edit Source
          </a>
-         <a href="https://github.com/metadot/q/issues/new?title=Issue from website page Das Keyboard Q REST API Documentation&body=From URL: https://metadot.github.io/q-api-doc.md&labels=dev: docs - website" class="btn btn-sm">
+         <a href="https://github.com/DasKeyboard/q/issues/new?title=Issue from website page Das Keyboard Q REST API Documentation&body=From URL: https://metadot.github.io/q-api-doc.md&labels=dev: docs - website" class="btn btn-sm">
             <i class="fa fa-github"></i> File Issue
         </a>
      </div>
@@ -141,13 +141,13 @@
   </header>
   
 
-  <p>This document explains how to use the Q API. To create, update and delete signals, two options are available: sending the request to the Q cloud service <a href="https://q.daskeyboard.com/">https://q.daskeyboard.com/</a> or directly to the desktop application http://localhost:#port/…</p>
+  <p>The developer Q API is a JSON REST API that allows control of the RGB settings of Q devices.</p>
 
-<p>The Q cloud service and the desktop software use similar routes, however the HTTP port # of the Q desktop HTTP server is <code class="highlighter-rouge">27301</code>.</p>
+<p>This document explains how to use the Q API. Two options are available: sending requests to the Q cloud service <a href="https://q.daskeyboard.com/">https://q.daskeyboard.com/</a> or directly to the desktop application http://localhost:#port/… on the developer’s machine.</p>
 
-<h2 id="too-much-info">Too much info?</h2>
+<p>The Q cloud service and the desktop software use similar endpoints. Note that the Q desktop HTTP server port number is <code class="highlighter-rouge">27301</code>.</p>
 
-<p>The developer Q API is an easy to use JSON REST API to send signals to the Q device.</p>
+<p>Here are some useful links to get started smoothly:</p>
 
 <ul>
   <li><a href="/q-website/q-api-quick-start/">Quick start</a></li>
@@ -158,14 +158,15 @@
 
 <h2 id="authentication-oauth2-cloud-only">Authentication: Oauth2 (Cloud only)</h2>
 
-<p>The Das Keyboard Q Cloud service uses <a href="https://oauth.net/2/">Oauth2 authentication</a>, so in order to perform a request, you will need to send a token, which will require the use of your client credentials. Indeed, once a user account is created on the Q Cloud service, a client is automatically generated with the name “User_X” where X is a unique id associated to the user.
-For example, if Bob signs up to the Q Cloud and has the id 87, a client will be generated for him with the name “User_87”.</p>
+<p>The Das Keyboard Q Cloud service uses <a href="https://oauth.net/2/">Oauth2 authentication</a>, so in order to perform a request, you will need to send a token, which will require the use of your client credentials. Indeed, once a user account is created on the Q Cloud service, a client is automatically generated with the name “User_X” where X is a unique id associated to the user.</p>
+
+<p>For example, if Bob signs up to the Q Cloud and has the id 87, a client will be generated for him with the name “User_87”.</p>
 
 <p>To get OAuth tokens, please read the <a href="/q-website/q-authentication/">Q Authentication documentation</a>.</p>
 
-<h3 id="short-note-about-data-format">Short note about data format</h3>
+<h3 id="note-about-data-format">Note about data format</h3>
 
-<p>All the responses sent by the server are in JSON format. However, we accept both “application/json” and “application/x-www-form-urlencoded”:</p>
+<p>Responses sent by the server are in JSON format. However, the Q cloud service accepts both “application/json” and “application/x-www-form-urlencoded”:</p>
 
 <div class="language-sh highlighter-rouge"><pre class="highlight"><code>curl -X POST -H <span class="s2">"Content-Type: application/json"</span> -d <span class="s1">'{"PARAM": "VALUE"}'</span> https://q.daskeyboard.com/oauth/1.4/ENDPOINT
 </code></pre>
@@ -492,7 +493,7 @@ Each JSON object will have the structure:</p>
 
 <p><strong>pid</strong>: string - pid of the device, e.g. “DK5QPID”.</p>
 
-<p><strong>zoneId</strong>: string - id of the zone, e.g. “KEY_A”.</p>
+<p><strong>zoneId</strong>: string - id of the zone, e.g. “KEY_A”, “2,3”, “99”.</p>
 
 <p><strong>color</strong>: string which has to begin by the character ‘#’ and be followed by 3 or 6 hexadecimal digits - color of the Signal, e.g. “#008000”.</p>
 
@@ -667,51 +668,49 @@ end point will return its color:</p>
 
 <h3 id="getting-device-shadow">Getting device shadow</h3>
 
-<p>A device shadow is the set of signals that are currently displayed on a Q
-device. It is a subset of all signals which are not archived.</p>
+<p>A device shadow is a set of most recent signals per zone, i.e. what is currently displayed on the device.</p>
 
 <p>Example:</p>
 
-<p>Get shadow for DK5QPID.</p>
+<p>Get the shadow of DK5QPID.</p>
 
-<div class="language-sh highlighter-rouge"><pre class="highlight"><code>curl -H <span class="s1">'Authorization: Bearer ACCESS_TOKEN'</span> https://q.daskeyboard.com/api/1.0/signals/DK5QPID/shadow
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code>curl -H <span class="s1">'Authorization: Bearer ACCESS_TOKEN'</span> https://q.daskeyboard.com/api/1.0/signals/shadows/DK5QPID<span class="sb">```</span>
+
+Result format:
+
+<span class="sb">```</span>json
+<span class="o">{</span>
+    <span class="s2">"content"</span>:
+    <span class="o">[</span>
+        <span class="o">{</span>
+        <span class="s2">"id"</span>:524561,
+        <span class="s2">"zoneId"</span>:<span class="s2">"78"</span>,
+        <span class="s2">"pid"</span>:<span class="s2">"DK5QPID"</span>,
+        <span class="s2">"userId"</span>:6,
+        <span class="s2">"name"</span>:<span class="s2">"signal name"</span>,
+        <span class="s2">"message"</span>:<span class="s2">"messagebody"</span>,
+        <span class="s2">"effect"</span>:<span class="s2">"BLINK"</span>,
+        <span class="s2">"color"</span>:<span class="s2">"#00aced"</span>,
+        <span class="s2">"isRead"</span>:false,
+        <span class="s2">"isMuted"</span>:false,
+        <span class="s2">"isArchived"</span>:false,
+        <span class="s2">"shouldNotify"</span>:true,
+        <span class="s2">"clientName"</span>:<span class="s2">"IFTTT"</span>,
+        <span class="s2">"readAt"</span>:null,
+        <span class="s2">"action"</span>:null,
+        <span class="s2">"createdAt"</span>:1520349790354,
+        <span class="s2">"updatedAt"</span>:1520349790356
+        <span class="o">}</span>,
+        ...
+    <span class="o">]</span>,
+  <span class="s2">"size"</span>:7,
+  <span class="s2">"sort"</span>:<span class="s2">""</span>,
+  <span class="s2">"hasNextPage"</span>:false,
+  <span class="s2">"page"</span>:0,
+  <span class="s2">"totalElements"</span>:7,
+  <span class="s2">"totalPages"</span>:1
+<span class="o">}</span>
 </code></pre>
-</div>
-
-<p>Result format:</p>
-
-<div class="language-json highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="w">
-    </span><span class="nt">"content"</span><span class="p">:</span><span class="w">
-    </span><span class="p">[</span><span class="w">
-        </span><span class="p">{</span><span class="w">
-        </span><span class="nt">"id"</span><span class="p">:</span><span class="mi">524561</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"zoneId"</span><span class="p">:</span><span class="s2">"78"</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"pid"</span><span class="p">:</span><span class="s2">"DK5QPID"</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"userId"</span><span class="p">:</span><span class="mi">6</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"signal name"</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"message"</span><span class="p">:</span><span class="s2">"messagebody"</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"effect"</span><span class="p">:</span><span class="s2">"BLINK"</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"color"</span><span class="p">:</span><span class="s2">"#00aced"</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"isRead"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"isMuted"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"isArchived"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"shouldNotify"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"clientName"</span><span class="p">:</span><span class="s2">"IFTTT"</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"readAt"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"action"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"createdAt"</span><span class="p">:</span><span class="mi">1520349790354</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"updatedAt"</span><span class="p">:</span><span class="mi">1520349790356</span><span class="w">
-        </span><span class="p">},</span><span class="w">
-        </span><span class="err">...</span><span class="w">
-    </span><span class="p">],</span><span class="w">
-  </span><span class="nt">"size"</span><span class="p">:</span><span class="mi">7</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"sort"</span><span class="p">:</span><span class="s2">""</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"hasNextPage"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"page"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"totalElements"</span><span class="p">:</span><span class="mi">7</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"totalPages"</span><span class="p">:</span><span class="mi">1</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
 </div>
 
 </article>

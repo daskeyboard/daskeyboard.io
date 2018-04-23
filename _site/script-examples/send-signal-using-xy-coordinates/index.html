@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Get Started: Zapier tutorial  - Das Keyboard </title>
+  <title>Send one signal using the XY coordinates  - Das Keyboard </title>
   <link rel="shortcut icon" href="/q-website/images/favicon.png">
 
   <meta name="description" content="">
@@ -16,7 +16,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Extended" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro%7CRoboto:500,400italic,300,400" rel="stylesheet">
   
-  <link rel="canonical" href="https://metadot.github.io/q-website/get-started/zapier-tutorial/">
+  <link rel="canonical" href="https://metadot.github.io/q-website/script-examples/send-signal-using-xy-coordinates/">
   <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
   <script>
     // Initialize Firebase
@@ -127,27 +127,78 @@
   
   <header class="post-header">
       <div class="btn-group contribute" role="group">
-         <a href="https://github.com/metadot/q-website/blob/master/get-started/zapier-tutorial.md" class="btn btn-sm">
+         <a href="https://github.com/metadot/q-website/blob/master/script-examples/send-signal-using-xy-coordinates.md" class="btn btn-sm">
             <i class="fa fa-pencil"></i> Edit Source
          </a>
-         <a href="https://github.com/DasKeyboard/q/issues/new?title=Issue from website page Get Started: Zapier tutorial&body=From URL: https://metadot.github.io/get-started/zapier-tutorial.md&labels=dev: docs - website" class="btn btn-sm">
+         <a href="https://github.com/DasKeyboard/q/issues/new?title=Issue from website page Send one signal using the XY coordinates&body=From URL: https://metadot.github.io/script-examples/send-signal-using-xy-coordinates.md&labels=dev: docs - website" class="btn btn-sm">
             <i class="fa fa-github"></i> File Issue
         </a>
      </div>
    <div>
-    <h1 class="post-title">Get Started: Zapier tutorial </h1>
+    <h1 class="post-title">Send one signal using the XY coordinates </h1>
    </div>
 
   </header>
   
 
-  <h2 id="to-connect-your-5q-keyboard-to-the-internet">To connect your 5Q keyboard to the Internet</h2>
+  <ul class="tabs__top-bar">
+    <li class="tab-link" data-tab="tab-install-shell">Shell</li>    
+</ul>
 
-<div class="embed-container"><iframe src="https://www.youtube.com/embed/HOjopM_BELg?rel=0" frameborder="0" allowfullscreen=""></iframe></div>
+<div id="tab-install-shell" class="tabs__content">
 
-<h2 id="next-step">Next step</h2>
+  <p>```
+#!/bin/sh</p>
 
-<p><a href="/q-website/q-api-doc/">Next step: Read the Q Developer API to create your own signal</a></p>
+  <p>#———————————————–
+# This script colorize a key of a 5Q Das Keyboard
+# by sending a JSON signal to the its public API
+# located at http://localhost:27301 using the coordinates
+# x and y as zone ID.
+#———————————————–
+set -e # quit on first error.</p>
+
+  <h1 id="let-the-user-choose-the-key-to-colorize-through-the-terminal">Let the user choose the key to colorize through the terminal</h1>
+  <p># using the coordinates x and y of the key
+echo Coordinates:
+echo x?
+read x
+echo y?
+read y
+echo x: $x , y: $y</p>
+
+  <p>PID=”DK5QPID” # product ID
+PORT=27301
+ZONEID=”$x,$y”</p>
+
+  <p>URL=”http://localhost:$PORT/api/1.0/signals”
+#————————-
+# Send signal the 5Q keyboard
+#————————-
+#</p>
+
+  <p>echo “Sending signal to zoneId: $ZONEID at $URL”
+curl -X POST –header ‘Content-Type: application/json’ –header ‘Accept: application/json’ -d ‘{
+    “pid”: “DK5QPID”,
+    “zoneId”: “‘$ZONEID’”,
+    “color”: “#00F”,
+    “effect”: “SET_COLOR”,
+    “name”: “Hello Coordinates: ‘$ZONEID’”,
+    “message”: “Message sent by script”,
+    “shouldNotify”: false 
+}’ $URL</p>
+
+  <p>result=$?</p>
+
+  <p>if [ “$result” -eq “0” ]; then
+    echo OK
+    exit 0
+else
+    echo ERROR
+    exit 1
+fi```</p>
+
+</div>
 
 </article>
 
