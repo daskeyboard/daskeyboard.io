@@ -28,6 +28,7 @@ end
 
 task default: %i(spec proof_readme)
 
+
 task :proof_readme do
 
   renderer = Redcarpet::Render::HTML.new \
