@@ -37,9 +37,8 @@ task :proof_readme do
   redcarpet = Redcarpet::Markdown.new(renderer)
   html = redcarpet.render File.read('README.md')
 
-  mkdir_p 'out'
-  File.write('out/README.html', html)
+  File.write('README.html', html)
 
   opts = { url_ignore: [/badge.fury.io/] }
-  HTMLProofer.check_directory('./out', opts).run
+  HTMLProofer.check_directory('./', opts).run
 end
