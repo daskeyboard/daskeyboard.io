@@ -29,16 +29,16 @@ end
 task default: %i(spec proof_readme)
 
 
-task :proof_readme do
+# task :proof_readme do
 
-  renderer = Redcarpet::Render::HTML.new \
-    with_toc_data: true
-  redcarpet = Redcarpet::Markdown.new(renderer)
-  html = redcarpet.render File.read('README.md')
+#   renderer = Redcarpet::Render::HTML.new \
+#     with_toc_data: true
+#   redcarpet = Redcarpet::Markdown.new(renderer)
+#   html = redcarpet.render File.read('README.md')
 
-  mkdir_p 'out'
-  File.write('out/README.html', html)
+#   mkdir_p 'out'
+#   File.write('out/README.html', html)
 
-  opts = { url_ignore: [/badge.fury.io/] }
-  HTMLProofer.check_directory('./out', opts).run
-end
+#   opts = { url_ignore: [/badge.fury.io/] }
+#   HTMLProofer.check_directory('./out', opts).run
+# end
