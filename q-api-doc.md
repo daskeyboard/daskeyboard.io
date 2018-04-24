@@ -369,16 +369,32 @@ The response is a JSON object containing the id of the signal created.
 
 The zoneId is a parameter of the signal used to know the position of the key on the keyboard which will be light up.
 There are three ways of writing this variable:
-- XY coordinates
-- KEY_{name-of-the-key}
-- Linear
+
+-  XY coordinates
+
+-  KEY_{name-of-the-key}
+
+-  Linear
 
 For example, in order to send a signal on the key A, according to the layout, the coordinates are different, so the zone ID of the A key can be (see the tables below): 
-- 2,3 for the 104 keys’ layout
-- 1,2 for the 105 keys’ layout
-- KEY_A
-- 99 for the 104 keys’ layout
-- 74 for the 105 keys’ layout
+
+-  3,3 for the 104 keys’ layout
+
+-  2,2 for the 105 keys’ layout
+
+-  KEY_A
+
+-  99 for the 104 keys’ layout
+
+-  74 for the 105 keys’ layout
+
+
+![104A.png](/q-website/images/104A.png)
+
+![105A.png](/q-website/images/105A.png)
+
+![linearA.png](/q-website/images/linearA.png)
+
 
 ### Getting the signals (Cloud only)
 
