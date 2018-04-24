@@ -374,7 +374,6 @@ There are three ways of writing this variable:
 - Linear
 
 For example, in order to send a signal on the key A, according to the layout, the coordinates are different, so the zone ID of the A key can be (see the tables below): 
-
 - 2,3 for the 104 keys’ layout
 - 1,2 for the 105 keys’ layout
 - KEY_A
