@@ -146,58 +146,58 @@
 </ul>
 
 <div id="tab-install-shell" class="tabs__content">
+  <div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="c">#!/bin/sh</span>
 
-  <p>```
-#!/bin/sh</p>
+<span class="c">#-----------------------------------------------</span>
+<span class="c"># This script colorize a key of a 5Q Das Keyboard</span>
+<span class="c"># by sending a JSON signal to the its public API</span>
+<span class="c"># located at http://localhost:27301 using the coordinates</span>
+<span class="c"># x and y as zone ID.</span>
+<span class="c">#-----------------------------------------------</span>
+<span class="nb">set</span> -e <span class="c"># quit on first error.</span>
 
-  <p>#———————————————–
-# This script colorize a key of a 5Q Das Keyboard
-# by sending a JSON signal to the its public API
-# located at http://localhost:27301 using the coordinates
-# x and y as zone ID.
-#———————————————–
-set -e # quit on first error.</p>
+<span class="c"># Let the user choose the key to colorize through the terminal</span>
+<span class="c"># using the coordinates x and y of the key</span>
+<span class="nb">echo </span>Coordinates:
+<span class="nb">echo </span>x?
+<span class="nb">read </span>x
+<span class="nb">echo </span>y?
+<span class="nb">read </span>y
+<span class="nb">echo </span>x: <span class="nv">$x</span> , y: <span class="nv">$y</span>
 
-  <h1 id="let-the-user-choose-the-key-to-colorize-through-the-terminal">Let the user choose the key to colorize through the terminal</h1>
-  <p># using the coordinates x and y of the key
-echo Coordinates:
-echo x?
-read x
-echo y?
-read y
-echo x: $x , y: $y</p>
+<span class="nv">PID</span><span class="o">=</span><span class="s2">"DK5QPID"</span> <span class="c"># product ID</span>
+<span class="nv">PORT</span><span class="o">=</span>27301
+<span class="nv">ZONEID</span><span class="o">=</span><span class="s2">"</span><span class="nv">$x</span><span class="s2">,</span><span class="nv">$y</span><span class="s2">"</span>
 
-  <p>PID=”DK5QPID” # product ID
-PORT=27301
-ZONEID=”$x,$y”</p>
+<span class="nv">URL</span><span class="o">=</span><span class="s2">"http://localhost:</span><span class="nv">$PORT</span><span class="s2">/api/1.0/signals"</span>
+<span class="c">#-------------------------</span>
+<span class="c"># Send signal the 5Q keyboard</span>
+<span class="c">#-------------------------</span>
+<span class="c">#</span>
 
-  <p>URL=”http://localhost:$PORT/api/1.0/signals”
-#————————-
-# Send signal the 5Q keyboard
-#————————-
-#</p>
+<span class="nb">echo</span> <span class="s2">"Sending signal to zoneId: </span><span class="nv">$ZONEID</span><span class="s2"> at </span><span class="nv">$URL</span><span class="s2">"</span>
+curl -X POST --header <span class="s1">'Content-Type: application/json'</span> --header <span class="s1">'Accept: application/json'</span> -d <span class="s1">'{
+    "pid": "DK5QPID",
+    "zoneId": "'</span><span class="nv">$ZONEID</span><span class="s1">'",
+    "color": "#00F",
+    "effect": "SET_COLOR",
+    "name": "Hello Coordinates: '</span><span class="nv">$ZONEID</span><span class="s1">'",
+    "message": "Message sent by script",
+    "shouldNotify": false 
+}'</span> <span class="nv">$URL</span>
 
-  <p>echo “Sending signal to zoneId: $ZONEID at $URL”
-curl -X POST –header ‘Content-Type: application/json’ –header ‘Accept: application/json’ -d ‘{
-    “pid”: “DK5QPID”,
-    “zoneId”: “‘$ZONEID’”,
-    “color”: “#00F”,
-    “effect”: “SET_COLOR”,
-    “name”: “Hello Coordinates: ‘$ZONEID’”,
-    “message”: “Message sent by script”,
-    “shouldNotify”: false 
-}’ $URL</p>
+<span class="nv">result</span><span class="o">=</span><span class="nv">$?</span>
 
-  <p>result=$?</p>
+<span class="k">if</span> <span class="o">[</span> <span class="s2">"</span><span class="nv">$result</span><span class="s2">"</span> -eq <span class="s2">"0"</span> <span class="o">]</span>; <span class="k">then
+    </span><span class="nb">echo </span>OK
+    <span class="nb">exit </span>0
+<span class="k">else
+    </span><span class="nb">echo </span>ERROR
+    <span class="nb">exit </span>1
+<span class="k">fi</span>
 
-  <p>if [ “$result” -eq “0” ]; then
-    echo OK
-    exit 0
-else
-    echo ERROR
-    exit 1
-fi```</p>
-
+</code></pre>
+  </div>
 </div>
 
 </article>

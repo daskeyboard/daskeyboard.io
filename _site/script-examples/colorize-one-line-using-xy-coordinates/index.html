@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Script examples  - Das Keyboard </title>
+  <title>Send one signal using the XY coordinates  - Das Keyboard </title>
   <link rel="shortcut icon" href="/q-website/images/favicon.png">
 
   <meta name="description" content="">
@@ -16,7 +16,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Extended" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro%7CRoboto:500,400italic,300,400" rel="stylesheet">
   
-  <link rel="canonical" href="https://metadot.github.io/q-website/script-examples/">
+  <link rel="canonical" href="https://metadot.github.io/q-website/script-examples/colorize-one-line-using-xy-coordinates/">
   <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
   <script>
     // Initialize Firebase
@@ -127,33 +127,83 @@
   
   <header class="post-header">
       <div class="btn-group contribute" role="group">
-         <a href="https://github.com/metadot/q-website/blob/master/script-examples/index.md" class="btn btn-sm">
+         <a href="https://github.com/metadot/q-website/blob/master/script-examples/colorize-one-line-using-xy-coordinates.md" class="btn btn-sm">
             <i class="fa fa-pencil"></i> Edit Source
          </a>
-         <a href="https://github.com/DasKeyboard/q/issues/new?title=Issue from website page Script examples&body=From URL: https://metadot.github.io/script-examples/index.md&labels=dev: docs - website" class="btn btn-sm">
+         <a href="https://github.com/DasKeyboard/q/issues/new?title=Issue from website page Send one signal using the XY coordinates&body=From URL: https://metadot.github.io/script-examples/colorize-one-line-using-xy-coordinates.md&labels=dev: docs - website" class="btn btn-sm">
             <i class="fa fa-github"></i> File Issue
         </a>
      </div>
    <div>
-    <h1 class="post-title">Script examples </h1>
+    <h1 class="post-title">Send one signal using the XY coordinates </h1>
    </div>
 
   </header>
   
 
-  <p>Below are some script examples to demonstrate how to use the Q developer API with different languages:</p>
-
-<ul>
-  <li><a href="/q-website/script-examples/send-signal-to-cloud/">Send signal to the cloud</a></li>
-  <li><a href="/q-website/script-examples/send-signal-local/">Send signal to the public API</a></li>
-  <li><a href="/q-website/script-examples/cpu-percentage/">Display CPU percentage</a></li>
-  <li><a href="/q-website/script-examples/colorize-keyboard/">Colorize all LEDs of the Q keyboard</a></li>
-  <li><a href="/q-website/script-examples/search-keyword-in-website-create-signal/">Send a signal when the script find a keyword in a website</a></li>
-  <li><a href="/q-website/script-examples/github-api/">Send a signal when we receive a notifications from Github</a></li>
-  <li><a href="/q-website/script-examples/send-signal-using-xy-coordinates/">Send a signal using the XY coordinates</a></li>
-  <li><a href="/q-website/script-examples/colorize-one-line-using-xy-coordinates/">Colorize one line using the XY coordinates</a></li>
-  <li><a href="/q-website/script-examples/colorize-keyboard-using-xy-coordinates/">Colorize keyboard using the XY coordinates</a></li>
+  <ul class="tabs__top-bar">
+    <li class="tab-link" data-tab="tab-install-shell">Shell</li>    
 </ul>
+
+<div id="tab-install-shell" class="tabs__content">
+  <div class="language-sh highlighter-rouge"><pre class="highlight"><code><span class="c">#!/bin/sh</span>
+
+<span class="c">#-----------------------------------------------</span>
+<span class="c"># This script colorize a line of a 5Q Das Keyboard</span>
+<span class="c"># by sending a JSON signal to the its public API</span>
+<span class="c"># located at http://localhost:27301 using the coordinates</span>
+<span class="c"># x and y as zone ID.</span>
+<span class="c">#-----------------------------------------------</span>
+<span class="nb">set</span> -e <span class="c"># quit on first error.</span>
+
+<span class="c"># Let the user choose the line to colorize through the terminal</span>
+<span class="nb">echo </span>Which line <span class="k">do </span>you want to colorize?
+<span class="nb">read </span>y
+<span class="nb">echo </span>y: <span class="nv">$y</span>
+
+<span class="nv">PID</span><span class="o">=</span><span class="s2">"DK5QPID"</span> <span class="c"># product ID</span>
+<span class="nv">PORT</span><span class="o">=</span>27301 <span class="c"># Public api port</span>
+
+<span class="nv">URL</span><span class="o">=</span><span class="s2">"http://localhost:</span><span class="nv">$PORT</span><span class="s2">/api/1.0/signals"</span>
+<span class="c">#-------------------------</span>
+<span class="c"># Send signal the 5Q keyboard</span>
+<span class="c">#-------------------------</span>
+<span class="c">#</span>
+
+<span class="c"># Number of columns on the keyboard</span>
+<span class="nv">COLUMNS</span><span class="o">=</span>24
+
+<span class="k">for </span>i <span class="k">in</span> <span class="k">$(</span>seq 0 <span class="nv">$COLUMNS</span><span class="k">)</span>;
+<span class="k">do
+    </span>curl -X POST --header <span class="s1">'Content-Type: application/json'</span> --header <span class="s1">'Accept: application/json'</span> -d <span class="s1">'{
+        "pid": "'</span><span class="nv">$PID</span><span class="s1">'",
+        "zoneId": "'</span><span class="s2">"</span><span class="nv">$i</span><span class="s2">,</span><span class="nv">$y</span><span class="s2">"</span><span class="s1">'",
+        "color": "#F00",
+        "effect": "SET_COLOR",
+        "name": "'</span><span class="s2">"Color Line </span><span class="nv">$y</span><span class="s2">"</span><span class="s1">'",
+        "message": "'</span><span class="s2">"Message: Color Line </span><span class="nv">$y</span><span class="s2">"</span><span class="s1">'",
+        "shouldNotify": false
+    }'</span> <span class="nv">$URL</span>
+
+<span class="nv">result</span><span class="o">=</span><span class="nv">$?</span>
+
+<span class="k">done
+
+</span><span class="nb">echo</span> <span class="s2">"DONE"</span>
+
+<span class="nv">result</span><span class="o">=</span><span class="nv">$?</span>
+
+<span class="k">if</span> <span class="o">[</span> <span class="s2">"</span><span class="nv">$result</span><span class="s2">"</span> -eq <span class="s2">"0"</span> <span class="o">]</span>; <span class="k">then
+    </span><span class="nb">echo </span>OK
+    <span class="nb">exit </span>0
+<span class="k">else
+    </span><span class="nb">echo </span>ERROR
+    <span class="nb">exit </span>1
+<span class="k">fi</span>
+
+</code></pre>
+  </div>
+</div>
 
 </article>
 
