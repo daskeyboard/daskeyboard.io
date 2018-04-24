@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Send one signal using the XY coordinates"
+title: "Colorize one line of the keyboard using the XY coordinates"
 permalink: /script-examples/colorize-one-line-using-xy-coordinates/
 ---
 
