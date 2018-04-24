@@ -518,20 +518,45 @@ Each JSON object will have the structure:</p>
 <h3 id="understanding-the-zoneid">Understanding the zoneId</h3>
 
 <p>The zoneId is a parameter of the signal used to know the position of the key on the keyboard which will be light up.
-There are three ways of writing this variable:
-- XY coordinates
-- KEY_{name-of-the-key}
-- Linear</p>
+There are three ways of writing this variable:</p>
+
+<ul>
+  <li>
+    <p>XY coordinates</p>
+  </li>
+  <li>
+    <p>KEY_{name-of-the-key}</p>
+  </li>
+  <li>
+    <p>Linear</p>
+  </li>
+</ul>
 
 <p>For example, in order to send a signal on the key A, according to the layout, the coordinates are different, so the zone ID of the A key can be (see the tables below):</p>
 
 <ul>
-  <li>2,3 for the 104 keys’ layout</li>
-  <li>1,2 for the 105 keys’ layout</li>
-  <li>KEY_A</li>
-  <li>99 for the 104 keys’ layout</li>
-  <li>74 for the 105 keys’ layout</li>
+  <li>
+    <p>3,3 for the 104 keys’ layout</p>
+  </li>
+  <li>
+    <p>2,2 for the 105 keys’ layout</p>
+  </li>
+  <li>
+    <p>KEY_A</p>
+  </li>
+  <li>
+    <p>99 for the 104 keys’ layout</p>
+  </li>
+  <li>
+    <p>74 for the 105 keys’ layout</p>
+  </li>
 </ul>
+
+<p><img src="/q-website/images/104A.png" alt="104A.png" /></p>
+
+<p><img src="/q-website/images/105A.png" alt="105A.png" /></p>
+
+<p><img src="/q-website/images/linearA.png" alt="linearA.png" /></p>
 
 <h3 id="getting-the-signals-cloud-only">Getting the signals (Cloud only)</h3>
 
