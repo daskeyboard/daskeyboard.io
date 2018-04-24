@@ -16,7 +16,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Extended" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro%7CRoboto:500,400italic,300,400" rel="stylesheet">
   
-  <link rel="canonical" href="https://metadot.github.io/q-website/q-api-doc/">
+  <link rel="canonical" href="http://localhost:4000/q-website/q-api-doc/">
   <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
   <script>
     // Initialize Firebase
@@ -130,7 +130,7 @@
          <a href="https://github.com/metadot/q-website/blob/master/q-api-doc.md" class="btn btn-sm">
             <i class="fa fa-pencil"></i> Edit Source
          </a>
-         <a href="https://github.com/DasKeyboard/q/issues/new?title=Issue from website page Das Keyboard Q REST API Documentation&body=From URL: https://metadot.github.io/q-api-doc.md&labels=dev: docs - website" class="btn btn-sm">
+         <a href="https://github.com/DasKeyboard/q/issues/new?title=Issue from website page Das Keyboard Q REST API Documentation&body=From URL: http://localhost:4000/q-api-doc.md&labels=dev: docs - website" class="btn btn-sm">
             <i class="fa fa-github"></i> File Issue
         </a>
      </div>
@@ -514,6 +514,24 @@ Each JSON object will have the structure:</p>
 <p><strong>isMuted</strong>: boolean - indicates if the Signal has been muted (default: false), e.g. true.</p>
 
 <p>The response is a JSON object containing the id of the signal created.</p>
+
+<h3 id="understanding-the-zoneid">Understanding the zoneId</h3>
+
+<p>The zoneId is a parameter of the signal used to know the position of the key on the keyboard which will be light up.
+There are three ways of writing this variable:
+- XY coordinates
+- KEY_{name-of-the-key}
+- Linear</p>
+
+<p>For example, in order to send a signal on the key A, according to the layout, the coordinates are different, so the zone ID of the A key can be (see the tables below):</p>
+
+<ul>
+  <li>2,3 for the 104 keys’ layout</li>
+  <li>1,2 for the 105 keys’ layout</li>
+  <li>KEY_A</li>
+  <li>99 for the 104 keys’ layout</li>
+  <li>74 for the 105 keys’ layout</li>
+</ul>
 
 <h3 id="getting-the-signals-cloud-only">Getting the signals (Cloud only)</h3>
 
