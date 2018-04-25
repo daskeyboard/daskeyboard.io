@@ -309,33 +309,72 @@ The Das Keyboard Q device RGB keys can be controlled via signals. An example of 
 
     if Apple Stock ticker value is > $500 => set A key to green.
 
-Example of simple signal:
+Quick example of sending a signal on the key A using the XY coordinates:
 
 - from the Cloud:
 
 ```sh
-curl -H 'Content-Type: application/json' -H 'Authorization: Bearer ACCESS_TOKEN' -X POST https://q.daskeyboard.com/api/1.0/signals -d '{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "KEY_A", "color": "#008000"}'
+curl -H 'Content-Type: application/json' -H 'Authorization: Bearer ACCESS_TOKEN' -X POST https://q.daskeyboard.com/api/1.0/signals -d '{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "3,3", "color": "#008000"}'
 ```
 
 - from local API:
 
 ```sh
-curl -H 'Content-Type: application/json' -X POST http://localhost:$PORT/api/1.0/signals -d '{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "KEY_A", "color": "#008000"}'
+curl -H 'Content-Type: application/json' -X POST  http://localhost:$PORT/api/1.0/signals -d '{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "3,3", "color": "#008000"}'
 ```
+
+### Understanding zoneId
+
+The zoneId is the id of the zone to light up.
+There are three coordinates systems available:
+
+-  Coordinate system XY
+
+-  Coordinate system  zone code: KEY_{name-of-the-key}
+
+-  Coordinate system  linear
+
+It is recommanded to use the coordinate system XY because it is compatible with every layouts.
+
+For example, to send a signal on the key A (US_layout): 
+
+-  3,3
+
+-  KEY_A
+
+-  99
+
+![104A.png](/q-website/images/104A.png)
+
+To send a signal on the key A (105 keys layout): 
+
+-  2,2
+
+-  KEY_A
+
+-  74
+
+
+![105A.png](/q-website/images/105A.png)
+
+
 
 Example of more detailed signal
 
 - From the Cloud:
 
 ```sh
-curl -H 'Content-Type: application/json' -H 'Authorization: Bearer ACCESS_TOKEN' -X POST https://q.daskeyboard.com/api/1.0/signals -d '{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "KEY_A", "message": "It worked", "effect": "BLINK", "color": "#008000", "action": "open:chrome", "shouldNotify": true, "isRead": true, "isArchived": true, "isMuted": true}'
+curl -H 'Content-Type: application/json' -H 'Authorization: Bearer ACCESS_TOKEN' -X POST https://q.daskeyboard.com/api/1.0/signals -d '{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "3,3", "message": "It worked", "effect": "BLINK", "color": "#008000", "action": "open:chrome", "shouldNotify": true, "isRead": true, "isArchived": true, "isMuted": true}'
 ```
 
 - From local API:
 
 ```sh
-curl -H 'Content-Type: application/json' -X POST http://localhost:$PORT/api/1.0/signals -d '{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "KEY_A", "message": "It worked", "effect": "BLINK", "color": "#008000", "shouldNotify": true, "isRead": true, "isArchived": true, "isMuted": true}'
+curl -H 'Content-Type: application/json' -X POST http://localhost:$PORT/api/1.0/signals -d '{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "3,3", "message": "It worked", "effect": "BLINK", "color": "#008000", "shouldNotify": true, "isRead": true, "isArchived": true, "isMuted": true}'
 ```
+
+You can find some examples here: [API examples]({{site.baseurl}}/script-examples/)
+
 
 Required fields:
 
@@ -343,7 +382,7 @@ Required fields:
 
 **pid**: string - pid of the device, e.g. "DK5QPID".
 
-**zoneId**: string - id of the zone, e.g. "KEY_A", "2,3", "99".
+**zoneId**: string - id of the zone, e.g. "KEY_A", "x,y", "99".  cf Understanding zoneId 
 
 **color**: string which has to begin by the character '#' and be followed by 3 or 6 hexadecimal digits - color of the Signal, e.g. "#008000".
 
@@ -364,36 +403,6 @@ Optional fields:
 **isMuted**: boolean - indicates if the Signal has been muted (default: false), e.g. true.
 
 The response is a JSON object containing the id of the signal created.
-
-### Understanding the zoneId
-
-The zoneId is a parameter of the signal used to know the position of the key on the keyboard which will be light up.
-There are three ways of writing this variable:
-
--  XY coordinates
-
--  KEY_{name-of-the-key}
-
--  Linear
-
-For example, in order to send a signal on the key A, according to the layout, the coordinates are different, so the zone ID of the A key can be (see the tables below): 
-
--  3,3 for the 104 keys’ layout
-
--  2,2 for the 105 keys’ layout
-
--  KEY_A
-
--  99 for the 104 keys’ layout
-
--  74 for the 105 keys’ layout
-
-
-![104A.png](/q-website/images/104A.png)
-
-![105A.png](/q-website/images/105A.png)
-
-![linearA.png](/q-website/images/linearA.png)
 
 
 ### Getting the signals (Cloud only)
