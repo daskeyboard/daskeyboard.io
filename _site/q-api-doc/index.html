@@ -16,7 +16,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Extended" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro%7CRoboto:500,400italic,300,400" rel="stylesheet">
   
-  <link rel="canonical" href="http://localhost:4000/q-website/q-api-doc/">
+  <link rel="canonical" href="https://metadot.github.io/q-website/q-api-doc/">
   <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
   <script>
     // Initialize Firebase
@@ -130,7 +130,7 @@
          <a href="https://github.com/metadot/q-website/blob/master/q-api-doc.md" class="btn btn-sm">
             <i class="fa fa-pencil"></i> Edit Source
          </a>
-         <a href="https://github.com/DasKeyboard/q/issues/new?title=Issue from website page Das Keyboard Q REST API Documentation&body=From URL: http://localhost:4000/q-api-doc.md&labels=dev: docs - website" class="btn btn-sm">
+         <a href="https://github.com/DasKeyboard/q/issues/new?title=Issue from website page Das Keyboard Q REST API Documentation&body=From URL: https://metadot.github.io/q-api-doc.md&labels=dev: docs - website" class="btn btn-sm">
             <i class="fa fa-github"></i> File Issue
         </a>
      </div>
@@ -451,13 +451,13 @@ Each JSON object will have the structure:</p>
 </code></pre>
 </div>
 
-<p>Example of simple signal:</p>
+<p>Quick example of sending a signal on the key A using the XY coordinates:</p>
 
 <ul>
   <li>from the Cloud:</li>
 </ul>
 
-<div class="language-sh highlighter-rouge"><pre class="highlight"><code>curl -H <span class="s1">'Content-Type: application/json'</span> -H <span class="s1">'Authorization: Bearer ACCESS_TOKEN'</span> -X POST https://q.daskeyboard.com/api/1.0/signals -d <span class="s1">'{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "KEY_A", "color": "#008000"}'</span>
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code>curl -H <span class="s1">'Content-Type: application/json'</span> -H <span class="s1">'Authorization: Bearer ACCESS_TOKEN'</span> -X POST https://q.daskeyboard.com/api/1.0/signals -d <span class="s1">'{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "3,3", "color": "#008000"}'</span>
 </code></pre>
 </div>
 
@@ -465,9 +465,60 @@ Each JSON object will have the structure:</p>
   <li>from local API:</li>
 </ul>
 
-<div class="language-sh highlighter-rouge"><pre class="highlight"><code>curl -H <span class="s1">'Content-Type: application/json'</span> -X POST http://localhost:<span class="nv">$PORT</span>/api/1.0/signals -d <span class="s1">'{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "KEY_A", "color": "#008000"}'</span>
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code>curl -H <span class="s1">'Content-Type: application/json'</span> -X POST  http://localhost:<span class="nv">$PORT</span>/api/1.0/signals -d <span class="s1">'{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "3,3", "color": "#008000"}'</span>
 </code></pre>
 </div>
+
+<h3 id="understanding-zoneid">Understanding zoneId</h3>
+
+<p>The zoneId is the id of the zone to light up.
+There are three coordinates systems available:</p>
+
+<ul>
+  <li>
+    <p>Coordinate system XY</p>
+  </li>
+  <li>
+    <p>Coordinate system  zone code: KEY_{name-of-the-key}</p>
+  </li>
+  <li>
+    <p>Coordinate system  linear</p>
+  </li>
+</ul>
+
+<p>It is recommanded to use the coordinate system XY because it is compatible with every layouts.</p>
+
+<p>For example, to send a signal on the key A (US_layout):</p>
+
+<ul>
+  <li>
+    <p>3,3</p>
+  </li>
+  <li>
+    <p>KEY_A</p>
+  </li>
+  <li>
+    <p>99</p>
+  </li>
+</ul>
+
+<p><img src="/q-website/images/104A.png" alt="104A.png" /></p>
+
+<p>To send a signal on the key A (105 keys layout):</p>
+
+<ul>
+  <li>
+    <p>2,2</p>
+  </li>
+  <li>
+    <p>KEY_A</p>
+  </li>
+  <li>
+    <p>74</p>
+  </li>
+</ul>
+
+<p><img src="/q-website/images/105A.png" alt="105A.png" /></p>
 
 <p>Example of more detailed signal</p>
 
@@ -475,7 +526,7 @@ Each JSON object will have the structure:</p>
   <li>From the Cloud:</li>
 </ul>
 
-<div class="language-sh highlighter-rouge"><pre class="highlight"><code>curl -H <span class="s1">'Content-Type: application/json'</span> -H <span class="s1">'Authorization: Bearer ACCESS_TOKEN'</span> -X POST https://q.daskeyboard.com/api/1.0/signals -d <span class="s1">'{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "KEY_A", "message": "It worked", "effect": "BLINK", "color": "#008000", "action": "open:chrome", "shouldNotify": true, "isRead": true, "isArchived": true, "isMuted": true}'</span>
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code>curl -H <span class="s1">'Content-Type: application/json'</span> -H <span class="s1">'Authorization: Bearer ACCESS_TOKEN'</span> -X POST https://q.daskeyboard.com/api/1.0/signals -d <span class="s1">'{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "3,3", "message": "It worked", "effect": "BLINK", "color": "#008000", "action": "open:chrome", "shouldNotify": true, "isRead": true, "isArchived": true, "isMuted": true}'</span>
 </code></pre>
 </div>
 
@@ -483,9 +534,11 @@ Each JSON object will have the structure:</p>
   <li>From local API:</li>
 </ul>
 
-<div class="language-sh highlighter-rouge"><pre class="highlight"><code>curl -H <span class="s1">'Content-Type: application/json'</span> -X POST http://localhost:<span class="nv">$PORT</span>/api/1.0/signals -d <span class="s1">'{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "KEY_A", "message": "It worked", "effect": "BLINK", "color": "#008000", "shouldNotify": true, "isRead": true, "isArchived": true, "isMuted": true}'</span>
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code>curl -H <span class="s1">'Content-Type: application/json'</span> -X POST http://localhost:<span class="nv">$PORT</span>/api/1.0/signals -d <span class="s1">'{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "3,3", "message": "It worked", "effect": "BLINK", "color": "#008000", "shouldNotify": true, "isRead": true, "isArchived": true, "isMuted": true}'</span>
 </code></pre>
 </div>
+
+<p>You can find some examples here: <a href="/q-website/script-examples/">API examples</a></p>
 
 <p>Required fields:</p>
 
@@ -493,7 +546,7 @@ Each JSON object will have the structure:</p>
 
 <p><strong>pid</strong>: string - pid of the device, e.g. “DK5QPID”.</p>
 
-<p><strong>zoneId</strong>: string - id of the zone, e.g. “KEY_A”, “2,3”, “99”.</p>
+<p><strong>zoneId</strong>: string - id of the zone, e.g. “KEY_A”, “x,y”, “99”.  cf Understanding zoneId</p>
 
 <p><strong>color</strong>: string which has to begin by the character ‘#’ and be followed by 3 or 6 hexadecimal digits - color of the Signal, e.g. “#008000”.</p>
 
@@ -514,49 +567,6 @@ Each JSON object will have the structure:</p>
 <p><strong>isMuted</strong>: boolean - indicates if the Signal has been muted (default: false), e.g. true.</p>
 
 <p>The response is a JSON object containing the id of the signal created.</p>
-
-<h3 id="understanding-the-zoneid">Understanding the zoneId</h3>
-
-<p>The zoneId is a parameter of the signal used to know the position of the key on the keyboard which will be light up.
-There are three ways of writing this variable:</p>
-
-<ul>
-  <li>
-    <p>XY coordinates</p>
-  </li>
-  <li>
-    <p>KEY_{name-of-the-key}</p>
-  </li>
-  <li>
-    <p>Linear</p>
-  </li>
-</ul>
-
-<p>For example, in order to send a signal on the key A, according to the layout, the coordinates are different, so the zone ID of the A key can be (see the tables below):</p>
-
-<ul>
-  <li>
-    <p>3,3 for the 104 keys’ layout</p>
-  </li>
-  <li>
-    <p>2,2 for the 105 keys’ layout</p>
-  </li>
-  <li>
-    <p>KEY_A</p>
-  </li>
-  <li>
-    <p>99 for the 104 keys’ layout</p>
-  </li>
-  <li>
-    <p>74 for the 105 keys’ layout</p>
-  </li>
-</ul>
-
-<p><img src="/q-website/images/104A.png" alt="104A.png" /></p>
-
-<p><img src="/q-website/images/105A.png" alt="105A.png" /></p>
-
-<p><img src="/q-website/images/linearA.png" alt="linearA.png" /></p>
 
 <h3 id="getting-the-signals-cloud-only">Getting the signals (Cloud only)</h3>
 
