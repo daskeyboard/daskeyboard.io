@@ -332,6 +332,8 @@ There are three coordinates systems available:
 
 -  Coordinate system  zone code: KEY_{name-of-the-key}
 
+-  Coordinate system linear
+
 It is recommanded to use the coordinate system XY because it is compatible with every layouts.
 
 For example, to send a signal on the key A (US_layout): 
@@ -340,13 +342,17 @@ For example, to send a signal on the key A (US_layout):
 
 -  KEY_A
 
+- 99 
+
 ![104A.png](/q-website/images/104A.png)
 
 To send a signal on the key A (105 keys layout): 
 
--  2,2
+-  2,2 (different coordinates than with the 104 keys)
 
 -  KEY_A
+
+- 74
 
 
 ![105A.png](/q-website/images/105A.png)
