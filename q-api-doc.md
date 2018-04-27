@@ -305,11 +305,11 @@ Result format:
 
 ### Creating a signal (Cloud and local)
 
-The Das Keyboard Q device RGB keys can be controlled via signals. An example of Signal would be:
+The Das Keyboard 5Q device RGB keys can be controlled via signals. An example of Signal would be:
 
     if Apple Stock ticker value is > $500 => set A key to green.
 
-Quick example of sending a signal on the key A using the XY coordinates:
+Quick example of sending a signal on the key A (DK5Q) using the XY coordinates:
 
 - via the Cloud:
 
