@@ -311,13 +311,13 @@ The Das Keyboard Q device RGB keys can be controlled via signals. An example of 
 
 Quick example of sending a signal on the key A using the XY coordinates:
 
-- from the Cloud:
+- via the Cloud:
 
 ```sh
 curl -H 'Content-Type: application/json' -H 'Authorization: Bearer ACCESS_TOKEN' -X POST https://q.daskeyboard.com/api/1.0/signals -d '{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "3,3", "color": "#008000"}'
 ```
 
-- from local API:
+- via local API:
 
 ```sh
 curl -H 'Content-Type: application/json' -X POST  http://localhost:$PORT/api/1.0/signals -d '{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "3,3", "color": "#008000"}'
@@ -332,8 +332,6 @@ There are three coordinates systems available:
 
 -  Coordinate system  zone code: KEY_{name-of-the-key}
 
--  Coordinate system  linear
-
 It is recommanded to use the coordinate system XY because it is compatible with every layouts.
 
 For example, to send a signal on the key A (US_layout): 
@@ -341,8 +339,6 @@ For example, to send a signal on the key A (US_layout):
 -  3,3
 
 -  KEY_A
-
--  99
 
 ![104A.png](/q-website/images/104A.png)
 
@@ -352,28 +348,29 @@ To send a signal on the key A (105 keys layout):
 
 -  KEY_A
 
--  74
-
 
 ![105A.png](/q-website/images/105A.png)
 
 
+NB: |-F = left pipe and |-R = right pipe
 
-Example of more detailed signal
 
-- From the Cloud:
+### Example of more detailed signal
+
+- Via the Cloud:
 
 ```sh
 curl -H 'Content-Type: application/json' -H 'Authorization: Bearer ACCESS_TOKEN' -X POST https://q.daskeyboard.com/api/1.0/signals -d '{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "3,3", "message": "It worked", "effect": "BLINK", "color": "#008000", "action": "open:chrome", "shouldNotify": true, "isRead": true, "isArchived": true, "isMuted": true}'
 ```
 
-- From local API:
+- Via local API:
 
 ```sh
 curl -H 'Content-Type: application/json' -X POST http://localhost:$PORT/api/1.0/signals -d '{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "3,3", "message": "It worked", "effect": "BLINK", "color": "#008000", "shouldNotify": true, "isRead": true, "isArchived": true, "isMuted": true}'
 ```
 
-You can find some examples here: [API examples]({{site.baseurl}}/script-examples/)
+
+For more examples, please check out the [API examples]({{site.baseurl}}/script-examples/).
 
 
 Required fields:
