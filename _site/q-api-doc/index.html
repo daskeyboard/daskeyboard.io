@@ -16,7 +16,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Extended" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro%7CRoboto:500,400italic,300,400" rel="stylesheet">
   
-  <link rel="canonical" href="https://metadot.github.io/q-website/q-api-doc/">
+  <link rel="canonical" href="http://localhost:4000/q-website/q-api-doc/">
   <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
   <script>
     // Initialize Firebase
@@ -130,7 +130,7 @@
          <a href="https://github.com/metadot/q-website/blob/master/q-api-doc.md" class="btn btn-sm">
             <i class="fa fa-pencil"></i> Edit Source
          </a>
-         <a href="https://github.com/DasKeyboard/q/issues/new?title=Issue from website page Das Keyboard Q REST API Documentation&body=From URL: https://metadot.github.io/q-api-doc.md&labels=dev: docs - website" class="btn btn-sm">
+         <a href="https://github.com/DasKeyboard/q/issues/new?title=Issue from website page Das Keyboard Q REST API Documentation&body=From URL: http://localhost:4000/q-api-doc.md&labels=dev: docs - website" class="btn btn-sm">
             <i class="fa fa-github"></i> File Issue
         </a>
      </div>
@@ -481,6 +481,9 @@ There are three coordinates systems available:</p>
   <li>
     <p>Coordinate system  zone code: KEY_{name-of-the-key}</p>
   </li>
+  <li>
+    <p>Coordinate system linear</p>
+  </li>
 </ul>
 
 <p>It is recommanded to use the coordinate system XY because it is compatible with every layouts.</p>
@@ -494,6 +497,9 @@ There are three coordinates systems available:</p>
   <li>
     <p>KEY_A</p>
   </li>
+  <li>
+    <p>99</p>
+  </li>
 </ul>
 
 <p><img src="/q-website/images/104A.png" alt="104A.png" /></p>
@@ -502,10 +508,13 @@ There are three coordinates systems available:</p>
 
 <ul>
   <li>
-    <p>2,2</p>
+    <p>2,2 (different coordinates than with the 104 keys)</p>
   </li>
   <li>
     <p>KEY_A</p>
+  </li>
+  <li>
+    <p>74</p>
   </li>
 </ul>
 
