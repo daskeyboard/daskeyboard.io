@@ -13,5 +13,5 @@ Below are some script examples to demonstrate how to use the Q developer API wit
 * [Create a signal when the script find a keyword in a website]({{site.baseurl}}/script-examples/search-keyword-in-website-create-signal/)
 * [Create a signal when we receive a notifications from Github]({{site.baseurl}}/script-examples/github-api/)
 * [Create a signal using the XY coordinates]({{site.baseurl}}/script-examples/send-signal-using-xy-coordinates/)
-* [Colorize one line using the XY coordinates]({{site.baseurl}}/script-examples/colorize-one-line-using-xy-coordinates/)
+* [Colorize a line of LEDS/Keys of the Q Device using the XY coordinates]({{site.baseurl}}/script-examples/colorize-one-line-using-xy-coordinates/)
 * [Colorize keyboard using the XY coordinates]({{site.baseurl}}/script-examples/colorize-keyboard-using-xy-coordinates/)

@@ -18,19 +18,19 @@ URL="http://localhost:$PORT/api/1.0/signals"
 # Send signal the 5Q keyboard
 #-------------------------
 #
-ROWS=5
-COLUMNS=24
+y=5
+x=24
 
-for j in `seq 0 $ROWS`
+for j in `seq 0 $y`
 do
-    for i in `seq 0 $COLUMNS`
+    for i in `seq 0 $x`
     do
         curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{
             "pid": "'$PID'",
             "zoneId": "'"$i,$j"'",
             "color": "#00F",
             "effect": "SET_COLOR",
-            "name": "'"Color Line $y"'", 
+            "name": "'"Color Line $y"'",
             "message": "Message sent by script '$0'",
             "shouldNotify": false 
         }' $URL
@@ -40,8 +40,6 @@ done
 
 echo "DONE"
 
-result=$?
-
 if [ "$result" -eq "0" ]; then
     echo OK
     exit 0
@@ -49,6 +47,5 @@ else
     echo ERROR
     exit 1
 fi
-
 
 ```

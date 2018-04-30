@@ -445,19 +445,15 @@ Each JSON object will have the structure:</p>
 
 <h3 id="creating-a-signal-cloud-and-local">Creating a signal (Cloud and local)</h3>
 
-<p>The Das Keyboard 5Q device RGB keys can be controlled via signals. An example of Signal would be:</p>
+<p>The Das Keyboard 5Q device RGB keys can be controlled via signals.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>if Apple Stock ticker value is &gt; $500 =&gt; set A key to green.
-</code></pre>
-</div>
-
-<p>Quick example of sending a signal on the key A (DK5Q) using the XY coordinates:</p>
+<p>Quick example of sending a signal on the key Q (DK5Q) using the XY coordinates:</p>
 
 <ul>
   <li>via the Cloud:</li>
 </ul>
 
-<div class="language-sh highlighter-rouge"><pre class="highlight"><code>curl -H <span class="s1">'Content-Type: application/json'</span> -H <span class="s1">'Authorization: Bearer ACCESS_TOKEN'</span> -X POST https://q.daskeyboard.com/api/1.0/signals -d <span class="s1">'{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "3,3", "color": "#008000"}'</span>
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code>curl -H <span class="s1">'Content-Type: application/json'</span> -H <span class="s1">'Authorization: Bearer ACCESS_TOKEN'</span> -X POST https://q.daskeyboard.com/api/1.0/signals -d <span class="s1">'{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "2,2", "color": "#008000"}'</span>
 </code></pre>
 </div>
 
@@ -465,7 +461,7 @@ Each JSON object will have the structure:</p>
   <li>via local API:</li>
 </ul>
 
-<div class="language-sh highlighter-rouge"><pre class="highlight"><code>curl -H <span class="s1">'Content-Type: application/json'</span> -X POST  http://localhost:<span class="nv">$PORT</span>/api/1.0/signals -d <span class="s1">'{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "3,3", "color": "#008000"}'</span>
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code>curl -H <span class="s1">'Content-Type: application/json'</span> -X POST  http://localhost:<span class="nv">$PORT</span>/api/1.0/signals -d <span class="s1">'{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "2,2", "color": "#008000"}'</span>
 </code></pre>
 </div>
 
@@ -488,47 +484,40 @@ There are three coordinates systems available:</p>
 
 <p>It is recommanded to use the coordinate system XY because it is compatible with every layouts.</p>
 
-<p>For example, to send a signal on the key A (US_layout):</p>
+<p>For example, to send a signal on the key Q (US_layout):</p>
 
 <ul>
   <li>
-    <p>3,3</p>
+    <p>2,2</p>
   </li>
   <li>
-    <p>KEY_A</p>
-  </li>
-  <li>
-    <p>99</p>
-  </li>
-</ul>
-
-<p><img src="/q-website/images/104A.png" alt="104A.png" /></p>
-
-<p>To send a signal on the key A (105 keys layout):</p>
-
-<ul>
-  <li>
-    <p>2,2 (different coordinates than with the 104 keys)</p>
-  </li>
-  <li>
-    <p>KEY_A</p>
+    <p>KEY_Q</p>
   </li>
   <li>
     <p>74</p>
   </li>
 </ul>
 
-<p><img src="/q-website/images/105A.png" alt="105A.png" /></p>
+<p><img src="/q-website/images/104Q.png" alt="104Q.png" /></p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>NB:</td>
-      <td>-F = left pipe and</td>
-      <td>-R = right pipe</td>
-    </tr>
-  </tbody>
-</table>
+<p>To send a signal on the key Q (105 keys layout):</p>
+
+<ul>
+  <li>
+    <p>3,3 (different coordinates than with the 104 keys)</p>
+  </li>
+  <li>
+    <p>KEY_Q</p>
+  </li>
+  <li>
+    <p>99</p>
+  </li>
+</ul>
+
+<p><img src="/q-website/images/105Q.png" alt="105Q.png" /></p>
+
+<p>NB: 
+“|-F” = left pipe and “|-R” = right pipe</p>
 
 <h3 id="example-of-more-detailed-signal">Example of more detailed signal</h3>
 
@@ -536,7 +525,7 @@ There are three coordinates systems available:</p>
   <li>Via the Cloud:</li>
 </ul>
 
-<div class="language-sh highlighter-rouge"><pre class="highlight"><code>curl -H <span class="s1">'Content-Type: application/json'</span> -H <span class="s1">'Authorization: Bearer ACCESS_TOKEN'</span> -X POST https://q.daskeyboard.com/api/1.0/signals -d <span class="s1">'{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "3,3", "message": "It worked", "effect": "BLINK", "color": "#008000", "action": "open:chrome", "shouldNotify": true, "isRead": true, "isArchived": true, "isMuted": true}'</span>
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code>curl -H <span class="s1">'Content-Type: application/json'</span> -H <span class="s1">'Authorization: Bearer ACCESS_TOKEN'</span> -X POST https://q.daskeyboard.com/api/1.0/signals -d <span class="s1">'{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "2,2", "message": "It worked", "effect": "BLINK", "color": "#008000", "action": "open:chrome", "shouldNotify": true, "isRead": true, "isArchived": true, "isMuted": true}'</span>
 </code></pre>
 </div>
 
@@ -544,19 +533,19 @@ There are three coordinates systems available:</p>
   <li>Via local API:</li>
 </ul>
 
-<div class="language-sh highlighter-rouge"><pre class="highlight"><code>curl -H <span class="s1">'Content-Type: application/json'</span> -X POST http://localhost:<span class="nv">$PORT</span>/api/1.0/signals -d <span class="s1">'{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "3,3", "message": "It worked", "effect": "BLINK", "color": "#008000", "shouldNotify": true, "isRead": true, "isArchived": true, "isMuted": true}'</span>
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code>curl -H <span class="s1">'Content-Type: application/json'</span> -X POST http://localhost:<span class="nv">$PORT</span>/api/1.0/signals -d <span class="s1">'{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "2,2", "message": "It worked", "effect": "BLINK", "color": "#008000", "shouldNotify": true, "isRead": true, "isArchived": true, "isMuted": true}'</span>
 </code></pre>
 </div>
 
 <p>For more examples, please check out the <a href="/q-website/script-examples/">API examples</a>.</p>
 
-<p>Required fields:</p>
+<p><strong><em>Resource representations:</em></strong></p>
 
 <p><strong>name</strong>: string - name of Signal, e.g. “Apple Stock increase”.</p>
 
 <p><strong>pid</strong>: string - pid of the device, e.g. “DK5QPID”.</p>
 
-<p><strong>zoneId</strong>: string - id of the zone, e.g. “KEY_A”, “x,y”, “99”.  cf Understanding zoneId</p>
+<p><strong>zoneId</strong>: string - id of the zone, e.g. “KEY_Q”, “x,y”, “74”.  cf Understanding zoneId</p>
 
 <p><strong>color</strong>: string which has to begin by the character ‘#’ and be followed by 3 or 6 hexadecimal digits - color of the Signal, e.g. “#008000”.</p>
 
