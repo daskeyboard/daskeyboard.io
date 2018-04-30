@@ -305,22 +305,20 @@ Result format:
 
 ### Creating a signal (Cloud and local)
 
-The Das Keyboard 5Q device RGB keys can be controlled via signals. An example of Signal would be:
+The Das Keyboard 5Q device RGB keys can be controlled via signals. 
 
-    if Apple Stock ticker value is > $500 => set A key to green.
-
-Quick example of sending a signal on the key A (DK5Q) using the XY coordinates:
+Quick example of sending a signal on the key Q (DK5Q) using the XY coordinates:
 
 - via the Cloud:
 
 ```sh
-curl -H 'Content-Type: application/json' -H 'Authorization: Bearer ACCESS_TOKEN' -X POST https://q.daskeyboard.com/api/1.0/signals -d '{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "3,3", "color": "#008000"}'
+curl -H 'Content-Type: application/json' -H 'Authorization: Bearer ACCESS_TOKEN' -X POST https://q.daskeyboard.com/api/1.0/signals -d '{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "2,2", "color": "#008000"}'
 ```
 
 - via local API:
 
 ```sh
-curl -H 'Content-Type: application/json' -X POST  http://localhost:$PORT/api/1.0/signals -d '{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "3,3", "color": "#008000"}'
+curl -H 'Content-Type: application/json' -X POST  http://localhost:$PORT/api/1.0/signals -d '{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "2,2", "color": "#008000"}'
 ```
 
 ### Understanding zoneId
@@ -336,29 +334,30 @@ There are three coordinates systems available:
 
 It is recommanded to use the coordinate system XY because it is compatible with every layouts.
 
-For example, to send a signal on the key A (US_layout): 
+For example, to send a signal on the key Q (US_layout): 
 
--  3,3
+- 2,2
 
--  KEY_A
+- KEY_Q
 
-- 99 
+- 74 
 
-![104A.png](/q-website/images/104A.png)
+![104Q.png](/q-website/images/104Q.png)
 
-To send a signal on the key A (105 keys layout): 
+To send a signal on the key Q (105 keys layout): 
 
--  2,2 (different coordinates than with the 104 keys)
+-  3,3 (different coordinates than with the 104 keys)
 
--  KEY_A
+-  KEY_Q
 
-- 74
-
-
-![105A.png](/q-website/images/105A.png)
+- 99
 
 
-NB: |-F = left pipe and |-R = right pipe
+![105Q.png](/q-website/images/105Q.png)
+
+
+NB: 
+"|-F" = left pipe and "|-R" = right pipe
 
 
 ### Example of more detailed signal
@@ -366,26 +365,26 @@ NB: |-F = left pipe and |-R = right pipe
 - Via the Cloud:
 
 ```sh
-curl -H 'Content-Type: application/json' -H 'Authorization: Bearer ACCESS_TOKEN' -X POST https://q.daskeyboard.com/api/1.0/signals -d '{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "3,3", "message": "It worked", "effect": "BLINK", "color": "#008000", "action": "open:chrome", "shouldNotify": true, "isRead": true, "isArchived": true, "isMuted": true}'
+curl -H 'Content-Type: application/json' -H 'Authorization: Bearer ACCESS_TOKEN' -X POST https://q.daskeyboard.com/api/1.0/signals -d '{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "2,2", "message": "It worked", "effect": "BLINK", "color": "#008000", "action": "open:chrome", "shouldNotify": true, "isRead": true, "isArchived": true, "isMuted": true}'
 ```
 
 - Via local API:
 
 ```sh
-curl -H 'Content-Type: application/json' -X POST http://localhost:$PORT/api/1.0/signals -d '{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "3,3", "message": "It worked", "effect": "BLINK", "color": "#008000", "shouldNotify": true, "isRead": true, "isArchived": true, "isMuted": true}'
+curl -H 'Content-Type: application/json' -X POST http://localhost:$PORT/api/1.0/signals -d '{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "2,2", "message": "It worked", "effect": "BLINK", "color": "#008000", "shouldNotify": true, "isRead": true, "isArchived": true, "isMuted": true}'
 ```
 
 
 For more examples, please check out the [API examples]({{site.baseurl}}/script-examples/).
 
 
-Required fields:
+***Resource representations:***
 
 **name**: string - name of Signal, e.g. "Apple Stock increase".
 
 **pid**: string - pid of the device, e.g. "DK5QPID".
 
-**zoneId**: string - id of the zone, e.g. "KEY_A", "x,y", "99".  cf Understanding zoneId 
+**zoneId**: string - id of the zone, e.g. "KEY_Q", "x,y", "74".  cf Understanding zoneId 
 
 **color**: string which has to begin by the character '#' and be followed by 3 or 6 hexadecimal digits - color of the Signal, e.g. "#008000".
 

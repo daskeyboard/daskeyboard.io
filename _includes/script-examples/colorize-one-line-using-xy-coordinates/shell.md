@@ -24,9 +24,9 @@ URL="http://localhost:$PORT/api/1.0/signals"
 #
 
 # Number of columns on the keyboard
-COLUMNS=24
+x=24
 
-for i in $(seq 0 $COLUMNS);
+for i in $(seq 0 $x);
 do
     curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{
         "pid": "'$PID'",
@@ -39,12 +39,9 @@ do
     }' $URL
 
 result=$?
-
 done
 
 echo "DONE"
-
-result=$?
 
 if [ "$result" -eq "0" ]; then
     echo OK
@@ -53,5 +50,4 @@ else
     echo ERROR
     exit 1
 fi
-
 ```

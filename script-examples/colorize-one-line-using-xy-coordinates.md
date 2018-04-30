@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Colorize one line of the keyboard using the XY coordinates"
+title: "Colorize a line of LEDS/Keys of the Q Device using the XY coordinates"
 permalink: /script-examples/colorize-one-line-using-xy-coordinates/
 ---
 
