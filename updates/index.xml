@@ -97,7 +97,7 @@
       
       <guid>https://daskeyboard.github.io/updates/1.0.0-beta.28/</guid>
       <description>Update 1.0.0 Beta.28:
- Replaced the default browser tooltips, with bootstrap tooltips.
+ Replaced the default browser tooltips, with bootstrap tooltips&amp;hellip;
  Removed &amp;lsquo;home&amp;rsquo; button as obsolete.
  Use the secured &amp;lsquo;wss&amp;rsquo; instead of &amp;lsquo;ws&amp;rsquo; protocol for the web sockets for profiles and signals.
  Made the bouncing light with shorter size.
