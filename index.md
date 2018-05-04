@@ -39,7 +39,7 @@ hide_title: true
         Control Das&nbsp;Keyboard RGB devices
     </h1>
 
-    <div class = "row">
+    <div class = "row" style="display: flex;">
         <div class="col-md-6">
             <div class="homepage__tagline">
             The Das Keyboard 5Q is a cloud connected keyboard that can display color notifications its keys. 

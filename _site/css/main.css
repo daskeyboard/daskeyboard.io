@@ -646,7 +646,7 @@ img.homepage__illustration--image { position: absolute; top: 0; right: 0; z-inde
 @media screen and (max-width: 1050px) { .homepage { background-position: 275px 50px; } }
 @media screen and (max-width: 850px) { .homepage { background-position: 225px 50px; } }
 @media screen and (max-width: 720px) { .homepage { background-position: 200px 50px; } }
-@media screen and (max-width: 620px) { .homepage { background-position: 150px 50px; } }
+@media screen and (max-width: 620px) { .homepage { background-position: 5px 50px; } }
 .homepage #side-nav-container { display: none; }
 .homepage #side-nav-container.active { display: block; }
 .homepage .main-contents { margin-left: auto; width: auto; }
@@ -675,6 +675,7 @@ img.homepage__illustration--image { position: absolute; top: 0; right: 0; z-inde
 @media screen and (max-width: 640px) { .homepage .contents .key-points { display: block; }
   .homepage .contents .key-points p { margin-bottom: 16px; }
   .homepage .contents .homepage__key_point_title { margin-top: 24px; margin-bottom: 0; } }
+.homepage .container-fluid .row { display: block; }
 
 .embed-container { position: relative; padding-bottom: 56.25%; /* 16:9 */ height: 0; overflow: hidden; max-width: 100%; margin-bottom: 1em; }
 .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }

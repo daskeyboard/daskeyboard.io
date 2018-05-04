@@ -162,7 +162,7 @@ $homepage-illustration-text-break-size: 720px;
     }
 
     @include media-query(620px) {
-        background-position: 150px 50px;
+        background-position: 5px 50px;
     }
 
     #side-nav-container {
@@ -328,7 +328,7 @@ $homepage-illustration-text-break-size: 720px;
         }
     }
 
-    .row{
-        // display: block;
+    .container-fluid .row{
+        display: block;
     }
 }
