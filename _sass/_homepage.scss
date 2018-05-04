@@ -28,7 +28,6 @@
     margin-bottom: 40px;
     font-size: 20px;
     font-weight: 300;
-    width: 50%;
 
     @include media-query(770px) {
         font-size: 18px;
@@ -37,6 +36,7 @@
 }
 
 .homepage__title {
+    margin-top: 48px;
     margin-bottom: 40px;
     width: 60%;
 }
@@ -49,28 +49,7 @@ img.homepage__illustration--image {
     position: absolute;
     top: 0;
     right: 0;
-    width: 50%;
     z-index: 10;
-    margin-top: 210px;
-
-    @include media-query(768px) {
-        width: 40%;
-        margin-top: 70px;
-    }
-
-    @include media-query(640px) {
-        width: 40%;
-        margin-top: 60px;
-    }
-
-    @include media-query(570px) {
-        margin-top: 70px;
-    }
-
-    @include media-query(480px) {
-        margin-top: 110px;
-        width: 35%;
-    }
 }
 
 $homepage-illustration-text-break-size: 720px;
@@ -140,6 +119,10 @@ $homepage-illustration-text-break-size: 720px;
 
 .navbar-homepage .btn{
     margin-right: 1rem;
+}
+
+.navbar-homepage-radius{
+    border-radius: 4px;
 }
 
 @media (max-width: 575.98px){
@@ -346,6 +329,6 @@ $homepage-illustration-text-break-size: 720px;
     }
 
     .row{
-        display: block;
+        // display: block;
     }
 }
