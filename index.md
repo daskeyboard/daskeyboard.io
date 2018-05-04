@@ -40,7 +40,7 @@ hide_title: true
     </h1>
 
     <div class = "row">
-        <div class="col-md-8">
+        <div class="col-md-6">
             <div class="homepage__tagline">
             The Das Keyboard 5Q is a cloud connected keyboard that can display color notifications its keys. 
             Notifications come from Twitter, Gmail, eBay, Facebook and many others. 
@@ -48,7 +48,7 @@ hide_title: true
             An open REST API is available for programmers.
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6">
             <div class="hot-reload-gif-container">
                 <img src="{{ "images/5q-animation-whitebg.gif"  | relative_url }}"
                     class="homepage__illustration--image"
