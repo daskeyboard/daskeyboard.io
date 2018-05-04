@@ -131,21 +131,49 @@
         <span>Das Keyboard is now in Beta!!</span>
         &nbsp;
     </h1>
-    <div class="hot-reload-gif-container">
-        <img src="/q-website/images/5q-animation-whitebg.gif" class="homepage__illustration--image" alt="Animation of the 5Q keyboard receiving signals" />
-    </div>
+    
 </div>
 
-<section class="homepage__key_points card" style="margin-bottom:0px;">
+<section class="homepage__key_points card">
+    <nav class="navbar navbar-expand-sm navbar-dark navbar-homepage bg-dark navbar-homepage-radius">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="btn btn-outline-primary" href="https://github.com/DasKeyboard/q">Develop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-success" href="http://qforum.daskeyboard.com">Discuss</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-warning" href="/q-website/get-started/">Getting Started</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-danger" href="/q-website/get-started/download/">Download</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <h1 class="homepage__title">
         Control Das&nbsp;Keyboard RGB devices
     </h1>
 
-    <div class="homepage__tagline">
-    The Das Keyboard 5Q is a cloud connected keyboard allowing users to display color notifications on each key. 
-    Notifications can come from applications such as Twitter, Gmail, eBay, Facebook and many others. 
-    Hundreds of applications can be configured via IFTTT and Zapier, transforming the 5Q keyboard into a RGB dashboard. 
-    An open REST API is also available for programmers.
+    <div class="row">
+        <div class="col-md-8">
+            <div class="homepage__tagline">
+            The Das Keyboard 5Q is a cloud connected keyboard that can display color notifications its keys. 
+            Notifications come from Twitter, Gmail, eBay, Facebook and many others. 
+            Hundreds of applications can be configured via IFTTT and Zapier, transforming the 5Q keyboard into a RGB dashboard. 
+            An open REST API is available for programmers.
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="hot-reload-gif-container">
+                <img src="/q-website/images/5q-animation-whitebg.gif" class="homepage__illustration--image" alt="Animation of the 5Q keyboard receiving signals" />
+            </div>
+        </div>
     </div>
 
     <div class="homepage__button_row">
@@ -158,8 +186,8 @@
             <div class="homepage__key_point_title">Illumination</div>
 
             <p>
-            With the Dashboard View, you can quickly visualize the state of your keyboard.
-            Mouseover each individual key to see which notifications are streaming through.
+            The Dashboard view displays the latest signals received.
+            Hovering over a key will display the notification content.
             </p>
         </div>
 
@@ -182,34 +210,12 @@
     </div>
 </section>
 
-<nav class="navbar navbar-expand-sm navbar-dark navbar-homepage bg-dark">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-                <a class="btn btn-outline-primary" href="https://github.com/DasKeyboard/q">Develop</a>
-            </li>
-            <li class="nav-item">
-                <a class="btn btn-outline-success" href="http://qforum.daskeyboard.com">Discuss</a>
-            </li>
-            <li class="nav-item">
-                <a class="btn btn-outline-warning" href="/q-website/get-started/">Getting Started</a>
-            </li>
-            <li class="nav-item">
-                <a class="btn btn-outline-danger" href="/q-website/get-started/download/">Download</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-
 <section class="homepage__hot_reload card">
     <h1>Illumination</h1>
 
     <p>
-        With the Dashboard View, you can quickly visualize the state of your keyboard.
-        Mouseover each individual key to see which notifications are streaming through.
+        The Dashboard view displays the latest signals received.
+        Hovering over a key will display the notification content.
     </p>
 
     <img src="/q-website/images/homepage/capture-illumination.png" width="1671" height="912" alt="Q software application in the Illumination mode." />
