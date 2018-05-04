@@ -23,10 +23,10 @@ hide_title: true
     </h1>
 
     <div class="homepage__tagline">
-    The Das Keyboard 5Q is a cloud connected keyboard allowing users to display color notifications on each key. 
-    Notifications can come from applications such as Twitter, Gmail, eBay, Facebook and many others. 
+    The Das Keyboard 5Q is a cloud connected keyboard that can display color notifications its keys. 
+    Notifications come from Twitter, Gmail, eBay, Facebook and many others. 
     Hundreds of applications can be configured via IFTTT and Zapier, transforming the 5Q keyboard into a RGB dashboard. 
-    An open REST API is also available for programmers.
+    An open REST API is available for programmers.
     </div>
 
     <div class="homepage__button_row">
@@ -39,8 +39,8 @@ hide_title: true
             <div class="homepage__key_point_title">Illumination</div>
 
             <p>
-            With the Dashboard View, you can quickly visualize the state of your keyboard.
-            Mouseover each individual key to see which notifications are streaming through.
+            The Dashboard view displays the latest signals received.
+            Hovering over a key will display the notification content.
             </p>
         </div>
 
