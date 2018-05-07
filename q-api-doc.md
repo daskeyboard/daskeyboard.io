@@ -342,7 +342,7 @@ For example, to send a signal on the key Q (US_layout):
 
 - 74 
 
-![104Q.png](/daskeyboard.github.io/images/104Q.png)
+![104Q.png](/DasKeyboard.github.io/images/104Q.png)
 
 To send a signal on the key Q (105 keys layout): 
 
@@ -353,7 +353,7 @@ To send a signal on the key Q (105 keys layout):
 - 99
 
 
-![105Q.png](/daskeyboard.github.io/images/105Q.png)
+![105Q.png](/DasKeyboard.github.io/images/105Q.png)
 
 
 NB: 
