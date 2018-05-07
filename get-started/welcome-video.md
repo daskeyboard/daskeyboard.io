@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Get Started: Watch the welcome video"
+title: "Get Started: Watch welcome video"
 permalink: /get-started/welcome-video/
 ---
 
@@ -8,4 +8,4 @@ permalink: /get-started/welcome-video/
 
 ## Next step
 
-[Next step: Watch the IFTTT video]({{site.baseurl}}/get-started/ifttt-tutorial/)
+[Next step: Watch IFTTT video]({{site.baseurl}}/get-started/ifttt-tutorial/)
