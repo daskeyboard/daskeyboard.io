@@ -87,7 +87,7 @@ else if(accessToken1==undefined && accessToken2==undefined){
         $(this).html( $(this).html().replace(/ACCESS_TOKEN/g, accessToken3) );
     });
     document.getElementById("login-link").innerHTML = "<a class='page-link' id='login-link' onclick='logout()'>Logout</a>";
-    document.getElementById("login-link").href = "/q-website/";
+    document.getElementById("login-link").href = "/metadot.github.io/";
 }
     
 else if(accessToken1==undefined && accessToken3==undefined){    
@@ -103,7 +103,7 @@ else if(accessToken1==undefined && accessToken3==undefined){
         console.log('The access_token is undefined');
     });
     document.getElementById("login-link").innerHTML = "<a class='page-link' id='login-link' onclick='logout()'>Logout</a>";
-    document.getElementById("login-link").href = "/q-website/";
+    document.getElementById("login-link").href = "/metadot.github.io/";
 }
 
 else if(accessToken2==undefined && accessToken3==undefined){    
@@ -119,7 +119,7 @@ else if(accessToken2==undefined && accessToken3==undefined){
         console.log('The access_token is undefined');
     });
     document.getElementById("login-link").innerHTML = "<a class='page-link' id='login-link' onclick='logout()'>Logout</a>";
-    document.getElementById("login-link").href = "/q-website/";
+    document.getElementById("login-link").href = "/metadot.github.io/";
 }
 
 else if(accessToken1 ==undefined) {
@@ -134,7 +134,7 @@ else if(accessToken1 ==undefined) {
         $(this).html( $(this).html().replace(/ACCESS_TOKEN/g, accessToken3) );
     });
     document.getElementById("login-link").innerHTML = "<a class='page-link' id='login-link' onclick='logout()'>Logout</a>";
-    document.getElementById("login-link").href = "/q-website/";
+    document.getElementById("login-link").href = "/metadot.github.io/";
 }
 
 else if(accessToken2 ==undefined) {
@@ -149,7 +149,7 @@ else if(accessToken2 ==undefined) {
         $(this).html( $(this).html().replace(/ACCESS_TOKEN/g, accessToken3) );
     });
     document.getElementById("login-link").innerHTML = "<a class='page-link' id='login-link' onclick='logout()'>Logout</a>";
-    document.getElementById("login-link").href = "/q-website/";
+    document.getElementById("login-link").href = "/metadot.github.io/";
 }
 
 else if(accessToken3==undefined){    
@@ -164,7 +164,7 @@ else if(accessToken3==undefined){
         console.log('The access_token is undefined');
     });
     document.getElementById("login-link").innerHTML = "<a class='page-link' id='login-link' onclick='logout()'>Logout</a>";
-    document.getElementById("login-link").href = "/q-website/";
+    document.getElementById("login-link").href = "/metadot.github.io/";
 }
 
 else{
@@ -178,7 +178,7 @@ else{
         $(this).html( $(this).html().replace(/ACCESS_TOKEN/g, accessToken3) );
     });
     document.getElementById("login-link").innerHTML = "<a class='page-link' id='login-link' onclick='logout()'>Logout</a>";
-    document.getElementById("login-link").href = "/q-website/";
+    document.getElementById("login-link").href = "/metadot.github.io/";
 }
 
 function logout(){
