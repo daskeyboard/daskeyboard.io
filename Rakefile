@@ -11,15 +11,15 @@ task :checklinks do
       # Skip fragment identifiers, as these are not real links
       '#',
       # Skip links that have been auto-inserted for the 'Edit Source' action (i.e. that match this regexp)
-      /github.com\/metadot\/metadot.github.io/
+      /github.com\/metadot\/daskeyboard.github.io/
     ],
     :only_4xx => true,
     # Replace canonical link with local links.
     # Details: http://tongueroo.com/articles/getting-html-proofer-to-work-with-canonical-url-for-google-seo/
     :url_swap => {
-      'https://metadot.github.io/metadot.github.io/' => '/metadot.github.io/',
-      '/metadot.github.io' => '',
-      'https://github.com/metadot' => 'https://github.com/metadot/metadot.github.io/'
+      'https://daskeyboard.github.io/daskeyboard.github.io/' => '/daskeyboard.github.io/',
+      '/daskeyboard.github.io' => '',
+      'https://github.com/metadot' => 'https://github.com/metadot/daskeyboard.github.io/'
     }
   }
   HTMLProofer.check_directory("./_site", options).run
