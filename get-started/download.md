@@ -25,4 +25,4 @@ permalink: /get-started/download/
 
 ## Next step
 
-[Next step: Watch the welcome video]({{site.baseurl}}/get-started/welcome-video/)
+[Next step: Watch welcome video]({{site.baseurl}}/get-started/welcome-video/)
