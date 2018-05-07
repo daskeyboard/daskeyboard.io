@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Das Keyboard 5Q Software</title>
+    <link>https://daskeyboard.github.io/</link>
+    <description>Recent content on Das Keyboard 5Q Software</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 20 Jan 2018 15:18:25 -0500</lastBuildDate>
+    
+	<atom:link href="https://daskeyboard.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>1.0.0 Beta.43</title>
+      <link>https://daskeyboard.github.io/updates/1.0.0-beta.43/</link>
+      <pubDate>Sat, 20 Jan 2018 15:18:25 -0500</pubDate>
+      
+      <guid>https://daskeyboard.github.io/updates/1.0.0-beta.43/</guid>
+      <description>Update 1.0.0-beta.43:
+ Enabled signals for X50
+ Reduced the run time for the bouncing light effect.
+ Fix in the refreshing of the access token.
+ Display the firmware version when device is plugged in
+ Display a link to download page, when a new firmware is available
+  </description>
+    </item>
+    
+    <item>
+      <title>1.0.0 Beta.37</title>
+      <link>https://daskeyboard.github.io/updates/1.0.0-beta.37/</link>
+      <pubDate>Fri, 19 Jan 2018 15:18:25 -0500</pubDate>
+      
+      <guid>https://daskeyboard.github.io/updates/1.0.0-beta.37/</guid>
+      <description>Update 1.0.0-beta.37:
+ Removed the key press effects, until they are production ready.
+ Updated the cloud signal loading system to utilize the new zone signal API
+ Few UI tweaks and fixes.
+  </description>
+    </item>
+    
+    <item>
+      <title>Downloads</title>
+      <link>https://daskeyboard.github.io/downloads/downloads/</link>
+      <pubDate>Fri, 19 Jan 2018 15:18:25 -0500</pubDate>
+      
+      <guid>https://daskeyboard.github.io/downloads/downloads/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>5Q Introduction</title>
+      <link>https://daskeyboard.github.io/getting-started/5q-introduction/</link>
+      <pubDate>Mon, 23 Oct 2017 09:58:18 -0500</pubDate>
+      
+      <guid>https://daskeyboard.github.io/getting-started/5q-introduction/</guid>
+      <description> 5Q Introduction   </description>
+    </item>
+    
+    <item>
+      <title>5Q Promo Video</title>
+      <link>https://daskeyboard.github.io/getting-started/5q-promo-video/</link>
+      <pubDate>Mon, 23 Oct 2017 09:58:18 -0500</pubDate>
+      
+      <guid>https://daskeyboard.github.io/getting-started/5q-promo-video/</guid>
+      <description> 5Q Promo Video   </description>
+    </item>
+    
+    <item>
+      <title>IFTTT &#43; 5Q video</title>
+      <link>https://daskeyboard.github.io/getting-started/ifttt-tutorial/</link>
+      <pubDate>Mon, 23 Oct 2017 09:58:18 -0500</pubDate>
+      
+      <guid>https://daskeyboard.github.io/getting-started/ifttt-tutorial/</guid>
+      <description> Connecting IFTTT to your Das Keyboard 5Q   </description>
+    </item>
+    
+    <item>
+      <title>Welcome video</title>
+      <link>https://daskeyboard.github.io/getting-started/welcome-video/</link>
+      <pubDate>Mon, 23 Oct 2017 09:58:18 -0500</pubDate>
+      
+      <guid>https://daskeyboard.github.io/getting-started/welcome-video/</guid>
+      <description> Welcome video   </description>
+    </item>
+    
+    <item>
+      <title>Zapier &#43; 5Q video</title>
+      <link>https://daskeyboard.github.io/getting-started/zapier-tutorial/</link>
+      <pubDate>Mon, 23 Oct 2017 09:58:18 -0500</pubDate>
+      
+      <guid>https://daskeyboard.github.io/getting-started/zapier-tutorial/</guid>
+      <description> Connecting Zapier to your Das Keyboard 5Q   </description>
+    </item>
+    
+    <item>
+      <title>1.0.0 Beta.35</title>
+      <link>https://daskeyboard.github.io/updates/1.0.0-beta.35/</link>
+      <pubDate>Thu, 19 Oct 2017 15:18:25 -0500</pubDate>
+      
+      <guid>https://daskeyboard.github.io/updates/1.0.0-beta.35/</guid>
+      <description>Update 1.0.0-beta.35:
+ Added a screen for the latest change log.
+ Implemented a firmware upgrade logic and UI (not operational yet).
+ Various UI tweaks and fixes.
+  </description>
+    </item>
+    
+    <item>
+      <title>1.0.0 Beta.31</title>
+      <link>https://daskeyboard.github.io/updates/1.0.0-beta.31/</link>
+      <pubDate>Thu, 19 Oct 2017 15:18:05 -0500</pubDate>
+      
+      <guid>https://daskeyboard.github.io/updates/1.0.0-beta.31/</guid>
+      <description>Update 1.0.0 Beta.31:
+ Give access to simulation modes for X50 and 5Q.
+ Hide market place and profile sharing by default.
+  </description>
+    </item>
+    
+    <item>
+      <title>1.0.0 Beta.30</title>
+      <link>https://daskeyboard.github.io/updates/1.0.0-beta.30/</link>
+      <pubDate>Thu, 19 Oct 2017 15:17:39 -0500</pubDate>
+      
+      <guid>https://daskeyboard.github.io/updates/1.0.0-beta.30/</guid>
+      <description>Update 1.0.0 Beta.30:
+ Redesigned home page (new UI and UX).
+ Changed the look of the menu drop downs, and of the tooltips.
+ Optimized the proportions of the starting screen (now depending of the monitor size), to remove the scroll bars when X50 is selected.
+ Tweaks in the communication with the service (should fix various cases when the connection is lost or stuck, and needed restart of the service, the Q Desktop, or both).</description>
+    </item>
+    
+    <item>
+      <title>1.0.0 Beta.29</title>
+      <link>https://daskeyboard.github.io/updates/1.0.0-beta.29/</link>
+      <pubDate>Thu, 19 Oct 2017 15:17:08 -0500</pubDate>
+      
+      <guid>https://daskeyboard.github.io/updates/1.0.0-beta.29/</guid>
+      <description>Update 1.0.0 Beta.29:
+ Macro recorder has be redone to use directly the keydown/up events as they are fired from the browser (electron). That way we do not require the presence of 5Q/X50 to do macro recording.
+ Optimized the keydown/up listeners, which were causing the text inputs to be extremely slow.
+ Now pipe zones borders are hidden when the mouse pointer is not over the keyboard area.
+ Updated the logic behind &amp;lsquo;connected&amp;rsquo; and &amp;lsquo;not connected&amp;rsquo; - now when a device is not connected, it is shown instead in &amp;lsquo;simulation&amp;rsquo;.</description>
+    </item>
+    
+    <item>
+      <title>1.0.0 Beta.28</title>
+      <link>https://daskeyboard.github.io/updates/1.0.0-beta.28/</link>
+      <pubDate>Thu, 19 Oct 2017 14:53:17 -0500</pubDate>
+      
+      <guid>https://daskeyboard.github.io/updates/1.0.0-beta.28/</guid>
+      <description>Update 1.0.0 Beta.28:
+ Replaced the default browser tooltips, with bootstrap tooltips&amp;hellip;
+ Removed &amp;lsquo;home&amp;rsquo; button as obsolete.
+ Use the secured &amp;lsquo;wss&amp;rsquo; instead of &amp;lsquo;ws&amp;rsquo; protocol for the web sockets for profiles and signals.
+ Made the bouncing light with shorter size.
+ Not forcing https when the backend URL is set to &amp;lsquo;localhost&amp;rsquo;.
+ Removed the shadow around the hi-brightness option for X50.
+ Updated the french and MAC layouts images.</description>
+    </item>
+    
+  </channel>
+</rss>
