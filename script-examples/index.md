@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Scriipt examples"
+title: "Script examples"
 permalink: /script-examples/
 ---
 
