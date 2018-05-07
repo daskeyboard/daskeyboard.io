@@ -10,4 +10,4 @@ permalink: /get-started/ifttt-tutorial/
 
 ## Next step
 
-[Next step: Watch the Zapier tutorial]({{site.baseurl}}/get-started/zapier-tutorial/)
+[Next step: Watch Zapier tutorial]({{site.baseurl}}/get-started/zapier-tutorial/)
