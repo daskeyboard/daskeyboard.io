@@ -639,7 +639,7 @@ img.homepage__illustration--image { position: absolute; top: 0; right: 0; z-inde
 .navbar-homepage-radius { border-radius: 4px; }
 
 @media (max-width: 575.98px) { .navbar-homepage .btn { margin-top: 1rem; } }
-.homepage { background-color: #e4e8ea; background-image: url("/daskeyboard.github.io/images/homepage/green-triangle.png"); background-repeat: no-repeat; background-position: 900px 50px; }
+.homepage { background-color: #e4e8ea; background-image: url("/DasKeyboard.github.io/images/homepage/green-triangle.png"); background-repeat: no-repeat; background-position: 900px 50px; }
 @media screen and (max-width: 1750px) { .homepage { background-position: 750px 50px; } }
 @media screen and (max-width: 1500px) { .homepage { background-position: 475px 50px; } }
 @media screen and (max-width: 1300px) { .homepage { background-position: 325px 50px; } }

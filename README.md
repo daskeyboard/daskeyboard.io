@@ -2,7 +2,7 @@
 
 The website for Das Keyboard.
 
-[![Build Status](https://travis-ci.com/metadot/daskeyboard.github.io.svg?token=sBrjsq524qva4V6vzxWH&branch=master)](https://travis-ci.org/metadot/daskeyboard.github.io)
+[![Build Status](https://travis-ci.com/metadot/DasKeyboard.github.io.svg?token=sBrjsq524qva4V6vzxWH&branch=master)](https://travis-ci.org/metadot/DasKeyboard.github.io)
 
 ## Issues, bugs, and requests
 
@@ -147,7 +147,7 @@ its own file and checked for analysis issues. Some ways to tweak that:
 * To include code to be analyzed, but not displayed, add that in a comment
   immediately proceeding the snippet (e.g., `<!-- someCodeHere(); -->`)
 * A snippet without any import statements will have an import
-  (`'package:daskeyboard.github.io/material.dart'`)
+  (`'package:DasKeyboard.github.io/material.dart'`)
   automatically added to it
 * We ignore special formatting tags like `[[highlight]]`.
 
