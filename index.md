@@ -92,18 +92,6 @@ hide_title: true
 </section>
 
 
-
-<section class="homepage__hot_reload card">
-    <h1>Illumination</h1>
-
-    <p>
-        The Dashboard view displays the latest signals received.
-        Hovering over a key will display the notification content.
-    </p>
-
-    <img src="{{ "images/homepage/capture-illumination.png"  | relative_url }}" width="1671" height="912" alt="Q software application in the Illumination mode.">
-</section>
-
 <section class="homepage__beautiful_uis card ">
     <h1>Q signal center</h1>
 
@@ -124,6 +112,17 @@ hide_title: true
 
     <img src="{{ "images/homepage/q-desktop-advanced-software.gif" | relative_url }}" width="680" height="414" alt="Animation of the cloud connection between the keyboard, the Q software and Zapier/IFTTT/Q cloud.">
 
+</section>
+
+<section class="homepage__hot_reload card">
+    <h1>Illumination</h1>
+
+    <p>
+        The Dashboard view displays the latest signals received.
+        Hovering over a key will display the notification content.
+    </p>
+
+    <img src="{{ "images/homepage/capture-illumination.png"  | relative_url }}" width="1671" height="912" alt="Q software application in the Illumination mode.">
 </section>
 
 <section class="homepage__try_flutter card">
