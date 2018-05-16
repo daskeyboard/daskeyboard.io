@@ -1,0 +1,6 @@
+- name: Get Started as a user
+  description: Set up your environment and start using the Q Desktop application.
+  url: /DasKeyboard.github.io/get-started/download/
+- name: Get Started as a developer
+  description: Read the Q developer API and start sending your own signals to your Q keyboard.
+  url: /DasKeyboard.github.io/q-api-doc/
