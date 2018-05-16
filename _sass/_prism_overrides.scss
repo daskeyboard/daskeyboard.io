@@ -1,0 +1,6 @@
+// Overrides properties from _prism.scss, which is a generated file, see:
+// https://github.com/DasKeyboard/DasKeyboard.github.io#syntax-highlighting.
+
+.token.operator {
+    background: none !important;
+}

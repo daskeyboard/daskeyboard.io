@@ -1,0 +1,21 @@
+# Site settings
+source:          .
+destination:     ./_site
+
+title: Das Keyboard
+email: camille@metadot.com
+email_name: camille@
+baseurl: "/DasKeyboard.github.io" # the subpath of your site, e.g. /blog/
+url: "https://daskeyboard.github.io"
+github_username: DasKeyboard
+
+# Build settings
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+exclude: [packages, tool]
+
+
