@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+
+  <body class="{% if page.url == '/' %}homepage{% endif %}">
+
+    <div id="overlay-under-drawer"><!-- for the drawer on narrow screens --></div>
+
+    {% include header.html %}
+
+    <!-- Page Content -->
+    <div class="container-fluid contents">
+      <!-- Content Row -->
+      <div class="row">
+
+        <!-- Sidebar Column -->
+        <div id="side-nav-container" class="col-sm-2">
+          {% include sidebar.html %}
+        </div>
+        <div id="side-nav-container" class="col-sm-1">
+            {% include sidebar-doc.html %}
+        </div>
+
+        {% if page.url == '/' %}
+        {% comment %} Homepage {% endcomment %}
+
+        <!-- Homepage Content Column -->
+        <div class="col-sm-12 main-contents">
+          <div class="main-contents-body">
+            {{content}}
+          </div>
+        </div>
+
+        {% else %}
+        {% comment %} Regular page, not homepage {% endcomment %}
+
+        <!-- Content Column -->
+        <div class="col-sm-9 main-contents">
+          <div class="main-contents-body">
+            <article class="post-content">
+  
+                {% unless page.hide_title %}
+                <header class="post-header">
+                    <div class="btn-group contribute" role="group">
+                       <a href="https://github.com/DasKeyboard/DasKeyboard.github.io/blob/master/{{page.path}}" class="btn btn-sm">
+                          <i class="fa fa-pencil"></i> Edit Source
+                       </a>
+                       <a href="https://github.com/DasKeyboard/DasKeyboard.github.io/issues/new?title=Issue from website page {{page.title}}&body=From URL: {{site.url}}/{{page.path}}&labels=dev: docs - website" class="btn btn-sm">
+                          <i class="fa fa-github"></i> File Issue
+                      </a>
+                   </div>
+                 <div>
+                  <h1 class="post-title">{{ page.title }} </h1>
+                 </div>
+              
+                </header>
+                {% endunless %}
+              
+                {{ content }}
+              </article>
+          </div>
+        </div>
+
+        {% endif %}
+
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+
+    {% include footer.html %}
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="{{ "/js/sidebar_toggle.js" }}"></script>
+    <script src="{{ "/js/prism.js" }}"></script>
+    <script src="{{ "/js/tabs.js" }}"></script>
+    
+    <script async="" defer="" src="//survey.g.doubleclick.net/async_survey?site=at3ul57xpub2vk3oxt2ytw365i"></script>
+  </body>
+</html>
