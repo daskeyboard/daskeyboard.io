@@ -21,7 +21,7 @@ hide_title: true
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                    <a class="btn btn-outline-primary" href="https://github.com/DasKeyboard/q">Develop</a>
+                    <a class="btn btn-outline-primary" href="https://daskeyboard.github.io/DasKeyboard.github.io/docs/">Develop</a>
                 </li>
                 <li class="nav-item">
                     <a class="btn btn-outline-success" href="http://qforum.daskeyboard.com">Discuss</a>
@@ -92,6 +92,7 @@ hide_title: true
 </section>
 
 
+<<<<<<< HEAD
 
 <section class="homepage__hot_reload card">
     <h1>Illumination</h1>
@@ -104,6 +105,8 @@ hide_title: true
     <img src="{{ "images/homepage/capture-illumination.png"  | relative_url }}" width="1671" height="912" alt="Q software application in the Illumination mode.">
 </section>
 
+=======
+>>>>>>> 150f2cc99cb063623de86d222f21397846f8b26f
 <section class="homepage__beautiful_uis card ">
     <h1>Q signal center</h1>
 
@@ -126,6 +129,20 @@ hide_title: true
 
 </section>
 
+<<<<<<< HEAD
+=======
+<section class="homepage__hot_reload card">
+    <h1>Illumination</h1>
+
+    <p>
+        The Dashboard view displays the latest signals received.
+        Hovering over a key will display the notification content.
+    </p>
+
+    <img src="{{ "images/homepage/capture-illumination.png"  | relative_url }}" width="1671" height="912" alt="Q software application in the Illumination mode.">
+</section>
+
+>>>>>>> 150f2cc99cb063623de86d222f21397846f8b26f
 <section class="homepage__try_flutter card">
 
     <div class="homepage__try_today">Try Das Keyboard today. Getting started is easy.</div>
