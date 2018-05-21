@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Das Keyboard Q Desktop Software </title>
+  <title>  - Das Keyboard </title>
   <link rel="shortcut icon" href="/DasKeyboard.github.io/images/favicon.png">
 
   <meta name="description" content="">
@@ -16,7 +16,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Extended" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro%7CRoboto:500,400italic,300,400" rel="stylesheet">
   
-  <link rel="canonical" href="http://localhost:4000/DasKeyboard.github.io/">
+  <link rel="canonical" href="http://localhost:4000/DasKeyboard.github.io/updates/2.0.0-beta.2.html">
   <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
   <script>
     // Initialize Firebase
@@ -43,7 +43,7 @@
   <meta name="google-site-verification" content="HFqxhSbf9YA_0rBglNLzDiWnrHiK_w4cqDh2YD2GEY4" />
 </head>
 
-      <body class="homepage">
+    
     
     
 
@@ -119,139 +119,43 @@
         
         
 
-        <!-- Homepage Content Column -->
-        <div class="col-sm-12 main-contents">
+        <!-- Content Column -->
+        <div class="col-sm-9 main-contents">
           <div class="main-contents-body">
             <article class="post-content">
   
   
+  <header class="post-header">
+      <div class="btn-group contribute" role="group">
+         <a href="https://github.com/DasKeyboard/DasKeyboard.github.io/blob/master/updates/2.0.0-beta.2.md" class="btn btn-sm">
+            <i class="fa fa-pencil"></i> Edit Source
+         </a>
+         <a href="https://github.com/DasKeyboard/q/issues/new?title=Issue from website page &body=From URL: http://localhost:4000/updates/2.0.0-beta.2.md&labels=dev: docs - website" class="btn btn-sm">
+            <i class="fa fa-github"></i> File Issue
+        </a>
+     </div>
+   <div>
+    <h1 class="post-title"> </h1>
+   </div>
 
-  <div class="homepage__illustration">
-    <h1 class="homepage__illustration--text">
-        <span>Das Keyboard is now in Beta!!</span>
-        &nbsp;
-    </h1>
-    
-</div>
+  </header>
+  
 
-<section class="homepage__key_points card">
-    <nav class="navbar navbar-expand-sm navbar-dark navbar-homepage bg-dark navbar-homepage-radius">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item">
-                    <a class="btn btn-outline-primary" href="https://daskeyboard.github.io/DasKeyboard.github.io/docs/">Develop</a>
-                </li>
-                <li class="nav-item">
-                    <a class="btn btn-outline-success" href="http://qforum.daskeyboard.com">Discuss</a>
-                </li>
-                <li class="nav-item">
-                    <a class="btn btn-outline-warning" href="/DasKeyboard.github.io/get-started/">Getting Started</a>
-                </li>
-                <li class="nav-item">
-                    <a class="btn btn-outline-danger" href="/DasKeyboard.github.io/get-started/download/">Download</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <h1 class="homepage__title">
-        Control Das&nbsp;Keyboard RGB devices
-    </h1>
+  <p>Added:
+* added contextual menu for copy, paste, cut and select all</p>
 
-    <div class="row" style="display: flex;">
-        <div class="col-md-6">
-            <div class="homepage__tagline">
-            The Das Keyboard 5Q is a cloud connected keyboard that can display color notifications its keys. 
-            Notifications come from Twitter, Gmail, eBay, Facebook and many others. 
-            Hundreds of applications can be configured via IFTTT and Zapier, transforming the 5Q keyboard into a RGB dashboard. 
-            An open REST API is available for programmers.
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="hot-reload-gif-container">
-                <img src="/DasKeyboard.github.io/images/5q-animation-whitebg.gif" class="homepage__illustration--image" alt="Animation of the 5Q keyboard receiving signals" />
-            </div>
-        </div>
-    </div>
+<p>Fixed:
+* fixed signal popover
+* fixed setting of the current profile when plugging a device
+* fixed the linux installer issue with the wrong symlink, and missing executable
+* fixed the issue with the spawned profile switcher process not being killed upon quitting the app
+* fixed the editing of the left shift key
+* fixed an issue related to the timezone of the signals
+* fixed missing LED on the Q button</p>
 
-    <div class="homepage__button_row">
-    <a href="/DasKeyboard.github.io/get-started/" class="get-started-button">Get Started</a>
-    </div>
-
-    <div class="key-points">
-
-        <div class="homepage__key_point">
-            <div class="homepage__key_point_title">Illumination</div>
-
-            <p>
-            The Dashboard view displays the latest signals received.
-            Hovering over a key will display the notification content.
-            </p>
-        </div>
-
-        <div class="homepage__key_point">
-            <div class="homepage__key_point_title">Q signal center</div>
-
-            <p>
-            Press the Q button to access notifications.
-            </p>
-        </div>
-
-        <div class="homepage__key_point">
-            <div class="homepage__key_point_title">Cloud connection</div>
-
-            <p>
-            Receive IFTTT and Zapier notifications directly on the 5Q.
-            </p>
-        </div>
-
-    </div>
-</section>
-
-<section class="homepage__beautiful_uis card ">
-    <h1>Q signal center</h1>
-
-    <p>
-    Press the Q button to access notifications.
-    </p>
-
-    <img src="/DasKeyboard.github.io/images/homepage/signal-center.png" width="1004" height="662" alt="Q signal center of the Q software application." />
-
-</section>
-
-<section class="homepage__reactive_framework card">
-    <h1>Cloud connection</h1>
-
-    <p>
-        Receive IFTTT and Zapier notifications directly on the 5Q.
-    </p>
-
-    <img src="/DasKeyboard.github.io/images/homepage/q-desktop-advanced-software.gif" width="680" height="414" alt="Animation of the cloud connection between the keyboard, the Q software and Zapier/IFTTT/Q cloud." />
-
-</section>
-
-<section class="homepage__hot_reload card">
-    <h1>Illumination</h1>
-
-    <p>
-        The Dashboard view displays the latest signals received.
-        Hovering over a key will display the notification content.
-    </p>
-
-    <img src="/DasKeyboard.github.io/images/homepage/capture-illumination.png" width="1671" height="912" alt="Q software application in the Illumination mode." />
-</section>
-
-<section class="homepage__try_flutter card">
-
-    <div class="homepage__try_today">Try Das Keyboard today. Getting started is easy.</div>
-
-    <div class="homepage__button_row">
-    <a href="/DasKeyboard.github.io/get-started/" class="get-started-button">Get Started</a>
-    </div>
-
-</section>
+<p>Modified:
+* removed the notifications when switching a profile using the profile switcher
+* updated the documentation link</p>
 
 </article>
 
