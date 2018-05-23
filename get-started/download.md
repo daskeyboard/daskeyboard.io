@@ -18,6 +18,10 @@ permalink: /get-started/download/
 
 <div class="card" style="margin-left:0; margin-right:0; width:auto; margin-bottom: 1.5em;">
   <div class="card-body">
+    <h5 class="card-title">Important instructions before software upgrade</h5>
+    <small>
+      Before installing V2 of the Q Desktop Software, please uninstall any previous versions of the Q Desktop Software.
+    </small>
     <h5 class="card-title">Important instructions before firmware upgrade</h5>
     <small>
       <ul>
