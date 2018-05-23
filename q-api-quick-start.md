@@ -32,7 +32,7 @@ Therefore there are two ways to send a signal to a Q device:
 * From the Q cloud:
 
 ```txt
-Your script on your computer --> Q clould service --> Q desktop app on your computer --> Q enabled device
+Your script on any computer --> Q clould service --> Q desktop app on your computer --> Q enabled device
 ```
 
 * Directly from your machine:
