@@ -29,6 +29,10 @@ $on-palm:          640px;
 $on-laptop:        980px;
 
 
+small, .small{
+    text-transform: initial;
+    font-weight: 100;
+}
 
 // Using media queries with like this:
 // @include media-query($on-palm) {

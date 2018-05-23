@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Colorize all LEDs of the Q keyboard  - Das Keyboard </title>
+  <title>Changelog  - Das Keyboard </title>
   <link rel="shortcut icon" href="/DasKeyboard.github.io/images/favicon.png">
 
   <meta name="description" content="">
@@ -16,7 +16,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Extended" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro%7CRoboto:500,400italic,300,400" rel="stylesheet">
   
-  <link rel="canonical" href="http://localhost:4000/DasKeyboard.github.io/script-examples/search-keyword-in-website-create-signal/">
+  <link rel="canonical" href="http://localhost:4000/DasKeyboard.github.io/updates/changelog/">
   <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
   <script>
     // Initialize Firebase
@@ -121,93 +121,115 @@
   
   <header class="post-header">
       <div class="btn-group contribute" role="group">
-         <a href="https://github.com/DasKeyboard/DasKeyboard.github.io/blob/master/script-examples/search-keyword-in-website-create-signal.md" class="btn btn-sm">
+         <a href="https://github.com/DasKeyboard/DasKeyboard.github.io/blob/master/updates/changelog.md" class="btn btn-sm">
             <i class="fa fa-pencil"></i> Edit Source
          </a>
-         <a href="https://github.com/DasKeyboard/q/issues/new?title=Issue from website page Colorize all LEDs of the Q keyboard&body=From URL: http://localhost:4000/script-examples/search-keyword-in-website-create-signal.md&labels=dev: docs - website" class="btn btn-sm">
+         <a href="https://github.com/DasKeyboard/q/issues/new?title=Issue from website page Changelog&body=From URL: http://localhost:4000/updates/changelog.md&labels=dev: docs - website" class="btn btn-sm">
             <i class="fa fa-github"></i> File Issue
         </a>
      </div>
    <div>
-    <h1 class="post-title">Colorize all LEDs of the Q keyboard </h1>
+    <h1 class="post-title">Changelog </h1>
    </div>
 
   </header>
   
 
-  <ul class="tabs__top-bar">
-    <li class="tab-link current" data-tab="tab-install-shell">Shell</li>
+  <h2 id="version-200-beta4">Version 2.0.0-beta.4</h2>
+
+<p>New:</p>
+
+<ul>
+  <li>Signal Center is now in the cloud and opens in an Electron Browser Window</li>
+  <li>Updated welcome video</li>
+  <li>Clicking on a profile name will focus on profile name input</li>
 </ul>
 
-<div id="tab-install-shell" class="tabs__content current">
-  <div class="language-shell highlighter-rouge"><pre class="highlight"><code><span class="c">#!/bin/sh</span>
+<p>Fixes:</p>
 
-<span class="c">#-----------------------------------------------</span>
-<span class="c"># This script colorize a key of a Das Keyboard 5Q</span>
-<span class="c"># when it finds the word $KEYWORD_SEARCHED in the</span>
-<span class="c"># website $URL_FOR_SEARCH by sending a JSON signal</span>
-<span class="c"># to the its public API located at http://localhost:27301</span>
-<span class="c">#</span>
-<span class="c"># Important NOTE: if field "name" and "message" are</span>
-<span class="c"># empty then the signal is only displayed on the</span>
-<span class="c"># devices LEDs, not in the signal center</span>
-<span class="c">#</span>
-<span class="c">#-----------------------------------------------</span>
+<ul>
+  <li>Fixed the repeated text for linux installers window</li>
+  <li>Fixed the link to the changelog page</li>
+  <li>Select the new cloned profile when doing a profile clone</li>
+</ul>
 
-<span class="nb">set</span> -e <span class="c"># quit on first error.</span>
+<h2 id="version-200-beta3">Version 2.0.0-beta.3</h2>
 
-<span class="nv">PID</span><span class="o">=</span><span class="s2">"DK5QPID"</span> <span class="c"># product ID</span>
-<span class="nv">ZONEID</span><span class="o">=</span><span class="s2">"KEY_A"</span> <span class="c"># Key to colorize</span>
-<span class="nv">PORT</span><span class="o">=</span>27301
+<p>New:</p>
 
-<span class="nv">KEYBOARD_API_URL</span><span class="o">=</span><span class="s2">"http://localhost:</span><span class="nv">$PORT</span><span class="s2">/api/1.0/signals"</span>
+<ul>
+  <li>added app version number in the home page</li>
+  <li>added contextual menu for copy, paste, cut and select all</li>
+  <li>profile name input - the enter key will save the changes and the escape key will cancel the changes</li>
+  <li>the log file will now be rotating</li>
+</ul>
 
-<span class="nv">URL_FOR_SEARCH</span><span class="o">=</span><span class="s2">"https://en.wikipedia.org/wiki/Das_Keyboard"</span>
-<span class="nv">KEYWORD_SEARCHED</span><span class="o">=</span><span class="s2">"keyboards"</span>
+<p>Fixes:</p>
 
-<span class="c"># Search in the website content if the $KEYWORD_SEARCHED</span>
-<span class="c"># is found. If yes, the $content variable will be greater</span>
-<span class="c"># than 0.</span>
+<ul>
+  <li>fixed the blinking LEDs</li>
+  <li>removed device settings icon when in dashboard mode</li>
+  <li>the user can run only one instance of the QApp</li>
+  <li>fix a crash isse when trying to quit the QApp in Windows</li>
+</ul>
 
-<span class="nb">echo</span> <span class="s2">"Fetching '</span><span class="nv">$URL_FOR_SEARCH</span><span class="s2">'"</span>
-<span class="nv">CONTENT_WEBSITE_WITH_KEYWORD</span><span class="o">=</span><span class="sb">`</span><span class="nb">echo</span> <span class="k">$(</span>curl <span class="nv">$URL_FOR_SEARCH</span><span class="k">)</span> | awk <span class="s1">'{print match($0,"'</span><span class="nv">$KEYWORD_SEARCHED</span><span class="s1">'")}'</span><span class="sb">`</span>;
+<p>Improvements:</p>
 
-<span class="c"># If the keyword is found, we send a signal to display</span>
-<span class="c"># a green color.</span>
-<span class="k">if</span> <span class="o">[</span> <span class="nv">$CONTENT_WEBSITE_WITH_KEYWORD</span> -gt 0 <span class="o">]</span>;
-<span class="k">then
-    </span><span class="nv">STATE</span><span class="o">=</span><span class="s2">"found"</span>
-    <span class="nv">COLOR</span><span class="o">=</span><span class="s2">"#0F0"</span>
+<ul>
+  <li>overall speed improvement when doing selection of key zones</li>
+</ul>
 
-<span class="c"># If the keyword is not found, we send a signal to display</span>
-<span class="c"># a red color.</span>
-<span class="k">else
-    </span><span class="nv">STATE</span><span class="o">=</span><span class="s2">"not found"</span>
-    <span class="nv">COLOR</span><span class="o">=</span><span class="s2">"#F00"</span>
-<span class="k">fi</span>
+<h2 id="version-200-beta2">Version 2.0.0-beta.2</h2>
 
-<span class="c"># We create a signal that colorize the $ZONEID in $COLOR </span>
-<span class="c"># and display a message with the state of the search. </span>
-<span class="nb">echo</span> <span class="s2">"'</span><span class="nv">$KEYWORD_SEARCHED</span><span class="s2">' is </span><span class="nv">$STATE</span><span class="s2">. Sending signal to zoneId: </span><span class="nv">$ZONEID</span><span class="s2"> at </span><span class="nv">$KEYBOARD_API_URL</span><span class="s2">"</span>
-curl -X POST --header <span class="s1">'Content-Type: application/json'</span> --header <span class="s1">'Accept: application/json'</span> -d <span class="s1">'{
-    "pid": "DK5QPID",
-    "zoneId": "'</span><span class="s2">"</span><span class="nv">$ZONEID</span><span class="s2">"</span><span class="s1">'",
-    "color": "'</span><span class="s2">"</span><span class="nv">$COLOR</span><span class="s2">"</span><span class="s1">'",
-    "effect": "COLOR",
-    "name": "'</span><span class="nv">$KEYWORD_SEARCHED</span><span class="s1">' is '</span><span class="s2">"</span><span class="nv">$STATE</span><span class="s2">"</span><span class="s1">'",
-    "message": "The word '</span><span class="nv">$KEYWORD_SEARCHED</span><span class="s1">' is '</span><span class="s2">"</span><span class="nv">$STATE</span><span class="s2">"</span><span class="s1">' in '</span><span class="nv">$URL_FOR_SEARCH</span><span class="s1">'",
-    "shouldNotify": true
-}'</span> <span class="nv">$KEYBOARD_API_URL</span>
+<p>New:</p>
 
-<span class="k">if</span> <span class="o">[</span> <span class="s2">"</span><span class="nv">$?</span><span class="s2">"</span> -eq <span class="s2">"0"</span> <span class="o">]</span>; <span class="k">then
-    </span><span class="nb">echo</span> <span class="s2">"Done, the signal is sent at '</span><span class="nv">$KEYBOARD_API_URL</span><span class="s2">'"</span>
-<span class="k">else
-    </span><span class="nb">echo</span> <span class="s2">"ERROR, an error occured while sending signal to '</span><span class="nv">$KEYBOARD_API_URL</span><span class="s2">'"</span>
-<span class="k">fi
-</span><span class="nb">exit</span> <span class="nv">$result</span>
-</code></pre>
-  </div>
-</div>
+<ul>
+  <li>added contextual menu for copy, paste, cut and select all</li>
+</ul>
+
+<p>Fixes:</p>
+
+<ul>
+  <li>fixed signal popover</li>
+  <li>fixed setting of the current profile when plugging a device</li>
+  <li>fixed the linux installer issue with the wrong symlink, and missing executable</li>
+  <li>fixed the issue with the spawned profile switcher process not being killed upon quitting the app</li>
+  <li>fixed the editing of the left shift key</li>
+  <li>fixed an issue related to the timezone of the signals</li>
+  <li>fixed missing LED on the Q button</li>
+</ul>
+
+<p>Improvements:</p>
+
+<ul>
+  <li>removed the notifications when switching a profile using the profile switcher</li>
+  <li>updated the documentation link</li>
+</ul>
+
+<h2 id="version-200-beta1">Version 2.0.0-beta.1</h2>
+
+<p>New:</p>
+
+<ul>
+  <li>Added a profile switcher feature - ability to select a profile based on the front-most running application</li>
+  <li>Merged the edit and the dashboard modes - the profiles are displayed in dashboard as well now</li>
+  <li>Added new stock profiles: red, green, blue, purple, longhorns and more</li>
+  <li>Added Dashboard XY for developers</li>
+  <li>Added zoneId XY API</li>
+</ul>
+
+<p>Improvements:</p>
+
+<ul>
+  <li>Moved Signal Center to the web</li>
+</ul>
+
+<p>Fixes:</p>
+
+<ul>
+  <li>Local http server now listens only to 127.0.0.1, and is unreachable from another computer (IP address)</li>
+  <li>Various small fixes and tweaks</li>
+</ul>
 
 </article>
 
