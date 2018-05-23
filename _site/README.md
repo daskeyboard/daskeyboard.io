@@ -2,7 +2,7 @@
 
 The website for Das Keyboard.
 
-[![Build Status](https://travis-ci.com/metadot/DasKeyboard.github.io.svg?token=sBrjsq524qva4V6vzxWH&branch=master)](https://travis-ci.com/DasKeyboard/DasKeyboard.github.io)
+[![Build Status](https://travis-ci.com/DasKeyboard/DasKeyboard.github.io.svg?branch=master)](https://travis-ci.com/DasKeyboard/DasKeyboard.github.io.svg?branch=master)
 
 ## Issues, bugs, and requests
 
