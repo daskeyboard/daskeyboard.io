@@ -5,7 +5,7 @@ destination:     ./_site
 title: Das Keyboard
 email: camille@metadot.com
 email_name: camille@
-baseurl: "/DasKeyboard.github.io" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://daskeyboard.github.io"
 github_username: DasKeyboard
 

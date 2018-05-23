@@ -9,7 +9,7 @@ script: ./tool/travis.sh
 
 
 deploy:
-  provider: pages
+  # provider: pages
   skip-cleanup: true
   github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
   keep-history: true

@@ -18,3 +18,4 @@ rake checklinks
 
 
 echo "Tests passed"
+
