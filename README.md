@@ -1,6 +1,5 @@
-# Das Keyboard's website
+# Das Keyboard Q Documentation Website
 
-The website for Das Keyboard.
 
 [![Build Status](https://travis-ci.com/DasKeyboard/DasKeyboard.github.io.svg?branch=master)](https://travis-ci.com/DasKeyboard/DasKeyboard.github.io.svg?branch=master)
 
