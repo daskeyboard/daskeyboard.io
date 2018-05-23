@@ -21,7 +21,7 @@ hide_title: true
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                    <a class="btn btn-outline-primary" href="https://daskeyboard.github.io/DasKeyboard.github.io/docs/">Develop</a>
+                    <a class="btn btn-outline-primary" href="https://daskeyboard.github.io/docs/">Develop</a>
                 </li>
                 <li class="nav-item">
                     <a class="btn btn-outline-success" href="http://qforum.daskeyboard.com">Discuss</a>
