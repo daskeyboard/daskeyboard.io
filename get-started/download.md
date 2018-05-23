@@ -4,11 +4,13 @@ title: "Get Started: Download"
 permalink: /get-started/download/
 ---
 
-## Control Das Keyboard RGB devices with Q software
+## Control Das Keyboard RGB devices with Q software.
 
+#### What's new? See <a href="{{site.baseurl}}/updates/changelog/">changelog</a>.
 <div class="homepage__button_row">
-  <a href="https://s3-us-west-2.amazonaws.com/q-software-releases/5Q-Flash-Upgrade.7.3.247.exe" class="get-started-button">Download firmware</a>
-  <a href="https://s3-us-west-2.amazonaws.com/q-software-releases/Das-Keyboard-Q-Setup-1.0.0-beta.43.exe" class="get-started-button">Download Q desktop</a>
+  <div><a href="https://s3-us-west-2.amazonaws.com/q-desktop/2.0.0-beta.4/5Q+Flash+Upgrade.7.3.251.exe" class="get-started-button">Download firmware</a>
+  <small>&nbsp;</small></div>
+  <div style="text-align:center;"><a style="margin-right:0px;" href="https://s3-us-west-2.amazonaws.com/q-desktop/2.0.0-beta.4/Das-Keyboard-Q-Setup-2.0.0-beta.4.exe" class="get-started-button">Download Q desktop </a><small><small>For Windows only</small></small></div>
 </div>
 
 <div class="card" style="margin-left:0; margin-right:0; width:auto; margin-bottom: 1.5em;">
