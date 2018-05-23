@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Changelog
+title: Changelog Q Desktop Software
 permalink: /updates/changelog/
 ---
 
