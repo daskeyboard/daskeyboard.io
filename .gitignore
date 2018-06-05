@@ -16,4 +16,4 @@ example/*.dart
 
 .idea/
 
-./_site
+_site
