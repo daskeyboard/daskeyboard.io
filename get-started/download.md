@@ -9,8 +9,8 @@ permalink: /get-started/download/
 #### What's new? See <a href="{{site.baseurl}}/updates/changelog/">changelog</a>.
 <div class="homepage__button_row">
   <div style="text-align:center;"><a href="https://s3-us-west-2.amazonaws.com/q-desktop/2.0.0-beta.4/5Q+Flash+Upgrade.7.3.253.zip" class="get-started-button">Download 5Q firmware</a>
-  <small><small style="margin-right: 40px;">All OS</small></small></div>
-  <div style="text-align:center;"><a style="margin-right:0px;" href="https://s3-us-west-2.amazonaws.com/q-desktop/2.0.0-beta.4/Das-Keyboard-Q-Setup-2.0.0-beta.4.exe" class="get-started-button">Download Q desktop </a><small><small>For Windows only</small></small></div>
+  <small><small style="margin-right: 40px;">All OS - Version 7.3.253</small></small></div>
+  <div style="text-align:center;"><a style="margin-right:0px;" href="https://s3-us-west-2.amazonaws.com/q-desktop/2.0.0-beta.4/Das-Keyboard-Q-Setup-2.0.0-beta.4.exe" class="get-started-button">Download Q desktop </a><small><small>For Windows only - Version 2.0.0-beta.4</small></small></div>
 </div>
 
 <p>To access Mac and Linux software, become a 
