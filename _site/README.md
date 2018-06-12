@@ -31,6 +31,12 @@ A tldr version follows:
 1. Test your changes by serving the site locally:<br>
 `bundle exec jekyll serve` (or `jekyll serve -w --force_polling`)
 
+#############################################################################
+############################# Important ##################################### 
+#############################################################################
+# The website deployed (with firebase) is generated through the folder _site,
+# before `git commit` + `git push`, the command `rake checklinks` must be ran.
+
 1. Prior to submitting, run link validation:<br>
 `rake checklinks`
 ### Adding next/previous page links
