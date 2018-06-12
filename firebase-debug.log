@@ -1,0 +1,32 @@
+[debug] [2018-06-12T21:43:00.679Z] ----------------------------------------------------------------------
+[debug] [2018-06-12T21:43:00.681Z] Command:       /usr/bin/node /usr/local/bin/firebase serve
+[debug] [2018-06-12T21:43:00.682Z] CLI Version:   3.18.6
+[debug] [2018-06-12T21:43:00.682Z] Platform:      linux
+[debug] [2018-06-12T21:43:00.682Z] Node Version:  v6.14.1
+[debug] [2018-06-12T21:43:00.682Z] Time:          Tue Jun 12 2018 16:43:00 GMT-0500 (CDT)
+[debug] [2018-06-12T21:43:00.682Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-06-12T21:43:00.691Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-06-12T21:43:00.691Z] > authorizing via signed-in user
+[debug] [2018-06-12T21:43:00.694Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/daskeyboarddoc  
+  
+ Tue Jun 12 2018 16:43:00 GMT-0500 (CDT)
+[debug] [2018-06-12T21:43:01.025Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-12T21:43:01.028Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/daskeyboarddoc/tokens  
+  
+ Tue Jun 12 2018 16:43:01 GMT-0500 (CDT)
+[debug] [2018-06-12T21:43:01.340Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-12T21:43:01.342Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/daskeyboarddoc  
+  
+ Tue Jun 12 2018 16:43:01 GMT-0500 (CDT)
+[debug] [2018-06-12T21:43:01.544Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/margaux/tmp/DasKeyboard.github.io'...
+[info] 
+[debug] [2018-06-12T21:43:01.549Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/328936978551/clients/_:getWebAppConfig  
+  
+ Tue Jun 12 2018 16:43:01 GMT-0500 (CDT)
+[debug] [2018-06-12T21:43:01.797Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: _site
+[info] ✔  hosting: Local server: http://localhost:5000
+
