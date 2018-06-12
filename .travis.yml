@@ -1,18 +1,24 @@
 language: node_js
 node_js:
-  - "8.1"
+- '8.1'
 sudo: false
 before_install:
-  - rvm install 2.2.2
-  - ./tool/before_install.sh
-script: ./tool/travis.sh
-
+- rvm install 2.2.2
+- "./tool/before_install.sh"
+script: "./tool/travis.sh"
+# deploy:
+#   provider: pages
+#   skip-cleanup: true
+#   github-token: "$GITHUB_TOKEN"
+#   keep-history: true
+#   on:
+#     branch: master
+# env:
+#   global:
+#     secure: WSNKyIYR08tD8mYWCjXI3kXcwSwHtsbSUwiTs5bSa7Q/eymV2dn1jNaUH0QOamc/rL9c10YxPP8EfOTNNPQeLOP89KjkQ2aF3b/BrsuGa9uGJvSNJLm7/rNaj3pJCYiXSYIHTuzvvjNgdhMRdHK0KXOt0HazX5NUAO5ovIWmFXMBysV78+2zEH2+d+8EKvw0PvlZpbd2pvkFAviX6GgIELvqHBCYIsAKhH/vaLOAAiIJh0Ci61rixVXCFXoj4senKei4g0TTI3yZwB4aIE/HvtZxRc0BN+PcZXlL13oyoBmUnvE7t6ZBr3hIZFxzNYnHSJgPg/sUvPc7r+w/PHrrDEET7oNnVzY50X+vox+YxyhnsXykaejJ6aIieE61l/ilegsu2YVBNAimiI74QtB7DK8sUGnVE4NZPyoLGDL29/qLJtKxoI6bX23qin8tT/8huPPycI16ngY/SnnZOSqP5sldkfwf2htI14KYgNPMNa6Me32ZmiBL8A6UFVQgDUFyUUafhYI6YDShP8X2YmqGDPt+haCh0ZILVS2DT/cXXE4p3uwoK5JiWKQMfLGp9QuR92rb8+dsJmSTXBvi7ZQjEXkBOFk02YhjPDC+hs6P8zfoLPm00r8dK/CxVmRddKK6IB9vWtcJ9AaXNpxbE7VZsh3VCJ0DREAmHrYgBIVr8u8=
 
 deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
-  keep-history: true
-  on:
-    branch: master
-    # branch: gh-pages
+  provider: firebase
+  token:
+    secure: WSNKyIYR08tD8mYWCjXI3kXcwSwHtsbSUwiTs5bSa7Q/eymV2dn1jNaUH0QOamc/rL9c10YxPP8EfOTNNPQeLOP89KjkQ2aF3b/BrsuGa9uGJvSNJLm7/rNaj3pJCYiXSYIHTuzvvjNgdhMRdHK0KXOt0HazX5NUAO5ovIWmFXMBysV78+2zEH2+d+8EKvw0PvlZpbd2pvkFAviX6GgIELvqHBCYIsAKhH/vaLOAAiIJh0Ci61rixVXCFXoj4senKei4g0TTI3yZwB4aIE/HvtZxRc0BN+PcZXlL13oyoBmUnvE7t6ZBr3hIZFxzNYnHSJgPg/sUvPc7r+w/PHrrDEET7oNnVzY50X+vox+YxyhnsXykaejJ6aIieE61l/ilegsu2YVBNAimiI74QtB7DK8sUGnVE4NZPyoLGDL29/qLJtKxoI6bX23qin8tT/8huPPycI16ngY/SnnZOSqP5sldkfwf2htI14KYgNPMNa6Me32ZmiBL8A6UFVQgDUFyUUafhYI6YDShP8X2YmqGDPt+haCh0ZILVS2DT/cXXE4p3uwoK5JiWKQMfLGp9QuR92rb8+dsJmSTXBvi7ZQjEXkBOFk02YhjPDC+hs6P8zfoLPm00r8dK/CxVmRddKK6IB9vWtcJ9AaXNpxbE7VZsh3VCJ0DREAmHrYgBIVr8u8=
+  project: "daskeyboard-io"
