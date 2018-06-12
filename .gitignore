@@ -6,6 +6,7 @@ build
 .*swp
 node_modules
 .jekyll-metadata
+firebase-debug.log
 
 # Dart ignores.
 .packages
