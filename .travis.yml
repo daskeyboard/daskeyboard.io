@@ -17,7 +17,7 @@ script: "./tool/travis.sh"
 
 before_deploy: 
   - echo "Building site."
-  - bundle exec jekyll build 
+  - bundle exec jekyll build --watch
 
 deploy:
   provider: firebase
