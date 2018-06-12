@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Das Keyboard Q software documentation
+title: Das Keyboard Q Software Documentation
 permalink: /docs/
 ---
 
