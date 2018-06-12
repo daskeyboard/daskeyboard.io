@@ -15,6 +15,10 @@ script: "./tool/travis.sh"
 # The website deployed by firebase is generated through the folder _site, before git push
 # the command rake checklinks must be ran
 
+before_deploy: 
+  - echo "Building site."
+  - bundle exec jekyll build 
+
 deploy:
   provider: firebase
   token:
