@@ -6,6 +6,7 @@ permalink: /contributed-links/
 
 Code contributed by the community. Have something to share? Create a pull request.
 
+- [QClient.NET - Q API Client for .Net Framework](https://github.com/wedge206/DasKeyboardQClient) ([Nuget](https://www.nuget.org/packages/DasKeyboardQClient))
 - [.Net Core library for access Q API](http://github.com/jordanbtucker/DasKeyboard.Q)
 - [QCloud Java Client1](https://github.com/tim-hellhake/qcloud-java-client)
 - [PHP Client](https://github.com/tjlytle/qclient)
