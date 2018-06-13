@@ -1,8 +1,8 @@
 # Das Keyboard Q Documentation Website
 
-This is the source files repo for [DasKeyboard.github.io](DasKeyboard.github.io).
+This is the source files repo for [Daskeyboard.io](Daskeyboard.io).
 
-[![Build Status](https://travis-ci.com/DasKeyboard/DasKeyboard.github.io.svg?branch=master)](https://travis-ci.com/DasKeyboard/DasKeyboard.github.io.svg?branch=master)
+[![Build Status](https://travis-ci.com/DasKeyboard/Daskeyboard.io.svg?branch=master)](https://travis-ci.com/DasKeyboard/Daskeyboard.io.svg?branch=master)
 
 ## Issues, bugs, and requests
 
@@ -153,7 +153,7 @@ its own file and checked for analysis issues. Some ways to tweak that:
 * To include code to be analyzed, but not displayed, add that in a comment
   immediately proceeding the snippet (e.g., `<!-- someCodeHere(); -->`)
 * A snippet without any import statements will have an import
-  (`'package:DasKeyboard.github.io/material.dart'`)
+  (`'package:Daskeyboard.io/material.dart'`)
   automatically added to it
 * We ignore special formatting tags like `[[highlight]]`.
 
