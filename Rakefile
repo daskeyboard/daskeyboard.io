@@ -17,9 +17,9 @@ task :checklinks do
     # Replace canonical links with local links.
     # Details: http://tongueroo.com/articles/getting-html-proofer-to-work-with-canonical-url-for-google-seo/
     :url_swap => {
-      # 'https://github.com/DasKeyboard/DasKeyboard.github.io/' => '/DasKeyboard.github.io/',
-      '/DasKeyboard.github.io' => '',
-      # 'https://github.com/metadot/DasKeyboard/' => 'https://github.com/DasKeyboard/DasKeyboard.github.io/'
+      # 'https://github.com/DasKeyboard/Daskeyboard.io/' => '/Daskeyboard.io/',
+      '/Daskeyboard.io' => '',
+      # 'https://github.com/metadot/DasKeyboard/' => 'https://github.com/DasKeyboard/Daskeyboard.io/'
     }
   }
   HTMLProofer.check_directory("./_site", options).run
