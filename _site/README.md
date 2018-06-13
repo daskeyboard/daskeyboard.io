@@ -2,7 +2,7 @@
 
 This is the source files repo for [Daskeyboard.io](Daskeyboard.io).
 
-[![Build Status](https://travis-ci.com/DasKeyboard/DasKeyboard.github.io/.svg?branch=master)](https://travis-ci.com/DasKeyboard/DasKeyboard.github.io.svg?branch=master)
+[![Build Status](https://travis-ci.com/DasKeyboard/DasKeyboard.github.io.svg?branch=master)](https://travis-ci.com/DasKeyboard/DasKeyboard.github.io.svg?branch=master)
 
 ## Issues, bugs, and requests
 
@@ -30,12 +30,6 @@ A tldr version follows:
 
 1. Test your changes by serving the site locally:<br>
 `bundle exec jekyll serve` (or `jekyll serve -w --force_polling`)
-
-#############################################################################
-############################# Important ##################################### 
-#############################################################################
-# The website deployed (with firebase) is generated through the folder _site,
-# before `git commit` + `git push`, the command `rake checklinks` must be ran.
 
 1. Prior to submitting, run link validation:<br>
 `rake checklinks`
