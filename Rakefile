@@ -18,7 +18,7 @@ task :checklinks do
     # Details: http://tongueroo.com/articles/getting-html-proofer-to-work-with-canonical-url-for-google-seo/
     :url_swap => {
       # 'https://github.com/DasKeyboard/Daskeyboard.io/' => '/Daskeyboard.io/',
-      '/Daskeyboard.io' => '',
+      # '/Daskeyboard.io' => '',
       # 'https://github.com/metadot/DasKeyboard/' => 'https://github.com/DasKeyboard/Daskeyboard.io/'
     }
   }
