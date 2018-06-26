@@ -1,4 +1,5 @@
 {
+  "rules": "firebase_rules.json",
   "hosting": {
     "public": "_site",
     "ignore": [
