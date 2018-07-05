@@ -3,8 +3,8 @@ source:          .
 destination:     ./_site
 
 title: Das Keyboard
-email: camille@metadot.com
-email_name: camille@
+email: support@metadot.com
+email_name: support@
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://www.daskeyboard.io"
 github_username: DasKeyboard
