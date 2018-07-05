@@ -31,8 +31,7 @@ do
             "color": "#00F",
             "effect": "SET_COLOR",
             "name": "'"Color Line $y"'",
-            "message": "Message sent by script '$0'",
-            "shouldNotify": false 
+            "message": "Message sent by script '$0'"
         }' $URL
     result=$?
     done
