@@ -365,13 +365,13 @@ NB:
 - Via the Cloud:
 
 ```sh
-curl -H 'Content-Type: application/json' -H 'Authorization: Bearer ACCESS_TOKEN' -X POST https://q.daskeyboard.com/api/1.0/signals -d '{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "2,2", "message": "It worked", "effect": "BLINK", "color": "#008000", "action": "open:chrome", "shouldNotify": true, "isRead": true, "isArchived": true, "isMuted": true}'
+curl -H 'Content-Type: application/json' -H 'Authorization: Bearer ACCESS_TOKEN' -X POST https://q.daskeyboard.com/api/1.0/signals -d '{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "2,2", "message": "It worked", "effect": "BLINK", "color": "#008000", "action": "open:chrome", "isRead": true, "isArchived": true, "isMuted": true}'
 ```
 
 - Via local API:
 
 ```sh
-curl -H 'Content-Type: application/json' -X POST http://localhost:$PORT/api/1.0/signals -d '{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "2,2", "message": "It worked", "effect": "BLINK", "color": "#008000", "shouldNotify": true, "isRead": true, "isArchived": true, "isMuted": true}'
+curl -H 'Content-Type: application/json' -X POST http://localhost:$PORT/api/1.0/signals -d '{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "2,2", "message": "It worked", "effect": "BLINK", "color": "#008000", "isRead": true, "isArchived": true, "isMuted": true}'
 ```
 
 
@@ -395,8 +395,6 @@ Optional fields:
 **effect**: string - effect of the Signal (default: "SET_COLOR"), e.g. "BLINK".
 
 **action**: string which is formatted "actionType:value" - action that can be triggered once the Signal has been received (the actionType is either "ur" or "open")
-
-**shouldNotify**: boolean - indicates if the applications should create a notification when the Signal is received, only if it has not been read or archived (default: false), e.g. true.
 
 **isRead**: boolean - indicates if the Signal has been read (default: false), e.g. true.
 
@@ -446,7 +444,6 @@ Result format:
             "isRead": "indicates if the Signal has been read (boolean)",
             "isMuted": "indicates if the Signal has been muted (boolean)",
             "isArchived": "indicates if the Signal has been archived (boolean)",
-            "shouldNotify": "indicates if the Signal should notify the user when received (boolean)",
             "clientName": "name of the Client who created the Signal (string)",
             "message": "message of the Signal (string)",
             "readAt": "time at which the Signal has been read (long: epoch time, can be null)",
@@ -465,7 +462,6 @@ Result format:
             "isRead":true,
             "isMuted":false,
             "isArchived":false,
-            "shouldNotify":true,
             "clientName":"IFTTT",
             "readAt":null,
             "action":null,
@@ -484,7 +480,6 @@ Result format:
             "isRead":true,
             "isMuted":false,
             "isArchived":true,
-            "shouldNotify":false,
             "clientName":"NOTICE: zoneId automatically converted from KEY_A to 99. 1055 example@gmail.com null",
             "readAt":null,
             "action":null,
@@ -585,7 +580,6 @@ Result format:
         "isRead":false,
         "isMuted":false,
         "isArchived":false,
-        "shouldNotify":true,
         "clientName":"IFTTT",
         "readAt":null,
         "action":null,
