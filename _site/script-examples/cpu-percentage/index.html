@@ -170,7 +170,6 @@ type mySignal struct {
   Message      string `json:"message"`      // message body
   Effect       string `json:"effect"`       // e.g. SET_COLOR, BLINK, etc...
   Color        string `json:"color"`        // color in hex format. E.g.: "#FF0044"
-  ShouldNotify bool   `json:"shouldNotify"` // whether to show a OS notification
 }
 
 // check checks for error and log out if there is one
@@ -558,7 +557,6 @@ type mySignal struct {
   Message      string `json:"message"`      // message body
   Effect       string `json:"effect"`       // e.g. SET_COLOR, BLINK, etc...
   Color        string `json:"color"`        // color in hex format. E.g.: "#FF0044"
-  ShouldNotify bool   `json:"shouldNotify"` // whether to show a OS notification
 }
 
 // check checks for error and log out if there is one
@@ -991,7 +989,6 @@ type mySignal struct {
   Message      string `json:"message"`      // message body
   Effect       string `json:"effect"`       // e.g. SET_COLOR, BLINK, etc...
   Color        string `json:"color"`        // color in hex format. E.g.: "#FF0044"
-  ShouldNotify bool   `json:"shouldNotify"` // whether to show a OS notification
 }
 
 // this function checks for error
@@ -1508,7 +1505,6 @@ sendSignal<span class="o">()</span> <span class="o">{</span>
   "effect": "'</span><span class="nv">$effect</span><span class="s1">'",
   "name": "",
   "message": "",
-  "shouldNotify": false,
   "isRead": false
   }'</span> <span class="nv">$URL</span> &amp;&gt; /dev/null <span class="c"># this is to make sure that curl doesn't display anything</span>
   check <span class="nv">$?</span>

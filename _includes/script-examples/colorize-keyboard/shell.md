@@ -36,8 +36,8 @@ do
         "pid": "'$PID'",
         "zoneId": "'"$i"'",
         "color": "#F00",
-        "effect": "SET_COLOR",
-        "shouldNotify": "false"
+        "effect": "SET_COLOR"
+       
     }' "http://localhost:$PORT/api/1.0/signals"
 
 done

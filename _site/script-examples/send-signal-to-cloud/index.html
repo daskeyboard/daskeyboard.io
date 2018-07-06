@@ -167,7 +167,6 @@
     </span><span class="n">Message</span><span class="x">      </span><span class="kt">string</span><span class="x"> </span><span class="s">`json:"message"`</span><span class="x">      </span><span class="c">// message body</span><span class="x">
     </span><span class="n">Effect</span><span class="x">       </span><span class="kt">string</span><span class="x"> </span><span class="s">`json:"effect"`</span><span class="x">       </span><span class="c">// e.g. SET_COLOR, BLINK, etc...</span><span class="x">
     </span><span class="n">Color</span><span class="x">        </span><span class="kt">string</span><span class="x"> </span><span class="s">`json:"color"`</span><span class="x">        </span><span class="c">// color in hex format. E.g.: "#FF0044"</span><span class="x">
-    </span><span class="n">ShouldNotify</span><span class="x"> </span><span class="kt">bool</span><span class="x">   </span><span class="s">`json:"shouldNotify"`</span><span class="x"> </span><span class="c">// whether to show a OS notification</span><span class="x">
 </span><span class="p">}</span><span class="x">
 
 </span><span class="c">// a user represent a message sent to the cloud to get an OAuth token</span><span class="x">
@@ -290,7 +289,7 @@
         <span class="n">String</span> <span class="n">password</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="na">nextLine</span><span class="o">();</span>
 
         <span class="c1">// creating the signal</span>
-        <span class="n">String</span> <span class="n">signalJson</span> <span class="o">=</span> <span class="s">"{\"pid\": \"DK5QPID\", \"zoneId\": \"KEY_A\", \"name\": \"Hello oneSignal\", \"message\": \"signal sent from a java script (haha) to a key\", \"effect\": \"SET_COLOR\", \"color\": \"#F00\", \"shouldNotify\": false}"</span><span class="o">;</span>
+        <span class="n">String</span> <span class="n">signalJson</span> <span class="o">=</span> <span class="s">"{\"pid\": \"DK5QPID\", \"zoneId\": \"KEY_A\", \"name\": \"Hello oneSignal\", \"message\": \"signal sent from a java script (haha) to a key\", \"effect\": \"SET_COLOR\", \"color\": \"#F00\"}"</span><span class="o">;</span>
         <span class="c1">// creating the user</span>
         <span class="n">String</span> <span class="n">userJson</span> <span class="o">=</span> <span class="s">"{\"email\": \""</span><span class="o">+</span><span class="n">email</span><span class="o">+</span><span class="s">"\", \"password\": \""</span><span class="o">+</span><span class="n">password</span><span class="o">+</span><span class="s">"\", \"grant_type\": \"password\"}"</span><span class="o">;</span>
         <span class="n">String</span> <span class="n">access_token</span> <span class="o">=</span> <span class="s">""</span><span class="o">;</span>
@@ -393,7 +392,6 @@
     <span class="s2">"effect"</span><span class="p">:</span> <span class="s2">"SET_COLOR"</span><span class="p">,</span>
     <span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Hello message title"</span><span class="p">,</span>
     <span class="s2">"message"</span><span class="p">:</span> <span class="s2">"signal sent by a javascript script"</span><span class="p">,</span>
-    <span class="s2">"shouldNotify"</span><span class="p">:</span> <span class="kc">true</span>
 <span class="p">}</span>
 
 <span class="kd">let</span> <span class="nx">access_token</span><span class="p">;</span>
@@ -468,8 +466,6 @@
     <span class="nv">$signal</span><span class="o">-&gt;</span><span class="na">effect</span> <span class="o">=</span> <span class="s2">"SET_COLOR"</span><span class="p">;</span>
     <span class="nv">$signal</span><span class="o">-&gt;</span><span class="na">name</span> <span class="o">=</span> <span class="s2">"Hello oneSignal"</span><span class="p">;</span>
     <span class="nv">$signal</span><span class="o">-&gt;</span><span class="na">message</span> <span class="o">=</span> <span class="s2">"signal sent from a php script to a key"</span><span class="p">;</span>
-    <span class="nv">$signal</span><span class="o">-&gt;</span><span class="na">shouldNotify</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
-
     <span class="c1">// encoding to json
 </span>    <span class="nv">$signalJson</span> <span class="o">=</span> <span class="nb">json_encode</span><span class="p">(</span><span class="nv">$signal</span><span class="p">);</span>
     <span class="nv">$urlSignal</span> <span class="o">=</span> <span class="s2">"https://q.daskeyboard.com/api/1.0/signals"</span><span class="p">;</span>
@@ -532,7 +528,6 @@
     <span class="s">"effect"</span><span class="p">:</span> <span class="s">"SET_COLOR"</span><span class="p">,</span>
     <span class="s">"name"</span><span class="p">:</span> <span class="s">"Hello oneSignal"</span><span class="p">,</span>
     <span class="s">"message"</span><span class="p">:</span> <span class="s">"signal sent from a python script to a key"</span><span class="p">,</span>
-    <span class="s">"shouldNotify"</span><span class="p">:</span> <span class="bp">False</span>
 <span class="p">}</span>
 
 
@@ -605,8 +600,7 @@
                   <span class="ss">color: </span><span class="s2">"#F00"</span><span class="p">,</span>
                   <span class="ss">effect: </span><span class="s2">"SET_COLOR"</span><span class="p">,</span>
                   <span class="ss">name: </span><span class="s2">"Hello oneSignal"</span><span class="p">,</span>
-                  <span class="ss">message: </span><span class="s2">"signal sent from a ruby script to a key"</span><span class="p">,</span>
-                  <span class="ss">shouldNotify: </span><span class="kp">false</span><span class="p">}.</span><span class="nf">to_json</span>
+                  <span class="ss">message: </span><span class="s2">"signal sent from a ruby script to a key"</span><span class="p">,</span>}.</span><span class="nf">to_json</span>
 
 <span class="n">res</span> <span class="o">=</span> <span class="n">https</span><span class="p">.</span><span class="nf">request</span><span class="p">(</span><span class="n">req_signal</span><span class="p">)</span>
 

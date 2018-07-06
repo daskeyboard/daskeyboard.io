@@ -12,8 +12,7 @@ SIGNAL = {
     "color": "#F00",
     "effect": "SET_COLOR",
     "name": "Hello oneSignal",
-    "message": "signal sent from a python script to a key",
-    "shouldNotify": False
+    "message": "signal sent from a python script to a key"
 }
 
 

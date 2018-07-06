@@ -35,8 +35,7 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
     "color": "#00F",
     "effect": "SET_COLOR",
     "name": "Hello Coordinates: '$ZONEID'",
-    "message": "Message sent by script",
-    "shouldNotify": false 
+    "message": "Message sent by script"
 }' $URL
 
 result=$?

@@ -34,8 +34,7 @@ do
         "color": "#F00",
         "effect": "SET_COLOR",
         "name": "'"Color Line $y"'",
-        "message": "'"Message: Color Line $y"'",
-        "shouldNotify": false
+        "message": "'"Message: Color Line $y"'"
     }' $URL
 
 result=$?

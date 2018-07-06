@@ -21,7 +21,7 @@ class create_one_signal_to_cloud {
         String password = sc.nextLine();
 
         // creating the signal
-        String signalJson = "{\"pid\": \"DK5QPID\", \"zoneId\": \"KEY_A\", \"name\": \"Hello oneSignal\", \"message\": \"signal sent from a java script (haha) to a key\", \"effect\": \"SET_COLOR\", \"color\": \"#F00\", \"shouldNotify\": false}";
+        String signalJson = "{\"pid\": \"DK5QPID\", \"zoneId\": \"KEY_A\", \"name\": \"Hello oneSignal\", \"message\": \"signal sent from a java script (haha) to a key\", \"effect\": \"SET_COLOR\", \"color\": \"#F00\"}";
         // creating the user
         String userJson = "{\"email\": \""+email+"\", \"password\": \""+password+"\", \"grant_type\": \"password\"}";
         String access_token = "";
