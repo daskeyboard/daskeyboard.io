@@ -8,7 +8,7 @@ Welcome to the Das Keyboard Get Started Experience. We will help you:
 
 * Download Q software
 * Watch Welcome video
-* Watch IFTTT and Zapier tutorial to connect your 5Q keyboard to the Internet
+* Watch IFTTT and Zapier tutorial to connect your 5Q keyboard to the Internet and stay tuned
 
 ## Next step
 
