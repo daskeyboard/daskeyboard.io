@@ -54,8 +54,7 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
     "color": "'"$COLOR"'",
     "effect": "COLOR",
     "name": "'$KEYWORD_SEARCHED' is '"$STATE"'",
-    "message": "The word '$KEYWORD_SEARCHED' is '"$STATE"' in '$URL_FOR_SEARCH'",
-    "shouldNotify": true
+    "message": "The word '$KEYWORD_SEARCHED' is '"$STATE"' in '$URL_FOR_SEARCH'"
 }' $KEYBOARD_API_URL
 
 if [ "$?" -eq "0" ]; then

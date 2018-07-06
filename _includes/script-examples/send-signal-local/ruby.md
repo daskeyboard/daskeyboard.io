@@ -16,8 +16,7 @@ req.body = {pid: "DK5QPID",
             color: "#F00",
             effect: "SET_COLOR",
             name: "Hello oneSignal",
-            message: "signal sent from a ruby script to a key",
-            shouldNotify: false}.to_json
+            message: "signal sent from a ruby script to a key"}.to_json
 
 res = Net::HTTP.start(uri.hostname, uri.port) do |http|
     http.request(req)

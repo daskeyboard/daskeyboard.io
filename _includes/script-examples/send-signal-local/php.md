@@ -15,7 +15,6 @@
     $signal->effect = "SET_COLOR";
     $signal->name = "Hello oneSignal";
     $signal->message = "signal sent from a php script to a key";
-    $signal->shouldNotify = false;
 
     // encoding to json
     $signalJson = json_encode($signal);

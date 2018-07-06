@@ -113,7 +113,6 @@ sendSignal() {
   "effect": "'$effect'",
   "name": "",
   "message": "",
-  "shouldNotify": false,
   "isRead": false
   }' $URL &> /dev/null # this is to make sure that curl doesn't display anything
   check $?

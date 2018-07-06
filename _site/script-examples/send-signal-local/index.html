@@ -166,7 +166,6 @@
     </span><span class="n">Message</span><span class="x">      </span><span class="kt">string</span><span class="x"> </span><span class="s">`json:"message"`</span><span class="x">      </span><span class="c">// message body</span><span class="x">
     </span><span class="n">Effect</span><span class="x">       </span><span class="kt">string</span><span class="x"> </span><span class="s">`json:"effect"`</span><span class="x">       </span><span class="c">// e.g. SET_COLOR, BLINK, etc...</span><span class="x">
     </span><span class="n">Color</span><span class="x">        </span><span class="kt">string</span><span class="x"> </span><span class="s">`json:"color"`</span><span class="x">        </span><span class="c">// color in hex format. E.g.: "#FF0044"</span><span class="x">
-    </span><span class="n">ShouldNotify</span><span class="x"> </span><span class="kt">bool</span><span class="x">   </span><span class="s">`json:"shouldNotify"`</span><span class="x"> </span><span class="c">// whether to show a OS notification</span><span class="x">
 </span><span class="p">}</span><span class="x">
 
 </span><span class="k">func</span><span class="x"> </span><span class="n">main</span><span class="p">()</span><span class="x"> </span><span class="p">{</span><span class="x">
@@ -214,7 +213,7 @@
 <span class="kd">class</span> <span class="nc">create_one_signal</span> <span class="o">{</span>
     <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
         <span class="c1">// creating the signal as a string</span>
-        <span class="n">String</span> <span class="n">signalJson</span> <span class="o">=</span> <span class="s">"{\"pid\": \"DK5QPID\", \"zoneId\": \"KEY_A\", \"name\": \"Hello oneSignal\", \"message\": \"signal sent from a java script (haha) to a key\", \"effect\": \"SET_COLOR\", \"color\": \"#F00\", \"shouldNotify\": false}"</span><span class="o">;</span>
+        <span class="n">String</span> <span class="n">signalJson</span> <span class="o">=</span> <span class="s">"{\"pid\": \"DK5QPID\", \"zoneId\": \"KEY_A\", \"name\": \"Hello oneSignal\", \"message\": \"signal sent from a java script (haha) to a key\", \"effect\": \"SET_COLOR\", \"color\": \"#F00\"}"</span><span class="o">;</span>
         <span class="c1">// Q desktop public API port #</span>
         <span class="n">String</span> <span class="n">port</span> <span class="o">=</span> <span class="s">"27301"</span><span class="o">;</span>
 
@@ -260,7 +259,6 @@
     <span class="s2">"effect"</span><span class="p">:</span> <span class="s2">"SET_COLOR"</span><span class="p">,</span>
     <span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Hello message title"</span><span class="p">,</span>
     <span class="s2">"message"</span><span class="p">:</span> <span class="s2">"Message body goes here..."</span><span class="p">,</span>
-    <span class="s2">"shouldNotify"</span><span class="p">:</span> <span class="kc">true</span> 
  <span class="p">}</span>
 <span class="c1">// sending the signal</span>
 <span class="nx">request</span><span class="p">.</span><span class="nx">post</span><span class="p">({</span>
@@ -301,7 +299,6 @@
     <span class="nv">$signal</span><span class="o">-&gt;</span><span class="na">effect</span> <span class="o">=</span> <span class="s2">"SET_COLOR"</span><span class="p">;</span>
     <span class="nv">$signal</span><span class="o">-&gt;</span><span class="na">name</span> <span class="o">=</span> <span class="s2">"Hello oneSignal"</span><span class="p">;</span>
     <span class="nv">$signal</span><span class="o">-&gt;</span><span class="na">message</span> <span class="o">=</span> <span class="s2">"signal sent from a php script to a key"</span><span class="p">;</span>
-    <span class="nv">$signal</span><span class="o">-&gt;</span><span class="na">shouldNotify</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
 
     <span class="c1">// encoding to json
 </span>    <span class="nv">$signalJson</span> <span class="o">=</span> <span class="nb">json_encode</span><span class="p">(</span><span class="nv">$signal</span><span class="p">);</span>
@@ -338,7 +335,6 @@
     <span class="s">"effect"</span><span class="p">:</span> <span class="s">"SET_COLOR"</span><span class="p">,</span>
     <span class="s">"name"</span><span class="p">:</span> <span class="s">"Hello oneSignal"</span><span class="p">,</span>
     <span class="s">"message"</span><span class="p">:</span> <span class="s">"signal sent from a python script to a key"</span><span class="p">,</span>
-    <span class="s">"shouldNotify"</span><span class="p">:</span> <span class="bp">False</span>
 <span class="p">}</span>
 
 
@@ -382,8 +378,7 @@
             <span class="ss">color: </span><span class="s2">"#F00"</span><span class="p">,</span>
             <span class="ss">effect: </span><span class="s2">"SET_COLOR"</span><span class="p">,</span>
             <span class="ss">name: </span><span class="s2">"Hello oneSignal"</span><span class="p">,</span>
-            <span class="ss">message: </span><span class="s2">"signal sent from a ruby script to a key"</span><span class="p">,</span>
-            <span class="ss">shouldNotify: </span><span class="kp">false</span><span class="p">}.</span><span class="nf">to_json</span>
+            <span class="ss">message: </span><span class="s2">"signal sent from a ruby script to a key"</span><span class="p">,</span>}.</span><span class="nf">to_json</span>
 
 <span class="n">res</span> <span class="o">=</span> <span class="no">Net</span><span class="o">::</span><span class="no">HTTP</span><span class="p">.</span><span class="nf">start</span><span class="p">(</span><span class="n">uri</span><span class="p">.</span><span class="nf">hostname</span><span class="p">,</span> <span class="n">uri</span><span class="p">.</span><span class="nf">port</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">http</span><span class="o">|</span>
     <span class="n">http</span><span class="p">.</span><span class="nf">request</span><span class="p">(</span><span class="n">req</span><span class="p">)</span>
@@ -429,8 +424,7 @@ curl -X POST --header <span class="s1">'Content-Type: application/json'</span> -
     "color": "#F00",
     "effect": "BREATHE",
     "name": "Hello message for '</span><span class="nv">$ZONEID</span><span class="s1">'",
-    "message": "Message sent by script '</span><span class="nv">$0</span><span class="s1">'",
-    "shouldNotify": true 
+    "message": "Message sent by script '</span><span class="nv">$0</span><span class="s1">'"
 }'</span> <span class="nv">$URL</span>
 
 <span class="nv">result</span><span class="o">=</span><span class="nv">$?</span>

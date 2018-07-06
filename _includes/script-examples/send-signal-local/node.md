@@ -11,8 +11,7 @@ let signal = {
     "color": "#F00",
     "effect": "SET_COLOR",
     "name": "Hello message title",
-    "message": "Message body goes here...",
-    "shouldNotify": true 
+    "message": "Message body goes here..."
  }
 // sending the signal
 request.post({
