@@ -9,7 +9,7 @@ import javax.swing.plaf.InputMapUIResource;
 class create_one_signal {
     public static void main(String[] args) {
         // creating the signal as a string
-        String signalJson = "{\"pid\": \"DK5QPID\", \"zoneId\": \"KEY_A\", \"name\": \"Hello oneSignal\", \"message\": \"signal sent from a java script (haha) to a key\", \"effect\": \"SET_COLOR\", \"color\": \"#F00\", \"shouldNotify\": false}";
+        String signalJson = "{\"pid\": \"DK5QPID\", \"zoneId\": \"KEY_A\", \"name\": \"Hello oneSignal\", \"message\": \"signal sent from a java script (haha) to a key\", \"effect\": \"SET_COLOR\", \"color\": \"#F00\"}";
         // Q desktop public API port #
         String port = "27301";
 

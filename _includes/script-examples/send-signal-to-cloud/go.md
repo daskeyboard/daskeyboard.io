@@ -22,7 +22,6 @@ type Signal struct {
     Message      string `json:"message"`      // message body
     Effect       string `json:"effect"`       // e.g. SET_COLOR, BLINK, etc...
     Color        string `json:"color"`        // color in hex format. E.g.: "#FF0044"
-    ShouldNotify bool   `json:"shouldNotify"` // whether to show a OS notification
 }
 
 // a user represent a message sent to the cloud to get an OAuth token

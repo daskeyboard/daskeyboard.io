@@ -31,8 +31,7 @@ let signal = {
     "color": "#F00",
     "effect": "SET_COLOR",
     "name": "Hello message title",
-    "message": "signal sent by a javascript script",
-    "shouldNotify": true
+    "message": "signal sent by a javascript script"
 }
 
 let access_token;

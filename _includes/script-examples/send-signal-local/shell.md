@@ -27,8 +27,7 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
     "color": "#F00",
     "effect": "BREATHE",
     "name": "Hello message for '$ZONEID'",
-    "message": "Message sent by script '$0'",
-    "shouldNotify": true 
+    "message": "Message sent by script '$0'"
 }' $URL
 
 result=$?
