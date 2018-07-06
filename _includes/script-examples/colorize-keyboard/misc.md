@@ -51,8 +51,7 @@ do
         "effect": "SET_COLOR",
         "isArchived": false,
         "isMuted": false,
-        "isRead": false,
-        "shouldNotify": false
+        "isRead": false
     }' "http://localhost:$PORT/public-api/signals"
 
 done

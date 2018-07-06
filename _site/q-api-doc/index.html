@@ -519,7 +519,7 @@ There are three coordinates systems available:</p>
   <li>Via the Cloud:</li>
 </ul>
 
-<div class="language-sh highlighter-rouge"><pre class="highlight"><code>curl -H <span class="s1">'Content-Type: application/json'</span> -H <span class="s1">'Authorization: Bearer ACCESS_TOKEN'</span> -X POST https://q.daskeyboard.com/api/1.0/signals -d <span class="s1">'{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "2,2", "message": "It worked", "effect": "BLINK", "color": "#008000", "action": "open:chrome", "shouldNotify": true, "isRead": true, "isArchived": true, "isMuted": true}'</span>
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code>curl -H <span class="s1">'Content-Type: application/json'</span> -H <span class="s1">'Authorization: Bearer ACCESS_TOKEN'</span> -X POST https://q.daskeyboard.com/api/1.0/signals -d <span class="s1">'{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "2,2", "message": "It worked", "effect": "BLINK", "color": "#008000", "action": "open:chrome", "isRead": true, "isArchived": true, "isMuted": true}'</span>
 </code></pre>
 </div>
 
@@ -527,7 +527,7 @@ There are three coordinates systems available:</p>
   <li>Via local API:</li>
 </ul>
 
-<div class="language-sh highlighter-rouge"><pre class="highlight"><code>curl -H <span class="s1">'Content-Type: application/json'</span> -X POST http://localhost:<span class="nv">$PORT</span>/api/1.0/signals -d <span class="s1">'{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "2,2", "message": "It worked", "effect": "BLINK", "color": "#008000", "shouldNotify": true, "isRead": true, "isArchived": true, "isMuted": true}'</span>
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code>curl -H <span class="s1">'Content-Type: application/json'</span> -X POST http://localhost:<span class="nv">$PORT</span>/api/1.0/signals -d <span class="s1">'{"name": "Apple Stock increase", "pid": "DK5QPID", "zoneId": "2,2", "message": "It worked", "effect": "BLINK", "color": "#008000", "isRead": true, "isArchived": true, "isMuted": true}'</span>
 </code></pre>
 </div>
 
@@ -550,8 +550,6 @@ There are three coordinates systems available:</p>
 <p><strong>effect</strong>: string - effect of the Signal (default: “SET_COLOR”), e.g. “BLINK”.</p>
 
 <p><strong>action</strong>: string which is formatted “actionType:value” - action that can be triggered once the Signal has been received (the actionType is either “ur” or “open”)</p>
-
-<p><strong>shouldNotify</strong>: boolean - indicates if the applications should create a notification when the Signal is received, only if it has not been read or archived (default: false), e.g. true.</p>
 
 <p><strong>isRead</strong>: boolean - indicates if the Signal has been read (default: false), e.g. true.</p>
 
@@ -599,7 +597,6 @@ Parameter required: ACCESS TOKEN, EPOCH_TIME.</p>
             </span><span class="nt">"isRead"</span><span class="p">:</span><span class="w"> </span><span class="s2">"indicates if the Signal has been read (boolean)"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"isMuted"</span><span class="p">:</span><span class="w"> </span><span class="s2">"indicates if the Signal has been muted (boolean)"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"isArchived"</span><span class="p">:</span><span class="w"> </span><span class="s2">"indicates if the Signal has been archived (boolean)"</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"shouldNotify"</span><span class="p">:</span><span class="w"> </span><span class="s2">"indicates if the Signal should notify the user when received (boolean)"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"clientName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"name of the Client who created the Signal (string)"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"message of the Signal (string)"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"readAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"time at which the Signal has been read (long: epoch time, can be null)"</span><span class="p">,</span><span class="w">
@@ -618,7 +615,6 @@ Parameter required: ACCESS TOKEN, EPOCH_TIME.</p>
             </span><span class="nt">"isRead"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
             </span><span class="nt">"isMuted"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
             </span><span class="nt">"isArchived"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"shouldNotify"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
             </span><span class="nt">"clientName"</span><span class="p">:</span><span class="s2">"IFTTT"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"readAt"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
             </span><span class="nt">"action"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
@@ -637,7 +633,6 @@ Parameter required: ACCESS TOKEN, EPOCH_TIME.</p>
             </span><span class="nt">"isRead"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
             </span><span class="nt">"isMuted"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
             </span><span class="nt">"isArchived"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
-            </span><span class="nt">"shouldNotify"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
             </span><span class="nt">"clientName"</span><span class="p">:</span><span class="s2">"NOTICE: zoneId automatically converted from KEY_A to 99. 1055 example@gmail.com null"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"readAt"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
             </span><span class="nt">"action"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
@@ -740,7 +735,6 @@ Result format:
         <span class="s2">"isRead"</span>:false,
         <span class="s2">"isMuted"</span>:false,
         <span class="s2">"isArchived"</span>:false,
-        <span class="s2">"shouldNotify"</span>:true,
         <span class="s2">"clientName"</span>:<span class="s2">"IFTTT"</span>,
         <span class="s2">"readAt"</span>:null,
         <span class="s2">"action"</span>:null,
