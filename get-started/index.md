@@ -4,12 +4,12 @@ title: "Get Started: Overview"
 permalink: /get-started/
 ---
 
-Welcome to the Das Keyboard Get Started Experience. We will help you:
+Welcome to the Das Keyboard Q. We will help :
 
-* Download Q software
-* Watch Welcome video
-* Watch IFTTT and Zapier tutorial to connect your 5Q keyboard to the Internet and stay tuned
+* download Q software
+* watch Welcome video
+* watch IFTTT and Zapier tutorial to connect your 5Q keyboard to the Internet and stay tuned
 
 ## Next step
 
-[Next step: Download Q firmware and Q software]({{site.baseurl}}/get-started/download/)
+[Download Q firmware and Q software]({{site.baseurl}}/get-started/download/)
