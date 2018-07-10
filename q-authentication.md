@@ -109,7 +109,7 @@ Once expired, a call to the following endpoint with `grant type` `refresh_token`
 provide a new `access token`:
 
 ```sh
-curl -X POST -H "Content-Type: application/json" -d '{"client_id": "CLIENT_ID", "grant_type": "refresh_token", "refreshToken": "REFRESH_TOKEN"}' https://q.daskeyboard.com/oauth/1.4/token
+curl -X POST -H "Content-Type: application/json" -d '{"client_id": "CLIENT_ID", "grant_type": "refresh_token", "refresh_token": "REFRESH_TOKEN"}' https://q.daskeyboard.com/oauth/1.4/token
 ```
 
 Result format:
