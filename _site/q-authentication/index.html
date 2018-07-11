@@ -16,7 +16,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Extended" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro%7CRoboto:500,400italic,300,400" rel="stylesheet">
   
-  <link rel="canonical" href="https://www.daskeyboard.io/q-authentication/">
+  <link rel="canonical" href="http://localhost:4000/q-authentication/">
   <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
   <script>
     // Initialize Firebase
@@ -124,7 +124,7 @@
          <a href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/q-authentication.md" class="btn btn-sm">
             <i class="fa fa-pencil"></i> Edit Source
          </a>
-         <a href="https://github.com/DasKeyboard/q/issues/new?title=Issue from website page Das Keyboard Q OAuth authentication API&body=From URL: https://www.daskeyboard.io/q-authentication.md&labels=dev: docs - website" class="btn btn-sm">
+         <a href="https://github.com/DasKeyboard/q/issues/new?title=Issue from website page Das Keyboard Q OAuth authentication API&body=From URL: http://localhost:4000/q-authentication.md&labels=dev: docs - website" class="btn btn-sm">
             <i class="fa fa-github"></i> File Issue
         </a>
      </div>
@@ -238,7 +238,7 @@ will be added to the redirect URL (as GET parameter <code class="highlighter-rou
 Once expired, a call to the following endpoint with <code class="highlighter-rouge">grant type</code> <code class="highlighter-rouge">refresh_token</code> will
 provide a new <code class="highlighter-rouge">access token</code>:</p>
 
-<div class="language-sh highlighter-rouge"><pre class="highlight"><code>curl -X POST -H <span class="s2">"Content-Type: application/json"</span> -d <span class="s1">'{"client_id": "CLIENT_ID", "grant_type": "refresh_token", "refreshToken": "REFRESH_TOKEN"}'</span> https://q.daskeyboard.com/oauth/1.4/token
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code>curl -X POST -H <span class="s2">"Content-Type: application/json"</span> -d <span class="s1">'{"client_id": "CLIENT_ID", "grant_type": "refresh_token", "refresh_token": "REFRESH_TOKEN"}'</span> https://q.daskeyboard.com/oauth/1.4/token
 </code></pre>
 </div>
 
