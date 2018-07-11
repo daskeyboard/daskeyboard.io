@@ -16,7 +16,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Extended" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro%7CRoboto:500,400italic,300,400" rel="stylesheet">
   
-  <link rel="canonical" href="https://www.daskeyboard.io/script-examples/send-signal-to-cloud/">
+  <link rel="canonical" href="http://localhost:4000/script-examples/send-signal-to-cloud/">
   <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
   <script>
     // Initialize Firebase
@@ -124,7 +124,7 @@
          <a href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/script-examples/send-signal-to-cloud.md" class="btn btn-sm">
             <i class="fa fa-pencil"></i> Edit Source
          </a>
-         <a href="https://github.com/DasKeyboard/q/issues/new?title=Issue from website page Send one signal to the Cloud&body=From URL: https://www.daskeyboard.io/script-examples/send-signal-to-cloud.md&labels=dev: docs - website" class="btn btn-sm">
+         <a href="https://github.com/DasKeyboard/q/issues/new?title=Issue from website page Send one signal to the Cloud&body=From URL: http://localhost:4000/script-examples/send-signal-to-cloud.md&labels=dev: docs - website" class="btn btn-sm">
             <i class="fa fa-github"></i> File Issue
         </a>
      </div>
@@ -391,7 +391,7 @@
     <span class="s2">"color"</span><span class="p">:</span> <span class="s2">"#F00"</span><span class="p">,</span>
     <span class="s2">"effect"</span><span class="p">:</span> <span class="s2">"SET_COLOR"</span><span class="p">,</span>
     <span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Hello message title"</span><span class="p">,</span>
-    <span class="s2">"message"</span><span class="p">:</span> <span class="s2">"signal sent by a javascript script"</span><span class="p">,</span>
+    <span class="s2">"message"</span><span class="p">:</span> <span class="s2">"signal sent by a javascript script"</span>
 <span class="p">}</span>
 
 <span class="kd">let</span> <span class="nx">access_token</span><span class="p">;</span>
@@ -466,6 +466,7 @@
     <span class="nv">$signal</span><span class="o">-&gt;</span><span class="na">effect</span> <span class="o">=</span> <span class="s2">"SET_COLOR"</span><span class="p">;</span>
     <span class="nv">$signal</span><span class="o">-&gt;</span><span class="na">name</span> <span class="o">=</span> <span class="s2">"Hello oneSignal"</span><span class="p">;</span>
     <span class="nv">$signal</span><span class="o">-&gt;</span><span class="na">message</span> <span class="o">=</span> <span class="s2">"signal sent from a php script to a key"</span><span class="p">;</span>
+
     <span class="c1">// encoding to json
 </span>    <span class="nv">$signalJson</span> <span class="o">=</span> <span class="nb">json_encode</span><span class="p">(</span><span class="nv">$signal</span><span class="p">);</span>
     <span class="nv">$urlSignal</span> <span class="o">=</span> <span class="s2">"https://q.daskeyboard.com/api/1.0/signals"</span><span class="p">;</span>
@@ -527,7 +528,7 @@
     <span class="s">"color"</span><span class="p">:</span> <span class="s">"#F00"</span><span class="p">,</span>
     <span class="s">"effect"</span><span class="p">:</span> <span class="s">"SET_COLOR"</span><span class="p">,</span>
     <span class="s">"name"</span><span class="p">:</span> <span class="s">"Hello oneSignal"</span><span class="p">,</span>
-    <span class="s">"message"</span><span class="p">:</span> <span class="s">"signal sent from a python script to a key"</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"signal sent from a python script to a key"</span>
 <span class="p">}</span>
 
 
@@ -600,7 +601,7 @@
                   <span class="ss">color: </span><span class="s2">"#F00"</span><span class="p">,</span>
                   <span class="ss">effect: </span><span class="s2">"SET_COLOR"</span><span class="p">,</span>
                   <span class="ss">name: </span><span class="s2">"Hello oneSignal"</span><span class="p">,</span>
-                  <span class="ss">message: </span><span class="s2">"signal sent from a ruby script to a key"</span><span class="p">,</span>}.</span><span class="nf">to_json</span>
+                  <span class="ss">message: </span><span class="s2">"signal sent from a ruby script to a key"</span><span class="p">}.</span><span class="nf">to_json</span>
 
 <span class="n">res</span> <span class="o">=</span> <span class="n">https</span><span class="p">.</span><span class="nf">request</span><span class="p">(</span><span class="n">req_signal</span><span class="p">)</span>
 

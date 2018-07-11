@@ -16,7 +16,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Extended" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro%7CRoboto:500,400italic,300,400" rel="stylesheet">
   
-  <link rel="canonical" href="https://www.daskeyboard.io/updates/changelog/">
+  <link rel="canonical" href="http://localhost:4000/updates/changelog/">
   <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
   <script>
     // Initialize Firebase
@@ -124,7 +124,7 @@
          <a href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/updates/changelog.md" class="btn btn-sm">
             <i class="fa fa-pencil"></i> Edit Source
          </a>
-         <a href="https://github.com/DasKeyboard/q/issues/new?title=Issue from website page Changelog Q Desktop Software&body=From URL: https://www.daskeyboard.io/updates/changelog.md&labels=dev: docs - website" class="btn btn-sm">
+         <a href="https://github.com/DasKeyboard/q/issues/new?title=Issue from website page Changelog Q Desktop Software&body=From URL: http://localhost:4000/updates/changelog.md&labels=dev: docs - website" class="btn btn-sm">
             <i class="fa fa-github"></i> File Issue
         </a>
      </div>
@@ -135,9 +135,66 @@
   </header>
   
 
-  <h2 id="version-200-beta4">Version 2.0.0-beta.4</h2>
+  <h2 id="version-200-beta7">Version 2.0.0-beta.7</h2>
 
-<p>New:</p>
+<h3 id="release-highlights">Release highlights:</h3>
+
+<ul>
+  <li>improved Signal Center response time 
+fixed local API time out in some cases.</li>
+  <li>OFFLINE MODE: Added ability to change device RGB colors without login to the cloud</li>
+  <li>Added a QUIET MODE option to prevent interruption. In quiet mode only the RGB profiles are displayed on the devices. Signals are not displayed. Sound and notifications are disabled. Once the quiet mode is disabled, signals that came before, and new signals will be displayed as expected.</li>
+</ul>
+
+<h3 id="q-desktop-release-detail-improvements">Q Desktop Release Detail Improvements:</h3>
+
+<h4 id="fixed">FIXED</h4>
+
+<ul>
+  <li>POST request timing out on the local API for signal creation</li>
+  <li>Connectivity loss of the keyboard with the QApp when computer goes to sleep</li>
+  <li>Bugs related to the zoneId XY API</li>
+  <li>Disabled link to the signal center on the signal popovers for signals that are coming from the local API</li>
+  <li>Profile switcher now has a multi device support</li>
+  <li>Turn off the Q-BUTTON if there is no signals on the dashboard</li>
+  <li>Remove the signals from the dashboard after deletion in signal center</li>
+</ul>
+
+<h4 id="new">NEW</h4>
+
+<ul>
+  <li>Added action to quit the app from the navbar popover menu</li>
+  <li>Added negative id to signals created from local API and ability to delete them by using a DELETE request from localhost</li>
+  <li>Added ability to change device RGB colors without login to the cloud</li>
+  <li>Added ability to use local API without login to the Q cloud</li>
+  <li>Ability to Delete signal by zoneID in local API. zoneId can be vector example: (2,2), linear id example: 25 or code example: KEY_T</li>
+  <li>Added UK layout for the 5Q</li>
+  <li>Apart from the DK5Q every device will be displayed only if it was plugged in one time. Also the user can forget this device and will have to plug it again for the app to remember it again</li>
+  <li>Added copyright in about menu Default profiles uses zoneXY. That means they are now multi device compatible User preference to enable or disable sound notifications User preference to show or hide app window at startup</li>
+  <li>Added a Quiet mode option to prevent interruption. In quiet mode only the RGB profiles are displayed on the devices. Signals are not displayed. Sound and notifications are disabled. Once the quiet mode is disabled, signals that came before, and new signals will be displayed as expected.</li>
+  <li>Added ability to delete signals from the dashboard signal popovers</li>
+</ul>
+
+<h4 id="update">UPDATE</h4>
+
+<ul>
+  <li>Moved the preference action to the settings ‘cog’ dropdown. And always display the ‘cog’ dropdown even if user not logged in</li>
+  <li>Added better user experience when the app loses connectivity with the cloud (Example: red cross displayed on the Q-icon if the backend cloud server is unreachable, cross will disappear when the connectivity is back)</li>
+</ul>
+
+<h3 id="q-desktop-service-improvements">Q Desktop Service Improvements:</h3>
+
+<h4 id="fixed-1">FIXED</h4>
+
+<ul>
+  <li>Improved stability of the Windows service - not perfect yet but a lot better. More improvements to come.</li>
+</ul>
+
+<hr />
+
+<h3 id="version-200-beta4">Version 2.0.0-beta.4</h3>
+
+<h4 id="new-1">NEW</h4>
 
 <ul>
   <li>signal Center is now in the cloud and opens in an Electron Browser window;</li>
@@ -145,7 +202,7 @@
   <li>clicking on a profile name will focus on profile name input;</li>
 </ul>
 
-<p>Fixes:</p>
+<h4 id="fix">FIX</h4>
 
 <ul>
   <li>fixed the repeated text for linux installers window;</li>
@@ -153,9 +210,9 @@
   <li>select the new cloned profile when doing a profile clone;</li>
 </ul>
 
-<h2 id="version-200-beta3">Version 2.0.0-beta.3</h2>
+<h3 id="version-200-beta3">Version 2.0.0-beta.3</h3>
 
-<p>New:</p>
+<h4 id="new-2">NEW</h4>
 
 <ul>
   <li>added app version number in the home page;</li>
@@ -164,7 +221,7 @@
   <li>the log file will now be rotating;</li>
 </ul>
 
-<p>Fixes:</p>
+<h4 id="fix-1">FIX</h4>
 
 <ul>
   <li>fixed blinking LEDs bug;</li>
@@ -173,21 +230,23 @@
   <li>fix a crash issue when trying to quit the QApp in Windows;</li>
 </ul>
 
-<p>Improvements:</p>
+<h4 id="improvements">Improvements</h4>
 
 <ul>
   <li>overall speed improvement when selecting key zones;</li>
 </ul>
 
+<hr />
+
 <h2 id="version-200-beta2">Version 2.0.0-beta.2</h2>
 
-<p>New:</p>
+<h4 id="new-3">New</h4>
 
 <ul>
   <li>added contextual menu for copy, paste, cut and select all;</li>
 </ul>
 
-<p>Fixes:</p>
+<h4 id="fixes">Fixes</h4>
 
 <ul>
   <li>fixed signal popover;</li>
@@ -199,16 +258,18 @@
   <li>fixed missing LED on the Q button;</li>
 </ul>
 
-<p>Improvements:</p>
+<h4 id="improvements-1">Improvements</h4>
 
 <ul>
   <li>removed the notifications when switching a profile using the profile switcher;</li>
   <li>updated the documentation link;</li>
 </ul>
 
+<hr />
+
 <h2 id="version-200-beta1">Version 2.0.0-beta.1</h2>
 
-<p>New:</p>
+<h4 id="new-4">New</h4>
 
 <ul>
   <li>added a profile switcher feature - ability to select a profile based on the front-most running application;</li>
@@ -218,14 +279,14 @@
   <li>added zoneId XY API;</li>
 </ul>
 
-<p>Fixes:</p>
+<h4 id="fixes-1">Fixes</h4>
 
 <ul>
   <li>local http server now listens only to 127.0.0.1, and is unreachable from another computer (IP address);</li>
   <li>various small fixes and tweaks;</li>
 </ul>
 
-<p>Improvements:</p>
+<h4 id="improvements-2">Improvements</h4>
 
 <ul>
   <li>moved Signal Center to the web;</li>
