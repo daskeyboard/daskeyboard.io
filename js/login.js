@@ -25,7 +25,6 @@ function getApiKeyIfOneTimeLoginTokenIsPresent() {
   if (oneTimeLoginToken) {
     console.log('getting api key from q-cloud');
     getAPIKeyWithOneTimeLoginToken(oneTimeLoginToken);
-
   }
 }
 
@@ -40,27 +39,36 @@ function getAPIKeyWithOneTimeLoginToken(loginToken) {
     return;
   }
 
-  xhr.open('POST', "https://q.daskeyboard.com/api/1.0/users/api-key", true);
+  xhr.open('POST', "https://q.daskeyboard.com/api/1.0/users/api-key/", true);
   //Send the proper header information along with the request
   xhr.setRequestHeader("Content-Type", "application/json");
-  xhr.send(JSON.stringify({ oneTimeLoginToken: loginToken }));
+  const body = {
+    oneTimeLoginToken: loginToken
+  }
+  xhr.send(JSON.stringify(body));
   xhr.onreadystatechange = processAPIKeyRequest;
 }
 
 function processAPIKeyRequest(e) {
-  if (xhr.readyState === 4) {
-    console.log('response text', xhr.responseText);
-  }
   if (xhr.readyState == 4 && xhr.status == 200) {
+    switch (xhr.status) {
+      case 200:
+        const response = JSON.parse(xhr.responseText);
+        const apiKey = response.value;
+        console.log('fetched api key', apiKey);
+        localStorage.setItem('APIKey', apiKey);
+        break;
+      default:
+        break;
+    }
     // var response = JSON.parse(xhr.responseText);
-    localStorage.setItem('test', xhr.responseText);
     return false;
   }
 }
 
-function getStoredAPIKey(){
- const apiKey = localStorage.getItem('APIKey');
- return apiKey;
+function getStoredAPIKey() {
+  const apiKey = localStorage.getItem('APIKey');
+  return apiKey;
 }
 
 window.addEventListener("load", function (event) {
