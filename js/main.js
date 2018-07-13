@@ -45,6 +45,21 @@ $.postJSON = function (url, data, callback) {
 };
 
 /**
+ * 
+ * redefine jquery post request to use application/json and stringify the data
+ */
+$.getJSON = function (url, apiKey, callback) {
+  return jQuery.ajax({
+    'type': 'GET',
+    'url': url,
+    headers: { 'X-API-KEY': apiKey },
+    'contentType': 'application/json',
+    'dataType': 'json',
+    'success': callback
+  });
+};
+
+/**
  * Get API key from the Q Cloud using a one time login token and store it in the local
  * storage
  * @param {*} loginToken 
@@ -62,6 +77,7 @@ function getAPIKeyWithOneTimeLoginToken(loginToken) {
       localStorage.setItem('APIKey', apiKey);
       // notify user that the API key was fetched
       displayFlashNotice('info', 'fetched API Key ' + apiKey);
+      getCurrentUser();
     })
     // error with POST request
     .fail(function () {
@@ -119,7 +135,18 @@ function displayFlashNotice(noticeType, message) {
 }
 
 function getCurrentUser() {
-  
+  const localAPIKey = getStoredAPIKey();
+  $.getJSON("https://q.daskeyboard.com/api/1.0/users/me", localAPIKey)
+    // post request success
+    .done(function (data) {
+      console.log('data', data);
+      updateLoginDisplayElements(data);
+    })
+    // error with POST request
+    .fail(function () {
+      // notify user that error happened
+      logout();
+    });
 }
 
 /**
@@ -145,9 +172,37 @@ function removeQueryParamsFromUrl() {
   window.history.pushState({ path: '/' }, '', '/');
 }
 
-$(document).ready(function () {
+/**
+ * Remove the stored apiKey
+ * and update the views to display a none logged user
+ */
+function logout() {
+  localStorage.removeItem('APIKey');
+  updateLoginDisplayElements(undefined);
+}
 
-  const localAPIKey = getStoredAPIKey();
-  console.log('localAPIKey', localAPIKey);
+function updateLoginDisplayElements(currentUser) {
+  console.log('currentUser', currentUser);
+  if (currentUser) {
+    // hide login message
+    $('#header-login-message').css('display', 'none');
+    // display welcome message
+    $('#header-welcome-message').text('welcome ' + currentUser.email);
+    $('#header-welcome-message').css('display', 'inline-block');
+    // display logout action
+    $('#logout-action').css('display', 'inline-block');
+  } else {
+    // hide logout action
+    $('#logout-action').css('display', 'none');
+    // hide welcome message
+    $('#header-welcome-message').css('display', 'none');
+    // display login message
+    $('#header-login-message').css('display', 'inline-block');
+  }
+}
+
+
+$(document).ready(function () {
+  getCurrentUser();
   getApiKeyIfOneTimeLoginTokenIsPresent();
 });
