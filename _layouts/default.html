@@ -7,6 +7,12 @@
 
     <div id="overlay-under-drawer"><!-- for the drawer on narrow screens --></div>
     {% include header.html %}
+
+
+
+
+
+
     <!-- Page Content -->
     <div class="container-fluid contents">
       <!-- Content Row -->
@@ -23,7 +29,13 @@
         <!-- Homepage Content Column -->
         <div class="col-sm-12 main-contents">
           <div class="main-contents-body">
-            {{content}}
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              {{content}}
           </div>
         </div>
 
@@ -45,13 +57,13 @@
     {% include footer.html %}
 
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="{{ "js/jquery.min.js" | relative_url }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="{{ "js/js-bootstrap/bootstrap.js"  | relative_url }}"></script>
     <script src="{{ "js/sidebar_toggle.js"  | relative_url }}"></script>
     <script src="{{ "js/prism.js" | relative_url }}"></script>
     <script src="{{ "js/tabs.js" | relative_url }}"></script>
+    <script src="{{ "js/login.js" | relative_url }}"></script>
     <!-- <script src="{{ "js/credentials.js" | relative_url }}"></script> -->
     
     
