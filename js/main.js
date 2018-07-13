@@ -22,6 +22,7 @@ function getParameterByName(name, url) {
 
 function getApiKeyIfOneTimeLoginTokenIsPresent() {
   const oneTimeLoginToken = getParameterByName('oneTimeLoginToken', window.location.href);
+  removeQueryParamsFromUrl();
   if (oneTimeLoginToken) {
     console.log('getting api key from q-cloud');
     getAPIKeyWithOneTimeLoginToken(oneTimeLoginToken);
@@ -63,7 +64,7 @@ function getAPIKeyWithOneTimeLoginToken(loginToken) {
       displayFlashNotice('info', 'fetched API Key ' + apiKey);
     })
     // error with POST request
-    .fail(function(){
+    .fail(function () {
       // notify user that error happened
       displayFlashNotice('error', 'Error while fetching API KEY');
     });
@@ -73,7 +74,6 @@ function getStoredAPIKey() {
   const apiKey = localStorage.getItem('APIKey');
   return apiKey;
 }
-
 
 /************************************************************************
  * 
@@ -118,6 +118,10 @@ function displayFlashNotice(noticeType, message) {
   }
 }
 
+function getCurrentUser() {
+  
+}
+
 /**
  * closes the flash notice component by hiding the element in the DOM
  */
@@ -137,7 +141,13 @@ function onCloseFlashNotice() {
  * *********************************************************************** 
  */
 
+function removeQueryParamsFromUrl() {
+  window.history.pushState({ path: '/' }, '', '/');
+}
+
 $(document).ready(function () {
-  // displayFlashNotice('info', 'test1');
+
+  const localAPIKey = getStoredAPIKey();
+  console.log('localAPIKey', localAPIKey);
   getApiKeyIfOneTimeLoginTokenIsPresent();
 });
