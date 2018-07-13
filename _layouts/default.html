@@ -8,11 +8,6 @@
     <div id="overlay-under-drawer"><!-- for the drawer on narrow screens --></div>
     {% include header.html %}
 
-
-
-
-
-
     <!-- Page Content -->
     <div class="container-fluid contents">
       <!-- Content Row -->
@@ -29,12 +24,7 @@
         <!-- Homepage Content Column -->
         <div class="col-sm-12 main-contents">
           <div class="main-contents-body">
-            <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
+              {% include flash_notice.html%}
               {{content}}
           </div>
         </div>
@@ -45,6 +35,7 @@
         <!-- Content Column -->
         <div class="col-sm-9 main-contents">
           <div class="main-contents-body">
+            {% include flash_notice.html%}
             {{content}}
           </div>
         </div>
