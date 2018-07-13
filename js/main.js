@@ -29,6 +29,21 @@ function getApiKeyIfOneTimeLoginTokenIsPresent() {
 }
 
 /**
+ * 
+ * redefine jquery post request to use application/json and stringify the data
+ */
+$.postJSON = function (url, data, callback) {
+  return jQuery.ajax({
+    'type': 'POST',
+    'url': url,
+    'contentType': 'application/json',
+    'data': JSON.stringify(data),
+    'dataType': 'json',
+    'success': callback
+  });
+};
+
+/**
  * Get API key from the Q Cloud using a one time login token and store it in the local
  * storage
  * @param {*} loginToken 
@@ -38,38 +53,35 @@ function getAPIKeyWithOneTimeLoginToken(loginToken) {
     console.error('no login token provided');
     return;
   }
-
-  xhr.open('POST', "https://q.daskeyboard.com/api/1.0/users/api_key", true);
-  //Send the proper header information along with the request
-  xhr.setRequestHeader("Content-Type", "application/json");
-  const body = {
-    oneTimeLoginToken: loginToken
-  }
-  xhr.send(JSON.stringify(body));
-  xhr.onreadystatechange = processAPIKeyRequest;
-}
-
-function processAPIKeyRequest(e) {
-  if (xhr.readyState == 4 && xhr.status == 200) {
-    switch (xhr.status) {
-      case 200:
-        const response = JSON.parse(xhr.responseText);
-        const apiKey = response.value;
-        console.log('fetched api key', apiKey);
-        localStorage.setItem('APIKey', apiKey);
-        break;
-      default:
-        break;
-    }
-    // var response = JSON.parse(xhr.responseText);
-    return false;
-  }
+  $.postJSON("https://q.daskeyboard.com/api/1.0/users/api_key", { oneTimeLoginToken: loginToken })
+    // post request success
+    .done(function (data) {
+      // store apiKey in local storage
+      const apiKey = data.value;
+      localStorage.setItem('APIKey', apiKey);
+      // notify user that the API key was fetched
+      displayFlashNotice('info', 'fetched API Key ' + apiKey);
+    })
+    // error with POST request
+    .fail(function(){
+      // notify user that error happened
+      displayFlashNotice('error', 'Error while fetching API KEY');
+    });
 }
 
 function getStoredAPIKey() {
   const apiKey = localStorage.getItem('APIKey');
   return apiKey;
 }
+
+
+/************************************************************************
+ * 
+ *  code used to display a notice popover for the user
+ * 
+ * 
+ * *********************************************************************** 
+ */
 
 /**
  * Displays a bootstrap alert depending on the noticeType
@@ -80,30 +92,52 @@ function getStoredAPIKey() {
  */
 function displayFlashNotice(noticeType, message) {
   // get the bootstrap alert div
-  const flashNoticeDivId = 'flash-notice-section';
-  const alertDiv = document.getElementById(flashNoticeDivId);
+  const flashNoticeDivId = '#flash-notice-section';
+  const flashNoticeMessageId = '#flash-notice-message';
+  const alertDiv = $(flashNoticeDivId);
+  const alertMessage = $(flashNoticeMessageId);
 
-  if (alertDiv) {
+  if (alertDiv && alertMessage) {
     // populate the content of the div with the message
-    alertDiv.textContent = message;
+    alertMessage.html(message);
     // remove the previous class lists
-    alertDiv.classList.remove(['alert-info', 'alert-danger']);
+    alertDiv.removeClass(['alert-info', 'alert-danger']);
     switch (noticeType) {
       case 'info':
-        alertDiv.classList.add(['alert-info']);
+        alertDiv.addClass(['alert-primary']);
         break;
 
       case 'error':
-        alertDiv.classList.add(['alert-danger']);
+        alertDiv.addClass(['alert-danger']);
         break;
     }
 
     // show the div
-    $('.alert').addClass('test');
+    alertDiv.css('display', 'block');
+
   }
 }
+
+/**
+ * closes the flash notice component by hiding the element in the DOM
+ */
+function onCloseFlashNotice() {
+  const flashNoticeDivId = 'flash-notice-section';
+  const alertDiv = document.getElementById(flashNoticeDivId);
+  if (alertDiv) {
+    alertDiv.style.display = 'none';
+  }
+}
+
+/************************************************************************
+ * 
+ *  END OF code used to display a notice popover for the user
+ * 
+ * 
+ * *********************************************************************** 
+ */
+
 $(document).ready(function () {
-  console.log('READY');
   // displayFlashNotice('info', 'test1');
   getApiKeyIfOneTimeLoginTokenIsPresent();
 });
