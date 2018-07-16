@@ -24,6 +24,9 @@ function getApiKeyIfOneTimeLoginTokenIsPresent() {
   if (oneTimeLoginToken) {
     console.log('getting api key from q-cloud');
     getAPIKeyWithOneTimeLoginToken(oneTimeLoginToken);
+  } else {
+    // get current user
+    getCurrentUser();
   }
 }
 
@@ -247,10 +250,13 @@ function copyToClipBoard(elementId) {
 };
 
 function replaceALLApiKeyByStoredApiKey(apiKey) {
+  console.log('here', apiKey);
   $("body").children().each(function () {
     if (!apiKey) {
       $(this).html($(this).html().replace(/\$API_KEY/g,
-        "<span class='span-code' data-toggle='tooltip' data-placement='top' title='Login to automatically see your own credential.'>login to retrieve your api-key</span>"));
+        "<span class='span-code'data-toggle='tooltip' data-placement='top' "
+        + "title='Login to automatically see your own credential.' onclick='onLoginToQCloud()'>"
+        + "login to retrieve your api-key</span>"));
     } else {
       $(this).html($(this).html().replace(/\$API_KEY/g, apiKey));
     }
@@ -300,8 +306,7 @@ function syntaxHighlight(json) {
 
 
 $(document).ready(function () {
-  // get current user
-  getCurrentUser();
+
 
   //get ApiKey if one time login token present in url
   getApiKeyIfOneTimeLoginTokenIsPresent();
