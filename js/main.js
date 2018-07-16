@@ -27,6 +27,22 @@ function getApiKeyIfOneTimeLoginTokenIsPresent() {
   }
 }
 
+function getCurrentUser() {
+  const localAPIKey = getStoredAPIKey();
+  $.getJSON("https://q.daskeyboard.com/api/1.0/users/me", localAPIKey)
+    // post request success
+    .done(function (data) {
+      // update the view with the new user info 
+      updateLoginDisplayElements(data);
+      replaceALLApiKeyByStoredApiKey(localAPIKey);
+    })
+    // error with POST request
+    .fail(function () {
+      // notify user that error happened
+      logout();
+    });
+}
+
 function onLoginToQCloud() {
   const callbackUrl = window.location.pathname;
   window.location = "http://localhost:4200?source=q-documentation"
@@ -139,20 +155,7 @@ function displayFlashNotice(noticeType, message) {
   }
 }
 
-function getCurrentUser() {
-  const localAPIKey = getStoredAPIKey();
-  $.getJSON("https://q.daskeyboard.com/api/1.0/users/me", localAPIKey)
-    // post request success
-    .done(function (data) {
-      // update the view with the new user info 
-      updateLoginDisplayElements(data);
-    })
-    // error with POST request
-    .fail(function () {
-      // notify user that error happened
-      logout();
-    });
-}
+
 
 /**
  * closes the flash notice component by hiding the element in the DOM
@@ -185,6 +188,7 @@ function removeQueryParamsFromUrl() {
 function logout() {
   localStorage.removeItem('APIKey');
   updateLoginDisplayElements(undefined);
+  replaceALLApiKeyByStoredApiKey(undefined);
 }
 
 function updateLoginDisplayElements(currentUser) {
@@ -206,6 +210,94 @@ function updateLoginDisplayElements(currentUser) {
   }
 }
 
+/************************************************************************
+ * 
+ *  code used to display the dynamic content in the code pages
+ * 
+ * 
+ * *********************************************************************** 
+ */
+
+function formatJSONCode() {
+  var jsonCode = document.getElementsByClassName('json-code');
+  for (var i = 0; i < jsonCode.length; i++) {
+    var content = jsonCode[i].textContent;
+    jsonCode[i].innerHTML = syntaxHighlight(content);
+  }
+};
+
+
+/**
+ * copy the content of the element given in param
+ * 
+ * @param {*} elementId id of the HTML element
+ */
+function copyToClipBoard(elementId) {
+  var range = document.createRange();
+  var copyText = document.getElementById(elementId);
+  if (!copyText) {
+    return;
+  }
+  range.selectNode(copyText);
+  var selection = window.getSelection();
+  selection.removeAllRanges();
+  selection.addRange(range);
+  document.execCommand("copy")
+  selection.removeAllRanges();
+};
+
+function replaceALLApiKeyByStoredApiKey(apiKey) {
+  $("body").children().each(function () {
+    if (!apiKey) {
+      $(this).html($(this).html().replace(/\$API_KEY/g,
+        "<span class='span-code' data-toggle='tooltip' data-placement='top' title='Login to automatically see your own credential.'>login to retrieve your api-key</span>"));
+    } else {
+      $(this).html($(this).html().replace(/\$API_KEY/g, apiKey));
+    }
+  });
+}
+
+
+/**
+ * Use to beautify json code
+ * @param {*} json 
+ */
+function syntaxHighlight(json) {
+  if (typeof json != 'string') {
+    json = JSON.stringify(json, undefined, 2);
+  }
+  json = json.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  return json.replace(/("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g, function (match) {
+    var cls = 'number';
+    if (/^"/.test(match)) {
+      if (/:$/.test(match)) {
+        cls = 'key';
+      } else {
+        cls = 'string';
+      }
+    } else if (/true|false/.test(match)) {
+      cls = 'boolean';
+    } else if (/null/.test(match)) {
+      cls = 'null';
+    }
+    // if (cls === 'string') {
+    //   return '<span class="' + cls + '">' + match + '</span><br>';
+    // } else {
+    //   return '<span class="' + cls + '">' + match + '</span>';
+    // }
+    return '<span class="' + cls + '">' + match + '</span>';
+  });
+}
+
+/************************************************************************
+ * 
+ *  End of code used to display the dynamic content in the code pages
+ * 
+ * 
+ * *********************************************************************** 
+ */
+
+
 
 $(document).ready(function () {
   // get current user
@@ -214,6 +306,15 @@ $(document).ready(function () {
   //get ApiKey if one time login token present in url
   getApiKeyIfOneTimeLoginTokenIsPresent();
 
+  formatJSONCode();
+
   // enable bootstrap tooltips
   $('[data-toggle="tooltip"]').tooltip();
+
+  // enable bootstrap popovers
+  $('[data-toggle="popover"]').popover();
+
+  $('.popover-dismiss').popover({
+    trigger: 'focus'
+  });
 });
