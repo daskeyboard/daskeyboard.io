@@ -144,7 +144,7 @@ function getCurrentUser() {
   $.getJSON("https://q.daskeyboard.com/api/1.0/users/me", localAPIKey)
     // post request success
     .done(function (data) {
-      console.log('data', data);
+      // update the view with the new user info 
       updateLoginDisplayElements(data);
     })
     // error with POST request
