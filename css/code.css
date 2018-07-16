@@ -15,6 +15,10 @@
   color: #5CB85C !important;
 }
 
+.code a:hover {
+  color: black !important;
+}
+
 .json-code .key {
   color: red;
 }
