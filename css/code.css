@@ -1,8 +1,11 @@
 .code {
+  position: relative;
+}
+
+.code-response {
   padding: 20px;
   background-color: rgb(92,184,92,0.5);
   border-radius: 20px;
-  position: relative;
 }
 
 .code a {
