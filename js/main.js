@@ -24,9 +24,6 @@ function getApiKeyIfOneTimeLoginTokenIsPresent() {
   if (oneTimeLoginToken) {
     console.log('getting api key from q-cloud');
     getAPIKeyWithOneTimeLoginToken(oneTimeLoginToken);
-  } else {
-    // get current user
-    getCurrentUser();
   }
 }
 
@@ -35,8 +32,10 @@ function getCurrentUser() {
   $.getJSON("https://q.daskeyboard.com/api/1.0/users/me", localAPIKey)
     // post request success
     .done(function (data) {
+      // store email 
+      localStorage.setItem('email', data.email);
       // update the view with the new user info 
-      updateLoginDisplayElements(data);
+      updateLoginDisplayElements(data.email);
       replaceALLApiKeyByStoredApiKey(localAPIKey);
     })
     // error with POST request
@@ -190,16 +189,17 @@ function removeQueryParamsFromUrl() {
  */
 function logout() {
   localStorage.removeItem('APIKey');
+  localStorage.removeItem('email');
   updateLoginDisplayElements(undefined);
   replaceALLApiKeyByStoredApiKey(undefined);
 }
 
-function updateLoginDisplayElements(currentUser) {
-  if (currentUser) {
+function updateLoginDisplayElements(currentUserEmail) {
+  if (currentUserEmail) {
     // hide login message
     $('#header-login-message').css('display', 'none');
     // display welcome message
-    $('#header-welcome-message').text('welcome ' + currentUser.email);
+    $('#header-welcome-message').text('welcome ' + currentUserEmail);
     $('#header-welcome-message').css('display', 'inline-block');
     // display logout action
     $('#logout-action').css('display', 'inline-block');
@@ -250,7 +250,6 @@ function copyToClipBoard(elementId) {
 };
 
 function replaceALLApiKeyByStoredApiKey(apiKey) {
-  console.log('here', apiKey);
   $("body").children().each(function () {
     if (!apiKey) {
       $(this).html($(this).html().replace(/\$API_KEY/g,
@@ -306,10 +305,21 @@ function syntaxHighlight(json) {
 
 
 $(document).ready(function () {
+  const email = localStorage.getItem('email');
+  const apiKey = getStoredAPIKey();
+
+  if (email && apiKey) {
+    updateLoginDisplayElements(email);
+    replaceALLApiKeyByStoredApiKey(apiKey);
+  } else {
+    updateLoginDisplayElements(undefined);
+    replaceALLApiKeyByStoredApiKey(undefined);
+    //get ApiKey if one time login token present in url
+    getApiKeyIfOneTimeLoginTokenIsPresent();
+  }
 
 
-  //get ApiKey if one time login token present in url
-  getApiKeyIfOneTimeLoginTokenIsPresent();
+
 
   formatJSONCode();
 
