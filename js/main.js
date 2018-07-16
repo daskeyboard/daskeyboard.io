@@ -1,5 +1,3 @@
-var xhr = new XMLHttpRequest();
-
 function redirectToHomePage() {
   window.location.pathname = 'index';
 }
@@ -182,7 +180,6 @@ function logout() {
 }
 
 function updateLoginDisplayElements(currentUser) {
-  console.log('currentUser', currentUser);
   if (currentUser) {
     // hide login message
     $('#header-login-message').css('display', 'none');
@@ -203,6 +200,12 @@ function updateLoginDisplayElements(currentUser) {
 
 
 $(document).ready(function () {
+  // get current user
   getCurrentUser();
+
+  //get ApiKey if one time login token present in url
   getApiKeyIfOneTimeLoginTokenIsPresent();
+
+  // enable bootstrap tooltips
+  $('[data-toggle="tooltip"]').tooltip();
 });
