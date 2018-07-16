@@ -1,9 +1,9 @@
 #### Request
 <ul class="tabs__top-bar">
-    <li class="tab-link current" data-tab="create-signal-node">Node</li>
+    <li class="tab-link current" data-tab="tab-install-create-signal-node">Node</li>
     <li class="tab-link" data-tab="tab-install-java">Java</li>
 </ul>
-<div id="create-signal-node" class=" code tabs__content current" markdown="1">
+<div id="tab-install-create-signal-node" class=" code tabs__content current" markdown="1">
 {% include /script-examples/create-signal/cloud/with-api-key/node.md %}
   <a class="btn btn-sm" onclick="copyToClipBoard('create-signal-node')"><i class="fa fa-copy"></i>&nbsp;copy</a>
 </div>
