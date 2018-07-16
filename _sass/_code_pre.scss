@@ -22,11 +22,12 @@ pre {
 }
 
 pre > code .span-code{
-    color: #5cb85c;
+    color: #00aeff;
     text-decoration: none;
     cursor: pointer;
 }
 
 pre > code .span-code:hover{
-    color: black;
+    color: #00aeff;
+    text-decoration: underline;
 }
