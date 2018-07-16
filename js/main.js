@@ -20,7 +20,7 @@ function getParameterByName(name, url) {
 
 function getApiKeyIfOneTimeLoginTokenIsPresent() {
   const oneTimeLoginToken = getParameterByName('oneTimeLoginToken', window.location.href);
-  // removeQueryParamsFromUrl();
+  removeQueryParamsFromUrl();
   if (oneTimeLoginToken) {
     console.log('getting api key from q-cloud');
     getAPIKeyWithOneTimeLoginToken(oneTimeLoginToken);
@@ -174,7 +174,8 @@ function onCloseFlashNotice() {
  */
 
 function removeQueryParamsFromUrl() {
-  window.history.pushState({ path: '/' }, '', '/');
+  var newurl = window.location.pathname;
+  window.history.pushState({ path: newurl }, '', newurl);
 }
 
 /**
