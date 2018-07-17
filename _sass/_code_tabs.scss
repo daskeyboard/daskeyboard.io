@@ -41,3 +41,17 @@ $tab-accent-color: $brand-color;
 .code-nav-tabs + .tab-content {
   border: 1px solid $tab-accent-color 
 }
+
+
+.login-code-button {
+  color: #00aeff;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.login-code-button:hover {
+  color: #00aeff;
+  text-decoration: underline;
+}
