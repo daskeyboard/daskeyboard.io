@@ -193,12 +193,14 @@ function removeQueryParamsFromUrl() {
  * and update the views to display a none logged user
  */
 function logout() {
-  console.log('logout user');
-  const oldApiKey = localStorage.getItem('APIKey');
+
+  // remove api key and email from local storage
   localStorage.removeItem('APIKey');
   localStorage.removeItem('email');
-  updateLoginDisplayElements(undefined);
-  replaceOldApiKeyByLoginLink(oldApiKey);
+
+
+  // reload page
+  window.location.reload();
 }
 
 function updateLoginDisplayElements(currentUserEmail) {
@@ -267,19 +269,6 @@ function replaceALLApiKeyByStoredApiKey(apiKey) {
       $(this).html($(this).html().replace(/\$API_KEY/g, apiKey));
     }
   });
-}
-
-function replaceOldApiKeyByLoginLink(oldApiKey) {
-  if(oldApiKey){
-    var re = new RegExp(oldApiKey , "g");
-    $("body").children().each(function () {
-      $(this).html($(this).html().replace(re,
-        "<span class='span-code'data-toggle='tooltip' data-placement='top' "
-        + "title='Login to automatically see your own credential.' onclick='onLoginToQCloud()'>"
-        + "login to retrieve your api-key</span>"));
-  });
-  }
-
 }
 
 /**
