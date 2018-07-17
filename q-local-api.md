@@ -41,7 +41,6 @@ The Q desktop will then communicate with the Q enabled device.
 
 ## Signal Endpoint
 
-### Create a signal
 {% include /script-examples/signal-endpoint/create-signal/index.md %}
 
 
