@@ -24,6 +24,9 @@ function getApiKeyIfOneTimeLoginTokenIsPresent() {
   if (oneTimeLoginToken) {
     console.log('getting api key from q-cloud');
     getAPIKeyWithOneTimeLoginToken(oneTimeLoginToken);
+  } else {
+    updateLoginDisplayElements(undefined);
+    replaceALLApiKeyByStoredApiKey(undefined);
   }
 }
 
@@ -105,6 +108,8 @@ function getAPIKeyWithOneTimeLoginToken(loginToken) {
     // error with POST request
     .fail(function () {
       // notify user that error happened
+      updateLoginDisplayElements(undefined);
+      replaceALLApiKeyByStoredApiKey(undefined);
       displayFlashNotice('error', 'Error while fetching API KEY');
     });
 }
@@ -253,13 +258,18 @@ function replaceALLApiKeyByStoredApiKey(apiKey) {
   $("body").children().each(function () {
     if (!apiKey) {
       $(this).html($(this).html().replace(/\$API_KEY/g,
-        "<span class='span-code'data-toggle='tooltip' data-placement='top' "
-        + "title='Login to automatically see your own credential.' onclick='onLoginToQCloud()'>"
-        + "login to retrieve your api-key</span>"));
+        // "<span class='span-code'data-toggle='tooltip' data-placement='top' "
+        // + "title='Login to automatically see your own credential.' onclick='onLoginToQCloud()'>"
+        // + "login to retrieve your api-key</span>"));
+        ""));
     } else {
       $(this).html($(this).html().replace(/\$API_KEY/g, apiKey));
     }
   });
+
+  // when changing elements inside a javascript tab. The tabs needs to be setup again
+  // or they will not work anymore
+  setupToolsTabs();
 }
 
 
@@ -307,13 +317,13 @@ function syntaxHighlight(json) {
 $(document).ready(function () {
   const email = localStorage.getItem('email');
   const apiKey = getStoredAPIKey();
+  console.log('apiKey', apiKey);
+  console.log('email', email);
 
   if (email && apiKey) {
     updateLoginDisplayElements(email);
     replaceALLApiKeyByStoredApiKey(apiKey);
   } else {
-    updateLoginDisplayElements(undefined);
-    replaceALLApiKeyByStoredApiKey(undefined);
     //get ApiKey if one time login token present in url
     getApiKeyIfOneTimeLoginTokenIsPresent();
   }
