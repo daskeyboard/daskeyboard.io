@@ -258,10 +258,9 @@ function replaceALLApiKeyByStoredApiKey(apiKey) {
   $("body").children().each(function () {
     if (!apiKey) {
       $(this).html($(this).html().replace(/\$API_KEY/g,
-        // "<span class='span-code'data-toggle='tooltip' data-placement='top' "
-        // + "title='Login to automatically see your own credential.' onclick='onLoginToQCloud()'>"
-        // + "login to retrieve your api-key</span>"));
-        ""));
+        "<span class='span-code'data-toggle='tooltip' data-placement='top' "
+        + "title='Login to automatically see your own credential.' onclick='onLoginToQCloud()'>"
+        + "login to retrieve your api-key</span>"));
     } else {
       $(this).html($(this).html().replace(/\$API_KEY/g, apiKey));
     }
