@@ -1,14 +1,27 @@
 
-##### Request
-<ul class="tabs__top-bar">
-    <li class="tab-link current" data-tab="tab-install-create-signal-node-cloud">Node</li>
-</ul>
-<div id="tab-install-create-signal-node-cloud" class=" code tabs__content current" markdown="1">
-{% include /script-examples/signal-endpoint/create-signal/cloud/with-api-key/node.md %}
-  <a class="btn btn-sm" onclick="copyToClipBoard('tab-install-create-signal-node-cloud')"><i class="fa fa-copy"></i>&nbsp;copy</a>
+###### Request
+
+<nav>
+  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+    <a class="nav-item nav-link active" id="create-signal-curl-cloud-tab" data-toggle="tab" href="#create-signal-curl-cloud" role="tab" aria-controls="create-signal-curl-cloud" aria-selected="true">Curl</a>
+    <a class="nav-item nav-link" id="create-signal-node-cloud-tab" data-toggle="tab" href="#create-signal-node-cloud" role="tab" aria-controls="create-signal-node-cloud" aria-selected="false">Node</a>
+  </div>
+</nav>
+<div class="tab-content" id="nav-tabContent">
+  <!-- curl code -->
+<div class="code tab-pane fade show active" id="create-signal-curl-cloud" role="tabpanel" aria-labelledby="create-signal-curl-cloud-tab" markdown="1">   
+{% include /script-examples/signal-endpoint/create-signal/cloud/with-api-key/curl.md %}
+<a class="btn btn-sm" onclick="copyToClipBoard('create-signal-curl-cloud')"><i class="fa fa-copy"></i>&nbsp;copy</a>
 </div>
 
-##### Response
+<!-- node code  -->
+<div class="code tab-pane fade" id="create-signal-node-cloud" role="tabpanel" aria-labelledby="create-signal-node-cloud-tab" markdown="1">
+{% include /script-examples/signal-endpoint/create-signal/cloud/with-api-key/node.md %}
+<a class="btn btn-sm" onclick="copyToClipBoard('create-signal-node-cloud')"><i class="fa fa-copy"></i>&nbsp;copy</a>
+</div>
+</div>
+
+###### Response
 
 <div  class="code code-response">
   <div class="json-code" id="example1">
@@ -20,4 +33,5 @@
     }
   </div>
 </div>
+
 
