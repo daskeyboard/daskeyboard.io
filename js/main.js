@@ -193,10 +193,12 @@ function removeQueryParamsFromUrl() {
  * and update the views to display a none logged user
  */
 function logout() {
+  console.log('logout user');
+  const oldApiKey = localStorage.getItem('APIKey');
   localStorage.removeItem('APIKey');
   localStorage.removeItem('email');
   updateLoginDisplayElements(undefined);
-  replaceALLApiKeyByStoredApiKey(undefined);
+  replaceOldApiKeyByLoginLink(oldApiKey);
 }
 
 function updateLoginDisplayElements(currentUserEmail) {
@@ -265,12 +267,20 @@ function replaceALLApiKeyByStoredApiKey(apiKey) {
       $(this).html($(this).html().replace(/\$API_KEY/g, apiKey));
     }
   });
-
-  // when changing elements inside a javascript tab. The tabs needs to be setup again
-  // or they will not work anymore
-  setupToolsTabs();
 }
 
+function replaceOldApiKeyByLoginLink(oldApiKey) {
+  if(oldApiKey){
+    var re = new RegExp(oldApiKey , "g");
+    $("body").children().each(function () {
+      $(this).html($(this).html().replace(re,
+        "<span class='span-code'data-toggle='tooltip' data-placement='top' "
+        + "title='Login to automatically see your own credential.' onclick='onLoginToQCloud()'>"
+        + "login to retrieve your api-key</span>"));
+  });
+  }
+
+}
 
 /**
  * Use to beautify json code
