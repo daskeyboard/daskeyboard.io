@@ -261,10 +261,17 @@ function copyToClipBoard(elementId) {
 function replaceALLApiKeyByStoredApiKey(apiKey) {
   $("body").children().each(function () {
     if (!apiKey) {
+
+      // TODO change with the root to the API Key explanation page
+      const apiKeyMoreDetails = window.location.origin + '/get-started/download/';
       $(this).html($(this).html().replace(/\$API_KEY/g,
-        "<span class='span-code'data-toggle='tooltip' data-placement='top' "
-        + "title='Login to automatically see your own credential.' onclick='onLoginToQCloud()'>"
-        + "login to retrieve your api-key</span>"));
+        // "<span class='span-code'data-toggle='tooltip' data-placement='top' "
+        // + "title='Login to automatically see your own credential.' onclick='onLoginToQCloud()'>"
+        // + "login to retrieve your api-key</span>"));
+        "<button class='login-code-button' data-toggle='tooltip' data-html='true' title='This is a sample <a href="
+        + apiKeyMoreDetails
+        + ">API key</a>.<a href=\"#\" onclick=\"onLoginToQCloud()\">Login</a> to see examples "
+        + "pre-filled with your keys.'>login to retrieve your api-key</button>"));
     } else {
       $(this).html($(this).html().replace(/\$API_KEY/g, apiKey));
     }
