@@ -31,4 +31,13 @@ $tab-accent-color: $brand-color;
 
 .code-nav-tabs {
   margin-left: 0px;
+  font-family: 'Source Code Pro', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+
+.code-nav-tabs a{
+  color: $tab-accent-color;
+}
+
+.code-nav-tabs + .tab-content {
+  border: 1px solid $tab-accent-color 
 }
