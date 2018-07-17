@@ -14,7 +14,7 @@ $tab-accent-color: $brand-color;
   position: absolute;
   top: 5px;
   right: 10px;
-  color: $tab-accent-color
+  color: $tab-accent-color !important;
 }
 
 .code a:hover {
@@ -27,4 +27,8 @@ $tab-accent-color: $brand-color;
 
 .json-code .string{
   color: green;
+}
+
+.code-nav-tabs {
+  margin-left: 0px;
 }
