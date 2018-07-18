@@ -30,7 +30,7 @@ For more information please relate to TODO (ADD LINK)
 <!-- Nav tabs -->
 <ul class="nav nav-tabs cloud-or-local-nav" role="tablist">
   <li class="nav-item">
-    <a class="nav-link active" 
+    <a class="nav-link cloud-server active" 
        id="create-signal-cloud-tab" 
        data-toggle="tab" 
        href="#create-signal-cloud" 
@@ -39,7 +39,7 @@ For more information please relate to TODO (ADD LINK)
        aria-selected="true">Cloud</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" 
+    <a class="nav-link local-server" 
        id="create-signal-local-tab" 
        data-toggle="tab" 
        href="#create-signal-local" 
