@@ -22,7 +22,7 @@ in a german and a US Layout)
 For more information please relate to TODO (ADD LINK)
 
 
-
+##### Request
 
 <!-- Tab panes -->
 <div class="tab-content cloud-or-local-tab-content">
@@ -54,31 +54,21 @@ For more information please relate to TODO (ADD LINK)
 {% include /script-examples/signal-endpoint/create-signal/cloud/with-api-key/index.md %}
 </div>
 
-<!-- Node code -->
+<!-- Local example -->
 <div class="tab-pane" id="create-signal-local" role="tabpanel" aria-labelledby="create-signal-local-tab" markdown="1">
 {% include /script-examples/signal-endpoint/create-signal/local/index.md %}
 </div>
 </div>
-
-
-
-
-##### Cloud API
-
-
 <br>
 
-##### Local API
-
-
-
-###### Response
+##### Response
 
 The signals created from the local API will have a negative id.
 This is to separate them from the cloud signals that have a positive id.
 
-<div  class="code code-response">
-  <div class="json-code" id="example1">
+<div class="code-response" markdown="1">
+
+```json
 { 
   "clientName": "PublicApi",
   "color": "#FF0000",
@@ -91,5 +81,6 @@ This is to separate them from the cloud signals that have a positive id.
   "updatedAt": "2018-07-17T14:42:10.580Z",
   "zoneId": "KEY_Q"
 }
-  </div>
+```
+
 </div>
