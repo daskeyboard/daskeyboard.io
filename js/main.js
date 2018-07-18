@@ -270,7 +270,7 @@ function replaceALLApiKeyByStoredApiKey(apiKey) {
         // + "login to retrieve your api-key</span>"));
         "<button class='login-code-button' data-toggle='tooltip' data-html='true' title='This is a sample <a href="
         + apiKeyMoreDetails
-        + ">API key</a>.<a href=\"#\" onclick=\"onLoginToQCloud()\">Login</a> to see examples "
+        + ">API key</a>.<a href=\"#\" onclick=\"onLoginToQCloud()\"> Login</a> to see examples "
         + "pre-filled with your keys.'>login to retrieve your api-key</button>"));
     } else {
       $(this).html($(this).html().replace(/\$API_KEY/g, apiKey));
