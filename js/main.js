@@ -50,7 +50,7 @@ function getCurrentUser() {
 
 function onLoginToQCloud() {
   const callbackUrl = window.location.pathname;
-  window.location = "http://localhost:4200?source=q-documentation"
+  window.location = "http://localhost:4202?source=q-documentation"
     + '&callbackUrl=' + callbackUrl;
 
 }
