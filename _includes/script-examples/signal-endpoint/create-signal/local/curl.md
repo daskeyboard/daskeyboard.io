@@ -1,5 +1,6 @@
 ```shell
-curl -H 'Content-Type: application/json' -X POST http://localhost:27301/api/1.0/signals -d \
+curl -H 'Content-Type: application/json' \
+-X POST http://localhost:27301/api/1.0/signals -d \
 '{
 "zoneId": "KEY_Q",
 "color": "#FF0000",
