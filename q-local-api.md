@@ -29,7 +29,7 @@ The script needs to be running on the machine where the Q enabled device is plug
 The sccript will communicate directly to the Q desktop that opens a web server on the port 27301.
 The Q desktop will then communicate with the Q enabled device.
 
-- Speed (<500 ms)
+- Speed: quasi-instantaneous
 -	Limited Accessibility - Commands can only be sent locally http://localhost:27301
 -	No credential requirement
 -	Not reliant on Q Cloud, useful if Q Cloud is down or performing maintenance
