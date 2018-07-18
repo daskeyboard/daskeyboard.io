@@ -5,9 +5,7 @@ $tab-accent-color: $brand-color;
 }
 
 .code-response {
-  padding: 20px;
-  background-color: rgba(92,184,92,0.5);
-  border-radius: 20px;
+
 }
 
 .code a {
@@ -21,13 +19,6 @@ $tab-accent-color: $brand-color;
   color: black !important;
 }
 
-.json-code .key {
-  color: red;
-}
-
-.json-code .string{
-  color: green;
-}
 
 .code-nav-tabs {
   margin-left: 0px;
