@@ -3,6 +3,11 @@
 
 ### Create a signal
 
+<div class="endpoint-container">
+POST /signals
+</div>
+
+
 A signal can be created by making a POST HTTP request.
 You can target a zone with 3 different ways. To know more about the zones please read this TODO Add 
 link to zones ENDPOINT.
@@ -21,6 +26,7 @@ in a german and a US Layout)
 
 For more information please relate to TODO (ADD LINK)
 
+{% include /script-examples/signal-endpoint/create-signal/local/request-description.html %}
 
 ##### Request
 
@@ -69,17 +75,21 @@ This is to separate them from the cloud signals that have a positive id.
 <div class="code-response" markdown="1">
 
 ```json
-{ 
-  "clientName": "PublicApi",
-  "color": "#FF0000",
-  "createdAt": "2018-07-17T14:42:10.580Z",
-  "effect": "SET_COLOR",
-  "id": -580,
-  "message": "Q App version 3 is available. Download it at https://www.daskeyboard.io/get-started/download/",
+{
+  "id": 392,
   "name": "New Q app version available",
+  "message": "Q App version 3 is available. Download it at https://www.daskeyboard.io/get-started/download/",
+  "zoneId": "KEY_Q",
+  "color": "#FF0000",
+  "effect": "SET_COLOR",
   "pid": "DK5QPID",
-  "updatedAt": "2018-07-17T14:42:10.580Z",
-  "zoneId": "KEY_Q"
+  "isArchived": false,
+  "isRead": false,
+  "isMuted": false,
+  "userId": 9,
+  "clientName": "Local Node script",
+  "createdAt": 1531946199392,
+  "updatedAt": 1531946199392
 }
 ```
 
