@@ -1,6 +1,3 @@
-
-###### Request
-
 <!-- Nav tabs -->
 <ul class="nav nav-tabs code-nav-tabs" id="myTab" role="tablist">
   <li class="nav-item">
@@ -29,27 +26,4 @@
 <!-- copy button -->
 <a class="btn btn-sm" data-toggle="tooltip" data-placement="top" title="copy"  onclick="copyToClipBoard('create-signal-node-local')"><i class="fa fa-copy"></i></a>
 </div>
-</div>
-
-
-###### Response
-
-The signals created from the local API will have a negative id.
-This is to separate them from the cloud signals that have a positive id.
-
-<div  class="code code-response">
-  <div class="json-code" id="example1">
-{ 
-  "clientName": "PublicApi",
-  "color": "#FF0000",
-  "createdAt": "2018-07-17T14:42:10.580Z",
-  "effect": "SET_COLOR",
-  "id": -580,
-  "message": "Q App version 3 is available. Download it at https://www.daskeyboard.io/get-started/download/",
-  "name": "New Q app version available",
-  "pid": "DK5QPID",
-  "updatedAt": "2018-07-17T14:42:10.580Z",
-  "zoneId": "KEY_Q"
-}
-  </div>
 </div>

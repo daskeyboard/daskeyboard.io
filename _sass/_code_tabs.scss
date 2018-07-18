@@ -55,3 +55,38 @@ $tab-accent-color: $brand-color;
   color: #00aeff;
   text-decoration: underline;
 }
+
+
+// css for the cloud or local collapsing tabs
+
+
+.cloud-or-local-tab-content {
+  position: relative;
+}
+
+.cloud-or-local-nav{
+  position: absolute;
+  top: 57px;
+  right: 34px;
+  z-index: 1;
+  border: 0px;
+}
+
+.cloud-or-local-nav .nav-link {
+  border: none;
+  color: $brand-color;
+  padding: 0px;
+  margin-right: 10px;
+}
+
+.cloud-or-local-nav a.active {
+  border: none;
+  color: black !important;
+}
+
+.cloud-or-local-nav a:hover {
+  border: none;
+  color: black;
+}
+
+// end of css for the cloud or local collapsing tabs
