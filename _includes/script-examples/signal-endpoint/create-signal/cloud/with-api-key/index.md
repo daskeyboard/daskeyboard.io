@@ -1,6 +1,3 @@
-
-###### Request
-
 <!-- Nav tabs -->
 <ul class="nav nav-tabs code-nav-tabs" role="tablist">
   <li class="nav-item">
@@ -28,17 +25,4 @@
 <!-- copy button -->
 <a class="btn btn-sm" data-toggle="tooltip" data-placement="top" title="copy" onclick="copyToClipBoard('create-signal-node-cloud')"><i class="fa fa-copy"></i></a>
 </div>
-</div>
-
-###### Response
-
-<div  class="code code-response">
-  <div class="json-code" id="example1">
-    {
-      "name": "Apple Stock increase 2",
-      "pid": "DK5QPID",
-      "zoneId": "2,2",
-      "color": "#FF0000"
-    }
-  </div>
 </div>
