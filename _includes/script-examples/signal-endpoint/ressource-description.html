@@ -97,7 +97,46 @@
       <td>
         <span class="type">boolean</span>
         <span class="example">false</span>
-        <p class="description" style="color: orange">Not implemented yet</p>
+        <p class="description"
+          style="color: orange">Not implemented yet</p>
+      </td>
+    </tr>
+
+    <tr>
+      <th scope="row">userId</th>
+      <td>
+        <span class="type">integer</span>
+        <span class="example">9</span>
+        <p class="description read-only">Globally unique ID of the user that created the signal.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <th scope="row">clientName</th>
+      <td>
+        <span class="type">string</span>
+        <span class="example">'Local Node Script'</span>
+        <span class="example">'Zapier'</span>
+        <span class="example">'Ifttt'</span>
+        <p class="description">Describes the client that created the signal</p>
+      </td>
+    </tr>
+
+    <tr>
+      <th scope="row">createdAt</th>
+      <td>
+        <span class="type">timestamp</span>
+        <span class="example">1531946199392</span>
+        <p class="description read-only">The time at which the signal was created.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <th scope="row">updatedAt</th>
+      <td>
+        <span class="type">timestamp</span>
+        <span class="example">1531946199392</span>
+        <p class="description read-only">The time at which the signal was last modified.</p>
       </td>
     </tr>
 
