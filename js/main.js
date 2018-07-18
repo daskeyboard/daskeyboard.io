@@ -52,7 +52,6 @@ function onLoginToQCloud() {
   const callbackUrl = window.location.pathname;
   window.location = "http://localhost:4202?source=q-documentation"
     + '&callbackUrl=' + callbackUrl;
-
 }
 
 /**
@@ -102,7 +101,8 @@ function getAPIKeyWithOneTimeLoginToken(loginToken) {
       const apiKey = data.value;
       localStorage.setItem('APIKey', apiKey);
       // notify user that the API key was fetched
-      displayFlashNotice('info', 'fetched API Key ' + apiKey);
+      displayFlashNotice('info',
+        'You are  logged in: sample code will contain your API key so you can copy paste and experiment easily. Enjoy!');
       getCurrentUser();
     })
     // error with POST request
