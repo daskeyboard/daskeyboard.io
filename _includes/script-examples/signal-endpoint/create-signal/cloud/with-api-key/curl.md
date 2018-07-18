@@ -10,5 +10,4 @@ curl -H 'Content-Type: application/json' \
   "clientName": "Local Node script",
   "message": "Q App version 3 is available. Download it at https://www.daskeyboard.io/get-started/download/",
   "name": "New Q app version available"}'
-
 ```
