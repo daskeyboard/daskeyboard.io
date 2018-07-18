@@ -6,3 +6,11 @@
     line-height: 56px;
     cursor: pointer;
 }
+
+@media screen and (max-width:767px) {
+
+    #header-welcome-message{
+        color: red;
+        display: none !important;
+    }
+}
