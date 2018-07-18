@@ -1,0 +1,23 @@
+
+.request-body-table .example:before{
+  content: "Example: ";
+  color: $brand-color;
+  
+}
+
+.request-body-table .example:after {
+  content:"\a";
+  white-space: pre;
+}
+
+
+.request-body-table .type:before{
+  content: "Type: ";
+  color: $primary-color;
+  
+}
+
+.request-body-table .type:after {
+  content:"\a";
+  white-space: pre;
+}
