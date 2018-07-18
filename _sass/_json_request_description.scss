@@ -21,3 +21,11 @@
   content:"\a";
   white-space: pre;
 }
+
+.request-body-table .required{
+  color: red;
+}
+.request-body-table .required:after{
+  content:"\a";
+  white-space: pre;
+}

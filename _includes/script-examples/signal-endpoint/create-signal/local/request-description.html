@@ -6,26 +6,104 @@
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <th scope="row">name</th>
+      <td>
+        <span class="type">string</span>
+        <span class="example">'Apple Stock increase'</span>
+        <p class="description">Name of the Signal</p>
+      </td>
+    </tr>
+
+    <tr>
+      <th scope="row">message</th>
+      <td>
+        <span class="type">string</span>
+        <span class="example">'Lucky you! Apple stock is greater than $500'</span>
+        <p class="description">Message of the Signal</p>
+      </td>
+    </tr>
 
     <tr>
       <th scope="row">zoneId</th>
       <td>
-        <span class="required"></span>
-        <span class="example">KEY_Q</span>
-        <span class="example">74</span>
-        <span class="example">2,2</span>
+        <span class="required">Required</span>
         <span class="type">string</span>
-        <p class="Description">Specify the zone targeted by the Signal</p>
+        <span class="example">'KEY_Q'</span>
+        <span class="example">'74'</span>
+        <span class="example">'2,2'</span>
+        <p class="description">Specify the id of the zone targeted by the Signal</p>
       </td>
     </tr>
 
-
-
     <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
+      <th scope="row">color</th>
+      <td>
+        <span class="type">string</span>
+        <span class="example">'#FF0000'</span>
+        <p class="description">Color of the Signal - has to begin by the character ‘#’ and be followed by 3 or 6 hexadecimal
+          digits
+        </p>
+      </td>
     </tr>
 
+    <tr>
+      <th scope="row">effect</th>
+      <td>
+        <span class="type">string</span>
+        <span class="example">'SET_COLOR'</span>
+        <p class="description">Effect of the Signal</p>
+      </td>
+    </tr>
+
+    <tr>
+      <th scope="row">pid</th>
+      <td>
+        <span class="type">string</span>
+        <span class="example">'DK5QPID'</span>
+        <p class="description">Pid of the device targeted by the signal TODO add link to device page</p>
+      </td>
+    </tr>
+
+    <tr>
+      <th scope="row">isArchived</th>
+      <td>
+        <span class="type">boolean</span>
+        <span class="example">false</span>
+        <p class="description">Indicates if the Signal has been archived </p>
+        <p class="note"></p>
+      </td>
+    </tr>
+
+    <tr>
+      <th scope="row">isRead</th>
+      <td>
+        <span class="type">boolean</span>
+        <span class="example">false</span>
+        <p class="description">Indicates if the Signal has been read</p>
+      </td>
+    </tr>
+
+    <tr>
+      <th scope="row">isMuted</th>
+      <td>
+        <span class="type">boolean</span>
+        <span class="example">false</span>
+        <p class="description"
+          style="color: orange">Not implemented yet</p>
+      </td>
+    </tr>
+
+    <tr>
+      <th scope="row">clientName</th>
+      <td>
+        <span class="type">string</span>
+        <span class="example">'Local Node Script'</span>
+        <span class="example">'Zapier'</span>
+        <span class="example">'Ifttt'</span>
+        <p class="description">Describes the client that created the signal</p>
+      </td>
+    </tr>
 
   </tbody>
 </table>
