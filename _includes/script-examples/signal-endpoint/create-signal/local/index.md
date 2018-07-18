@@ -19,7 +19,7 @@
 {% include /script-examples/signal-endpoint/create-signal/local/curl.md %}
 
 <!-- copy button -->
-<a class="btn btn-sm" onclick="copyToClipBoard('create-signal-curl-local')"><i class="fa fa-copy"></i>&nbsp;copy</a>
+<a class="btn btn-sm"  data-toggle="tooltip" data-placement="top" title="copy" onclick="copyToClipBoard('create-signal-curl-local')"><i class="fa fa-copy"></i></a>
 </div>
 
 <!-- Node code -->
@@ -27,7 +27,7 @@
 {% include /script-examples/signal-endpoint/create-signal/local/node.md %}
 
 <!-- copy button -->
-<a class="btn btn-sm" onclick="copyToClipBoard('create-signal-node-local')"><i class="fa fa-copy"></i>&nbsp;copy</a>
+<a class="btn btn-sm" data-toggle="tooltip" data-placement="top" title="copy"  onclick="copyToClipBoard('create-signal-node-local')"><i class="fa fa-copy"></i></a>
 </div>
 </div>
 
