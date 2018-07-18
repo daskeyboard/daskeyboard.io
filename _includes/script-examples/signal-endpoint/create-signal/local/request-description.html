@@ -39,6 +39,7 @@
     <tr>
       <th scope="row">color</th>
       <td>
+        <span class="required">Required</span>
         <span class="type">string</span>
         <span class="example">'#FF0000'</span>
         <p class="description">Color of the Signal - has to begin by the character ‘#’ and be followed by 3 or 6 hexadecimal
@@ -59,9 +60,10 @@
     <tr>
       <th scope="row">pid</th>
       <td>
+        <span class="required">Required</span>
         <span class="type">string</span>
         <span class="example">'DK5QPID'</span>
-        <p class="description">Pid of the device targeted by the signal TODO add link to device page</p>
+        <p class="description">Pid of the device targeted by the signal</p>
       </td>
     </tr>
 
@@ -71,7 +73,7 @@
         <span class="type">boolean</span>
         <span class="example">false</span>
         <p class="description">Indicates if the Signal has been archived </p>
-        <p class="note"></p>
+        <p class="note">This attribute is ignored when used with the local API</p>
       </td>
     </tr>
 
@@ -81,6 +83,7 @@
         <span class="type">boolean</span>
         <span class="example">false</span>
         <p class="description">Indicates if the Signal has been read</p>
+        <p class="note">This attribute is ignored when used with the local API</p>
       </td>
     </tr>
 
