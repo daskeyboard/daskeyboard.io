@@ -1,6 +1,7 @@
 ```js
 // Library to make simplified HTTP client requests
 var request = require('request');
+
 // Construct the signal to send
 var signal = {
   'zoneId': 'KEY_Q',
