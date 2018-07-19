@@ -1,5 +1,5 @@
 
-<a name="create-signal-anchor" id="create-signal-anchor"></a>
+<a name="create-signal-anchor" id="create-signal-anchor" class="anchor"></a>
 
 ### Create a signal
 
