@@ -32,7 +32,7 @@ Q clients can be downloaded from the Q website: <https://www.daskeyboard.com/tec
 
 ### Create a Das Keyboard Q account
 
-In order to use the Q client, you'll need to create an account at <https://q.daskeyboard.com/>
+In order to use the Q client, you'll need to create an account at <https://qapp.daskeyboard.com/>
 
 ### Signup for the Q forum
 
