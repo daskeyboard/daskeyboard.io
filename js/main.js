@@ -208,8 +208,9 @@ function updateLoginDisplayElements(currentUserEmail) {
     // hide login message
     $('#header-login-message').css('display', 'none');
     // display welcome message
-    $('#header-welcome-message').text('welcome ' + currentUserEmail);
+    $('#header-welcome-message').text('Welcome ' + currentUserEmail);
     $('#header-welcome-message').css('display', 'inline-block');
+    $('#header-welcome-message').css('font-weight','bold');
     // display logout action
     $('#logout-action').css('display', 'inline-block');
   } else {
