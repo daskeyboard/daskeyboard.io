@@ -13,19 +13,20 @@
           </a>
           <div class="trigger">
             <span id="header-welcome-message"></span>
-            <a class="page-link" 
-              style="display: none;"
-              href="#"
-              onclick="onLoginToQCloud()"
-              id="header-login-message">Login to Q Cloud</a>
-            <a class="page-link" 
-               style="display: none;"
-               id="logout-action"
-               href="#" 
-               onclick="logout()">logout</a>
             <a class="page-link" href="{{ "docs/"  | relative_url }}">Docs</a>
             <a class="page-link" href="https://github.com/DasKeyboard/Daskeyboard.io">GitHub</a>
             <a class="page-link" href="https://daskeyboard.mojohelpdesk.com/">Support</a>
+            &nbsp;
+            <a class="btn btn-outline-primary" 
+            style="display: none;"
+            id="logout-action"
+            href="#" 
+            onclick="logout()">logout</a>
+            <a class="btn btn-outline-primary" 
+              style="display: none;"
+              href="#"
+              onclick="onLoginToQCloud()"
+              id="header-login-message">login for more features</a>
           </div>
         </nav>
       </div>
