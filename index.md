@@ -50,7 +50,7 @@ hide_title: true
         </div>
         <div class="col-md-6">
             <div class="hot-reload-gif-container">
-                <img src="{{ "images/5q-animation-whitebg.gif"  | relative_url }}"
+                <img src="{{ "images/5Q-box-back.jpg"  | relative_url }}"
                     class="homepage__illustration--image"
                     alt="Animation of the 5Q keyboard receiving signals">
             </div>
