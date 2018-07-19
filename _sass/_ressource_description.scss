@@ -34,3 +34,12 @@
   padding: 15px 1.5em;
   margin-bottom: 20px;
 }
+
+.ressource-description-table th {
+  color: $grey-color;
+}
+
+.ressource-description-table .note:before{
+  content:"Note: ";
+  color: $grey-color
+}
