@@ -43,9 +43,13 @@ The Q desktop will then communicate with the Q enabled device.
 -	Mobile apps will not see these signals
 
 
-## Signal Endpoint
+<a name="signal-ressource-anchor" id="signal-ressource-anchor"></a>
+
+## Signals
 
 TODO (add more description for the signals)
+
+### Signals have the following fields:
 
 {% include /script-examples/signal-endpoint/ressource-description.html %}
 
