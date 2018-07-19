@@ -104,3 +104,42 @@
     }
 
 }
+
+.collapsing-link {
+ color: $brand-color !important;
+}
+
+.collapsing-link:hover {
+    color: black !important;
+}
+
+.collapsing-link {
+    position: relative;
+}
+
+.collapsing-link  i {
+    position: absolute;
+    right: -123px;
+    bottom: 3px;
+    color: $brand-color;
+    display: none;
+}
+
+
+.collapsing-link .fa-angle-down {
+    display: block;
+}
+
+.collapsing-link .fa-angle-left {
+    display: none;
+}
+
+.collapsing-link.collapsed .fa-angle-left {
+ display: block;
+}
+
+.collapsing-link.collapsed .fa-angle-down {
+    display: none
+}
+
+
