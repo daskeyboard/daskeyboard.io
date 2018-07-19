@@ -43,6 +43,10 @@ $tab-accent-color: $brand-color;
   text-decoration: underline;
 }
 
+.code pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 // css for the cloud or local collapsing tabs
 
