@@ -7,7 +7,7 @@ hide_title: true
 
 <div class="homepage__illustration">
     <h1 class="homepage__illustration--text">
-        <span>Das Keyboard is now in Beta!!</span>
+        <span>Das Keyboard Q is now in Beta!!</span>
         &nbsp;
     </h1>
     
