@@ -24,6 +24,21 @@
 
   <li class="sidebar-title">Q API endpoints details</li>
   <ul class="sidebar-items">
-    <li><a href="{{ "updates/changelog"  | relative_url }}">Changelog</a></li>
+    <li>
+      <a class="collapsing-link collapsed"
+         data-toggle="collapse" 
+         href="#signal-endpoint-collapse-content" 
+         role="button" 
+         aria-expanded="false" 
+         aria-controls="signal-endpoint-collapse-content">
+         Signal endpoint
+         <i class="fa fa-angle-down"></i>
+         <i class="fa fa-angle-left"></i>
+        </a>
+
+      <ul class="collapse" id="signal-endpoint-collapse-content">
+        <li>test</li>
+      </ul>
+    </li>
   </ul>
 </ul>
