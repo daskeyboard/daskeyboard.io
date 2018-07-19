@@ -135,11 +135,15 @@
 }
 
 .collapsing-link.collapsed .fa-angle-left {
- display: block;
+    display: block;
 }
 
 .collapsing-link.collapsed .fa-angle-down {
     display: none
 }
 
-
+#mysidebar {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}

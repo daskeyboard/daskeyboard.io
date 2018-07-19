@@ -1,4 +1,4 @@
-<ul id="mysidebar" class="nav">
+<ul id="mysidebar">
 
   <li class="sidebar-title">Get started</li>
   <ul class="sidebar-items">
@@ -22,7 +22,7 @@
     <li><a href="{{ "updates/changelog"  | relative_url }}">Changelog</a></li>
   </ul>
 
-  <li class="sidebar-title">Q API endpoints details</li>
+  <li class="sidebar-title">Q API</li>
   <ul class="sidebar-items">
     <li>
       <a class="collapsing-link collapsed"
@@ -31,13 +31,20 @@
          role="button" 
          aria-expanded="false" 
          aria-controls="signal-endpoint-collapse-content">
-         Signal endpoint
+         Signals
          <i class="fa fa-angle-down"></i>
          <i class="fa fa-angle-left"></i>
         </a>
 
       <ul class="collapse" id="signal-endpoint-collapse-content">
-        <li>test</li>
+        <li>
+          <span class="badge badge-warning">RESSOURCE</span>&nbsp;
+          <a href="#signal-ressource-anchor">signals</a>
+        </li>
+        <li>
+          <span class="badge badge-success">POST</span>&nbsp;
+          <a href="#create-signal-anchor">create signal</a>
+        </li>
       </ul>
     </li>
   </ul>
