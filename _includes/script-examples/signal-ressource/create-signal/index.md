@@ -27,7 +27,7 @@ in a german and a US Layout)
 For more information please relate to TODO (ADD LINK)
 
 #### Request parameters
-{% include /script-examples/signal-endpoint/create-signal/local/request-description.html %}
+{% include /script-examples/signal-ressource/create-signal/local/request-description.html %}
 
 ##### Request
 
@@ -58,12 +58,12 @@ For more information please relate to TODO (ADD LINK)
 
 <!-- Cloud code example -->
 <div class="tab-pane active" id="create-signal-cloud" role="tabpanel" aria-labelledby="create-signal-cloud-tab" markdown="1">
-{% include /script-examples/signal-endpoint/create-signal/cloud/with-api-key/index.md %}
+{% include /script-examples/signal-ressource/create-signal/cloud/with-api-key/index.md %}
 </div>
 
 <!-- Local example -->
 <div class="tab-pane" id="create-signal-local" role="tabpanel" aria-labelledby="create-signal-local-tab" markdown="1">
-{% include /script-examples/signal-endpoint/create-signal/local/index.md %}
+{% include /script-examples/signal-ressource/create-signal/local/index.md %}
 </div>
 </div>
 <br>

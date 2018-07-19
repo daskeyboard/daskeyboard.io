@@ -13,7 +13,7 @@
 
 <!-- Curl code -->
 <div class="code tab-pane active" id="create-signal-curl-local" role="tabpanel" aria-labelledby="create-signal-curl-local-tab" markdown="1">
-{% include /script-examples/signal-endpoint/create-signal/local/curl.md %}
+{% include /script-examples/signal-ressource/create-signal/local/curl.md %}
 
 <!-- copy button -->
 <a class="btn btn-sm"  data-toggle="tooltip" data-placement="top" title="copy" onclick="copyToClipBoard('create-signal-curl-local')"><i class="fa fa-copy"></i></a>
@@ -21,7 +21,7 @@
 
 <!-- Node code -->
 <div class="code tab-pane" id="create-signal-node-local" role="tabpanel" aria-labelledby="create-signal-node-local-tab" markdown="1">
-{% include /script-examples/signal-endpoint/create-signal/local/node.md %}
+{% include /script-examples/signal-ressource/create-signal/local/node.md %}
 
 <!-- copy button -->
 <a class="btn btn-sm" data-toggle="tooltip" data-placement="top" title="copy"  onclick="copyToClipBoard('create-signal-node-local')"><i class="fa fa-copy"></i></a>
