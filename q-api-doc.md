@@ -51,9 +51,9 @@ TODO (add more description for the signals)
 
 ### Signals have the following fields:
 
-{% include /script-examples/signal-endpoint/ressource-description.html %}
+{% include /script-examples/signal-ressource/ressource-description.html %}
 
-{% include /script-examples/signal-endpoint/create-signal/index.md %}
+{% include /script-examples/signal-ressource/create-signal/index.md %}
 
 
 
