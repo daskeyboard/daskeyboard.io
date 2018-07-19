@@ -26,6 +26,7 @@ in a german and a US Layout)
 
 For more information please relate to TODO (ADD LINK)
 
+#### Request parameters
 {% include /script-examples/signal-endpoint/create-signal/local/request-description.html %}
 
 ##### Request
@@ -69,8 +70,7 @@ For more information please relate to TODO (ADD LINK)
 
 ##### Response
 
-The signals created from the local API will have a negative id.
-This is to separate them from the cloud signals that have a positive id.
+
 
 <div class="code-response" markdown="1">
 
