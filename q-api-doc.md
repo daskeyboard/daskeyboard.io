@@ -43,7 +43,7 @@ The Q desktop will then communicate with the Q enabled device.
 -	Mobile apps will not see these signals
 
 
-<a name="signal-ressource-anchor" id="signal-ressource-anchor"></a>
+<a name="signal-ressource-anchor" id="signal-ressource-anchor" class="anchor"></a>
 
 ## Signals
 
