@@ -35,25 +35,12 @@ For more information please relate to TODO (ADD LINK)
 <div class="tab-content cloud-or-local-tab-content">
 
 <!-- Nav tabs -->
-<ul class="nav nav-tabs cloud-or-local-nav" role="tablist">
+<ul class="nav nav-pills mb-3 cloud-or-local-nav" id="pills-tab" role="tablist">
   <li class="nav-item">
-    <a class="nav-link cloud-server active" 
-       id="create-signal-cloud-tab" 
-       data-toggle="tab" 
-       href="#create-signal-cloud" 
-       role="tab" 
-       aria-controls="create-signal-cloud" 
-       aria-selected="true"><span class="badge badge-pill badge-secondary">Q-Cloud</span></a>
-       
+    <a class="nav-link active" id="create-signal-cloud-tab"  data-toggle="pill"  href="#create-signal-cloud" role="tab" aria-controls="create-signal-cloud" aria-selected="true">Q Cloud</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link local-server" 
-       id="create-signal-local-tab" 
-       data-toggle="tab" 
-       href="#create-signal-local" 
-       role="tab" 
-       aria-controls="create-signal-local" 
-       aria-selected="false"><span class="badge badge-pill badge-secondary">Localhost</span></a>
+    <a class="nav-link" id="create-signal-local-tab"  data-toggle="pill"  href="#create-signal-local"  role="tab" aria-controls="create-signal-local" aria-selected="false">Localhost</a>
   </li>
 </ul>
 
