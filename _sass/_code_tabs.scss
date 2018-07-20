@@ -73,5 +73,20 @@ $tab-accent-color: $brand-color;
   background-color: $brand-color;
 }
 
+.cloud-or-local-nav a:hover{
+  background-color: transparent !important;
+}
+
+.cloud-or-local-nav a.active {
+  background-color: transparent !important;
+}
+
+.code-nav-tabs + .tab-content {
+  background-color: #f5f2f0;
+}
+
+  
+
+
 
 // end of css for the cloud or local collapsing tabs
