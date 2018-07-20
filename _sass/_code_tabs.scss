@@ -6,7 +6,7 @@ $tab-accent-color: $brand-color;
 
 .code a {
   position: absolute;
-  top: 5px;
+  top: 12px;
   right: 10px;
   color: $tab-accent-color !important;
 }
@@ -58,31 +58,25 @@ $tab-accent-color: $brand-color;
 .cloud-or-local-nav{
   position: absolute;
   top: 50px;
-  right: 34px;
+  right: 46px;
   z-index: 1;
   border: 0px;
 }
 
-.cloud-or-local-nav .nav-link {
-  border: none;
-  padding: 0px;
-  margin-right: 10px;
+.cloud-or-local-nav a{
+  color: $brand-color;
 }
 
-.cloud-or-local-nav a.active span{
-  background-color: $brand-color;
-}
-
-.cloud-or-local-nav a:hover{
-  background-color: transparent !important;
-}
-
-.cloud-or-local-nav a.active {
-  background-color: transparent !important;
+.cloud-or-local-nav a.active{
+  background-color: $brand-color !important;
 }
 
 .code-nav-tabs + .tab-content {
   background-color: #f5f2f0;
+}
+
+.code pre {
+  padding: 3.5em;
 }
 
 // end of css for the cloud or local collapsing tabs
