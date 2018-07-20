@@ -239,26 +239,6 @@ function formatJSONCode() {
   }
 };
 
-
-/**
- * copy the content of the element given in param
- * 
- * @param {*} elementId id of the HTML element
- */
-function copyToClipBoard(elementId) {
-  var range = document.createRange();
-  var copyText = document.getElementById(elementId);
-  if (!copyText) {
-    return;
-  }
-  range.selectNode(copyText);
-  var selection = window.getSelection();
-  selection.removeAllRanges();
-  selection.addRange(range);
-  document.execCommand("copy")
-  selection.removeAllRanges();
-};
-
 function replaceALLApiKeyByStoredApiKey(apiKey) {
   $("body").children().each(function () {
     if (!apiKey) {

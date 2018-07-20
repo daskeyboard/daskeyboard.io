@@ -49,7 +49,7 @@ function listenToAPIServerTabSelection() {
     const selectedTabClassList = $(this).attr('class').split(" ");
 
     // find the last selected server (cloud-server or local-server)
-    const lastSelectedServer= selectedTabClassList.find(function (element) {
+    const lastSelectedServer = selectedTabClassList.find(function (element) {
       return element.includes('server');
     });
 
@@ -74,10 +74,58 @@ function showLastSelectedServer() {
   }
 }
 
+/**
+ * copy the content of the element given in param
+ * 
+ * @param {*} elementId id of the HTML element
+ */
+function copyToClipBoard(elementId) {
+  var range = document.createRange();
+  var copyText = document.getElementById(elementId);
+  if (!copyText) {
+    return;
+  }
+  range.selectNode(copyText);
+  var selection = window.getSelection();
+  selection.removeAllRanges();
+  selection.addRange(range);
+  document.execCommand("copy")
+  selection.removeAllRanges();
+};
+
+/**
+ * Listens to the click event on the copy actions and tweak the tooltip to be:
+ * - Changed the content to `copied` after a click
+ * - Change the content back to `copy` after the tooltip disappears
+ */
+function listenToCopyActionClick() {
+
+  // click action listener
+  $('.copy-action').on('click', function (e) {
+    e.preventDefault();
+    // change the tooltip tittle to be `copied`
+    $(this).attr('title', 'copied!')
+      .tooltip('_fixTitle')
+      .tooltip('show');
+  });
+
+  // Hide event of the tooltips
+  $('.copy-action').on('hidden.bs.tooltip', function () {
+    // change the tooltip tittle to be `copy`
+    $(this).attr('title', 'copy')
+      .tooltip('_fixTitle');
+  });
+
+}
+
 $(document).ready(function () {
   listenToCodingLanguageTabSelection();
   showLastSelectedCodingLanguage();
 
   listenToAPIServerTabSelection();
   showLastSelectedServer();
+
+  listenToCopyActionClick();
+
+
 });
