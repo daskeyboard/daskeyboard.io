@@ -43,7 +43,8 @@ For more information please relate to TODO (ADD LINK)
        href="#create-signal-cloud" 
        role="tab" 
        aria-controls="create-signal-cloud" 
-       aria-selected="true">Cloud</a>
+       aria-selected="true"><span class="badge badge-pill badge-secondary">Q-Cloud</span></a>
+       
   </li>
   <li class="nav-item">
     <a class="nav-link local-server" 
@@ -52,7 +53,7 @@ For more information please relate to TODO (ADD LINK)
        href="#create-signal-local" 
        role="tab" 
        aria-controls="create-signal-local" 
-       aria-selected="false">Local</a>
+       aria-selected="false"><span class="badge badge-pill badge-secondary">Localhost</span></a>
   </li>
 </ul>
 
