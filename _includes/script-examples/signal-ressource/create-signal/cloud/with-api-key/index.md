@@ -16,13 +16,13 @@
 {% include /script-examples/signal-ressource/create-signal/cloud/with-api-key/curl.md %}
 
 <!-- copy button -->
-<a class="btn btn-sm" data-toggle="tooltip" data-placement="top" title="copy" onclick="copyToClipBoard('create-signal-curl-cloud')"><i class="fa fa-copy"></i></a>
+<a class="btn btn-sm copy-action" data-toggle="tooltip" data-placement="top" title="copy" onclick="copyToClipBoard('create-signal-curl-cloud')"><i class="fa fa-copy"></i></a>
 </div>
 
 <!-- Node code -->
 <div class="code tab-pane" id="create-signal-node-cloud" role="tabpanel" aria-labelledby="create-signal-node-cloud-tab" markdown="1">
 {% include /script-examples/signal-ressource/create-signal/cloud/with-api-key/node.md %}
 <!-- copy button -->
-<a class="btn btn-sm" data-toggle="tooltip" data-placement="top" title="copy" onclick="copyToClipBoard('create-signal-node-cloud')"><i class="fa fa-copy"></i></a>
+<a class="btn btn-sm copy-action" data-toggle="tooltip" data-placement="top" title="copy" onclick="copyToClipBoard('create-signal-node-cloud')"><i class="fa fa-copy"></i></a>
 </div>
 </div>
