@@ -13,26 +13,23 @@ var signal = {
   'name': 'New Q app version available'
 };
 
-const backendUrl = 'http://localhost:27301'
-
-const requestHeaders =  {
-    "Content-Type": "application/json"
-  };
-
-
-
 // HTTP POST request to the cloud
 request.post({
-  url: backentUrl + '/api/1.0/signals',
-  headers: requestHeaders,
+  url: backendUrl + '/api/1.0/signals',
+  headers: headers,
   body: signal,
   json: true
 }, function (error: any, response: any) {
 
   // OK
-  if (response.statusCode == 200) {
-      console.log('response', response.body);
-      return;
+  if (response && response.statusCode == 200) {
+    console.log('response', response.body);
+    return;
+  }
+
+  // KO
+  if (error) {
+    console.error(error);
   }
 });
 
