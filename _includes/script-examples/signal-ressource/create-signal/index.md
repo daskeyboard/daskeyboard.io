@@ -15,7 +15,7 @@ In all the cases the attribute to define the zone will be `zoneId`
 
 
 #### Request parameters
-{% include /script-examples/signal-ressource/create-signal/local/request-description.html %}
+{% include /script-examples/signal-ressource/create-signal/request-description.html %}
 
 ##### Request
 
