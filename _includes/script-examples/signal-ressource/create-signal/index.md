@@ -25,10 +25,10 @@ In all the cases the attribute to define the zone will be `zoneId`
 <!-- Nav tabs -->
 <ul class="nav nav-pills mb-3 cloud-or-local-nav" id="pills-tab" role="tablist">
   <li class="nav-item">
-    <a class="nav-link active" id="create-signal-cloud-tab"  data-toggle="pill"  href="#create-signal-cloud" role="tab" aria-controls="create-signal-cloud" aria-selected="true">Q Cloud</a>
+    <a class="nav-link cloud-server active" id="create-signal-cloud-tab"  data-toggle="pill"  href="#create-signal-cloud" role="tab" aria-controls="create-signal-cloud" aria-selected="true">Q Cloud</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" id="create-signal-local-tab"  data-toggle="pill"  href="#create-signal-local"  role="tab" aria-controls="create-signal-local" aria-selected="false">Localhost</a>
+    <a class="nav-link localhost-server" id="create-signal-local-tab"  data-toggle="pill"  href="#create-signal-local"  role="tab" aria-controls="create-signal-local" aria-selected="false">Localhost</a>
   </li>
 </ul>
 
