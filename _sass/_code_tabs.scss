@@ -11,6 +11,10 @@ $tab-accent-color: $brand-color;
   color: $tab-accent-color !important;
 }
 
+.edit-action {
+  right: 32px !important;
+}
+
 .code a:hover {
   color: black !important;
 }
@@ -58,7 +62,7 @@ $tab-accent-color: $brand-color;
 .cloud-or-local-nav{
   position: absolute;
   top: 50px;
-  right: 46px;
+  right: 63px;
   z-index: 1;
   border: 0px;
 }
@@ -79,7 +83,7 @@ $tab-accent-color: $brand-color;
 //   padding: 3.5em;
 // }
 
-.code + div pre {
+.code  pre {
   padding-top: 3.5em;
 }
 

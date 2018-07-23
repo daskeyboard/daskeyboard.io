@@ -19,6 +19,10 @@
 
 <!-- copy button -->
 <a class="btn btn-sm copy-action"  data-toggle="tooltip" data-placement="top" title="copy" onclick="copyToClipBoard('create-signal-curl-local')"><i class="fa fa-copy"></i></a>
+
+<!-- edit button -->
+<a class="btn btn-sm edit-action"  data-toggle="tooltip" data-placement="top" title="edit" href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/signal-ressource/create-signal/curl.md"><i class="fa fa-edit"></i></a>
+
 </div>
 
 <!-- Node code -->
@@ -29,5 +33,8 @@
 
 <!-- copy button -->
 <a class="btn btn-sm copy-action" data-toggle="tooltip" data-placement="top" title="copy"  onclick="copyToClipBoard('create-signal-node-local')"><i class="fa fa-copy"></i></a>
+
+<!-- edit button -->
+<a class="btn btn-sm edit-action"  data-toggle="tooltip" data-placement="top" title="edit" href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/signal-ressource/create-signal/node.md"><i class="fa fa-edit"></i></a>
 </div>
 </div>
