@@ -1,5 +1,5 @@
 ```js
-const headers = {
+var headers = {
     "Content-Type": "application/json",
     "X-API-KEY": "$API_KEY"
   }
