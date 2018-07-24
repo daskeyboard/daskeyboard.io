@@ -1,5 +1,5 @@
 <!-- Nav tabs -->
-<ul class="nav nav-tabs code-nav-tabs" id="myTab" role="tablist">
+<ul class="nav nav-tabs code-nav-tabs" role="tablist">
   <li class="nav-item">
     <a class="nav-link curl-language active" id="create-signal-curl-local-tab" data-toggle="tab" href="#create-signal-curl-local" role="tab" aria-controls="create-signal-curl-local" aria-selected="true">Curl</a>
   </li>
