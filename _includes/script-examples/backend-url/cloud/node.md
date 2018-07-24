@@ -1,3 +1,3 @@
 ```js
-const backendUrl = 'https://q.daskeyboard.com';
+var backendUrl = 'https://q.daskeyboard.com';
 ```
