@@ -32,7 +32,7 @@ permalink: /script-examples/send-signal-local/
   </li>
 
   <li class="nav-item">
-    <a class="nav-link curl-language active" id="send-one-signal-to-local-curl-tab" data-toggle="tab" href="#send-one-signal-to-local-curl" role="tab" aria-controls="send-one-signal-to-local-curl" aria-selected="true">Curl</a>
+    <a class="nav-link shell-language active" id="send-one-signal-to-local-shell-tab" data-toggle="tab" href="#send-one-signal-to-local-shell" role="tab" aria-controls="send-one-signal-to-local-shell" aria-selected="true">Shell</a>
   </li>
 </ul>
 
@@ -101,11 +101,11 @@ permalink: /script-examples/send-signal-local/
 <a class="btn btn-sm edit-action" href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/send-signal-local/go.md "><i class="fa fa-pencil"></i>&nbsp;Edit Script</a>
 </div>
 
-<!-- Curl code -->
-<div class="code tab-pane active" id="send-one-signal-to-local-curl" role="tabpanel" aria-labelledby="send-one-signal-to-local-curl-tab" markdown="1">
+<!-- shell code -->
+<div class="code tab-pane active" id="send-one-signal-to-local-shell" role="tabpanel" aria-labelledby="send-one-signal-to-local-shell-tab" markdown="1">
 {% include /script-examples/send-signal-local/shell.md %}
 <!-- copy button -->
-<a class="btn btn-sm copy-action"  data-toggle="tooltip" data-placement="top" title="copy" onclick="copyToClipBoard('send-one-signal-to-local-curl')"><i class="fa fa-copy"></i></a>
+<a class="btn btn-sm copy-action"  data-toggle="tooltip" data-placement="top" title="copy" onclick="copyToClipBoard('send-one-signal-to-local-shell')"><i class="fa fa-copy"></i></a>
 <!-- edit button -->
 <a class="btn btn-sm edit-action" href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/send-signal-local/shell.md "><i class="fa fa-pencil"></i>&nbsp;Edit Script</a>
 </div>
