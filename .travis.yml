@@ -7,7 +7,7 @@ before_install:
 - "./tool/before_install.sh"
 script: "./tool/travis.sh"
 before_deploy:
-- echo "Building site."
+- echo "Building site..."
 - bundle exec jekyll build
 deploy:
   provider: firebase
