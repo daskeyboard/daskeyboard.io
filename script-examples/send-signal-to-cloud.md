@@ -43,7 +43,7 @@ permalink: /script-examples/send-signal-to-cloud/
 <!-- copy button -->
 <a class="btn btn-sm copy-action"  data-toggle="tooltip" data-placement="top" title="copy" onclick="copyToClipBoard('send-one-signal-to-cloud-ruby')"><i class="fa fa-copy"></i></a>
 <!-- edit button -->
-<a class="btn btn-sm edit-action" href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/send-signal-to-cloud/ruby.md "><i class="fa fa-pencil"></i>&nbsp;Edit Source</a>
+<a class="btn btn-sm edit-action" href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/send-signal-to-cloud/ruby.md "><i class="fa fa-pencil"></i>&nbsp;Edit Script</a>
 </div>
 
 
@@ -53,7 +53,7 @@ permalink: /script-examples/send-signal-to-cloud/
 <!-- copy button -->
 <a class="btn btn-sm copy-action"  data-toggle="tooltip" data-placement="top" title="copy" onclick="copyToClipBoard('send-one-signal-to-cloud-python')"><i class="fa fa-copy"></i></a>
 <!-- edit button -->
-<a class="btn btn-sm edit-action" href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/send-signal-to-cloud/python.md "><i class="fa fa-pencil"></i>&nbsp;Edit Source</a>
+<a class="btn btn-sm edit-action" href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/send-signal-to-cloud/python.md "><i class="fa fa-pencil"></i>&nbsp;Edit Script</a>
 </div>
 
 
@@ -63,7 +63,7 @@ permalink: /script-examples/send-signal-to-cloud/
 <!-- copy button -->
 <a class="btn btn-sm copy-action"  data-toggle="tooltip" data-placement="top" title="copy" onclick="copyToClipBoard('send-one-signal-to-cloud-php')"><i class="fa fa-copy"></i></a>
 <!-- edit button -->
-<a class="btn btn-sm edit-action" href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/send-signal-to-cloud/php.md "><i class="fa fa-pencil"></i>&nbsp;Edit Source</a>
+<a class="btn btn-sm edit-action" href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/send-signal-to-cloud/php.md "><i class="fa fa-pencil"></i>&nbsp;Edit Script</a>
 </div>
 
 
@@ -74,7 +74,7 @@ permalink: /script-examples/send-signal-to-cloud/
 <!-- copy button -->
 <a class="btn btn-sm copy-action"  data-toggle="tooltip" data-placement="top" title="copy" onclick="copyToClipBoard('send-one-signal-to-cloud-node')"><i class="fa fa-copy"></i></a>
 <!-- edit button -->
-<a class="btn btn-sm edit-action" href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/send-signal-to-cloud/node.md "><i class="fa fa-pencil"></i>&nbsp;Edit Source</a>
+<a class="btn btn-sm edit-action" href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/send-signal-to-cloud/node.md "><i class="fa fa-pencil"></i>&nbsp;Edit Script</a>
 </div>
 
 
@@ -85,7 +85,7 @@ permalink: /script-examples/send-signal-to-cloud/
 <!-- copy button -->
 <a class="btn btn-sm copy-action"  data-toggle="tooltip" data-placement="top" title="copy" onclick="copyToClipBoard('send-one-signal-to-cloud-java')"><i class="fa fa-copy"></i></a>
 <!-- edit button -->
-<a class="btn btn-sm edit-action" href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/send-signal-to-cloud/java.md "><i class="fa fa-pencil"></i>&nbsp;Edit Source</a>
+<a class="btn btn-sm edit-action" href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/send-signal-to-cloud/java.md "><i class="fa fa-pencil"></i>&nbsp;Edit Script</a>
 </div>
 
 
@@ -95,7 +95,7 @@ permalink: /script-examples/send-signal-to-cloud/
 <!-- copy button -->
 <a class="btn btn-sm copy-action"  data-toggle="tooltip" data-placement="top" title="copy" onclick="copyToClipBoard('send-one-signal-to-cloud-go')"><i class="fa fa-copy"></i></a>
 <!-- edit button -->
-<a class="btn btn-sm edit-action" href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/send-signal-to-cloud/go.md "><i class="fa fa-pencil"></i>&nbsp;Edit Source</a>
+<a class="btn btn-sm edit-action" href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/send-signal-to-cloud/go.md "><i class="fa fa-pencil"></i>&nbsp;Edit Script</a>
 </div>
 
 
