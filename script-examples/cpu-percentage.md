@@ -3,22 +3,6 @@ layout: page
 title: "Display CPU activity on your device"
 permalink: /script-examples/cpu-percentage/
 ---
-<!-- 
-<ul class="tabs__top-bar">
-
-  <li class="tab-link current" data-tab="tab-install-node">Node</li>
-  <li class="tab-link" data-tab="tab-install-shell">Shell</li>
-</ul>
-
-
-
-<div id="tab-install-node" class="tabs__content current" markdown="1">
-{% include /script-examples/cpu-percentage/node.md %}
-</div>
-
-<div id="tab-install-shell" class="tabs__content" markdown="1">
-{% include /script-examples/cpu-percentage/shell.md %}
-</div> -->
 
 <!-- Nav tabs -->
 <ul class="nav nav-tabs code-nav-tabs" role="tablist">
