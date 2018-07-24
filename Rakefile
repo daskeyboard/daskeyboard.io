@@ -3,7 +3,7 @@ require 'redcarpet'
 require "net/http"
 
 task :checklinks do
-  sh "bundle exec jekyll build"
+  sh "echo 'not rebuild site since it supposed to be built already' #bundle exec jekyll build"
   options = {
     :log_level => :info,
     :empty_alt_ignore => true,
