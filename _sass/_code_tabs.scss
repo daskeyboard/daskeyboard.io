@@ -62,7 +62,7 @@ $tab-accent-color: $brand-color;
 .cloud-or-local-nav{
   position: absolute;
   top: 50px;
-  right: 63px;
+  right: 135px;
   z-index: 1;
   border: 0px;
 }
@@ -76,7 +76,7 @@ $tab-accent-color: $brand-color;
 }
 
 .code-nav-tabs + .tab-content {
-  background-color: #f5f2f0;
+  background-color:  #ececec;;
 }
 
 // .code pre {
@@ -85,6 +85,10 @@ $tab-accent-color: $brand-color;
 
 .code  pre {
   padding-top: 3.5em;
+}
+
+pre{
+  background: #ececec !important;
 }
 
 // end of css for the cloud or local collapsing tabs
