@@ -1,7 +1,7 @@
 <!-- Nav tabs -->
 <ul class="nav nav-tabs code-nav-tabs" role="tablist">
   <li class="nav-item">
-    <a class="nav-link curl-language active" id="create-signal-curl-local-tab" data-toggle="tab" href="#create-signal-curl-local" role="tab" aria-controls="create-signal-curl-local" aria-selected="true">Curl</a>
+    <a class="nav-link shell-language active" id="create-signal-shell-local-tab" data-toggle="tab" href="#create-signal-shell-local" role="tab" aria-controls="create-signal-shell-local" aria-selected="true">Shell</a>
   </li>
   <li class="nav-item">
     <a class="nav-link node-language" id="create-signal-node-local-tab" data-toggle="tab" href="#create-signal-node-local" role="tab" aria-controls="create-signal-node-local" aria-selected="false">Node</a>
@@ -11,17 +11,17 @@
 <!-- Tab panes -->
 <div class="tab-content">
 
-<!-- Curl code -->
-<div class="code tab-pane active" id="create-signal-curl-local" role="tabpanel" aria-labelledby="create-signal-curl-local-tab" markdown="1">
-{% include /script-examples/backend-url/local/curl.md %}
-{% include /script-examples/request-headers/local/curl.md %}
-{% include /script-examples/signal-ressource/create-signal/curl.md %}
+<!-- shell code -->
+<div class="code tab-pane active" id="create-signal-shell-local" role="tabpanel" aria-labelledby="create-signal-shell-local-tab" markdown="1">
+{% include /script-examples/backend-url/local/shell.md %}
+{% include /script-examples/request-headers/local/shell.md %}
+{% include /script-examples/signal-ressource/create-signal/shell.md %}
 
 <!-- copy button -->
-<a class="btn btn-sm copy-action"  data-toggle="tooltip" data-placement="top" title="copy" onclick="copyToClipBoard('create-signal-curl-local')"><i class="fa fa-copy"></i></a>
+<a class="btn btn-sm copy-action"  data-toggle="tooltip" data-placement="top" title="copy" onclick="copyToClipBoard('create-signal-shell-local')"><i class="fa fa-copy"></i></a>
 
 <!-- edit button -->
-<a class="btn btn-sm edit-action" href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/signal-ressource/create-signal/curl.md"><i class="fa fa-pencil"></i>&nbsp;Edit Script</a>
+<a class="btn btn-sm edit-action" href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/signal-ressource/create-signal/shell.md"><i class="fa fa-pencil"></i>&nbsp;Edit Script</a>
 
 </div>
 
