@@ -1,5 +1,6 @@
 ```js
 // Library to make simplified HTTP client requests
+// if not installed run npm install request
 var request = require('request');
 
 // Construct the signal to send
