@@ -1,3 +1,3 @@
 ```js
-const backendUrl = 'http://localhost:27301';
+var backendUrl = 'http://localhost:27301';
 ```
