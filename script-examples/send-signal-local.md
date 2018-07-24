@@ -46,7 +46,7 @@ permalink: /script-examples/send-signal-local/
 <!-- copy button -->
 <a class="btn btn-sm copy-action"  data-toggle="tooltip" data-placement="top" title="copy" onclick="copyToClipBoard('send-one-signal-to-local-ruby')"><i class="fa fa-copy"></i></a>
 <!-- edit button -->
-<a class="btn btn-sm edit-action" href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/send-signal-local/ruby.md "><i class="fa fa-pencil"></i>&nbsp;Edit Source</a>
+<a class="btn btn-sm edit-action" href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/send-signal-local/ruby.md "><i class="fa fa-pencil"></i>&nbsp;Edit Script</a>
 </div>
 
 
@@ -56,7 +56,7 @@ permalink: /script-examples/send-signal-local/
 <!-- copy button -->
 <a class="btn btn-sm copy-action"  data-toggle="tooltip" data-placement="top" title="copy" onclick="copyToClipBoard('send-one-signal-to-local-python')"><i class="fa fa-copy"></i></a>
 <!-- edit button -->
-<a class="btn btn-sm edit-action" href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/send-signal-local/python.md "><i class="fa fa-pencil"></i>&nbsp;Edit Source</a>
+<a class="btn btn-sm edit-action" href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/send-signal-local/python.md "><i class="fa fa-pencil"></i>&nbsp;Edit Script</a>
 </div>
 
 
@@ -66,7 +66,7 @@ permalink: /script-examples/send-signal-local/
 <!-- copy button -->
 <a class="btn btn-sm copy-action"  data-toggle="tooltip" data-placement="top" title="copy" onclick="copyToClipBoard('send-one-signal-to-local-php')"><i class="fa fa-copy"></i></a>
 <!-- edit button -->
-<a class="btn btn-sm edit-action" href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/send-signal-local/php.md "><i class="fa fa-pencil"></i>&nbsp;Edit Source</a>
+<a class="btn btn-sm edit-action" href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/send-signal-local/php.md "><i class="fa fa-pencil"></i>&nbsp;Edit Script</a>
 </div>
 
 
@@ -77,7 +77,7 @@ permalink: /script-examples/send-signal-local/
 <!-- copy button -->
 <a class="btn btn-sm copy-action"  data-toggle="tooltip" data-placement="top" title="copy" onclick="copyToClipBoard('send-one-signal-to-local-node')"><i class="fa fa-copy"></i></a>
 <!-- edit button -->
-<a class="btn btn-sm edit-action" href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/send-signal-local/node.md "><i class="fa fa-pencil"></i>&nbsp;Edit Source</a>
+<a class="btn btn-sm edit-action" href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/send-signal-local/node.md "><i class="fa fa-pencil"></i>&nbsp;Edit Script</a>
 </div>
 
 
@@ -88,7 +88,7 @@ permalink: /script-examples/send-signal-local/
 <!-- copy button -->
 <a class="btn btn-sm copy-action"  data-toggle="tooltip" data-placement="top" title="copy" onclick="copyToClipBoard('send-one-signal-to-local-java')"><i class="fa fa-copy"></i></a>
 <!-- edit button -->
-<a class="btn btn-sm edit-action" href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/send-signal-local/java.md "><i class="fa fa-pencil"></i>&nbsp;Edit Source</a>
+<a class="btn btn-sm edit-action" href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/send-signal-local/java.md "><i class="fa fa-pencil"></i>&nbsp;Edit Script</a>
 </div>
 
 
@@ -98,7 +98,7 @@ permalink: /script-examples/send-signal-local/
 <!-- copy button -->
 <a class="btn btn-sm copy-action"  data-toggle="tooltip" data-placement="top" title="copy" onclick="copyToClipBoard('send-one-signal-to-local-go')"><i class="fa fa-copy"></i></a>
 <!-- edit button -->
-<a class="btn btn-sm edit-action" href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/send-signal-local/go.md "><i class="fa fa-pencil"></i>&nbsp;Edit Source</a>
+<a class="btn btn-sm edit-action" href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/send-signal-local/go.md "><i class="fa fa-pencil"></i>&nbsp;Edit Script</a>
 </div>
 
 <!-- Curl code -->
@@ -107,7 +107,7 @@ permalink: /script-examples/send-signal-local/
 <!-- copy button -->
 <a class="btn btn-sm copy-action"  data-toggle="tooltip" data-placement="top" title="copy" onclick="copyToClipBoard('send-one-signal-to-local-curl')"><i class="fa fa-copy"></i></a>
 <!-- edit button -->
-<a class="btn btn-sm edit-action" href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/send-signal-local/shell.md "><i class="fa fa-pencil"></i>&nbsp;Edit Source</a>
+<a class="btn btn-sm edit-action" href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/send-signal-local/shell.md "><i class="fa fa-pencil"></i>&nbsp;Edit Script</a>
 </div>
 
 </div>
