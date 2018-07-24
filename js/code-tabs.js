@@ -25,7 +25,7 @@ function listenToCodingLanguageTabSelection() {
     // put the selected tab link classes in an array
     const selectedTabClassList = $(this).attr('class').split(" ");
 
-    // find the last selected coding language (example node-language or curl-language)
+    // find the last selected coding language (example node-language or shell-language)
     const lastSelectedCodingLanguage = selectedTabClassList.find(function (element) {
       return element.includes('language');
     });
