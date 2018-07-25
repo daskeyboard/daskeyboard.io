@@ -3,10 +3,9 @@
 // if not installed run npm install request
 var request = require('request');
 
-var signalId = 392;
-
-request.delete({
-    url: backendUrl + '/api/1.0/signals/' + signalId ,
+// HTTP POST request to the cloud
+request.get({
+    url: backendUrl + '/api/1.0/signals/shadows',
     headers: headers,
     json: true
 }, function (error, response) {
@@ -14,7 +13,7 @@ request.delete({
     if (response && response.statusCode == 200) {
         console.log('response', response.body);
     }
-    // OK from API response
+        // OK from API response
     if(response && response.statusCode != 200){
         console.error(response.body);
     }

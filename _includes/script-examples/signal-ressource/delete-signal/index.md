@@ -1,6 +1,6 @@
 
 
-### Delete a signal
+### Delete a signal by id
 
 <div class="endpoint-container">
 DELETE /signals/:id
