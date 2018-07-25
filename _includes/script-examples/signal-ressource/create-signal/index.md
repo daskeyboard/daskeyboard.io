@@ -8,7 +8,7 @@ POST /signals
 
 
 A signal can be created by making a POST HTTP request.
-You can target a zone with 3 different ways. To know more about the zones please read this <a href="{{ "q-zone-id-explanation"  | relative_url }}">understand zoneId</a>
+A zone can be targeted in 3 different ways. To know more about the zones please read this <a href="{{ "q-zone-id-explanation"  | relative_url }}">understand zoneId</a>
 In all the cases the attribute to define the zone will be `zoneId`
 
 
