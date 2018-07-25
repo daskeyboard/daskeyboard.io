@@ -9,6 +9,8 @@ permalink: /updates/changelog/
 
 ### Q Desktop Release Detail Improvements:
 
+#### FIXED
+
 - if signal already present in a zone the new one will overwrite the old one correctly
 - breathing effect will not have another shadow color anymore
 
