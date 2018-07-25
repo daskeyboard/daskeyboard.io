@@ -3,6 +3,43 @@ layout: page
 title: Changelog Q Desktop Software
 permalink: /updates/changelog/
 ---
+
+
+## Version 2.0.0-beta.8
+### Q Desktop Release Detail Improvements:
+- if signal already present in a zone the new one will overwrite the old one correctly
+- breathing effect will not have another shadow color anymore
+
+
+
+## Version 2.0.0-beta.8
+
+### Q Desktop Release Detail Improvements:
+
+#### FIXED
+
+- api port was not showing for some users in the dashboard view
+- app was notifying for duplicated signals every 10 min.
+- changing device layout will now reload the signals in the correct zone
+- shadow signal was corrupted. The dashboard now displays the latest signal for each zone (shadow)
+- app no longer crashes with asynchronous calls to the localhost API
+- when a signal zone is not found, the space bar LED turns RED (instead of signal color)
+
+
+
+#### UPDATE
+- modified local API routes to be consistent with the cloud
+
+
+### Q Desktop Service Improvements:
+
+#### FIXED 
+
+- Windows 7 support: service startup no longer needs the "--standalone" workaround.
+
+---
+
+
 ## Version 2.0.0-beta.7
 
 
