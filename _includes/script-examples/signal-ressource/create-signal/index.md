@@ -52,6 +52,7 @@ In all the cases the attribute to define the zone will be `zoneId`
 <div class="code-response" markdown="1">
 
 ```json
+HTTP 200
 {
   "id": 392,
   "name": "New Q app version available",

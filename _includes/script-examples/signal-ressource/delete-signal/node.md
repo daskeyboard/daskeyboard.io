@@ -3,28 +3,19 @@
 // if not installed run npm install request
 var request = require('request');
 
-// Construct the signal to send
-var signal = {
-    'zoneId': 'KEY_Q',
-    'color': '#FF0000',
-    'effect': 'SET_COLOR',
-    'pid': 'DK5QPID',
-    'clientName': 'Local Node script',
-    'message': 'Q App version 3 is available. Download it at https://www.daskeyboard.io/get-started/download/',
-    'name': 'New Q app version available'
-};
+var signalId = 392;
+
 // HTTP POST request to the cloud
-request.post({
-    url: backendUrl + '/api/1.0/signals',
+request.delete({
+    url: backendUrl + '/api/1.0/signals/' + signalId ,
     headers: headers,
-    body: signal,
     json: true
 }, function (error, response) {
     // OK
     if (response && response.statusCode == 200) {
         console.log('response', response.body);
     }
-        // KO from API response
+    // KO from API response
     if(response && response.statusCode != 200){
         console.error(response.body);
     }
