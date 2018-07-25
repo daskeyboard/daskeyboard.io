@@ -6,6 +6,9 @@
   <li class="nav-item">
     <a class="nav-link node-language" id="create-signal-node-cloud-tab" data-toggle="tab" href="#create-signal-node-cloud" role="tab" aria-controls="create-signal-node-cloud" aria-selected="false">Node</a>
   </li>
+  <li class="nav-item">
+    <a class="nav-link python-language" id="create-signal-python-cloud-tab" data-toggle="tab" href="#create-signal-python-cloud" role="tab" aria-controls="create-signal-python-cloud" aria-selected="false">Python</a>
+  </li>
 </ul>
 
 <!-- Tab panes -->
@@ -34,5 +37,18 @@
 
 <!-- edit button -->
 <a class="btn btn-sm edit-action"  href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/signal-ressource/create-signal/node.md"><i class="fa fa-pencil"></i>&nbsp;Edit Script</a>
+</div>
+
+
+<!-- Python code -->
+<div class="code tab-pane" id="create-signal-python-cloud" role="tabpanel" aria-labelledby="create-signal-python-cloud-tab" markdown="1">
+{% include /script-examples/backend-url/cloud/python.md %}
+{% include /script-examples/request-headers/cloud/with-api-key/python.md %}
+{% include /script-examples/signal-ressource/create-signal/python.md %}
+<!-- copy button -->
+<a class="btn btn-sm copy-action" data-toggle="tooltip" data-placement="top" title="copy" onclick="copyToClipBoard('create-signal-python-cloud')"><i class="fa fa-copy"></i></a>
+
+<!-- edit button -->
+<a class="btn btn-sm edit-action"  href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/signal-ressource/create-signal/python.md"><i class="fa fa-pencil"></i>&nbsp;Edit Script</a>
 </div>
 </div>

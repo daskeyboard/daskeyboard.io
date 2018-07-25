@@ -6,6 +6,9 @@
   <li class="nav-item">
     <a class="nav-link node-language" id="create-signal-node-local-tab" data-toggle="tab" href="#create-signal-node-local" role="tab" aria-controls="create-signal-node-local" aria-selected="false">Node</a>
   </li>
+  <li class="nav-item">
+    <a class="nav-link python-language" id="create-signal-python-local-tab" data-toggle="tab" href="#create-signal-python-local" role="tab" aria-controls="create-signal-python-local" aria-selected="false">Python</a>
+  </li>
 </ul>
 
 <!-- Tab panes -->
@@ -36,5 +39,19 @@
 
 <!-- edit button -->
 <a class="btn btn-sm edit-action"  href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/signal-ressource/create-signal/node.md"><i class="fa fa-pencil"></i>&nbsp;Edit Script</a>
+</div>
+
+
+<!-- Python code -->
+<div class="code tab-pane" id="create-signal-python-local" role="tabpanel" aria-labelledby="create-signal-python-local-tab" markdown="1">
+{% include /script-examples/backend-url/local/python.md %}
+{% include /script-examples/request-headers/local/python.md %}
+{% include /script-examples/signal-ressource/create-signal/python.md %}
+
+<!-- copy button -->
+<a class="btn btn-sm copy-action" data-toggle="tooltip" data-placement="top" title="copy"  onclick="copyToClipBoard('create-signal-python-local')"><i class="fa fa-copy"></i></a>
+
+<!-- edit button -->
+<a class="btn btn-sm edit-action"  href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/signal-ressource/create-signal/python.md"><i class="fa fa-pencil"></i>&nbsp;Edit Script</a>
 </div>
 </div>
