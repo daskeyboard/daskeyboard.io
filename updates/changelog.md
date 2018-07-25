@@ -10,6 +10,7 @@ permalink: /updates/changelog/
 - if signal already present in a zone the new one will overwrite the old one correctly
 - breathing effect will not have another shadow color anymore
 
+---
 
 
 ## Version 2.0.0-beta.8
