@@ -58,6 +58,14 @@ A signal is a message distributed via HTTP to a Q enabled device. This message m
 
 {% include /script-examples/signal-ressource/delete-signal/index.md %}
 
+{% include /script-examples/signal-ressource/get-shadow-signals-for-device/index.md %}
+
+{% include /script-examples/signal-ressource/get-all-shadow-signals/index.md %}
+
+{% include /script-examples/signal-ressource/get-signal-by-zone-id/index.md %}
+
+
+
 
 
 
