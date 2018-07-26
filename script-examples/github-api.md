@@ -17,7 +17,7 @@ permalink: /script-examples/github-api/
 <div class="code active tab-pane" id="github-api-go" role="tabpanel" aria-labelledby="github-api-go-tab" markdown="1">
 {% include /script-examples/github-api/go.md %}
 <!-- copy button -->
-<a class="btn btn-sm copy-action" data-toggle="tooltip" data-placement="top" title="copy"  onclick="copyToClipBoard('github-api-go')"><i class="fa fa-copy"></i></a>
+<a class="btn btn-sm copy-action" data-toggle="tooltip" data-placement="top" title="copy"  onclick="copyToClipBoard('github-api-go')"><i class="fa fa-copy"></i>&nbsp;Copy</a>
 <!-- edit button -->
 <a class="btn btn-sm edit-action"  href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/github-api/go.md"><i class="fa fa-pencil"></i>&nbsp;Edit Script</a>
 </div>
