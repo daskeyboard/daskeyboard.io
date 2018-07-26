@@ -14,7 +14,6 @@ If there is no signal in the zone. The endpoint will return #000000
 #### Request parameters
 {% include /script-examples/signal-ressource/get-signal-color-by-zone-id/request-description.html %}
 
-<a name="get-signal-color-by-zone-id-anchor" id="get-signal-color-by-zone-id-anchor" class="anchor"></a>
 
 ##### Request
 

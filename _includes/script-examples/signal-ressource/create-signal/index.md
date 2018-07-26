@@ -13,7 +13,6 @@ In all the cases the attribute to define the zone will be `zoneId`
 #### Request parameters
 {% include /script-examples/signal-ressource/create-signal/request-description.html %}
 
-<a name="create-signal-anchor" id="create-signal-anchor" class="anchor"></a>
 
 ##### Request
 

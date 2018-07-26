@@ -16,7 +16,6 @@ A signal can be deleted by making a DELETE HTTP request using the signal id.
 
 
 ##### Request
-<a name="delete-signal-anchor" id="delete-signal-anchor" class="anchor"></a>
 
 <!-- Tab panes -->
 <div class="tab-content cloud-or-local-tab-content">

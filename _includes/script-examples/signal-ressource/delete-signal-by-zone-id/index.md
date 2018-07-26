@@ -13,7 +13,6 @@ In all the cases the parameter to define the zone will be `zoneId`
 #### Request parameters
 {% include /script-examples/signal-ressource/delete-signal-by-zone-id/request-description.html %}
 
-<a name="delete-signal-by-zone-id-anchor" id="delete-signal-by-zone-id-anchor" class="anchor"></a>
 
 ##### Request
 
