@@ -5,11 +5,6 @@ permalink: /q-api-doc/
 ---
 
 
-
-
-
-
-
 ## Overview
 You can communicate with your device throught 2 different APIs.
 A cloud api and a local api
@@ -48,7 +43,7 @@ The Q desktop will then communicate with the Q enabled device.
 ## Signals
 
 A signal is a message distributed via HTTP to a Q enabled device. This message may contain lighting
- color and effect information as well as a message for a human.
+color and effect information as well as a message for a human.
 
 ### Signals have the following fields:
 
