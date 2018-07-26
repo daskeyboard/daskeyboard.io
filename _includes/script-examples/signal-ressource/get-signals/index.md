@@ -1,6 +1,5 @@
 
 
-### get signals
 
 <div class="endpoint-container">
 GET /signals

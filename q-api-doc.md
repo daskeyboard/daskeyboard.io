@@ -38,32 +38,17 @@ The Q desktop will then communicate with the Q enabled device.
 -	Mobile apps will not see these signals
 
 
-<a name="signal-ressource-anchor" id="signal-ressource-anchor" class="anchor"></a>
 
-## Signals
 
-A signal is a message distributed via HTTP to a Q enabled device. This message may contain lighting
-color and effect information as well as a message for a human.
 
-### Signals have the following fields:
 
-{% include /script-examples/signal-ressource/ressource-description.html %}
 
-{% include /script-examples/signal-ressource/create-signal/index.md %}
 
-{% include /script-examples/signal-ressource/delete-signal/index.md %}
 
-{% include /script-examples/signal-ressource/get-shadow-signals-for-device/index.md %}
 
-{% include /script-examples/signal-ressource/get-all-shadow-signals/index.md %}
 
-{% include /script-examples/signal-ressource/get-signal-by-zone-id/index.md %}
 
-{% include /script-examples/signal-ressource/get-signal-color-by-zone-id/index.md %}
 
-{% include /script-examples/signal-ressource/delete-signal-by-zone-id/index.md %}
-
-{% include /script-examples/signal-ressource/get-signals/index.md %}
 
 
 
