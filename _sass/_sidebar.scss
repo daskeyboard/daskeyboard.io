@@ -4,7 +4,7 @@
     left: 0;
     width: 250px;
     overflow-y: auto;
-    height: 100%;
+    height: calc(90%);
     background: $background-color;
     border-right: 1px solid #cacaca;
 }
@@ -146,4 +146,11 @@
     margin-bottom: 0;
     padding-left: 0;
     list-style: none;
+}
+
+@media screen and (max-width:970px) {
+
+    .sidebar-items .badge{
+        display: none;
+    }
 }
