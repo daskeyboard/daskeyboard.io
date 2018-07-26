@@ -12,7 +12,6 @@ The shadows for a specific device can be fetched by making a GET HTTP request.
 #### Request parameters
 {% include /script-examples/signal-ressource/get-shadow-signals-for-device/request-description.html %}
 
-<a name="get-shadow-signals-for-device-anchor" id="get-shadow-signals-for-device-anchor" class="anchor"></a>
 
 ##### Request
 

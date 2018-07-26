@@ -12,7 +12,6 @@ The shadows all devices can be fetched by making a GET HTTP request.
 #### Request parameters
 None
 
-<a name="get-all-shadow-signals-anchor" id="get-all-shadow-signals-anchor" class="anchor"></a>
 
 ##### Request
 

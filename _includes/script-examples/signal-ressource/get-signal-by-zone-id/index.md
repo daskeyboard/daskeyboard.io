@@ -15,7 +15,7 @@ In all the cases the attribute to define the zone will be `zoneId`
 #### Request parameters
 {% include /script-examples/signal-ressource/get-signal-by-zone-id/request-description.html %}
 
-<a name="get-signal-by-zone-id-anchor" id="get-signal-by-zone-id-anchor" class="anchor"></a>
+
 
 ##### Request
 
