@@ -12,5 +12,5 @@ if res_signal.ok:
     print "OK"
     print res_signal.text
 else:
-    print "Error while sending the signal: " + res_signal.text
+    print "Error: " + res_signal.text
 ```

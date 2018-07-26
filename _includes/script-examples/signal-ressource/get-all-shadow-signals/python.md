@@ -12,5 +12,5 @@ if res_shadows.ok:
     print "OK"
     print res_shadows.text
 else:
-    print "Error while sending the signal: " + res_shadows.text
+    print "Error: " + res_shadows.text
 ```
