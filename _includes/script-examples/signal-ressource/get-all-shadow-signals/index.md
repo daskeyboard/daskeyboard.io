@@ -1,6 +1,5 @@
 
 
-### get all shadow signals
 
 <div class="endpoint-container">
 GET /signals/shadows

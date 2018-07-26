@@ -1,6 +1,5 @@
 
 
-### Get signal color by zoneId
 
 <div class="endpoint-container">
 GET /signals/pid/:pid/zoneId/:zoneId/color

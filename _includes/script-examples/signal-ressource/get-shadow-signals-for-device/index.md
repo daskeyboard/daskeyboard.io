@@ -1,6 +1,5 @@
 
 
-### get shadow signals for device
 
 <div class="endpoint-container">
 GET /signals/pid/:pid
