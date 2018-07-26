@@ -12,7 +12,6 @@ Fetch a list of signals using pagination
 
 {% include /script-examples/signal-ressource/get-signals/request-description.html %}
 
-<a name="get-signals-anchor" id="get-signals-anchor" class="anchor"></a>
 
 ##### Request
 
