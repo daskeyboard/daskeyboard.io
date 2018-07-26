@@ -21,7 +21,7 @@
 {% include /script-examples/signal-ressource/get-signal-by-zone-id/shell.md %}
 
 <!-- copy button -->
-<a class="btn btn-sm copy-action"  data-toggle="tooltip" data-placement="top" title="copy" onclick="copyToClipBoard('get-signal-by-zone-id-shell-local')"><i class="fa fa-copy"></i></a>
+<a class="btn btn-sm copy-action"  data-toggle="tooltip" data-placement="top" title="copy" onclick="copyToClipBoard('get-signal-by-zone-id-shell-local')"><i class="fa fa-copy"></i>&nbsp;Copy</a>
 
 <!-- edit button -->
 <a class="btn btn-sm edit-action" href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/signal-ressource/get-signal-by-zone-id/shell.md"><i class="fa fa-pencil"></i>&nbsp;Edit Script</a>
@@ -35,7 +35,7 @@
 {% include /script-examples/signal-ressource/get-signal-by-zone-id/node.md %}
 
 <!-- copy button -->
-<a class="btn btn-sm copy-action" data-toggle="tooltip" data-placement="top" title="copy"  onclick="copyToClipBoard('get-signal-by-zone-id-node-local')"><i class="fa fa-copy"></i></a>
+<a class="btn btn-sm copy-action" data-toggle="tooltip" data-placement="top" title="copy"  onclick="copyToClipBoard('get-signal-by-zone-id-node-local')"><i class="fa fa-copy"></i>&nbsp;Copy</a>
 
 <!-- edit button -->
 <a class="btn btn-sm edit-action"  href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/signal-ressource/get-signal-by-zone-id/node.md"><i class="fa fa-pencil"></i>&nbsp;Edit Script</a>
@@ -49,7 +49,7 @@
 {% include /script-examples/signal-ressource/get-signal-by-zone-id/python.md %}
 
 <!-- copy button -->
-<a class="btn btn-sm copy-action" data-toggle="tooltip" data-placement="top" title="copy"  onclick="copyToClipBoard('get-signal-by-zone-id-python-local')"><i class="fa fa-copy"></i></a>
+<a class="btn btn-sm copy-action" data-toggle="tooltip" data-placement="top" title="copy"  onclick="copyToClipBoard('get-signal-by-zone-id-python-local')"><i class="fa fa-copy"></i>&nbsp;Copy</a>
 
 <!-- edit button -->
 <a class="btn btn-sm edit-action"  href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/signal-ressource/get-signal-by-zone-id/python.md"><i class="fa fa-pencil"></i>&nbsp;Edit Script</a>

@@ -24,7 +24,7 @@ permalink: /script-examples/cpu-percentage/
 <div class="code active tab-pane" id="cpu-percentage-node" role="tabpanel" aria-labelledby="cpu-percentage-node-tab" markdown="1">
 {% include /script-examples/cpu-percentage/node.md %}
 <!-- copy button -->
-<a class="btn btn-sm copy-action" data-toggle="tooltip" data-placement="top" title="copy"  onclick="copyToClipBoard('cpu-percentage-node')"><i class="fa fa-copy"></i></a>
+<a class="btn btn-sm copy-action" data-toggle="tooltip" data-placement="top" title="copy"  onclick="copyToClipBoard('cpu-percentage-node')"><i class="fa fa-copy"></i>&nbsp;Copy</a>
 <!-- edit button -->
 <a class="btn btn-sm edit-action"  href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/cpu-percentage/node.md"><i class="fa fa-pencil"></i>&nbsp;Edit Script</a>
 </div>
@@ -34,7 +34,7 @@ permalink: /script-examples/cpu-percentage/
 <div class="code tab-pane" id="cpu-percentage-shell" role="tabpanel" aria-labelledby="cpu-percentage-shell-tab" markdown="1">
 {% include /script-examples/cpu-percentage/shell.md %}
 <!-- copy button -->
-<a class="btn btn-sm copy-action" data-toggle="tooltip" data-placement="top" title="copy"  onclick="copyToClipBoard('cpu-percentage-shell')"><i class="fa fa-copy"></i></a>
+<a class="btn btn-sm copy-action" data-toggle="tooltip" data-placement="top" title="copy"  onclick="copyToClipBoard('cpu-percentage-shell')"><i class="fa fa-copy"></i>&nbsp;Copy</a>
 <!-- edit button -->
 <a class="btn btn-sm edit-action"  href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/cpu-percentage/shell.md"><i class="fa fa-pencil"></i>&nbsp;Edit Script</a>
 </div>
