@@ -57,7 +57,7 @@ HTTP 200
   "id": 392,
   "name": "New Q app version available",
   "message": "Q App version 3 is available. Download it at https://www.daskeyboard.io/get-started/download/",
-  "zoneId": "2,3",
+  "zoneId": "2,4",
   "color": "#FF0000",
   "effect": "SET_COLOR",
   "pid": "DK5QPID",
