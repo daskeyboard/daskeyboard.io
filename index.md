@@ -125,7 +125,7 @@ hide_title: true
     <img src="{{ "images/homepage/capture-illumination.png"  | relative_url }}" width="1671" height="912" alt="Q software application in the Illumination mode.">
 </section>
 
-<section class="homepage__try_flutter card">
+<section class="homepage__try_daskeyboard card">
 
     <div class="homepage__try_today">Try Das Keyboard today. Getting started is easy.</div>
 
