@@ -39,7 +39,6 @@ In all the cases the parameter to define the zone will be `zoneId`
 {% include /script-examples/signal-ressource/delete-signal-by-zone-id/local/index.md %}
 </div>
 </div>
-<br>
 
 ##### Response
 

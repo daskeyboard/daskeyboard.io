@@ -30,7 +30,6 @@ Fetch a list of signals using pagination
 {% include /script-examples/signal-ressource/get-signals/cloud/with-api-key/index.md %}
 </div>
 </div>
-<br>
 
 ##### Response
 
