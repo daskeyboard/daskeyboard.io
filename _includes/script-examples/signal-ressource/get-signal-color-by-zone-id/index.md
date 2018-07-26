@@ -40,7 +40,6 @@ If there is no signal in the zone. The endpoint will return #000000
 {% include /script-examples/signal-ressource/get-signal-color-by-zone-id/local/index.md %}
 </div>
 </div>
-<br>
 
 ##### Response
 

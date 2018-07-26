@@ -42,7 +42,6 @@ In all the cases the attribute to define the zone will be `zoneId`
 {% include /script-examples/signal-ressource/get-signal-by-zone-id/local/index.md %}
 </div>
 </div>
-<br>
 
 ##### Response
 
