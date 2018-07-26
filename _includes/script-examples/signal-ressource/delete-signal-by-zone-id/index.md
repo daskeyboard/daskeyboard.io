@@ -1,7 +1,4 @@
 
-
-### DELETE signal by zoneId
-
 <div class="endpoint-container">
 DELETE /signals/pid/:pid/zoneId/:zoneId
 </div>
