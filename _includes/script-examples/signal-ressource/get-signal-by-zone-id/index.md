@@ -1,6 +1,5 @@
 
 
-### Get signal by zoneId
 
 <div class="endpoint-container">
 GET /signals/pid/:pid/zoneId/:zoneId

@@ -1,7 +1,4 @@
 
-
-### Create a signal
-
 <div class="endpoint-container">
 POST /signals
 </div>
