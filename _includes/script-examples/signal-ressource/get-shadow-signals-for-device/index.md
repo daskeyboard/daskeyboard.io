@@ -38,7 +38,6 @@ The shadows for a specific device can be fetched by making a GET HTTP request.
 {% include /script-examples/signal-ressource/get-shadow-signals-for-device/local/index.md %}
 </div>
 </div>
-<br>
 
 ##### Response
 

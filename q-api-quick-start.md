@@ -3,14 +3,22 @@ layout: page
 title: "Quick Start: Das Keyboard Q REST API"
 permalink: /q-api-quick-start/
 ---
-Das Keyboard 5Q RGB mechanical keyboard LEDs can be controlled over
-the Internet or over a local area network.
+Das Keyboard Q devices RGB LEDs are very simple to program.  
+
+<div class="alert alert-success" role="alert">
+Copy, paste the code below and start experimenting.
+</div>
+
+
+{% include /script-examples/signal-ressource/create-signal/code.md %}
+
+
 
 This quick start document covers the following:
 
 1. How it works
-1. Getting authentication tokens
-1. Sending a signal to a Q device
+2. Getting authentication tokens
+3. Sending a signal to a Q device
 
 NOTE: this example uses Linux `shell` command line.
 
