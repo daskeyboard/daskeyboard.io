@@ -100,40 +100,38 @@ aside > :not(pre) > code[class*="language-"], aside > pre[class*="language-"] {
 
 
 /** ANCHORs POSITION  tweaks */
-.anchor{
-    position: relative;
-    display: block;
-    height: 0;
-    width:0;
-}
+// .anchor{
+//     position: relative;
+//     display: block;
+//     height: 0;
+//     width:0;
+// }
 
-#create-signal-anchor, #signal-ressource-anchor{
-    top:-100px;      
-}
+// #create-signal-anchor, #signal-ressource-anchor{
+//     top:-100px;      
+// }
 
-#delete-signal-anchor {
-    top: -70px;
-}
+// #delete-signal-anchor {
+//     top: -70px;
+// }
 
-#get-shadow-signals-for-device-anchor {
-    top: -30px;
-}
-
-
-#get-all-shadow-signals-anchor {
-    top: -30px;
-}
-
-#get-signal-by-zone-id-anchor,
-#get-signal-color-by-zone-id-anchor {
-    top: -30px;
-}
-
-#get-signals {
-    top: -30px;
-}
+// #get-shadow-signals-for-device-anchor {
+//     top: -30px;
+// }
 
 
+// #get-all-shadow-signals-anchor {
+//     top: -30px;
+// }
+
+// #get-signal-by-zone-id-anchor,
+// #get-signal-color-by-zone-id-anchor {
+//     top: -30px;
+// }
+
+// #get-signals {
+//     top: -30px;
+// }
 
 /** END OF ANCHORs POSITION  tweaks */
 
