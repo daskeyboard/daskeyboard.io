@@ -84,7 +84,7 @@ $tab-accent-color: $brand-color;
 //   padding: 3.5em;
 // }
 
-.code  pre {
+.code > div:first-child {
   padding-top: 3.5em;
 }
 // end of css for the cloud or local collapsing tabs
