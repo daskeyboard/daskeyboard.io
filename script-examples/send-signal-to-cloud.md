@@ -41,7 +41,7 @@ permalink: /script-examples/send-signal-to-cloud/
 <div class="code tab-pane " id="send-one-signal-to-cloud-ruby" role="tabpanel" aria-labelledby="send-one-signal-to-cloud-ruby-tab" markdown="1">
 {% include /script-examples/send-signal-to-cloud/ruby.md %}
 <!-- copy button -->
-<a class="btn btn-sm copy-action"  data-toggle="tooltip" data-placement="top" title="copy" onclick="copyToClipBoard('send-one-signal-to-cloud-ruby')"><i class="fa fa-copy"></i></a>
+<a class="btn btn-sm copy-action"  data-toggle="tooltip" data-placement="top" title="copy" onclick="copyToClipBoard('send-one-signal-to-cloud-ruby')"><i class="fa fa-copy"></i>&nbsp;Copy</a>
 <!-- edit button -->
 <a class="btn btn-sm edit-action" href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/send-signal-to-cloud/ruby.md "><i class="fa fa-pencil"></i>&nbsp;Edit Script</a>
 </div>
@@ -51,7 +51,7 @@ permalink: /script-examples/send-signal-to-cloud/
 <div class="code tab-pane " id="send-one-signal-to-cloud-python" role="tabpanel" aria-labelledby="send-one-signal-to-cloud-python-tab" markdown="1">
 {% include /script-examples/send-signal-to-cloud/python.md %}
 <!-- copy button -->
-<a class="btn btn-sm copy-action"  data-toggle="tooltip" data-placement="top" title="copy" onclick="copyToClipBoard('send-one-signal-to-cloud-python')"><i class="fa fa-copy"></i></a>
+<a class="btn btn-sm copy-action"  data-toggle="tooltip" data-placement="top" title="copy" onclick="copyToClipBoard('send-one-signal-to-cloud-python')"><i class="fa fa-copy"></i>&nbsp;Copy</a>
 <!-- edit button -->
 <a class="btn btn-sm edit-action" href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/send-signal-to-cloud/python.md "><i class="fa fa-pencil"></i>&nbsp;Edit Script</a>
 </div>
@@ -61,7 +61,7 @@ permalink: /script-examples/send-signal-to-cloud/
 <div class="code tab-pane " id="send-one-signal-to-cloud-php" role="tabpanel" aria-labelledby="send-one-signal-to-cloud-php-tab" markdown="1">
 {% include /script-examples/send-signal-to-cloud/php.md %}
 <!-- copy button -->
-<a class="btn btn-sm copy-action"  data-toggle="tooltip" data-placement="top" title="copy" onclick="copyToClipBoard('send-one-signal-to-cloud-php')"><i class="fa fa-copy"></i></a>
+<a class="btn btn-sm copy-action"  data-toggle="tooltip" data-placement="top" title="copy" onclick="copyToClipBoard('send-one-signal-to-cloud-php')"><i class="fa fa-copy"></i>&nbsp;Copy</a>
 <!-- edit button -->
 <a class="btn btn-sm edit-action" href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/send-signal-to-cloud/php.md "><i class="fa fa-pencil"></i>&nbsp;Edit Script</a>
 </div>
@@ -72,7 +72,7 @@ permalink: /script-examples/send-signal-to-cloud/
 <div class="code tab-pane " id="send-one-signal-to-cloud-node" role="tabpanel" aria-labelledby="send-one-signal-to-cloud-node-tab" markdown="1">
 {% include /script-examples/send-signal-to-cloud/node.md %}
 <!-- copy button -->
-<a class="btn btn-sm copy-action"  data-toggle="tooltip" data-placement="top" title="copy" onclick="copyToClipBoard('send-one-signal-to-cloud-node')"><i class="fa fa-copy"></i></a>
+<a class="btn btn-sm copy-action"  data-toggle="tooltip" data-placement="top" title="copy" onclick="copyToClipBoard('send-one-signal-to-cloud-node')"><i class="fa fa-copy"></i>&nbsp;Copy</a>
 <!-- edit button -->
 <a class="btn btn-sm edit-action" href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/send-signal-to-cloud/node.md "><i class="fa fa-pencil"></i>&nbsp;Edit Script</a>
 </div>
@@ -83,7 +83,7 @@ permalink: /script-examples/send-signal-to-cloud/
 <div class="code tab-pane " id="send-one-signal-to-cloud-java" role="tabpanel" aria-labelledby="send-one-signal-to-cloud-java-tab" markdown="1">
 {% include /script-examples/send-signal-to-cloud/java.md %}
 <!-- copy button -->
-<a class="btn btn-sm copy-action"  data-toggle="tooltip" data-placement="top" title="copy" onclick="copyToClipBoard('send-one-signal-to-cloud-java')"><i class="fa fa-copy"></i></a>
+<a class="btn btn-sm copy-action"  data-toggle="tooltip" data-placement="top" title="copy" onclick="copyToClipBoard('send-one-signal-to-cloud-java')"><i class="fa fa-copy"></i>&nbsp;Copy</a>
 <!-- edit button -->
 <a class="btn btn-sm edit-action" href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/send-signal-to-cloud/java.md "><i class="fa fa-pencil"></i>&nbsp;Edit Script</a>
 </div>
@@ -93,7 +93,7 @@ permalink: /script-examples/send-signal-to-cloud/
 <div class="code tab-pane active" id="send-one-signal-to-cloud-go" role="tabpanel" aria-labelledby="send-one-signal-to-cloud-go-tab" markdown="1">
 {% include /script-examples/send-signal-to-cloud/go.md %}
 <!-- copy button -->
-<a class="btn btn-sm copy-action"  data-toggle="tooltip" data-placement="top" title="copy" onclick="copyToClipBoard('send-one-signal-to-cloud-go')"><i class="fa fa-copy"></i></a>
+<a class="btn btn-sm copy-action"  data-toggle="tooltip" data-placement="top" title="copy" onclick="copyToClipBoard('send-one-signal-to-cloud-go')"><i class="fa fa-copy"></i>&nbsp;Copy</a>
 <!-- edit button -->
 <a class="btn btn-sm edit-action" href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/send-signal-to-cloud/go.md "><i class="fa fa-pencil"></i>&nbsp;Edit Script</a>
 </div>

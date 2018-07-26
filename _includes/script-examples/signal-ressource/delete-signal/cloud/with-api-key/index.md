@@ -21,7 +21,7 @@
 {% include /script-examples/signal-ressource/delete-signal/shell.md %}
 
 <!-- copy button -->
-<a class="btn btn-sm copy-action" data-toggle="tooltip" data-placement="top" title="copy" onclick="copyToClipBoard('delete-signal-shell-cloud')"><i class="fa fa-copy"></i></a>
+<a class="btn btn-sm copy-action" data-toggle="tooltip" data-placement="top" title="copy" onclick="copyToClipBoard('delete-signal-shell-cloud')"><i class="fa fa-copy"></i>&nbsp;Copy</a>
 
 <!-- edit button -->
 <a class="btn btn-sm edit-action"  href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/signal-ressource/delete-signal/shell.md"><i class="fa fa-pencil"></i>&nbsp;Edit Script</a>
@@ -33,7 +33,7 @@
 {% include /script-examples/request-headers/cloud/with-api-key/node.md %}
 {% include /script-examples/signal-ressource/delete-signal/node.md %}
 <!-- copy button -->
-<a class="btn btn-sm copy-action" data-toggle="tooltip" data-placement="top" title="copy" onclick="copyToClipBoard('delete-signal-node-cloud')"><i class="fa fa-copy"></i></a>
+<a class="btn btn-sm copy-action" data-toggle="tooltip" data-placement="top" title="copy" onclick="copyToClipBoard('delete-signal-node-cloud')"><i class="fa fa-copy"></i>&nbsp;Copy</a>
 
 <!-- edit button -->
 <a class="btn btn-sm edit-action"  href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/signal-ressource/delete-signal/node.md"><i class="fa fa-pencil"></i>&nbsp;Edit Script</a>
@@ -46,7 +46,7 @@
 {% include /script-examples/request-headers/cloud/with-api-key/python.md %}
 {% include /script-examples/signal-ressource/delete-signal/python.md %}
 <!-- copy button -->
-<a class="btn btn-sm copy-action" data-toggle="tooltip" data-placement="top" title="copy" onclick="copyToClipBoard('delete-signal-python-cloud')"><i class="fa fa-copy"></i></a>
+<a class="btn btn-sm copy-action" data-toggle="tooltip" data-placement="top" title="copy" onclick="copyToClipBoard('delete-signal-python-cloud')"><i class="fa fa-copy"></i>&nbsp;Copy</a>
 
 <!-- edit button -->
 <a class="btn btn-sm edit-action"  href="https://github.com/DasKeyboard/Daskeyboard.io/blob/master/_includes/script-examples/signal-ressource/delete-signal/python.md"><i class="fa fa-pencil"></i>&nbsp;Edit Script</a>
