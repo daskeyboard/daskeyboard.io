@@ -40,7 +40,6 @@ A signal can be deleted by making a DELETE HTTP request using the signal id.
 {% include /script-examples/signal-ressource/delete-signal/local/index.md %}
 </div>
 </div>
-<br>
 
 ##### Response
 

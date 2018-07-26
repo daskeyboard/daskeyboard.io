@@ -38,7 +38,6 @@ None
 {% include /script-examples/signal-ressource/get-all-shadow-signals/local/index.md %}
 </div>
 </div>
-<br>
 
 ##### Response
 
