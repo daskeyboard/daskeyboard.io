@@ -6,7 +6,7 @@ permalink: /q-api-quick-start/
 Das Keyboard Q devices RGB LEDs are very simple to program.  
 
 <div class="alert alert-success" role="alert">
-Copy, paste the code below and start experimenting.
+Copy, paste the code below into a bash compatible terminal and start experimenting.
 </div>
 
 
@@ -16,7 +16,7 @@ Copy, paste the code below and start experimenting.
 
 This quick start document covers the following:
 
-1. How it works
+1. How it works: key concepts
 2. Getting authentication tokens
 3. Sending a signal to a Q device
 
@@ -26,7 +26,7 @@ NOTE: this example uses Linux `shell` command line.
 
 * use `git bash` which is available here: <https://gitforwindows.org/>.
 
-## How it works
+## Key Q concepts: How it works
 
 In order to control the RGB LEDs of a Q device, a user must send authenticated
 HTTP JSON requests to a Q REST API.
