@@ -6,9 +6,9 @@ permalink: /get-started/
 
 Welcome to the Das Keyboard Q. We will help :
 
-* download Q software
-* watch Welcome video
-* watch IFTTT and Zapier tutorial to connect your 5Q keyboard to the Internet and stay tuned
+* [download Q software]({{site.baseurl}}/get-started/download)
+* [watch Welcome video]({{site.baseurl}}/get-started/welcome-video)
+* watch [IFTTT]({{site.baseurl}}/get-started/ifttt-tutorial) and [Zapier]({{site.baseurl}}/get-started/zapier-tutorial) tutorial to connect your 5Q keyboard to the Internet and stay tuned
 
 ## First step
 
