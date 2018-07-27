@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Signals
-permalink: /api-ressources/signal/ressource-description
+permalink: /api-ressources/signal/ressource-description/
 ---
 
 
