@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Q Cloud or Localhost
-permalink: /q-cloud-or-local
+permalink: /q-cloud-or-local/
 ---
 
 

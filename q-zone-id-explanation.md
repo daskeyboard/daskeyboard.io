@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Understand zoneId
-permalink: /q-zone-id-explanation
+permalink: /q-zone-id-explanation/
 ---
 
 ### Zone as a key code
