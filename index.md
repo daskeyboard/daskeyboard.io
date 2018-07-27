@@ -115,14 +115,14 @@ hide_title: true
 </section>
 
 <section class="homepage__hot_reload card">
-    <h1>Illumination</h1>
+    <h1>Dashboard</h1>
 
     <p>
         The Dashboard view displays the latest signals received.
         Hovering over a key will display the notification content.
     </p>
 
-    <img src="{{ "images/homepage/capture-illumination.png"  | relative_url }}" width="1671" height="912" alt="Q software application in the Illumination mode.">
+    <img src="{{ "images/homepage/dashboard.png"  | relative_url }}" width="1671" height="912" alt="Q software application in the Illumination mode.">
 </section>
 
 <section class="homepage__try_daskeyboard card">
