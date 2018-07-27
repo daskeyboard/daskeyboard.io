@@ -50,7 +50,7 @@ function getCurrentUser() {
 
 function onLoginToQCloud() {
   const callbackUrl = window.location.pathname;
-  window.location = "https://qapp.daskeyboard.com/signals?source=q-documentation"
+  window.location = "https://qapp.daskeyboard.com?source=q-documentation"
     + '&callbackUrl=' + callbackUrl;
 }
 
