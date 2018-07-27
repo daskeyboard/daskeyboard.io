@@ -39,20 +39,21 @@ hide_title: true
         Control Das&nbsp;Keyboard RGB devices
     </h1>
 
-    <div class = "row" style="display: flex;">
-        <div class="col-md-6">
+    <div class="row">
+        <div class="col-md-12">
+                <img src="{{ "images/5Q-box-back.jpg"  | relative_url }}"
+                    alt="Animation of the 5Q keyboard receiving signals">
+        </div>
+    </div>
+
+<br>
+    <div class="row">
+            <div class="col-md-12">
             <div class="homepage__tagline">
             The Das Keyboard 5Q is a cloud connected keyboard that can display color notifications its keys. 
             Notifications come from Twitter, Gmail, eBay, Facebook and many others. 
             Hundreds of applications can be configured via IFTTT and Zapier, transforming the 5Q keyboard into a RGB dashboard. 
             An open REST API is available for programmers
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="hot-reload-gif-container">
-                <img src="{{ "images/5Q-box-back.jpg"  | relative_url }}"
-                    class="homepage__illustration--image"
-                    alt="Animation of the 5Q keyboard receiving signals">
             </div>
         </div>
     </div>
