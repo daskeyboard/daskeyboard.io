@@ -6,25 +6,23 @@ permalink: /q-api-quick-start/
 Das Keyboard Q devices RGB LEDs are very simple to program.  
 
 <div class="alert alert-success" role="alert">
-Copy, paste the code below into a bash compatible terminal and start experimenting.
+Copy, paste the code below into a bash compatible terminal and start experimenting (Windows, Linux or macOS).
 </div>
 
 
 {% include /script-examples/signal-ressource/create-signal/code.md %}
 
+NOTE: Examples uses Linux-style `shell` command line. It is also available on Windows:
 
+* `shell` command line is available when installing Linux Subsystem for Windows 10: <https://docs.microsoft.com/en-us/windows/wsl/install-win10>.
+
+* or when using `git bash` which is available here: <https://gitforwindows.org/>.
 
 This quick start document covers the following:
 
 1. How it works: key concepts
 2. Getting authentication tokens
 3. Sending a signal to a Q device
-
-NOTE: this example uses Linux `shell` command line.
-
-* `shell` command line is available on Windows when using Windows Subsystem for Linux on Windows 10: <https://docs.microsoft.com/en-us/windows/wsl/install-win10>.
-
-* use `git bash` which is available here: <https://gitforwindows.org/>.
 
 ## Key Q concepts: How it works
 
