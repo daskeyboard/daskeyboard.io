@@ -49,35 +49,34 @@ None
 HTTP 200
 [
   {
-    "clientName": "Local Node script",
-    "color": "#FF0000",
-    "createdAt": 1532476316779,
-    "effect": "SET_COLOR",
-    "id": 1293599,
-    "isArchived": false,
-    "isMuted": false,
-    "isRead": false,
-    "message": "Q App version 3 is available. Download it at https://www.daskeyboard.io/get-started/download/",
-    "name": "New Q app version available",
-    "pid": "DK5QPID",
-    "updatedAt": 1532476316782,
-    "userId": 9,
-    "zoneId": "KEY_P"
-  },
-  {
     "clientName": "IFTTT",
     "color": "#00FF00",
-    "createdAt": 1532549017586,
+    "createdAt": 1532970435297,
     "effect": "BLINK",
-    "id": 1295989,
+    "id": 1308193,
     "isArchived": false,
     "isMuted": false,
-    "message": null,
-    "name": "\"Twitter slammed for 'shadow banning' prominent Republicans\" via FOX NEWS",
+    "message": "Social media helps solve mystery of skier who disappeared in the Alps in 1954",
+    "name": "NEWS",
     "pid": "DK5QPID",
-    "updatedAt": 1532549017596,
+    "updatedAt": 1532970435299,
     "userId": 9,
     "zoneId": "78"
+  },
+  {
+    "clientName": "",
+    "color": "#00F",
+    "createdAt": 1532957910711,
+    "effect": "SET_COLOR",
+    "id": 1307671,
+    "isArchived": false,
+    "isMuted": false,
+    "message": "Monday: A longer and more intense wildfire season, a divisive rent control initiative, and Berkeley on a budget.https://www.nytimes.com/2018/07/30/us/california-today-firefighters.html",
+    "name": "new york times: California Today: The Increasing Strain on State Firefighters",
+    "pid": "DK5QPID",
+    "updatedAt": 1532957910713,
+    "userId": 9,
+    "zoneId": "128"
   }
 ]
 ```
