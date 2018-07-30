@@ -10,7 +10,7 @@ Copy, paste the code below into a bash compatible terminal and start experimenti
 </div>
 
 
-{% include /script-examples/signal-ressource/create-signal/code.md %}
+{% include /script-examples/signal-resource/create-signal/code.md %}
 
 NOTE: Examples uses Linux-style `shell` command line. It is also available on Windows:
 
