@@ -1,0 +1,45 @@
+
+.resource-description-table .example:before{
+  content: "Example: ";
+  color: $brand-color;
+  
+}
+
+.resource-description-table .example:after {
+  content:"\a";
+  white-space: pre;
+}
+
+.resource-description-table .type:before{
+  content: "Type: ";
+  color: $primary-color;
+  
+}
+
+.resource-description-table .type:after {
+  content:"\a";
+  white-space: pre;
+}
+
+.resource-description-table .read-only:before{
+  content: "Read-only: ";
+  color: $grey-color;
+  font-weight: bold;
+}
+
+.endpoint-container {
+  background-color: #f8f8f9;
+  border: 1px solid #e8eaeb;
+  border-radius: 3px;
+  padding: 15px 1.5em;
+  margin-bottom: 20px;
+}
+
+.resource-description-table th {
+  color: $grey-color;
+}
+
+.resource-description-table .note:before{
+  content:"Note: ";
+  color: $grey-color
+}
