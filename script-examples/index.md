@@ -6,7 +6,7 @@ permalink: /script-examples/
 
 Below are some script examples to demonstrate how to use the Q developer API with different languages:
 
-* [Create signal]({{site.baseurl}}/api-ressources/signal/create-signal)
+* [Create signal]({{site.baseurl}}/api-resources/signal/create-signal)
 * [Display CPU percentage]({{site.baseurl}}/script-examples/cpu-percentage/)
 * [Colorize all LEDs of the Q keyboard]({{site.baseurl}}/script-examples/colorize-keyboard/)
 * [Create a signal when the script find a keyword in a website]({{site.baseurl}}/script-examples/search-keyword-in-website-create-signal/)
