@@ -10,7 +10,7 @@ You can communicate with your device throught 2 different APIs.
 A cloud api and a local api
 
 ### Cloud API
-The script you right on any machine will communicate with the cloud,
+The script you write on any machine will communicate with the cloud,
 the cloud will communicate with the Q desktop installed on the computer and then the Q desktop will
 communicate to the Q enabled device plugged in on this computer.
 This script can be hosted on any online server and will still communicate with the Q enabled.
