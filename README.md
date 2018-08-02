@@ -1,38 +1,46 @@
 # Das Keyboard Q Documentation Website
 
-This is the source files repo for [Daskeyboard.io](Daskeyboard.io).
+These are the source files repo for [Daskeyboard.io](Daskeyboard.io).
 
 [![Build Status](https://travis-ci.com/DasKeyboard/Daskeyboard.io.svg?branch=master)](https://travis-ci.com/DasKeyboard/Daskeyboard.io/)
 
 ## Issues, bugs, and requests
 
-We welcome contributions and feedback on our website!
-Please file a request in our
-[issue tracker](https://github.com/DasKeyboard/q/issues/new)
-and we'll take a look.
+We welcome contributions and feedback about www.daskeyboard.io. Please contrubute
+pull requests or file issues as needed:
 
-## Developing
+- https://github.com/DasKeyboard/q/
 
-A tldr version follows:
+## Website development env setup:
 
-1. Ensure you have [Ruby](https://www.ruby-lang.org/en/documentation/installation/) installed; you need version 2.2.2 or later:<br>
-`ruby --version`
+This is a Jekyll website. 
 
-1. Ensure you have [Bundler](http://bundler.io/) installed; if not install with:<br>
+1. Install Ruby
+
+Version 2.2.2 or later:
+
+    ruby --version # check your version
+
+1. Install [Bundler](http://bundler.io/) 
+
 `gem install bundler`
 
-1. Install all dependencies:<br>
+1. Install all dependencies:
+
 `bundle install`
 
 1. Create a branch.
 
 1. Make your changes.
 
-1. Test your changes by serving the site locally:<br>
-`bundle exec jekyll serve` (or `jekyll serve -w --force_polling`)
+1. Test your changes by serving the site locally:
 
-1. Prior to submitting, run link validation:<br>
+  `bundle exec jekyll serve` (or `jekyll serve -w --force_polling`)
+
+1. Prior to submitting, run link validation:
+
 `rake checklinks`
+
 ### Adding next/previous page links
 
 If you have a document that spans multiple pages, you can add next and previous
@@ -95,12 +103,11 @@ Here's an example:
 
 <!-- skip -->
 
-	```dart
-	class SomeCode {
-	  String name;
-	}
-	```
-
+```dart
+class SomeCode {
+String name;
+}
+```
 
 See the list of supported languages above for what to use
 following the first triple backticks.
@@ -135,21 +142,6 @@ You can include a specific range of lines from a file:
 
 `PATH` must be inside of `_include`. If you are including source code,
 place that code into `_include/code` to follow our convention.
-
-## Code snippet validation
-
-The code snippets in the markdown documentation are validated as part of the
-build process. Anything within a '\`\`\`dart' code fence will be extracted into
-its own file and checked for analysis issues. Some ways to tweak that:
-
-* If a code snippet should not be analyzed, immediately proceed it with
-  a `<!-- skip -->` comment
-* To include code to be analyzed, but not displayed, add that in a comment
-  immediately proceeding the snippet (e.g., `<!-- someCodeHere(); -->`)
-* A snippet without any import statements will have an import
-  (`'package:Daskeyboard.io/material.dart'`)
-  automatically added to it
-* We ignore special formatting tags like `[[highlight]]`.
 
 ## Preventing broken links
 
