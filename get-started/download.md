@@ -27,10 +27,13 @@ permalink: /get-started/download/
         <li><b>Mac and Linux OS</b></li>
         <ol>
           <li>
-            At this point, the firmware upgrade has to be performed on a Windows computer even for Mac and Linux. Please note that the firmware upgrade only fixes some issues related to the hardware. It will not make the keyboard communicate with the Q Desktop software since the communication is handle by a service component that is not available yet for Mac and Linux.
+            At this point, the firmware upgrade has to be performed on a Windows computer even for Mac and Linux. Note that the firmware upgrade only fixes some issues related to the hardware. The 5Q still does NOT communicate with the Q Desktop software since the communication is handle by a service component that is not available yet for Mac and Linux.
+            </li>
+          <li>
+            To map the 5Q Windows key to Mac configuration:https://daskeyboard.mojohelpdesk.com/help/article/199507
             </li>
             <li>
-            You can still use some preconfigured color profiles that are embedded into the the firmware of the keyboard. All you have to do is press the FN key + 1-6 on the NUMPAD. To learn more, visit our <a href="https://daskeyboard.mojohelpdesk.com/help/article/199506">knowledge base.</a> 
+            Mac & Linux users can use preconfigured color profiles that are embedded into the firmware. Press `FN` + `1`-`6` on the NUMPAD to cycle through them. More info is located here: <a href="https://daskeyboard.mojohelpdesk.com/help/article/199506">knowledge base.</a> 
           </li>
         </ol>
       </ul>
