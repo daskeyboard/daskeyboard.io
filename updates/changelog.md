@@ -10,23 +10,23 @@ permalink: /updates/changelog/
 
 ### FIXED
 
-- the middle navbar is now aligned in the middle
-- The right and left pipes will display correctly the signal popovers on the dashboard view
-- for a key, selecting the effect `none` then selecting any other effect will display the correct effect
-- signal popover date and signal popover actions are now aligned
-- signal popover arrow is now inside the box
-- signal popover text will not be overflowing anymore
+- The middle navbar is now aligned in the middle
+- The right and left pipes will display the signal popovers correctly on the dashboard view
+- For a key, selecting the effect `none` then selecting any other effect will display the correct effect
+- Signal popover date and signal popover actions are now aligned
+- Signal popover arrow is now inside the box
+- Signal popover text will not be overflowing anymore
 
 ### NEW
 
-- ability to set IFTTT Applets inside the QApp
+- Ability to set IFTTT Applets inside the QApp
 
 
 ### UPDATED
 
-- all shadow signals route for the local API to be /signals/shadows instead of /signals
-- no return content for the delete request on the local API
-- select device from home page will always display dashboard view
+- All shadow signals route for the local API to be /signals/shadows instead of /signals
+- No return content for the delete request on the local API
+- Select device from home page will always display dashboard view
 
 ---
 
@@ -36,8 +36,8 @@ permalink: /updates/changelog/
 
 #### FIXED
 
-- if signal already present in a zone the new one will overwrite the old one correctly
-- breathing effect will not have another shadow color anymore
+- If signal already present in a zone the new one will overwrite the old one correctly
+- Breathing effect will not have another shadow color anymore
 
 ---
 
@@ -48,17 +48,17 @@ permalink: /updates/changelog/
 
 #### FIXED
 
-- api port was not showing for some users in the dashboard view
-- app was notifying for duplicated signals every 10 min.
-- changing device layout will now reload the signals in the correct zone
-- shadow signal was corrupted. The dashboard now displays the latest signal for each zone (shadow)
-- app no longer crashes with asynchronous calls to the localhost API
-- when a signal zone is not found, the space bar LED turns RED (instead of signal color)
+- API port was not showing for some users in the dashboard view
+- App was notifying for duplicated signals every 10 min.
+- Changing device layout will now reload the signals in the correct zone
+- Shadow signal was corrupted. The dashboard now displays the latest signal for each zone (shadow)
+- App no longer crashes with asynchronous calls to the localhost API
+- When a signal zone is not found, the space bar LED turns RED (instead of signal color)
 
 
 
 #### UPDATE
-- modified local API routes to be consistent with the cloud
+- Modified local API routes to be consistent with the cloud
 
 
 ### Q Desktop Service Improvements:
@@ -75,7 +75,7 @@ permalink: /updates/changelog/
 
 ### Release highlights: 
 
-- improved Signal Center response time 
+- Improved Signal Center response time 
 fixed local API time out in some cases.
 - OFFLINE MODE: Added ability to change device RGB colors without login to the cloud 
 - Added a QUIET MODE option to prevent interruption. In quiet mode only the RGB profiles are displayed on the devices. Signals are not displayed. Sound and notifications are disabled. Once the quiet mode is disabled, signals that came before, and new signals will be displayed as expected.
@@ -122,7 +122,7 @@ fixed local API time out in some cases.
 
 #### NEW
 
-* signal Center is now in the cloud and opens in an Electron Browser window;
+* Signal Center is now in the cloud and opens in an Electron Browser window;
 * updated welcome video;
 * clicking on a profile name will focus on profile name input;
 
