@@ -42,7 +42,7 @@ permalink: /get-started/download/
 <div class="homepage__button_row">
   <div style="text-align:center;"><a href="https://s3-us-west-2.amazonaws.com/q-desktop/2.0.0-beta.4/5Q+Flash+Upgrade.7.3.253.zip" class="get-started-button">Download 5Q firmware</a>
   <small><small style="margin-right: 40px;">All OS - Version 7.3.253</small></small></div>
-  <div style="text-align:center;"><a style="margin-right:0px;" href="https://s3-us-west-2.amazonaws.com/q-desktop/2.0.0-beta.9/Das-Keyboard-Q-Setup-2.0.0-beta.9.exe" class="get-started-button">Download Q desktop </a><small><small>For Windows only - Version 2.0.0-beta.9</small></small></div>
+  <div style="text-align:center;"><a style="margin-right:0px;" href="https://s3-us-west-2.amazonaws.com/q-software-releases/Das-Keyboard-Q-Setup-2.0.0.exe" class="get-started-button">Download Q desktop </a><small><small>For Windows only - Version 2.0.0</small></small></div>
 </div>
 
 ## Next step
