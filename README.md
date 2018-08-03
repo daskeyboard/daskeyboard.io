@@ -1,6 +1,6 @@
 # Das Keyboard Q Documentation Website
 
-This is the source files repo for [www.daskeyboard.io](www.daskeyboard.io).
+This is the source files repo for [https://www.daskeyboard.io](https://www.daskeyboard.io).
 
 [![Build Status](https://travis-ci.com/DasKeyboard/Daskeyboard.io.svg?branch=master)](https://travis-ci.com/DasKeyboard/Daskeyboard.io/)
 
