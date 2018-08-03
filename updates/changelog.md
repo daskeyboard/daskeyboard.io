@@ -4,6 +4,31 @@ title: Changelog Q Desktop Software
 permalink: /updates/changelog/
 ---
 
+## Version 2.0.0
+
+### Q Desktop Release Detail Improvements:
+
+### FIXED
+
+- the middle navbar is now aligned in the middle
+- The right and left pipes will display correctly the signal popovers on the dashboard view
+- for a key, selecting the effect `none` then selecting any other effect will display the correct effect
+- signal popover date and signal popover actions are now aligned
+- signal popover arrow is now inside the box
+- signal popover text will not be overflowing anymore
+
+### NEW
+
+- ability to set IFTTT Applets inside the QApp
+
+
+### UPDATED
+
+- all shadow signals route for the local API to be /signals/shadows instead of /signals
+- no return content for the delete request on the local API
+- select device from home page will always display dashboard view
+
+---
 
 ## Version 2.0.0-beta.9
 
