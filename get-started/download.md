@@ -46,11 +46,11 @@ permalink: /get-started/download/
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSdpQgxCFNOxWbiUu8PImeNb_je11C9-GguJRFGwK_Uf0YFmBw/viewform">beta tester</a>.</p>
 
 #### Downloads for Linux:
-- https://s3-us-west-2.amazonaws.com/q-software-releases/das-keyboard-q_2.0.0_amd64.deb
-- https://s3-us-west-2.amazonaws.com/q-software-releases/das-keyboard-q_2.0.0.x86_64.rpm
+- [https://s3-us-west-2.amazonaws.com/q-software-releases/das-keyboard-q_2.0.0_amd64.deb](https://s3-us-west-2.amazonaws.com/q-software-releases/das-keyboard-q_2.0.0_amd64.deb)
+- [https://s3-us-west-2.amazonaws.com/q-software-releases/das-keyboard-q_2.0.0.x86_64.rpm](https://s3-us-west-2.amazonaws.com/q-software-releases/das-keyboard-q_2.0.0.x86_64.rpm)
 
 #### Download for macOs:
-- https://s3-us-west-2.amazonaws.com/q-software-releases/Das+Keyboard+Q-2.0.0.dmg
+- [https://s3-us-west-2.amazonaws.com/q-software-releases/Das+Keyboard+Q-2.0.0.dmg](https://s3-us-west-2.amazonaws.com/q-software-releases/Das+Keyboard+Q-2.0.0.dmg)
 
 
 <div class="homepage__button_row">
