@@ -42,8 +42,16 @@ permalink: /get-started/download/
   </div>
 </div>
 
-<p>To access Mac and Linux software, become a 
+<p>We need your help to tests Mac and Linux software: become a 
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSdpQgxCFNOxWbiUu8PImeNb_je11C9-GguJRFGwK_Uf0YFmBw/viewform">beta tester</a>.</p>
+
+#### Downloads for Linux:
+- https://s3-us-west-2.amazonaws.com/q-software-releases/das-keyboard-q_2.0.0_amd64.deb
+- https://s3-us-west-2.amazonaws.com/q-software-releases/das-keyboard-q_2.0.0.x86_64.rpm
+
+#### Download for macOs:
+- https://s3-us-west-2.amazonaws.com/q-software-releases/Das+Keyboard+Q-2.0.0.dmg
+
 
 <div class="homepage__button_row">
   <div style="text-align:center;"><a href="https://s3-us-west-2.amazonaws.com/q-desktop/2.0.0-beta.4/5Q+Flash+Upgrade.7.3.253.zip" class="get-started-button">Download 5Q firmware</a>
