@@ -1,10 +1,12 @@
 ---
 layout: page
-title: Das Keyboard Q API Contributed Links
+title: Das Keyboard Q Contributed API Code Examples & Libraries
 permalink: /contributed-links/
 ---
 
-Code contributed by the community. Have something to share? Create a pull request.
+This code has been contributed by the community. 
+
+Have something interesting to share? Create a pull request and the Das Keyboard team will review it. The code should be working and we should understand what it does.
 
 - [QClient.NET - Q API Client for .Net Framework](https://github.com/wedge206/DasKeyboardQClient) ([Nuget](https://www.nuget.org/packages/DasKeyboardQClient))
 - [.Net Core library for access Q API](http://github.com/jordanbtucker/DasKeyboard.Q)
