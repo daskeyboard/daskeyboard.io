@@ -1,33 +1,32 @@
 ---
 layout: page
-title: Understand zoneId
+title: Understanding zoneId
 permalink: /q-zone-id-explanation/
 ---
 
-### Zone as a key code
-A key code is an easy to read representation of a zone. It is used to create a signal that will target
-a zone with `language` meaning.
-Examples:
+### A zone as key code
 
-* KEY_W for the Weather
-* KEY_B for a new email from the Boss
+A key code (e.g. `KEY_W`) is a human readable representation of a zone. It is used to identify a location. It is language dependant (e.g. German A key is not at the same place as the English one).
 
-The physical zone of the signal will change depending on the layout ( KEY_Y is not at the same place
-in a german and a US Layout)
+Example of zones:
+
+* KEY_W 
+* KEY_B 
+
 
 ![104Q.png](/images/104Q.png)
 
+TODO add link to all zones.
 
-### Zone as a 2D coordinate XY
-The zone as coordinate is a vector of 2 integer numbers used to indicate the position of a point
-in a grid.
-It is useful to make animations that are using mathematical equations.
+### Zone as a 2D coordinate XY (recommend)
+
+A zone can be expressed as an X,Y point coordinate.
 
 Examples:
 * 2,4
 * 10,5
 
-It is recommanded to use the coordinate system XY because it is compatible with every layouts.
+This is the recommanded way to address an LED because it is consistant across different layouts (EN, FR, etc...).
 
 In the following picture the Q Key will be addressed with the coordinates 2,2
 
@@ -35,6 +34,7 @@ In the following picture the Q Key will be addressed with the coordinates 2,2
 ![104Q.png](/images/104Q.png)
 
 ### Zone as a linear coordinate
+
 A linear coordinate is a 1D number
 
 In the following picture the Q Key will be addressed with the coordinates 74
