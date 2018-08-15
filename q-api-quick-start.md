@@ -6,7 +6,7 @@ permalink: /q-api-quick-start/
 Das Keyboard Q devices RGB LEDs are very simple to program.  
 
 <div class="alert alert-success" role="alert">
-Copy, paste the code below into a bash compatible terminal and start experimenting (Windows, Linux or macOS).
+Copy the `shell` code below and paste it into a bash compatible terminal to start experimenting (Windows, Linux or macOS).
 </div>
 
 
