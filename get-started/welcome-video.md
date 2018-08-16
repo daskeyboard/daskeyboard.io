@@ -10,4 +10,4 @@ permalink: /get-started/welcome-video/
 
 ## Next step
 
-[Next step: Watch IFTTT video]({{site.baseurl}}/get-started/ifttt-tutorial/)
+[Next step: Watch profile settings video]({{site.baseurl}}/get-started/creating-and-switching-profiles-tutorial/)
