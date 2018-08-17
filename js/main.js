@@ -210,7 +210,7 @@ function updateLoginDisplayElements(currentUserEmail) {
     // display welcome message
     $('#header-welcome-message').text('Welcome ' + currentUserEmail);
     $('#header-welcome-message').css('display', 'inline-block');
-    $('#header-welcome-message').css('font-weight','bold');
+    $('#header-welcome-message').css('font-weight', 'bold');
     // display logout action
     $('#logout-action').css('display', 'inline-block');
   } else {
@@ -299,6 +299,26 @@ function syntaxHighlight(json) {
  */
 
 
+/**
+ * Detects the os platform and architechture and change the download link of the Q software
+ * depending on this informations
+ */
+function loadDownloadLinkDependingOnOsArchitechture() {
+  if (navigator.platform.includes('Win32')) {
+    if (navigator.userAgent.indexOf("WOW64") != -1 ||
+      navigator.userAgent.indexOf("Win64") != -1) {
+      $('#windows-software-download-link').attr("href", "https://s3-us-west-2.amazonaws.com/q-desktop/2.0.1/Das-Keyboard-Q-x64-Setup-2.0.1.exe");
+      $('#windows-software-download-link').append(" 64 bit");
+
+    } else {
+      $('#windows-software-download-link').attr("href", "https://s3-us-west-2.amazonaws.com/q-desktop/2.0.1/Das-Keyboard-Q-ia32-Setup-2.0.1.exe");
+      $('#windows-software-download-link').append(" 32 bit");
+
+    }
+  }
+}
+
+
 
 $(document).ready(function () {
   const email = localStorage.getItem('email');
@@ -318,6 +338,7 @@ $(document).ready(function () {
 
 
   formatJSONCode();
+  loadDownloadLinkDependingOnOsArchitechture();
 
   // enable bootstrap tooltips
   $('[data-toggle="tooltip"]').tooltip();
