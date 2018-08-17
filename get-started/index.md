@@ -4,13 +4,12 @@ title: "Get Started: Overview"
 permalink: /get-started/
 ---
 
-Welcome to the Das Keyboard Q. We will help :
+# Welcome to the Das Keyboard Q software! 
 
-* [download Q software]({{site.baseurl}}/get-started/download)
-* [watch Welcome video]({{site.baseurl}}/get-started/welcome-video)
-* [watch profile settings video]({{site.baseurl}}/get-started/creating-and-switching-profiles-tutorial)
-* watch [IFTTT]({{site.baseurl}}/get-started/ifttt-tutorial) and [Zapier]({{site.baseurl}}/get-started/zapier-tutorial) tutorial to connect your 5Q keyboard to the Internet and stay tuned
+## Enhance your keyboard with the Q software by following these steps:
 
-## First step
+1. [Install the Q software and update the keyboard firmware]({{site.baseurl}}/get-started/download)
+2. Watch our [Welcome video]({{site.baseurl}}/get-started/welcome-video)
+3. Watch how to configure your [color_profiles]({{site.baseurl}}/get-started/creating-and-switching-profiles-tutorial)
+4. Watch the [IFTTT]({{site.baseurl}}/get-started/ifttt-tutorial) and [Zapier]({{site.baseurl}}/get-started/zapier-tutorial) tutorials to connect your keyboard to the Internet and stay tuned
 
-[Download Q firmware and Q software]({{site.baseurl}}/get-started/download/)
