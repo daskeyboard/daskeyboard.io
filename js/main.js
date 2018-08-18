@@ -338,7 +338,7 @@ $(document).ready(function () {
 
 
   formatJSONCode();
-  loadDownloadLinkDependingOnOsArchitechture();
+ // loadDownloadLinkDependingOnOsArchitechture();
 
   // enable bootstrap tooltips
   $('[data-toggle="tooltip"]').tooltip();
