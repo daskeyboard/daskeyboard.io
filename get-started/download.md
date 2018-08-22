@@ -42,8 +42,19 @@ permalink: /get-started/download/
   </div>
 </div>
 
+
+<div class="homepage__button_row">
+  <div style="text-align:center;"><a href="https://s3-us-west-2.amazonaws.com/q-desktop/2.0.0-beta.4/5Q+Flash+Upgrade.7.3.253.zip" class="get-started-button">Download 5Q firmware</a>
+  <small><small style="margin-right: 40px;">All OS - Version 7.3.253</small></small></div>
+  <div style="text-align:center;"><a style="margin-right:0px;" href="https://s3-us-west-2.amazonaws.com/q-desktop/2.0.1/Das-Keyboard-Q-ia32-Setup-2.0.1.exe" class="get-started-button" id="windows-software-download-link">Download Q desktop </a><small><small>For Windows only - Version 2.0.1</small></small></div>
+</div>
+
 <p>We need your help to tests Mac and Linux software: become a 
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSdpQgxCFNOxWbiUu8PImeNb_je11C9-GguJRFGwK_Uf0YFmBw/viewform">beta tester</a>.</p>
+
+#### Downloads for Windows:
+- [https://s3-us-west-2.amazonaws.com/q-desktop/2.0.1/Das-Keyboard-Q-x64-Setup-2.0.1.exe](https://s3-us-west-2.amazonaws.com/q-desktop/2.0.1/Das-Keyboard-Q-x64-Setup-2.0.1.exe)
+- [https://s3-us-west-2.amazonaws.com/q-desktop/2.0.1/Das-Keyboard-Q-ia32-Setup-2.0.1.exe](https://s3-us-west-2.amazonaws.com/q-desktop/2.0.1/Das-Keyboard-Q-ia32-Setup-2.0.1.exe)
 
 #### Downloads for Linux:
 - [https://s3-us-west-2.amazonaws.com/q-software-releases/das-keyboard-q_2.0.0_amd64.deb](https://s3-us-west-2.amazonaws.com/q-software-releases/das-keyboard-q_2.0.0_amd64.deb)
@@ -53,11 +64,6 @@ permalink: /get-started/download/
 - [https://s3-us-west-2.amazonaws.com/q-software-releases/Das+Keyboard+Q-2.0.0.dmg](https://s3-us-west-2.amazonaws.com/q-software-releases/Das+Keyboard+Q-2.0.0.dmg)
 
 
-<div class="homepage__button_row">
-  <div style="text-align:center;"><a href="https://s3-us-west-2.amazonaws.com/q-desktop/2.0.0-beta.4/5Q+Flash+Upgrade.7.3.253.zip" class="get-started-button">Download 5Q firmware</a>
-  <small><small style="margin-right: 40px;">All OS - Version 7.3.253</small></small></div>
-  <div style="text-align:center;"><a style="margin-right:0px;" href="https://s3-us-west-2.amazonaws.com/q-desktop/2.0.1/Das-Keyboard-Q-Setup-2.0.1.exe" class="get-started-button" id="windows-software-download-link">Download Q desktop </a><small><small>For Windows only - Version 2.0.1</small></small></div>
-</div>
 
 ## Next step
 
