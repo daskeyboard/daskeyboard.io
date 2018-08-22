@@ -4,6 +4,27 @@ title: Changelog Q Desktop Software
 permalink: /updates/changelog/
 ---
 
+## Version 2.0.1
+
+### Q Desktop Release Detail Improvements:
+
+### FIXED
+
+- The dashboard view will no longer show a blank screen when a signal message has no content
+- fixed the key mapping of the Danish, French and Italian layouts
+
+### NEW
+
+- added the ability to show the welcome artifacts again from the preferences menu
+- added the ability to access the IFTTT signals configuration from the dashboard screen
+- added separate builds for Windows 32-bit and Windows 64-bit support
+
+### UPDATED
+
+- changed the q-button press detection method to conform with industry standards
+
+---
+
 ## Version 2.0.0
 
 ### Q Desktop Release Detail Improvements:
