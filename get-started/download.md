@@ -44,8 +44,8 @@ permalink: /get-started/download/
 
 
 <div class="homepage__button_row">
-  <div style="text-align:center;"><a href="https://s3-us-west-2.amazonaws.com/q-software-releases/5Q+Flash+Upgrade.7.4.5.exe" class="get-started-button">Download 5Q firmware</a>
-  <small><small style="margin-right: 40px;">All OS - Version 7.4.5</small></small></div>
+  <div style="text-align:center;"><a href="https://s3-us-west-2.amazonaws.com/q-software-releases/5Q+Flash+Upgrade.7.3.253.exe" class="get-started-button">Download 5Q firmware</a>
+  <small><small style="margin-right: 40px;">All OS - Version 7.3.253</small></small></div>
   <div style="text-align:center;"><a style="margin-right:0px;" href="https://s3-us-west-2.amazonaws.com/q-desktop/2.0.1/Das-Keyboard-Q-ia32-Setup-2.0.1.exe" class="get-started-button" id="windows-software-download-link">Download Q desktop </a><small><small>For Windows only - Version 2.0.1</small></small></div>
 </div>
 
