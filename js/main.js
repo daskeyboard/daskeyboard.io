@@ -318,9 +318,32 @@ function loadDownloadLinkDependingOnOsArchitechture() {
   }
 }
 
+/**
+ * Detects the device pid given in param in the URL 
+ * and change the download fw link button depending on the pid
+ */
+function loadFirmwareDeviceDependingOnPidParam() {
+  const pid = getParameterByName('devicePid', window.location.href);
+  switch (pid) {
+    case 'DK5QPID':
+      $('#firmware-download-button').attr("href", "https://s3-us-west-2.amazonaws.com/q-desktop/5Q+Flash+Upgrade.7.4.9.exe");
+      $('#firmware-download-button').text("Download 5Q firmware");
+      break;
+    case 'X50QPID':
+      $('#firmware-download-button').attr("href", "https://s3-us-west-2.amazonaws.com/q-desktop/DasKeyboard+X50+-+Firmware+Updater+-+57.0.0.exe");
+      $('#firmware-download-button').text("Download X50Q firmware");
+      break;
+    default:
+      $('#firmware-download-button').attr("href", "https://s3-us-west-2.amazonaws.com/q-desktop/5Q+Flash+Upgrade.7.4.9.exe");
+      $('#firmware-download-button').text("Download 5Q firmware");
+      break;
+  }
+}
+
 
 
 $(document).ready(function () {
+  loadFirmwareDeviceDependingOnPidParam();
   const email = localStorage.getItem('email');
   const apiKey = getStoredAPIKey();
   console.log('apiKey', apiKey);
@@ -338,7 +361,8 @@ $(document).ready(function () {
 
 
   formatJSONCode();
- loadDownloadLinkDependingOnOsArchitechture();
+  loadDownloadLinkDependingOnOsArchitechture();
+
 
   // enable bootstrap tooltips
   $('[data-toggle="tooltip"]').tooltip();
