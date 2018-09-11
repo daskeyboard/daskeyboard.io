@@ -4,6 +4,14 @@ title: Changelog Q Desktop Software
 permalink: /updates/changelog/
 ---
 
+## Version 2.0.2-beta.1 (Mac only)
+
+### Q Desktop Release Detail Improvements:
+
+### NEW
+
+- added communication with the keyboard from MacOS. All application features are the same as for Windows.
+
 ## Version 2.0.1
 
 ### Q Desktop Release Detail Improvements:
