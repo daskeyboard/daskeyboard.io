@@ -307,11 +307,11 @@ function loadDownloadLinkDependingOnOsArchitechture() {
   if (navigator.platform.includes('Win32')) {
     if (navigator.userAgent.indexOf("WOW64") != -1 ||
       navigator.userAgent.indexOf("Win64") != -1) {
-      $('#windows-software-download-link').attr("href", "https://s3-us-west-2.amazonaws.com/q-desktop/2.0.1/Das-Keyboard-Q-x64-Setup-2.0.1.exe");
+      $('#windows-software-download-link').attr("href", "https://s3-us-west-2.amazonaws.com/q-desktop/2.0.2/Das-Keyboard-Q-x64-Setup-2.0.2.exe");
       $('#windows-software-download-link').append(" 64 bit");
 
     } else {
-      $('#windows-software-download-link').attr("href", "https://s3-us-west-2.amazonaws.com/q-desktop/2.0.1/Das-Keyboard-Q-ia32-Setup-2.0.1.exe");
+      $('#windows-software-download-link').attr("href", "https://s3-us-west-2.amazonaws.com/q-desktop/2.0.2/Das-Keyboard-Q-ia32-Setup-2.0.2.exe");
       $('#windows-software-download-link').append(" 32 bit");
 
     }
