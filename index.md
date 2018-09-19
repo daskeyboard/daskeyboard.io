@@ -7,7 +7,7 @@ hide_title: true
 
 <div class="homepage__illustration">
     <h1 class="homepage__illustration--text">
-        <span>Das Keyboard Q is now in Beta!!</span>
+        <span>The Home of Das Keyboard Q</span>
         &nbsp;
     </h1>
     
@@ -50,10 +50,10 @@ hide_title: true
     <div class="row">
             <div class="col-md-12">
             <div class="homepage__tagline">
-            The Das Keyboard 5Q is a cloud connected keyboard that can display color notifications its keys. 
+            The Das Keyboard 5Q is a cloud connected keyboard that can display color notifications its keys and control IOT devices. 
             Notifications come from Twitter, Gmail, eBay, Facebook and many others. 
-            Hundreds of applications can be configured via IFTTT and Zapier, transforming the 5Q keyboard into a RGB dashboard. 
-            An open REST API is available for programmers
+            Hundreds of applications can be configured via IFTTT and Zapier, transforming the 5Q keyboard into a command center. 
+            An REST API is available for programmers.
             </div>
         </div>
     </div>
