@@ -10,8 +10,6 @@ The Q Control Center can control Nest thermostats, Hue bulbs, doors and millions
 Das Keyboard Q Series. This video shows how to control a Philips Hue light:
 
 <div class="embed-container">
-
-<iframe width="560" height="315" src="https://youtu.be/ebWXyOtjbQw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ebWXyOtjbQw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
 ## Next step
