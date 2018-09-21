@@ -65,7 +65,7 @@ permalink: /get-started/download/
 - [https://s3-us-west-2.amazonaws.com/q-software-releases/das-keyboard-q_2.0.0.x86_64.rpm](https://s3-us-west-2.amazonaws.com/q-software-releases/das-keyboard-q_2.0.0.x86_64.rpm)
 
 #### Download for macOs:
-- [https://s3-us-west-2.amazonaws.com/q-software-releases/Das+Keyboard+Q-2.0.0.dmg](https://s3-us-west-2.amazonaws.com/q-software-releases/Das+Keyboard+Q-2.0.0.dmg)
+- [https://s3-us-west-2.amazonaws.com/q-desktop/2.0.2-beta.2/DasKeyboardQ.pkg]https://s3-us-west-2.amazonaws.com/q-desktop/2.0.2-beta.2/DasKeyboardQ.pkg)
 
 ### Firmware downloads
 
