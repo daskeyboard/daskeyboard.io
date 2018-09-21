@@ -48,7 +48,7 @@ permalink: /get-started/download/
    id="firmware-download-button"
    class="get-started-button"></a>
   <small><small style="margin-right: 40px;">All OS - Version 7.4.9</small></small></div>
-  <div style="text-align:center;"><a style="margin-right:0px;" href="https://s3-us-west-2.amazonaws.com/q-desktop/2.0.2/Das-Keyboard-Q-ia32-Setup-2.0.2.exe" class="get-started-button" id="windows-software-download-link">Download Q desktop </a><small><small>For Windows only - Version 2.0.2</small></small></div>
+  <div style="text-align:center;"><a style="margin-right:0px;" href="https://s3-us-west-2.amazonaws.com/q-desktop/2.0.2/Das-Keyboard-Q-ia32-Setup-2.0.2.exe" class="get-started-button" id="software-download-button">Download Q desktop </a><small><small id="software-version-number">Version 2.0.2</small></small></div>
 </div>
 
 <p>We need your help to tests Mac and Linux software: become a 
