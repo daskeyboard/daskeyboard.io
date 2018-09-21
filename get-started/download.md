@@ -23,7 +23,8 @@ permalink: /get-started/download/
 <div >
 <h5 class="card-title">Important instructions before software upgrade</h5>
 
-<h6>Instruction for uninstalling the first mac version (2.0.2-beta.1)</h6>
+<h6><b>Mac Only: </b></h6>
+If you have the mac version 2.0.2-beta.1 <b>you need to uninstall </b>it using the following instructions:
 
 <ul>
 <li> open the Application Terminal located in the folder /Applications/Utilities</li>
