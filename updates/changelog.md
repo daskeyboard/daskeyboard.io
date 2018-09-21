@@ -4,6 +4,42 @@ title: Changelog Q Desktop Software
 permalink: /updates/changelog/
 ---
 
+## Version 2.0.2 (Windows) and 2.0.2-beta.2 (MacOS)
+## Date released: September 21, 2018
+
+### Q Desktop Release Detail Improvements:
+
+### Known Problems (Mac Beta)
+
+On some occasions we have seen the MacOS version of the Q Service (das_keyboard_q-service) take a large amount of CPU. If you encounter this problem, please contact us through our helpdesk: https://daskeyboard.mojohelpdesk.com/mytickets/create#/ticket-form/28283
+
+### FIXED
+
+- Mac only: Application now quits correctly
+- Mac only: Application now launches at startup
+- Mac only: Changed service name and executables to include the words "das" and "keyboard"
+- Firmware available button will disappear after upgrading the firmware
+- 105 layout is now correclty supported for X50 keyboards
+- "New Firmware available" button will disappear from the Q-App home screen after updating to latest FW is successful
+- X50 now supports colors formated with 3 hex (#F00)
+
+
+### NEW
+
+- Command Center is now available to control IoT devices. Link to tutorial: https://youtu.be/JWsuqvezVKs
+- if isMuted attribute of a Signal is set to true, the app will not notify the user and the Q-button will not turn green for this signal
+- added LASER, INWARD_RIPPLE, RIPPLE active effect triggered with Signal on x50 device
+- if a local file is corrupted, the user will be notified and the file will be deleted
+
+
+### UPDATED
+
+- Signals refresh frequnecy is not 15s
+- Signals are now displayed on all connected devices. Notifications are no longer device specific
+- logfile format changed from .log to .json.
+
+---
+
 ## Version 2.0.2-beta.1 (Mac only)
 
 ### Q Desktop Release Detail Improvements:
