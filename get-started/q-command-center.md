@@ -7,7 +7,7 @@ permalink: /get-started/q-command-center/
 ## Q Control Center: Control IOT devices
 
 The Q Control Center can control Nest thermostats, Hue bulbs, doors and millions of other IOT devices from
-Das Keyboard Q Series. This video shows how to control a Philips Hue light.
+Das Keyboard Q Series. This video shows how to control a Philips Hue light:
 
 <div class="embed-container">
 
