@@ -16,7 +16,8 @@
     font-weight: 300;
 
     // #9a9a9b == rgb(154, 154, 155)
-    box-shadow: 0 2px 2px rgba(154, 154, 155, 0.75);;
+    box-shadow: 0 2px 2px rgba(154, 154, 155, 0.75);
+    min-height: 105px;
 }
 
 .get-started-button:hover {
