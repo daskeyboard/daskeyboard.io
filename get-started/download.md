@@ -14,8 +14,8 @@ permalink: /get-started/download/
   <div style="text-align:center;"><a
    id="firmware-download-button"
    class="get-started-button"></a>
-  <small><small style="margin-right: 40px;">All OS - Version 7.4.9</small></small></div>
-  <div style="text-align:center;"><a style="margin-right:0px;" href="https://s3-us-west-2.amazonaws.com/q-desktop/2.0.2/Das-Keyboard-Q-ia32-Setup-2.0.2.exe" class="get-started-button" id="software-download-button">Download Q desktop </a><small><small id="software-version-number">Version 2.0.2</small></small></div>
+  <small><small style="margin-right: 40px;">Windows - Version 7.4.9</small></small></div>
+  <div style="text-align:center;"><a style="margin-right:0px;" href="https://s3-us-west-2.amazonaws.com/q-desktop/2.0.2/Das-Keyboard-Q-ia32-Setup-2.0.2.exe" class="get-started-button" id="software-download-button">Download Das&nbsp;Keyboard&nbsp;Q </a><small><small id="software-version-number">Version 2.0.2</small></small></div>
 </div>
 
 

@@ -323,6 +323,7 @@ function loadDownloadLinkDependingOnOsArchitechture() {
   }
   if (navigator.platform.includes('MacIntel')) {
     $('#software-download-button').attr("href", "https://s3-us-west-2.amazonaws.com/q-desktop/2.0.2-beta.2/DasKeyboardQ.pkg");
+    $('#software-download-button').append(" 64 bit");
     $('#software-version-number').append("-beta.2");
     $('#software-version-number').append(" Mac");
     return;
@@ -341,15 +342,15 @@ function loadFirmwareDeviceDependingOnPidParam() {
   switch (pid) {
     case 'DK5QPID':
       $('#firmware-download-button').attr("href", "https://s3-us-west-2.amazonaws.com/q-desktop/5Q+Flash+Upgrade.7.4.9.exe");
-      $('#firmware-download-button').text("Download 5Q firmware");
+      $('#firmware-download-button').text("Download 5Q firmware installer");
       break;
     case 'X50QPID':
       $('#firmware-download-button').attr("href", "https://s3-us-west-2.amazonaws.com/q-desktop/DasKeyboard+X50+-+Firmware+Updater+-+57.0.0.exe");
-      $('#firmware-download-button').text("Download X50Q firmware");
+      $('#firmware-download-button').text("Download X50Q firmware installer");
       break;
     default:
       $('#firmware-download-button').attr("href", "https://s3-us-west-2.amazonaws.com/q-desktop/5Q+Flash+Upgrade.7.4.9.exe");
-      $('#firmware-download-button').text("Download 5Q firmware");
+      $('#firmware-download-button').text("Download 5Q firmware installer");
       break;
   }
 }
