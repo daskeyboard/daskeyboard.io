@@ -17,3 +17,4 @@ Have something interesting to share? Create a pull request and the Das Keyboard 
 - [Bash scripting examples](https://github.com/drockney/q/tree/master/bash) against the local API, such as clearing all the local signals and lighting the Q key red if the Q Cloud API isn't available.
 - [PowerShell Wrapper](https://github.com/jfrmilner/PowerShell-DasKeyboardQ) Local and Cloud APIs, Pipelining, inbuilt OAuth token and credential management. 
 - [Node-based Native Interface](https://github.com/diefarbe/node-lib)
+- [Q CPU Usage](https://github.com/AhmedLoud/QcpuUsage)
