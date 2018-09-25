@@ -49,22 +49,7 @@ If there is no signal in the zone. The endpoint will return #000000
 
 ```json
 HTTP 200
-{
-  "id": 392,
-  "name": "New Q app version available",
-  "message": "Q App version 3 is available. Download it at https://www.daskeyboard.io/get-started/download/",
-  "zoneId": "2,4",
-  "color": "#FF0000",
-  "effect": "SET_COLOR",
-  "pid": "DK5QPID",
-  "isArchived": false,
-  "isRead": false,
-  "isMuted": false,
-  "userId": 9,
-  "clientName": "Local Node script",
-  "createdAt": 1531946199392,
-  "updatedAt": 1531946199392
-}
+#FF0000
 ```
 
 </div>
