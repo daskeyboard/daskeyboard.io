@@ -36,11 +36,11 @@ We need your help to test Mac and Linux software: become a [beta tester](https:/
 <div class="homepage__button_row">
   <div style="text-align:center;">
     <a style="margin-right:0px;"
-      href="https://s3-us-west-2.amazonaws.com/q-desktop/2.0.2/Das-Keyboard-Q-ia32-Setup-2.0.2.exe"
+      href="https://s3-us-west-2.amazonaws.com/q-software-releases/2.0.3/Das-Keyboard-Q-ia32-Setup-2.0.3.exe"
       class="get-started-button"
       id="software-download-button">Download Das&nbsp;Keyboard&nbsp;Q </a>
     <small>
-      <small id="software-version-number">Version 2.0.2</small>
+      <small id="software-version-number">Version 2.0.3</small>
     </small>
   </div>
 </div>
