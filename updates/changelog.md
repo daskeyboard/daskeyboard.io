@@ -20,7 +20,7 @@ permalink: /updates/changelog/
 - All incomming notifications are now displayed (MAC only, already working on Windows)
 - Profile list no longer bounces when deleting the latest profile
 - New version popup notification is now OS specific
-- Notifications will not be duplicated every 10 (MAC only, already working on Windows)
+- Notifications will not be duplicated every 10 min (MAC only, already working on Windows)
 
 ### UPDATED
 
