@@ -19,6 +19,7 @@ permalink: /get-started/firmware/
   - At this point, the firmware upgrade has to be performed on a Windows computer even for Mac and Linux. Note that the firmware upgrade only fixes some issues related to the hardware. The 5Q still does NOT communicate with the Q Desktop software since the communication is handle by a service component that is not available yet for Mac and Linux
   - To map the 5Q Windows key to Mac configuration: https://daskeyboard.mojohelpdesk.com/help/article/199507
   - Mac & Linux users can use preconfigured color profiles that are embedded into the firmware. Press `FN` + `1`-`6` on the NUMPAD to cycle through them. More info is located here: knowledge base
+  - macOS is not supported by X50Q for now
 
 <div class="alert alert-danger mt-3" role="alert">
 Please DO NOT unplug or use the keyboard during the upgrade process or you will brick your device.
