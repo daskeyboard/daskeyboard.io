@@ -4,6 +4,36 @@ title: Changelog Q Desktop Software
 permalink: /updates/changelog/
 ---
 
+## Version 2.0.3 (Windows) and 2.0.3-beta (MacOS)
+
+## Date released: September 28, 2018
+
+### Das Keyboard Q-Desktop Release Notes:
+
+### FIXED
+
+- Latest selected profile will be restored after reboot even with connectivity loss
+- Local API signal endpoint implements PID attribute `Q_MATRIX` to trigger all connected devices
+- MAC installer now successfully quits the previous Das Keyboard Q application before install
+- When device is disconnected, `firmware upgrade available` button will not be displayed anymore
+- X50Q Q-Button will trigger the signal center (Windows only)
+- All incomming notifications are now displayed (MAC only, already working on Windows)
+- Profile list no longer bounces when deleting the latest profile
+- New version popup notification is now OS specific
+- Notifications will not be duplicated every 10 (MAC only, already working on Windows)
+
+### UPDATED
+
+- Updated the names of executables and services to include "Das Keyboard Q" (Windows only)
+- Multiple zone selection on the `Edit` mode uses CMD + click instead of CTRL + click (MAC only)
+
+### Known Problems (Mac Beta Only)
+
+In rare cases, the MacOS Q Service `das_keyboard_q-service` uses too much CPU resource. 
+If you encounter this problem, please post a message on the qforum and describe your setup: https://qforum.daskeyboard.com/.
+
+
+---
 ## Version 2.0.2 (Windows) and 2.0.2-beta.2 (MacOS)
 
 ## Date released: September 21, 2018
