@@ -11,8 +11,8 @@ permalink: /updates/changelog-firmware/
 
 ### FIXED
 
-- Changing to breathe red (255,32,32) shows some blue - doesn't appear at the very beginning. 
-- MFG Mode on 105 key keyboards - some LEDs are not properly lit in Sticky Key Test
-- Improved detection of the volume knob  
+- Changing to breathe red (255,32,32) shows some blue after a few seconds. 
+- Some LEDs are not properly lit on the European layouts
+- Improved detection of turning the volume up or down with the voume knob
 
 
