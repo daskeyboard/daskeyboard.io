@@ -343,14 +343,18 @@ function loadFirmwareDeviceDependingOnPidParam() {
     case 'DK5QPID':
       $('#firmware-download-button').attr("href", "https://s3-us-west-2.amazonaws.com/q-software-releases/Firmware-releases/5Q/5Q+Flash+Upgrade.7.4.18.exe");
       $('#firmware-download-button').text("Download 5Q firmware installer");
+      $('#firmware-download-version').text("Version 7.4.18");
       break;
     case 'X50QPID':
       $('#firmware-download-button').attr("href", "https://s3-us-west-2.amazonaws.com/q-desktop/DasKeyboard+X50+-+Firmware+Updater+-+57.0.0.exe");
       $('#firmware-download-button').text("Download X50Q firmware installer");
+      $('#firmware-download-version').text("Version 57.0.0");
       break;
     default:
       $('#firmware-download-button').attr("href", "https://s3-us-west-2.amazonaws.com/q-software-releases/Firmware-releases/5Q/5Q+Flash+Upgrade.7.4.18.exe");
       $('#firmware-download-button').text("Download 5Q firmware installer");
+      $('#firmware-download-version').text("Version 7.4.18");
+
       break;
   }
 }
