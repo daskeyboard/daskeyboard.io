@@ -40,7 +40,7 @@ Please DO NOT unplug or use the keyboard during the upgrade process or you will 
 ### Firmware downloads
 
 #### 5Q
-- [https://s3-us-west-2.amazonaws.com/q-desktop/5Q+Flash+Upgrade.7.4.9.exe](https://s3-us-west-2.amazonaws.com/q-desktop/5Q+Flash+Upgrade.7.4.9.exe)
+- [https://s3-us-west-2.amazonaws.com/q-software-releases/Firmware-releases/5Q/5Q+Flash+Upgrade.7.4.18.exe](https://s3-us-west-2.amazonaws.com/q-software-releases/Firmware-releases/5Q/5Q+Flash+Upgrade.7.4.18.exe)
 
 #### X50Q
 - [https://s3-us-west-2.amazonaws.com/q-desktop/DasKeyboard+X50+-+Firmware+Updater+-+57.0.0.exe](https://s3-us-west-2.amazonaws.com/q-desktop/DasKeyboard+X50+-+Firmware+Updater+-+57.0.0.exe)
