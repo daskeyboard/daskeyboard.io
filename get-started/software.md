@@ -4,6 +4,7 @@ title: "Get Started: Software Download"
 permalink: /get-started/software/
 ---
 
+#### What's new? See <a href="{{site.baseurl}}/updates/changelog/">changelog</a>.
 
 ### Important instructions before software upgrade
 
