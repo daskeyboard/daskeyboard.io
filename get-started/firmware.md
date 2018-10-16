@@ -3,6 +3,7 @@ layout: page
 title: "Get Started: Firmware Download"
 permalink: /get-started/firmware/
 ---
+#### What's new? See <a href="{{site.baseurl}}/updates/changelog-firmware/">changelog</a>.
 
 ### Important instructions before firmware upgrade
 

@@ -6,9 +6,6 @@ permalink: /get-started/download/
 
 ## Control Das Keyboard RGB devices with Q software.
 
-#### What's new? See <a href="{{site.baseurl}}/updates/changelog/">changelog</a>.
-
-
 <img src="{{ "images/5Q-box-back.jpg"  | relative_url }}" 
      alt="Animation of the 5Q keyboard receiving signals">
 
