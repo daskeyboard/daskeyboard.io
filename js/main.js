@@ -341,7 +341,7 @@ function loadFirmwareDeviceDependingOnPidParam() {
   const pid = getParameterByName('devicePid', window.location.href);
   switch (pid) {
     case 'DK5QPID':
-      $('#firmware-download-button').attr("href", "https://s3-us-west-2.amazonaws.com/q-desktop/5Q+Flash+Upgrade.7.4.9.exe");
+      $('#firmware-download-button').attr("href", "https://s3-us-west-2.amazonaws.com/q-software-releases/Firmware-releases/5Q/5Q+Flash+Upgrade.7.4.18.exe");
       $('#firmware-download-button').text("Download 5Q firmware installer");
       break;
     case 'X50QPID':
@@ -349,7 +349,7 @@ function loadFirmwareDeviceDependingOnPidParam() {
       $('#firmware-download-button').text("Download X50Q firmware installer");
       break;
     default:
-      $('#firmware-download-button').attr("href", "https://s3-us-west-2.amazonaws.com/q-desktop/5Q+Flash+Upgrade.7.4.9.exe");
+      $('#firmware-download-button').attr("href", "https://s3-us-west-2.amazonaws.com/q-software-releases/Firmware-releases/5Q/5Q+Flash+Upgrade.7.4.18.exe");
       $('#firmware-download-button').text("Download 5Q firmware installer");
       break;
   }
