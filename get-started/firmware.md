@@ -31,7 +31,8 @@ Please DO NOT unplug or use the keyboard during the upgrade process or you will 
     <a id="firmware-download-button"
       class="get-started-button"></a>
     <small>
-      <small style="margin-right: 40px;">Windows - Version 7.4.9</small>
+      <small style="margin-right: 40px;"
+      id="firmware-download-version">Version 7.4.18</small>
     </small>
   </div>
 </div>
