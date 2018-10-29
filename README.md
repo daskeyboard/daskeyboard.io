@@ -16,24 +16,30 @@ and we'll take a look.
 
 A tldr version follows:
 
-1. Ensure you have [Ruby](https://www.ruby-lang.org/en/documentation/installation/) installed; you need version 2.2.2 or later:<br>
+1. Ensure you have [Ruby](https://www.ruby-lang.org/en/documentation/installation/) installed; you need version 2.2.2 or later:
+
 `ruby --version`
 
-1. Ensure you have [Bundler](http://bundler.io/) installed; if not install with:<br>
+1. Ensure you have [Bundler](http://bundler.io/) installed; if not install with:
+
 `gem install bundler`
 
-1. Install all dependencies:<br>
+1. Install all dependencies:
+
 `bundle install`
 
 1. Create a branch.
 
 1. Make your changes.
 
-1. Test your changes by serving the site locally:<br>
+1. Test your changes by serving the site locally:
+
 `bundle exec jekyll serve` (or `jekyll serve -w --force_polling`)
 
-1. Prior to submitting, run link validation:<br>
+1. Prior to submitting, run link validation:
+
 `rake checklinks`
+
 ### Adding next/previous page links
 
 If you have a document that spans multiple pages, you can add next and previous
@@ -96,11 +102,11 @@ Here's an example:
 
 <!-- skip -->
 
-	```dart
-	class SomeCode {
-	  String name;
-	}
-	```
+```dart
+class SomeCode {
+  String name;
+}
+```
 
 
 See the list of supported languages above for what to use
@@ -165,25 +171,17 @@ from dartlang.org, we recommend manually running the following.
 
 * First time setup:
 
-  ```
-  pub global activate linkcheck
-  npm install -g superstatic
-  ```
+    pub global activate linkcheck
+    npm install -g superstatic
 
 * Start the localhost Firebase server:
 
-  ```
-  superstatic --port 3474
-  ```
-  
+    superstatic --port 3474
+
 * Run the link checker:
 
-  ```
-  linkcheck :3474
-  ```
+    linkcheck :3474
   
-  Even better, to check that old URLs are correctly redirected:
+Even better, to check that old URLs are correctly redirected:
 
-  ```
-  linkcheck :3474 --input tool/sitemap.txt
-  ```
+    linkcheck :3474 --input tool/sitemap.txt

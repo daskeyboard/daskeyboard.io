@@ -8,7 +8,6 @@ permalink: /updates/changelog-firmware/
 
 ## Date released: October 16, 2018
 
-
 ### FIXED
 
 - Changing to breathe red (255,32,32) shows some blue after a few seconds. 
