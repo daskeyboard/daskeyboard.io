@@ -27,7 +27,9 @@ Please DO NOT unplug or use the keyboard during the upgrade process or you will 
 </div>
 
 
-<div class="homepage__button_row">
+<div class="homepage__button_row"
+style="display: none"
+id="firmware-buttons">
   <div style="text-align:center;">
     <a id="firmware-download-button"
       class="get-started-button"></a>
@@ -36,13 +38,28 @@ Please DO NOT unplug or use the keyboard during the upgrade process or you will 
       id="firmware-download-version">Version 7.4.18</small>
     </small>
   </div>
+    <div style="text-align:center;visibility: hidden">
+    <a id="firmware-download-button-dk4-eu"
+      class="get-started-button"></a>
+    <small>
+      <small style="margin-right: 40px;"
+      id="firmware-download-version-dk4-eu">Version 7.4.18</small>
+    </small>
+  </div>
 </div>
 
 
 ### Firmware downloads
 
 #### 5Q
-- [https://s3-us-west-2.amazonaws.com/q-software-releases/Firmware-releases/5Q/5Q+Flash+Upgrade.7.4.18.exe](https://s3-us-west-2.amazonaws.com/q-software-releases/Firmware-releases/5Q/5Q+Flash+Upgrade.7.4.18.exe)
+- All layouts: [https://s3-us-west-2.amazonaws.com/q-software-releases/Firmware-releases/5Q/5Q+Flash+Upgrade.7.4.18.exe](https://s3-us-west-2.amazonaws.com/q-software-releases/Firmware-releases/5Q/5Q+Flash+Upgrade.7.4.18.exe)
 
 #### X50Q
-- [https://s3-us-west-2.amazonaws.com/q-desktop/DasKeyboard+X50+-+Firmware+Updater+-+57.0.0.exe](https://s3-us-west-2.amazonaws.com/q-desktop/DasKeyboard+X50+-+Firmware+Updater+-+57.0.0.exe)
+- All layouts: [https://s3-us-west-2.amazonaws.com/q-desktop/DasKeyboard+X50+-+Firmware+Updater+-+57.0.0.exe](https://s3-us-west-2.amazonaws.com/q-desktop/DasKeyboard+X50+-+Firmware+Updater+-+57.0.0.exe)
+
+#### DK4Q
+
+- US layout: [https://s3-us-west-2.amazonaws.com/q-software-releases/Firmware-releases/DK4Q/DK4Q_US_Firmware_19.22.0.exe](https://s3-us-west-2.amazonaws.com/q-software-releases/Firmware-releases/DK4Q/DK4Q_US_Firmware_19.22.0.exe)
+
+- EU layout:
+  [https://s3-us-west-2.amazonaws.com/q-software-releases/Firmware-releases/DK4Q/DK4Q_EU_Firmware_19.22.0.exe](https://s3-us-west-2.amazonaws.com/q-software-releases/Firmware-releases/DK4Q/DK4Q_EU_Firmware_19.22.0.exe)
