@@ -4,6 +4,31 @@ title: Changelog Das Keyboard Q Desktop Software
 permalink: /updates/changelog/
 ---
 
+## Version 2.0.4 (Windows), 2.0.4-beta (MacOS), 2.0.4-beta (Linux)
+
+## Date released: October 30, 2018
+
+### Das Keyboard Q-Desktop Release Notes:
+
+### ADDED
+- Das Keyboard 4Q support for Windows. 
+- Blink active effect for the X50Q
+
+### FIXED
+
+- Installer error not finding Service Module.exe
+
+### UPDATED
+
+- When no zone is found for a signal, no key will be lit for that signal and the event is logged. Previously, when no zone was found for a Signal, the signal will be ig
+
+### Known Problems (Mac Beta Only)
+
+In rare cases, the MacOS Q Service `das_keyboard_q-service` uses too much CPU resource. 
+If you encounter this problem, please post a message on the qforum and describe your setup: https://qforum.daskeyboard.com/.
+
+---
+
 ## Version 2.0.3 (Windows) and 2.0.3-beta (MacOS)
 
 ## Date released: September 28, 2018

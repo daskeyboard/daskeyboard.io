@@ -50,14 +50,15 @@ We need your help to test Mac and Linux software: become a [beta tester](https:/
 ### Software downloads
 
 #### Downloads for Windows:
-- [https://s3-us-west-2.amazonaws.com/q-software-releases/2.0.3/Das-Keyboard-Q-x64-Setup-2.0.3.exe](https://s3-us-west-2.amazonaws.com/q-software-releases/2.0.3/Das-Keyboard-Q-x64-Setup-2.0.3.exe)
-- [https://s3-us-west-2.amazonaws.com/q-software-releases/2.0.3/Das-Keyboard-Q-ia32-Setup-2.0.3.exe](https://s3-us-west-2.amazonaws.com/q-software-releases/2.0.3/Das-Keyboard-Q-ia32-Setup-2.0.3.exe)
+- [https://s3-us-west-2.amazonaws.com/q-software-releases/2.0.4/Das-Keyboard-Q-x64-Setup-2.0.4.exe](https://s3-us-west-2.amazonaws.com/q-software-releases/2.0.4/Das-Keyboard-Q-x64-Setup-2.0.4.exe)
+- [https://s3-us-west-2.amazonaws.com/q-software-releases/2.0.4/Das-Keyboard-Q-ia32-Setup-2.0.4.exe](https://s3-us-west-2.amazonaws.com/q-software-releases/2.0.4/Das-Keyboard-Q-ia32-Setup-2.0.4.exe)
 
 #### Downloads for Linux:
-Coming soon
+Debian only: tested on Ubuntu and Mint
+- [https://s3-us-west-2.amazonaws.com/q-software-releases/2.0.4/das-keyboard-q_2.0.4~beta.deb](https://s3-us-west-2.amazonaws.com/q-software-releases/2.0.4/das-keyboard-q_2.0.4~beta.deb)
 
 #### Download for macOs:
-  - [https://s3-us-west-2.amazonaws.com/q-software-releases/2.0.3/DasKeyboardQ-2.0.3-beta.pkg](https://s3-us-west-2.amazonaws.com/q-software-releases/2.0.3/DasKeyboardQ-2.0.3-beta.pkg)
+  - [https://s3-us-west-2.amazonaws.com/q-software-releases/2.0.4/DasKeyboardQ_2.0.4-beta.pkg](https://s3-us-west-2.amazonaws.com/q-software-releases/2.0.4/DasKeyboardQ_2.0.4-beta.pkg)
 
 ### Next step
 
