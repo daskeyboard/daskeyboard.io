@@ -34,7 +34,7 @@ hide_title: true
     </div>
 
     <div class="homepage__button_row">
-    <a href="{{ "get-started/"  | relative_url }}" class="get-started-button">Get Started</a>
+    <a style="min-height: 0px" href="{{ "get-started/"  | relative_url }}" class="get-started-button">Get Started</a>
     </div>
 
 </section>
