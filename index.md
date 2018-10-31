@@ -53,6 +53,6 @@ hide_title: true
     <div class="homepage__try_today">Try Das Keyboard Q today. Getting started is easy.</div>
 
     <div class="homepage__button_row">
-    <a href="{{ 'get-started/'  | relative_url }}" class="get-started-button">Get Started</a>
+    <a style="min-height: 0px" href="{{ 'get-started/'  | relative_url }}" class="get-started-button">Get Started</a>
     </div>
 </section>
