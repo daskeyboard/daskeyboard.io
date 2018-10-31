@@ -334,9 +334,8 @@ function loadDownloadLinkDependingOnOsArchitechture() {
     $('#software-download-button').append(" 64 bit");
     $('#software-version-number').append("-beta");
     $('#software-version-number').append(" Linux");
+    return;
   }
-
-  $('#software-version-number').append(" Windows");
 
 }
 
