@@ -41,7 +41,7 @@ We need your help to test Mac and Linux software: become a [beta tester](https:/
       class="get-started-button"
       id="software-download-button">Download Das&nbsp;Keyboard&nbsp;Q </a>
     <small>
-      <small id="software-version-number">Version 2.0.3</small>
+      <small id="software-version-number">Version 2.0.4</small>
     </small>
   </div>
 </div>
