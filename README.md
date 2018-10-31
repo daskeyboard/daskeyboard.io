@@ -12,7 +12,7 @@ Please file a request in our
 [issue tracker](https://github.com/DasKeyboard/q/issues/new)
 and we'll take a look.
 
-## Developing
+## Dev env installation
 
 A tldr version follows:
 
@@ -28,17 +28,44 @@ A tldr version follows:
 
 `bundle install`
 
-1. Create a branch.
+## View Site in dev mode
 
-1. Make your changes.
+     bundle exec jekyll serve
 
-1. Test your changes by serving the site locally:
+or
+  
+    jekyll serve -w --force_polling
 
-`bundle exec jekyll serve` (or `jekyll serve -w --force_polling`)
+## Testing
 
-1. Prior to submitting, run link validation:
+    rake checklinks
 
-`rake checklinks`
+Some form of broken links prevention is done automatically by `rake checklinks`
+on every commit (through `tool/travis.sh`). But this won't see any Firebase 
+redirects (`rake checklinks` doesn't run the Firebase server) and it won't
+check incoming links.
+
+Before we can move the more complete
+[automated `linkcheck` solution](https://github.com/dart-lang/site-webdev/blob/master/scripts/check-links-using-fb.sh)
+from dartlang.org, we recommend manually running the following.
+
+* First time setup:
+
+    pub global activate linkcheck
+    npm install -g superstatic
+
+* Start the localhost Firebase server:
+
+    superstatic --port 3474
+
+* Run the link checker:
+
+    linkcheck :3474
+  
+Even better, to check that old URLs are correctly redirected:
+
+    linkcheck :3474 --input tool/sitemap.txt
+
 
 ### Adding next/previous page links
 
@@ -157,31 +184,3 @@ its own file and checked for analysis issues. Some ways to tweak that:
   (`'package:Daskeyboard.io/material.dart'`)
   automatically added to it
 * We ignore special formatting tags like `[[highlight]]`.
-
-## Preventing broken links
-
-Some form of broken links prevention is done automatically by `rake checklinks`
-on every commit (through `tool/travis.sh`). But this won't see any Firebase 
-redirects (`rake checklinks` doesn't run the Firebase server) and it won't
-check incoming links.
-
-Before we can move the more complete
-[automated `linkcheck` solution](https://github.com/dart-lang/site-webdev/blob/master/scripts/check-links-using-fb.sh)
-from dartlang.org, we recommend manually running the following.
-
-* First time setup:
-
-    pub global activate linkcheck
-    npm install -g superstatic
-
-* Start the localhost Firebase server:
-
-    superstatic --port 3474
-
-* Run the link checker:
-
-    linkcheck :3474
-  
-Even better, to check that old URLs are correctly redirected:
-
-    linkcheck :3474 --input tool/sitemap.txt
