@@ -10,4 +10,4 @@ permalink: /get-started/welcome-video/
 
 ## Next step
 
-[Next step: Watch profile settings video]({{site.baseurl}}/get-started/creating-and-switching-profiles-tutorial/)
+[Next step: Watch the marketplace tutorial]({{site.baseurl}}/get-started/marketplace-tutorial/)

@@ -1,6 +1,6 @@
 - name: Get Started as a user
   description: Set up your environment and start using the Q Desktop application.
-  url: /get-started/download/
+  url: /get-started/software/
 - name: Get Started as a developer
   description: Read the Q developer API and start sending your own signals to your Q keyboard.
   url: /q-api-doc/
