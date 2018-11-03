@@ -4,6 +4,29 @@ title: Changelog Das Keyboard Q Desktop Software
 permalink: /updates/changelog/
 ---
 
+## Version 3.0.0-beta (Windows, MacOS, Linux)
+
+## Date released: November 3, 2018
+
+### Das Keyboard Q-Desktop Release Notes:
+
+### ADDED
+- Q Marketplace for applets.
+- multizone signals with model version 2 (undocumented)
+
+### UPDATED
+- Q menu is now disabled. It can be enabled from the system preferences.
+- Q button now opens the dashboard instead of the signal er
+
+### FIXED
+- many bug fixes
+
+### Known Problems (Mac Beta Only)
+
+In rare cases, the MacOS Q Service `das_keyboard_q-service` uses too much CPU resource. 
+If you encounter this problem, please post a message on the qforum and describe your setup: https://qforum.daskeyboard.com/.
+
+
 ## Version 2.0.4 (Windows), 2.0.4-beta (MacOS), 2.0.4-beta (Linux)
 
 ## Date released: October 30, 2018
