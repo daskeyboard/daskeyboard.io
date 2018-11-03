@@ -50,13 +50,13 @@ permalink: /get-started/firmware/
       </td>
       <td>
         US layout:&nbsp;
-        <a href='https://s3-us-west-2.amazonaws.com/q-software-releases/Firmware-releases/DK4Q/DK4Q_US_Firmware_19.22.0.exe'>
-        v7.4.18-US
+        <a href='https://s3-us-west-2.amazonaws.com/q-software-releases/Firmware-releases/DK4Q/DK4Q_US_Firmware_18.23.0.exe'>
+        v18.23.0-US
         </a>
       <br/>
         EU layout:&nbsp;
-        <a href='https://s3-us-west-2.amazonaws.com/q-software-releases/Firmware-releases/DK4Q/DK4Q_EU_Firmware_19.22.0.exe'>
-        v7.4.18-EU
+        <a href='https://s3-us-west-2.amazonaws.com/q-software-releases/Firmware-releases/DK4Q/DK4Q_EU_Firmware_19.23.0.exe'>
+        v19.23.0-EU
         </a>
 
       </td>
