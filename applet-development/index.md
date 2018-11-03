@@ -22,7 +22,7 @@ meter` would control the top horizontal LEDs from `backtick` to 9 (US layout).
 - Cpu monitor applet:
   - <https://github.com/daskeyboard/daskeyboard-applet--cpu-monitor>
 - Weather forecast applet
-  -  <https://github.com/daskeyboard/daskeyboard-applet--weather-forecast>
+  - <https://github.com/daskeyboard/daskeyboard-applet--weather-forecast>
 - Stock quote applet:
   - <https://github.com/daskeyboard/daskeyboard-applet--stock-quote>
 - Many more applets:
@@ -51,7 +51,6 @@ return new q.Signal({
 
 Example 2: a `stock applet` of one stock ticker would display itsself on one LED only. 
 A user can add many stock applet instances.
-
 
 ```javascript
 return new q.Signal({
