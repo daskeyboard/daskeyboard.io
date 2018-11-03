@@ -244,7 +244,7 @@ function replaceALLApiKeyByStoredApiKey(apiKey) {
     if (!apiKey) {
 
       // TODO change with the root to the API Key explanation page
-      const apiKeyMoreDetails = window.location.origin + '/get-started/download/';
+      const apiKeyMoreDetails = window.location.origin + '/get-started/software/';
       $(this).html($(this).html().replace(/\$API_KEY/g,
         // "<span class='span-code'data-toggle='tooltip' data-placement='top' "
         // + "title='Login to automatically see your own credential.' onclick='onLoginToQCloud()'>"
