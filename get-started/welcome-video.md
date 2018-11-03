@@ -5,7 +5,7 @@ permalink: /get-started/welcome-video/
 ---
 
 <div class="embed-container">
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/LMBI-GwHX0A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/q4Spp4NHy6Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
 
 ## Next step
