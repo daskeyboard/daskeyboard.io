@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Q Applet Development"
+title: "Q Applet Development - beta"
 permalink: /applet-development/
 ---
 
@@ -16,6 +16,19 @@ meter` would control the top horizontal LEDs from `backtick` to 9 (US layout).
                     alt="Q Marketplace">
         </div>
 </div>
+
+## Quick links
+
+- Cpu monitor applet:
+  - <https://github.com/daskeyboard/daskeyboard-applet--cpu-monitor>
+- Weather forecast applet
+  -  <https://github.com/daskeyboard/daskeyboard-applet--weather-forecast>
+- Stock quote applet:
+  - <https://github.com/daskeyboard/daskeyboard-applet--stock-quote>
+- Many more applets:
+  - <https://github.com/daskeyboard>
+- Contribute your applet:
+  - <https://github.com/daskeyboard/q-marketplace>  
 
 ## Key concepts
 
@@ -56,6 +69,7 @@ Let's walk through a concrete example and make a CPU meeter that displays a
 bargraph on a Q keyboard. The final example is available on Github:
 <https://github.com/daskeyboard/daskeyboard-applet--cpu-monitor>
 
+Many more applets examples are available here: <https://github.com/daskeyboard>
 
 ### File structure
 
