@@ -5,61 +5,88 @@ permalink: /get-started/firmware/
 ---
 #### What's new? See <a href="{{site.baseurl}}/updates/changelog-firmware/">changelog</a>.
 
-### Important instructions before firmware upgrade
+<div class="alert alert-danger mt-3" role="alert">
+<b>Important:</b> During the upgrade, DO NOT unplug or use the keyboard or you will brick your device.
+</div>
 
-- **Windows OS**
 
-  - Download the firmware file. If the 5Q firmware is up to date, the installer will not perform
+<table class='table table-bordered'>
+  <thead>
+    <tr>
+      <th scope="col">Device</th>
+      <th scope="col">Windows</th>
+      <th scope="col">Mac</th>
+      <th scope="col">Linux</th>
+    </tr>
+    </thead>
+    <tr>
+      <td>
+      5Q
+      </td>
+      <td>
+        <a href='https://s3-us-west-2.amazonaws.com/q-software-releases/Firmware-releases/5Q/5Q+Flash+Upgrade.7.4.18.exe'>
+        v7.4.18
+        </a>
+      </td>
+      <td>Use Windows FW updater*</td>
+      <td>Use Windows FW updater*</td>
+    </tr>
+    <tr>
+      <td>
+      X50Q
+      </td>
+      <td>
+        <a href='https://s3-us-west-2.amazonaws.com/q-desktop/DasKeyboard+X50+-+Firmware+Updater+-+57.0.0.exe](https://s3-us-west-2.amazonaws.com/q-desktop/DasKeyboard+X50+-+Firmware+Updater+-+57.0.0.exe'>
+        v57.0.0
+        </a>
+      </td>
+      <td>Use Windows FW updater*</td>
+      <td>Use Windows FW updater*</td>
+    </tr>
+  
+    <tr>
+      <td>
+      4Q
+      </td>
+      <td>
+        US layout:&nbsp;
+        <a href='https://s3-us-west-2.amazonaws.com/q-software-releases/Firmware-releases/DK4Q/DK4Q_US_Firmware_19.22.0.exe'>
+        v7.4.18-US
+        </a>
+      <br/>
+        EU layout:&nbsp;
+        <a href='https://s3-us-west-2.amazonaws.com/q-software-releases/Firmware-releases/DK4Q/DK4Q_EU_Firmware_19.22.0.exe'>
+        v7.4.18-EU
+        </a>
+
+      </td>
+      <td>Use Windows FW updater*</td>
+      <td>Use Windows FW updater*</td>
+    </tr>
+  
+</table>
+
+(*) Mac and Linux firware upgrade software is not available at this point. Please use a Windows PC 
+to upgrade the device firmware.
+
+## Instructions for Windows
+
+- Download the firmware file. If the 5Q firmware is up to date, the installer will not perform
     the upgrade. The current 5Q firmware version is displayed on the home page of the Q Desktop
     software. It is also displayed when running the firmware upgrade application
-  - <span style="color:red;">IMPORTANT:</span> Quit the Das Keyboard Q Software. Quit it by clicking on the `cog` icon on the top right corner of the application, and select `quit` on the dropdown menu
-  - Double click the firmware file to “Run” it. Windows 10 Defender may display a message regarding    an “unrecognized app” that has been prevented from starting. You will need to run it in order to   upgrade the firmware on the 5Q. To enable the firmware upgrade to proceed, please click on `More Info` and follow the prompts to run the upgrader and update the firmware
-  - Don't forget to start the Das Keyboard Q software again
+- <span style="color:red;">IMPORTANT:</span> Quit the Das Keyboard Q Software. 
+Quit it by clicking on the `cog` icon on the top right corner of the application, 
+and select `quit` on the dropdown menu
+- Double click the firmware file to “Run” it. Windows 10 Defender may display a message regarding
+ an "unrecognized app" that has been prevented from starting. You will
+  need to run it in order to upgrade the firmware on the 5Q. To enable the firmware upgrade to proceed, 
+click on `More Info` and follow the prompts to run the upgrader and update the firmware
+- Don't forget to start the Das Keyboard Q software again
 
-- **Mac and Linux OS**
-  - At this point, the firmware upgrade has to be performed on a Windows computer even for Mac and Linux. Note that the firmware upgrade only fixes some issues related to the hardware. The 5Q still does NOT communicate with the Q Desktop software since the communication is handle by a service component that is not available yet for Mac and Linux
-  - To map the 5Q Windows key to Mac configuration: https://daskeyboard.mojohelpdesk.com/help/article/199507
-  - Mac & Linux users can use preconfigured color profiles that are embedded into the firmware. Press `FN` + `1`-`6` on the NUMPAD to cycle through them. More info is located here: knowledge base
-  - macOS is not supported by X50Q for now
+## Switching to Mac layout
 
-<div class="alert alert-danger mt-3" role="alert">
-Please DO NOT unplug or use the keyboard during the upgrade process or you will brick your device.
-</div>
+To map the 5Q Windows key to Mac configuration see [knowledge base article](https://daskeyboard.mojohelpdesk.com/help/article/199507).
 
+## Built-in Color Profiles
 
-<div class="homepage__button_row"
-style="display: none"
-id="firmware-buttons">
-  <div style="text-align:center;">
-    <a id="firmware-download-button"
-      class="get-started-button"></a>
-    <small>
-      <small style="margin-right: 40px;"
-      id="firmware-download-version">Version 7.4.18</small>
-    </small>
-  </div>
-    <div style="text-align:center;visibility: hidden">
-    <a id="firmware-download-button-dk4-eu"
-      class="get-started-button"></a>
-    <small>
-      <small style="margin-right: 40px;"
-      id="firmware-download-version-dk4-eu">Version 7.4.18</small>
-    </small>
-  </div>
-</div>
-
-
-### Firmware downloads
-
-#### 5Q
-- All layouts: [https://s3-us-west-2.amazonaws.com/q-software-releases/Firmware-releases/5Q/5Q+Flash+Upgrade.7.4.18.exe](https://s3-us-west-2.amazonaws.com/q-software-releases/Firmware-releases/5Q/5Q+Flash+Upgrade.7.4.18.exe)
-
-#### X50Q
-- All layouts: [https://s3-us-west-2.amazonaws.com/q-desktop/DasKeyboard+X50+-+Firmware+Updater+-+57.0.0.exe](https://s3-us-west-2.amazonaws.com/q-desktop/DasKeyboard+X50+-+Firmware+Updater+-+57.0.0.exe)
-
-#### DK4Q
-
-- US layout: [https://s3-us-west-2.amazonaws.com/q-software-releases/Firmware-releases/DK4Q/DK4Q_US_Firmware_19.22.0.exe](https://s3-us-west-2.amazonaws.com/q-software-releases/Firmware-releases/DK4Q/DK4Q_US_Firmware_19.22.0.exe)
-
-- EU layout:
-  [https://s3-us-west-2.amazonaws.com/q-software-releases/Firmware-releases/DK4Q/DK4Q_EU_Firmware_19.22.0.exe](https://s3-us-west-2.amazonaws.com/q-software-releases/Firmware-releases/DK4Q/DK4Q_EU_Firmware_19.22.0.exe)
+Preconfigured color profiles are embedded in some devices. Press `FN` + `1`-`6` on the NUMPAD to cycle through them. - [More info](https://daskeyboard.mojohelpdesk.com/help/article/199506)
