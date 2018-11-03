@@ -66,7 +66,7 @@ permalink: /get-started/firmware/
   
 </table>
 
-(*) Mac and Linux firmware updater is not available at this point. Please use a Windows PC 
+(*) Mac and Linux firmware updaters are not available at this point. Please use a Windows PC 
 to upgrade the device firmware. We know it's a major pain and we are working on it.
 
 ## Instructions for Windows
