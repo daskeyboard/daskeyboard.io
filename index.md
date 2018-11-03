@@ -1,5 +1,5 @@
 ---
-title: Das Keyboard Q Desktop Software
+title: Das Keyboard Q Software
 layout: page
 homepage: true
 hide_title: true
