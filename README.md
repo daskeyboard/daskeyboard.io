@@ -30,7 +30,7 @@ A tldr version follows:
 
 ## View Site in dev mode
 
-     bundle exec jekyll serve
+    bundle exec jekyll serve
 
 or
   
@@ -65,7 +65,6 @@ from dartlang.org, we recommend manually running the following.
 Even better, to check that old URLs are correctly redirected:
 
     linkcheck :3474 --input tool/sitemap.txt
-
 
 ### Adding next/previous page links
 
@@ -169,18 +168,3 @@ You can include a specific range of lines from a file:
 
 `PATH` must be inside of `_include`. If you are including source code,
 place that code into `_include/code` to follow our convention.
-
-## Code snippet validation
-
-The code snippets in the markdown documentation are validated as part of the
-build process. Anything within a '\`\`\`dart' code fence will be extracted into
-its own file and checked for analysis issues. Some ways to tweak that:
-
-* If a code snippet should not be analyzed, immediately proceed it with
-  a `<!-- skip -->` comment
-* To include code to be analyzed, but not displayed, add that in a comment
-  immediately proceeding the snippet (e.g., `<!-- someCodeHere(); -->`)
-* A snippet without any import statements will have an import
-  (`'package:Daskeyboard.io/material.dart'`)
-  automatically added to it
-* We ignore special formatting tags like `[[highlight]]`.
