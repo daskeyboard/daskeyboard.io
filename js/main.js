@@ -359,12 +359,12 @@ function loadFirmwareDeviceDependingOnPidParam() {
         $('#firmware-download-version').text("Version 57.0.0");
         break;
       case 'DK4QPID':
-        $('#firmware-download-button').attr("href", "https://s3-us-west-2.amazonaws.com/q-software-releases/Firmware-releases/DK4Q/DK4Q_US_Firmware_19.22.0.exe");
+        $('#firmware-download-button').attr("href", "https://s3-us-west-2.amazonaws.com/q-software-releases/Firmware-releases/DK4Q/DK4Q_US_Firmware_18.23.0.exe");
         $('#firmware-download-button').text("Download DK4Q US firmware installer");
-        $('#firmware-download-version').text("Version 19.22.0");
-        $('#firmware-download-button-dk4-eu').attr("href", "https://s3-us-west-2.amazonaws.com/q-software-releases/Firmware-releases/DK4Q/DK4Q_EU_Firmware_19.22.0.exe");
+        $('#firmware-download-version').text("Version 18.23.0");
+        $('#firmware-download-button-dk4-eu').attr("href", "https://s3-us-west-2.amazonaws.com/q-software-releases/Firmware-releases/DK4Q/DK4Q_EU_Firmware_19.23.0.exe");
         $('#firmware-download-button-dk4-eu').text("Download DK4Q EU firmware installer");
-        $('#firmware-download-version-dk4-eu').text("Version 19.22.0");
+        $('#firmware-download-version-dk4-eu').text("Version 19.23.0");
         $('#firmware-download-version-dk4-eu').css('visibility', 'visible');
         $('#firmware-download-button-dk4-eu').css('visibility', 'visible');
         break;
