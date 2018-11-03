@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Download Das Keyboard Q Software"
-permalink: /get-started/download/
+permalink: /get-started/software/
 ---
 
 <div class="homepage__button_row">
@@ -16,7 +16,7 @@ permalink: /get-started/download/
   </div>
 </div>
 
-<img src="{{ "images/5Q-box-back.jpg"  | relative_url }}" alt="Das Keyboard software in action">
+<img src="{{ 'images/5Q-box-back.jpg'  | relative_url }}" alt="Das Keyboard software in action">
 
 ## All Downloads
 
@@ -50,13 +50,13 @@ permalink: /get-started/download/
   </tr>
 
   <tr>
-    <td><a href="{{ "get-started/firmware/"  | relative_url }}"
+    <td><a href="{{ 'get-started/firmware/'  | relative_url }}"
         class="btn btn-sm btn-outline-dark"> Get firmware installer</a>
     </td>
-    <td><a href="{{ "get-started/firmware/"  | relative_url }}"
+    <td><a href="{{ 'get-started/firmware/'  | relative_url }}"
         class="btn btn-sm btn-outline-dark"> Get firmware installer</a>
     </td>
-    <td><a href="{{ "get-started/firmware/"  | relative_url }}"
+    <td><a href="{{ 'get-started/firmware/'  | relative_url }}"
         class="btn btn-sm btn-outline-dark"> Get firmware installer</a>
     </td>
 
