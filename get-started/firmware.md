@@ -24,7 +24,7 @@ permalink: /get-started/firmware/
       5Q
       </td>
       <td>
-        <a href='https://s3-us-west-2.amazonaws.com/q-software-releases/Firmware-releases/5Q/5Q+Flash+Upgrade.7.4.18.exe'>
+        <a href='https://s3-us-west-2.amazonaws.com/q-software-releases/Firmware-releases/5Q/5Q_Firmware_7.4.18.exe'>
         v7.4.18
         </a>
       </td>
@@ -36,7 +36,7 @@ permalink: /get-started/firmware/
       X50Q
       </td>
       <td>
-        <a href='https://s3-us-west-2.amazonaws.com/q-desktop/DasKeyboard+X50+-+Firmware+Updater+-+57.0.0.exe](https://s3-us-west-2.amazonaws.com/q-desktop/DasKeyboard+X50+-+Firmware+Updater+-+57.0.0.exe'>
+        <a href='https://s3-us-west-2.amazonaws.com/q-software-releases/Firmware-releases/X50Q/DasKeyboardX50_Firmware_57.0.0.exe'>
         v57.0.0
         </a>
       </td>
