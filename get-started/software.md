@@ -40,12 +40,12 @@ permalink: /get-started/software/
     </td>
 
     <td>
-        <a href='https://s3-us-west-2.amazonaws.com/q-software-releases/2.0.4/DasKeyboardQ_2.0.4-beta.pkg'>
-        2.0.4-beta</a> - 5Q only
+        <a href='https://s3-us-west-2.amazonaws.com/q-software-releases/3.0.0-beta/DasKeyboardQ_3.0.0-beta.pkg'>
+        3.0.0-beta.2</a> - 5Q only
     </td>
     <td>
-       <a href='https://s3-us-west-2.amazonaws.com/q-software-releases/2.0.4/das-keyboard-q_2.0.4~beta.deb'>
-        2.0.4-beta - .deb 64 bits</a> - 5Q only
+       <a href='https://s3-us-west-2.amazonaws.com/q-software-releases/3.0.0-beta/das-keyboard-q_3.0.0~beta.2.deb'>
+        3.0.0-beta.2 - .deb 64 bits</a> - 5Q only
     </td>
   </tr>
 
