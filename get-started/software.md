@@ -7,11 +7,11 @@ permalink: /get-started/software/
 <div class="homepage__button_row">
   <div style="text-align:center;">
     <a style="margin-right:0px;"
-      href="https://s3-us-west-2.amazonaws.com/q-software-releases/2.0.4/Das-Keyboard-Q-ia32-Setup-2.0.3.exe"
+      href="https://s3-us-west-2.amazonaws.com/q-software-releases/3.0.0/Das-Keyboard-Q-ia32-Setup-3.0.0.exe"
       class="get-started-button"
       id="software-download-button">Download Das&nbsp;Keyboard&nbsp;Q </a>
     <small>
-      <small id="software-version-number">Version 2.0.4</small>
+      <small id="software-version-number">Version 3.0.0</small>
     </small>
   </div>
 </div>
@@ -30,13 +30,13 @@ permalink: /get-started/software/
     </thead>
   <tr>
     <td> 
-        <a href='https://s3-us-west-2.amazonaws.com/q-software-releases/2.0.4/Das-Keyboard-Q-x64-Setup-2.0.4.exe'>
-            2.0.4 - 64 bits
+        <a href='https://s3-us-west-2.amazonaws.com/q-software-releases/3.0.0/Das-Keyboard-Q-x64-Setup-3.0.0.exe'>
+            3.0.0 - 64 bits
         </a>
         <br/>
 
-        <a href='https://s3-us-west-2.amazonaws.com/q-software-releases/2.0.4/Das-Keyboard-Q-ia32-Setup-2.0.4.exe'>
-            2.0.4 - 32 bits</a>
+        <a href='https://s3-us-west-2.amazonaws.com/q-software-releases/3.0.0/Das-Keyboard-Q-ia32-Setup-3.0.0.exe'>
+            3.0.0 - 32 bits</a>
     </td>
 
     <td>
@@ -45,7 +45,7 @@ permalink: /get-started/software/
     </td>
     <td>
        <a href='https://s3-us-west-2.amazonaws.com/q-software-releases/2.0.4/das-keyboard-q_2.0.4~beta.deb'>
-          2.0.4 - .deb 64 bits</a> - 5Q only
+        2.0.4-beta - .deb 64 bits</a> - 5Q only
     </td>
   </tr>
 
