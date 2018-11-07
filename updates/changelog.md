@@ -4,6 +4,43 @@ title: Changelog Das Keyboard Q Desktop Software
 permalink: /updates/changelog/
 ---
 
+## Version 3.0.0 Windows, 3.0.0-beta.2 (Mac), 3.0.0-beta.2 (Linux)
+
+## Date released: November 7, 2018
+
+### Das Keyboard Q-Desktop Release Notes:
+
+### NEW
+- Q Marketplace for applets
+- the application does not need login and can be used without the cloud, the login will be necessary only for more features
+
+### ADDED
+- added quota for number of requests to the local api
+- added readme for developers
+- added welcome view to prompt the user to plug a device
+- display of error message for user applet inputs
+- added flash action from the signals popover to flash the applet that created the signal
+- after applet installation, the action `view in dashboard` will popup the signal associated to the applet
+
+
+### UPDATED
+- Q-button press will open the dashboard view with the latest signal received open
+- customizing the keyboard with IFTTT and Zapier is now in the Advanced section
+- in the marketplace, search will be displayed only if there is more than 100 applets
+- signal center can only be accessed via the Q-icon which is hidden by default and can be displayed again from the preferences
+- display the number of installed applets instead of the number of running applets
+
+
+### FIXED
+- multiple bug fixes
+
+
+### Known Problems (Mac Beta Only)
+
+In rare cases, the MacOS Q Service `das_keyboard_q-service` uses too much CPU resource. 
+If you encounter this problem, please post a message on the qforum and describe your setup: https://qforum.daskeyboard.com/.
+
+
 ## Version 3.0.0-beta (Windows, MacOS, Linux)
 
 ## Date released: November 3, 2018
@@ -16,7 +53,7 @@ permalink: /updates/changelog/
 
 ### UPDATED
 - Q menu is now disabled. It can be enabled from the system preferences.
-- Q button now opens the dashboard instead of the signal er
+- Q button now opens the dashboard instead of the signal center
 
 ### FIXED
 - many bug fixes
