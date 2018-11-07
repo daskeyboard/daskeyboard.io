@@ -322,17 +322,17 @@ function loadDownloadLinkDependingOnOsArchitechture() {
     }
   }
   if (navigator.platform.includes('MacIntel')) {
-    $('#software-download-button').attr("href", "https://s3-us-west-2.amazonaws.com/q-software-releases/2.0.4/DasKeyboardQ_2.0.4-beta.pkg");
+    $('#software-download-button').attr("href", "https://s3-us-west-2.amazonaws.com/q-software-releases/3.0.0-beta/DasKeyboardQ_3.0.0-beta.pkg");
     $('#software-download-button').append(" 64 bit");
-    $('#software-version-number').append("-beta");
+    $('#software-version-number').append("-beta.2");
     $('#software-version-number').append(" Mac");
     return;
   }
 
   if (navigator.platform.includes('Linux x86_64')) {
-    $('#software-download-button').attr("href", "https://s3-us-west-2.amazonaws.com/q-software-releases/2.0.4/das-keyboard-q_2.0.4~beta.deb");
+    $('#software-download-button').attr("href", "https://s3-us-west-2.amazonaws.com/q-software-releases/3.0.0-beta/das-keyboard-q_3.0.0~beta.2.deb");
     $('#software-download-button').append(" 64 bit");
-    $('#software-version-number').append("-beta");
+    $('#software-version-number').append("-beta.2");
     $('#software-version-number').append(" Linux");
     return;
   }
