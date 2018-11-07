@@ -2,7 +2,7 @@
 
 This is the source files repo for [https://www.daskeyboard.io](https://www.daskeyboard.io).
 
-[![Build Status](https://travis-ci.com/DasKeyboard/Daskeyboard.io.svg?branch=master)](https://travis-ci.com/DasKeyboard/Daskeyboard.io/)
+[![Build Status](https://travis-ci.com/daskeyboard/daskeyboard.io.svg?branch=master)](https://travis-ci.com/daskeyboard/daskeyboard.io/)
 [![Site Status](https://montastic.com/checkpoints/status_badge?badge_token=ca2ffbb3a6e6d95f891298aff1074f9a4f7d8b9b)](https://montastic.com)
 
 ## Issues, bugs, and requests
