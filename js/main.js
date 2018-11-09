@@ -322,7 +322,7 @@ function loadDownloadLinkDependingOnOsArchitechture() {
     }
   }
   if (navigator.platform.includes('MacIntel')) {
-    $('#software-download-button').attr("href", "https://s3-us-west-2.amazonaws.com/q-software-releases/3.0.0-beta/DasKeyboardQ_3.0.0-beta.pkg");
+    $('#software-download-button').attr("href", "https://s3-us-west-2.amazonaws.com/q-software-releases/3.0.0-beta/DasKeyboardQ_3.0.0-beta.2.pkg");
     $('#software-download-button').append(" 64 bit");
     $('#software-version-number').append("-beta.2");
     $('#software-version-number').append(" Mac");
