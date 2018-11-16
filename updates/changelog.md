@@ -4,6 +4,33 @@ title: Changelog Das Keyboard Q Desktop Software
 permalink: /updates/changelog/
 ---
 
+## Version 3.0.0-beta.3 (Linux)
+
+## Date released: November 16, 2018
+
+### Das Keyboard Q-Desktop Release Notes:
+
+### NEW
+- added Das Keyboard 4Q support for Linux
+
+### ADDED
+- added an applet refresh action button in the dashboard and marketplace UI
+- applet user input now handles dynamic input arrays (example: more than 1 email for email input)
+
+### UPDATED
+- any part of the applet can be grabbed for repositioning in the applet configuration screen
+
+### FIXED
+- fixed segmentation fault happening on some versions of Ubuntu (18.04 LTS and prior versions)
+- Q Button now opens the dashboard corresponding to the plugged in device
+- Q Button now opens the application window even when minimized
+- applets will not modify the current profile if modifications are not saved
+- on long keys, the arrow for the applet instance tooltip was not positioned properly
+- show me arround on the homepage now only adds 1 5Q device (instead of 2)
+- sidebar navigation links are now centered (RGB, APPLETS, IFTTT)
+- when user logs out and logs back in, signals for applets now appear right away in the Q Desktop
+
+
 ## Version 3.0.0 Windows, 3.0.0-beta.2 (Mac), 3.0.0-beta.2 (Linux)
 
 ## Date released: November 7, 2018
