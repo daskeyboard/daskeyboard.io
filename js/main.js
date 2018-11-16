@@ -225,7 +225,7 @@ function updateLoginDisplayElements(currentUserEmail) {
 
 /************************************************************************
  * 
- *  code used to display the dynamic content in the code pages
+ *  code used to display the dynamic content in the code page
  * 
  * 
  * *********************************************************************** 
