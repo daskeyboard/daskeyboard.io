@@ -44,8 +44,8 @@ permalink: /get-started/software/
         3.0.0-beta.2</a> - 5Q only
     </td>
     <td>
-       <a href='https://s3-us-west-2.amazonaws.com/q-software-releases/3.0.0-beta/das-keyboard-q_3.0.0-beta.2.deb'>
-        3.0.0-beta.2 - .deb 64 bits</a> - 5Q only
+       <a href='https://s3-us-west-2.amazonaws.com/q-software-releases/3.0.0-beta/das-keyboard-q_3.0.0_beta.3.deb'>
+        3.0.0-beta.3 - .deb 64 bits</a> - 5Q only
     </td>
   </tr>
 
