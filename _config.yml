@@ -17,5 +17,3 @@ kramdown:
   hard_wrap: false
 
 exclude: [packages, tool]
-
-

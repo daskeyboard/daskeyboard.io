@@ -4,37 +4,43 @@ title: "Q Applet Development - beta"
 permalink: /applet-development/
 ---
 
+Howdee developers. You'll find here the information needed to develop Q
+applets for Das Keyboard Q devices.
+
+Q applet development is easy. There are many examples available, all open source and 
+remember that the Q forum: <https://qforum.daskeyboard.com> is a great place to ask questions.
+
 A Q applet is a program written in `javascript` that can be installed in the Q
 software. Applets live in the Q marketplace.
 
-Applets control a limited set of RGB LEDs called zones. For example, a `CPU
-meter` would control the top horizontal LEDs from `backtick` to 9 (US layout).
+Applets control a user-defined set of RGB LEDs. For example, a `CPU meter` 
+would control the top horizontal LEDs from `backtick` to `9` (US layout).
 
 <div class="row">
-        <div class="col-md-12">
-                <img src="{{ 'images/marketplace.png'  | relative_url }}"
+    <div class="col-md-12">
+        <img src="{{ './images/marketplace.png' }}"
                     alt="Q Marketplace">
-        </div>
+    </div>
 </div>
 
 ## Quick links
 
+Here is the source code of full-featured applets. Clone as needed.
+
 - Cpu monitor applet:
-  - <https://github.com/daskeyboard/daskeyboard-applet--cpu-monitor>
+  - <https://github.com/daskeyboard/daskeyboard-applet--montastic>
 - Weather forecast applet
-  - <https://github.com/daskeyboard/daskeyboard-applet--weather-forecast>
+  - <https://github.com/daskeyboard/daskeyboard-applet--weather-usa>
 - Stock quote applet:
-  - <https://github.com/daskeyboard/daskeyboard-applet--stock-quote>
-- Many more applets:
+  - <https://github.com/daskeyboard/daskeyboard-applet--stock-quote-usa>
+- Many more Q applets:
   - <https://github.com/daskeyboard>
-- Contribute your applet:
-  - <https://github.com/daskeyboard/q-marketplace>  
 
 ## Key concepts
 
 A Q applet controls LEDs inside a `rectangular area` which is a 2D array of points.
 
-Example1 1: a `CPU activity meter` could use 10 LEDs on one row.
+Example 1: a `CPU activity meter` could use 10 LEDs on one row.
 
 ```javascript
 return new q.Signal({
@@ -62,44 +68,52 @@ return new q.Signal({
     });
 ```
 
-## Example: making a CPU meter Q applet
+---
 
-Let's walk through a concrete example and make a CPU meeter that displays a
+## Applet development overview: making a CPU meter
+
+Let's walk through a concrete example and write a CPU meter applet that displays a
 bargraph on a Q keyboard. The final example is available on Github:
-<https://github.com/daskeyboard/daskeyboard-applet--cpu-monitor>
+<https://github.com/daskeyboard/daskeyboard-applet--cpu-monitor>. Clone 
+it to follow along.
 
-Many more applets examples are available here: <https://github.com/daskeyboard>
+### Prerequisites
+
+Make sure `node` and `yarn` are installed.
 
 ### File structure
 
 A typical Q applet file structure will look like this:
 
-```
+```json
 > tree
 .
 ├── assets
-│   ├── cpu.png
-│   └── q-cpu-usage.png
+│   ├── incon.png
+│   └── image.png
 ├── CHANGELOG.md
 ├── package.json
-├── q-cpu-usage.js
+├── index.js
 ├── README.md
 ├── README_ENDUSER.md
 └── yarn.lock
 ```
 
-The app packages dependencies are listed in `package.json` file. 
+The app packages dependencies are listed in `package.json` file.
 
 The `assets` directory contains the images for the marketplace.
 
-The README_ENDUSER.md is the content that will be shown in the marketplace.
+The `README_ENDUSER.md` is the content that will be shown in the marketplace.
 
-### Defining which LED to use
+### Defining which LEDs to use
 
 The Q applet will define its rectangle area needs in the `package.json` file as follows.
-Here the applets will use 10 LEDs over 1 keyboard row. The applet will be first
-positioned at `orign` point (0,1) here. However end user can drag and drop
-applets anywhere on their keyboard so we don't need to specify a position.
+In the example below, the applet uses 10 LEDs (`width`) over 1 keyboard row (`height`).
+During the installation by the end user, the applet will be first
+positioned at `orign` point (0,1) here which correspond to the `ESCAPE` key.
+ The end user will then drag and drop the applet to a location of his or her choice.
+
+The `height`, `width` and `origin` are defined by the `qConfig` JSON structure in package.json
 
 ```json
  "qConfig": {
@@ -114,15 +128,24 @@ applets anywhere on their keyboard so we don't need to specify a position.
     }
 ```
 
-The heart of the Q applet is the `javascript` file `q-cpu-usage.js`. Let's dive into it.
+<div class="row">
+    <div class="col-md-12">
+        <img src="{{ './images/app-install.png' }}"
+                    alt="App install">
+    </div>
+</div>
 
-### Main script file and its event loop
+The heart of the Q applet is the `javascript` file `index.js`. Let's dive into it.
+
+### index.js: main script file and its event loop
+
+`index.js` is the file that contains the applet `javascript` code. 
 
 In the case of the CPU meter, we would like to update the RGB LEDs of the keyboard every 3
 seconds.
 
-To achieve this, we need to declare the polling interval`this.pollingInterval = 3000;` 
-as in the sample code below:
+To achieve this, we need to declare the polling interval `this.pollingInterval = 3000;`
+in the applet class contructor as follows:
 
 ```javascript
 class CpuUsage extends q.DesktopApp {
@@ -134,7 +157,11 @@ class CpuUsage extends q.DesktopApp {
   }
 ```
 
-Then we specify which function to call with the `event loop` run function:
+Then we write the `run` function that will be called each `pollingInterval`. 
+The CPU meter will send a signal to the keyboard each time the `run` function is called.
+
+`getCpuUsage` returns the percentage of CPU usage then 
+the LED color and how many LEDs to use is calculated with `generatePoints(percent)`:
 
 ```javascript
  // call this function every pollingInterval
@@ -151,25 +178,19 @@ Then we specify which function to call with the `event loop` run function:
   }
 ```
 
-Here `this.getCpuUsage()` will be called periodically and is in charge of 
-sending a `signal` to the keyboard to change its RGB LEDs. Here is the code:
+Here `this.getCpuUsage()` calculates the CPU usage percentage:
 
 ```javascript
   async getCpuUsage() {
     return new Promise((resolve) => {
-      os.cpuUsage(v => {
+      os.cpuUsage(v => { // ask value from OS.
         resolve(v);
       })
     })
   }
 ```
 
-The above call to `os.cpuUsage` will get the
- CPU percentage, then the promise will resolve
-by generating a signal that will light up the keyboard keys.
-
-The LED color and how many LEDs to use is calculated with `generatePoints(percent)` based
-on the percentage of CPU usage:
+This is how `generatePoints` calculates how many LEDs should be used:
 
 ```javascript
  generatePoints(percent) {
@@ -188,7 +209,7 @@ on the percentage of CPU usage:
   }
 ```
 
-Here is the complete content of the javascript file:
+Finally, here is the complete content of `index.js` file:
 
 ```javascript
 // Library to track cpuUsage
@@ -266,78 +287,23 @@ module.exports = {
 };
 
 const cpuUsage = new CpuUsage();
-
 ```
 
-### Running the app in dev mode
+### Loading Dev applet into
 
-To run the app in dev mode:
+A developer can load an into Das Keyboard Q desktop in dev mode and check all
+aspects of his / her applet such as images, READMEs, config view and overall
+applet behavior and user xperience.
 
-    node q-cpu-usage.js dev
+    TODO add how to load from UI ======================================================================
 
-To stop it, use `Control-C`.
+Here is a view of the `CPU Usage` applet loaded in dev mode inside Q desktop 
+application.
 
-### Final touches: making this script a Q applet
+<div class="row">
+    <div class="col-md-12">
+        <img src="{{ './images/devmodqdesktop.png' }}"
+                    alt="Q desktop dev mode">
+    </div>
+</div>
 
-To make this script into a Q applet, we need to add few files:
-
-- package.json
-- README.md
-- README_ENDUSER.md
-- an icon for the marketplace
-
-The `package.json` needs to contain the information needed for the Q the
-marketplace as in the following example:
-
-```json
-{
-  "name": "q-cpu-usage",
-  "displayName": "CPU Usage",
-  "version": "1.0.3",
-  "description": "Displays CPU usage on a Das Keyboard Q device",
-  "officialProductName": "",
-  "appUrl": "",
-  "isSingleton": true,
-  "videoUrl": "",
-  "icon": "assets/cpu.png",
-  "image": "assets/q-cpu-usage.png",
-  "publisherName": "Das Keyboard",
-  "authorName": "Das Keyboard team",
-  "authorUrl": "https://twitter.com/daskeyboard",
-  "issuesUrl": "https://github.com/metadot/q-applet-cpu-usage/issues",
-  "homepage": "https://github.com/DasKeyboard/q-applet-cpu-usage",
-  "readmeEnduserl": "https://github.com/metadot/README_END_USER.md",
-  "developerRepoUrl": "https://github.com/metadot/q-applet-cpu-usage",
-  "licenseUrl": "http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt",
-  "changelogUrl": "",
-  "qActionUrl": "",
-  "main": "q-cpu-usage.js",
-  "scripts": {
-    "start": "node q-cpu-usage.js"
-  },
-  "engines": {
-    "das-keyboard-q": "2.4.x"
-  },
-  "dependencies": {
-    "daskeyboard-applet": "~2.5.1",
-    "os-utils": "^0.0.14",
-    "request": "^2.88.0"
-  },
-  "qConfig": {
-    "geometry": {
-      "width": 10,
-      "height": 1
-      }
-    },
-    "applet": {
-      "defaults": {}
-    }
-  }
-}
-```
-
-## Submitting an applet to the Q market place
-
-It is very easy to submit an applet to the Q market place. Just follow these instructions:
-
-<https://github.com/daskeyboard/q-marketplace>
