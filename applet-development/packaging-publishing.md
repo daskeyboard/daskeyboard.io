@@ -75,9 +75,6 @@ marketplace as in the following example:
           "y": 1
         }
       }
-    },
-    "applet": {
-      "defaults": {}
     }
   }
 }
