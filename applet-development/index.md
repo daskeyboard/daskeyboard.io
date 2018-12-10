@@ -7,6 +7,14 @@ permalink: /applet-development/
 Howdee developers. You'll find here the information needed to develop Q
 applets for Das Keyboard Q devices.
 
+<div class="row">
+    <div class="col-md-12">
+        <img src="{{ './images/marketplace.png' }}"
+                    alt="Q Marketplace">
+    </div>
+</div>
+
+
 Q applet development is easy. There are many examples available, all open source and 
 remember that the Q forum: <https://qforum.daskeyboard.com> is a great place to ask questions.
 
@@ -18,8 +26,8 @@ would control the top horizontal LEDs from `backtick` to `9` (US layout).
 
 <div class="row">
     <div class="col-md-12">
-        <img src="{{ './images/marketplace.png' }}"
-                    alt="Q Marketplace">
+        <img src="{{ './images/marketplace-config.png' }}"
+                    alt="Q Applet configuration view">
     </div>
 </div>
 
@@ -292,8 +300,13 @@ const cpuUsage = new CpuUsage();
 ### Loading Dev applet into
 
 A developer can load an into Das Keyboard Q desktop in dev mode and check all
-aspects of his / her applet such as images, READMEs, config view and overall
-applet behavior and user xperience.
+aspects of his / her applet such as images, READMEs, config view and overall applet behavior and user xperience.
+
+Before loading the applet inside Q desktop, make sure you 
+run `yarn` to install the node modules:
+
+    yarn
+
 
     TODO add how to load from UI ======================================================================
 
