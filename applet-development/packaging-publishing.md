@@ -82,6 +82,7 @@ marketplace as in the following example:
 
 ## Submitting an applet to the Q marketplace
 
-It is easy to submit an applet to the Q market place. Just follow these instructions:
+Once an applet is publicly accessible on Github, it is easy to
+ submit an applet to the Q market place. Just follow these instructions:
 
 <https://github.com/daskeyboard/q-marketplace>
