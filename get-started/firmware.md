@@ -36,27 +36,26 @@ permalink: /get-started/firmware/
       X50Q
       </td>
       <td>
-        <a href='https://s3-us-west-2.amazonaws.com/q-software-releases/Firmware-releases/X50Q/DasKeyboardX50_Firmware_57.0.0.exe'>
-        v57.0.0
+        <a href='https://s3-us-west-2.amazonaws.com/q-software-releases/Firmware-releases/X50Q/DasKeyboardX50_Firmware_64.0.0.exe'>
+        v64.0.0
         </a>
       </td>
       <td>Use Windows FW updater*</td>
       <td>Use Windows FW updater*</td>
     </tr>
-  
     <tr>
       <td>
       4Q
       </td>
       <td>
         US layout:&nbsp;
-        <a href='https://s3-us-west-2.amazonaws.com/q-software-releases/Firmware-releases/DK4Q/DK4Q_US_Firmware_18.24.0.exe'>
-        v18.24.0-US
+        <a href='https://s3-us-west-2.amazonaws.com/q-software-releases/Firmware-releases/DK4Q/DK4Q_US_Firmware_21.24.0.exe'>
+        v21.24.0-US
         </a>
       <br/>
         EU layout:&nbsp;
-        <a href='https://s3-us-west-2.amazonaws.com/q-software-releases/Firmware-releases/DK4Q/DK4Q_EU_Firmware_19.24.0.exe'>
-        v19.24.0-EU
+        <a href='https://s3-us-west-2.amazonaws.com/q-software-releases/Firmware-releases/DK4Q/DK4Q_EU_Firmware_21.24.0.exe'>
+        v21.24.0-EU
         </a>
 
       </td>
