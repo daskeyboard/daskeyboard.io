@@ -11,7 +11,7 @@ permalink: /get-started/software/
       class="get-started-button"
       id="software-download-button">Download Das&nbsp;Keyboard&nbsp;Q </a>
     <small>
-      <small id="software-version-number">Version 3.0.0</small>
+      <small id="software-version-number">Version 3.1.0</small>
     </small>
   </div>
 </div>
@@ -30,15 +30,17 @@ permalink: /get-started/software/
     </thead>
   <tr>
     <td> 
+        <a href='https://s3-us-west-2.amazonaws.com/q-software-releases/3.1.0-beta/Das-Keyboard-3.1.0-beta.exe'>
+            3.1.0-beta - 64 bits
+        </a>
+        <br/>
         <a href='https://s3-us-west-2.amazonaws.com/q-software-releases/3.0.0/Das-Keyboard-Q-x64-Setup-3.0.0.exe'>
             3.0.0 - 64 bits
         </a>
         <br/>
-
         <a href='https://s3-us-west-2.amazonaws.com/q-software-releases/3.0.0/Das-Keyboard-Q-ia32-Setup-3.0.0.exe'>
             3.0.0 - 32 bits</a>
     </td>
-
     <td>
         <a href='https://s3-us-west-2.amazonaws.com/q-software-releases/3.0.0-beta/DasKeyboardQ_3.0.0-beta.2.pkg'>
         3.0.0-beta.2</a> - 5Q only
