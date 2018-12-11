@@ -375,12 +375,9 @@ function loadFirmwareDeviceDependingOnPidParam() {
 
 
 $(document).ready(function () {
-  loadFirmwareDeviceDependingOnPidParam();
+  // loadFirmwareDeviceDependingOnPidParam();
   const email = localStorage.getItem('email');
   const apiKey = getStoredAPIKey();
-  console.log('apiKey', apiKey);
-  console.log('email', email);
-
   if (email && apiKey) {
     updateLoginDisplayElements(email);
     replaceALLApiKeyByStoredApiKey(apiKey);
