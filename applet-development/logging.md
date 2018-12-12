@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Applet log file"
+title: "Applet log file & command line tools"
 permalink: /applet-development/logging/
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Applet log file"
+title: "Applet authentication"
 permalink: /applet-development/authentication/
 ---
 
