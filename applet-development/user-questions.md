@@ -9,7 +9,7 @@ applet installation time. These are called `questions` in the Q applet context.
 
 <div class="row">
     <div class="col-md-12">
-        <img src="{{ './images/questions.png' }}"
+        <img src="{{ '../images/questions.png' }}"
                     alt="Q Marketplace">
     </div>
 </div>
