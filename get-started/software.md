@@ -7,7 +7,7 @@ permalink: /get-started/software/
 <div class="homepage__button_row">
   <div style="text-align:center;">
     <a style="margin-right:0px;"
-      href="https://s3-us-west-2.amazonaws.com/q-software-releases/3.1.0-beta/Das-Keyboard-3.1.0-beta.exe"
+      href="https://s3-us-west-2.amazonaws.com/q-software-releases/3.0.0/Das-Keyboard-Q-x64-Setup-3.0.0.exe"
       class="get-started-button"
       id="software-download-button">Download Das&nbsp;Keyboard&nbsp;Q </a>
     <small>
@@ -30,16 +30,16 @@ permalink: /get-started/software/
     </thead>
   <tr>
     <td> 
-        <a href='https://s3-us-west-2.amazonaws.com/q-software-releases/3.1.0-beta/Das-Keyboard-3.1.0-beta.exe'>
-            3.1.0-beta - 64 bits
-        </a>
-        <br/>
         <a href='https://s3-us-west-2.amazonaws.com/q-software-releases/3.0.0/Das-Keyboard-Q-x64-Setup-3.0.0.exe'>
             3.0.0 - 64 bits
         </a>
         <br/>
         <a href='https://s3-us-west-2.amazonaws.com/q-software-releases/3.0.0/Das-Keyboard-Q-ia32-Setup-3.0.0.exe'>
             3.0.0 - 32 bits</a>
+        <br/>
+        <a href='https://s3-us-west-2.amazonaws.com/q-software-releases/3.1.0-beta/Das-Keyboard-3.1.0-beta.exe'>
+            3.1.0-beta - 64 bits
+        </a>
     </td>
     <td>
         <a href='https://s3-us-west-2.amazonaws.com/q-software-releases/3.0.0-beta/DasKeyboardQ_3.0.0-beta.2.pkg'>
