@@ -136,6 +136,8 @@ The `height`, `width` and `origin` are defined by the `qConfig` JSON structure i
     }
 ```
 
+The above `qConfig` settings will display the applet (orange rectangle) as follows:
+
 <div class="row">
     <div class="col-md-12">
         <img src="{{ './images/app-install.png' }}"

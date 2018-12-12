@@ -9,7 +9,7 @@ As of this writing, Q applets support API key authentication.
 
 <div class="row">
     <div class="col-md-12">
-        <img src="{{ './images/apikey.png' }}"
+        <img src="{{ '../images/apikey.png' }}"
                     alt="Q API key form">
     </div>
 </div>
