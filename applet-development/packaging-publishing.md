@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q Applet Packaging"
-permalink: /applet-development/packaging-publishing
+permalink: /applet-development/packaging-publishing/
 ---
 
 Once an applet is developed, these simple few steps will get it published
