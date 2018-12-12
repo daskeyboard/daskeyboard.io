@@ -11,7 +11,7 @@ permalink: /get-started/software/
       class="get-started-button"
       id="software-download-button">Download Das&nbsp;Keyboard&nbsp;Q </a>
     <small>
-      <small id="software-version-number">Version 3.1.0</small>
+      <small id="software-version-number">Version 3.0.0</small>
     </small>
   </div>
 </div>
