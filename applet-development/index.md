@@ -307,8 +307,14 @@ run `yarn` to install the node modules:
 
     yarn
 
+If you don't see the dev menu `</>` switch it on from the user setting menu.
 
-    TODO add how to load from UI ======================================================================
+<div class="row">
+    <div class="col-md-12">
+        <img src="{{ './images/devmenu.gif' }}"
+                    alt="Q desktop dev menu">
+    </div>
+</div>
 
 Here is a view of the `CPU Usage` applet loaded in dev mode inside Q desktop 
 application.

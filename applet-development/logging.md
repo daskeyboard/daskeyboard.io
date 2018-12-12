@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Applet log file"
-permalink: /applet-development/logging
+permalink: /applet-development/logging/
 ---
 
 As an alternative to loading the applet inside Q desktop, a developer can use

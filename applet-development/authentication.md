@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Applet log file"
-permalink: /applet-development/authentication
+permalink: /applet-development/authentication/
 ---
 
 As of this writing, Q applets support API key authentication.

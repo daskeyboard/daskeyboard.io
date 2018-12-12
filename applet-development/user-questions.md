@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Q Applet User Option"
-permalink: /applet-development/user-questions
+permalink: /applet-development/user-questions/
 ---
 
 Q Applet frameworks sports a facily to collect user options at 
