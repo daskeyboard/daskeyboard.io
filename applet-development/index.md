@@ -103,7 +103,7 @@ A typical Q applet file structure will look like this:
 > tree
 .
 ├── assets
-│   ├── incon.png
+│   ├── icon.png
 │   └── image.png
 ├── CHANGELOG.md
 ├── package.json
