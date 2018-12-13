@@ -14,7 +14,8 @@
     width: calc(100% - 250px);
     display: flex;
     justify-content: center;
-    padding-top: 40px; /* matches sidenav padding */
+    padding-top: 40px;
+    /* matches sidenav padding */
 }
 
 .main-contents-body {
@@ -26,8 +27,9 @@
     margin: 40px 0 40px 0;
 
     ul {
-    	margin-left: 0;
-    	list-style: none;
+        margin-left: 0;
+        list-style: none;
+        padding-left: 0;
     }
 
     li.sidebar-title {
@@ -36,11 +38,11 @@
     }
 
     ul.sidebar-items {
-    	margin-bottom: 16px;
+        margin-bottom: 16px;
 
-    	i.fa {
-    		opacity: 0.5;
-    	}
+        i.fa {
+            opacity: 0.5;
+        }
     }
 }
 
@@ -71,20 +73,23 @@
     }
 
     #mysidebar {
-        left:-100%;
-        position:fixed;
+        left: -100%;
+        position: fixed;
         -webkit-transition: left .5s ease-out;
         transition: left .5s ease-out;
         z-index: 2000;
-        top:0;
-        width: 280px; /* works all the way down to an iphone 4 */
+        top: 0;
+        width: 280px;
+        /* works all the way down to an iphone 4 */
         height: 100%;
         background: white;
-        overflow-y: auto; /* TODO: how to hide scroll bars? */
+        overflow-y: auto;
+        /* TODO: how to hide scroll bars? */
     }
 
     #mysidebar.active {
-        left:0; /* this animates our drawer into the page */
+        left: 0;
+        /* this animates our drawer into the page */
         padding: 24px;
         margin-top: 0;
     }
@@ -106,7 +111,7 @@
 }
 
 .collapsing-link {
- color: $brand-color !important;
+    color: $brand-color !important;
 }
 
 .collapsing-link:hover {
@@ -117,7 +122,7 @@
     position: relative;
 }
 
-.collapsing-link  i {
+.collapsing-link i {
     position: absolute;
     right: -123px;
     bottom: 3px;
@@ -150,7 +155,7 @@
 
 @media screen and (max-width:970px) {
 
-    .sidebar-items .badge{
+    .sidebar-items .badge {
         display: none;
     }
 }

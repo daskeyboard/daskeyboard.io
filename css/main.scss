@@ -28,14 +28,7 @@ $content-width:    980px;
 $on-palm:          640px;
 $on-laptop:        980px;
 
-h2 {
-    margin-top: 0.5rem;
-}
 
-small, .small{
-    text-transform: initial;
-    font-weight: 100;
-}
 
 // Using media queries with like this:
 // @include media-query($on-palm) {
@@ -49,7 +42,6 @@ small, .small{
         @content;
     }
 }
-
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
@@ -71,6 +63,11 @@ small, .small{
         "resource_description",
         "json_request_description"
 ;
+
+small, .small{
+    text-transform: initial;
+    font-weight: 100;
+}
 
 aside > :not(pre) > code[class*="language-"], aside > pre[class*="language-"] {
     background: inherit;

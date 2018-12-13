@@ -7,11 +7,7 @@ permalink: /applet-development/packaging-publishing/
 Once an applet is developed, these simple few steps will get it published
 in the Q marketplace.
 
-<div class="row">
-    <div class="col-md-12">
-      <img src="{{ '../images/yourapphere.png' }}" alt="Your app in Q marketplace">
-    </div>
-</div>
+<img src="{{ '../images/yourapphere.png' }}" alt="Your app in Q marketplace">
 
 ### Packaging for distribution
 
