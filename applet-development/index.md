@@ -7,12 +7,8 @@ permalink: /applet-development/
 Howdee developers. You'll find here the information needed to develop Q
 applets for Das Keyboard Q devices.
 
-<div class="row">
-    <div class="col-md-12">
-        <img src="{{ './images/marketplace.png' }}"
+<img src="{{ './images/marketplace.png' }}"
                     alt="Q Marketplace">
-    </div>
-</div>
 
 Q applet development is easy. There are many examples available, all open source and 
 remember that the Q forum: <https://qforum.daskeyboard.com> is a great place to ask questions.
@@ -23,12 +19,8 @@ software. Applets live in the Q marketplace.
 Applets control a user-defined set of RGB LEDs. For example, a `CPU meter` 
 would control the top horizontal LEDs from `backtick` to `9` (US layout).
 
-<div class="row">
-    <div class="col-md-12">
-        <img src="{{ './images/marketplace-config.png' }}"
+<img src="{{ './images/marketplace-config.png' }}"
                     alt="Q Applet configuration view">
-    </div>
-</div>
 
 ## Quick links
 
@@ -90,7 +82,7 @@ it to follow along.
 
     git clone https://github.com/daskeyboard/daskeyboard-applet--cpu-usage.git
 
-then install `node modules`
+then install `node modules`:
 
     yarn
 
@@ -140,11 +132,11 @@ The `height`, `width` and `origin` are defined by the `qConfig` JSON structure i
 ```
 
 You can also inspect the applet's geometry with the functions:
+
 - `this.getWidth()`
 - `this.getHeight()`
 - `this.getOriginX()`
 - `this.getOriginY()`
-
 
 ```json
  "qConfig": {
@@ -161,27 +153,25 @@ You can also inspect the applet's geometry with the functions:
 
 The above `qConfig` settings will display the applet (orange rectangle) as follows:
 
-<div class="row">
-    <div class="col-md-12">
-        <img src="{{ './images/app-install.png' }}"
+<img src="{{ './images/app-install.png' }}"
                     alt="App install">
-    </div>
-</div>
 
 Applet's geometry can be inspected with the functions:
 
-- `this.getWidth()`
-- `this.getHeight()`
-- `this.getOriginX()`
-- `this.getOriginY()`
+```javascript
+this.getWidth();
+this.getHeight();
+this.getOriginX();
+this.getOriginY();
+```
 
-### index.js: main script file and its event loop
+### Polling interval
 
 The heart of the Q applet is the `javascript` file `index.js`. Let's dive into it.
 
 In the case of the CPU meter, we would like to update the RGB LEDs of the keyboard every 3 seconds.
 
-To achieve this, we need to declare the polling interval
+To achieve this, we set the `polling interval` to 3000 milliseconds
  `this.pollingInterval = 3000;` in the applet class contructor as follows:
 
 ```javascript
@@ -189,7 +179,7 @@ class CpuUsage extends q.DesktopApp {
   constructor() {
     super();
     // run every 3000 ms
-    this.pollingInterval = 3000; // ms
+    this.pollingInterval = 3000;
     logger.info("CPU Usage Meter ready to go!");
   }
 ```
@@ -326,31 +316,24 @@ module.exports = {
 const cpuUsage = new CpuUsage();
 ```
 
-### Loading Dev applet into
+### Loading Dev applet into Q Desktop
 
-A developer can load an into Das Keyboard Q desktop in dev mode and check all
-aspects of his / her applet such as images, READMEs, config view and overall applet behavior and user xperience.
+A during development, an applet can be loaded into Das Keyboard Q desktop.
 
-Before loading the applet inside Q desktop, make sure you 
-run `yarn` to install the node modules:
+This allows to check the applet assets such as images, READMEs, config view and overall applet behavior and user experience.
+
+Before loading the applet inside Q desktop, the `node modules` need
+to be installed using the following command:
 
     yarn
 
-If you don't see the dev menu `</>` switch it on from the user setting menu.
+The applet can be loaded via the `dev menu` `</>`. A user can enable
+from the user setting menu.
 
-<div class="row">
-    <div class="col-md-12">
-        <img src="{{ './images/devmenu.gif' }}"
+<img src="{{ './images/devmenu.gif' }}"
                     alt="Q desktop dev menu">
-    </div>
-</div>
 
 Here is a view of the `CPU Usage` applet loaded in dev mode inside Q desktop 
 application.
 
-<div class="row">
-    <div class="col-md-12">
-        <img src="{{ './images/devmodqdesktop.png' }}"
-                    alt="Q desktop dev mode">
-    </div>
-</div>
+<img src="{{ './images/devmodqdesktop.png' }}" alt="Q desktop devmode">
