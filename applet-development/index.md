@@ -14,7 +14,6 @@ applets for Das Keyboard Q devices.
     </div>
 </div>
 
-
 Q applet development is easy. There are many examples available, all open source and 
 remember that the Q forum: <https://qforum.daskeyboard.com> is a great place to ask questions.
 
@@ -80,20 +79,27 @@ return new q.Signal({
 
 ## Applet development overview: making a CPU meter
 
-Let's walk through a concrete example and write a CPU meter applet that displays a
-bargraph on a Q keyboard. The final example is available on Github:
-<https://github.com/daskeyboard/daskeyboard-applet--cpu-monitor>. Clone 
-it to follow along.
 
 ### Prerequisites
 
 Make sure `node` and `yarn` are installed.
 
+Let's walk through a concrete example and write a CPU meter applet that displays a
+bargraph on a Q keyboard. The final example is available on Github:
+<https://github.com/daskeyboard/daskeyboard-applet--cpu-monitor>. Clone 
+it to follow along.
+
+    git clone git@github.com:daskeyboard/daskeyboard-applet--cpu-usage.git
+
+then install `node modules`
+
+    yarn
+
 ### File structure
 
 A typical Q applet file structure will look like this:
 
-```json
+```shell
 > tree
 .
 ├── assets
@@ -350,4 +356,3 @@ application.
                     alt="Q desktop dev mode">
     </div>
 </div>
-
