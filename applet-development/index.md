@@ -79,7 +79,6 @@ return new q.Signal({
 
 ## Applet development overview: making a CPU meter
 
-
 ### Prerequisites
 
 Make sure `node` and `yarn` are installed.
@@ -180,18 +179,17 @@ Applet's geometry can be inspected with the functions:
 
 The heart of the Q applet is the `javascript` file `index.js`. Let's dive into it.
 
-In the case of the CPU meter, we would like to update the RGB LEDs of the keyboard every 3
-seconds.
+In the case of the CPU meter, we would like to update the RGB LEDs of the keyboard every 3 seconds.
 
-To achieve this, we need to declare the polling interval `this.pollingInterval = 3000;`
-in the applet class contructor as follows:
+To achieve this, we need to declare the polling interval
+ `this.pollingInterval = 3000;` in the applet class contructor as follows:
 
 ```javascript
 class CpuUsage extends q.DesktopApp {
   constructor() {
     super();
     // run every 3000 ms
-    this.pollingInterval = 3000;
+    this.pollingInterval = 3000; // ms
     logger.info("CPU Usage Meter ready to go!");
   }
 ```
