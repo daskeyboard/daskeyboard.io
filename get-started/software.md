@@ -38,12 +38,14 @@ permalink: /get-started/software/
             3.0.0 - 32 bits</a>
     </td>
     <td>
-        <a href='https://s3-us-west-2.amazonaws.com/q-software-releases/3.1.0/Das_Keyboard_Q_3.1.0.pkg'>
-        3.1.0</a> - 5Q only
+      <a href='https://s3-us-west-2.amazonaws.com/q-software-releases/3.0.0-beta/DasKeyboard  Q_3.0.0-beta.2.pkg'>
+        3.0.0-beta.2</a> - 5Q only
     </td>
     <td>
        <a href='https://s3-us-west-2.amazonaws.com/q-software-releases/3.1.0/das-keyboard-q_3.1.0.deb'>
-        3.1.0.deb 64 bits</a> - 5Q only
+        3.1.0.deb 64 bits</a> - 5Q and 4Q only<br/>
+      <a href='https://copr.fedorainfracloud.org/coprs/appelond/das-keyboard/'>RPM </a><b> (not tested)</b> contributed by <a href="http://dennis-blog.appelon.net/">AppelonD</a>. 
+      
     </td>
   </tr>
 
