@@ -309,7 +309,7 @@ function loadDownloadLinkDependingOnOsArchitechture() {
       navigator.userAgent.indexOf("Win64") != -1) {
       $('#software-download-button').attr("href", "https://s3-us-west-2.amazonaws.com/q-software-releases/3.0.0/Das-Keyboard-Q-x64-Setup-3.0.0.exe");
       $('#software-download-button').append(" 64 bit");
-      $('#software-version-number').append("-beta");
+      //$('#software-version-number').append("-beta");
       $('#software-version-number').append(" Windows");
       return;
 
