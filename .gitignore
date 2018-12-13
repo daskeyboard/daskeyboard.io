@@ -17,5 +17,4 @@ example/*.dart
 
 .idea/
 _site/*
-
-
+.vscode/*
