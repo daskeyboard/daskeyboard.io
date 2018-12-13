@@ -89,7 +89,7 @@ bargraph on a Q keyboard. The final example is available on Github:
 <https://github.com/daskeyboard/daskeyboard-applet--cpu-monitor>. Clone 
 it to follow along.
 
-    git clone git@github.com:daskeyboard/daskeyboard-applet--cpu-usage.git
+    git clone https://github.com/daskeyboard/daskeyboard-applet--cpu-usage.git
 
 then install `node modules`
 
