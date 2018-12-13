@@ -39,6 +39,10 @@ troubleshooting.
 To log a message from `index.js`:
 
 ```javascript
+
+const q = require('daskeyboard-applet');
+const logger = q.logger;
+
 logger.info("Applet starting...");
 logger.warn("No user settings found, using defaults");
 logger.error("API unreachable");

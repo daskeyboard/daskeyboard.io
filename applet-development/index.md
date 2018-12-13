@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Q Applet Development - beta"
+title: "Q Applet Development"
 permalink: /applet-development/
 ---
 
@@ -113,7 +113,7 @@ The `assets` directory contains the images for the marketplace.
 
 The `README_ENDUSER.md` is the content that will be shown in the marketplace.
 
-### Defining which LEDs to use
+### Defining which LEDs to use: this.geometry
 
 The Q applet will define its rectangle area needs in the `package.json` file as follows.
 In the example below, the applet uses 10 LEDs (`width`) over 1 keyboard row (`height`).
@@ -121,7 +121,25 @@ During the installation by the end user, the applet will be first
 positioned at `orign` point (0,1) here which correspond to the `ESCAPE` key.
  The end user will then drag and drop the applet to a location of his or her choice.
 
-The `height`, `width` and `origin` are defined by the `qConfig` JSON structure in package.json
+The `height`, `width` and `origin` are defined by the `qConfig` JSON structure in package.json with the format:
+
+```text
+{
+  "width": <number>
+  "height": <number>
+  "origin": {
+    "x": <number>,
+    "y": <number>
+  }
+}
+```
+
+You can also inspect the applet's geometry with the functions:
+- `this.getWidth()`
+- `this.getHeight()`
+- `this.getOriginX()`
+- `this.getOriginY()`
+
 
 ```json
  "qConfig": {
@@ -145,11 +163,16 @@ The above `qConfig` settings will display the applet (orange rectangle) as follo
     </div>
 </div>
 
-The heart of the Q applet is the `javascript` file `index.js`. Let's dive into it.
+Applet's geometry can be inspected with the functions:
+
+- `this.getWidth()`
+- `this.getHeight()`
+- `this.getOriginX()`
+- `this.getOriginY()`
 
 ### index.js: main script file and its event loop
 
-`index.js` is the file that contains the applet `javascript` code. 
+The heart of the Q applet is the `javascript` file `index.js`. Let's dive into it.
 
 In the case of the CPU meter, we would like to update the RGB LEDs of the keyboard every 3
 seconds.
