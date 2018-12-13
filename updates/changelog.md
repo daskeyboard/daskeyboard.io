@@ -4,6 +4,48 @@ title: Changelog Das Keyboard Q Desktop Software
 permalink: /updates/changelog/
 ---
 
+## Version 3.1.0 (Windows and Linux)
+
+## Date released: December 13, 2018
+
+### Das Keyboard Q-Desktop Release Notes:
+
+### Also includes all fixes from 3.1.0 beta
+
+### HIGHLIGHTS
+- stable release of the Q Desktop for Windows and Linux. (Mac will be coming soon)
+- 10 new applets added, including Gmail, international weather, Trello and more!
+- a developer mode to load local applets under development inside the Q Desktop
+- signals popup messages support an action URL
+- keyboard firmware on-click upgrade from Q Desktop (5Q only, more to come)
+
+### NEW
+- Q Marketplace installed applets are visible in offline mode.
+- applets can be loaded in Q desktop for testing in developer mode
+- applets requiring the new version of the Q Desktop will prompt for user to upgrade.
+- new applet input control type search with `typeahead` 
+- Q Desktop can now be used without connecting a Q keyboard
+- 5Q firmware upgrades are now performed via Q Desktop (Windows and Linux)
+- add applets API key authentication scheme
+
+### IMPROVEMENTS
+- user applets upgrade to major new version (semver) will be re-installed completely when user upgrades
+- trash icon in the signal popover window now dismisses the signal instead of uninstalling the applet
+- multiple tweaks to the design and user experience
+- improved applet input form validation
+ 
+### FIXES
+- installer no longer asks for unnecessary reboot
+- previous profile is automatically loaded after reboot
+- when editing a color profile while applets are running, changes are applied after `save`
+
+### Q SOFTWARE  COMPATIBILITY MATRIX
+- 5Q: stable for Windows and Linux (Mac coming soon)
+- 4Q: stable for Windows and Linux
+- X50Q: stable for Windows
+
+---
+
 ## Version 3.1.0-beta (Windows, Linux)
 
 ## Date released: December 11, 2018
