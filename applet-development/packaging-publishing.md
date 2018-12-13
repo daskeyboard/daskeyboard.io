@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Q Applet Packaging"
+title: "Q Applet Packaging & Submission"
 permalink: /applet-development/packaging-publishing/
 ---
 
