@@ -4,15 +4,40 @@ title: Changelog Das Keyboard Q Desktop Software
 permalink: /updates/changelog/
 ---
 
+## Version 3.1.0 for Mac
+
+## Date released: December 14, 2018
+
+### Das Keyboard Q-Desktop Release Notes
+
+This release includes the same changes as version 3.1.0 for Windows and Linux.
+
+### HIGHLIGHTS
+
+- stable release of the Q Desktop for Mac
+- 5Q firmware can be updated from the Q Desktop on Mac
+
+### FIXES
+
+- fix: in some cases macOS Q service `das_keyboard_q-service` was using 100% CPU
+- Q Desktop application no longer triggers the `tccd` process > 100% CPU
+
+### KNOWN LIMITATIONS
+
+- profile switcher has been temporarily disabled on Mac to address the `tccd` process CPU over usage. This will be reimplemented in the near future
+
+---
+
 ## Version 3.1.0 (Windows and Linux)
 
 ## Date released: December 13, 2018
 
-### Das Keyboard Q-Desktop Release Notes:
+### Das Keyboard Q-Desktop Release Notes
 
-### Also includes all fixes from 3.1.0 beta
+This release includes all changes from 3.1.0 beta.
 
 ### HIGHLIGHTS
+
 - stable release of the Q Desktop for Windows and Linux. (Mac will be coming soon)
 - 10 new applets added, including Gmail, international weather, Trello and more!
 - a developer mode to load local applets under development inside the Q Desktop
@@ -20,26 +45,30 @@ permalink: /updates/changelog/
 - keyboard firmware on-click upgrade from Q Desktop (5Q only, more to come)
 
 ### NEW
+
 - Q Marketplace installed applets are visible in offline mode.
 - applets can be loaded in Q desktop for testing in developer mode
 - applets requiring the new version of the Q Desktop will prompt for user to upgrade.
-- new applet input control type search with `typeahead` 
+- new applet input control type search with `typeahead`
 - Q Desktop can now be used without connecting a Q keyboard
 - 5Q firmware upgrades are now performed via Q Desktop (Windows and Linux)
 - add applets API key authentication scheme
 
 ### IMPROVEMENTS
+
 - user applets upgrade to major new version (semver) will be re-installed completely when user upgrades
 - trash icon in the signal popover window now dismisses the signal instead of uninstalling the applet
 - multiple tweaks to the design and user experience
 - improved applet input form validation
- 
+
 ### FIXES
+
 - installer no longer asks for unnecessary reboot
 - previous profile is automatically loaded after reboot
 - when editing a color profile while applets are running, changes are applied after `save`
 
 ### Q SOFTWARE  COMPATIBILITY MATRIX
+
 - 5Q: stable for Windows and Linux (Mac coming soon)
 - 4Q: stable for Windows and Linux
 - X50Q: stable for Windows
@@ -50,9 +79,10 @@ permalink: /updates/changelog/
 
 ## Date released: December 11, 2018
 
-### Das Keyboard Q-Desktop Release Notes:
+### Das Keyboard Q-Desktop Release Notes
 
 ### HIGHLIGHTS
+
 - 10 new applets are available, including Gmail, international weather, Trello and more!
 - there is now a developer mode to load local applets under development inside the Q Desktop
 - applets now have a button to follow an action URL in the dashboard
@@ -68,38 +98,42 @@ permalink: /updates/changelog/
 - firmware upgrades are now done through the Q Desktop for the 5Q on Windows and Linux
 - use of services requiring API keys is now supported in applets
 
-
 ### IMPROVEMENTS
+
 - applets introducing major changes will be re-installed completely when upgrading
 - the trash icon in the signal popover window now dismisses the signal instead of uninstalling the applet
 - multiple tweaks to the design and user experience
 - improved form validation for applet input 
- 
+
 ### FIXES
+
 - installer no longer asks for reboot and now finishes after all installers are complete
 - current profile now applies after reboot without having to unplug the keyboard
 - when updating a profile while applets are running, the change now only applies when the user clicks `save`
 
- --- 
+ ---
 
- 
 ## Version 3.0.0-beta.3 (Linux)
 
 ## Date released: November 16, 2018
 
-### Das Keyboard Q-Desktop Release Notes:
+### Das Keyboard Q-Desktop Release Notes
 
 ### NEW
+
 - added Das Keyboard 4Q support for Linux
 
 ### ADDED
+
 - added an applet refresh action button in the dashboard and marketplace UI
 - applet user input now handles dynamic input arrays (example: more than 1 email for email input)
 
 ### UPDATED
+
 - any part of the applet can be grabbed for repositioning in the applet configuration screen
 
 ### FIXED
+
 - fixed segmentation fault happening on some versions of Ubuntu (18.04 LTS and prior versions)
 - Q Button now opens the dashboard corresponding to the plugged in device
 - Q Button now opens the application window even when minimized
@@ -114,13 +148,15 @@ permalink: /updates/changelog/
 
 ## Date released: November 7, 2018
 
-### Das Keyboard Q-Desktop Release Notes:
+### Das Keyboard Q-Desktop Release Notes
 
 ### NEW
+
 - Q Marketplace for applets
 - the application does not need login and can be used without the cloud, the login will be necessary only for more features
 
 ### ADDED
+
 - added quota for number of requests to the local api
 - added readme for developers
 - added welcome view to prompt the user to plug a device
@@ -143,11 +179,11 @@ permalink: /updates/changelog/
 
 ### Known Problems (Mac Beta Only)
 
-In rare cases, the MacOS Q Service `das_keyboard_q-service` uses too much CPU resource. 
+In rare cases, the macOS Q Service `das_keyboard_q-service` uses too much CPU resource. 
 If you encounter this problem, please post a message on the qforum and describe your setup: https://qforum.daskeyboard.com/.
 
 
-## Version 3.0.0-beta (Windows, MacOS, Linux)
+## Version 3.0.0-beta (Windows, macOS, Linux)
 
 ## Date released: November 3, 2018
 
@@ -166,11 +202,11 @@ If you encounter this problem, please post a message on the qforum and describe 
 
 ### Known Problems (Mac Beta Only)
 
-In rare cases, the MacOS Q Service `das_keyboard_q-service` uses too much CPU resource. 
+In rare cases, the macOS Q Service `das_keyboard_q-service` uses too much CPU resource. 
 If you encounter this problem, please post a message on the qforum and describe your setup: https://qforum.daskeyboard.com/.
 
 
-## Version 2.0.4 (Windows), 2.0.4-beta (MacOS), 2.0.4-beta (Linux)
+## Version 2.0.4 (Windows), 2.0.4-beta (macOS), 2.0.4-beta (Linux)
 
 ## Date released: October 30, 2018
 
@@ -190,12 +226,12 @@ If you encounter this problem, please post a message on the qforum and describe 
 
 ### Known Problems (Mac Beta Only)
 
-In rare cases, the MacOS Q Service `das_keyboard_q-service` uses too much CPU resource. 
+In rare cases, the macOS Q Service `das_keyboard_q-service` uses too much CPU resource. 
 If you encounter this problem, please post a message on the qforum and describe your setup: https://qforum.daskeyboard.com/.
 
 ---
 
-## Version 2.0.3 (Windows) and 2.0.3-beta (MacOS)
+## Version 2.0.3 (Windows) and 2.0.3-beta (macOS)
 
 ## Date released: September 28, 2018
 
@@ -220,12 +256,12 @@ If you encounter this problem, please post a message on the qforum and describe 
 
 ### Known Problems (Mac Beta Only)
 
-In rare cases, the MacOS Q Service `das_keyboard_q-service` uses too much CPU resource. 
+In rare cases, the macOS Q Service `das_keyboard_q-service` uses too much CPU resource. 
 If you encounter this problem, please post a message on the qforum and describe your setup: https://qforum.daskeyboard.com/.
 
 
 ---
-## Version 2.0.2 (Windows) and 2.0.2-beta.2 (MacOS)
+## Version 2.0.2 (Windows) and 2.0.2-beta.2 (macOS)
 
 ## Date released: September 21, 2018
 
@@ -261,7 +297,7 @@ If you encounter this problem, please post a message on the qforum and describe 
 
 ### Known Problems (Mac Beta Only)
 
-In rare cases, the MacOS Q Service `das_keyboard_q-service` uses too much CPU resource. 
+In rare cases, the macOS Q Service `das_keyboard_q-service` uses too much CPU resource. 
 If you encounter this problem, please post a message on the qforum and describe your setup: https://qforum.daskeyboard.com/.
 
 
@@ -273,7 +309,7 @@ If you encounter this problem, please post a message on the qforum and describe 
 
 ### NEW
 
-- added communication with the keyboard from MacOS. All application features are the same as for Windows.
+- added communication with the keyboard from macOS. All application features are the same as for Windows.
 
 ## Version 2.0.1
 
