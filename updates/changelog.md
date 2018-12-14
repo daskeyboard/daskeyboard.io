@@ -24,7 +24,7 @@ This release includes the same changes as version 3.1.0 for Windows and Linux.
 
 ### KNOWN LIMITATIONS
 
-- profile switcher has been temporarily disabled on Mac to address the `tccd` process CPU over usage. This will be reimplemented in the near future
+- profile switcher has been temporarily disabled on Mac to address the `tccd` process CPU over usage. This will be re-implemented in the near future
 
 ---
 
