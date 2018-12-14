@@ -14,8 +14,8 @@ This release includes the same changes as version 3.1.0 for Windows and Linux.
 
 ### HIGHLIGHTS
 
-- stable release of the Q Desktop for Mac
-- 5Q firmware can be updated from the Q Desktop on Mac
+- stable release of Q Desktop for Mac
+- 5Q firmware can be updated from Q Desktop on Mac
 
 ### FIXES
 
