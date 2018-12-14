@@ -1,8 +1,10 @@
 ---
 layout: page
-title: "Get Started: Watch welcome video"
+title: "Q Desktop Overview Video"
 permalink: /get-started/welcome-video/
 ---
+
+Whatch this short video and you'll be ready to enjoy the Q.
 
 <div class="embed-container">
 <iframe width="1280" height="720" src="https://www.youtube.com/embed/Zxmikxbsro8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -10,4 +12,4 @@ permalink: /get-started/welcome-video/
 
 ## Next step
 
-[Next step: Watch the marketplace tutorial]({{site.baseurl}}/get-started/marketplace-tutorial/)
+You are all set. Start Q desktop on your computer and add some applets. Enjoy!
