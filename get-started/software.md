@@ -6,7 +6,7 @@ permalink: /get-started/software/
 
 <div class="homepage__button_row"
       id="softwarep-age-button-container"
-      style="display: none">
+      style="display: none;">
   <div style="text-align:center;">
     <a style="margin-right:0px;"
       class="get-started-button"
@@ -17,11 +17,15 @@ permalink: /get-started/software/
   </div>
 </div>
 
+<a id="all-download-anchor-link" href="#all-downloads" style="display: none;">All downloads</a>
+
 <img src="{{ 'images/5Q-box-back.jpg'  | relative_url }}" alt="Das Keyboard software in action">
 
 ## All Downloads
 
-<table class='table table-bordered'>
+<div id="all-downloads"></div>
+
+<table  class='table table-bordered'>
   <thead>
     <tr>
       <th scope="col">Windows</th>
@@ -45,8 +49,7 @@ permalink: /get-started/software/
     <td>
        <a href='https://s3-us-west-2.amazonaws.com/q-software-releases/3.1.0/das-keyboard-q_3.1.0.deb'>
         3.1.0.deb 64 bits</a> - 5Q and 4Q only<br/>
-      <a href='https://copr.fedorainfracloud.org/coprs/appelond/das-keyboard/'>RPM </a><b> (not tested)</b> contributed by <a href="http://dennis-blog.appelon.net/">AppelonD</a>. 
-      
+      <a href='https://copr.fedorainfracloud.org/coprs/appelond/das-keyboard/'>RPM </a> contributed by <a href="http://dennis-blog.appelon.net/">AppelonD</a> (untested by Das Keyboard) 
     </td>
   </tr>
 
