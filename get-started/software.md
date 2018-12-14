@@ -64,7 +64,7 @@ permalink: /get-started/software/
   </tr>
 </table>
 
-## macos upgrade from v2.0.2-beta1
+<!-- ## macos upgrade from v2.0.2-beta1
 
 
 To upgrade from Q app  v2.0.2-beta.1 on Mac, first uninstall it using the following instructions:
@@ -87,4 +87,4 @@ rm -f ~/Library/LaunchAgents/com.daskeyboard.service.plist
 ```shell 
 launchctl list | grep daskeyboard ps -ef | grep q-Desktop 
 ```
-</div>
+</div> -->
