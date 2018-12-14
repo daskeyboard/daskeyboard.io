@@ -97,3 +97,7 @@ aside > :not(pre) > code[class*="language-"], aside > pre[class*="language-"] {
     }
 }
 
+#all-downloads:before {
+    content: none;
+}
+

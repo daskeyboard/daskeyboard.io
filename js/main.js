@@ -344,6 +344,8 @@ function loadDownloadLinkDependingOnOsArchitechture() {
     return;
   }
 
+  $('#all-download-anchor-link').css('display', 'block');
+
 }
 
 /**
