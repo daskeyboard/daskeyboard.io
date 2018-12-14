@@ -307,6 +307,7 @@ function loadDownloadLinkDependingOnOsArchitechture() {
   if (navigator.platform.includes('Win32')) {
     if (navigator.userAgent.indexOf("WOW64") != -1 ||
       navigator.userAgent.indexOf("Win64") != -1) {
+      $('#softwarep-age-button-container').css('display', 'flex');
       $('#software-download-button').attr("href", "https://s3-us-west-2.amazonaws.com/q-software-releases/3.1.0/Das_Keyboard_Q_x64-3.1.0.exe");
       $('#software-download-button').append(" 64 bit");
       $('#software-version-number').append('Version 3.1.0');
@@ -315,6 +316,7 @@ function loadDownloadLinkDependingOnOsArchitechture() {
 
 
     } else {
+      $('#softwarep-age-button-container').css('display', 'flex');
       $('#software-download-button').attr("href", "https://s3-us-west-2.amazonaws.com/q-software-releases/3.0.0/Das-Keyboard-Q-ia32-Setup-3.0.0.exe");
       $('#software-download-button').append(" 32 bit");
       $('#software-version-number').append('Version 3.0.0');
@@ -324,6 +326,7 @@ function loadDownloadLinkDependingOnOsArchitechture() {
     }
   }
   if (navigator.platform.includes('MacIntel')) {
+    $('#softwarep-age-button-container').css('display', 'flex');
     $('#software-download-button').attr("href", "https://s3-us-west-2.amazonaws.com/q-software-releases/3.0.0-beta/DasKeyboardQ_3.0.0-beta.2.pkg");
     $('#software-download-button').append(" 64 bit");
     $('#software-version-number').append('Version 3.0.0');
@@ -333,6 +336,7 @@ function loadDownloadLinkDependingOnOsArchitechture() {
   }
 
   if (navigator.platform.includes('Linux x86_64')) {
+    $('#softwarep-age-button-container').css('display', 'flex');
     $('#software-download-button').attr("href", "https://s3-us-west-2.amazonaws.com/q-software-releases/3.1.0/das-keyboard-q_3.1.0.deb");
     $('#software-download-button').append(" 64 bit");
     $('#software-version-number').append('Version 3.1.0');

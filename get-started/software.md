@@ -4,10 +4,11 @@ title: "Download Das Keyboard Q Software"
 permalink: /get-started/software/
 ---
 
-<div class="homepage__button_row">
+<div class="homepage__button_row"
+      id="softwarep-age-button-container"
+      style="display: none">
   <div style="text-align:center;">
     <a style="margin-right:0px;"
-      href="https://s3-us-west-2.amazonaws.com/q-software-releases/3.1.0/Das_Keyboard_Q_x64-3.1.0.exe"
       class="get-started-button"
       id="software-download-button">Download Das&nbsp;Keyboard&nbsp;Q </a>
     <small>
