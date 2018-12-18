@@ -4,6 +4,22 @@ title: Changelog Das Keyboard Q Desktop Software
 permalink: /updates/changelog/
 ---
 
+## Version 3.1.1
+
+## Date released: December 18, 2018
+
+##### Bug Fixes
+
+* **marketplace:**  
+  * Moved Marketplace location to be accessible from China)
+  * Oauth login windows was not working in some cases
+* **installer:**  Hanging issue with windows 7 installer
+* **typo:**
+  *  English mistake in firmware upgrade button
+  *  English mistake in download message
+
+---
+
 ## Version 3.1.0 for Mac
 
 ## Date released: December 14, 2018
