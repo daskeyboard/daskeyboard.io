@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Get Started: Firmware Download"
+title: "Get Started: Firmware Upgrade"
 permalink: /get-started/firmware/
 ---
 #### What's new? See <a href="{{site.baseurl}}/updates/changelog-firmware/">changelog</a>.
@@ -20,6 +20,70 @@ permalink: /get-started/firmware/
     </tr>
     </thead>
     <tr>
+      <td>
+      5Q
+      </td>
+      <td>
+        v7.4.18: Update firmware from Das Keyboard Q software
+      </td>
+      <td>v7.4.18: Update firmware from Das Keyboard Q software</td>
+      <td>v7.4.18: Update firmware from Das Keyboard Q software</td>
+    </tr>
+    <tr>
+      <td>
+      X50Q
+      </td>
+      <td>
+        v64.0.0:Update firmware from Das Keyboard Q Software
+      </td>
+      <td>v64.0.0:Update firmware from Das Keyboard Q Software</td>
+      <td>v64.0.0:Update firmware from Das Keyboard Q Software</td>
+    </tr>
+    <tr>
+      <td>
+      4Q
+      </td>
+      <td>
+        US layout:&nbsp;
+        <a href='https://download.daskeyboard.com/q-software-releases/Firmware-releases/DK4Q/21.24.0/104/firmware.exe'>
+        v21.24.0-US
+        </a>
+      <br/>
+        EU layout:&nbsp;
+        <a href='https://download.daskeyboard.com/q-software-releases/Firmware-releases/DK4Q/21.24.0/105/firmware.exe'>
+        v21.24.0-EU
+        </a>
+
+      </td>
+      <td>Use Windows FW updater*</td>
+      <td>Use Windows FW updater*</td>
+    </tr>
+  
+</table>
+
+
+
+## Instructions
+
+
+<span style="color:red;">IMPORTANT:</span> the keyboard should not be unplugged during
+ the firmware upgrade
+
+## Switching to Mac layout
+
+To map the 5Q Windows key to Mac configuration see [knowledge base article](https://daskeyboard.mojohelpdesk.com/help/article/199507).
+
+## Manual firmware upgrade
+
+<table class='table table-bordered'>
+  <thead>
+    <tr>
+      <th>Device</th>
+      <th>Windows</th>
+      <th>Mac</th>
+      <th>Linux</th>
+    </tr>
+<tr>
       <td>
       5Q
       </td>
@@ -62,30 +126,8 @@ permalink: /get-started/firmware/
       <td>Use Windows FW updater*</td>
       <td>Use Windows FW updater*</td>
     </tr>
-  
+    </thead>
 </table>
 
-(*) Mac and Linux firmware updaters are not available at this point. Please use a Windows PC 
+(*) Mac and Linux firmware updaters are not available at this point for the X50Q and the the 4Q. Please use a Windows PC 
 to upgrade the device firmware. We know it's a major pain and we are working on it.
-
-## Instructions for Windows
-
-- Download the firmware file. If the 5Q firmware is up to date, the installer will not perform
-    the upgrade. The current 5Q firmware version is displayed on the home page of the Q Desktop
-    software. It is also displayed when running the firmware upgrade application
-- <span style="color:red;">IMPORTANT:</span> Quit the Das Keyboard Q Software. 
-Quit it by clicking on the `cog` icon on the top right corner of the application, 
-and select `quit` on the dropdown menu
-- Double click the firmware file to “Run” it. Windows 10 Defender may display a message regarding
- an "unrecognized app" that has been prevented from starting. You will
-  need to run it in order to upgrade the firmware on the 5Q. To enable the firmware upgrade to proceed, 
-click on `More Info` and follow the prompts to run the upgrader and update the firmware
-- Don't forget to start the Das Keyboard Q software again
-
-## Switching to Mac layout
-
-To map the 5Q Windows key to Mac configuration see [knowledge base article](https://daskeyboard.mojohelpdesk.com/help/article/199507).
-
-## Built-in Color Profiles
-
-Preconfigured color profiles are embedded in some devices. Press `FN` + `1`-`6` on the NUMPAD to cycle through them. - [More info](https://daskeyboard.mojohelpdesk.com/help/article/199506)
