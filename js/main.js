@@ -308,7 +308,7 @@ function loadDownloadLinkDependingOnOsArchitechture() {
     if (navigator.userAgent.indexOf("WOW64") != -1 ||
       navigator.userAgent.indexOf("Win64") != -1) {
       $('#softwarep-age-button-container').css('display', 'flex');
-      $('#software-download-button').attr("href", "https://s3-us-west-2.amazonaws.com/q-software-releases/3.1.0/Das_Keyboard_Q_x64-3.1.0.exe");
+      $('#software-download-button').attr("href", "https://download.daskeyboard.com/q-software-releases/3.1.0/Das_Keyboard_Q_x64-3.1.0.exe");
       $('#software-download-button').append(" 64 bit");
       $('#software-version-number').append('Version 3.1.0');
       $('#software-version-number').append(" Windows");
@@ -317,7 +317,7 @@ function loadDownloadLinkDependingOnOsArchitechture() {
 
     } else {
       $('#softwarep-age-button-container').css('display', 'flex');
-      $('#software-download-button').attr("href", "https://s3-us-west-2.amazonaws.com/q-software-releases/3.0.0/Das-Keyboard-Q-ia32-Setup-3.0.0.exe");
+      $('#software-download-button').attr("href", "https://download.daskeyboard.com/q-software-releases/3.0.0/Das-Keyboard-Q-ia32-Setup-3.0.0.exe");
       $('#software-download-button').append(" 32 bit");
       $('#software-version-number').append('Version 3.0.0');
       $('#software-version-number').append(" Windows");
@@ -327,7 +327,7 @@ function loadDownloadLinkDependingOnOsArchitechture() {
   }
   if (navigator.platform.includes('MacIntel')) {
     $('#softwarep-age-button-container').css('display', 'flex');
-    $('#software-download-button').attr("href", "https://s3-us-west-2.amazonaws.com/q-software-releases/3.1.0/Das_Keyboard_Q-3.1.0.pkg");
+    $('#software-download-button').attr("href", "https://download.daskeyboard.com/q-software-releases/3.1.0/Das_Keyboard_Q-3.1.0.pkg");
     $('#software-download-button').append(" 64 bit");
     $('#software-version-number').append('Version 3.1.0');
     $('#software-version-number').append(" Mac");
@@ -336,7 +336,7 @@ function loadDownloadLinkDependingOnOsArchitechture() {
 
   if (navigator.platform.includes('Linux x86_64')) {
     $('#softwarep-age-button-container').css('display', 'flex');
-    $('#software-download-button').attr("href", "https://s3-us-west-2.amazonaws.com/q-software-releases/3.1.0/das-keyboard-q_3.1.0.deb");
+    $('#software-download-button').attr("href", "https://download.daskeyboard.com/q-software-releases/3.1.0/das-keyboard-q_3.1.0.deb");
     $('#software-download-button').append(" 64 bit");
     $('#software-version-number').append('Version 3.1.0');
     $('#software-version-number').append(" Linux");
@@ -353,38 +353,37 @@ function loadDownloadLinkDependingOnOsArchitechture() {
  * and change the download fw link button depending on the pid
  */
 function loadFirmwareDeviceDependingOnPidParam() {
-  const pid = getParameterByName('devicePid', window.location.href);
-  if (pid) {
-    $('#firmware-buttons').css('display', 'flex');
-    switch (pid) {
-      case 'DK5QPID':
-        $('#firmware-download-button').attr("href", "https://s3-us-west-2.amazonaws.com/q-software-releases/Firmware-releases/5Q/5Q+Flash+Upgrade.7.4.18.exe");
-        $('#firmware-download-button').text("Download 5Q firmware installer");
-        $('#firmware-download-version').text("Version 7.4.18");
-        break;
-      case 'X50QPID':
-        $('#firmware-download-button').attr("href", "https://s3-us-west-2.amazonaws.com/q-software-releases/Firmware-releases/X50Q/DasKeyboard+X50+-+Firmware+Updater+-+57.0.0.exe");
-        $('#firmware-download-button').text("Download X50Q firmware installer");
-        $('#firmware-download-version').text("Version 57.0.0");
-        break;
-      case 'DK4QPID':
-        $('#firmware-download-button').attr("href", "https://s3-us-west-2.amazonaws.com/q-software-releases/Firmware-releases/DK4Q/DK4Q_US_Firmware_18.23.0.exe");
-        $('#firmware-download-button').text("Download DK4Q US firmware installer");
-        $('#firmware-download-version').text("Version 18.23.0");
-        $('#firmware-download-button-dk4-eu').attr("href", "https://s3-us-west-2.amazonaws.com/q-software-releases/Firmware-releases/DK4Q/DK4Q_EU_Firmware_19.23.0.exe");
-        $('#firmware-download-button-dk4-eu').text("Download DK4Q EU firmware installer");
-        $('#firmware-download-version-dk4-eu').text("Version 19.23.0");
-        $('#firmware-download-version-dk4-eu').css('visibility', 'visible');
-        $('#firmware-download-button-dk4-eu').css('visibility', 'visible');
-        break;
-    }
-  }
+  // const pid = getParameterByName('devicePid', window.location.href);
+  // if (pid) {
+  //   $('#firmware-buttons').css('display', 'flex');
+  //   switch (pid) {
+  //     case 'DK5QPID':
+  //       $('#firmware-download-button').attr("href", "https://download.daskeyboard.com/q-software-releases/Firmware-releases/5Q/5Q+Flash+Upgrade.7.4.18.exe");
+  //       $('#firmware-download-button').text("Download 5Q firmware installer");
+  //       $('#firmware-download-version').text("Version 7.4.18");
+  //       break;
+  //     case 'X50QPID':
+  //       $('#firmware-download-button').attr("href", "https://download.daskeyboard.com/q-software-releases/Firmware-releases/X50Q/DasKeyboard+X50+-+Firmware+Updater+-+57.0.0.exe");
+  //       $('#firmware-download-button').text("Download X50Q firmware installer");
+  //       $('#firmware-download-version').text("Version 57.0.0");
+  //       break;
+  //     case 'DK4QPID':
+  //       $('#firmware-download-button').attr("href", "https://download.daskeyboard.com/q-software-releases/Firmware-releases/DK4Q/DK4Q_US_Firmware_18.23.0.exe");
+  //       $('#firmware-download-button').text("Download DK4Q US firmware installer");
+  //       $('#firmware-download-version').text("Version 18.23.0");
+  //       $('#firmware-download-button-dk4-eu').attr("href", "https://download.daskeyboard.com/q-software-releases/Firmware-releases/DK4Q/DK4Q_EU_Firmware_19.23.0.exe");
+  //       $('#firmware-download-button-dk4-eu').text("Download DK4Q EU firmware installer");
+  //       $('#firmware-download-version-dk4-eu').text("Version 19.23.0");
+  //       $('#firmware-download-version-dk4-eu').css('visibility', 'visible');
+  //       $('#firmware-download-button-dk4-eu').css('visibility', 'visible');
+  //       break;
+  //   }
+  // }
 }
 
 
 
 $(document).ready(function () {
-  // loadFirmwareDeviceDependingOnPidParam();
   const email = localStorage.getItem('email');
   const apiKey = getStoredAPIKey();
   if (email && apiKey) {

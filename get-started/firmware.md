@@ -24,7 +24,7 @@ permalink: /get-started/firmware/
       5Q
       </td>
       <td>
-        <a href='https://s3-us-west-2.amazonaws.com/q-software-releases/Firmware-releases/5Q/5Q_Firmware_7.4.18.exe'>
+        <a href='https://download.daskeyboard.com/q-software-releases/Firmware-releases/5Q/7.4.18/firmware.exe'>
         v7.4.18
         </a>
       </td>
@@ -36,7 +36,7 @@ permalink: /get-started/firmware/
       X50Q
       </td>
       <td>
-        <a href='https://s3-us-west-2.amazonaws.com/q-software-releases/Firmware-releases/X50Q/64.0.0/firmware.exe'>
+        <a href='https://download.daskeyboard.com/q-software-releases/Firmware-releases/X50Q/64.0.0/firmware.exe'>
         v64.0.0
         </a>
       </td>
@@ -49,12 +49,12 @@ permalink: /get-started/firmware/
       </td>
       <td>
         US layout:&nbsp;
-        <a href='https://s3-us-west-2.amazonaws.com/q-software-releases/Firmware-releases/DK4Q/21.24.0/104/firmware.exe'>
+        <a href='https://download.daskeyboard.com/q-software-releases/Firmware-releases/DK4Q/21.24.0/104/firmware.exe'>
         v21.24.0-US
         </a>
       <br/>
         EU layout:&nbsp;
-        <a href='https://s3-us-west-2.amazonaws.com/q-software-releases/Firmware-releases/DK4Q/21.24.0/105/firmware.exe'>
+        <a href='https://download.daskeyboard.com/q-software-releases/Firmware-releases/DK4Q/21.24.0/105/firmware.exe'>
         v21.24.0-EU
         </a>
 
