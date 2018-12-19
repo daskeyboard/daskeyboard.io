@@ -313,16 +313,6 @@ function loadDownloadLinkDependingOnOsArchitechture() {
       $('#software-version-number').append('Version 3.1.1');
       $('#software-version-number').append(" Windows");
       return;
-
-
-    } else {
-      $('#softwarep-age-button-container').css('display', 'flex');
-      $('#software-download-button').attr("href", "https://download.daskeyboard.com/q-software-releases/3.0.0/Das-Keyboard-Q-ia32-Setup-3.0.0.exe");
-      $('#software-download-button').append(" 32 bit");
-      $('#software-version-number').append('Version 3.0.0');
-      $('#software-version-number').append(" Windows");
-      return;
-
     }
   }
   if (navigator.platform.includes('MacIntel')) {

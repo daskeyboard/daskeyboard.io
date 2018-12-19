@@ -38,9 +38,6 @@ permalink: /get-started/software/
         <a href='https://download.daskeyboard.com/q-software-releases/3.1.1/Das-Keyboard-Q-x64_3.1.1.exe'>
             3.1.1 - 64 bits
         </a>
-        <br/>
-        <a href='https://download.daskeyboard.com/q-software-releases/3.0.0/Das-Keyboard-Q-ia32-Setup-3.0.0.exe'>
-            3.0.0 - 32 bits</a>
     </td>
     <td>
       <a href='https://download.daskeyboard.com/q-software-releases/3.1.1/Das-Keyboard-Q_3.1.1.pkg'>
