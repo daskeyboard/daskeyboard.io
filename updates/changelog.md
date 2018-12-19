@@ -11,12 +11,12 @@ permalink: /updates/changelog/
 ##### Bug Fixes
 
 * **marketplace:**  
-  * Moved Marketplace location to be accessible from China)
-  * Oauth login windows was not working in some cases
-* **installer:**  Hanging issue with windows 7 installer
-* **typo:**
-  *  English mistake in firmware upgrade button
-  *  English mistake in download message
+  * moved Marketplace location to be accessible from China
+  * Gmail authentication window was not working in some cases
+* **installer:**  installer no longer hangs in windows 7
+* **miscellaneous:**
+  *  corrected typo in firmware upgrade button
+  *  corrected typo in download popup message
 
 ---
 
