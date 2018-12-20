@@ -7,6 +7,14 @@ permalink: /updates/changelog-firmware/
 
 ## **Das Keyboard 5Q**
 
+## Version 7.4.48 - December 20, 2018
+
+### IMPROVEMENTS
+
+- Fixed RGB "ghosting" effect
+- `Enter` and right `Shift` keys no longer blink when switching RGB profiles
+- Fixed intermittent keyboard freezing issue
+
 ## Version 7.4.18 - October 16, 2018
 
 ### IMPROVEMENTS
