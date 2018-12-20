@@ -88,7 +88,7 @@ To map the 5Q Windows key to Mac configuration see [knowledge base article](http
       5Q
       </td>
       <td>
-        <a href='https://download.daskeyboard.com/q-software-releases/Firmware-releases/5Q/7.4.18/firmware.exe'>
+        <a href='https://download.daskeyboard.com/q-software-releases/Firmware-releases/5Q/7.4.48/firmware.exe'>
         v7.4.18
         </a>
       </td>
