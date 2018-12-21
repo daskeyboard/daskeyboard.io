@@ -24,10 +24,10 @@ permalink: /get-started/firmware/
       5Q
       </td>
       <td>
-        v7.4.18: Update firmware from Das Keyboard Q software
+        v7.4.48: Update firmware from Das Keyboard Q software
       </td>
-      <td>v7.4.18: Update firmware from Das Keyboard Q software</td>
-      <td>v7.4.18: Update firmware from Das Keyboard Q software</td>
+      <td>v7.4.48: Update firmware from Das Keyboard Q software</td>
+      <td>v7.4.48: Update firmware from Das Keyboard Q software</td>
     </tr>
     <tr>
       <td>
@@ -89,7 +89,7 @@ To map the 5Q Windows key to Mac configuration see [knowledge base article](http
       </td>
       <td>
         <a href='https://download.daskeyboard.com/q-software-releases/Firmware-releases/5Q/7.4.48/firmware.exe'>
-        v7.4.18
+        v7.4.48
         </a>
       </td>
       <td>Use Windows FW updater*</td>
