@@ -24,7 +24,10 @@ permalink: /get-started/firmware/
       5Q
       </td>
       <td>
-        v7.4.48: Update firmware from Das Keyboard Q software
+        v7.4.48: Update firmware from Das Keyboard Q software or
+        <a href='https://download.daskeyboard.com/q-software-releases/Firmware-releases/5Q/7.4.48/firmware.exe'>
+        download
+        </a>
       </td>
       <td>v7.4.48: Update firmware from Das Keyboard Q software</td>
       <td>v7.4.48: Update firmware from Das Keyboard Q software</td>
@@ -34,10 +37,13 @@ permalink: /get-started/firmware/
       X50Q
       </td>
       <td>
-        v64.0.0:Update firmware from Das Keyboard Q Software
+        v64.0.0:Update firmware from Das Keyboard Q Software or
+        <a href='https://download.daskeyboard.com/q-software-releases/Firmware-releases/X50Q/64.0.0/firmware.exe'>
+        download
+        </a>
       </td>
-      <td>v64.0.0:Update firmware from Das Keyboard Q Software</td>
-      <td>v64.0.0:Update firmware from Das Keyboard Q Software</td>
+      <td>Not compatible</td>
+      <td>Not compatible</td>
     </tr>
     <tr>
       <td>
@@ -55,27 +61,19 @@ permalink: /get-started/firmware/
         </a>
 
       </td>
-      <td>Use Windows FW updater*</td>
+      <td>Not compatible</td>
       <td>Use Windows FW updater*</td>
     </tr>
   
 </table>
 
-
-
-## Instructions
-
-
-<span style="color:red;">IMPORTANT:</span> the keyboard should not be unplugged during
- the firmware upgrade
-
 ## Switching to Mac layout
 
 To map the 5Q Windows key to Mac configuration see [knowledge base article](https://daskeyboard.mojohelpdesk.com/help/article/199507).
 
-## Manual firmware upgrade
+<!-- ## Manual firmware upgrade -->
 
-<table class='table table-bordered'>
+<!-- <table class='table table-bordered'>
   <thead>
     <tr>
       <th>Device</th>
@@ -127,7 +125,6 @@ To map the 5Q Windows key to Mac configuration see [knowledge base article](http
       <td>Use Windows FW updater*</td>
     </tr>
     </thead>
-</table>
+</table> -->
 
-(*) Mac and Linux firmware updaters are not available at this point for the X50Q and the the 4Q. Please use a Windows PC 
-to upgrade the device firmware. We know it's a major pain and we are working on it.
+(*) Linux firmware updater is not available at this point for the 4Q. Please use a Windows PC to upgrade the device firmware. We know it's a major pain and we are working on it.
