@@ -4,6 +4,7 @@ node_js:
 sudo: false
 before_install:
 - rvm install 2.2.2
+- gem install bundler -v 1.17.3
 - "./tool/before_install.sh"
 script: "./tool/travis.sh"
 before_deploy:
