@@ -3,8 +3,8 @@ node_js:
 - '8.1'
 sudo: false
 before_install:
-- rvm install 2.2.2
-- gem install bundler -v 1.17.3
+- rvm install 2.3.0
+- rvm use 2.3.0
 - "./tool/before_install.sh"
 script: "./tool/travis.sh"
 before_deploy:
