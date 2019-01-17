@@ -50,6 +50,10 @@ permalink: /get-started/firmware/
       4Q
       </td>
       <td>
+        <div class="alert alert-danger mt-3" role="alert">
+<b>Warning:</b> This firmware is for the <b>4Q ONLY</b>. Using it for other Das Keyboard 4 will brick the keyboard.
+</div>
+        
         US layout:&nbsp;
         <a href='https://download.daskeyboard.com/q-software-releases/Firmware-releases/DK4Q/21.24.0/104/firmware.exe'>
         v21.24.0-US
