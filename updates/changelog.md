@@ -4,6 +4,63 @@ title: Changelog Das Keyboard Q Desktop Software
 permalink: /updates/changelog/
 ---
 
+## Version 3.1.2
+
+## Date released: January 18, 2019
+
+### HIGHLIGHTS
+
+* Improved user experience
+* new applets for programmers, system administrators, webmasters and devops
+
+### NEW FEATURES
+* **Dashboard:**
+* navigation is now available in the dashboard with arrow, WASD and VIM navigation keys
+* shortcuts are now available in the dashboard: `O` opens action URL, `R` refreshes the applet and `#` deletes the notification
+* keyboard shortcuts detailed in preferences 
+* **Settings:**
+* debugging log mode to log detailed keyboard communication.
+
+### IMPROVEMENTS
+* **Applets:**
+* applets are now sorted by name in the Q marketplace
+* new popovers to show applet configuration
+* Q Marketplace now shows badges when applet upgrades are available
+* **Settings:**
+* device settings are now in the preference menu
+* **Dashboard:**
+* Q button now opens the dashboard. Pressing the Q button again closes the dashboard
+* Q button now opens the most recent signal
+* `flash`, `show in markeplace` and `refresh` actions are now grouped together in a sub menu `...`  
+* **Local API:**
+- new API now supports multi-zone signals
+* **Service communication:**
+* improved stability of communication with the service
+
+### FIXES
+* **Applets:**
+* applets are now sorted by name in the Q marketplace
+* improved applet initialization after reboot
+* applet list now expands to maximize the view
+* readme changelog link now works
+* applet log file is now limited to 10MB and will rotate
+* login applet window now always prompts for login
+* applet upgrade now cleans old signals
+* **System messages:**
+* application now fetches system messages even if no user is logged in
+* read system messages no longer notify user after reboot
+* new system messages now change the background of the bell to orange 
+* **dropdown menu:**
+* keyboard is no longer displayed in transparency through menus 
+* **DK4Q layout:** 
+* backspace key XY coordinates are now correct : (13,1) and (14, 1)  
+
+### KNOWN LIMITATIONS
+- profile switcher has been temporarily disabled on Mac to address the `tccd` process CPU over usage. This will be re-implemented in the near future
+- in some occasions, keyboard needs to be power-cycled (unplug/re-plug) after installation to be connected.
+
+---
+
 ## Version 3.1.1
 
 ## Date released: December 18, 2018
