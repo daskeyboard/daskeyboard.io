@@ -4,7 +4,7 @@ title: "Q Applet Development"
 permalink: /applet-development/
 ---
 
-Howdee developers. You'll find here the information needed to develop Q
+Howdy developers. You'll find here the information needed to develop Q
 applets for Das Keyboard Q devices.
 
 <img src="{{ './images/marketplace.png' }}"
