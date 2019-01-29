@@ -4,6 +4,32 @@ title: Changelog Das Keyboard Q Desktop Software
 permalink: /updates/changelog/
 ---
 
+## Version 3.2.0
+
+## Date released: January 29, 2019
+
+### HIGHLIGHTS
+
+* Q Peek = `Q Button` + `<key>`: displays notifications by pressing the `Q button` and a key with a signal
+
+### NEW FEATURES
+
+* **Action Center:**
+* Holding the q-button and pressing another key will open the action center if a signal is in this zone
+* If the Action center is opened, pressing then releasing q-button will close the action center
+* **Service:** added q-button release detection in Linux service
+
+### OTHER CHANGES
+
+* **Signal Center:**  Signal center is now deprecated
+
+### KNOWN LIMITATIONS
+
+* profile switcher has been temporarily disabled on Mac to address the `tccd` process CPU over usage. This will be re-implemented in the near future
+* in some occasions, keyboard needs to be power-cycled (unplug/re-plug) after installation to be connected.
+
+---
+
 ## Version 3.1.2
 
 ## Date released: January 18, 2019
@@ -14,6 +40,7 @@ permalink: /updates/changelog/
 * new applets for programmers, system administrators, webmasters and devops
 
 ### NEW FEATURES
+
 * **Dashboard:**
 * navigation is now available in the dashboard with arrow, WASD and VIM navigation keys
 * shortcuts are now available in the dashboard: `O` opens action URL, `R` refreshes the applet and `#` deletes the notification
@@ -22,6 +49,7 @@ permalink: /updates/changelog/
 * debugging log mode to log detailed keyboard communication.
 
 ### IMPROVEMENTS
+
 * **Applets:**
 * applets are now sorted by name in the Q marketplace
 * new popovers to show applet configuration
@@ -38,6 +66,7 @@ permalink: /updates/changelog/
 * improved stability of communication with the service
 
 ### FIXES
+
 * **Applets:**
 * applets are now sorted by name in the Q marketplace
 * improved applet initialization after reboot
@@ -56,6 +85,7 @@ permalink: /updates/changelog/
 * backspace key XY coordinates are now correct : (13,1) and (14, 1)  
 
 ### KNOWN LIMITATIONS
+
 - profile switcher has been temporarily disabled on Mac to address the `tccd` process CPU over usage. This will be re-implemented in the near future
 - in some occasions, keyboard needs to be power-cycled (unplug/re-plug) after installation to be connected.
 
@@ -65,7 +95,7 @@ permalink: /updates/changelog/
 
 ## Date released: December 18, 2018
 
-##### Bug Fixes
+### Bug Fixes
 
 * **marketplace:**  
   * moved Marketplace location to be accessible from China
