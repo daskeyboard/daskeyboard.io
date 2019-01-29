@@ -7,7 +7,7 @@ permalink: /get-started/welcome-video/
 Whatch this short video and you'll be ready to enjoy the Q.
 
 <div class="embed-container">
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/Zxmikxbsro8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/PtNCRdwAOjk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
 
 ## Next step
