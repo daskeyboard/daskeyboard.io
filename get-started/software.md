@@ -15,11 +15,11 @@ permalink: /get-started/software/
       <small id="software-version-number"></small>
     </small>
   </div>
+  <div style="text-align: center; margin-left: 20px;">
+  <a href="{{ 'updates/changelog/'  | relative_url }}">What's new?</a>
+  </div>
 </div>
 
-<a id="all-download-anchor-link" href="#all-downloads" style="display: none;">All downloads</a>
-
-<img src="{{ 'images/5Q-box-back.jpg'  | relative_url }}" alt="Das Keyboard software in action">
 
 ## All Downloads
 
@@ -64,27 +64,5 @@ permalink: /get-started/software/
   </tr>
 </table>
 
-<!-- ## macos upgrade from v2.0.2-beta1
+<img src="{{ 'images/5Q-box-back.jpg'  | relative_url }}" alt="Das Keyboard software in action">
 
-
-To upgrade from Q app  v2.0.2-beta.1 on Mac, first uninstall it using the following instructions:
-
-- open the Application Terminal located in the folder /Applications/Utilities
-- run the 2 following commands
-
-<div class="code-response" markdown="1">
-```shell 
-launchctl unload ~/Library/LaunchAgents/com.daskeyboard.service.plist
-rm -f ~/Library/LaunchAgents/com.daskeyboard.service.plist
-```
-</div>
-
-- close the q-Desktop.app by right clicking on the dock menu Q icon and clicking quit
-- uninstall the q-Desktop.app located on the folder /Applications by drag and droping the icon into the trash
-- validate that the application is not running anymore by running this commands
-
-<div class="code-response" markdown="1">
-```shell 
-launchctl list | grep daskeyboard ps -ef | grep q-Desktop 
-```
-</div> -->
