@@ -4,6 +4,8 @@ title: "Send a signal when we receive a notifications from Github"
 permalink: /script-examples/github-api/
 ---
 
+{% include api_transition_header.html %}
+
 <!-- Nav tabs -->
 <ul class="nav nav-tabs code-nav-tabs" role="tablist">
   <li class="nav-item">

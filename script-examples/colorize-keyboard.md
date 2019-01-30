@@ -4,6 +4,9 @@ title: "Colorize all LEDs of the Q keyboard"
 permalink: /script-examples/colorize-keyboard/
 ---
 
+{% include api_transition_header.html %}
+
+
 <!-- Nav tabs -->
 <ul class="nav nav-tabs code-nav-tabs" role="tablist">
   <li class="nav-item">

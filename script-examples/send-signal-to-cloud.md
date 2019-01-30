@@ -4,6 +4,8 @@ title: "Send one signal to the Cloud"
 permalink: /script-examples/send-signal-to-cloud/
 ---
 
+{% include api_transition_header.html %}
+
 <!-- Nav tabs -->
 <ul class="nav nav-tabs code-nav-tabs" role="tablist">
 
