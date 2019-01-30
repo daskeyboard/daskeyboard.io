@@ -5,14 +5,15 @@
     <li><a href="{{ 'get-started/' | relative_url }}">Start here...</a></li>
   </ul>
 
-  <li class="sidebar-title">Q Applets</li>
+  <li class="sidebar-title">Q Applets API</li>
   <ul class="sidebar-items">
     <li><a href="{{ 'applet-development/' | relative_url }}">Development overview</a></li>
     <li><a href="{{ 'applet-development/user-questions/' | relative_url }}">Form fields: questions</a></li>
     <li><a href="{{ 'applet-development/signals/' | relative_url }}">Creating signals</a></li>
     <li><a href="{{ 'applet-development/logging/' | relative_url }}">Command line & logging</a></li>
     <li><a href="{{ 'applet-development/authentication/' | relative_url }}">Applet authentication</a></li>
-    <li><a href="{{ 'applet-development/packaging-publishing/' | relative_url }}">Packaging & publishing</a></li>
+    <li><a href="{{ 'applet-development/packaging-publishing/' | relative_url }}">Packaging &
+        publishing</a></li>
   </ul>
 
   <li class="sidebar-title">Q Developer API</li>
@@ -29,87 +30,8 @@
   <ul class="sidebar-items">
     <li><a href="{{ 'updates/changelog' | relative_url }}">Software changelog</a></li>
     <li><a href="{{ 'updates/changelog-firmware' | relative_url }}">Firmware changelog</a></li>
-
   </ul>
 
-  <li class="sidebar-title">Q API</li>
-
-  <!-- collapsing link example -->
-  <!-- <ul class="sidebar-items">
-    <li>
-      <a class="collapsing-link collapsed"
-         data-toggle="collapse" 
-         href="#signal-resource-collapse-content" 
-         role="button" 
-         aria-expanded="false" 
-         aria-controls="signal-resource-collapse-content">
-         Signals
-         <i class="fa fa-angle-down"></i>
-         <i class="fa fa-angle-left"></i>
-        </a>
-
-      <ul class="collapse" id="signal-resource-collapse-content">
-        <li>
-          <span class="badge badge-warning">resource</span>&nbsp;
-          <a href="/q-api-doc#signal-resource-anchor">signals</a>
-        </li>
-        <li>
-          <span class="badge badge-success">POST</span>&nbsp;
-          <a href="/q-api-doc#create-signal-anchor">create signal</a>
-        </li>
-      </ul>
-    </li>
-  </ul> -->
-
-  <ul class="sidebar-items">
-    <li>
-      <span class="resource-name">Signals</span>
-      <ul>
-        <li>
-          <a href="{{ 'api-resources/signal/resource-description' | relative_url }}">signal
-            resource</a>
-          <span class="badge badge-warning pull-right">RES</span>
-        </li>
-        <li>
-          <a href="{{ 'api-resources/signal/create-signal' | relative_url }}">create signal</a>
-          <span class="badge badge-success pull-right">POST</span>
-        </li>
-        <li>
-          <a href="{{ 'api-resources/signal/delete-signal' | relative_url }}">delete signal by id</a>
-          <span class="badge badge-danger pull-right">DELETE</span>
-        </li>
-        <li>
-          <a href="{{ 'api-resources/signal/get-shadow-signals-for-device' | relative_url }}">get
-            shadows for pid</a>
-          <span class="badge badge-primary pull-right">GET</span>
-        </li>
-        <li>
-          <a href="{{ 'api-resources/signal/get-all-shadow-signals' | relative_url }}">get all
-            shadows</a>
-          <span class="badge badge-primary pull-right">GET</span>
-        </li>
-        <li>
-          <a href="{{ 'api-resources/signal/get-signal-by-zone-id' | relative_url }}">get signal by
-            zoneId</a>
-          <span class="badge badge-primary pull-right">GET</span>
-        </li>
-        <li>
-          <a href="{{ 'api-resources/signal/get-signal-color-by-zone-id' | relative_url }}">get
-            signal color by zoneId</a>
-          <span class="badge badge-primary pull-right">GET</span>
-        </li>
-        <li>
-          <a href="{{ 'api-resources/signal/delete-signal-by-zone-id' | relative_url }}">delete
-            signal by zoneId</a>
-          <span class="badge badge-danger pull-right">DELETE</span>
-        </li>
-        <li>
-          <a href="{{ 'api-resources/signal/get-signals' | relative_url }}">get signals</a>
-          <span class="badge badge-primary pull-right">GET</span>
-        </li>
-      </ul>
-    </li>
-  </ul>
   <ul class="sidebar-items">
     <li>
       <span class="resource-name">Links</span>
@@ -117,5 +39,47 @@
         <li>
           <a href="https://github.com/daskeyboard">Github Das Keyboard</a>
         </li>
-
       </ul>
+    </li>
+  </ul>
+
+  <li class="sidebar-title">Q Signals<span class="badge badge-warning pull-right">TRANSITIONING</span></li>
+  <ul class="sidebar-items">
+    <li>
+      <ul>
+        <li>
+          <a href="{{ 'api-resources/signal/resource-description' | relative_url }}">signal
+            resource</a>
+        </li>
+        <li>
+          <a href="{{ 'api-resources/signal/create-signal' | relative_url }}">create signal</a>
+        </li>
+        <li>
+          <a href="{{ 'api-resources/signal/delete-signal' | relative_url }}">delete signal by id</a>
+        </li>
+        <li>
+          <a href="{{ 'api-resources/signal/get-shadow-signals-for-device' | relative_url }}">get
+            shadows for pid</a>
+        </li>
+        <li>
+          <a href="{{ 'api-resources/signal/get-all-shadow-signals' | relative_url }}">get all
+            shadows</a>
+        </li>
+        <li>
+          <a href="{{ 'api-resources/signal/get-signal-by-zone-id' | relative_url }}">get signal by
+            zoneId</a>
+        </li>
+        <li>
+          <a href="{{ 'api-resources/signal/get-signal-color-by-zone-id' | relative_url }}">get
+            signal color by zoneId</a>
+        </li>
+        <li>
+          <a href="{{ 'api-resources/signal/delete-signal-by-zone-id' | relative_url }}">delete
+            signal by zoneId</a>
+        </li>
+        <li>
+          <a href="{{ 'api-resources/signal/get-signals' | relative_url }}">get signals</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
