@@ -15,8 +15,8 @@ permalink: /updates/changelog/
 ### NEW FEATURES
 
 * **Action Center:**
-* Holding the q-button and pressing another key will open the action center if a signal is in this zone
-* If the Action center is opened, pressing then releasing q-button will close the action center
+  * Holding the q-button and pressing another key will open the action center if a signal is in this zone
+  * If the Action center is opened, pressing then releasing q-button will close the action center
 * **Service:** added q-button release detection in Linux service
 
 ### OTHER CHANGES
