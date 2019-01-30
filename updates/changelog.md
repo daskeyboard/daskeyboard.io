@@ -4,35 +4,43 @@ title: Changelog Das Keyboard Q Desktop Software
 permalink: /updates/changelog/
 ---
 
+
+<a class="btn btn-outline-success float-right" href="{{ '/get-started/software'  | relative_url }}" >Download</a>
+
 ## Version 3.2.0
 
-## Date released: January 29, 2019
+January 29, 2019
 
 ### HIGHLIGHTS
 
-* Q Peek = `Q Button` + `<key>`: displays notifications by pressing the `Q button` and a key with a signal
+Message preview = `Q Button` + `<key>`: displays notifications by pressing the `Q button` and a key with a signal
+
+<div style="margin-bottom: 30px; margin-top: 10px;">
+<img src="{{ '/updates/images/message-preview.gif'  | relative_url }}" style="width: 420px;">
+</div>
 
 ### NEW FEATURES
 
-* **Action Center:**
-  * Holding the q-button and pressing another key will open the action center if a signal is in this zone
-  * If the Action center is opened, pressing then releasing q-button will close the action center
-* **Service:** added q-button release detection in Linux service
+* **Message preview :**
+  * Holding the Q button and pressing another key will open a popup window with information about the signal
+  * If the message preview window is opened, pressing Q button will close the window
+
+
 
 ### OTHER CHANGES
 
-* **Signal Center:**  Signal center is now deprecated
+* **Signal Center:**  Signal center is now deprecated: users should use applets
 
 ### KNOWN LIMITATIONS
 
 * profile switcher has been temporarily disabled on Mac to address the `tccd` process CPU over usage. This will be re-implemented in the near future
-* in some occasions, keyboard needs to be power-cycled (unplug/re-plug) after installation to be connected.
+* in some occasions, keyboard needs to be power-cycled (unplug/re-plug) after installation to be connected
 
 ---
 
 ## Version 3.1.2
 
-## Date released: January 18, 2019
+January 18, 2019
 
 ### HIGHLIGHTS
 
@@ -93,7 +101,7 @@ permalink: /updates/changelog/
 
 ## Version 3.1.1
 
-## Date released: December 18, 2018
+December 18, 2018
 
 ### Bug Fixes
 
@@ -109,7 +117,7 @@ permalink: /updates/changelog/
 
 ## Version 3.1.0 for Mac
 
-## Date released: December 14, 2018
+December 14, 2018
 
 ### Das Keyboard Q-Desktop Release Notes
 
@@ -133,7 +141,7 @@ This release includes the same changes as version 3.1.0 for Windows and Linux.
 
 ## Version 3.1.0 (Windows and Linux)
 
-## Date released: December 13, 2018
+December 13, 2018
 
 ### Das Keyboard Q-Desktop Release Notes
 
@@ -180,7 +188,7 @@ This release includes all changes from 3.1.0 beta.
 
 ## Version 3.1.0-beta (Windows, Linux)
 
-## Date released: December 11, 2018
+December 11, 2018
 
 ### Das Keyboard Q-Desktop Release Notes
 
@@ -218,7 +226,7 @@ This release includes all changes from 3.1.0 beta.
 
 ## Version 3.0.0-beta.3 (Linux)
 
-## Date released: November 16, 2018
+November 16, 2018
 
 ### Das Keyboard Q-Desktop Release Notes
 
@@ -249,7 +257,7 @@ This release includes all changes from 3.1.0 beta.
 
 ## Version 3.0.0 Windows, 3.0.0-beta.2 (Mac), 3.0.0-beta.2 (Linux)
 
-## Date released: November 7, 2018
+November 7, 2018
 
 ### Das Keyboard Q-Desktop Release Notes
 
@@ -288,9 +296,9 @@ If you encounter this problem, please post a message on the qforum and describe 
 
 ## Version 3.0.0-beta (Windows, macOS, Linux)
 
-## Date released: November 3, 2018
+November 3, 2018
 
-### Das Keyboard Q-Desktop Release Notes:
+### Das Keyboard Q-Desktop Release Notes
 
 ### ADDED
 - Q Marketplace for applets.
@@ -311,7 +319,7 @@ If you encounter this problem, please post a message on the qforum and describe 
 
 ## Version 2.0.4 (Windows), 2.0.4-beta (macOS), 2.0.4-beta (Linux)
 
-## Date released: October 30, 2018
+October 30, 2018
 
 ### Das Keyboard Q-Desktop Release Notes:
 
@@ -336,7 +344,7 @@ If you encounter this problem, please post a message on the qforum and describe 
 
 ## Version 2.0.3 (Windows) and 2.0.3-beta (macOS)
 
-## Date released: September 28, 2018
+September 28, 2018
 
 ### Das Keyboard Q-Desktop Release Notes:
 
@@ -366,14 +374,14 @@ If you encounter this problem, please post a message on the qforum and describe 
 ---
 ## Version 2.0.2 (Windows) and 2.0.2-beta.2 (macOS)
 
-## Date released: September 21, 2018
+September 21, 2018
 
 ### Release Highlights
 
 - Command Center is now available for all Q-Desktop users
 - New Beta release for Mac
 
-### Q Desktop Release Detail Improvements:
+### Q Desktop Release Detail Improvements
 
 ### FIXED
 
