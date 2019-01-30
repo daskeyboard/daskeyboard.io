@@ -4,6 +4,9 @@ title: "Search keyword in a website and colorize your device depending on the re
 permalink: /script-examples/search-keyword-in-website-create-signal/
 ---
 
+{% include api_transition_header.html %}
+
+
 <!-- Nav tabs -->
 <ul class="nav nav-tabs code-nav-tabs" role="tablist">
   <li class="nav-item">

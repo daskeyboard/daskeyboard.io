@@ -4,6 +4,9 @@ title: Das Keyboard Q Contributed API Code Examples & Libraries
 permalink: /contributed-links/
 ---
 
+{% include api_transition_header.html %}
+
+
 The links below have been contributed by the community. 
 
 Have something interesting to share? Create a pull request and the Das Keyboard team will review it. The code should be working and we should understand what it does.
