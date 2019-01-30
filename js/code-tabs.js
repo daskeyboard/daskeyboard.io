@@ -67,11 +67,13 @@ function listenToAPIServerTabSelection() {
  */
 function showLastSelectedServer() {
   // select the server persisting in the local storage
-  const server = localStorage.getItem('lastSelectedServer');
+  // const server = localStorage.getItem('lastSelectedServer');
 
-  if (server) {
-    $('.' + server).tab('show') // Select tab by name
-  }
+  // if (server) {
+
+  // always select localhost since Cloud is deprecated
+  $('.' + 'localhost-server').tab('show') // Select tab by name
+  // }
 }
 
 /**
@@ -122,7 +124,7 @@ $(document).ready(function () {
   listenToCodingLanguageTabSelection();
   showLastSelectedCodingLanguage();
 
-  listenToAPIServerTabSelection();
+  // listenToAPIServerTabSelection();
   showLastSelectedServer();
 
   listenToCopyActionClick();
