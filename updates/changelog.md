@@ -7,6 +7,36 @@ permalink: /updates/changelog/
 
 <a class="btn btn-outline-success float-right" href="{{ '/get-started/software'  | relative_url }}" >Download</a>
 
+
+## Version 3.2.1
+
+February 1, 2019
+
+### HIGHLIGHTS
+
+* Critical bug fix for macOS: key presses were opening the dashboard on some occasions
+* Ability to downgrade the 5Q firmware (useful for tech support)
+
+### NEW FEATURES
+
+* **Firmware update:**
+  * Windows: Implemented one-click firmware upgrade for 5Q
+  * 5Q firmware can now be upgraded and downgraded to any version (useful for regression)
+  * Added confirmation before firmware upgrade
+
+### BUG FIXES
+
+* **Q Button:**  macOS: Das Keyboard Q App now only opens when pressing Q Button
+* **Autolaunch:** macOS: Application no longer add multiple login items
+
+### KNOWN LIMITATIONS
+
+* profile switcher has been temporarily disabled on Mac to address the `tccd` process CPU over usage. This will be re-implemented in the near future
+* in some occasions, keyboard needs to be power-cycled (unplug/re-plug) after installation to be connected
+
+---
+
+
 ## Version 3.2.0
 
 January 29, 2019
