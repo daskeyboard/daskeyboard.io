@@ -308,27 +308,27 @@ function loadDownloadLinkDependingOnOsArchitechture() {
     if (navigator.userAgent.indexOf("WOW64") != -1 ||
       navigator.userAgent.indexOf("Win64") != -1) {
       $('#softwarep-age-button-container').css('display', 'flex');
-      $('#software-download-button').attr("href", "https://download.daskeyboard.com/q-software-releases/3.2.0/Das-Keyboard-Q_3.2.0.exe");
+      $('#software-download-button').attr("href", "https://download.daskeyboard.com/q-software-releases/3.2.1/Das-Keyboard-Q_3.2.1.exe");
       $('#software-download-button').append(" 64 bit");
-      $('#software-version-number').append('Version 3.2.0');
+      $('#software-version-number').append('Version 3.2.1');
       $('#software-version-number').append(" Windows");
       return;
     }
   }
   if (navigator.platform.includes('MacIntel')) {
     $('#softwarep-age-button-container').css('display', 'flex');
-    $('#software-download-button').attr("href", "https://download.daskeyboard.com/q-software-releases/3.2.0/Das-Keyboard-Q_3.2.0.pkg");
+    $('#software-download-button').attr("href", "https://download.daskeyboard.com/q-software-releases/3.2.1/Das-Keyboard-Q_3.2.1.pkg");
     $('#software-download-button').append(" 64 bit");
-    $('#software-version-number').append('Version 3.2.0');
+    $('#software-version-number').append('Version 3.2.1');
     $('#software-version-number').append(" Mac");
     return;
   }
 
   if (navigator.platform.includes('Linux x86_64')) {
     $('#softwarep-age-button-container').css('display', 'flex');
-    $('#software-download-button').attr("href", "https://download.daskeyboard.com/q-software-releases/3.2.0/das-keyboard-q_3.2.0.deb");
+    $('#software-download-button').attr("href", "https://download.daskeyboard.com/q-software-releases/3.2.1/das-keyboard-q_3.2.1.deb");
     $('#software-download-button').append(" 64 bit");
-    $('#software-version-number').append('Version 3.2.0');
+    $('#software-version-number').append('Version 3.2.1');
     $('#software-version-number').append(" Linux");
     $('#software-version-number').append("-Debian");
     return;
