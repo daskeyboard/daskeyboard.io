@@ -24,10 +24,7 @@ permalink: /get-started/firmware/
       5Q
       </td>
       <td>
-        v7.4.48: Update firmware from Das Keyboard Q software or
-        <a href='https://download.daskeyboard.com/q-software-releases/Firmware-releases/5Q/7.4.48/firmware.exe'>
-        download
-        </a>
+        v7.4.48: Update firmware from Das Keyboard Q software
       </td>
       <td>v7.4.48: Update firmware from Das Keyboard Q software</td>
       <td>v7.4.48: Update firmware from Das Keyboard Q software</td>
