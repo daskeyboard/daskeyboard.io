@@ -4,7 +4,7 @@ title: Das Keyboard Q Contributed API Code Examples & Libraries
 permalink: /contributed-links/
 ---
 
-{% include api_transition_header.html %}
+<!-- {% include api_transition_header.html %} -->
 
 
 The links below have been contributed by the community. 

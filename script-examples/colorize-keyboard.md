@@ -4,7 +4,7 @@ title: "Colorize all LEDs of the Q keyboard"
 permalink: /script-examples/colorize-keyboard/
 ---
 
-{% include api_transition_header.html %}
+<!-- {% include api_transition_header.html %} -->
 
 
 <!-- Nav tabs -->

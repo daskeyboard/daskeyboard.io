@@ -3,7 +3,8 @@ layout: page
 title: "Script examples"
 permalink: /script-examples/
 ---
-{% include api_transition_header.html %}
+
+<!-- {% include api_transition_header.html %} -->
 
 
 Below are some script examples to demonstrate how to use the Q developer API with different languages:
