@@ -82,6 +82,14 @@ The object  `this.config` is used access the questions values in `index.js`:
 
 TODO
 
-### Dynamic searc asdfsdfsdfsdfsfasdfsdfdasfsdfd
+### Dynamic search
+
+TODO
+
+### Color
+
+TODO
+
+### Effect
 
 TODO
