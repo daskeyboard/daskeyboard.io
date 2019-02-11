@@ -3,7 +3,8 @@ layout: page
 title: "Colorize the keyboard using the XY coordinates"
 permalink: /script-examples/colorize-keyboard-using-xy-coordinates/
 ---
-{% include api_transition_header.html %}
+
+<!-- {% include api_transition_header.html %} -->
 
 
 <!-- Nav tabs -->

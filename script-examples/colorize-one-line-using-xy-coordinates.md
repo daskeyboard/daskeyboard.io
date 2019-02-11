@@ -4,7 +4,7 @@ title: "Colorize a line of LEDS/Keys of the Q Device using the XY coordinates"
 permalink: /script-examples/colorize-one-line-using-xy-coordinates/
 ---
 
-{% include api_transition_header.html %}
+<!-- {% include api_transition_header.html %} -->
 
 
 <!-- Nav tabs -->

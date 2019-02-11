@@ -4,7 +4,7 @@ title: "Display CPU activity on your device"
 permalink: /script-examples/cpu-percentage/
 ---
 
-{% include api_transition_header.html %}
+<!-- {% include api_transition_header.html %} -->
 
 <!-- Nav tabs -->
 <ul class="nav nav-tabs code-nav-tabs" role="tablist">

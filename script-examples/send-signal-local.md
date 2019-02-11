@@ -4,7 +4,7 @@ title: "Send one signal to the local API"
 permalink: /script-examples/send-signal-local/
 ---
 
-{% include api_transition_header.html %}
+<!-- {% include api_transition_header.html %} -->
 
 <!-- Nav tabs -->
 <ul class="nav nav-tabs code-nav-tabs" role="tablist">

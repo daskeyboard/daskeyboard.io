@@ -4,7 +4,7 @@ title: Understanding zoneId
 permalink: /q-zone-id-explanation/
 ---
 
-{% include api_transition_header.html %}
+<!-- {% include api_transition_header.html %} -->
 
 
 There are 3 ways to address an LED or a group of LEDs. A keyboard key has only one LED whereas the side pipes have many. Targeting a zone with many LEDs (again like the side pipes) will light up all its LEDs.

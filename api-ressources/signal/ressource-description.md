@@ -5,7 +5,7 @@ permalink: /api-resources/signal/resource-description/
 ---
 
 
-{% include api_transition_header.html %}
+<!-- {% include api_transition_header.html %} -->
 
 A signal is a message distributed via HTTP to a Q enabled device. This message may contain lighting
 color and effect information as well as a message for a human.
