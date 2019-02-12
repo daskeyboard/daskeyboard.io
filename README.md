@@ -17,16 +17,21 @@ and we'll take a look.
 A tldr version follows:
 
 1. Ensure you have [Ruby](https://www.ruby-lang.org/en/documentation/installation/) installed; you need version 2.2.2 or later:
-
-`ruby --version`
-
+    - `ruby --version`
 1. Ensure you have [Bundler](http://bundler.io/) installed; if not install with:
-
-`gem install bundler`
-
+    - `gem install bundler`
 1. Install all dependencies:
+    - `bundle install`
 
-`bundle install`
+If you got:
+
+```console
+ERROR: Failed to build gem native extension
+```
+
+change your ruby version by using (with X.X version asked in error message):
+
+`sudo apt-get install rubyX.X-dev`
 
 ## View Site in dev mode
 
@@ -49,16 +54,16 @@ Before we can move the more complete
 [automated `linkcheck` solution](https://github.com/dart-lang/site-webdev/blob/master/scripts/check-links-using-fb.sh)
 from dartlang.org, we recommend manually running the following.
 
-* First time setup:
+- First time setup:
 
     pub global activate linkcheck
     npm install -g superstatic
 
-* Start the localhost Firebase server:
+- Start the localhost Firebase server:
 
     superstatic --port 3474
 
-* Run the link checker:
+- Run the link checker:
 
     linkcheck :3474
   
@@ -72,7 +77,7 @@ If you have a document that spans multiple pages, you can add next and previous
 page links to make navigating these pages easier. It involves adding some information
 to the front matter of each page, and including some HTML.
 
-```
+```console
 ---
 layout: tutorial
 title: "Constraints"
@@ -106,18 +111,18 @@ how to update our syntax highlighter for new languages.
 
 This website can syntax highlight the following languages:
 
-* shell
-* dart
-* html
-* css
-* javascript
-* java
-* objectivec
-* swift
-* go
-* php
-* python
-* ruby
+- shell
+- dart
+- html
+- css
+- javascript
+- java
+- objectivec
+- swift
+- go
+- php
+- python
+- ruby
 
 ### Using syntax highlighting
 
@@ -150,13 +155,13 @@ to generate a new copy of the `prism.js` file.
 
 Follow these steps to generate a new copy of `prism.js`:
 
-* Open `js/prism.js`
-* Copy the URL in the comment of the first line of the file
-* Paste it into a browser window/tab
-* Add the new language that you wish to syntax highlight
-* DO NOT change the other plugins, languages, or settings
-* Download the generated JavaScript, and use it to replace `js/prism.js`
-* Download the generated CSS, and use it to replace `_sass/_prism.scss`
+- Open `js/prism.js`
+- Copy the URL in the comment of the first line of the file
+- Paste it into a browser window/tab
+- Add the new language that you wish to syntax highlight
+- DO NOT change the other plugins, languages, or settings
+- Download the generated JavaScript, and use it to replace `js/prism.js`
+- Download the generated CSS, and use it to replace `_sass/_prism.scss`
 
 ## Including a region of a file
 
