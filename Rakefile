@@ -22,7 +22,9 @@ task :checklinks do
       # 'https://github.com/metadot/DasKeyboard/' => 'https://github.com/DasKeyboard/Daskeyboard.io/'
     }
   }
-  HTMLProofer.check_directory("./_site", options).run
+  HTMLProofer.check_directory("./_site",{
+    :allow_hash_href => true
+    }).run
 end
 
 
