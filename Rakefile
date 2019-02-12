@@ -11,7 +11,7 @@ task :checklinks do
       # Skip fragment identifiers, as these are not real links
       '#',
       # Skip links that have been auto-inserted for the 'Edit Source' action (i.e. that match this regexp)
-      /github.com\/DasKeyboard/
+      # /github.com\/DasKeyboard/
     ],
     :only_4xx => true,
     # Replace canonical links with local links.
@@ -22,7 +22,7 @@ task :checklinks do
       # 'https://github.com/metadot/DasKeyboard/' => 'https://github.com/DasKeyboard/Daskeyboard.io/'
     }
   }
-  HTMLProofer.check_directory("./_site").run
+  HTMLProofer.check_directory("./_site", options).run
 end
 
 
