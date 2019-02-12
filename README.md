@@ -41,7 +41,7 @@ or
     rake checklinks
 
 Some form of broken links prevention is done automatically by `rake checklinks`
-on every commit (through `tool/travis.sh`). But this won't see any Firebase 
+on every commit (through `tool/travis.sh`). But this won't see any Firebase
 redirects (`rake checklinks` doesn't run the Firebase server) and it won't
 check incoming links.
 
