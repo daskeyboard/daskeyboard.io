@@ -23,8 +23,10 @@ task :checklinks do
     }
   }
   HTMLProofer.check_directory("./_site",{
+    :http_status_ignore => [
+      "0",
+    ]
     :allow_hash_href => true,
-    :only_4xx => true,
     }).run
 end
 
