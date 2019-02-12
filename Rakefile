@@ -24,6 +24,7 @@ task :checklinks do
   }
   HTMLProofer.check_directory("./_site",{
     :allow_hash_href => true
+    :only_4xx => true,
     }).run
 end
 
