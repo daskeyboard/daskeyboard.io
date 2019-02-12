@@ -46,10 +46,12 @@ January 29, 2019
 Message preview = `Q Button` + `<key>`: displays notifications by pressing the `Q button` and a key with a signal
 
 <div style="margin-bottom: 30px; margin-top: 10px;">
-<img src="{{ '/updates/images/message-preview.png'  | relative_url }}" 
+<img src="{{ '/updates/images/message-preview.png'  | relative_url }}"
+alt="Das Keyboard Q message preview"
 style="margin-bottom: 20px;">
 <div>Message preview in action</div>
-<img src="{{ '/updates/images/message-preview.gif'  | relative_url }}" >
+<img src="{{ '/updates/images/message-preview.gif'  | relative_url }}"
+alt="Das Keyboard Q message preview in action" >
 </div>
 
 ### NEW FEATURES
