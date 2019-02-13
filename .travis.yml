@@ -1,10 +1,11 @@
 language: node_js
 node_js:
 - '8.1'
-sudo: false
+sudo: required
 before_install:
 - rvm install 2.3.0
 - rvm use 2.3.0
+- sudo update-ca-certificates
 - "./tool/before_install.sh"
 script: "./tool/travis.sh"
 before_deploy:
