@@ -25,7 +25,7 @@ task :checklinks do
   HTMLProofer.check_directory("./_site",{
     :typhoeus => {
       :ssl_verifypeer => false,
-      :ssl_verifyhost => 0
+      :ssl_verifyhost => 0,
       :headers => { "User-Agent" => "Mozilla/5.0 (compatible; My New User-Agent)" }
     },
     :allow_hash_href => true,
