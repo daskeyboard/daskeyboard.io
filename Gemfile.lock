@@ -265,7 +265,7 @@ DEPENDENCIES
   bundler
   github-pages
   html-proofer
-  jekyll
+  jekyll (~> 3.7.4)
   json
   rake
   redcarpet
