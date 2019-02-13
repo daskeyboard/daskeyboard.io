@@ -23,7 +23,9 @@ task :checklinks do
     }
   }
   HTMLProofer.check_directory("./_site",{
-    :only_4xx => true,
+    :typhoeus => {
+      :ssl_verifypeer => false,
+      :ssl_verifyhost => 0},
     :allow_hash_href => true,
     }).run
 end
