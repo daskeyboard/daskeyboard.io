@@ -5,8 +5,13 @@ sudo: required
 before_install:
 - rvm install 2.3.0
 - rvm use 2.3.0
+- sudo update-ca-certificates
 - sudo apt-get install libcurl4-openssl-dev
 - "./tool/before_install.sh"
+addons:
+  apt:
+    packages:
+    - libcurl4-openssl-dev
 script: "./tool/travis.sh"
 before_deploy:
 - echo "Building site..."
