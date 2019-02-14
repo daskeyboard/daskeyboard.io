@@ -21,3 +21,5 @@ deploy:
   skip_cleanup: true
   token: $FIREBASE_TOKEN
   project: daskeyboard-io
+  on:
+    branch: deploy
