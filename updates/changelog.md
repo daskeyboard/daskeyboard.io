@@ -8,6 +8,39 @@ permalink: /updates/changelog/
 <a class="btn btn-outline-success float-right" href="{{ '/get-started/software'  | relative_url }}" >Download</a>
 
 
+## Version 3.2.2
+
+February 14, 2019
+
+### HIGHLIGHTS
+
+ Important bug fixes and applet development capabilities.
+
+### NEW FEATURES
+
+* **Profile switcher:**  Implemented the profile switcher back on macOS
+* **Q Applet development:**
+  *  Updated documentation url
+  *  Removed developer view that was containing the XY mapping
+  *  Added new control type `effect` for Applet inputs
+  *  Added new control type `color` for Applet inputs
+
+### BUG FIXES
+
+* **Signal center:**  Signal center window -> right click and choose open in browser will no longer makes the application crash
+* **Firmware upgrade:**  Firmware upgrade is now working with different OS locales
+* **Profile Switcher:**  File explorer on macOS now allows to select `*.app` files for profile switcher
+* **Applet input:** typeahead search now always returns the correct key
+* **Effects:**  Improved color cycle and breathe effects for the Das Keyboard 5Q
+* **Signal preview:**  Delete message preview will now delete signal message coming from cloud
+* **Firmware update utility:**  Upon successful firmware update, application now returns to previous screen
+
+### KNOWN LIMITATIONS
+
+* in some occasions, keyboard needs to be power-cycled (unplug/re-plug) after installation to be connected
+
+---
+
 ## Version 3.2.1
 
 February 1, 2019
