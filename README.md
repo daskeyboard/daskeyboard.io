@@ -74,6 +74,11 @@ Even better, to check that old URLs are correctly redirected:
 
     linkcheck :3474 --input tool/sitemap.txt
 
+## Deploying
+
+Merge your work on branch **deploy**, and push it.
+> You need to make sure than the tests pass.
+
 ### Adding next/previous page links
 
 If you have a document that spans multiple pages, you can add next and previous
