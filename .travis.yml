@@ -19,7 +19,8 @@ before_deploy:
 deploy:
   provider: firebase
   skip_cleanup: true
-  token: $FIREBASE_TOKEN
+  token: 
+   secure: $FIREBASE_TOKEN
   project: daskeyboard-io
   on:
     branch: deploy
