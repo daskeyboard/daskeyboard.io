@@ -7,7 +7,7 @@ var app = new Vue({
     },
     mounted () {
         axios
-        .get('https://ip-api.com/json/24.48.0.1',
+        .get('https://ipapi.co/8.8.8.8/json/',
         {
             headers: {'Content-Type': 'application/json'},
         }
