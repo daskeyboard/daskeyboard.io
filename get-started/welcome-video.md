@@ -4,24 +4,19 @@ title: "Q Desktop Overview Video"
 permalink: /get-started/welcome-video/
 ---
 
-<script src="/js/vue.min.js"></script>
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+Configuring a Q keyboard is as easy as drag and drop.
 
-Whatch this short video and you'll be ready to enjoy the Q.
+<img src="{{ 'images/q-applet.gif'  | relative_url }}" alt="Welcome gif" width="1280px" height="720px" >
 
-<div class="embed-container" id="app">
-<div v-if="info == '200'">
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/xUenSxpZp2s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div>
-<div v-else>
-<img src="{{ 'images/q-applet.gif'  | relative_url }}"
-alt="Welcome gif"
-width="1280" height="720">
-</div>
+<div id="app">
+    <div v-if="info == '200'">
+        Whatch this short video and you'll be ready to enjoy the Q.
+        <div class="embed-container">
+        <iframe width="1280px" height="720px" src="https://www.youtube.com/embed/xUenSxpZp2s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+    </div>
 </div>
 
 ## Next step
 
 You are all set. Start Q desktop on your computer and add some applets. Enjoy!
-
-<script src="/js/vue-variables-md.js"></script>
