@@ -26,7 +26,7 @@ March 1, 2019
 
 * **Profiles:** User now needs to click save when making a profile change for it to apply.
 * **Applets:**
-  * Paused applets now longer restart when re-opening the application
+  * Paused applets no longer restart when re-opening the application
   * Applets no longer start running before the configuration is applied
 * **Service Comunication:**
   * Improved error management in the service
