@@ -10,9 +10,7 @@ var app = new Vue({
         console.log("Starting created....");
         try {
             console.log("Status before: "+this.info)
-            // const response = await axios.get(`https://ipapi.co/8.8.8.8/json/`)
-            // const response = await axios.get(`http://ip-api.com/json/24.48.0.1`)
-            // const response = await axios.get(`https://www.metaweather.com/static/img/weather/ico/c.ico`)
+            // Using json file (spreadsheets) on google server
             const response = await axios.get(`https://spreadsheets.google.com/feeds/list/1LOzOn9s7RrDyaeNYxjIKN_rbu8DUvB3Ace3SYvM0s6Q/od6/public/basic?alt=json`)
             this.info = response.status
             console.log("Status after: "+this.info)
