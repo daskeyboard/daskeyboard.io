@@ -4,7 +4,6 @@ title: Changelog Das Keyboard Q Desktop Software
 permalink: /updates/changelog/
 ---
 
-
 <a class="btn btn-outline-success float-right" href="{{ '/get-started/software'  | relative_url }}" >Download</a>
 
 
