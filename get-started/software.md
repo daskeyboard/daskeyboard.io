@@ -35,17 +35,17 @@ permalink: /get-started/software/
     </thead>
   <tr>
     <td> 
-        <a href='https://download.daskeyboard.com/q-software-releases/3.2.2/Das-Keyboard-Q_3.2.2.exe'>
-            3.2.2 - 64 bits
+        <a href='https://download.daskeyboard.com/q-software-releases/3.2.3/Das-Keyboard-Q_3.2.3.exe'>
+            3.2.3 - 64 bits
         </a>
     </td>
     <td>
-      <a href='https://download.daskeyboard.com/q-software-releases/3.2.2/Das-Keyboard-Q_3.2.2.pkg'>
-        3.2.2</a> - 5Q only
+      <a href='https://download.daskeyboard.com/q-software-releases/3.2.3/Das-Keyboard-Q_3.2.3.pkg'>
+        3.2.3</a> - 5Q only
     </td>
     <td>
-       <a href='https://download.daskeyboard.com/q-software-releases/3.2.2/das-keyboard-q_3.2.2.deb'>
-        3.2.2.deb 64 bits</a> - 5Q and 4Q only<br/>
+       <a href='https://download.daskeyboard.com/q-software-releases/3.2.3/das-keyboard-q_3.2.3.deb'>
+        3.2.3.deb 64 bits</a> - 5Q and 4Q only<br/>
       <a href='https://copr.fedorainfracloud.org/coprs/appelond/das-keyboard/'>RPM </a> contributed by <a href="http://dennis-blog.appelon.net/">AppelonD</a> (untested by Das Keyboard)
     </td>
   </tr>

@@ -8,6 +8,33 @@ permalink: /updates/changelog/
 <a class="btn btn-outline-success float-right" href="{{ '/get-started/software'  | relative_url }}" >Download</a>
 
 
+
+## Version 3.2.3
+
+March 1, 2019
+
+### HIGHLIGHTS
+
+- Improved CPU Load on Mac and Linux
+- Important bug fixes
+
+### IMPROVEMENTS
+
+* **CPU usage:** Improved CPU load on Mac and Linux.
+
+### BUG FIXES
+
+* **Profiles:** User now needs to click save when making a profile change for it to apply.
+* **Applets:**
+  * Paused applets now longer restart when re-opening the application
+  * Applets no longer start running before the configuration is applied
+* **Service Comunication:**
+  * Improved error management in the service
+  * Keyboard no longer disconnects after hibernation (Windows) or reboot.
+* **Mac:** .app is now properly signed  
+
+---
+
 ## Version 3.2.2
 
 February 14, 2019
