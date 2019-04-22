@@ -27,7 +27,7 @@ March 1, 2019
 * **Applets:**
   * Paused applets no longer restart when re-opening the application
   * Applets no longer start running before the configuration is applied
-* **Service Comunication:**
+* **Service Communication:**
   * Improved error management in the service
   * Keyboard no longer disconnects after hibernation (Windows) or reboot.
 * **Mac:** .app is now properly signed  
