@@ -16,7 +16,7 @@ April 22, 2019
 
 ### BUG FIXES
 
-* **Service Comunication:** RGB Profiles no longer reset intermittently.
+* **Service Communication:** RGB Profiles no longer reset intermittently.
 * **5Q LED indicators:** Gaming mode/Mac mode, Caps lock, Num lock and Scroll lock LED indicators now display the correct status when resuming from sleep (5Q).
 
 ---
