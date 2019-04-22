@@ -6,7 +6,20 @@ permalink: /updates/changelog/
 
 <a class="btn btn-outline-success float-right" href="{{ '/get-started/software'  | relative_url }}" >Download</a>
 
+## Version 3.2.4
 
+April 22, 2019
+
+### HIGHLIGHTS
+
+- Important bug fixes for Windows, Mac and Linux
+
+### BUG FIXES
+
+* **Service Comunication:** RGB Profiles no longer reset intermittently.
+* **5Q LED indicators:** Gaming mode/Mac mode, Caps lock, Num lock and Scroll lock LED indicators now display the correct status when resuming from sleep (5Q).
+
+---
 
 ## Version 3.2.3
 
