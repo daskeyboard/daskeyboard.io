@@ -52,12 +52,12 @@ permalink: /get-started/firmware/
 </div>
         
         US layout:&nbsp;
-        <a href='https://download.daskeyboard.com/q-software-releases/Firmware-releases/DK4Q/21.24.0/104/firmware.exe'>
+        <a href='https://download.daskeyboard.com/q-software-releases/Firmware-releases/DK4Q/21.27.0/104/firmware.exe'>
         v21.24.0-US
         </a>
       <br/>
         EU layout:&nbsp;
-        <a href='https://download.daskeyboard.com/q-software-releases/Firmware-releases/DK4Q/21.24.0/105/firmware.exe'>
+        <a href='https://download.daskeyboard.com/q-software-releases/Firmware-releases/DK4Q/21.27.0/105/firmware.exe'>
         v21.24.0-EU
         </a>
 
@@ -112,12 +112,12 @@ To map the 5Q Windows key to Mac configuration see [knowledge base article](http
       </td>
       <td>
         US layout:&nbsp;
-        <a href='https://download.daskeyboard.com/q-software-releases/Firmware-releases/DK4Q/21.24.0/104/firmware.exe'>
+        <a href='https://download.daskeyboard.com/q-software-releases/Firmware-releases/DK4Q/21.27.0/104/firmware.exe'>
         v21.24.0-US
         </a>
       <br/>
         EU layout:&nbsp;
-        <a href='https://download.daskeyboard.com/q-software-releases/Firmware-releases/DK4Q/21.24.0/105/firmware.exe'>
+        <a href='https://download.daskeyboard.com/q-software-releases/Firmware-releases/DK4Q/21.27.0/105/firmware.exe'>
         v21.24.0-EU
         </a>
 
