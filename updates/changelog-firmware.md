@@ -31,7 +31,7 @@ permalink: /updates/changelog-firmware/
 ## Version 7.3.253 - initial release
 
 First release of the 5Q firmware
-N
+
 ## **Das Keyboard X50Q**
 
 ## Version 64.0.0 - December 7, 2018
