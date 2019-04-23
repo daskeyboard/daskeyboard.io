@@ -4,7 +4,6 @@ title: Changelog Das Keyboard Q Firmwares
 permalink: /updates/changelog-firmware/
 ---
 
-
 ## **Das Keyboard 5Q**
 
 ## Version 7.4.48 - December 20, 2018
@@ -26,12 +25,13 @@ permalink: /updates/changelog-firmware/
 ## Version 7.4.9 - September 6, 2018
 
 ### NEW
+
 - Optimized communication with hosts to limit traffic to Q button only.
 
 ## Version 7.3.253 - initial release
 
 First release of the 5Q firmware
-
+N
 ## **Das Keyboard X50Q**
 
 ## Version 64.0.0 - December 7, 2018
@@ -52,6 +52,12 @@ First release of the X50Q firmware
 
 ## **Das Keyboard 4Q**
 
+## Version 21.27.0 (EU and US) - April 23, 2019
+
+### IMPROVEMENTS
+
+- Keyboard no longer emits a high-pitch sound under certain lighting conditions.
+
 ## Version 21.24.0 (EU and US) - December 7, 2018
 
 ### IMPROVEMENTS
@@ -63,5 +69,3 @@ First release of the X50Q firmware
 ### NEW
 
 First release of the 4Q firmware
-
-
