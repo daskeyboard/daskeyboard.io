@@ -35,7 +35,7 @@ permalink: /get-started/firmware/
       </td>
       <td>
         v64.0.0:Update firmware from Das Keyboard Q Software or
-        <a href='https://download.daskeyboard.com/q-software-releases/Firmware-releases/X50Q/64.0.0/firmware.exe'>
+        <a href='https://download.daskeyboard.com/q-software-releases/Firmware-releases/X50Q/X50Q_Firmware_64.0.0.exe'>
         download
         </a>
       </td>
@@ -52,13 +52,13 @@ permalink: /get-started/firmware/
 </div>
         
         US layout:&nbsp;
-        <a href='https://download.daskeyboard.com/q-software-releases/Firmware-releases/DK4Q/21.27.0/104/firmware.exe'>
-        v21.24.0-US
+        <a href='https://download.daskeyboard.com/q-software-releases/Firmware-releases/DK4Q/DK4Q_US_Firmware_21.27.0.exe'>
+        v21.27.0-US
         </a>
       <br/>
         EU layout:&nbsp;
-        <a href='https://download.daskeyboard.com/q-software-releases/Firmware-releases/DK4Q/21.27.0/105/firmware.exe'>
-        v21.24.0-EU
+        <a href='https://download.daskeyboard.com/q-software-releases/Firmware-releases/DK4Q/DK4Q_EU_Firmware_21.27.0.exe'>
+        v21.27.0-EU
         </a>
 
       </td>
