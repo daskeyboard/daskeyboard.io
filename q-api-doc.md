@@ -25,7 +25,7 @@ This script can be hosted on any online server and will still communicate with t
 
 ### Local API
 The script needs to be running on the machine where the Q enabled device is plugged in. 
-The sccript will communicate directly to the Q desktop that opens a web server on the port 27301.
+The script will communicate directly to the Q desktop that opens a web server on the port 27301.
 The Q desktop will then communicate with the Q enabled device.
 
 - Speed: quasi-instantaneous
