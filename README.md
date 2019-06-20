@@ -79,6 +79,8 @@ Even better, to check that old URLs are correctly redirected:
 Merge your work on branch **deploy**, and push it.
 > You need to make sure than the tests pass.
 
+We have set up Travis to deploy on commit on the git branch `deploy`.
+
 ### Adding next/previous page links
 
 If you have a document that spans multiple pages, you can add next and previous
