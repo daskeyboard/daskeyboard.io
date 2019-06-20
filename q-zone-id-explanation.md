@@ -21,7 +21,9 @@ Example of zones:
 
 ![104Q.png](/images/104Q.png)
 
-TODO add link to all zones.
+## IMPORTANT
+
+The above layout depicts the 5Q and X50Q keyboard layouts. The 4Q layout is shiftted by one, meaning that the `ESC` key is at (0, 0).
 
 ### Addressing a zone as a 2D coordinate XY (recommend)
 
