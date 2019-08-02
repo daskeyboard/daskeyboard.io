@@ -6,6 +6,26 @@ permalink: /updates/changelog/
 
 <a class="btn btn-outline-success float-right" href="{{ '/get-started/software'  | relative_url }}" >Download</a>
 
+## Version 3.2.5
+
+August 2, 2019
+
+### HIGHLIGHTS
+
+- Critical security update for Windows, Mac and Linux
+
+### BUG FIXES
+
+**Q Desktop software:** 
+
+Critical security update for Windows, Mac and Linux. 
+Impact: a remote attacker may be able to execute malicious code on a local computer running the Q Desktop.
+Description: A design issue existed in the handling of applet installation using HTTP. This issue was addressed by removing the HTTP protocol for applet control and installation.
+
+found by Griffin Byatt
+
+---
+
 ## Version 3.2.4
 
 April 22, 2019

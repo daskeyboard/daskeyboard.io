@@ -1,0 +1,47 @@
+current directory: /home/camille/workspace/daskeyboard.io/vendor/bundle/ruby/2.3.0/gems/therubyracer-0.12.3/ext/v8
+/usr/bin/ruby2.3 -r ./siteconf20190802-17873-1jksdg0.rb extconf.rb
+checking for main() in -lpthread... yes
+creating Makefile
+
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /home/camille/workspace/daskeyboard.io/vendor/bundle/ruby/2.3.0/extensions/x86_64-linux/2.3.0/therubyracer-0.12.3/mkmf.log
+
+current directory: /home/camille/workspace/daskeyboard.io/vendor/bundle/ruby/2.3.0/gems/therubyracer-0.12.3/ext/v8
+make "DESTDIR=" clean
+
+current directory: /home/camille/workspace/daskeyboard.io/vendor/bundle/ruby/2.3.0/gems/therubyracer-0.12.3/ext/v8
+make "DESTDIR="
+compiling accessor.cc
+compiling array.cc
+compiling backref.cc
+compiling constants.cc
+compiling constraints.cc
+compiling context.cc
+compiling date.cc
+compiling exception.cc
+compiling external.cc
+compiling function.cc
+compiling gc.cc
+compiling handles.cc
+compiling heap.cc
+compiling init.cc
+compiling invocation.cc
+compiling locker.cc
+compiling message.cc
+compiling object.cc
+compiling primitive.cc
+compiling rr.cc
+compiling script.cc
+compiling signature.cc
+compiling stack.cc
+compiling string.cc
+compiling template.cc
+compiling trycatch.cc
+compiling v8.cc
+compiling value.cc
+linking shared-object v8/init.so
+
+current directory: /home/camille/workspace/daskeyboard.io/vendor/bundle/ruby/2.3.0/gems/therubyracer-0.12.3/ext/v8
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 init.so ./.gem.20190802-17873-tmj14t/v8
