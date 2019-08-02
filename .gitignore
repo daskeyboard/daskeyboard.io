@@ -7,7 +7,7 @@ build
 node_modules
 .jekyll-metadata
 firebase-debug.log
-vendor
+vendor/
 
 # Dart ignores.
 .packages
