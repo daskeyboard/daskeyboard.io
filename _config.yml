@@ -16,4 +16,4 @@ kramdown:
   input: GFM
   hard_wrap: false
 
-exclude: [packages, tool]
+exclude: [packages, tool, vendor]
