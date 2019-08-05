@@ -6,6 +6,13 @@ permalink: /updates/changelog-firmware/
 
 ## **Das Keyboard 5Q**
 
+## Version 7.4.51 - August 5, 2019
+
+### IMPROVEMENTS
+
+- Fixed intermittent keyboard reboots.
+- Fixed eject key not working on Mac (requires to be in Mac mode Ctrl+Shift+`track forward`)
+
 ## Version 7.4.48 - December 20, 2018
 
 ### IMPROVEMENTS
@@ -18,7 +25,7 @@ permalink: /updates/changelog-firmware/
 
 ### IMPROVEMENTS
 
-- Changing to breathe red (255,32,32) shows some blue after a few seconds. 
+- Changing to breathe red (255,32,32) shows some blue after a few seconds.
 - Some LEDs are not properly lit on the European layouts
 - Improved detection of turning the volume up or down with the volume knob
 

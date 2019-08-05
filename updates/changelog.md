@@ -16,9 +16,9 @@ August 2, 2019
 
 ### BUG FIXES
 
-**Q Desktop software:** 
+**Q Desktop software:**
 
-Critical security update for Windows, Mac and Linux. 
+Critical security update for Windows, Mac and Linux.
 Impact: a remote attacker may be able to execute malicious code on a local computer running the Q Desktop.
 Description: A design issue existed in the handling of applet installation using HTTP. This issue was addressed by removing the HTTP protocol for applet control and installation.
 
@@ -179,7 +179,7 @@ January 18, 2019
 * **Dashboard:**
 * navigation is now available in the dashboard with arrow, WASD and VIM navigation keys
 * shortcuts are now available in the dashboard: `O` opens action URL, `R` refreshes the applet and `#` deletes the notification
-* keyboard shortcuts detailed in preferences 
+* keyboard shortcuts detailed in preferences
 * **Settings:**
 * debugging log mode to log detailed keyboard communication.
 
@@ -213,10 +213,10 @@ January 18, 2019
 * **System messages:**
 * application now fetches system messages even if no user is logged in
 * read system messages no longer notify user after reboot
-* new system messages now change the background of the bell to orange 
+* new system messages now change the background of the bell to orange
 * **dropdown menu:**
-* keyboard is no longer displayed in transparency through menus 
-* **DK4Q layout:** 
+* keyboard is no longer displayed in transparency through menus
+* **DK4Q layout:**
 * backspace key XY coordinates are now correct : (13,1) and (14, 1)  
 
 ### KNOWN LIMITATIONS
@@ -341,7 +341,7 @@ December 11, 2018
 - applets introducing major changes will be re-installed completely when upgrading
 - the trash icon in the signal popover window now dismisses the signal instead of uninstalling the applet
 - multiple tweaks to the design and user experience
-- improved form validation for applet input 
+- improved form validation for applet input
 
 ### FIXES
 
@@ -417,7 +417,7 @@ November 7, 2018
 
 ### Known Problems (Mac Beta Only)
 
-In rare cases, the macOS Q Service `das_keyboard_q-service` uses too much CPU resource. 
+In rare cases, the macOS Q Service `das_keyboard_q-service` uses too much CPU resource.
 If you encounter this problem, please post a message on the qforum and describe your setup: https://qforum.daskeyboard.com/.
 
 
@@ -440,7 +440,7 @@ November 3, 2018
 
 ### Known Problems (Mac Beta Only)
 
-In rare cases, the macOS Q Service `das_keyboard_q-service` uses too much CPU resource. 
+In rare cases, the macOS Q Service `das_keyboard_q-service` uses too much CPU resource.
 If you encounter this problem, please post a message on the qforum and describe your setup: https://qforum.daskeyboard.com/.
 
 
@@ -451,7 +451,7 @@ October 30, 2018
 ### Das Keyboard Q-Desktop Release Notes:
 
 ### ADDED
-- Das Keyboard 4Q support for Windows. 
+- Das Keyboard 4Q support for Windows.
 - Blink active effect for the X50Q
 
 ### FIXED
@@ -464,7 +464,7 @@ October 30, 2018
 
 ### Known Problems (Mac Beta Only)
 
-In rare cases, the macOS Q Service `das_keyboard_q-service` uses too much CPU resource. 
+In rare cases, the macOS Q Service `das_keyboard_q-service` uses too much CPU resource.
 If you encounter this problem, please post a message on the qforum and describe your setup: https://qforum.daskeyboard.com/.
 
 ---
@@ -494,7 +494,7 @@ September 28, 2018
 
 ### Known Problems (Mac Beta Only)
 
-In rare cases, the macOS Q Service `das_keyboard_q-service` uses too much CPU resource. 
+In rare cases, the macOS Q Service `das_keyboard_q-service` uses too much CPU resource.
 If you encounter this problem, please post a message on the qforum and describe your setup: https://qforum.daskeyboard.com/.
 
 
@@ -521,7 +521,7 @@ September 21, 2018
 
 ### NEW
 
-- New signed Mac installer 
+- New signed Mac installer
 - Command Center is now available to control IoT devices. Video: https://youtu.be/JWsuqvezVKs
 - If `isMuted` attribute of a Signal is set to true, the app will not notify the user and the Q-button will not turn green for this signal
 - Added LASER, INWARD_RIPPLE, RIPPLE active effect triggered with Signal on X50Q device
@@ -529,13 +529,13 @@ September 21, 2018
 
 ### UPDATED
 
-- Faster Signals refresh rate (15s) 
+- Faster Signals refresh rate (15s)
 - Signals are now displayed on all connected devices. Notifications are no longer device specific.
 - `quio.log` logfile renamed to `quio.json`.
 
 ### Known Problems (Mac Beta Only)
 
-In rare cases, the macOS Q Service `das_keyboard_q-service` uses too much CPU resource. 
+In rare cases, the macOS Q Service `das_keyboard_q-service` uses too much CPU resource.
 If you encounter this problem, please post a message on the qforum and describe your setup: https://qforum.daskeyboard.com/.
 
 
@@ -629,7 +629,7 @@ If you encounter this problem, please post a message on the qforum and describe 
 
 ### Q Desktop Service Improvements:
 
-#### FIXED 
+#### FIXED
 
 - Windows 7 support: service startup no longer needs the "--standalone" workaround.
 
@@ -639,18 +639,18 @@ If you encounter this problem, please post a message on the qforum and describe 
 ## Version 2.0.0-beta.7
 
 
-### Release highlights: 
+### Release highlights:
 
-- Improved Signal Center response time 
+- Improved Signal Center response time
 fixed local API time out in some cases.
-- OFFLINE MODE: Added ability to change device RGB colors without login to the cloud 
+- OFFLINE MODE: Added ability to change device RGB colors without login to the cloud
 - Added a QUIET MODE option to prevent interruption. In quiet mode only the RGB profiles are displayed on the devices. Signals are not displayed. Sound and notifications are disabled. Once the quiet mode is disabled, signals that came before, and new signals will be displayed as expected.
 
 ### Q Desktop Release Detail Improvements:
 
 #### FIXED
 
-- POST request timing out on the local API for signal creation 
+- POST request timing out on the local API for signal creation
 - Connectivity loss of the keyboard with the QApp when computer goes to sleep
 - Bugs related to the zoneId XY API
 - Disabled link to the signal center on the signal popovers for signals that are coming from the local API
@@ -662,23 +662,23 @@ fixed local API time out in some cases.
 
 - Added action to quit the app from the navbar popover menu
 - Added negative id to signals created from local API and ability to delete them by using a DELETE request from localhost
-- Added ability to change device RGB colors without login to the cloud 
-- Added ability to use local API without login to the Q cloud 
-- Ability to Delete signal by zoneID in local API. zoneId can be vector example: (2,2), linear id example: 25 or code example: KEY_T 
+- Added ability to change device RGB colors without login to the cloud
+- Added ability to use local API without login to the Q cloud
+- Ability to Delete signal by zoneID in local API. zoneId can be vector example: (2,2), linear id example: 25 or code example: KEY_T
 - Added UK layout for the 5Q
-- Apart from the DK5Q every device will be displayed only if it was plugged in one time. Also the user can forget this device and will have to plug it again for the app to remember it again 
-- Added copyright in about menu Default profiles uses zoneXY. That means they are now multi device compatible User preference to enable or disable sound notifications User preference to show or hide app window at startup 
-- Added a Quiet mode option to prevent interruption. In quiet mode only the RGB profiles are displayed on the devices. Signals are not displayed. Sound and notifications are disabled. Once the quiet mode is disabled, signals that came before, and new signals will be displayed as expected. 
+- Apart from the DK5Q every device will be displayed only if it was plugged in one time. Also the user can forget this device and will have to plug it again for the app to remember it again
+- Added copyright in about menu Default profiles uses zoneXY. That means they are now multi device compatible User preference to enable or disable sound notifications User preference to show or hide app window at startup
+- Added a Quiet mode option to prevent interruption. In quiet mode only the RGB profiles are displayed on the devices. Signals are not displayed. Sound and notifications are disabled. Once the quiet mode is disabled, signals that came before, and new signals will be displayed as expected.
 - Added ability to delete signals from the dashboard signal popovers
 
 #### UPDATE
 
-- Moved the preference action to the settings ‘cog’ dropdown. And always display the ‘cog’ dropdown even if user not logged in 
+- Moved the preference action to the settings ‘cog’ dropdown. And always display the ‘cog’ dropdown even if user not logged in
 - Added better user experience when the app loses connectivity with the cloud (Example: red cross displayed on the Q-icon if the backend cloud server is unreachable, cross will disappear when the connectivity is back)
 
 ### Q Desktop Service Improvements:
 
-#### FIXED 
+#### FIXED
 
 - Improved stability of the Windows service - not perfect yet but a lot better. More improvements to come.
 
