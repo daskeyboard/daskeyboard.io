@@ -6,6 +6,22 @@ permalink: /updates/changelog/
 
 <a class="btn btn-outline-success float-right" href="{{ '/get-started/software'  | relative_url }}" >Download</a>
 
+## Version 3.2.6
+
+September 13, 2019
+
+### HIGHLIGHTS
+
+- Bug fix for Windows, Mac and Linux.
+
+### BUG FIXES
+
+**Q Desktop software:**
+
+- Deleting messages in the Q popup window now works using `#` or the `delete` button.
+
+---
+
 ## Version 3.2.5
 
 August 2, 2019

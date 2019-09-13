@@ -35,9 +35,9 @@ function getCurrentUser() {
   $.getJSON("https://q.daskeyboard.com/api/1.0/users/me", localAPIKey)
     // post request success
     .done(function (data) {
-      // store email 
+      // store email
       localStorage.setItem('email', data.email);
-      // update the view with the new user info 
+      // update the view with the new user info
       updateLoginDisplayElements(data.email);
       replaceALLApiKeyByStoredApiKey(localAPIKey);
     })
@@ -55,7 +55,7 @@ function onLoginToQCloud() {
 }
 
 /**
- * 
+ *
  * redefine jquery post request to use application/json and stringify the data
  */
 $.postJSON = function (url, data, callback) {
@@ -70,7 +70,7 @@ $.postJSON = function (url, data, callback) {
 };
 
 /**
- * 
+ *
  * redefine jquery post request to use application/json and stringify the data
  */
 $.getJSON = function (url, apiKey, callback) {
@@ -87,7 +87,7 @@ $.getJSON = function (url, apiKey, callback) {
 /**
  * Get API key from the Q Cloud using a one time login token and store it in the local
  * storage
- * @param {*} loginToken 
+ * @param {*} loginToken
  */
 function getAPIKeyWithOneTimeLoginToken(loginToken) {
   if (!loginToken) {
@@ -120,19 +120,19 @@ function getStoredAPIKey() {
 }
 
 /************************************************************************
- * 
+ *
  *  code used to display a notice popover for the user
- * 
- * 
- * *********************************************************************** 
+ *
+ *
+ * ***********************************************************************
  */
 
 /**
  * Displays a bootstrap alert depending on the noticeType
  * noticeType can be 'info' and the bootstrap alert will be blue
  * or can be 'error' and the bootstrap alert will be red
- * @param {*} noticeType 
- * @param {*} message 
+ * @param {*} noticeType
+ * @param {*} message
  */
 function displayFlashNotice(noticeType, message) {
   // get the bootstrap alert div
@@ -176,11 +176,11 @@ function onCloseFlashNotice() {
 }
 
 /************************************************************************
- * 
+ *
  *  END OF code used to display a notice popover for the user
- * 
- * 
- * *********************************************************************** 
+ *
+ *
+ * ***********************************************************************
  */
 
 function removeQueryParamsFromUrl() {
@@ -224,11 +224,11 @@ function updateLoginDisplayElements(currentUserEmail) {
 }
 
 /************************************************************************
- * 
+ *
  *  code used to display the dynamic content in the code page
- * 
- * 
- * *********************************************************************** 
+ *
+ *
+ * ***********************************************************************
  */
 
 function formatJSONCode() {
@@ -261,7 +261,7 @@ function replaceALLApiKeyByStoredApiKey(apiKey) {
 
 /**
  * Use to beautify json code
- * @param {*} json 
+ * @param {*} json
  */
 function syntaxHighlight(json) {
   if (typeof json != 'string') {
@@ -291,11 +291,11 @@ function syntaxHighlight(json) {
 }
 
 /************************************************************************
- * 
+ *
  *  End of code used to display the dynamic content in the code pages
- * 
- * 
- * *********************************************************************** 
+ *
+ *
+ * ***********************************************************************
  */
 
 
@@ -308,27 +308,27 @@ function loadDownloadLinkDependingOnOsArchitechture() {
     if (navigator.userAgent.indexOf("WOW64") != -1 ||
       navigator.userAgent.indexOf("Win64") != -1) {
       $('#softwarep-age-button-container').css('display', 'flex');
-      $('#software-download-button').attr("href", "https://download.daskeyboard.com/q-software-releases/3.2.5/Das-Keyboard-Q_3.2.5.exe");
+      $('#software-download-button').attr("href", "https://download.daskeyboard.com/q-software-releases/3.2.6/Das-Keyboard-Q_3.2.6.exe");
       $('#software-download-button').append(" 64 bit");
-      $('#software-version-number').append('Version 3.2.5');
+      $('#software-version-number').append('Version 3.2.6');
       $('#software-version-number').append(" Windows");
       return;
     }
   }
   if (navigator.platform.includes('MacIntel')) {
     $('#softwarep-age-button-container').css('display', 'flex');
-    $('#software-download-button').attr("href", "https://download.daskeyboard.com/q-software-releases/3.2.5/Das-Keyboard-Q_3.2.5.pkg");
+    $('#software-download-button').attr("href", "https://download.daskeyboard.com/q-software-releases/3.2.6/Das-Keyboard-Q_3.2.6.pkg");
     $('#software-download-button').append(" 64 bit");
-    $('#software-version-number').append('Version 3.2.5');
+    $('#software-version-number').append('Version 3.2.6');
     $('#software-version-number').append(" Mac");
     return;
   }
 
   if (navigator.platform.includes('Linux x86_64')) {
     $('#softwarep-age-button-container').css('display', 'flex');
-    $('#software-download-button').attr("href", "https://download.daskeyboard.com/q-software-releases/3.2.5/das-keyboard-q_3.2.5.deb");
+    $('#software-download-button').attr("href", "https://download.daskeyboard.com/q-software-releases/3.2.6/Das-Keyboard-Q_3.2.6.deb");
     $('#software-download-button').append(" 64 bit");
-    $('#software-version-number').append('Version 3.2.5');
+    $('#software-version-number').append('Version 3.2.6');
     $('#software-version-number').append(" Linux");
     $('#software-version-number').append("-Debian");
     return;
@@ -339,7 +339,7 @@ function loadDownloadLinkDependingOnOsArchitechture() {
 }
 
 /**
- * Detects the device pid given in param in the URL 
+ * Detects the device pid given in param in the URL
  * and change the download fw link button depending on the pid
  */
 function loadFirmwareDeviceDependingOnPidParam() {

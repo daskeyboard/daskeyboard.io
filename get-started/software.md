@@ -34,18 +34,18 @@ permalink: /get-started/software/
     </tr>
     </thead>
   <tr>
-    <td> 
-        <a href='https://download.daskeyboard.com/q-software-releases/3.2.5/Das-Keyboard-Q_3.2.5.exe'>
-            3.2.5 - 64 bits
+    <td>
+        <a href='https://download.daskeyboard.com/q-software-releases/3.2.6/Das-Keyboard-Q_3.2.6.exe'>
+            3.2.6 - 64 bits
         </a>
     </td>
     <td>
-      <a href='https://download.daskeyboard.com/q-software-releases/3.2.5/Das-Keyboard-Q_3.2.5.pkg'>
-        3.2.5</a> - 5Q only
+      <a href='https://download.daskeyboard.com/q-software-releases/3.2.6/Das-Keyboard-Q_3.2.6.pkg'>
+        3.2.6</a> - 5Q only
     </td>
     <td>
-       <a href='https://download.daskeyboard.com/q-software-releases/3.2.5/das-keyboard-q_3.2.5.deb'>
-        3.2.5.deb 64 bits</a> - 5Q and 4Q only<br/>
+       <a href='https://download.daskeyboard.com/q-software-releases/3.2.6/Das-Keyboard-Q_3.2.6.deb'>
+        3.2.6.deb 64 bits</a> - 5Q and 4Q only<br/>
       <a href='https://copr.fedorainfracloud.org/coprs/appelond/das-keyboard/'>RPM </a> contributed by <a href="http://dennis-blog.appelon.net/">AppelonD</a> (untested by Das Keyboard)
     </td>
   </tr>
@@ -65,4 +65,3 @@ permalink: /get-started/software/
 </table>
 
 <img src="{{ 'images/5Q-box-back.jpg'  | relative_url }}" alt="Das Keyboard software in action">
-
