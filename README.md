@@ -23,13 +23,13 @@ A tldr version follows:
 1. Install all dependencies:
     - `bundle install`
 
-If you got:
+If you see this error:
 
 ```console
 ERROR: Failed to build gem native extension
 ```
 
-change your ruby version by using (with X.X version asked in error message):
+then you'll need change your ruby version by using (with X.X version asked in error message):
 
 `sudo apt-get install rubyX.X-dev`
 
