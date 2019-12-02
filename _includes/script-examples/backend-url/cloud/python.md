@@ -1,4 +1,4 @@
-{% include /script-examples/backend-url/cloud/deprecated.html %}
+<!-- {% include /script-examples/backend-url/cloud/deprecated.html %} -->
 
 
 ```python
