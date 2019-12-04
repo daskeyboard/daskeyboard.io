@@ -14,7 +14,7 @@ This is the case where a script connect to a public Q API in the cloud. Das Keyb
  will communicate with the Q desktop installed on the computer and will
 communicate with connected Q enabled devices.
 
--	Signal propagation: about 20 seconds (to be improved)
+-	Signal propagation: about 5 minutes
 -	Internet Accessibility
 -	Integration with IFTTT etc
 -	OAuth credential requirement
