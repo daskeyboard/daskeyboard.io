@@ -3,18 +3,18 @@
 This is the source files repo for [https://www.daskeyboard.io](https://www.daskeyboard.io).
 
 [![Build Status](https://travis-ci.com/daskeyboard/daskeyboard.io.svg?branch=master)](https://travis-ci.com/daskeyboard/daskeyboard.io/)
-[![Site Status](https://montastic.com/checkpoints/status_badge?badge_token=ca2ffbb3a6e6d95f891298aff1074f9a4f7d8b9b)](https://montastic.com)
+[![Services Health](https://daskeyboard.montastic.io/badge)](https://daskeyboard.montastic.io)
 
 ## Issues, bugs, and requests
 
-We welcome contributions and feedback on our website!
+We welcome contributions and feedback.
 Please file a request in our
 [issue tracker](https://github.com/DasKeyboard/q/issues/new)
 and we'll take a look.
 
 ## Dev env installation
 
-A tldr version follows:
+A TLDR version follows:
 
 1. Ensure you have [Ruby](https://www.ruby-lang.org/en/documentation/installation/) installed; you need version 2.2.2 or later:
     - `ruby --version`
@@ -45,7 +45,7 @@ or
 
     rake checklinks
 
->IMPORTANT:
+>IMPORTANT
 >Need to run the website in another process
 
 Some form of broken links prevention is done automatically by `rake checklinks`
