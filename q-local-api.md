@@ -58,7 +58,7 @@ Result format:
         "name":"User_1055"
     },
     {
-        "name":"IFTTT"
+        "name":"ZAPIER"
     },
     {
         "name":"Desktop App"
@@ -462,7 +462,7 @@ Result format:
             "isRead":true,
             "isMuted":false,
             "isArchived":false,
-            "clientName":"IFTTT",
+            "clientName":"Myapp",
             "readAt":null,
             "action":null,
             "createdAt":1520438417719,
@@ -580,7 +580,7 @@ Result format:
         "isRead":false,
         "isMuted":false,
         "isArchived":false,
-        "clientName":"IFTTT",
+        "clientName":"myapp",
         "readAt":null,
         "action":null,
         "createdAt":1520349790354,

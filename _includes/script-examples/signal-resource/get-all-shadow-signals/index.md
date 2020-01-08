@@ -49,7 +49,7 @@ None
 HTTP 200
 [
   {
-    "clientName": "IFTTT",
+    "clientName": "ZAPIER",
     "color": "#00FF00",
     "createdAt": 1532970435297,
     "effect": "BLINK",

@@ -49,7 +49,7 @@ The shadows for a specific device can be fetched by making a GET HTTP request.
 HTTP 200
 [
   {
-    "clientName": "IFTTT",
+    "clientName": "ZAPIER",
     "color": "#00FF00",
     "createdAt": 1532970435297,
     "effect": "BLINK",

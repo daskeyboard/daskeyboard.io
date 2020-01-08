@@ -20,7 +20,7 @@ permalink: /docs/
 
 &nbsp;
 
-*Warning:* the Q software is in very early stage. It's buggy,
+xx*Warning:* the Q software is in very early stage. It's buggy,
 incomplete, and poorly documented.  However it is improving
 quickly. Only use it if you are comfortable being a beta software and
 contributing useful feedback.
@@ -56,7 +56,7 @@ be displayed on the Q desktop "dashboard mode" and the Q Android app.
 There are several possibilities to send signals to the 5Q keyboard:
 
 - [Zapier](https://zapier.com): use Zapier clould platform to create
- zaps.  Select the Action called "Das Keyboard
+ zaps (like IFTTT recipes).  Select the Action called "Das Keyboard
  Q". Zapier will create signals based on triggers such as emails,
  Facebook events, even new Youtube videos and much more. The app is
  currently working with invitations only, here is the link to access
