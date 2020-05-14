@@ -1,7 +1,7 @@
 ```go
 // The github-api and the oauth api for golang was used for this program.
-// The first part is to check if there are notifications from github, 
-// the second part is to send the signal if there are.
+// The first part is to check if there are notifications from github,
+// the second part is to send the signal if there are any.
 
 package main
 
@@ -20,13 +20,13 @@ import (
 )
 
 type signal struct {
-	ID           int64  `json:"id"`           // Not used when creating a signal
-	Pid          string `json:"pid"`          // DK5QPID
-	ZoneID       string `json:"zoneId"`       // KEY_A, KEY_B, etc...
-	Name         string `json:"name"`         // message title
-	Message      string `json:"message"`      // message body
-	Effect       string `json:"effect"`       // e.g. SET_COLOR, BLINK, etc...
-	Color        string `json:"color"`        // color in hex format. E.g.: "#FF0044"
+	ID      int64  `json:"id"`      // Not used when creating a signal
+	Pid     string `json:"pid"`     // DK5QPID
+	ZoneID  string `json:"zoneId"`  // KEY_A, KEY_B, etc...
+	Name    string `json:"name"`    // message title
+	Message string `json:"message"` // message body
+	Effect  string `json:"effect"`  // e.g. SET_COLOR, BLINK, etc...
+	Color   string `json:"color"`   // color in hex format. E.g.: "#FF0044"
 }
 
 func checkErr(err error) {
@@ -51,7 +51,7 @@ func getAuth() *github.Client {
 
 func getNotif(client *github.Client) []*github.Notification {
 	ctx := context.Background()
-	notifs, _, err := client.GetActivity().ListNotifications(ctx, nil)
+	notifs, _, err := client.Activity.ListNotifications(ctx, nil)
 	checkErr(err)
 
 	return notifs
@@ -75,14 +75,15 @@ func sendSignal() {
 	port := "27301" // Q desktop public API port #.
 
 	// Signal to be sent:  A key set to blue color
-	oneSignal := signal{0,
-		"DK5QPID",
-		"KEY_A",
-		"Hello oneSignal",
-		"Notification on your github",
-		"SET_COLOR",
-		"#00F",
-		true}
+	oneSignal := signal{
+		ID:      0,
+		Pid:     "DK5QPID",
+		ZoneID:  "KEY_A",
+		Name:    "Hello oneSignal",
+		Message: "Notification on your github",
+		Effect:  "SET_COLOR",
+		Color:   "#00F",
+	}
 
 	// Encode to JSON
 	signalJSON := new(bytes.Buffer)
