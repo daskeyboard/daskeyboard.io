@@ -38,8 +38,7 @@ func checkErr(err error) {
 /**
  * this function is used to get Authentification using a oauth token
  */
-func getAuth() *github.Client {
-	ctx := context.Background()
+func getAuth(ctx context.Context) *github.Client {
 	// put your own OAuth Token
 	ts := oauth2.StaticTokenSource(&oauth2.Token{AccessToken: "PUT_YOUR_OWN_OAUTH_TOKEN"})
 
@@ -49,8 +48,7 @@ func getAuth() *github.Client {
 	return client
 }
 
-func getNotif(client *github.Client) []*github.Notification {
-	ctx := context.Background()
+func getNotif(ctx context.Context, client *github.Client) []*github.Notification {
 	notifs, _, err := client.Activity.ListNotifications(ctx, nil)
 	checkErr(err)
 
@@ -60,9 +58,9 @@ func getNotif(client *github.Client) []*github.Notification {
 /**
  * this function is used to know if there are notifications
  */
-func isNotification(client *github.Client) bool {
+func isNotification(ctx context.Context, client *github.Client) bool {
 	isNotif := false
-	notifs := getNotif(client)
+	notifs := getNotif(ctx, client)
 
 	if len(notifs) > 0 {
 		isNotif = true
@@ -101,14 +99,16 @@ func sendSignal() {
 }
 
 func main() {
+	ctx := context.Background()
+
 	// first we get authentification
-	client := getAuth()
+	client := getAuth(ctx)
 	// this is to make sure that the signal is sent only when there are new notifications
 	isSignalSent := false
 	for true {
 		// then we check if there is a notification
 		// if there are notifications and the signal was not send, we send the signal
-		if isNotif := isNotification(client); isNotif && !isSignalSent {
+		if isNotif := isNotification(ctx, client); isNotif && !isSignalSent {
 			sendSignal()
 			isSignalSent = true
 			// if there is no notifications, we reset the flag that tells if the signal was sent or not
