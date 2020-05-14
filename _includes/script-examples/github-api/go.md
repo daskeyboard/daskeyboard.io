@@ -47,25 +47,12 @@ func getAuth(ctx context.Context) *github.Client {
 	return client
 }
 
-func getNotif(ctx context.Context, client *github.Client) []*github.Notification {
+// haveNotification returns true if there are unread notifications.
+func haveNotification(ctx context.Context, client *github.Client) bool {
 	notifs, _, err := client.Activity.ListNotifications(ctx, nil)
 	checkErr(err)
 
-	return notifs
-}
-
-/**
- * this function is used to know if there are notifications
- */
-func isNotification(ctx context.Context, client *github.Client) bool {
-	isNotif := false
-	notifs := getNotif(ctx, client)
-
-	if len(notifs) > 0 {
-		isNotif = true
-	}
-
-	return isNotif
+	return len(notifs) != 0
 }
 
 func sendSignal() {
@@ -106,12 +93,13 @@ func main() {
 	for true {
 		// then we check if there is a notification
 		// if there are notifications and the signal was not send, we send the signal
-		if isNotif := isNotification(ctx, client); isNotif && !isSignalSent {
+		haveNotif := haveNotification(ctx, client)
+		if haveNotif && !isSignalSent {
 			sendSignal()
 			isSignalSent = true
 			// if there is no notifications, we reset the flag that tells if the signal was sent or not
 			// to make sure that a signal will be sent when there are new notifications
-		} else if !isNotif && isSignalSent {
+		} else if !haveNotif && isSignalSent {
 			isSignalSent = false
 		}
 		// we wait 2 seconds before doing this process again
