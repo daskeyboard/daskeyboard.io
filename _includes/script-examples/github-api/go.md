@@ -20,7 +20,6 @@ import (
 )
 
 type signal struct {
-	ID      int64  `json:"id"`      // Not used when creating a signal
 	Pid     string `json:"pid"`     // DK5QPID
 	ZoneID  string `json:"zoneId"`  // KEY_A, KEY_B, etc...
 	Name    string `json:"name"`    // message title
@@ -74,7 +73,6 @@ func sendSignal() {
 
 	// Signal to be sent:  A key set to blue color
 	oneSignal := signal{
-		ID:      0,
 		Pid:     "DK5QPID",
 		ZoneID:  "KEY_A",
 		Name:    "Hello oneSignal",
