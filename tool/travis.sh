@@ -3,6 +3,9 @@
 # Fast fail the script on failures.
 set -e
 
+echo "Installing rubygems 2.7.10..."
+gem update --system '2.7.10'
+
 echo "Installing jekyll..."
 gem install bundler
 bundle install

@@ -3,8 +3,8 @@ node_js:
 - '8.1'
 sudo: required
 before_install:
-- rvm install 2.3.0
-- rvm use 2.3.0
+- rvm install 2.3.8
+- rvm use 2.3.8
 - sudo update-ca-certificates
 - sudo apt-get install libcurl4-openssl-dev
 - "./tool/before_install.sh"
