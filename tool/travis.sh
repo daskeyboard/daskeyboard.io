@@ -10,8 +10,8 @@ bundle install
 echo "Building site from $0..."
 bundle exec jekyll build
 
-echo "Validating all links..."
-rake checklinks --trace 
+#echo "Validating all links..."
+#rake checklinks --trace 
 
 # echo "Validating Read Me."
 # rake proof_readme
