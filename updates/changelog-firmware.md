@@ -76,3 +76,11 @@ First release of the X50Q firmware
 ### NEW
 
 First release of the 4Q firmware
+
+## **Das Keyboard 5QS**
+
+## Version 24.31.0 (EU and US) - December 7, 2020
+
+### NEW
+
+First release of the 5QS firmware
