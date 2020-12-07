@@ -55,8 +55,8 @@ rake checklinks
 >Need to run the website in another process
 
 Some form of broken links prevention is done automatically by `rake checklinks`
-on every commit (through `tool/travis.sh`). But this won't see any Firebase
-redirects (`rake checklinks` doesn't run the Firebase server) and it won't
+on every commit (through `tool/travis.sh`). But this will not see any Firebase
+redirects (`rake checklinks` does not run the Firebase server) and it will not
 check incoming links.
 
 Before we can move the more complete
