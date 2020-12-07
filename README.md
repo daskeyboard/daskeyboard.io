@@ -35,15 +35,21 @@ then you'll need change your ruby version by using (with X.X version asked in er
 
 ## View Site in dev mode
 
-    bundle exec jekyll serve
+````shell
+ bundle exec jekyll serve
+````
 
 or
-  
-    jekyll serve -w --force_polling
+
+````shell  
+jekyll serve -w --force_polling
+````
 
 ## Testing
 
-    rake checklinks
+````shell
+rake checklinks
+`````
 
 >IMPORTANT
 >Need to run the website in another process
