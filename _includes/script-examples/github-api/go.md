@@ -1,7 +1,7 @@
 ```go
 // The github-api and the oauth api for golang was used for this program.
-// The first part is to check if there are notifications from github, 
-// the second part is to send the signal if there are.
+// The first part is to check if there are notifications from github,
+// the second part is to send the signal if there are any.
 
 package main
 
@@ -20,13 +20,12 @@ import (
 )
 
 type signal struct {
-	ID           int64  `json:"id"`           // Not used when creating a signal
-	Pid          string `json:"pid"`          // DK5QPID
-	ZoneID       string `json:"zoneId"`       // KEY_A, KEY_B, etc...
-	Name         string `json:"name"`         // message title
-	Message      string `json:"message"`      // message body
-	Effect       string `json:"effect"`       // e.g. SET_COLOR, BLINK, etc...
-	Color        string `json:"color"`        // color in hex format. E.g.: "#FF0044"
+	Pid     string `json:"pid"`     // DK5QPID
+	ZoneID  string `json:"zoneId"`  // KEY_A, KEY_B, etc...
+	Name    string `json:"name"`    // message title
+	Message string `json:"message"` // message body
+	Effect  string `json:"effect"`  // e.g. SET_COLOR, BLINK, etc...
+	Color   string `json:"color"`   // color in hex format. E.g.: "#FF0044"
 }
 
 func checkErr(err error) {
@@ -38,8 +37,7 @@ func checkErr(err error) {
 /**
  * this function is used to get Authentification using a oauth token
  */
-func getAuth() *github.Client {
-	ctx := context.Background()
+func getAuth(ctx context.Context) *github.Client {
 	// put your own OAuth Token
 	ts := oauth2.StaticTokenSource(&oauth2.Token{AccessToken: "PUT_YOUR_OWN_OAUTH_TOKEN"})
 
@@ -49,40 +47,26 @@ func getAuth() *github.Client {
 	return client
 }
 
-func getNotif(client *github.Client) []*github.Notification {
-	ctx := context.Background()
-	notifs, _, err := client.GetActivity().ListNotifications(ctx, nil)
+// haveNotification returns true if there are unread notifications.
+func haveNotification(ctx context.Context, client *github.Client) bool {
+	notifs, _, err := client.Activity.ListNotifications(ctx, nil)
 	checkErr(err)
 
-	return notifs
-}
-
-/**
- * this function is used to know if there are notifications
- */
-func isNotification(client *github.Client) bool {
-	isNotif := false
-	notifs := getNotif(client)
-
-	if len(notifs) > 0 {
-		isNotif = true
-	}
-
-	return isNotif
+	return len(notifs) != 0
 }
 
 func sendSignal() {
 	port := "27301" // Q desktop public API port #.
 
 	// Signal to be sent:  A key set to blue color
-	oneSignal := signal{0,
-		"DK5QPID",
-		"KEY_A",
-		"Hello oneSignal",
-		"Notification on your github",
-		"SET_COLOR",
-		"#00F",
-		true}
+	oneSignal := signal{
+		Pid:     "DK5QPID",
+		ZoneID:  "KEY_A",
+		Name:    "Hello oneSignal",
+		Message: "Notification on your github",
+		Effect:  "SET_COLOR",
+		Color:   "#00F",
+	}
 
 	// Encode to JSON
 	signalJSON := new(bytes.Buffer)
@@ -100,19 +84,22 @@ func sendSignal() {
 }
 
 func main() {
+	ctx := context.Background()
+
 	// first we get authentification
-	client := getAuth()
+	client := getAuth(ctx)
 	// this is to make sure that the signal is sent only when there are new notifications
 	isSignalSent := false
 	for true {
 		// then we check if there is a notification
 		// if there are notifications and the signal was not send, we send the signal
-		if isNotif := isNotification(client); isNotif && !isSignalSent {
+		haveNotif := haveNotification(ctx, client)
+		if haveNotif && !isSignalSent {
 			sendSignal()
 			isSignalSent = true
 			// if there is no notifications, we reset the flag that tells if the signal was sent or not
 			// to make sure that a signal will be sent when there are new notifications
-		} else if !isNotif && isSignalSent {
+		} else if !haveNotif && isSignalSent {
 			isSignalSent = false
 		}
 		// we wait 2 seconds before doing this process again
