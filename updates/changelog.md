@@ -12,7 +12,7 @@ December 19, 2020
 
 ### BUG FIXES
 
-* Manually set uid flag fort the chrome-sandbox executable in linux debian
+* Manually set uid flag for the chrome-sandbox executable in linux debian
  package. This change fixes the issue of the Das Keyboard Q software not
  launching on some recent linux versions
 * Reloading the Das Keyboard Q software will not display white empty screen
