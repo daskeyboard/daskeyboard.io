@@ -6,6 +6,22 @@ permalink: /updates/changelog/
 
 <a class="btn btn-outline-success float-right" href="{{ '/get-started/software'  | relative_url }}" >Download</a>
 
+## Version 3.2.8
+
+December 19, 2020
+
+### BUG FIXES
+
+* Manually set uid flag fort the chrome-sandbox executable in linux debian
+ package. This change fixes the issue of the Das Keyboard Q software not
+ launching on some recent linux versions
+* Reloading the Das Keyboard Q software will not display white empty screen
+ anymore
+* Applets now load correctly in `dev` mode
+* Keyboard lights will not turn off/on randomly during the day on Windows
+
+---
+
 ## Version 3.2.7
 
 December 7, 2020
