@@ -18,9 +18,9 @@ A TLDR version follows:
 
 1. Ensure you have [Ruby](https://www.ruby-lang.org/en/documentation/installation/) installed; you need version 2.2.2 or later:
     - `ruby --version`
-1. Ensure you have [Bundler](http://bundler.io/) installed; if not install with:
-    - `gem install bundler`
-1. Install all dependencies:
+2. Ensure you have [Bundler](http://bundler.io/) installed; if not install with:
+    - `gem install bundler -v 2.0.1`
+3. Install all dependencies:
     - `bundle install`
 
 If you see this error:
@@ -32,6 +32,12 @@ ERROR: Failed to build gem native extension
 then you'll need change your ruby version by using (with X.X version asked in error message):
 
 `sudo apt-get install rubyX.X-dev`
+
+If you see nokogiri installation error, make sure you got required dependencices:
+
+````console
+    sudo apt-get install libxslt-dev libxml2-dev
+````
 
 ## View Site in dev mode
 
