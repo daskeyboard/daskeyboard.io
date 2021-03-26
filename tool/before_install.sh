@@ -5,6 +5,8 @@ set -e
 
 echo "PIP"
 pip3 --version
+pip3 install --upgrade pip
+pip3 --version
 pip --version
 
 echo "Download Google OAuth Tool"
