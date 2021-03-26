@@ -20,6 +20,12 @@ permalink: /get-started/firmware/
     </tr>
     </thead>
     <tr>
+      <td>5QS</td>
+      <td>v24.31.0: Update firmware from Das Keyboard Q software</td>
+      <td>v24.31.0: Update firmware from Das Keyboard Q software</td>
+      <td>v24.31.0: Update firmware from Das Keyboard Q software</td>
+    </tr>
+    <tr>
       <td>
       5Q
       </td>
