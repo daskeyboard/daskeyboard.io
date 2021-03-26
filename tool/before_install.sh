@@ -15,4 +15,4 @@ pip --version
 
 echo "Download Google OAuth Tool"
 
-pip install --user google-oauth2l --upgrade
+pip3 install --user google-oauth2l --upgrade
