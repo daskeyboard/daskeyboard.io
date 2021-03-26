@@ -8,8 +8,9 @@ pip --version
 python --version
 python3 --version
 sudo apt-get install python3-pip
-alias pip=pip3
 python -m pip install -U pip
+/usr/bin/python -m pip install --upgrade pip
+pip3 --version
 pip --version
 
 echo "Download Google OAuth Tool"
