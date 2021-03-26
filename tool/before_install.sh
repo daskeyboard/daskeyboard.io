@@ -5,6 +5,8 @@ set -e
 
 # Update pip
 pip --version
+python --version
+python3 --version
 sudo apt-get install python3-pip
 alias pip=pip3
 python -m pip install -U pip
