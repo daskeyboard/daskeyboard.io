@@ -10,6 +10,8 @@ python3 --version
 sudo apt-get install python3-pip
 python -m pip install -U pip
 /usr/bin/python -m pip install --upgrade pip
+pip install --upgrade pip
+pip3 install --upgrade pip
 pip3 --version
 pip --version
 
