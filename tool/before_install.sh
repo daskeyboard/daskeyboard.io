@@ -10,6 +10,7 @@ pip --version
 
 echo "TESTING - Install pip3"
 sudo apt-get install python3-pip
+sudo -H pip3 install --upgrade pip
 pip3 --version
 
 echo "Download Google OAuth Tool"
