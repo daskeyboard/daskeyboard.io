@@ -6,7 +6,6 @@ node_js:
 sudo: required
 before_install:
 - sudo apt-get update
-- sudo apt-get install python3-pip
 - rvm install 2.4.8
 - rvm use 2.4.8
 - sudo update-ca-certificates
