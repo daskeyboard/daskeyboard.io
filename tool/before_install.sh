@@ -9,4 +9,4 @@ pip --version
 echo "Updated pip version"
 pip --version
 
-pip install --user google-oauth2l --upgrade
+pip install --user google-oauth2l
