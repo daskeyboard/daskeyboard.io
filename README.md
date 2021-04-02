@@ -74,12 +74,22 @@ Even better, to check that old URLs are correctly redirected:
 
     linkcheck :3474 --input tool/sitemap.txt
 
-## Deploying
+## Automatic deployment
 
 Merge your work on branch **deploy**, and push it.
 > You need to make sure than the tests pass.
 
 We have set up Travis to deploy on commit on the git branch `deploy`.
+
+## Manual deployment
+
+Generate static site:
+
+    bundle exec jekyll build # build goes to ./_site
+
+Deploy to Firebase hosting
+
+    firebase deploy -p ./_site
 
 ### Adding next/previous page links
 
