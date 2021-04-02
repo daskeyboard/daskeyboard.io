@@ -35,18 +35,18 @@ permalink: /get-started/software/
     </thead>
   <tr>
     <td>
-        <a href='https://download.daskeyboard.com/q-software-releases/3.2.6/Das-Keyboard-Q_3.2.6.exe'>
-            3.2.6 - 64 bits
+        <a href='https://download.daskeyboard.com/q-software-releases/3.2.8/Das-Keyboard-Q_3.2.8.exe'>
+            3.2.8 - 64 bits
         </a>
     </td>
     <td>
-      <a href='https://download.daskeyboard.com/q-software-releases/3.2.6/Das-Keyboard-Q_3.2.6.pkg'>
-        3.2.6</a> - 5Q only
+      <a href='https://download.daskeyboard.com/q-software-releases/3.2.8/Das-Keyboard-Q_3.2.8.pkg'>
+        3.2.8</a> - 5Q and 5QS only
     </td>
     <td>
-       <a href='https://download.daskeyboard.com/q-software-releases/3.2.6/Das-Keyboard-Q_3.2.6.deb'>
-        3.2.6.deb 64 bits</a> - 5Q and 4Q only<br/>
-      <a href='https://copr.fedorainfracloud.org/coprs/appelond/das-keyboard/'>RPM </a> contributed by <a href="http://dennis-blog.appelon.net/">AppelonD</a> (untested by Das Keyboard)
+       <a href='https://download.daskeyboard.com/q-software-releases/3.2.8/Das-Keyboard-Q_3.2.8.deb'>
+        3.2.8.deb 64 bits</a> - 5Q, 5QS and 4Q only<br/>
+      <a href='https://copr.fedorainfracloud.org/coprs/appelond/das-keyboard/'>RPM(v3.2.6) </a> contributed by <a href="http://dennis-blog.appelon.net/">AppelonD</a> (untested by Das Keyboard)
     </td>
   </tr>
 

@@ -18,9 +18,9 @@ A TLDR version follows:
 
 1. Ensure you have [Ruby](https://www.ruby-lang.org/en/documentation/installation/) installed; you need version 2.2.2 or later:
     - `ruby --version`
-1. Ensure you have [Bundler](http://bundler.io/) installed; if not install with:
-    - `gem install bundler`
-1. Install all dependencies:
+2. Ensure you have [Bundler](http://bundler.io/) installed; if not install with:
+    - `gem install bundler -v 2.0.1`
+3. Install all dependencies:
     - `bundle install`
 
 If you see this error:
@@ -33,24 +33,36 @@ then you'll need change your ruby version by using (with X.X version asked in er
 
 `sudo apt-get install rubyX.X-dev`
 
+If you see nokogiri installation error, make sure you got required dependencices:
+
+````console
+    sudo apt-get install libxslt-dev libxml2-dev
+````
+
 ## View Site in dev mode
 
-    bundle exec jekyll serve
+````shell
+ bundle exec jekyll serve
+````
 
 or
-  
-    jekyll serve -w --force_polling
+
+````shell  
+jekyll serve -w --force_polling
+````
 
 ## Testing
 
-    rake checklinks
+````shell
+rake checklinks
+`````
 
 >IMPORTANT
 >Need to run the website in another process
 
 Some form of broken links prevention is done automatically by `rake checklinks`
-on every commit (through `tool/travis.sh`). But this won't see any Firebase
-redirects (`rake checklinks` doesn't run the Firebase server) and it won't
+on every commit (through `tool/travis.sh`). But this will not see any Firebase
+redirects (`rake checklinks` does not run the Firebase server) and it will not
 check incoming links.
 
 Before we can move the more complete

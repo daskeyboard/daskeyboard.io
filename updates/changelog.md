@@ -6,6 +6,49 @@ permalink: /updates/changelog/
 
 <a class="btn btn-outline-success float-right" href="{{ '/get-started/software'  | relative_url }}" >Download</a>
 
+## Version 3.2.8
+
+December 19, 2020
+
+### BUG FIXES
+
+* Manually set uid flag for the chrome-sandbox executable in linux debian
+ package. This change fixes the issue of the Das Keyboard Q software not
+ launching on some recent linux versions
+* Reloading the Das Keyboard Q software will not display white empty screen
+ anymore
+* Applets now load correctly in `dev` mode
+* Keyboard lights will not turn off/on randomly during the day on Windows
+
+---
+
+## Version 3.2.7
+
+December 7, 2020
+
+### HIGHLIGHT
+
+* Fixed login issue for Das Keyboard Gmail Applet
+
+### NEW FEATURES
+
+* Added support for upcoming new Q device
+
+### BUG FIXES
+
+* Fixed memory leak when unplugging devices on macOS
+* Media keys and volume knob are now working on macOS for DK4Q keyboard
+* **Applet:**  
+  * Applet configuration view `cancel` button is now more visible
+  * Applet configuration errors are now displayed correctly to the end user
+  * Fixed login issue for Das Keyboard Gmail Applet
+
+### OTHER CHANGES
+
+* Upgraded Electron and Angular frameworks to latest versions
+
+---
+
 ## Version 3.2.6
 
 September 13, 2019
