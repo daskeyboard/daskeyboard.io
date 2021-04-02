@@ -35,12 +35,8 @@ Q clients can be downloaded from the Q website:
 ### Create a Das Keyboard Q account
 
 In order to use the Q client, you'll need to create an account at
-<https://qapp.daskeyboard.com/>
+<https://q.daskeyboard.com/>
 
-### Signup for the Q forum
-
-The Q forum is an online discussion for technical discussion:
-<https://qforum.daskeyboard.com>
 
 ## Sending Signals to your 5Q keyboard + developer API
 
@@ -74,11 +70,3 @@ the Q device.
 - [Full documentation]({{site.baseurl}}/q-api-doc/),
 - [Community contributions]({{site.baseurl}}/contributed-links/),
 - [API examples]({{site.baseurl}}/script-examples/),
-- [Developer forum](https://qforum.daskeyboard.com).
-
-## Contributing
-
-At this point of the development, we would like to ask the community
-for input on all aspects of the project: features, API, ideas, etc...
-
-Please use the [Q forum](https://qforum.daskeyboard.com) to interact.

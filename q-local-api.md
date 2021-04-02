@@ -14,7 +14,6 @@ Here are some useful links to get started smoothly:
 - [Quick start]({{site.baseurl}}/q-api-quick-start/)
 - [Community contributions]({{site.baseurl}}/contributed-links/)
 - [API examples]({{site.baseurl}}/script-examples/)
-- [Developer forum](https://qforum.daskeyboard.com)
 
 ## Authentication: Oauth2 (Cloud only)
 

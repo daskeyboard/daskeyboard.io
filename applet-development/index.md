@@ -10,8 +10,7 @@ applets for Das Keyboard Q devices.
 <img src="{{ './images/marketplace.png' }}"
                     alt="Q Marketplace">
 
-Q applet development is easy. There are many examples available, all open source and 
-remember that the Q forum: <https://qforum.daskeyboard.com> is a great place to ask questions.
+Q applet development is easy. There are many examples available, all open source.
 
 A Q applet is a program written in `javascript` that can be installed in the Q
 software. Applets live in the Q marketplace.

@@ -477,8 +477,6 @@ November 7, 2018
 ### Known Problems (Mac Beta Only)
 
 In rare cases, the macOS Q Service `das_keyboard_q-service` uses too much CPU resource.
-If you encounter this problem, please post a message on the qforum and describe your setup: https://qforum.daskeyboard.com/.
-
 
 ## Version 3.0.0-beta (Windows, macOS, Linux)
 
@@ -500,8 +498,6 @@ November 3, 2018
 ### Known Problems (Mac Beta Only)
 
 In rare cases, the macOS Q Service `das_keyboard_q-service` uses too much CPU resource.
-If you encounter this problem, please post a message on the qforum and describe your setup: https://qforum.daskeyboard.com/.
-
 
 ## Version 2.0.4 (Windows), 2.0.4-beta (macOS), 2.0.4-beta (Linux)
 
@@ -524,7 +520,6 @@ October 30, 2018
 ### Known Problems (Mac Beta Only)
 
 In rare cases, the macOS Q Service `das_keyboard_q-service` uses too much CPU resource.
-If you encounter this problem, please post a message on the qforum and describe your setup: https://qforum.daskeyboard.com/.
 
 ---
 
@@ -554,8 +549,6 @@ September 28, 2018
 ### Known Problems (Mac Beta Only)
 
 In rare cases, the macOS Q Service `das_keyboard_q-service` uses too much CPU resource.
-If you encounter this problem, please post a message on the qforum and describe your setup: https://qforum.daskeyboard.com/.
-
 
 ---
 ## Version 2.0.2 (Windows) and 2.0.2-beta.2 (macOS)
@@ -595,8 +588,6 @@ September 21, 2018
 ### Known Problems (Mac Beta Only)
 
 In rare cases, the macOS Q Service `das_keyboard_q-service` uses too much CPU resource.
-If you encounter this problem, please post a message on the qforum and describe your setup: https://qforum.daskeyboard.com/.
-
 
 ---
 
