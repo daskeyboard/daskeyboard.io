@@ -6,6 +6,30 @@ permalink: /updates/changelog/
 
 <a class="btn btn-outline-success float-right" href="{{ '/get-started/software'  | relative_url }}" >Download</a>
 
+## Version 3.3.0
+
+April 20, 2021
+
+### HIGHLIGHT
+
+* RGB profiles are now stored locally. After logging in the Das Keyboard Q    Cloud, the profiles will be synchronized with the cloud.
+
+### NEW FEATURES
+
+* Removed deprecated Signal center
+* RGB profiles are now stored locally
+* RGB profiles are synchronized with the Das Keyboard Q Cloud
+
+### BUG FIXES
+
+* Software will now wait for device stabilization before applying profile
+* At startup the latest selected profile will now always be applied, no more  failures.
+* **security:**
+  * Disabled CORS for local signal API
+  * Local signal API now by default only accepts requests coming from `localhost`. To accept requests from outside network a setting needs to be enabled in the `preferences` menu
+
+---
+
 ## Version 3.2.8
 
 December 19, 2020
