@@ -12,7 +12,7 @@ April 20, 2021
 
 ### HIGHLIGHT
 
-* RGB profiles are now stored locally. After logging in the Das Keyboard Q    Cloud, the profiles will be synchronized with the cloud.
+* RGB profiles are now stored locally. After logging in the Das Keyboard Q Cloud, the profiles will be synchronized with the cloud.
 
 ### NEW FEATURES
 
