@@ -26,7 +26,7 @@ April 20, 2021
 * At startup the latest selected profile will now always be applied, no more  failures.
 * **Security:**
   * Disabled CORS for local signal API
-  * Local signal API now by default only accepts requests coming from `localhost`. To accept requests from outside network a setting needs to be enabled in the       `preferences` menu
+  * Local signal API now by default only accepts requests coming from `localhost`. To accept requests from outside network a setting needs to be enabled in the `preferences` menu
 
 ---
 
