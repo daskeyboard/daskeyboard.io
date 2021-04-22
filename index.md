@@ -25,10 +25,7 @@ hide_title: true
     <div class="row">
             <div class="col-md-12">
             <div class="homepage__tagline">
-            The Das Keyboard 5Q is a RGB keyboard that can display color notifications. 
-            Notifications come from Twitter, Gmail, eBay, Facebook and many others online services. 
-            Hundreds of applications can be configured via the Q marketplace and Zapier. 
-            A REST API is available for programmers.
+                Das Keyboard Q series keyboards are smart RGB keyboards designed to help boost productivity by displaying important information directly on the keyboard. Display notifications on Q keyboards (e.g. weather, stock quotes, project progress, CPU usage, etc..) in color on the keyboard’s keys with its revolutionary Q software.
             </div>
         </div>
     </div>
