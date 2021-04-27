@@ -12,21 +12,24 @@ April 20, 2021
 
 ### HIGHLIGHT
 
-* RGB profiles are now stored locally. After logging in the Das Keyboard Q    Cloud, the profiles will be synchronized with the cloud.
+* RGB profiles are now stored on the hard drive instead of cloud.
+* Added option to synchronize RGB profiles across all computers (cloud sync).
 
 ### NEW FEATURES
 
 * Removed deprecated Signal center
-* RGB profiles are now stored locally
-* RGB profiles are synchronized with the Das Keyboard Q Cloud
+* RGB profiles are now stored locally on user’s computer
+* Option to sync RGB profiles across all computers
 
 ### BUG FIXES
 
-* Software will now wait for device stabilization before applying profile
-* At startup the latest selected profile will now always be applied, no more  failures.
-* **security:**
+* At startup, Q desktop will wait for device stabilization before applying RGB profile
+* At startup, the last used profile will be reloaded correctly.
+
+* **Signal API:**
   * Disabled CORS for local signal API
-  * Local signal API now by default only accepts requests coming from `localhost`. To accept requests from outside network a setting needs to be enabled in the `preferences` menu
+  * Set signal API to allow only localhost calls
+  * Added user preference to allow signal API to accept calls from local area network.
 
 ---
 
