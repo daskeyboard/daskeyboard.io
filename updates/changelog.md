@@ -6,6 +6,33 @@ permalink: /updates/changelog/
 
 <a class="btn btn-outline-success float-right" href="{{ '/get-started/software'  | relative_url }}" >Download</a>
 
+## Version 3.3.0
+
+April 20, 2021
+
+### HIGHLIGHT
+
+* RGB profiles are now stored on the hard drive instead of cloud.
+* Added option to synchronize RGB profiles across all computers (cloud sync).
+
+### NEW FEATURES
+
+* Removed deprecated Signal center
+* RGB profiles are now stored locally on user’s computer
+* Option to sync RGB profiles across all computers
+
+### BUG FIXES
+
+* At startup, Q desktop will wait for device stabilization before applying RGB profile
+* At startup, the last used profile will be reloaded correctly.
+
+* **Signal API:**
+  * Disabled CORS for local signal API
+  * Set signal API to allow only localhost calls
+  * Added user preference to allow signal API to accept calls from local area network.
+
+---
+
 ## Version 3.2.8
 
 December 19, 2020
