@@ -6,6 +6,28 @@ permalink: /updates/changelog/
 
 <a class="btn btn-outline-success float-right" href="{{ '/get-started/software'  | relative_url }}" >Download</a>
 
+## Version 3.3.2
+
+April 28, 2021
+
+### BUG FIXES
+
+* Fixed issue with the RGB profiles not displaying after synchronization with Q cloud account.
+* Removed delay when applying RGB profile to keyboard after it was plugged in.
+
+---
+
+## Version 3.3.1 (Mac only)
+
+April 28, 2021
+
+### BUG FIXES
+
+* macOS installer is now erasing previous installed versions of the app in `/Applications` folder before installing the new one.
+* macOS installer is now correctly restarting the app and the service after installation.
+
+---
+
 ## Version 3.3.0
 
 April 20, 2021
