@@ -6,6 +6,17 @@ permalink: /updates/changelog/
 
 <a class="btn btn-outline-success float-right" href="{{ '/get-started/software'  | relative_url }}" >Download</a>
 
+## Version 3.3.3
+
+October 06, 2021
+
+### BUG FIXES
+
+* Fixed issue with the European keyboard layout mapping that had missing keys.
+* Fixed the error when installing Q Applets.
+
+---
+
 ## Version 3.3.2
 
 April 28, 2021
