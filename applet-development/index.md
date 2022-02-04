@@ -16,7 +16,7 @@ A Q applet is a program written in `javascript` that can be installed in the Q
 software. Applets live in the Q marketplace.
 
 Applets control a user-defined set of RGB LEDs. For example, a `CPU meter` 
-would control the top horizontal LEDs from `backtick` to `9` (US layout).
+would control the top horizontal LEDs from `ESC` to `F7` (US layout).
 
 <img src="{{ './images/marketplace-config.png' }}"
                     alt="Q Applet configuration view">
