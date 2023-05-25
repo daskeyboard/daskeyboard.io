@@ -41,7 +41,7 @@ permalink: /get-started/software/
     </td>
     <td>
       <a href='https://download.daskeyboard.com/q-software-releases/3.3.3/Das-Keyboard-Q_3.3.3.pkg'>
-        3.3.3</a> - 5Q and 5QS only
+        3.3.3</a> - 5Q, 5QS and 4Q only
     </td>
     <td>
        <a href='https://download.daskeyboard.com/q-software-releases/3.3.3/Das-Keyboard-Q_3.3.3.deb'>
