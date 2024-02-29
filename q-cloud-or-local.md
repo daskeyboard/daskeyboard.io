@@ -17,9 +17,6 @@ communicate with connected Q enabled devices.
 
 - propagation: about 5 minutes
 - Accessibility
-- OAuth credential requirement
-- Messages can be viewed in Q Signal Centre https://qapp.daskeyboard.com/signals
-- Mobile app can see signals
 
 ### Local API
 
@@ -32,5 +29,3 @@ The Q desktop will then communicate with the Q enabled device.
 - Not reliant on Q Cloud, useful if Q Cloud is down or performing maintenance
 - Can be used offline
 - Privacy – Signals are not stored on the Q cloud database
-- Messages will not appear in Q Signal Centre - https://qapp.daskeyboard.com/signals
-- Mobile apps will not see these signals
