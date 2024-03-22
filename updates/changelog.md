@@ -6,6 +6,32 @@ permalink: /updates/changelog/
 
 <a class="btn btn-outline-success float-right" href="{{ '/get-started/software'  | relative_url }}" >Download</a>
 
+## Version 4.0.0
+
+### HIGHLIGHTS
+
+- Introduced customizable Q button functionality, allowing users to tailor its operation for microphone control, volume adjustment, or notification alerts.
+- Automatic software updates now available on both Mac and Windows, eliminating the need for manual installation of new versions.
+- Addressed Mac security warning issue, streamlining the software installation process.
+
+### NEW FEATURES
+- **Q Button Customization:**
+  - **Microphone Control:** Toggle the microphone's mute status with a simple press. Indicator lights show green for active and red for muted.
+  - **Volume Control:** Adjust system volume directly from the Q button. Indicator lights display green for sound on and red for muted.
+  - **Notification Alerts:** The Q button alerts users to new notifications with a green light, with details accessible through a press.
+- **Automatic Updates:** Software updates automatically on Mac and Windows platforms.
+- **Mac Security Update:** Resolved the security prompt issue, enabling a smoother setup process for Mac users.
+- **Installer for RPM:** In addition to the Debian package, we now offer an installer for RPM-based distributions, expanding our support for Linux users.
+
+### REFINEMENTS
+
+- **USB Communication Enhancement:** Improved the USB communication between devices and software for enhanced reliability and performance.
+- **UX/UI Enhancements:** Implemented several improvements to the user interface and experience, aimed at providing a more intuitive and engaging software environment.
+
+
+---
+
+
 ## Version 3.3.3
 
 October 06, 2021

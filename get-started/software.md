@@ -35,18 +35,18 @@ permalink: /get-started/software/
     </thead>
   <tr>
     <td>
-        <a href='https://download.daskeyboard.com/q-software-releases/3.3.3/Das-Keyboard-Q_3.3.3.exe'>
-            3.3.3 - 64 bits
+        <a href='https://das-keyboard-q-releases.s3.us-east-2.amazonaws.com/das-keyboard-q/win32/x64/das-keyboard-q-4.0.0+Setup.exe'>
+            4.0.0 - 64 bits (Beta)
         </a>
     </td>
     <td>
-      <a href='https://download.daskeyboard.com/q-software-releases/3.3.3/Das-Keyboard-Q_3.3.3.pkg'>
-        3.3.3</a> - 5Q, 5QS and 4Q only
+      <a href='https://das-keyboard-q-releases.s3.us-east-2.amazonaws.com/das-keyboard-q/darwin/arm64/Das+Keyboard+Q-4.0.0-arm64.dmg'>
+        4.0.0 (Beta)</a> - 5Q, 5QS and 4Q only
     </td>
     <td>
-       <a href='https://download.daskeyboard.com/q-software-releases/3.3.3/Das-Keyboard-Q_3.3.3.deb'>
-        3.3.3.deb 64 bits</a> - 5Q, 5QS and 4Q only<br/>
-      <a href='https://copr.fedorainfracloud.org/coprs/appelond/das-keyboard/'>RPM(v3.2.6) </a> contributed by <a href="http://dennis-blog.appelon.net/">AppelonD</a> (untested by Das Keyboard)
+       <a href='https://das-keyboard-q-releases.s3.us-east-2.amazonaws.com/das-keyboard-q/linux/x64/das-keyboard-q_4.0.0_amd64.deb'>
+        4.0.0.deb 64 bits (Beta)</a> - 5Q, 5QS and 4Q only<br/>
+      <a href='https://das-keyboard-q-releases.s3.us-east-2.amazonaws.com/das-keyboard-q/linux/x64/das-keyboard-q-4.0.0-1.x86_64.rpm'>RPM(v4.0.0 Beta) </a>
     </td>
   </tr>
 
