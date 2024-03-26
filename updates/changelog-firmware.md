@@ -59,6 +59,17 @@ First release of the X50Q firmware
 
 ## **Das Keyboard 4Q**
 
+## Version 23.31.0 (EU and US) - March 26, 2024
+
+### IMPROVEMENTS
+
+- Refined the Q-button behavior to no longer emulate the F24 keypress, instead utilizing a direct communication protocol for improved software interaction capabilities
+- Enhanced LED functionality, offering smoother and more reliable operation across various lighting modes
+
+### FIXES
+
+- Resolved a minor bug in the LED firmware that affected the consistency of lighting under specific conditions.
+
 ## Version 21.27.0 (EU and US) - April 24, 2019
 
 ### IMPROVEMENTS
@@ -78,6 +89,18 @@ First release of the X50Q firmware
 First release of the 4Q firmware
 
 ## **Das Keyboard 5QS**
+
+
+## Version 28.31.0 (EU and US) - March 26, 2024
+
+### IMPROVEMENTS
+
+- Refined the Q-button behavior to no longer emulate the F24 keypress, instead utilizing a direct communication protocol for improved software interaction capabilities
+- Enhanced LED functionality, offering smoother and more reliable operation across various lighting modes
+
+### FIXES
+
+- Resolved a minor bug in the LED firmware that affected the consistency of lighting under specific conditions.
 
 ## Version 24.31.0 (EU and US) - December 7, 2020
 

@@ -21,9 +21,9 @@ permalink: /get-started/firmware/
     </thead>
     <tr>
       <td>5QS</td>
-      <td>v24.31.0: Update firmware from Das Keyboard Q software</td>
-      <td>v24.31.0: Update firmware from Das Keyboard Q software</td>
-      <td>v24.31.0: Update firmware from Das Keyboard Q software</td>
+      <td>v28.31.0: Update firmware from Das Keyboard Q software</td>
+      <td>v28.31.0: Update firmware from Das Keyboard Q software</td>
+      <td>v28.31.0: Update firmware from Das Keyboard Q software</td>
     </tr>
     <tr>
       <td>
@@ -52,24 +52,9 @@ permalink: /get-started/firmware/
       <td>
       4Q
       </td>
-      <td>
-        <div class="alert alert-danger mt-3" role="alert">
-<b>Warning:</b> This firmware is for the <b>4Q ONLY</b>. Using it for other Das Keyboard 4 will brick the keyboard.
-</div>
-
-        US layout:&nbsp;
-        <a href='https://download.daskeyboard.com/q-software-releases/Firmware-releases/DK4Q/DK4Q_US_Firmware_21.27.0.exe'>
-        v21.27.0-US
-        </a>
-      <br/>
-        EU layout:&nbsp;
-        <a href='https://download.daskeyboard.com/q-software-releases/Firmware-releases/DK4Q/DK4Q_EU_Firmware_21.27.0.exe'>
-        v21.27.0-EU
-        </a>
-
-      </td>
-      <td>Not compatible</td>
-      <td>Use Windows FW updater*</td>
+      <td>v23.31.0: Update firmware from Das Keyboard Q software</td>
+      <td>v23.31.0: Update firmware from Das Keyboard Q software</td>
+      <td>v23.31.0: Update firmware from Das Keyboard Q software</td>
     </tr>
 
 </table>
