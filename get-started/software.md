@@ -15,6 +15,14 @@ permalink: /get-started/software/
       <small id="software-version-number"></small>
     </small>
   </div>
+  <div class="ml-3 text-center" id="intel-download-link-container" style="display: none">
+  <a style="margin-right:0px;"
+      class="get-started-button"
+      id="software-download-button-intel">Download Das&nbsp;Keyboard&nbsp;Q </a>
+    <small>
+      <small id="software-version-number-intel"></small>
+    </small>
+  </div>
   <div style="text-align: center; margin-left: 20px;">
   <a href="{{ 'updates/changelog/'  | relative_url }}">What's new?</a>
   </div>
