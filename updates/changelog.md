@@ -6,6 +6,22 @@ permalink: /updates/changelog/
 
 <a class="btn btn-outline-success float-right" href="{{ '/get-started/software'  | relative_url }}" >Download</a>
 
+
+## Version 4.0.1
+
+### HIGHLIGHTS
+
+- Fixed a critical issue affecting firmware upgrades on certain devices and layouts, ensuring all users can keep their hardware up to date with ease.
+- Expanded our software support to include Macs with Intel processors, making the Das Keyboard software accessible to a broader range of Mac users.
+
+### BUG FIXES
+- **Firmware Upgrade Fix:**
+  - **4Q Devices:** Resolved a firmware upgrade failure issue, ensuring smooth and reliable updates.
+  - **European Layouts for 5QS:** Fixed a specific issue preventing firmware upgrades on European layouts, enhancing the user experience for our European community.
+- **Installer for Mac with Intel Processors:** Previously, our software supported only Macs with Apple Silicon processors. With this update, users of Macs with Intel processors can now install the Das Keyboard software, bridging the gap in our support.
+
+---
+
 ## Version 4.0.0
 
 ### HIGHLIGHTS
