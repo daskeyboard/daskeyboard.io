@@ -6,6 +6,11 @@ permalink: /updates/changelog/
 
 <a class="btn btn-outline-success float-right" href="{{ '/get-started/software'  | relative_url }}" >Download</a>
 
+## Version 4.0.2
+
+### BUG FIXES
+
+- Fixed an issue where unplugging the keyboard during a firmware upgrade prevented the keyboard from being detected subsequently.
 
 ## Version 4.0.1
 
