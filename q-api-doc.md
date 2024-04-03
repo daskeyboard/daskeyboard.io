@@ -19,9 +19,9 @@ This script can be hosted on any online server and will still communicate with t
 
 - Speed (~20 Seconds)
 - Internet Accessibility
-- OAuth credential requirement
+<!-- - OAuth credential requirement
 - Messages can be viewed in Q Signal Centre https://qapp.daskeyboard.com/signals
-- Mobile app can see signals
+- Mobile app can see signals -->
 
 ### Local API
 
@@ -35,5 +35,5 @@ The Q desktop will then communicate with the Q enabled device.
 - Not reliant on Q Cloud, useful if Q Cloud is down or performing maintenance
 - Can be used offline
 - Privacy – Signals are not stored on the cloud database
-- Messages will not appear in Q Signal Centre - https://qapp.daskeyboard.com/signals
-- Mobile apps will not see these signals
+<!-- - Messages will not appear in Q Signal Centre - https://qapp.daskeyboard.com/signals
+- Mobile apps will not see these signals -->
