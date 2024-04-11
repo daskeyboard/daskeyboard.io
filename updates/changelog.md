@@ -6,6 +6,17 @@ permalink: /updates/changelog/
 
 <a class="btn btn-outline-success float-right" href="{{ '/get-started/software'  | relative_url }}" >Download</a>
 
+## Version 4.0.4 (Windows only)
+
+April 10, 2024
+
+## BUG FIXES
+
+-- **5Q Q-button**
+   - On Windows the Q-button press of the 5Q model was not detected by the software.
+
+---
+
 ## Version 4.0.3
 
 April 3, 2024

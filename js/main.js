@@ -308,9 +308,9 @@ function loadDownloadLinkDependingOnOsArchitechture() {
     if (navigator.userAgent.indexOf("WOW64") != -1 ||
       navigator.userAgent.indexOf("Win64") != -1) {
       $('#softwarep-age-button-container').css('display', 'flex');
-      $('#software-download-button').attr("href", "https://das-keyboard-q-releases.s3.us-east-2.amazonaws.com/das-keyboard-q/win32/x64/das-keyboard-q-4.0.3+Setup.exe");
+      $('#software-download-button').attr("href", "https://das-keyboard-q-releases.s3.us-east-2.amazonaws.com/das-keyboard-q/win32/x64/das-keyboard-q-4.0.4+Setup.exe");
       $('#software-download-button').append(" 64 bit");
-      $('#software-version-number').append('Version 4.0.3');
+      $('#software-version-number').append('Version 4.0.4');
       $('#software-version-number').append(" Windows");
       return;
     }
