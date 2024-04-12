@@ -11,7 +11,7 @@ permalink: /updates/changelog/
 Apris 12, 2024
 
 #### NEW FEATURES
-- **Device Support:** Added support for the new "Das Keyboard 5Qs Mark 2".
+- **Device Support:** Added support for the new "Das Keyboard 5Qs Mark II.
 
 #### IMPROVEMENTS
 - **Cloud API Integration:** Transitioned to a new cloud API following recent upgrades to our cloud services. This update provides more robust and efficient data handling, improved security, and better overall performance.
