@@ -6,13 +6,25 @@ permalink: /updates/changelog/
 
 <a class="btn btn-outline-success float-right" href="{{ '/get-started/software'  | relative_url }}" >Download</a>
 
+## Version 4.1.0
+
+Apris 12, 2024
+
+#### NEW FEATURES
+- **Device Support:** Added support for the new "Das Keyboard 5Qs Mark 2".
+
+#### IMPROVEMENTS
+- **Cloud API Integration:** Transitioned to a new cloud API following recent upgrades to our cloud services. This update provides more robust and efficient data handling, improved security, and better overall performance.
+
+---
+
 ## Version 4.0.4 (Windows only)
 
 April 10, 2024
 
 ## BUG FIXES
 
--- **5Q Q-button**
+**5Q Q-button**
    - On Windows the Q-button press of the 5Q model was not detected by the software.
 
 ---
