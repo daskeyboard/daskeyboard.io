@@ -1,3 +1,7 @@
+var backendUrl = 'https://q2.daskeyboard.com';
+
+
+
 function redirectToHomePage() {
   window.location.pathname = "index";
 }
@@ -35,7 +39,7 @@ function getApiKeyIfOneTimeLoginTokenIsPresent() {
 
 function getCurrentUser() {
   const localAPIKey = getStoredAPIKey();
-  $.getJSON("https://q.daskeyboard.com/api/1.0/users/me", localAPIKey)
+  $.getJSON(`${backendUrl}/api/1.0/users/me`, localAPIKey)
     // post request success
     .done(function (data) {
       // store email
@@ -53,10 +57,8 @@ function getCurrentUser() {
 
 function onLoginToQCloud() {
   const callbackUrl = window.location.pathname;
-  window.location =
-    "https://qapp.daskeyboard.com?source=q-documentation" +
-    "&callbackUrl=" +
-    callbackUrl;
+  window.location = `${backendUrl}/login?source=q-documentation`
+    + '&callbackUrl=' + callbackUrl;
 }
 
 /**
@@ -99,9 +101,7 @@ function getAPIKeyWithOneTimeLoginToken(loginToken) {
     console.error("no login token provided");
     return;
   }
-  $.postJSON("https://q.daskeyboard.com/api/1.0/users/api_key", {
-    oneTimeLoginToken: loginToken,
-  })
+  $.postJSON(`${backendUrl}/api/1.0/users/api_key`, { oneTimeLoginToken: loginToken })
     // post request success
     .done(function (data) {
       // store apiKey in local storage
