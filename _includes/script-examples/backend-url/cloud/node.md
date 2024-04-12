@@ -2,5 +2,5 @@
 
 
 ```js
-var backendUrl = 'https://q.daskeyboard.com';
+var backendUrl = 'https://q2.daskeyboard.com';
 ```

@@ -1,10 +1,9 @@
-// var backendUrl = 'https://q.daskeyboard.com';
+var backendUrl = 'https://q2.daskeyboard.com';
 
-var backendUrl = 'http://localhost:3000'
 
 
 function redirectToHomePage() {
-  window.location.pathname = 'index';
+  window.location.pathname = "index";
 }
 
 /**
@@ -15,19 +14,22 @@ function redirectToHomePage() {
  */
 function getParameterByName(name, url) {
   if (!url) url = window.location.href;
-  name = name.replace(/[\[\]]/g, '\\$&');
-  var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+  name = name.replace(/[\[\]]/g, "\\$&");
+  var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
     results = regex.exec(url);
   if (!results) return null;
-  if (!results[2]) return '';
-  return decodeURIComponent(results[2].replace(/\+/g, ' '));
+  if (!results[2]) return "";
+  return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 
 function getApiKeyIfOneTimeLoginTokenIsPresent() {
-  const oneTimeLoginToken = getParameterByName('oneTimeLoginToken', window.location.href);
+  const oneTimeLoginToken = getParameterByName(
+    "oneTimeLoginToken",
+    window.location.href
+  );
   removeQueryParamsFromUrl();
   if (oneTimeLoginToken) {
-    console.log('getting api key from q-cloud');
+    console.log("getting api key from q-cloud");
     getAPIKeyWithOneTimeLoginToken(oneTimeLoginToken);
   } else {
     updateLoginDisplayElements(undefined);
@@ -41,7 +43,7 @@ function getCurrentUser() {
     // post request success
     .done(function (data) {
       // store email
-      localStorage.setItem('email', data.email);
+      localStorage.setItem("email", data.email);
       // update the view with the new user info
       updateLoginDisplayElements(data.email);
       replaceALLApiKeyByStoredApiKey(localAPIKey);
@@ -65,12 +67,12 @@ function onLoginToQCloud() {
  */
 $.postJSON = function (url, data, callback) {
   return jQuery.ajax({
-    'type': 'POST',
-    'url': url,
-    'contentType': 'application/json',
-    'data': JSON.stringify(data),
-    'dataType': 'json',
-    'success': callback
+    type: "POST",
+    url: url,
+    contentType: "application/json",
+    data: JSON.stringify(data),
+    dataType: "json",
+    success: callback,
   });
 };
 
@@ -80,12 +82,12 @@ $.postJSON = function (url, data, callback) {
  */
 $.getJSON = function (url, apiKey, callback) {
   return jQuery.ajax({
-    'type': 'GET',
-    'url': url,
-    headers: { 'X-API-KEY': apiKey },
-    'contentType': 'application/json',
-    'dataType': 'json',
-    'success': callback
+    type: "GET",
+    url: url,
+    headers: { "X-API-KEY": apiKey },
+    contentType: "application/json",
+    dataType: "json",
+    success: callback,
   });
 };
 
@@ -96,7 +98,7 @@ $.getJSON = function (url, apiKey, callback) {
  */
 function getAPIKeyWithOneTimeLoginToken(loginToken) {
   if (!loginToken) {
-    console.error('no login token provided');
+    console.error("no login token provided");
     return;
   }
   $.postJSON(`${backendUrl}/api/1.0/users/api_key`, { oneTimeLoginToken: loginToken })
@@ -104,10 +106,12 @@ function getAPIKeyWithOneTimeLoginToken(loginToken) {
     .done(function (data) {
       // store apiKey in local storage
       const apiKey = data.value;
-      localStorage.setItem('APIKey', apiKey);
+      localStorage.setItem("APIKey", apiKey);
       // notify user that the API key was fetched
-      displayFlashNotice('info',
-        'You are  logged in: sample code will contain your API key so you can copy paste and experiment easily. Enjoy!');
+      displayFlashNotice(
+        "info",
+        "You are  logged in: sample code will contain your API key so you can copy paste and experiment easily. Enjoy!"
+      );
       getCurrentUser();
     })
     // error with POST request
@@ -115,12 +119,12 @@ function getAPIKeyWithOneTimeLoginToken(loginToken) {
       // notify user that error happened
       updateLoginDisplayElements(undefined);
       replaceALLApiKeyByStoredApiKey(undefined);
-      displayFlashNotice('error', 'Error while fetching API KEY');
+      displayFlashNotice("error", "Error while fetching API KEY");
     });
 }
 
 function getStoredAPIKey() {
-  const apiKey = localStorage.getItem('APIKey');
+  const apiKey = localStorage.getItem("APIKey");
   return apiKey;
 }
 
@@ -141,8 +145,8 @@ function getStoredAPIKey() {
  */
 function displayFlashNotice(noticeType, message) {
   // get the bootstrap alert div
-  const flashNoticeDivId = '#flash-notice-section';
-  const flashNoticeMessageId = '#flash-notice-message';
+  const flashNoticeDivId = "#flash-notice-section";
+  const flashNoticeMessageId = "#flash-notice-message";
   const alertDiv = $(flashNoticeDivId);
   const alertMessage = $(flashNoticeMessageId);
 
@@ -150,33 +154,30 @@ function displayFlashNotice(noticeType, message) {
     // populate the content of the div with the message
     alertMessage.html(message);
     // remove the previous class lists
-    alertDiv.removeClass(['alert-info', 'alert-danger']);
+    alertDiv.removeClass(["alert-info", "alert-danger"]);
     switch (noticeType) {
-      case 'info':
-        alertDiv.addClass(['alert-primary']);
+      case "info":
+        alertDiv.addClass(["alert-primary"]);
         break;
 
-      case 'error':
-        alertDiv.addClass(['alert-danger']);
+      case "error":
+        alertDiv.addClass(["alert-danger"]);
         break;
     }
 
     // show the div
-    alertDiv.css('display', 'block');
-
+    alertDiv.css("display", "block");
   }
 }
-
-
 
 /**
  * closes the flash notice component by hiding the element in the DOM
  */
 function onCloseFlashNotice() {
-  const flashNoticeDivId = 'flash-notice-section';
+  const flashNoticeDivId = "flash-notice-section";
   const alertDiv = document.getElementById(flashNoticeDivId);
   if (alertDiv) {
-    alertDiv.style.display = 'none';
+    alertDiv.style.display = "none";
   }
 }
 
@@ -190,7 +191,7 @@ function onCloseFlashNotice() {
 
 function removeQueryParamsFromUrl() {
   var newurl = window.location.pathname;
-  window.history.pushState({ path: newurl }, '', newurl);
+  window.history.pushState({ path: newurl }, "", newurl);
 }
 
 /**
@@ -198,11 +199,9 @@ function removeQueryParamsFromUrl() {
  * and update the views to display a none logged user
  */
 function logout() {
-
   // remove api key and email from local storage
-  localStorage.removeItem('APIKey');
-  localStorage.removeItem('email');
-
+  localStorage.removeItem("APIKey");
+  localStorage.removeItem("email");
 
   // reload page
   window.location.reload();
@@ -211,20 +210,20 @@ function logout() {
 function updateLoginDisplayElements(currentUserEmail) {
   if (currentUserEmail) {
     // hide login message
-    $('#header-login-message').css('display', 'none');
+    $("#header-login-message").css("display", "none");
     // display welcome message
-    $('#header-welcome-message').text('Welcome ' + currentUserEmail);
-    $('#header-welcome-message').css('display', 'inline-block');
-    $('#header-welcome-message').css('font-weight', 'bold');
+    $("#header-welcome-message").text("Welcome " + currentUserEmail);
+    $("#header-welcome-message").css("display", "inline-block");
+    $("#header-welcome-message").css("font-weight", "bold");
     // display logout action
-    $('#logout-action').css('display', 'inline-block');
+    $("#logout-action").css("display", "inline-block");
   } else {
     // hide logout action
-    $('#logout-action').css('display', 'none');
+    $("#logout-action").css("display", "none");
     // hide welcome message
-    $('#header-welcome-message').css('display', 'none');
+    $("#header-welcome-message").css("display", "none");
     // display login message
-    $('#header-login-message').css('display', 'inline-block');
+    $("#header-login-message").css("display", "inline-block");
   }
 }
 
@@ -237,31 +236,43 @@ function updateLoginDisplayElements(currentUserEmail) {
  */
 
 function formatJSONCode() {
-  var jsonCode = document.getElementsByClassName('json-code');
+  var jsonCode = document.getElementsByClassName("json-code");
   for (var i = 0; i < jsonCode.length; i++) {
     var content = jsonCode[i].textContent;
     jsonCode[i].innerHTML = syntaxHighlight(content);
   }
-};
+}
 
 function replaceALLApiKeyByStoredApiKey(apiKey) {
-  $("body").children().each(function () {
-    if (!apiKey) {
-
-      // TODO change with the root to the API Key explanation page
-      const apiKeyMoreDetails = window.location.origin + '/get-started/software/';
-      $(this).html($(this).html().replace(/\$API_KEY/g,
-        // "<span class='span-code'data-toggle='tooltip' data-placement='top' "
-        // + "title='Login to automatically see your own credential.' onclick='onLoginToQCloud()'>"
-        // + "login to retrieve your api-key</span>"));
-        "<button class='login-code-button' data-toggle='tooltip' data-html='true' title='This is a sample <a href="
-        + apiKeyMoreDetails
-        + ">API key</a>.<a href=\"#\" onclick=\"onLoginToQCloud()\"> Login</a> to see examples "
-        + "pre-filled with your keys.'>login to retrieve your api-key</button>"));
-    } else {
-      $(this).html($(this).html().replace(/\$API_KEY/g, apiKey));
-    }
-  });
+  $("body")
+    .children()
+    .each(function () {
+      if (!apiKey) {
+        // TODO change with the root to the API Key explanation page
+        const apiKeyMoreDetails =
+          window.location.origin + "/get-started/software/";
+        $(this).html(
+          $(this)
+            .html()
+            .replace(
+              /\$API_KEY/g,
+              // "<span class='span-code'data-toggle='tooltip' data-placement='top' "
+              // + "title='Login to automatically see your own credential.' onclick='onLoginToQCloud()'>"
+              // + "login to retrieve your api-key</span>"));
+              "<button class='login-code-button' data-toggle='tooltip' data-html='true' title='This is a sample <a href=" +
+                apiKeyMoreDetails +
+                '>API key</a>.<a href="#" onclick="onLoginToQCloud()"> Login</a> to see examples ' +
+                "pre-filled with your keys.'>login to retrieve your api-key</button>"
+            )
+        );
+      } else {
+        $(this).html(
+          $(this)
+            .html()
+            .replace(/\$API_KEY/g, apiKey)
+        );
+      }
+    });
 }
 
 /**
@@ -269,30 +280,36 @@ function replaceALLApiKeyByStoredApiKey(apiKey) {
  * @param {*} json
  */
 function syntaxHighlight(json) {
-  if (typeof json != 'string') {
+  if (typeof json != "string") {
     json = JSON.stringify(json, undefined, 2);
   }
-  json = json.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-  return json.replace(/("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g, function (match) {
-    var cls = 'number';
-    if (/^"/.test(match)) {
-      if (/:$/.test(match)) {
-        cls = 'key';
-      } else {
-        cls = 'string';
+  json = json
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+  return json.replace(
+    /("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g,
+    function (match) {
+      var cls = "number";
+      if (/^"/.test(match)) {
+        if (/:$/.test(match)) {
+          cls = "key";
+        } else {
+          cls = "string";
+        }
+      } else if (/true|false/.test(match)) {
+        cls = "boolean";
+      } else if (/null/.test(match)) {
+        cls = "null";
       }
-    } else if (/true|false/.test(match)) {
-      cls = 'boolean';
-    } else if (/null/.test(match)) {
-      cls = 'null';
+      // if (cls === 'string') {
+      //   return '<span class="' + cls + '">' + match + '</span><br>';
+      // } else {
+      //   return '<span class="' + cls + '">' + match + '</span>';
+      // }
+      return '<span class="' + cls + '">' + match + "</span>";
     }
-    // if (cls === 'string') {
-    //   return '<span class="' + cls + '">' + match + '</span><br>';
-    // } else {
-    //   return '<span class="' + cls + '">' + match + '</span>';
-    // }
-    return '<span class="' + cls + '">' + match + '</span>';
-  });
+  );
 }
 
 /************************************************************************
@@ -303,55 +320,64 @@ function syntaxHighlight(json) {
  * ***********************************************************************
  */
 
-
 /**
  * Detects the os platform and architechture and change the download link of the Q software
  * depending on this informations
  */
 function loadDownloadLinkDependingOnOsArchitechture() {
-  if (navigator.platform.includes('Win32')) {
-    if (navigator.userAgent.indexOf("WOW64") != -1 ||
-      navigator.userAgent.indexOf("Win64") != -1) {
-      $('#softwarep-age-button-container').css('display', 'flex');
-      $('#software-download-button').attr("href", "https://das-keyboard-q-releases.s3.us-east-2.amazonaws.com/das-keyboard-q/win32/x64/das-keyboard-q-4.0.2+Setup.exe");
-      $('#software-download-button').append(" 64 bit (Beta)");
-      $('#software-version-number').append('Version 4.0.2');
-      $('#software-version-number').append(" Windows");
+  if (navigator.platform.includes("Win32")) {
+    if (
+      navigator.userAgent.indexOf("WOW64") != -1 ||
+      navigator.userAgent.indexOf("Win64") != -1
+    ) {
+      $("#softwarep-age-button-container").css("display", "flex");
+      $("#software-download-button").attr(
+        "href",
+        "https://das-keyboard-q-releases.s3.us-east-2.amazonaws.com/das-keyboard-q/win32/x64/das-keyboard-q-4.1.0+Setup.exe"
+      );
+      $("#software-download-button").append(" 64 bit");
+      $("#software-version-number").append("Version 4.1.0");
+      $("#software-version-number").append(" Windows");
       return;
     }
   }
-  if (navigator.platform.includes('MacIntel')) {
-    $('#softwarep-age-button-container').css('display', 'flex');
-    $('#software-download-button').attr("href", "https://das-keyboard-q-releases.s3.us-east-2.amazonaws.com/das-keyboard-q/darwin/arm64/Das+Keyboard+Q-4.0.2-arm64.dmg");
-    $('#software-download-button').append(" Apple silicon 64 bit (Beta)");
-    $('#software-version-number').append('Version 4.0.2');
-    $('#software-version-number').append(" Mac");
+  if (navigator.platform.includes("MacIntel")) {
+    $("#softwarep-age-button-container").css("display", "flex");
+    $("#software-download-button").attr(
+      "href",
+      "https://das-keyboard-q-releases.s3.us-east-2.amazonaws.com/das-keyboard-q/darwin/arm64/Das+Keyboard+Q-4.1.0-arm64.dmg"
+    );
+    $("#software-download-button").append(" Apple silicon 64 bit");
+    $("#software-version-number").append("Version 4.1.0");
+    $("#software-version-number").append(" Mac");
 
     // Do the same for intel-download-button
-    $('#intel-download-link-container').css('display', 'block');
-   $('#software-download-button-intel').attr("href", "https://das-keyboard-q-releases.s3.us-east-2.amazonaws.com/das-keyboard-q/darwin/x64/Das+Keyboard+Q-4.0.2-x64.dmg");
-    $('#software-download-button-intel').append(" Intel chip 64 bit (Beta)");
-    $('#software-version-number-intel').append('Version 4.0.2');
-    $('#software-version-number-intel').append(" Mac");
-    
-  
+    $("#intel-download-link-container").css("display", "block");
+    $("#software-download-button-intel").attr(
+      "href",
+      "https://das-keyboard-q-releases.s3.us-east-2.amazonaws.com/das-keyboard-q/darwin/x64/Das+Keyboard+Q-4.0.3-x64.dmg"
+    );
+    $("#software-download-button-intel").append(" Intel chip 64 bit");
+    $("#software-version-number-intel").append("Version 4.0.3");
+    $("#software-version-number-intel").append(" Mac");
 
     return;
   }
 
-   
-  if (navigator.platform.includes('Linux x86_64')) {
-    $('#softwarep-age-button-container').css('display', 'flex');
-    $('#software-download-button').attr("href", "https://das-keyboard-q-releases.s3.us-east-2.amazonaws.com/das-keyboard-q/linux/x64/das-keyboard-q_4.0.2_amd64.deb");
-    $('#software-download-button').append(" 64 bit (Beta)");
-    $('#software-version-number').append('Version 4.0.2');
-    $('#software-version-number').append(" Linux");
-    $('#software-version-number').append("-Debian");
+  if (navigator.platform.includes("Linux x86_64")) {
+    $("#softwarep-age-button-container").css("display", "flex");
+    $("#software-download-button").attr(
+      "href",
+      "https://das-keyboard-q-releases.s3.us-east-2.amazonaws.com/das-keyboard-q/linux/x64/das-keyboard-q_4.1.0_amd64.deb"
+    );
+    $("#software-download-button").append(" 64 bit");
+    $("#software-version-number").append("Version 4.1.0");
+    $("#software-version-number").append(" Linux");
+    $("#software-version-number").append("-Debian");
     return;
   }
 
-  $('#all-download-anchor-link').css('display', 'block');
-
+  $("#all-download-anchor-link").css("display", "block");
 }
 
 /**
@@ -387,10 +413,8 @@ function loadFirmwareDeviceDependingOnPidParam() {
   // }
 }
 
-
-
 $(document).ready(function () {
-  const email = localStorage.getItem('email');
+  const email = localStorage.getItem("email");
   const apiKey = getStoredAPIKey();
   if (email && apiKey) {
     updateLoginDisplayElements(email);
@@ -400,12 +424,8 @@ $(document).ready(function () {
     getApiKeyIfOneTimeLoginTokenIsPresent();
   }
 
-
-
-
   formatJSONCode();
   loadDownloadLinkDependingOnOsArchitechture();
-
 
   // enable bootstrap tooltips
   $('[data-toggle="tooltip"]').tooltip();
@@ -413,7 +433,7 @@ $(document).ready(function () {
   // enable bootstrap popovers
   $('[data-toggle="popover"]').popover();
 
-  $('.popover-dismiss').popover({
-    trigger: 'focus'
+  $(".popover-dismiss").popover({
+    trigger: "focus",
   });
 });

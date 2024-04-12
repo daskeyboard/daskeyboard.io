@@ -6,13 +6,56 @@ permalink: /updates/changelog/
 
 <a class="btn btn-outline-success float-right" href="{{ '/get-started/software'  | relative_url }}" >Download</a>
 
+## Version 4.1.0
+
+Apris 12, 2024
+
+#### NEW FEATURES
+- **Device Support:** Added support for the new "Das Keyboard 5Qs Mark II.
+
+#### IMPROVEMENTS
+- **Cloud API Integration:** Transitioned to a new cloud API following recent upgrades to our cloud services. This update provides more robust and efficient data handling, improved security, and better overall performance.
+
+---
+
+## Version 4.0.4 (Windows only)
+
+April 10, 2024
+
+## BUG FIXES
+
+**5Q Q-button**
+   - On Windows the Q-button press of the 5Q model was not detected by the software.
+
+---
+
+## Version 4.0.3
+
+April 3, 2024
+
+### BUG FIXES
+
+- **Breath Effect Optimization:**
+  - Fixed an issue where the breath effect would be resent unnecessarily if it was already loaded in the key, ensuring a smoother and more efficient performance for all devices.
+  
+- **5QS Side Pipe RGB Effect Fix:**
+  - Corrected a problem specific to the 5QS model where changing the side pipe RGB effect inadvertently altered the control key effect. This fix ensures that changes to the side pipe RGB effect on the 5QS model remain independent and do not impact other key effects.
+
+---
+
 ## Version 4.0.2
+
+March 27, 2024
 
 ### BUG FIXES
 
 - Fixed an issue where unplugging the keyboard during a firmware upgrade prevented the keyboard from being detected subsequently.
 
+---
+
 ## Version 4.0.1
+
+March 26, 2024
 
 ### HIGHLIGHTS
 
@@ -30,6 +73,8 @@ permalink: /updates/changelog/
 ## Version 4.0.0
 
 ### HIGHLIGHTS
+
+March 22, 2024
 
 - Introduced customizable Q button functionality, allowing users to tailor its operation for microphone control, volume adjustment, or notification alerts.
 - Automatic software updates now available on both Mac and Windows, eliminating the need for manual installation of new versions.

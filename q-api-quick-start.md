@@ -21,18 +21,13 @@ NOTE: Examples uses Linux-style `shell` command line. It is also available on Wi
 
 * or when using `git bash` which is available here: <https://gitforwindows.org/>.
 
-This quick start document covers the following:
-
-1. How it works: key concepts
-2. Getting authentication tokens
-3. Sending a signal to a Q device
 
 ## Key Q concepts: How it works
 
 In order to control the RGB LEDs of a Q device, a user must send authenticated
 HTTP JSON requests to a Q REST API.
 
-Q cloud services <https://q.daskeyboard.com/> provides a REST API that talks to
+Q cloud services <https://q2.daskeyboard.com/> provides a REST API that talks to
 Q devices. Alternatively, one can also write a script that directly interacts
 with a Q device via your workstation (i.e.: http://localhost:/#port...).
 
@@ -52,41 +47,14 @@ Your script on your computer --> Q desktop app on your computer --> Q enabled de
 
 The example in this document uses the Q cloud service.
 
-## Getting authentication tokens
+## Getting a Q cloud API key
 
-Since Q cloud service requires authenticated requests, you need to get an OAuth
-`access token` and `refresh token`.
+Since Q cloud service requires authenticated requests, you need to get an API key.
 
-To get them, first signup for an account at <https://q.daskeyboard.com> then find
-your `client id` and `secret` here: <https://q.daskeyboard.com/account>
+To get it, first signup for an account at <https://q2.daskeyboard.com> then find
+your `API key` here: <https://q2.daskeyboard.com/signup/edit>
 
-Run this command to get your tokens:
 
-```sh
-curl -X POST -H "Content-Type: application/json" -d '{"client_id": "CLIENT_ID", "client_secret": "CLIENT_SECRET", "grant_type": "client_credentials"}' https://q.daskeyboard.com/oauth/1.4/token
-```
-
-Result format:
-
-```sh
-{"access_token":"ACCESS_TOKEN","refresh_token":"REFRESH_TOKEN","user_id":CLIENT_ID,"expires_in":86400}
-```
-
-## Sending a signal to a Q device
-
-Now that you got your `access token` from the previous command, replace the
-ACCESS TOKEN below with the `access_token` value. Then, when you run the command, the A key
-should light up green.
-
-```sh
-curl -H "Content-Type: application/json" -H "Authorization: Bearer ACCESS_TOKEN" -X POST https://q.abc.com/api/1.0/signals -d '{"name": "Apple stock increase", "pid": "DK5QPID", "zoneId": "KEY_A", "color": "#0F0"}'
-```
-
-It takes only few milliseconds for Q cloud service to send a signal to a Q
-device, so don't blink.
-
-At this point you should see your Q device A-key colored in green. If you push
-the Q button on your Q keyboard, you'll see the message "Apple stock increase".
 
 ## Next steps
 

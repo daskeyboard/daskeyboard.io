@@ -35,7 +35,7 @@ Q clients can be downloaded from the Q website:
 ### Create a Das Keyboard Q account
 
 In order to use the Q client, you'll need to create an account at
-<https://q.daskeyboard.com/>
+<https://q2.daskeyboard.com/>
 
 
 ## Sending Signals to your 5Q keyboard + developer API
