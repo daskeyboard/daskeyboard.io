@@ -3,6 +3,6 @@
 
 ```shell
 
-BACKEND_URL="https://q.daskeyboard.com"
+BACKEND_URL="https://q2.daskeyboard.com"
 
 ```

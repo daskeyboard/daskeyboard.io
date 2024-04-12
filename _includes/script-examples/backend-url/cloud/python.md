@@ -3,6 +3,6 @@
 
 ```python
 
-backendUrl = 'https://q.daskeyboard.com'
+backendUrl = 'https://q2.daskeyboard.com'
 
 ```
