@@ -6,6 +6,40 @@ permalink: /updates/changelog/
 
 <a class="btn btn-outline-success float-right" href="{{ '/get-started/software'  | relative_url }}" >Download</a>
 
+
+## Version 4.1.2
+
+April 18, 2024
+
+### HIGHLIGHTS
+- **Extended Firmware Support**: Added a specific firmware URL for Das Keyboard 5QS Mark II, ensuring users have direct access to the latest updates and features.
+- **ISP Mode Enhancements**: Introduced an additional patch to further stabilize ISP mode operations during firmware upgrades, preventing potential disruptions and ensuring smoother updates.
+
+### BUG FIXES
+- **Firmware URL Addition**:
+  - **Das Keyboard 5QS Mark II**: Now includes a direct link for firmware updates, simplifying the process for users to obtain the latest software for their device.
+- **ISP Mode Stability Patch**:
+  - **Continued Improvements**: Deployed further enhancements to address lingering issues with ISP mode during firmware upgrades, bolstering reliability and performance during these critical updates.
+
+--- 
+
+## Version 4.1.1
+
+April 17, 2024
+
+### HIGHLIGHTS
+- **Enhanced Audio Control**: Now when you unmute, the volume automatically sets to a comfortable 50% if the previous volume level was unknown, preventing sudden loud sounds.
+- **Improved Firmware Stability**: Resolved an issue where devices would get stuck in ISP mode during firmware upgrades, ensuring smoother transitions and less downtime.
+
+### BUG FIXES
+- **Audio Settings Adjustment**: Addressed an issue where unmuting could lead to unexpectedly high volume by setting the default volume to 50%.
+- **Firmware Upgrade Fix**:
+  - **ISP Mode Handling**: Fixed a bug that caused devices to freeze in ISP mode during firmware updates, facilitating a more reliable upgrade process.
+- **Error Logging Improvement**:
+  - **Unhandled Promise Rejection**: Enhanced logging for unhandled promise rejections, helping developers diagnose and fix issues more efficiently.
+
+---
+
 ## Version 4.1.0
 
 Apris 12, 2024
