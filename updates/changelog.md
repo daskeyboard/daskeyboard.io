@@ -6,6 +6,25 @@ permalink: /updates/changelog/
 
 <a class="btn btn-outline-success float-right" href="{{ '/get-started/software'  | relative_url }}" >Download</a>
 
+## Version 4.1.3
+
+April 22, 2024
+
+### HIGHLIGHTS
+- **Improved Q Button Responsiveness**: Fixed an issue with the x50Q keyboard where the Q button was unresponsive, ensuring all features are fully accessible.
+- **Enhanced System Message Handling**: Resolved a problem with the Q software not receiving system messages from the cloud, improving communication and feature functionality.
+
+### BUG FIXES
+- **Signal Deletion Consistency**:
+  - **API Flexibility**: Enhanced the local API to accept the deletion of signals even if device is not found, maintaining consistency with signal creation.
+- **Q Button Detection**:
+  - **x50Q Keyboard**: Addressed a detection issue with the Q button press.
+- **Device Detection Logging**:
+  - **Increased Diagnostics**: Added more logs to improve the detection process of devices, aiding in troubleshooting and enhancing device support.
+- **System Message Reception**:
+  - **Q Software Update**: Implemented a fix to ensure the Q software consistently receives system messages from the cloud.
+
+--- 
 
 ## Version 4.1.2
 

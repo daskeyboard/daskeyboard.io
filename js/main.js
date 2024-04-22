@@ -333,10 +333,10 @@ function loadDownloadLinkDependingOnOsArchitechture() {
       $("#softwarep-age-button-container").css("display", "flex");
       $("#software-download-button").attr(
         "href",
-        "https://das-keyboard-q-releases.s3.us-east-2.amazonaws.com/das-keyboard-q/win32/x64/das-keyboard-q-4.1.2+Setup.exe"
+        "https://das-keyboard-q-releases.s3.us-east-2.amazonaws.com/das-keyboard-q/win32/x64/das-keyboard-q-4.1.3+Setup.exe"
       );
       $("#software-download-button").append(" 64 bit");
-      $("#software-version-number").append("Version 4.1.2");
+      $("#software-version-number").append("Version 4.1.3");
       $("#software-version-number").append(" Windows");
       return;
     }
@@ -345,20 +345,20 @@ function loadDownloadLinkDependingOnOsArchitechture() {
     $("#softwarep-age-button-container").css("display", "flex");
     $("#software-download-button").attr(
       "href",
-      "https://das-keyboard-q-releases.s3.us-east-2.amazonaws.com/das-keyboard-q/darwin/arm64/Das+Keyboard+Q-4.1.2-arm64.dmg"
+      "https://das-keyboard-q-releases.s3.us-east-2.amazonaws.com/das-keyboard-q/darwin/arm64/Das+Keyboard+Q-4.1.3-arm64.dmg"
     );
     $("#software-download-button").append(" Apple silicon 64 bit");
-    $("#software-version-number").append("Version 4.1.2");
+    $("#software-version-number").append("Version 4.1.3");
     $("#software-version-number").append(" Mac");
 
     // Do the same for intel-download-button
     $("#intel-download-link-container").css("display", "block");
     $("#software-download-button-intel").attr(
       "href",
-      "https://das-keyboard-q-releases.s3.us-east-2.amazonaws.com/das-keyboard-q/darwin/x64/Das+Keyboard+Q-4.1.2-x64.dmg"
+      "https://das-keyboard-q-releases.s3.us-east-2.amazonaws.com/das-keyboard-q/darwin/x64/Das+Keyboard+Q-4.1.3-x64.dmg"
     );
     $("#software-download-button-intel").append(" Intel chip 64 bit");
-    $("#software-version-number-intel").append("Version 4.1.2");
+    $("#software-version-number-intel").append("Version 4.1.3");
     $("#software-version-number-intel").append(" Mac");
 
     return;
@@ -368,10 +368,10 @@ function loadDownloadLinkDependingOnOsArchitechture() {
     $("#softwarep-age-button-container").css("display", "flex");
     $("#software-download-button").attr(
       "href",
-      "https://das-keyboard-q-releases.s3.us-east-2.amazonaws.com/das-keyboard-q/linux/x64/das-keyboard-q_4.1.2_amd64.deb"
+      "https://das-keyboard-q-releases.s3.us-east-2.amazonaws.com/das-keyboard-q/linux/x64/das-keyboard-q_4.1.3_amd64.deb"
     );
     $("#software-download-button").append(" 64 bit");
-    $("#software-version-number").append("Version 4.1.2");
+    $("#software-version-number").append("Version 4.1.3");
     $("#software-version-number").append(" Linux");
     $("#software-version-number").append("-Debian");
     return;
