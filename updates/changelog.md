@@ -6,6 +6,12 @@ permalink: /updates/changelog/
 
 <a class="btn btn-outline-success float-right" href="{{ '/get-started/software'  | relative_url }}" >Download</a>
 
+## Version 4.1.4 (Windows only)
+
+
+### BUG FIXES
+- **5Q**: device was not recognized in at OS start up by the software
+
 ## Version 4.1.3
 
 April 22, 2024

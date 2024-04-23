@@ -43,8 +43,8 @@ permalink: /get-started/software/
     </thead>
   <tr>
     <td>
-        <a href='https://das-keyboard-q-releases.s3.us-east-2.amazonaws.com/das-keyboard-q/win32/x64/das-keyboard-q-4.1.3+Setup.exe'>
-            4.1.3 - 64 bits
+        <a href='https://das-keyboard-q-releases.s3.us-east-2.amazonaws.com/das-keyboard-q/win32/x64/das-keyboard-q-4.1.4+Setup.exe'>
+            4.1.4 - 64 bits
         </a>
     </td>
     <td>
