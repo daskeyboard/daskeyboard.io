@@ -6,6 +6,17 @@ permalink: /updates/changelog/
 
 <a class="btn btn-outline-success float-right" href="{{ '/get-started/software'  | relative_url }}" >Download</a>
 
+
+## Version 4.1.5 (Windows only)  
+
+April 23, 2024
+
+### BUG FIXES
+- **5Q Device Recognition Stability**:
+  - **Reversion to Stable Operation**: After observing unintended side effects from the previous update, we have reverted changes to the 5Q device detection mechanism. This restores stability and ensures reliable device recognition at OS startup, as we continue to work on a more permanent enhancement that maintains system integrity.
+
+---
+
 ## Version 4.1.4 (Windows only)
 
 
