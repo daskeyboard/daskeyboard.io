@@ -11,7 +11,7 @@ applet installation time. These are called `questions` in the Q applet context.
 
 ## Creating questions
 
-The questions are declared as JSON in the `package.json` in the `questions` fields.
+The questions are declared as JSON in the `package.json` in the `questions` fields in the `qConfig`.
 
 The control type is set using the field ``controlType`. Supported field types are:
 
@@ -27,7 +27,9 @@ The control type is set using the field ``controlType`. Supported field types ar
 The JSON snippet for the above example is as follows:
 
 ```json
-"questions": [{
+"qConfig": {
+  //...,
+  "questions": [{
       "key": "name",
       "label": "Your name",
       "placeholder": "bob or alice?",
@@ -70,6 +72,7 @@ The JSON snippet for the above example is as follows:
         "value": "Quantum molecule split"
       }]
     }]
+}
 ```
 
 ### Tip: Accessing questions from Javascript
