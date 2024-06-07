@@ -52,9 +52,9 @@ permalink: /get-started/firmware/
       <td>
       4Q
       </td>
-      <td>v23.31.0: Update firmware from Das Keyboard Q software</td>
-      <td>v23.31.0: Update firmware from Das Keyboard Q software</td>
-      <td>v23.31.0: Update firmware from Das Keyboard Q software</td>
+      <td>v24.31.0: Update firmware from Das Keyboard Q software</td>
+      <td>v24.31.0: Update firmware from Das Keyboard Q software</td>
+      <td>v24.31.0: Update firmware from Das Keyboard Q software</td>
     </tr>
 
 </table>

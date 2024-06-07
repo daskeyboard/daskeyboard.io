@@ -59,6 +59,12 @@ First release of the X50Q firmware
 
 ## **Das Keyboard 4Q**
 
+## Version 24.31.0 (EU and US) - June 7, 2024
+
+### FIXES
+
+- Restored NKRO (N-Key Rollover) toggle functionality with the CTRL+Q combination. This fix ensures that users can now toggle NKRO mode without any issues, while maintaining the recent improvements to the Q button behavior.
+
 ## Version 23.31.0 (EU and US) - March 26, 2024
 
 ### IMPROVEMENTS
