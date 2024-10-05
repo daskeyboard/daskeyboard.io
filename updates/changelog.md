@@ -7,6 +7,42 @@ permalink: /updates/changelog/
 <a class="btn btn-outline-success float-right" href="{{ '/get-started/software'  | relative_url }}" >Download</a>
 
 
+
+## Version 4.2.1
+
+October 5, 2024
+
+### HIGHLIGHTS
+- **System Mute/Unmute Sync with Das Keyboard Q**: Introduced real-time syncing of the system’s mute/unmute status with the **Das Keyboard Q software** on **Windows**, **macOS**, and **Linux**. The Q button on your Das Keyboard now dynamically changes color based on the system’s audio state.
+  - **Red Q button**: Indicates the system is muted.
+  - **Green Q button**: Indicates the system is unmuted.
+  
+- **Electron Upgrade for macOS Sequoia**: Upgraded Electron to the latest version, ensuring compatibility with **macOS 15.0 Sequoia**. This update fixes the critical issue where the app was broken on the latest macOS version, making the app fully functional for users.
+
+- **Profile Switcher Now Works with Local RGB Profiles**: The profile switcher feature no longer requires a **Q cloud account** and now works with **local RGB profiles**. Users can manage their lighting profiles directly on their system without needing to connect to the cloud.
+
+### BUG FIXES
+- **Q Button Status Update**:
+  - **Mute/Unmute State Reflects Correctly**: Fixed an issue where muting the volume via the Q button would cause the button to stay red even if the system volume was changed by other means. The Q button now accurately reflects the system’s current mute/unmute state.
+
+- **PipeWire Compatibility for Mute/Unmute on Linux**: Updated mute/unmute commands to ensure compatibility with both **PulseAudio** and **PipeWire** environments on Linux. Users can now toggle their audio state regardless of the audio server used.
+
+- **Signal Preview Title Overflow**: Fixed an issue where long signal preview titles were breaking the layout in the preview. Titles will now wrap properly, ensuring the signal preview displays as expected.
+
+---
+
+## Version 4.1.6
+
+September 27, 2024
+
+### HIGHLIGHTS
+
+- **Electron Upgrade for macOS Sequoia**: Upgraded Electron to the latest version, ensuring compatibility with **macOS 15.0 Sequoia**. This update fixes the critical issue where the app was broken on the latest macOS version, making the app fully functional for users.
+
+
+
+---
+
 ## Version 4.1.5 (Windows only)  
 
 April 23, 2024

@@ -43,13 +43,13 @@ permalink: /get-started/software/
     </thead>
   <tr>
     <td>
-        <a href='https://das-keyboard-q-releases.s3.us-east-2.amazonaws.com/das-keyboard-q/win32/x64/das-keyboard-q-4.1.5+Setup.exe'>
-            4.1.5 - 64 bits
+        <a href='https://das-keyboard-q-releases.s3.us-east-2.amazonaws.com/das-keyboard-q/win32/x64/das-keyboard-q-4.2.1+Setup.exe'>
+            4.2.1 - 64 bits
         </a>
     </td>
     <td>
        5Q, 5QS and 4Q only
-        <ul>
+        <!-- <ul>
         <li>
 <a href='https://das-keyboard-q-releases.s3.us-east-2.amazonaws.com/das-keyboard-q/darwin/arm64/Das+Keyboard+Q-4.1.3-arm64.dmg'>
         Apple silicon 4.1.3</a>
@@ -58,12 +58,15 @@ permalink: /get-started/software/
         <a href='https://das-keyboard-q-releases.s3.us-east-2.amazonaws.com/das-keyboard-q/darwin/x64/Das+Keyboard+Q-4.1.3-x64.dmg'>
         Intel chip 4.1.3</a>
         </li>
-        </ul>
+        </ul> -->
+        <a href="https://das-keyboard-q-releases.s3.us-east-2.amazonaws.com/das-keyboard-q/darwin/universal/Das+Keyboard+Q-4.2.1-universal.dmg">
+         4.2.1 - univeral
+        </a>
     </td>
     <td>
-       <a href='https://das-keyboard-q-releases.s3.us-east-2.amazonaws.com/das-keyboard-q/linux/x64/das-keyboard-q_4.1.3_amd64.deb'>
-        4.1.3.deb 64 bits</a> - 5Q, 5QS and 4Q only<br/>
-      <a href='https://das-keyboard-q-releases.s3.us-east-2.amazonaws.com/das-keyboard-q/linux/x64/das-keyboard-q-4.1.3-1.x86_64.rpm'>RPM(v4.1.3) </a>
+       <a href='https://das-keyboard-q-releases.s3.us-east-2.amazonaws.com/das-keyboard-q/linux/x64/das-keyboard-q_4.2.1_amd64.deb'>
+        4.2.1.deb 64 bits</a> - 5Q, 5QS and 4Q only<br/>
+      <a href='https://das-keyboard-q-releases.s3.us-east-2.amazonaws.com/das-keyboard-q/linux/x64/das-keyboard-q-4.2.1-1.x86_64.rpm'>RPM(v4.2.1) </a>
     </td>
   </tr>
 
