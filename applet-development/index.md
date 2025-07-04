@@ -317,7 +317,7 @@ const cpuUsage = new CpuUsage();
 
 ### Loading Dev applet into Q Desktop
 
-A during development, an applet can be loaded into Das Keyboard Q desktop.
+During development, an applet can be loaded into Das Keyboard Q desktop.
 
 This allows to check the applet assets such as images, READMEs, config view and overall applet behavior and user experience.
 
