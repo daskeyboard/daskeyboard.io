@@ -20,6 +20,12 @@ permalink: /get-started/firmware/
     </tr>
     </thead>
     <tr>
+      <td>Das Keyboard 5QS Mark IIe (Enhanced)</td>
+      <td>v34.17.0: Update firmware from Das Keyboard Q software</td>
+      <td>v34.17.0: Update firmware from Das Keyboard Q software</td>
+      <td>v34.17.0: Update firmware from Das Keyboard Q software</td>
+    </tr>
+    <tr>
       <td>5QS</td>
       <td>v28.31.0: Update firmware from Das Keyboard Q software</td>
       <td>v28.31.0: Update firmware from Das Keyboard Q software</td>

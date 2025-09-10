@@ -113,3 +113,14 @@ First release of the 4Q firmware
 ### NEW
 
 First release of the 5QS firmware
+
+
+## **Das Keyboard 5QS Mark IIe (Enhanced)**
+
+
+## Version 34.17.0 (US) - September 10, 2025
+
+### NEW
+
+First release of the Das Keyboard 5QS Mark IIe (Enhanced) firmware
+
