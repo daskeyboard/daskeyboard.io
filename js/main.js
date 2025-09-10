@@ -341,10 +341,10 @@ function loadDownloadLinkDependingOnOsArchitechture() {
       $("#softwarep-age-button-container").css("display", "flex");
       $("#software-download-button").attr(
         "href",
-        "https://das-keyboard-q-releases.s3.us-east-2.amazonaws.com/das-keyboard-q/win32/x64/das-keyboard-q-4.2.1+Setup.exe"
+        "https://das-keyboard-q-releases.s3.us-east-2.amazonaws.com/das-keyboard-q/win32/x64/das-keyboard-q-4.3.0+Setup.exe"
       );
       $("#software-download-button").append(" 64 bit");
-      $("#software-version-number").append("Version 4.2.1");
+      $("#software-version-number").append("Version 4.3.0");
       $("#software-version-number").append(" Windows");
       return;
     }
@@ -353,10 +353,10 @@ function loadDownloadLinkDependingOnOsArchitechture() {
     $("#softwarep-age-button-container").css("display", "flex");
     $("#software-download-button").attr(
       "href",
-      "https://das-keyboard-q-releases.s3.us-east-2.amazonaws.com/das-keyboard-q/darwin/universal/Das+Keyboard+Q-4.2.1-universal.dmg"
+      "https://das-keyboard-q-releases.s3.us-east-2.amazonaws.com/das-keyboard-q/darwin/universal/Das+Keyboard+Q-4.3.0-universal.dmg"
     );
     $("#software-download-button").append(" Universal");
-    $("#software-version-number").append("Version 4.2.1");
+    $("#software-version-number").append("Version 4.3.0");
     $("#software-version-number").append(" Mac");
 
     // // Do the same for intel-download-button
@@ -376,10 +376,10 @@ function loadDownloadLinkDependingOnOsArchitechture() {
     $("#softwarep-age-button-container").css("display", "flex");
     $("#software-download-button").attr(
       "href",
-      "https://das-keyboard-q-releases.s3.us-east-2.amazonaws.com/das-keyboard-q/linux/x64/das-keyboard-q_4.2.1_amd64.deb"
+      "https://das-keyboard-q-releases.s3.us-east-2.amazonaws.com/das-keyboard-q/linux/x64/das-keyboard-q_4.3.0_amd64.deb"
     );
     $("#software-download-button").append(" 64 bit");
-    $("#software-version-number").append("Version 4.2.1");
+    $("#software-version-number").append("Version 4.3.0");
     $("#software-version-number").append(" Linux");
     $("#software-version-number").append("-Debian");
     return;

@@ -7,6 +7,49 @@ permalink: /updates/changelog/
 <a class="btn btn-outline-success float-right" href="{{ '/get-started/software'  | relative_url }}" >Download</a>
 
 
+## Version 4.3.0
+
+September 9, 2025
+
+### HIGHLIGHTS
+
+**Das Keyboard 5QS Mark IIe (Enhanced) Support**:  Added support for upcoming new device.
+
+
+**Improved Linux Compatibility**: Enhanced Linux device permissions with modern udev rules that follow current best practices. The system now uses systemd's uaccess mechanism for better security and automatic permission management, while maintaining backward compatibility with older systems.
+
+**Enhanced Startup Control Options**: Added comprehensive startup control with two distinct settings: clarified the existing "Show application window when it starts" setting to control window visibility, and introduced a new "Start application automatically when computer starts" setting that allows users to completely disable the application from starting automatically at boot.
+
+**Enhanced User Interface**: Improved profile configuration system with updated UI components, better visual feedback, and enhanced user experience for creating and managing lighting profiles.
+
+**Framework and Compatibility Updates**: Updated underlying frameworks including Angular (v18 to v20) and Electron (v37) for better performance, security, and cross-platform compatibility.
+
+### User Interface Improvements
+- **Applet List Redesign**: Fixed layout issues in the applet list with improved styling, proper icon spacing, and better visual feedback for available updates.
+- **Navigation Fixes**: Resolved router link active state issues in the navbar when profiles are selected, ensuring proper visual feedback.
+- **Dark Theme Enhancements**: Improved dark theme consistency across all UI components with better contrast and readability.
+
+### Device Communication
+- **Firmware Upgrade Stability**: Fixed crashes during firmware upgrades by adding proper sleep delays and improved error handling.
+- **File Path Handling**: Enhanced file path handling in dialogs for better Electron 37 compatibility, particularly improving folder selection on Linux systems.
+
+### Applet System
+- **Development Tools**: Resolved issues where creating development applets would show undefined values.
+
+### Linux System Integration
+- **Modern udev Rules**: Updated Linux device permission rules to follow current best practices, using systemd's uaccess mechanism for better security and automatic permission management.
+- **Arch Linux Compatibility**: Improved compatibility with Arch Linux packaging requirements, ensuring proper device access without manual group membership.
+- **Legacy System Support**: Maintained backward compatibility with older Linux systems that don't support modern uaccess features.
+
+### Application Behavior
+- **Enhanced Startup Control**: Implemented 2 application startup options: one to start the application at computer boot and another one to open the window when the application starts
+
+### Stability and Performance
+- **Dependency Updates**: Updated core libraries and dependencies for improved security, performance, and compatibility.
+- **Cross-Platform Compatibility**: Enhanced compatibility across Windows, macOS, and Linux with updated frameworks and build tools.
+
+
+---
 
 ## Version 4.2.1
 
